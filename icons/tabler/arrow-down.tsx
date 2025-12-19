@@ -97,4 +97,3 @@ const TablerArrowDownIcon = forwardRef<
 TablerArrowDownIcon.displayName = 'TablerArrowDownIcon';
 
 export { TablerArrowDownIcon };
-

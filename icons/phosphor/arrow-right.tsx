@@ -95,4 +95,3 @@ const PhosphorArrowRightIcon = forwardRef<
 PhosphorArrowRightIcon.displayName = 'PhosphorArrowRightIcon';
 
 export { PhosphorArrowRightIcon };
-

@@ -94,4 +94,3 @@ const HugeiconsArrowLeftIcon = forwardRef<
 HugeiconsArrowLeftIcon.displayName = 'HugeiconsArrowLeftIcon';
 
 export { HugeiconsArrowLeftIcon };
-
