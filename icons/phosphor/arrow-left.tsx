@@ -19,9 +19,9 @@ interface PhosphorArrowLeftIconProps extends HTMLAttributes<HTMLDivElement> {
 const ARROW_VARIANTS: Variants = {
   normal: { x: 0 },
   animate: {
-    x: [0, -4, 0],
+    x: [0, -40, 0],
     transition: {
-      duration: 0.6,
+      duration: 0.4,
       ease: [0.4, 0, 0.2, 1],
     },
   },
@@ -82,6 +82,7 @@ const PhosphorArrowLeftIcon = forwardRef<
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="16"
+        style={{ overflow: 'visible' }}
       >
         <motion.g variants={ARROW_VARIANTS} animate={controls}>
           <line x1="216" y1="128" x2="40" y2="128" />

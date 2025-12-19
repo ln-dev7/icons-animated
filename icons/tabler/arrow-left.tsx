@@ -21,10 +21,8 @@ const ARROW_VARIANTS: Variants = {
   animate: {
     x: [0, -4, 0],
     transition: {
-      type: 'spring',
-      stiffness: 120,
-      damping: 15,
-      mass: 1,
+      duration: 0.4,
+      ease: [0.4, 0, 0.2, 1],
     },
   },
 };
@@ -84,6 +82,7 @@ const TablerArrowLeftIcon = forwardRef<
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
+        style={{ overflow: 'visible' }}
       >
         <motion.g variants={ARROW_VARIANTS} animate={controls}>
           <path d="M19 12H5" />
