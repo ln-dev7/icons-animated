@@ -1,3 +1,7 @@
+import { HugeiconsArrowDownIcon } from './arrow-down';
+import { HugeiconsArrowLeftIcon } from './arrow-left';
+import { HugeiconsArrowRightIcon } from './arrow-right';
+import { HugeiconsArrowUpIcon } from './arrow-up';
 import { HugeiconsBellIcon } from './bell';
 import { HugeiconsCalendarIcon } from './calendar';
 import { HugeiconsCheckIcon } from './check';
@@ -18,6 +22,26 @@ import { HugeiconsUserIcon } from './user';
 import { HugeiconsXIcon } from './x';
 
 const HUGEICONS_ICON_LIST = [
+  {
+    name: 'arrow-down',
+    icon: HugeiconsArrowDownIcon,
+    keywords: ['arrow', 'down', 'direction', 'south', 'bottom'],
+  },
+  {
+    name: 'arrow-left',
+    icon: HugeiconsArrowLeftIcon,
+    keywords: ['arrow', 'left', 'direction', 'west', 'back'],
+  },
+  {
+    name: 'arrow-right',
+    icon: HugeiconsArrowRightIcon,
+    keywords: ['arrow', 'right', 'direction', 'east', 'forward', 'next'],
+  },
+  {
+    name: 'arrow-up',
+    icon: HugeiconsArrowUpIcon,
+    keywords: ['arrow', 'up', 'direction', 'north', 'top'],
+  },
   {
     name: 'bell',
     icon: HugeiconsBellIcon,
@@ -112,6 +136,10 @@ const HUGEICONS_ICON_LIST = [
 
 export {
   HUGEICONS_ICON_LIST,
+  HugeiconsArrowDownIcon,
+  HugeiconsArrowLeftIcon,
+  HugeiconsArrowRightIcon,
+  HugeiconsArrowUpIcon,
   HugeiconsBellIcon,
   HugeiconsCalendarIcon,
   HugeiconsCheckIcon,

@@ -27,6 +27,30 @@ type ComponentDefinition = Partial<
 export const components: ComponentDefinition[] = [
   // Huge Icons
   {
+    'name': 'hugeicons-arrow-down',
+    'path': path.join(__dirname, '../icons/hugeicons/arrow-down.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'hugeicons-arrow-left',
+    'path': path.join(__dirname, '../icons/hugeicons/arrow-left.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'hugeicons-arrow-right',
+    'path': path.join(__dirname, '../icons/hugeicons/arrow-right.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'hugeicons-arrow-up',
+    'path': path.join(__dirname, '../icons/hugeicons/arrow-up.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-bell',
     'path': path.join(__dirname, '../icons/hugeicons/bell.tsx'),
     'registryDependencies': [],
@@ -136,6 +160,30 @@ export const components: ComponentDefinition[] = [
   },
   // Tabler Icons
   {
+    'name': 'tabler-arrow-down',
+    'path': path.join(__dirname, '../icons/tabler/arrow-down.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-arrow-left',
+    'path': path.join(__dirname, '../icons/tabler/arrow-left.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-arrow-right',
+    'path': path.join(__dirname, '../icons/tabler/arrow-right.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-arrow-up',
+    'path': path.join(__dirname, '../icons/tabler/arrow-up.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'tabler-bell',
     'path': path.join(__dirname, '../icons/tabler/bell.tsx'),
     'registryDependencies': [],
@@ -244,6 +292,30 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   // Phosphor Icons
+  {
+    'name': 'phosphor-arrow-down',
+    'path': path.join(__dirname, '../icons/phosphor/arrow-down.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-arrow-left',
+    'path': path.join(__dirname, '../icons/phosphor/arrow-left.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-arrow-right',
+    'path': path.join(__dirname, '../icons/phosphor/arrow-right.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-arrow-up',
+    'path': path.join(__dirname, '../icons/phosphor/arrow-up.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
   {
     'name': 'phosphor-bell',
     'path': path.join(__dirname, '../icons/phosphor/bell.tsx'),

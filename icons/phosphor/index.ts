@@ -1,3 +1,7 @@
+import { PhosphorArrowDownIcon } from './arrow-down';
+import { PhosphorArrowLeftIcon } from './arrow-left';
+import { PhosphorArrowRightIcon } from './arrow-right';
+import { PhosphorArrowUpIcon } from './arrow-up';
 import { PhosphorBellIcon } from './bell';
 import { PhosphorCalendarIcon } from './calendar';
 import { PhosphorCheckIcon } from './check';
@@ -18,6 +22,26 @@ import { PhosphorUserIcon } from './user';
 import { PhosphorXIcon } from './x';
 
 const PHOSPHOR_ICON_LIST = [
+  {
+    name: 'arrow-down',
+    icon: PhosphorArrowDownIcon,
+    keywords: ['arrow', 'down', 'direction', 'south', 'bottom'],
+  },
+  {
+    name: 'arrow-left',
+    icon: PhosphorArrowLeftIcon,
+    keywords: ['arrow', 'left', 'direction', 'west', 'back'],
+  },
+  {
+    name: 'arrow-right',
+    icon: PhosphorArrowRightIcon,
+    keywords: ['arrow', 'right', 'direction', 'east', 'forward', 'next'],
+  },
+  {
+    name: 'arrow-up',
+    icon: PhosphorArrowUpIcon,
+    keywords: ['arrow', 'up', 'direction', 'north', 'top'],
+  },
   {
     name: 'bell',
     icon: PhosphorBellIcon,
@@ -112,6 +136,10 @@ const PHOSPHOR_ICON_LIST = [
 
 export {
   PHOSPHOR_ICON_LIST,
+  PhosphorArrowDownIcon,
+  PhosphorArrowLeftIcon,
+  PhosphorArrowRightIcon,
+  PhosphorArrowUpIcon,
   PhosphorBellIcon,
   PhosphorCalendarIcon,
   PhosphorCheckIcon,

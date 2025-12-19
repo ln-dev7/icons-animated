@@ -1,3 +1,7 @@
+import { TablerArrowDownIcon } from './arrow-down';
+import { TablerArrowLeftIcon } from './arrow-left';
+import { TablerArrowRightIcon } from './arrow-right';
+import { TablerArrowUpIcon } from './arrow-up';
 import { TablerBellIcon } from './bell';
 import { TablerCalendarIcon } from './calendar';
 import { TablerCheckIcon } from './check';
@@ -18,6 +22,26 @@ import { TablerUserIcon } from './user';
 import { TablerXIcon } from './x';
 
 const TABLER_ICON_LIST = [
+  {
+    name: 'arrow-down',
+    icon: TablerArrowDownIcon,
+    keywords: ['arrow', 'down', 'direction', 'south', 'bottom'],
+  },
+  {
+    name: 'arrow-left',
+    icon: TablerArrowLeftIcon,
+    keywords: ['arrow', 'left', 'direction', 'west', 'back'],
+  },
+  {
+    name: 'arrow-right',
+    icon: TablerArrowRightIcon,
+    keywords: ['arrow', 'right', 'direction', 'east', 'forward', 'next'],
+  },
+  {
+    name: 'arrow-up',
+    icon: TablerArrowUpIcon,
+    keywords: ['arrow', 'up', 'direction', 'north', 'top'],
+  },
   {
     name: 'bell',
     icon: TablerBellIcon,
@@ -112,6 +136,10 @@ const TABLER_ICON_LIST = [
 
 export {
   TABLER_ICON_LIST,
+  TablerArrowDownIcon,
+  TablerArrowLeftIcon,
+  TablerArrowRightIcon,
+  TablerArrowUpIcon,
   TablerBellIcon,
   TablerCalendarIcon,
   TablerCheckIcon,
