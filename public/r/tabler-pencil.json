@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tabler-pencil",
+  "type": "registry:ui",
+  "registryDependencies": [],
+  "dependencies": [
+    "motion"
+  ],
+  "devDependencies": [],
+  "files": [
+    {
+      "path": "tabler-pencil.tsx",
+      "content": "'use client';\n\nimport type { HTMLAttributes } from 'react';\nimport { forwardRef, useCallback, useImperativeHandle, useRef } from 'react';\nimport { motion, useAnimation } from 'motion/react';\n\nimport { cn } from '@/lib/utils';\n\nexport interface TablerPencilIconHandle {\n  startAnimation: () => void;\n  stopAnimation: () => void;\n}\n\ninterface TablerPencilIconProps extends HTMLAttributes<HTMLDivElement> {\n  size?: number;\n}\n\nconst TablerPencilIcon = forwardRef<\n  TablerPencilIconHandle,\n  TablerPencilIconProps\n>(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {\n  const controls = useAnimation();\n  const isControlledRef = useRef(false);\n\n  useImperativeHandle(ref, () => {\n    isControlledRef.current = true;\n\n    return {\n      startAnimation: () => controls.start('animate'),\n      stopAnimation: () => controls.start('normal'),\n    };\n  });\n\n  const handleMouseEnter = useCallback(\n    (e: React.MouseEvent<HTMLDivElement>) => {\n      if (!isControlledRef.current) {\n        controls.start('animate');\n      } else {\n        onMouseEnter?.(e);\n      }\n    },\n    [controls, onMouseEnter]\n  );\n\n  const handleMouseLeave = useCallback(\n    (e: React.MouseEvent<HTMLDivElement>) => {\n      if (!isControlledRef.current) {\n        controls.start('normal');\n      } else {\n        onMouseLeave?.(e);\n      }\n    },\n    [controls, onMouseLeave]\n  );\n\n  return (\n    <div\n      className={cn(className)}\n      onMouseEnter={handleMouseEnter}\n      onMouseLeave={handleMouseLeave}\n      {...props}\n    >\n      <motion.svg\n        xmlns=\"http://www.w3.org/2000/svg\"\n        width={size}\n        height={size}\n        viewBox=\"0 0 24 24\"\n        fill=\"none\"\n        stroke=\"currentColor\"\n        strokeWidth=\"2\"\n        strokeLinecap=\"round\"\n        strokeLinejoin=\"round\"\n        animate={controls}\n        variants={{\n          normal: { rotate: 0 },\n          animate: {\n            rotate: [0, -8, 8, -5, 5, 0],\n          },\n        }}\n        transition={{\n          duration: 0.6,\n          ease: [0.4, 0, 0.2, 1],\n        }}\n        style={{ transformOrigin: '4px 20px' }}\n      >\n        <path d=\"M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4\" />\n        <path d=\"M13.5 6.5l4 4\" />\n      </motion.svg>\n    </div>\n  );\n});\n\nTablerPencilIcon.displayName = 'TablerPencilIcon';\n\nexport { TablerPencilIcon };\n",
+      "type": "registry:ui"
+    }
+  ]
+}

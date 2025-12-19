@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hugeicons-bell",
+  "type": "registry:ui",
+  "registryDependencies": [],
+  "dependencies": [
+    "motion"
+  ],
+  "devDependencies": [],
+  "files": [
+    {
+      "path": "hugeicons-bell.tsx",
+      "content": "'use client';\n\nimport type { Variants } from 'motion/react';\nimport type { HTMLAttributes } from 'react';\nimport { forwardRef, useCallback, useImperativeHandle, useRef } from 'react';\nimport { motion, useAnimation } from 'motion/react';\n\nimport { cn } from '@/lib/utils';\n\nexport interface HugeiconsBellIconHandle {\n  startAnimation: () => void;\n  stopAnimation: () => void;\n}\n\ninterface HugeiconsBellIconProps extends HTMLAttributes<HTMLDivElement> {\n  size?: number;\n}\n\nconst SVG_VARIANTS: Variants = {\n  normal: { rotate: 0 },\n  animate: { rotate: [0, -10, 10, -10, 0] },\n};\n\nconst HugeiconsBellIcon = forwardRef<\n  HugeiconsBellIconHandle,\n  HugeiconsBellIconProps\n>(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {\n  const controls = useAnimation();\n  const isControlledRef = useRef(false);\n\n  useImperativeHandle(ref, () => {\n    isControlledRef.current = true;\n\n    return {\n      startAnimation: () => controls.start('animate'),\n      stopAnimation: () => controls.start('normal'),\n    };\n  });\n\n  const handleMouseEnter = useCallback(\n    (e: React.MouseEvent<HTMLDivElement>) => {\n      if (!isControlledRef.current) {\n        controls.start('animate');\n      } else {\n        onMouseEnter?.(e);\n      }\n    },\n    [controls, onMouseEnter]\n  );\n\n  const handleMouseLeave = useCallback(\n    (e: React.MouseEvent<HTMLDivElement>) => {\n      if (!isControlledRef.current) {\n        controls.start('normal');\n      } else {\n        onMouseLeave?.(e);\n      }\n    },\n    [controls, onMouseLeave]\n  );\n\n  return (\n    <div\n      className={cn(className)}\n      onMouseEnter={handleMouseEnter}\n      onMouseLeave={handleMouseLeave}\n      {...props}\n    >\n      <motion.svg\n        xmlns=\"http://www.w3.org/2000/svg\"\n        width={size}\n        height={size}\n        viewBox=\"0 0 24 24\"\n        fill=\"none\"\n        stroke=\"currentColor\"\n        strokeWidth=\"1.5\"\n        strokeLinecap=\"round\"\n        strokeLinejoin=\"round\"\n        variants={SVG_VARIANTS}\n        animate={controls}\n        transition={{\n          duration: 0.5,\n          ease: 'easeInOut',\n        }}\n      >\n        <path d=\"M2.52992 14.7696C2.31727 16.1636 3.268 17.1312 4.43205 17.6134C8.89481 19.4622 15.1052 19.4622 19.5679 17.6134C20.732 17.1312 21.6827 16.1636 21.4701 14.7696C21.3394 13.9129 20.6932 13.1995 20.2144 12.5029C19.5873 11.5793 19.525 10.5718 19.5249 9.5C19.5249 5.35786 16.1559 2 12 2C7.84413 2 4.47513 5.35786 4.47513 9.5C4.47503 10.5718 4.41272 11.5793 3.78561 12.5029C3.30684 13.1995 2.66061 13.9129 2.52992 14.7696Z\" />\n        <path d=\"M8 19C8.45849 20.7252 10.0755 22 12 22C13.9245 22 15.5415 20.7252 16 19\" />\n      </motion.svg>\n    </div>\n  );\n});\n\nHugeiconsBellIcon.displayName = 'HugeiconsBellIcon';\n\nexport { HugeiconsBellIcon };\n",
+      "type": "registry:ui"
+    }
+  ]
+}

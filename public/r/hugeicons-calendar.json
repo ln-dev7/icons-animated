@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hugeicons-calendar",
+  "type": "registry:ui",
+  "registryDependencies": [],
+  "dependencies": [
+    "motion"
+  ],
+  "devDependencies": [],
+  "files": [
+    {
+      "path": "hugeicons-calendar.tsx",
+      "content": "'use client';\n\nimport type { Variants } from 'motion/react';\nimport type { HTMLAttributes } from 'react';\nimport { forwardRef, useCallback, useImperativeHandle, useRef } from 'react';\nimport { motion, useAnimation } from 'motion/react';\n\nimport { cn } from '@/lib/utils';\n\nexport interface HugeiconsCalendarIconHandle {\n  startAnimation: () => void;\n  stopAnimation: () => void;\n}\n\ninterface HugeiconsCalendarIconProps extends HTMLAttributes<HTMLDivElement> {\n  size?: number;\n}\n\nconst RECT_VARIANTS: Variants = {\n  normal: { scale: 1 },\n  animate: {\n    scale: [1, 0.95, 1.02, 1],\n    transition: {\n      duration: 0.4,\n      ease: 'easeInOut',\n    },\n  },\n};\n\nconst HugeiconsCalendarIcon = forwardRef<\n  HugeiconsCalendarIconHandle,\n  HugeiconsCalendarIconProps\n>(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {\n  const controls = useAnimation();\n  const isControlledRef = useRef(false);\n\n  useImperativeHandle(ref, () => {\n    isControlledRef.current = true;\n\n    return {\n      startAnimation: () => controls.start('animate'),\n      stopAnimation: () => controls.start('normal'),\n    };\n  });\n\n  const handleMouseEnter = useCallback(\n    (e: React.MouseEvent<HTMLDivElement>) => {\n      if (!isControlledRef.current) {\n        controls.start('animate');\n      } else {\n        onMouseEnter?.(e);\n      }\n    },\n    [controls, onMouseEnter]\n  );\n\n  const handleMouseLeave = useCallback(\n    (e: React.MouseEvent<HTMLDivElement>) => {\n      if (!isControlledRef.current) {\n        controls.start('normal');\n      } else {\n        onMouseLeave?.(e);\n      }\n    },\n    [controls, onMouseLeave]\n  );\n\n  return (\n    <div\n      className={cn(className)}\n      onMouseEnter={handleMouseEnter}\n      onMouseLeave={handleMouseLeave}\n      {...props}\n    >\n      <motion.svg\n        xmlns=\"http://www.w3.org/2000/svg\"\n        width={size}\n        height={size}\n        viewBox=\"0 0 24 24\"\n        fill=\"none\"\n        stroke=\"currentColor\"\n        strokeWidth=\"1.5\"\n        strokeLinecap=\"round\"\n        strokeLinejoin=\"round\"\n        variants={RECT_VARIANTS}\n        animate={controls}\n      >\n        <path d=\"M18 2V4M6 2V4\" />\n        <path d=\"M11.9955 13H12.0045M11.9955 17H12.0045M15.991 13H16M8 13H8.00897M8 17H8.00897\" />\n        <path d=\"M3.5 8H20.5\" />\n        <path d=\"M2.5 12.2432C2.5 7.88594 2.5 5.70728 3.75212 4.35364C5.00424 3 7.01949 3 11.05 3H12.95C16.9805 3 18.9958 3 20.2479 4.35364C21.5 5.70728 21.5 7.88594 21.5 12.2432V12.7568C21.5 17.1141 21.5 19.2927 20.2479 20.6464C18.9958 22 16.9805 22 12.95 22H11.05C7.01949 22 5.00424 22 3.75212 20.6464C2.5 19.2927 2.5 17.1141 2.5 12.7568V12.2432Z\" />\n      </motion.svg>\n    </div>\n  );\n});\n\nHugeiconsCalendarIcon.displayName = 'HugeiconsCalendarIcon';\n\nexport { HugeiconsCalendarIcon };\n",
+      "type": "registry:ui"
+    }
+  ]
+}

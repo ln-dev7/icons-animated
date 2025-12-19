@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tabler-settings",
+  "type": "registry:ui",
+  "registryDependencies": [],
+  "dependencies": [
+    "motion"
+  ],
+  "devDependencies": [],
+  "files": [
+    {
+      "path": "tabler-settings.tsx",
+      "content": "'use client';\n\nimport type { HTMLAttributes } from 'react';\nimport { forwardRef, useCallback, useImperativeHandle, useRef } from 'react';\nimport { motion, useAnimation } from 'motion/react';\n\nimport { cn } from '@/lib/utils';\n\nexport interface TablerSettingsIconHandle {\n  startAnimation: () => void;\n  stopAnimation: () => void;\n}\n\ninterface TablerSettingsIconProps extends HTMLAttributes<HTMLDivElement> {\n  size?: number;\n}\n\nconst TablerSettingsIcon = forwardRef<\n  TablerSettingsIconHandle,\n  TablerSettingsIconProps\n>(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {\n  const controls = useAnimation();\n  const isControlledRef = useRef(false);\n\n  useImperativeHandle(ref, () => {\n    isControlledRef.current = true;\n\n    return {\n      startAnimation: () => controls.start('animate'),\n      stopAnimation: () => controls.start('normal'),\n    };\n  });\n\n  const handleMouseEnter = useCallback(\n    (e: React.MouseEvent<HTMLDivElement>) => {\n      if (!isControlledRef.current) {\n        controls.start('animate');\n      } else {\n        onMouseEnter?.(e);\n      }\n    },\n    [controls, onMouseEnter]\n  );\n\n  const handleMouseLeave = useCallback(\n    (e: React.MouseEvent<HTMLDivElement>) => {\n      if (!isControlledRef.current) {\n        controls.start('normal');\n      } else {\n        onMouseLeave?.(e);\n      }\n    },\n    [controls, onMouseLeave]\n  );\n\n  return (\n    <div\n      className={cn(className)}\n      onMouseEnter={handleMouseEnter}\n      onMouseLeave={handleMouseLeave}\n      {...props}\n    >\n      <motion.svg\n        xmlns=\"http://www.w3.org/2000/svg\"\n        width={size}\n        height={size}\n        viewBox=\"0 0 24 24\"\n        fill=\"none\"\n        stroke=\"currentColor\"\n        strokeWidth=\"2\"\n        strokeLinecap=\"round\"\n        strokeLinejoin=\"round\"\n        animate={controls}\n        variants={{\n          normal: { rotate: 0 },\n          animate: {\n            rotate: 180,\n            transition: {\n              duration: 0.5,\n              ease: 'easeInOut',\n            },\n          },\n        }}\n      >\n        <path d=\"M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z\" />\n        <path d=\"M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0\" />\n      </motion.svg>\n    </div>\n  );\n});\n\nTablerSettingsIcon.displayName = 'TablerSettingsIcon';\n\nexport { TablerSettingsIcon };\n",
+      "type": "registry:ui"
+    }
+  ]
+}

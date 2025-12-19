@@ -1,0 +1,54 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+_app/*
+
+package-lock.json
+yarn.lock
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# env files (can opt-in for commiting if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# proprietary fonts (not licensed for public distribution)
+# fonts are downloaded at build time from Vercel Blob Storage
+/fonts/*.woff
+/fonts/*.woff2
+/fonts/*.ttf
+/fonts/*.otf
+/fonts/*EULA.pdf
+/fonts/Grilli-Type-EULA.pdf
