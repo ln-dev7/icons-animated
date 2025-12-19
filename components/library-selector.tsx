@@ -30,7 +30,7 @@ const LibrarySelector = () => {
       <SelectTrigger className="w-32 text-sm">
         <SelectValue placeholder="Select library" />
       </SelectTrigger>
-      <SelectContent>
+      <SelectContent className="bg-background/80 backdrop-blur-md">
         <SelectGroup>
           <SelectItem value={ICON_LIBRARY.HUGEICONS}>Huge Icons</SelectItem>
           <SelectItem value={ICON_LIBRARY.TABLER}>Tabler</SelectItem>
