@@ -96,4 +96,3 @@ const HugeiconsRefreshIcon = forwardRef<
 HugeiconsRefreshIcon.displayName = 'HugeiconsRefreshIcon';
 
 export { HugeiconsRefreshIcon };
-

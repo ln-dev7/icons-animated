@@ -99,4 +99,3 @@ const HugeiconsSaveIcon = forwardRef<
 HugeiconsSaveIcon.displayName = 'HugeiconsSaveIcon';
 
 export { HugeiconsSaveIcon };
-

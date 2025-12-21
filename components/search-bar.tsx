@@ -2,11 +2,8 @@
 
 import { useEffect, useRef } from 'react';
 
-
-
 import { Kbd } from '@/components/ui/kbd';
 import { cn } from '@/lib/utils';
-
 
 type SearchBarProps = {
   value: string;
@@ -49,7 +46,7 @@ const SearchBar = ({
         className
       )}
     >
-      <div className="mx-auto w-full max-w-7xl px-4 py-3 xl:border-l xl:border-r border-neutral-200 dark:border-neutral-800">
+      <div className="mx-auto w-full max-w-7xl border-neutral-200 px-4 py-3 xl:border-r xl:border-l dark:border-neutral-800">
         <div className="relative flex items-center">
           <svg
             className="text-secondary pointer-events-none absolute left-4 size-5"

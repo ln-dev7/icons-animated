@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tabler-share",
+  "type": "registry:ui",
+  "registryDependencies": [],
+  "dependencies": [
+    "motion"
+  ],
+  "devDependencies": [],
+  "files": [
+    {
+      "path": "tabler-share.tsx",
+      "content": "'use client';\n\nimport type { Variants } from 'motion/react';\nimport type { HTMLAttributes } from 'react';\nimport { forwardRef, useCallback, useImperativeHandle, useRef } from 'react';\nimport { motion, useAnimation } from 'motion/react';\n\nimport { cn } from '@/lib/utils';\n\nexport interface TablerShareIconHandle {\n  startAnimation: () => void;\n  stopAnimation: () => void;\n}\n\ninterface TablerShareIconProps extends HTMLAttributes<HTMLDivElement> {\n  size?: number;\n}\n\nconst SHARE_VARIANTS: Variants = {\n  normal: { scale: 1 },\n  animate: {\n    scale: [1, 1.15, 1],\n    transition: {\n      duration: 0.6,\n      ease: [0.4, 0, 0.2, 1],\n    },\n  },\n};\n\nconst TablerShareIcon = forwardRef<\n  TablerShareIconHandle,\n  TablerShareIconProps\n>(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {\n  const controls = useAnimation();\n  const isControlledRef = useRef(false);\n\n  useImperativeHandle(ref, () => {\n    isControlledRef.current = true;\n\n    return {\n      startAnimation: () => controls.start('animate'),\n      stopAnimation: () => controls.start('normal'),\n    };\n  });\n\n  const handleMouseEnter = useCallback(\n    (e: React.MouseEvent<HTMLDivElement>) => {\n      if (!isControlledRef.current) {\n        controls.start('animate');\n      } else {\n        onMouseEnter?.(e);\n      }\n    },\n    [controls, onMouseEnter]\n  );\n\n  const handleMouseLeave = useCallback(\n    (e: React.MouseEvent<HTMLDivElement>) => {\n      if (!isControlledRef.current) {\n        controls.start('normal');\n      } else {\n        onMouseLeave?.(e);\n      }\n    },\n    [controls, onMouseLeave]\n  );\n\n  return (\n    <div\n      className={cn(className)}\n      onMouseEnter={handleMouseEnter}\n      onMouseLeave={handleMouseLeave}\n      {...props}\n    >\n      <svg\n        xmlns=\"http://www.w3.org/2000/svg\"\n        width={size}\n        height={size}\n        viewBox=\"0 0 24 24\"\n        fill=\"none\"\n        stroke=\"currentColor\"\n        strokeWidth=\"2\"\n        strokeLinecap=\"round\"\n        strokeLinejoin=\"round\"\n        style={{ overflow: 'visible' }}\n      >\n        <motion.g variants={SHARE_VARIANTS} animate={controls}>\n          <circle cx=\"18\" cy=\"5\" r=\"3\" />\n          <circle cx=\"6\" cy=\"12\" r=\"3\" />\n          <circle cx=\"18\" cy=\"19\" r=\"3\" />\n          <path d=\"m8.59 13.51 6.83 3.98\" />\n          <path d=\"m15.41 6.51-6.82 3.98\" />\n        </motion.g>\n      </svg>\n    </div>\n  );\n});\n\nTablerShareIcon.displayName = 'TablerShareIcon';\n\nexport { TablerShareIcon };\n\n",
+      "type": "registry:ui"
+    }
+  ]
+}

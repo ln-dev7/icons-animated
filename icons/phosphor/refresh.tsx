@@ -96,4 +96,3 @@ const PhosphorRefreshIcon = forwardRef<
 PhosphorRefreshIcon.displayName = 'PhosphorRefreshIcon';
 
 export { PhosphorRefreshIcon };
-

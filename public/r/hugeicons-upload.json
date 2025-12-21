@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hugeicons-upload",
+  "type": "registry:ui",
+  "registryDependencies": [],
+  "dependencies": [
+    "motion"
+  ],
+  "devDependencies": [],
+  "files": [
+    {
+      "path": "hugeicons-upload.tsx",
+      "content": "'use client';\n\nimport type { Variants } from 'motion/react';\nimport type { HTMLAttributes } from 'react';\nimport { forwardRef, useCallback, useImperativeHandle, useRef } from 'react';\nimport { motion, useAnimation } from 'motion/react';\n\nimport { cn } from '@/lib/utils';\n\nexport interface HugeiconsUploadIconHandle {\n  startAnimation: () => void;\n  stopAnimation: () => void;\n}\n\ninterface HugeiconsUploadIconProps extends HTMLAttributes<HTMLDivElement> {\n  size?: number;\n}\n\nconst ARROW_VARIANTS: Variants = {\n  normal: { y: 0 },\n  animate: {\n    y: [0, -3, 0],\n    transition: {\n      duration: 0.6,\n      ease: [0.4, 0, 0.2, 1],\n    },\n  },\n};\n\nconst HugeiconsUploadIcon = forwardRef<\n  HugeiconsUploadIconHandle,\n  HugeiconsUploadIconProps\n>(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {\n  const controls = useAnimation();\n  const isControlledRef = useRef(false);\n\n  useImperativeHandle(ref, () => {\n    isControlledRef.current = true;\n\n    return {\n      startAnimation: () => controls.start('animate'),\n      stopAnimation: () => controls.start('normal'),\n    };\n  });\n\n  const handleMouseEnter = useCallback(\n    (e: React.MouseEvent<HTMLDivElement>) => {\n      if (!isControlledRef.current) {\n        controls.start('animate');\n      } else {\n        onMouseEnter?.(e);\n      }\n    },\n    [controls, onMouseEnter]\n  );\n\n  const handleMouseLeave = useCallback(\n    (e: React.MouseEvent<HTMLDivElement>) => {\n      if (!isControlledRef.current) {\n        controls.start('normal');\n      } else {\n        onMouseLeave?.(e);\n      }\n    },\n    [controls, onMouseLeave]\n  );\n\n  return (\n    <div\n      className={cn(className)}\n      onMouseEnter={handleMouseEnter}\n      onMouseLeave={handleMouseLeave}\n      {...props}\n    >\n      <svg\n        xmlns=\"http://www.w3.org/2000/svg\"\n        width={size}\n        height={size}\n        viewBox=\"0 0 24 24\"\n        fill=\"none\"\n        stroke=\"currentColor\"\n        strokeWidth=\"1.5\"\n        strokeLinecap=\"round\"\n        strokeLinejoin=\"round\"\n        style={{ overflow: 'visible' }}\n      >\n        <path d=\"M3 15C3 17.8284 3 19.2426 3.87868 20.1213C4.75736 21 6.17157 21 9 21H15C17.8284 21 19.2426 21 20.1213 20.1213C21 19.2426 21 17.8284 21 15\" />\n        <motion.g variants={ARROW_VARIANTS} animate={controls}>\n          <path d=\"M12 21V8M12 8L8 12.375M12 8L16 12.375\" />\n        </motion.g>\n      </svg>\n    </div>\n  );\n});\n\nHugeiconsUploadIcon.displayName = 'HugeiconsUploadIcon';\n\nexport { HugeiconsUploadIcon };\n\n",
+      "type": "registry:ui"
+    }
+  ]
+}

@@ -98,4 +98,3 @@ const TablerRefreshIcon = forwardRef<
 TablerRefreshIcon.displayName = 'TablerRefreshIcon';
 
 export { TablerRefreshIcon };
-

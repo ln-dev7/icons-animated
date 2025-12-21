@@ -95,4 +95,3 @@ const PhosphorFilterIcon = forwardRef<
 PhosphorFilterIcon.displayName = 'PhosphorFilterIcon';
 
 export { PhosphorFilterIcon };
-

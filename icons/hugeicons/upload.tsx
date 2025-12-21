@@ -96,4 +96,3 @@ const HugeiconsUploadIcon = forwardRef<
 HugeiconsUploadIcon.displayName = 'HugeiconsUploadIcon';
 
 export { HugeiconsUploadIcon };
-

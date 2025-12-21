@@ -97,4 +97,3 @@ const TablerUploadIcon = forwardRef<
 TablerUploadIcon.displayName = 'TablerUploadIcon';
 
 export { TablerUploadIcon };
-

@@ -99,4 +99,3 @@ const PhosphorShareIcon = forwardRef<
 PhosphorShareIcon.displayName = 'PhosphorShareIcon';
 
 export { PhosphorShareIcon };
-

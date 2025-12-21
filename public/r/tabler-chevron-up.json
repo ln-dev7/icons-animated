@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tabler-chevron-up",
+  "type": "registry:ui",
+  "registryDependencies": [],
+  "dependencies": [
+    "motion"
+  ],
+  "devDependencies": [],
+  "files": [
+    {
+      "path": "tabler-chevron-up.tsx",
+      "content": "'use client';\n\nimport type { Variants } from 'motion/react';\nimport type { HTMLAttributes } from 'react';\nimport { forwardRef, useCallback, useImperativeHandle, useRef } from 'react';\nimport { motion, useAnimation } from 'motion/react';\n\nimport { cn } from '@/lib/utils';\n\nexport interface TablerChevronUpIconHandle {\n  startAnimation: () => void;\n  stopAnimation: () => void;\n}\n\ninterface TablerChevronUpIconProps extends HTMLAttributes<HTMLDivElement> {\n  size?: number;\n}\n\nconst CHEVRON_VARIANTS: Variants = {\n  normal: { y: 0 },\n  animate: {\n    y: [0, -3, 0],\n    transition: {\n      duration: 0.4,\n      ease: [0.4, 0, 0.2, 1],\n    },\n  },\n};\n\nconst TablerChevronUpIcon = forwardRef<\n  TablerChevronUpIconHandle,\n  TablerChevronUpIconProps\n>(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {\n  const controls = useAnimation();\n  const isControlledRef = useRef(false);\n\n  useImperativeHandle(ref, () => {\n    isControlledRef.current = true;\n\n    return {\n      startAnimation: () => controls.start('animate'),\n      stopAnimation: () => controls.start('normal'),\n    };\n  });\n\n  const handleMouseEnter = useCallback(\n    (e: React.MouseEvent<HTMLDivElement>) => {\n      if (!isControlledRef.current) {\n        controls.start('animate');\n      } else {\n        onMouseEnter?.(e);\n      }\n    },\n    [controls, onMouseEnter]\n  );\n\n  const handleMouseLeave = useCallback(\n    (e: React.MouseEvent<HTMLDivElement>) => {\n      if (!isControlledRef.current) {\n        controls.start('normal');\n      } else {\n        onMouseLeave?.(e);\n      }\n    },\n    [controls, onMouseLeave]\n  );\n\n  return (\n    <div\n      className={cn(className)}\n      onMouseEnter={handleMouseEnter}\n      onMouseLeave={handleMouseLeave}\n      {...props}\n    >\n      <svg\n        xmlns=\"http://www.w3.org/2000/svg\"\n        width={size}\n        height={size}\n        viewBox=\"0 0 24 24\"\n        fill=\"none\"\n        stroke=\"currentColor\"\n        strokeWidth=\"2\"\n        strokeLinecap=\"round\"\n        strokeLinejoin=\"round\"\n        style={{ overflow: 'visible' }}\n      >\n        <motion.g variants={CHEVRON_VARIANTS} animate={controls}>\n          <path d=\"m18 15-6-6-6 6\" />\n        </motion.g>\n      </svg>\n    </div>\n  );\n});\n\nTablerChevronUpIcon.displayName = 'TablerChevronUpIcon';\n\nexport { TablerChevronUpIcon };\n\n",
+      "type": "registry:ui"
+    }
+  ]
+}

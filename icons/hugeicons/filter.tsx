@@ -95,4 +95,3 @@ const HugeiconsFilterIcon = forwardRef<
 HugeiconsFilterIcon.displayName = 'HugeiconsFilterIcon';
 
 export { HugeiconsFilterIcon };
-

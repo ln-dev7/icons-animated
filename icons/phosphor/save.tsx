@@ -109,4 +109,3 @@ const PhosphorSaveIcon = forwardRef<
 PhosphorSaveIcon.displayName = 'PhosphorSaveIcon';
 
 export { PhosphorSaveIcon };
-

@@ -95,4 +95,3 @@ const PhosphorChevronRightIcon = forwardRef<
 PhosphorChevronRightIcon.displayName = 'PhosphorChevronRightIcon';
 
 export { PhosphorChevronRightIcon };
-

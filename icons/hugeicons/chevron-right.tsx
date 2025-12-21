@@ -95,5 +95,3 @@ const HugeiconsChevronRightIcon = forwardRef<
 HugeiconsChevronRightIcon.displayName = 'HugeiconsChevronRightIcon';
 
 export { HugeiconsChevronRightIcon };
-
-

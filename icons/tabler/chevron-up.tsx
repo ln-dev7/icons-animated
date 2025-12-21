@@ -95,4 +95,3 @@ const TablerChevronUpIcon = forwardRef<
 TablerChevronUpIcon.displayName = 'TablerChevronUpIcon';
 
 export { TablerChevronUpIcon };
-

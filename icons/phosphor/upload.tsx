@@ -97,4 +97,3 @@ const PhosphorUploadIcon = forwardRef<
 PhosphorUploadIcon.displayName = 'PhosphorUploadIcon';
 
 export { PhosphorUploadIcon };
-

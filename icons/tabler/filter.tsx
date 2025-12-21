@@ -95,4 +95,3 @@ const TablerFilterIcon = forwardRef<
 TablerFilterIcon.displayName = 'TablerFilterIcon';
 
 export { TablerFilterIcon };
-
