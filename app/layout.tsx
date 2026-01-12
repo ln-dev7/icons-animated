@@ -7,7 +7,7 @@ import { CircleXIcon, TriangleAlertIcon } from 'lucide-react';
 import { NuqsAdapter } from 'nuqs/adapters/next/app';
 import { Toaster } from 'sonner';
 
-import { Analytics } from '@/components/analytics';
+import { Analytics } from "@vercel/analytics/next"
 import { Header } from '@/components/header';
 import { SnowfallComponent } from '@/components/snowfall';
 import { ThemeColor } from '@/components/theme-color';

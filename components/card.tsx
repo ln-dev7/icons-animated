@@ -4,12 +4,10 @@ import type { Icon } from '@/actions/get-icons';
 import type { IconStatus } from '@/components/ui/icon-state';
 import type { RefObject } from 'react';
 import { useEffect, useRef, useState } from 'react';
-import { useOpenPanel } from '@openpanel/nextjs';
 import { Copy, PauseIcon, PlayIcon, Terminal } from 'lucide-react';
 import { toast } from 'sonner';
 
 import { getIconContent } from '@/actions/get-icon-content';
-import { ANALYTIC_EVENT } from '@/components/analytics';
 import { IconState } from '@/components/ui/icon-state';
 import {
   Tooltip,
@@ -106,7 +104,6 @@ const Title = ({ children }: { children: React.ReactNode }) => {
 };
 
 const CopyCLIAction = ({ name }: Pick<Icon, 'name'>) => {
-  const op = useOpenPanel();
   const { packageName } = usePackageNameContext();
   const { library } = useIconLibrary();
 
@@ -116,7 +113,6 @@ const CopyCLIAction = ({ name }: Pick<Icon, 'name'>) => {
     if (state !== 'idle') return;
 
     try {
-      op.track(ANALYTIC_EVENT.ICON_COPY_TERMINAL, { icon: `${name}.tsx` });
       await navigator.clipboard.writeText(
         `${getPackageManagerPrefix(packageName)} shadcn@latest add "https://icons.lndev.me/r/${library}/${name}.json"`
       );
@@ -160,7 +156,6 @@ const CopyCLIAction = ({ name }: Pick<Icon, 'name'>) => {
 };
 
 const CopyCodeAction = ({ name }: Pick<Icon, 'name'>) => {
-  const op = useOpenPanel();
   const { library } = useIconLibrary();
 
   const [state, setState] = useState<IconStatus>('idle');
@@ -170,7 +165,6 @@ const CopyCodeAction = ({ name }: Pick<Icon, 'name'>) => {
 
     try {
       setState('loading');
-      op.track(ANALYTIC_EVENT.ICON_COPY, { icon: `${name}.tsx` });
 
       const content = await getIconContent(library, name);
 
