@@ -7,18 +7,16 @@ import { useEffect, useRef, useState } from 'react';
 import { Copy, PauseIcon, PlayIcon, Terminal } from 'lucide-react';
 import { toast } from 'sonner';
 
+
+
 import { getIconContent } from '@/actions/get-icon-content';
 import { IconState } from '@/components/ui/icon-state';
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from '@/components/ui/tooltip';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { useTouchDevice } from '@/hooks/use-touch-device';
 import { getPackageManagerPrefix } from '@/lib/get-package-manager-prefix';
 import { useIconLibrary } from '@/providers/icon-library';
 import { usePackageNameContext } from '@/providers/package-name';
+
 
 interface CardProps extends React.ComponentPropsWithoutRef<'div'> {
   children: React.ReactNode;
@@ -114,7 +112,7 @@ const CopyCLIAction = ({ name }: Pick<Icon, 'name'>) => {
 
     try {
       await navigator.clipboard.writeText(
-        `${getPackageManagerPrefix(packageName)} shadcn@latest add "https://icons.lndev.me/r/${library}/${name}.json"`
+        `${getPackageManagerPrefix(packageName)} shadcn add @icons-animated/${library}-${name}`
       );
       setState('done');
       setTimeout(() => setState('idle'), 2000);
