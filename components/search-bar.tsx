@@ -2,11 +2,8 @@
 
 import { useEffect, useRef } from 'react';
 
-
-
 import { Kbd } from '@/components/ui/kbd';
 import { cn } from '@/lib/utils';
-
 
 type SearchBarProps = {
   value: string;

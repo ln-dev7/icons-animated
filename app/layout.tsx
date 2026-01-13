@@ -3,11 +3,11 @@ import type { Metadata, Viewport } from 'next';
 import './globals.css';
 
 import { Geist, Geist_Mono } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import { CircleXIcon, TriangleAlertIcon } from 'lucide-react';
 import { NuqsAdapter } from 'nuqs/adapters/next/app';
 import { Toaster } from 'sonner';
 
-import { Analytics } from "@vercel/analytics/next"
 import { Header } from '@/components/header';
 import { SnowfallComponent } from '@/components/snowfall';
 import { ThemeColor } from '@/components/theme-color';
