@@ -19,10 +19,12 @@ interface TablerUploadIconProps extends HTMLAttributes<HTMLDivElement> {
 const ARROW_VARIANTS: Variants = {
   normal: { y: 0 },
   animate: {
-    y: [0, -3, 0],
+    y: -2,
     transition: {
-      duration: 0.4,
-      ease: [0.4, 0, 0.2, 1],
+      type: 'spring',
+      stiffness: 200,
+      damping: 10,
+      mass: 1,
     },
   },
 };
@@ -84,10 +86,11 @@ const TablerUploadIcon = forwardRef<
         strokeLinejoin="round"
         style={{ overflow: 'visible' }}
       >
-        <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" />
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
         <motion.g variants={ARROW_VARIANTS} animate={controls}>
-          <path d="M7 13l5-5 5 5" />
-          <path d="M12 4v14" />
+          <path d="M7 9l5 -5l5 5" />
+          <path d="M12 4l0 12" />
         </motion.g>
       </svg>
     </div>
