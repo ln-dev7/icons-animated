@@ -9,7 +9,7 @@ import { NuqsAdapter } from 'nuqs/adapters/next/app';
 import { Toaster } from 'sonner';
 
 import { Header } from '@/components/header';
-import { SnowfallComponent } from '@/components/snowfall';
+// import { SnowfallComponent } from '@/components/snowfall';
 import { ThemeColor } from '@/components/theme-color';
 import { IconLibraryProvider } from '@/providers/icon-library';
 import { PackageNameProvider } from '@/providers/package-name';
@@ -127,7 +127,7 @@ export default function RootLayout({
                       ),
                     }}
                   />
-                  <SnowfallComponent />
+                  {/* <SnowfallComponent /> */}
                   <Analytics />
                 </PackageNameProvider>
               </IconLibraryProvider>
