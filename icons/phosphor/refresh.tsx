@@ -77,16 +77,11 @@ const PhosphorRefreshIcon = forwardRef<
         width={size}
         height={size}
         viewBox="0 0 256 256"
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="16"
+        fill="currentColor"
         style={{ overflow: 'visible' }}
       >
         <motion.g variants={ROTATE_VARIANTS} animate={controls}>
-          <path d="M176.2 40a96 96 0 1 0 23.8 128" />
-          <path d="M184 128h72a8 8 0 0 1 8 8v48" />
+          <path d="M240,56v48a8,8,0,0,1-8,8H184a8,8,0,0,1,0-16H211.4L184.81,71.64l-.25-.24a80,80,0,1,0-1.67,114.78,8,8,0,0,1,11,11.63A95.44,95.44,0,0,1,128,224h-1.32A96,96,0,1,1,195.75,60L224,85.8V56a8,8,0,1,1,16,0Z" />
         </motion.g>
       </svg>
     </div>

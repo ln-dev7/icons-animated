@@ -16,14 +16,13 @@ interface PhosphorSaveIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
 
-const CHECK_VARIANTS: Variants = {
-  normal: { pathLength: 1, opacity: 1 },
+const SCALE_VARIANTS: Variants = {
+  normal: { scale: 1 },
   animate: {
-    pathLength: [0, 1],
-    opacity: [0, 1],
+    scale: [1, 0.95, 1],
     transition: {
-      duration: 0.6,
-      ease: [0.4, 0, 0.2, 1],
+      duration: 0.3,
+      ease: 'easeInOut',
     },
   },
 };
@@ -78,29 +77,12 @@ const PhosphorSaveIcon = forwardRef<
         width={size}
         height={size}
         viewBox="0 0 256 256"
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="16"
+        fill="currentColor"
         style={{ overflow: 'visible' }}
       >
-        <path d="M224 96V216a8 8 0 0 1-8 8H40a8 8 0 0 1-8-8V40a8 8 0 0 1 8-8h96l56 56Z" />
-        <motion.path
-          d="M128 152v56"
-          variants={CHECK_VARIANTS}
-          animate={controls}
-        />
-        <motion.path
-          d="M96 152h64"
-          variants={CHECK_VARIANTS}
-          animate={controls}
-        />
-        <motion.path
-          d="M96 208h64"
-          variants={CHECK_VARIANTS}
-          animate={controls}
-        />
+        <motion.g variants={SCALE_VARIANTS} animate={controls}>
+          <path d="M219.31,72,184,36.69A15.86,15.86,0,0,0,172.69,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V83.31A15.86,15.86,0,0,0,219.31,72ZM168,208H88V152h80Zm40,0H184V152a16,16,0,0,0-16-16H88a16,16,0,0,0-16,16v56H48V48H172.69L208,83.31ZM160,72a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h56A8,8,0,0,1,160,72Z" />
+        </motion.g>
       </svg>
     </div>
   );

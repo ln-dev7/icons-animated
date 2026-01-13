@@ -16,13 +16,13 @@ interface PhosphorShareIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
 
-const SHARE_VARIANTS: Variants = {
+const NODE_VARIANTS: Variants = {
   normal: { scale: 1 },
   animate: {
-    scale: [1, 1.15, 1],
+    scale: [1, 1.2, 1],
     transition: {
-      duration: 0.6,
-      ease: [0.4, 0, 0.2, 1],
+      duration: 0.4,
+      ease: 'easeInOut',
     },
   },
 };
@@ -77,19 +77,11 @@ const PhosphorShareIcon = forwardRef<
         width={size}
         height={size}
         viewBox="0 0 256 256"
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="16"
+        fill="currentColor"
         style={{ overflow: 'visible' }}
       >
-        <motion.g variants={SHARE_VARIANTS} animate={controls}>
-          <circle cx="128" cy="64" r="32" />
-          <circle cx="64" cy="192" r="32" />
-          <circle cx="192" cy="192" r="32" />
-          <line x1="128" y1="96" x2="96" y2="160" />
-          <line x1="128" y1="96" x2="160" y2="160" />
+        <motion.g variants={NODE_VARIANTS} animate={controls}>
+          <path d="M176,160a39.89,39.89,0,0,0-28.62,12.09l-46.1-29.63a39.8,39.8,0,0,0,0-28.92l46.1-29.63a40,40,0,1,0-8.66-13.45l-46.1,29.63a40,40,0,1,0,0,55.82l46.1,29.63A40,40,0,1,0,176,160Zm0-128a24,24,0,1,1-24,24A24,24,0,0,1,176,32ZM64,152a24,24,0,1,1,24-24A24,24,0,0,1,64,152Zm112,72a24,24,0,1,1,24-24A24,24,0,0,1,176,224Z" />
         </motion.g>
       </svg>
     </div>

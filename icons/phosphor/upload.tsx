@@ -17,12 +17,24 @@ interface PhosphorUploadIconProps extends HTMLAttributes<HTMLDivElement> {
 }
 
 const ARROW_VARIANTS: Variants = {
-  normal: { y: 0 },
+  normal: { y: 0, opacity: 1 },
   animate: {
-    y: [0, -40, 0],
+    y: [0, -8, 0],
     transition: {
-      duration: 0.4,
+      duration: 0.6,
       ease: [0.4, 0, 0.2, 1],
+      times: [0, 0.5, 1],
+    },
+  },
+};
+
+const BAR_VARIANTS: Variants = {
+  normal: { scaleX: 1 },
+  animate: {
+    scaleX: [1, 0.95, 1],
+    transition: {
+      duration: 0.6,
+      ease: 'easeInOut',
     },
   },
 };
@@ -77,17 +89,14 @@ const PhosphorUploadIcon = forwardRef<
         width={size}
         height={size}
         viewBox="0 0 256 256"
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="16"
+        fill="currentColor"
         style={{ overflow: 'visible' }}
       >
-        <polyline points="216 112 216 176 40 176 40 112" />
+        <motion.g variants={BAR_VARIANTS} animate={controls}>
+          <path d="M224,144v64a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V144a8,8,0,0,1,16,0v56H208V144a8,8,0,0,1,16,0Z" />
+        </motion.g>
         <motion.g variants={ARROW_VARIANTS} animate={controls}>
-          <line x1="128" y1="176" x2="128" y2="32" />
-          <polyline points="88 72 128 32 168 72" />
+          <path d="M93.66,77.66,120,51.31V144a8,8,0,0,0,16,0V51.31l26.34,26.35a8,8,0,0,0,11.32-11.32l-40-40a8,8,0,0,0-11.32,0l-40,40A8,8,0,0,0,93.66,77.66Z" />
         </motion.g>
       </svg>
     </div>
