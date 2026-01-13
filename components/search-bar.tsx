@@ -2,8 +2,11 @@
 
 import { useEffect, useRef } from 'react';
 
+
+
 import { Kbd } from '@/components/ui/kbd';
 import { cn } from '@/lib/utils';
+
 
 type SearchBarProps = {
   value: string;
@@ -46,10 +49,10 @@ const SearchBar = ({
         className
       )}
     >
-      <div className="mx-auto w-full max-w-7xl border-neutral-200 px-4 py-3 xl:border-r xl:border-l dark:border-neutral-800">
+      <div className="mx-auto w-full max-w-7xl border-neutral-200 p-2 xl:border-r xl:border-l dark:border-neutral-800">
         <div className="relative flex items-center">
           <svg
-            className="text-secondary pointer-events-none absolute left-4 size-5"
+            className="text-secondary pointer-events-none absolute left-3 size-5"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="none"
@@ -68,13 +71,13 @@ const SearchBar = ({
             onChange={(e) => onChange(e.target.value)}
             placeholder="Search"
             className={cn(
-              'h-12 w-full rounded-lg border border-neutral-200 bg-white pr-20 pl-12 font-mono text-base transition-colors outline-none',
+              'h-10 w-full rounded-lg border border-neutral-200 bg-white pr-14 pl-10 font-mono text-sm transition-colors outline-none',
               'placeholder:text-secondary',
               'focus:border-primary focus:ring-primary/20 focus:ring-1',
               'dark:border-neutral-800 dark:bg-[#0A0A0A]'
             )}
           />
-          <div className="pointer-events-none absolute right-4 flex items-center gap-1">
+          <div className="pointer-events-none absolute right-2 flex items-center gap-1">
             {value ? (
               <span className="text-secondary font-mono text-sm">
                 {resultCount}/{totalCount}
