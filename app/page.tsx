@@ -60,6 +60,20 @@ const Home = () => {
         </a>
       </p>
       <CliBlock />
+      <p className="text-secondary mt-4 w-full max-w-[642px] px-4 font-mono text-xs min-[640px]:text-sm">
+        Discover{' '}
+        <a
+          href="https://square.lndev.me/"
+          target="_blank"
+          rel="noopener noreferrer"
+          tabIndex={0}
+          className="hover:decoration-primary focus-visible:outline-primary text-primary hover:underline hover:underline-offset-3 transition-[decoration-color] duration-100 focus-within:outline-offset-0 focus-visible:outline-1"
+        >
+          Square UI
+        </a>{' '}
+        - a collection of beautifully crafted open-source layouts UI built with
+        shadcn/ui.
+      </p>
       <IconsList />
     </section>
   );
