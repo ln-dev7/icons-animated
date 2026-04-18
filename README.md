@@ -9,7 +9,7 @@ Meticulously crafted animated icons.
 ## Links
 
 - **Demo** → [icons.lndev.me](https://icons.lndev.me)
-- **Sponsor** → [Support the project](https://ecaefmew.mychariow.shop/prd_3cu1s0)
+- **Sponsor** → [Support the project](https://lndev.mychariow.shop/prd_3cu1s0)
 - **Original project** → [lucide-animated.com](https://lucide-animated.com/)
 
 ## Icon Libraries

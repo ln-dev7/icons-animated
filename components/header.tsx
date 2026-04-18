@@ -74,7 +74,7 @@ const Header = () => {
         <div className="ml-auto flex w-full flex-1 flex-wrap-reverse items-center justify-end gap-2">
           <LibrarySelector />
           <a
-            href="https://ecaefmew.mychariow.shop/prd_3cu1s0"
+            href="https://lndev.mychariow.shop/prd_3cu1s0"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Sponsor Project"
