@@ -113,6 +113,7 @@ import { TablerCurrencyDollarIcon } from './currency-dollar';
 import { TablerDeviceCctvIcon } from './device-cctv';
 import { TablerDiscIcon } from './disc';
 import { TablerDownloadIcon } from './download';
+import { TablerDropletIcon } from './droplet';
 import { TablerEyeIcon } from './eye';
 import { TablerFilterIcon } from './filter';
 import { TablerGaugeIcon } from './gauge';
@@ -677,6 +678,7 @@ const TABLER_ICON_LIST = [
     icon: TablerDownloadIcon,
     keywords: ['download', 'save', 'arrow', 'get', 'export'],
   },
+  { name: 'droplet', icon: TablerDropletIcon, keywords: ['droplet'] },
   {
     name: 'eye',
     icon: TablerEyeIcon,
@@ -1045,6 +1047,7 @@ export {
   TablerDeviceCctvIcon,
   TablerDiscIcon,
   TablerDownloadIcon,
+  TablerDropletIcon,
   TablerEyeIcon,
   TablerFilterIcon,
   TablerGaugeIcon,

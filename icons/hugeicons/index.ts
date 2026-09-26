@@ -153,6 +153,7 @@ import { HugeiconsDiscordIcon } from './discord';
 import { HugeiconsDollarSignIcon } from './dollar-sign';
 import { HugeiconsDownloadIcon } from './download';
 import { HugeiconsDribbbleIcon } from './dribbble';
+import { HugeiconsDropletIcon } from './droplet';
 import { HugeiconsEyeIcon } from './eye';
 import { HugeiconsFilterIcon } from './filter';
 import { HugeiconsHeartIcon } from './heart';
@@ -915,6 +916,7 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['download', 'save', 'arrow', 'get', 'export', 'download-01'],
   },
   { name: 'dribbble', icon: HugeiconsDribbbleIcon, keywords: ['dribbble'] },
+  { name: 'droplet', icon: HugeiconsDropletIcon, keywords: ['droplet'] },
   {
     name: 'eye',
     icon: HugeiconsEyeIcon,
@@ -1245,6 +1247,7 @@ export {
   HugeiconsDollarSignIcon,
   HugeiconsDownloadIcon,
   HugeiconsDribbbleIcon,
+  HugeiconsDropletIcon,
   HugeiconsEyeIcon,
   HugeiconsFilterIcon,
   HugeiconsHeartIcon,

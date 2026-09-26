@@ -2019,6 +2019,19 @@
       ]
     },
     {
+      "name": "hugeicons-droplet",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-droplet.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-eye",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -3678,6 +3691,19 @@
       "files": [
         {
           "path": "phosphor-dribbble-logo.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-drop",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-drop.tsx",
           "type": "registry:ui"
         }
       ]
@@ -5758,6 +5784,19 @@
       "files": [
         {
           "path": "tabler-download.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-droplet",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-droplet.tsx",
           "type": "registry:ui"
         }
       ]
