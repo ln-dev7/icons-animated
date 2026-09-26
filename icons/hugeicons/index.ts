@@ -220,6 +220,7 @@ import { HugeiconsGitGraphIcon } from './git-graph';
 import { HugeiconsGitMergeIcon } from './git-merge';
 import { HugeiconsGitPullRequestIcon } from './git-pull-request';
 import { HugeiconsGitPullRequestClosedIcon } from './git-pull-request-closed';
+import { HugeiconsGitPullRequestCreateIcon } from './git-pull-request-create';
 import { HugeiconsHeartIcon } from './heart';
 import { HugeiconsHomeIcon } from './home';
 import { HugeiconsLockIcon } from './lock';
@@ -1264,6 +1265,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['git', 'pull', 'request', 'closed', 'git-pull-request-closed'],
   },
   {
+    name: 'git-pull-request-create',
+    icon: HugeiconsGitPullRequestCreateIcon,
+    keywords: ['git', 'pull', 'request', 'create', 'git-pull-request-create'],
+  },
+  {
     name: 'heart',
     icon: HugeiconsHeartIcon,
     keywords: ['heart', 'love', 'like', 'favorite', 'health'],
@@ -1650,6 +1656,7 @@ export {
   HugeiconsGitMergeIcon,
   HugeiconsGitPullRequestIcon,
   HugeiconsGitPullRequestClosedIcon,
+  HugeiconsGitPullRequestCreateIcon,
   HugeiconsHeartIcon,
   HugeiconsHomeIcon,
   HugeiconsLockIcon,

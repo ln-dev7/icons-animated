@@ -1363,6 +1363,15 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-git-pull-request-create',
+    'path': path.join(
+      __dirname,
+      '../icons/hugeicons/git-pull-request-create.tsx'
+    ),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-heart',
     'path': path.join(__dirname, '../icons/hugeicons/heart.tsx'),
     'registryDependencies': [],
