@@ -2331,6 +2331,19 @@
       ]
     },
     {
+      "name": "hugeicons-flask-conical",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-flask-conical.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-heart",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -4198,6 +4211,19 @@
       "files": [
         {
           "path": "phosphor-flame.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-flask",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-flask.tsx",
           "type": "registry:ui"
         }
       ]
@@ -6486,6 +6512,19 @@
       "files": [
         {
           "path": "tabler-flame.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-flask",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-flask.tsx",
           "type": "registry:ui"
         }
       ]

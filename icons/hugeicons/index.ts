@@ -177,6 +177,7 @@ import { HugeiconsFilterIcon } from './filter';
 import { HugeiconsFingerPrintIcon } from './finger-print';
 import { HugeiconsFishSymbolIcon } from './fish-symbol';
 import { HugeiconsFlameIcon } from './flame';
+import { HugeiconsFlaskConicalIcon } from './flask-conical';
 import { HugeiconsHeartIcon } from './heart';
 import { HugeiconsHomeIcon } from './home';
 import { HugeiconsLockIcon } from './lock';
@@ -1026,6 +1027,11 @@ const HUGEICONS_ICON_LIST = [
   },
   { name: 'flame', icon: HugeiconsFlameIcon, keywords: ['flame'] },
   {
+    name: 'flask-conical',
+    icon: HugeiconsFlaskConicalIcon,
+    keywords: ['flask', 'conical'],
+  },
+  {
     name: 'heart',
     icon: HugeiconsHeartIcon,
     keywords: ['heart', 'love', 'like', 'favorite', 'health'],
@@ -1369,6 +1375,7 @@ export {
   HugeiconsFingerPrintIcon,
   HugeiconsFishSymbolIcon,
   HugeiconsFlameIcon,
+  HugeiconsFlaskConicalIcon,
   HugeiconsHeartIcon,
   HugeiconsHomeIcon,
   HugeiconsLockIcon,

@@ -114,6 +114,7 @@ import { PhosphorFilmSlateIcon } from './film-slate';
 import { PhosphorFilterIcon } from './filter';
 import { PhosphorFingerprintIcon } from './fingerprint';
 import { PhosphorFlameIcon } from './flame';
+import { PhosphorFlaskIcon } from './flask';
 import { PhosphorGearIcon } from './gear';
 import { PhosphorGearFineIcon } from './gear-fine';
 import { PhosphorGlobeHemisphereWestIcon } from './globe-hemisphere-west';
@@ -741,6 +742,7 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['fingerprint'],
   },
   { name: 'flame', icon: PhosphorFlameIcon, keywords: ['flame'] },
+  { name: 'flask', icon: PhosphorFlaskIcon, keywords: ['flask'] },
   {
     name: 'gear',
     icon: PhosphorGearIcon,
@@ -1097,6 +1099,7 @@ export {
   PhosphorFilterIcon,
   PhosphorFingerprintIcon,
   PhosphorFlameIcon,
+  PhosphorFlaskIcon,
   PhosphorGearIcon,
   PhosphorGearFineIcon,
   PhosphorGlobeHemisphereWestIcon,
