@@ -10,6 +10,7 @@ import { PhosphorArrowFatDownIcon } from './arrow-fat-down';
 import { PhosphorArrowFatLeftIcon } from './arrow-fat-left';
 import { PhosphorArrowFatLineDownIcon } from './arrow-fat-line-down';
 import { PhosphorArrowFatLineLeftIcon } from './arrow-fat-line-left';
+import { PhosphorArrowFatLineRightIcon } from './arrow-fat-line-right';
 import { PhosphorArrowFatRightIcon } from './arrow-fat-right';
 import { PhosphorArrowLeftIcon } from './arrow-left';
 import { PhosphorArrowRightIcon } from './arrow-right';
@@ -106,6 +107,19 @@ const PHOSPHOR_ICON_LIST = [
       'line',
       'left',
       'arrow-big-left-dash',
+      'big',
+      'dash',
+    ],
+  },
+  {
+    name: 'arrow-fat-line-right',
+    icon: PhosphorArrowFatLineRightIcon,
+    keywords: [
+      'arrow',
+      'fat',
+      'line',
+      'right',
+      'arrow-big-right-dash',
       'big',
       'dash',
     ],
@@ -372,6 +386,7 @@ export {
   PhosphorArrowFatLeftIcon,
   PhosphorArrowFatLineDownIcon,
   PhosphorArrowFatLineLeftIcon,
+  PhosphorArrowFatLineRightIcon,
   PhosphorArrowFatRightIcon,
   PhosphorArrowLeftIcon,
   PhosphorArrowRightIcon,

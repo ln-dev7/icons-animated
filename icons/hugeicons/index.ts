@@ -16,6 +16,7 @@ import { HugeiconsAnnoyedIcon } from './annoyed';
 import { HugeiconsArchiveIcon } from './archive';
 import { HugeiconsArrowBigDownDashIcon } from './arrow-big-down-dash';
 import { HugeiconsArrowBigLeftDashIcon } from './arrow-big-left-dash';
+import { HugeiconsArrowBigRightDashIcon } from './arrow-big-right-dash';
 import { HugeiconsArrowDownIcon } from './arrow-down';
 import { HugeiconsArrowDownBigIcon } from './arrow-down-big';
 import { HugeiconsArrowLeftIcon } from './arrow-left';
@@ -126,6 +127,11 @@ const HUGEICONS_ICON_LIST = [
     name: 'arrow-big-left-dash',
     icon: HugeiconsArrowBigLeftDashIcon,
     keywords: ['arrow', 'big', 'left', 'dash', 'arrow-big-left-dash'],
+  },
+  {
+    name: 'arrow-big-right-dash',
+    icon: HugeiconsArrowBigRightDashIcon,
+    keywords: ['arrow', 'big', 'right', 'dash', 'arrow-big-right-dash'],
   },
   {
     name: 'arrow-down',
@@ -430,6 +436,7 @@ export {
   HugeiconsArchiveIcon,
   HugeiconsArrowBigDownDashIcon,
   HugeiconsArrowBigLeftDashIcon,
+  HugeiconsArrowBigRightDashIcon,
   HugeiconsArrowDownIcon,
   HugeiconsArrowDownBigIcon,
   HugeiconsArrowLeftIcon,
