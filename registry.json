@@ -4645,6 +4645,19 @@
       ]
     },
     {
+      "name": "hugeicons-rocket",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-rocket.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-save",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -7669,6 +7682,19 @@
       "files": [
         {
           "path": "phosphor-robot.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-rocket",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-rocket.tsx",
           "type": "registry:ui"
         }
       ]
@@ -11530,6 +11556,19 @@
       "files": [
         {
           "path": "tabler-robot.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-rocket",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-rocket.tsx",
           "type": "registry:ui"
         }
       ]

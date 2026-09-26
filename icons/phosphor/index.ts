@@ -214,6 +214,7 @@ import { PhosphorRadioIcon } from './radio';
 import { PhosphorReceiptIcon } from './receipt';
 import { PhosphorRefreshIcon } from './refresh';
 import { PhosphorRobotIcon } from './robot';
+import { PhosphorRocketIcon } from './rocket';
 import { PhosphorSaveIcon } from './save';
 import { PhosphorScreencastIcon } from './screencast';
 import { PhosphorSealPercentIcon } from './seal-percent';
@@ -1299,6 +1300,7 @@ const PHOSPHOR_ICON_LIST = [
     ],
   },
   { name: 'robot', icon: PhosphorRobotIcon, keywords: ['robot', 'bot'] },
+  { name: 'rocket', icon: PhosphorRocketIcon, keywords: ['rocket'] },
   {
     name: 'save',
     icon: PhosphorSaveIcon,
@@ -1705,6 +1707,7 @@ export {
   PhosphorReceiptIcon,
   PhosphorRefreshIcon,
   PhosphorRobotIcon,
+  PhosphorRocketIcon,
   PhosphorSaveIcon,
   PhosphorScreencastIcon,
   PhosphorSealPercentIcon,

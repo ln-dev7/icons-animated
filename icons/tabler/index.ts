@@ -262,6 +262,7 @@ import { TablerReceiptYenIcon } from './receipt-yen';
 import { TablerRefreshIcon } from './refresh';
 import { TablerRefreshDotIcon } from './refresh-dot';
 import { TablerRobotIcon } from './robot';
+import { TablerRocketIcon } from './rocket';
 import { TablerRosetteDiscountIcon } from './rosette-discount';
 import { TablerSaveIcon } from './save';
 import { TablerSchoolIcon } from './school';
@@ -1474,6 +1475,7 @@ const TABLER_ICON_LIST = [
     keywords: ['refresh', 'dot', 'refresh-ccw-dot', 'ccw'],
   },
   { name: 'robot', icon: TablerRobotIcon, keywords: ['robot', 'bot'] },
+  { name: 'rocket', icon: TablerRocketIcon, keywords: ['rocket'] },
   {
     name: 'rosette-discount',
     icon: TablerRosetteDiscountIcon,
@@ -1894,6 +1896,7 @@ export {
   TablerRefreshIcon,
   TablerRefreshDotIcon,
   TablerRobotIcon,
+  TablerRocketIcon,
   TablerRosetteDiscountIcon,
   TablerSaveIcon,
   TablerSchoolIcon,
