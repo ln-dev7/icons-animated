@@ -107,6 +107,7 @@ import { PhosphorEyeSlashIcon } from './eye-slash';
 import { PhosphorFacebookLogoIcon } from './facebook-logo';
 import { PhosphorFanIcon } from './fan';
 import { PhosphorFeatherIcon } from './feather';
+import { PhosphorFigmaLogoIcon } from './figma-logo';
 import { PhosphorFilmSlateIcon } from './film-slate';
 import { PhosphorFilterIcon } from './filter';
 import { PhosphorGearIcon } from './gear';
@@ -706,6 +707,11 @@ const PHOSPHOR_ICON_LIST = [
   { name: 'fan', icon: PhosphorFanIcon, keywords: ['fan'] },
   { name: 'feather', icon: PhosphorFeatherIcon, keywords: ['feather'] },
   {
+    name: 'figma-logo',
+    icon: PhosphorFigmaLogoIcon,
+    keywords: ['figma', 'logo'],
+  },
+  {
     name: 'film-slate',
     icon: PhosphorFilmSlateIcon,
     keywords: ['film', 'slate', 'clap'],
@@ -1064,6 +1070,7 @@ export {
   PhosphorFacebookLogoIcon,
   PhosphorFanIcon,
   PhosphorFeatherIcon,
+  PhosphorFigmaLogoIcon,
   PhosphorFilmSlateIcon,
   PhosphorFilterIcon,
   PhosphorGearIcon,

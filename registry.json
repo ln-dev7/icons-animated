@@ -2175,6 +2175,19 @@
       ]
     },
     {
+      "name": "hugeicons-figma",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-figma.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-filter",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -3969,6 +3982,19 @@
       ]
     },
     {
+      "name": "phosphor-figma-logo",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-figma-logo.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-film-slate",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -5329,6 +5355,19 @@
       "files": [
         {
           "path": "tabler-brand-facebook.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-brand-figma",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-brand-figma.tsx",
           "type": "registry:ui"
         }
       ]
