@@ -4294,6 +4294,19 @@
       ]
     },
     {
+      "name": "hugeicons-plane-takeoff",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-plane-takeoff.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-plus",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -4575,6 +4588,19 @@
       "files": [
         {
           "path": "phosphor-airplane-landing.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-airplane-takeoff",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-airplane-takeoff.tsx",
           "type": "registry:ui"
         }
       ]
@@ -10828,6 +10854,19 @@
       "files": [
         {
           "path": "tabler-plane-arrival.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-plane-departure",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-plane-departure.tsx",
           "type": "registry:ui"
         }
       ]

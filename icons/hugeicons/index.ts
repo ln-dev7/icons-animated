@@ -328,6 +328,7 @@ import { HugeiconsPhoneMissedIcon } from './phone-missed';
 import { HugeiconsPickaxeIcon } from './pickaxe';
 import { HugeiconsPieChartIcon } from './pie-chart';
 import { HugeiconsPlaneLandingIcon } from './plane-landing';
+import { HugeiconsPlaneTakeoffIcon } from './plane-takeoff';
 import { HugeiconsPlusIcon } from './plus';
 import { HugeiconsPulse01Icon } from './pulse-01';
 import { HugeiconsRefreshIcon } from './refresh';
@@ -1807,6 +1808,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['plane', 'landing', 'plane-landing'],
   },
   {
+    name: 'plane-takeoff',
+    icon: HugeiconsPlaneTakeoffIcon,
+    keywords: ['plane', 'takeoff', 'plane-takeoff'],
+  },
+  {
     name: 'plus',
     icon: HugeiconsPlusIcon,
     keywords: ['plus', 'add', 'new', 'create', 'increase'],
@@ -2254,6 +2260,7 @@ export {
   HugeiconsPickaxeIcon,
   HugeiconsPieChartIcon,
   HugeiconsPlaneLandingIcon,
+  HugeiconsPlaneTakeoffIcon,
   HugeiconsPlusIcon,
   HugeiconsPulse01Icon,
   HugeiconsRefreshIcon,
