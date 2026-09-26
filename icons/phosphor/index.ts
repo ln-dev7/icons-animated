@@ -24,6 +24,7 @@ import { PhosphorArrowUpRightIcon } from './arrow-up-right';
 import { PhosphorAtIcon } from './at';
 import { PhosphorAtomIcon } from './atom';
 import { PhosphorAxeIcon } from './axe';
+import { PhosphorBarricadeIcon } from './barricade';
 import { PhosphorBatteryChargingIcon } from './battery-charging';
 import { PhosphorBatteryEmptyIcon } from './battery-empty';
 import { PhosphorBatteryFullIcon } from './battery-full';
@@ -264,6 +265,11 @@ const PHOSPHOR_ICON_LIST = [
   { name: 'at', icon: PhosphorAtIcon, keywords: ['at', 'at-sign', 'sign'] },
   { name: 'atom', icon: PhosphorAtomIcon, keywords: ['atom'] },
   { name: 'axe', icon: PhosphorAxeIcon, keywords: ['axe'] },
+  {
+    name: 'barricade',
+    icon: PhosphorBarricadeIcon,
+    keywords: ['barricade', 'construction'],
+  },
   {
     name: 'battery-charging',
     icon: PhosphorBatteryChargingIcon,
@@ -805,6 +811,7 @@ export {
   PhosphorAtIcon,
   PhosphorAtomIcon,
   PhosphorAxeIcon,
+  PhosphorBarricadeIcon,
   PhosphorBatteryChargingIcon,
   PhosphorBatteryEmptyIcon,
   PhosphorBatteryFullIcon,

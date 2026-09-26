@@ -1746,6 +1746,19 @@
       ]
     },
     {
+      "name": "hugeicons-construction",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-construction.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-download",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2456,6 +2469,19 @@
       "files": [
         {
           "path": "phosphor-axe.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-barricade",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-barricade.tsx",
           "type": "registry:ui"
         }
       ]
@@ -4133,6 +4159,19 @@
       "files": [
         {
           "path": "tabler-banana.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-barrier-block",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-barrier-block.tsx",
           "type": "registry:ui"
         }
       ]
