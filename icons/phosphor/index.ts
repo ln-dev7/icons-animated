@@ -41,6 +41,7 @@ import { PhosphorBookmarkIcon } from './bookmark';
 import { PhosphorBrainIcon } from './brain';
 import { PhosphorBriefcaseIcon } from './briefcase';
 import { PhosphorCalendarIcon } from './calendar';
+import { PhosphorCalendarCheckIcon } from './calendar-check';
 import { PhosphorCheckIcon } from './check';
 import { PhosphorChevronDownIcon } from './chevron-down';
 import { PhosphorChevronLeftIcon } from './chevron-left';
@@ -292,6 +293,11 @@ const PHOSPHOR_ICON_LIST = [
     name: 'calendar',
     icon: PhosphorCalendarIcon,
     keywords: ['calendar', 'date', 'schedule', 'event', 'day'],
+  },
+  {
+    name: 'calendar-check',
+    icon: PhosphorCalendarCheckIcon,
+    keywords: ['calendar', 'check', 'calendar-check'],
   },
   {
     name: 'check',
@@ -613,6 +619,7 @@ export {
   PhosphorBrainIcon,
   PhosphorBriefcaseIcon,
   PhosphorCalendarIcon,
+  PhosphorCalendarCheckIcon,
   PhosphorCheckIcon,
   PhosphorChevronDownIcon,
   PhosphorChevronLeftIcon,
