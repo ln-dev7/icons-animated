@@ -36,6 +36,7 @@ import { PhosphorArrowUpLeftIcon } from './arrow-up-left';
 import { PhosphorArrowUpRightIcon } from './arrow-up-right';
 import { PhosphorArrowsClockwiseIcon } from './arrows-clockwise';
 import { PhosphorArrowsCounterClockwiseIcon } from './arrows-counter-clockwise';
+import { PhosphorArrowsInIcon } from './arrows-in';
 import { PhosphorArrowsOutIcon } from './arrows-out';
 import { PhosphorArrowsOutSimpleIcon } from './arrows-out-simple';
 import { PhosphorAtIcon } from './at';
@@ -493,6 +494,11 @@ const PHOSPHOR_ICON_LIST = [
       'refresh',
       'ccw',
     ],
+  },
+  {
+    name: 'arrows-in',
+    icon: PhosphorArrowsInIcon,
+    keywords: ['arrows', 'in', 'shrink'],
   },
   {
     name: 'arrows-out',
@@ -1575,6 +1581,7 @@ export {
   PhosphorArrowUpRightIcon,
   PhosphorArrowsClockwiseIcon,
   PhosphorArrowsCounterClockwiseIcon,
+  PhosphorArrowsInIcon,
   PhosphorArrowsOutIcon,
   PhosphorArrowsOutSimpleIcon,
   PhosphorAtIcon,
