@@ -60,6 +60,7 @@ import { TablerBrandDiscordIcon } from './brand-discord';
 import { TablerBrandDribbbleIcon } from './brand-dribbble';
 import { TablerBrandFacebookIcon } from './brand-facebook';
 import { TablerBrandFigmaIcon } from './brand-figma';
+import { TablerBrandGithubIcon } from './brand-github';
 import { TablerBriefcaseIcon } from './briefcase';
 import { TablerCalendarIcon } from './calendar';
 import { TablerCalendarCheckIcon } from './calendar-check';
@@ -449,6 +450,11 @@ const TABLER_ICON_LIST = [
     name: 'brand-figma',
     icon: TablerBrandFigmaIcon,
     keywords: ['brand', 'figma'],
+  },
+  {
+    name: 'brand-github',
+    icon: TablerBrandGithubIcon,
+    keywords: ['brand', 'github'],
   },
   {
     name: 'briefcase',
@@ -1224,6 +1230,7 @@ export {
   TablerBrandDribbbleIcon,
   TablerBrandFacebookIcon,
   TablerBrandFigmaIcon,
+  TablerBrandGithubIcon,
   TablerBriefcaseIcon,
   TablerCalendarIcon,
   TablerCalendarCheckIcon,

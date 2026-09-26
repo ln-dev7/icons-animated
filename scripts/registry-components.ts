@@ -1372,6 +1372,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-github',
+    'path': path.join(__dirname, '../icons/hugeicons/github.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-heart',
     'path': path.join(__dirname, '../icons/hugeicons/heart.tsx'),
     'registryDependencies': [],
@@ -2350,6 +2356,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'phosphor-github-logo',
+    'path': path.join(__dirname, '../icons/phosphor/github-logo.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'phosphor-globe-hemisphere-west',
     'path': path.join(__dirname, '../icons/phosphor/globe-hemisphere-west.tsx'),
     'registryDependencies': [],
@@ -2964,6 +2976,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-brand-figma',
     'path': path.join(__dirname, '../icons/tabler/brand-figma.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-brand-github',
+    'path': path.join(__dirname, '../icons/tabler/brand-github.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
