@@ -215,6 +215,7 @@ import { HugeiconsGitCommitHorizontalIcon } from './git-commit-horizontal';
 import { HugeiconsGitCommitVerticalIcon } from './git-commit-vertical';
 import { HugeiconsGitCompareIcon } from './git-compare';
 import { HugeiconsGitCompareArrowsIcon } from './git-compare-arrows';
+import { HugeiconsGitForkIcon } from './git-fork';
 import { HugeiconsHeartIcon } from './heart';
 import { HugeiconsHomeIcon } from './home';
 import { HugeiconsLockIcon } from './lock';
@@ -1234,6 +1235,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['git', 'compare', 'arrows', 'git-compare-arrows'],
   },
   {
+    name: 'git-fork',
+    icon: HugeiconsGitForkIcon,
+    keywords: ['git', 'fork', 'git-fork'],
+  },
+  {
     name: 'heart',
     icon: HugeiconsHeartIcon,
     keywords: ['heart', 'love', 'like', 'favorite', 'health'],
@@ -1615,6 +1621,7 @@ export {
   HugeiconsGitCommitVerticalIcon,
   HugeiconsGitCompareIcon,
   HugeiconsGitCompareArrowsIcon,
+  HugeiconsGitForkIcon,
   HugeiconsHeartIcon,
   HugeiconsHomeIcon,
   HugeiconsLockIcon,

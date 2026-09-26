@@ -153,6 +153,7 @@ import { TablerGavelIcon } from './gavel';
 import { TablerGitBranchIcon } from './git-branch';
 import { TablerGitCommitIcon } from './git-commit';
 import { TablerGitCompareIcon } from './git-compare';
+import { TablerGitForkIcon } from './git-fork';
 import { TablerHeartIcon } from './heart';
 import { TablerHelpCircleIcon } from './help-circle';
 import { TablerHomeIcon } from './home';
@@ -890,6 +891,11 @@ const TABLER_ICON_LIST = [
     keywords: ['git', 'compare', 'git-compare', 'git-compare-arrows', 'arrows'],
   },
   {
+    name: 'git-fork',
+    icon: TablerGitForkIcon,
+    keywords: ['git', 'fork', 'git-fork'],
+  },
+  {
     name: 'heart',
     icon: TablerHeartIcon,
     keywords: ['heart', 'love', 'like', 'favorite', 'health'],
@@ -1293,6 +1299,7 @@ export {
   TablerGitBranchIcon,
   TablerGitCommitIcon,
   TablerGitCompareIcon,
+  TablerGitForkIcon,
   TablerHeartIcon,
   TablerHelpCircleIcon,
   TablerHomeIcon,
