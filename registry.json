@@ -1070,6 +1070,19 @@
       ]
     },
     {
+      "name": "hugeicons-call-disabled",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-call-disabled.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-cast",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -7037,6 +7050,19 @@
       ]
     },
     {
+      "name": "phosphor-phone-slash",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-phone-slash.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-phone-transfer",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -10685,6 +10711,19 @@
       "files": [
         {
           "path": "tabler-phone-incoming.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-phone-off",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-phone-off.tsx",
           "type": "registry:ui"
         }
       ]

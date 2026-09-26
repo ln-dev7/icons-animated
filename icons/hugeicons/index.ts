@@ -80,6 +80,7 @@ import { HugeiconsCalendarCheckIcon } from './calendar-check';
 import { HugeiconsCalendarCheck01Icon } from './calendar-check-01';
 import { HugeiconsCalendarCogIcon } from './calendar-cog';
 import { HugeiconsCalendarDaysIcon } from './calendar-days';
+import { HugeiconsCallDisabledIcon } from './call-disabled';
 import { HugeiconsCastIcon } from './cast';
 import { HugeiconsCctvCameraIcon } from './cctv-camera';
 import { HugeiconsChartBarDecreasingIcon } from './chart-bar-decreasing';
@@ -713,6 +714,11 @@ const HUGEICONS_ICON_LIST = [
     name: 'calendar-days',
     icon: HugeiconsCalendarDaysIcon,
     keywords: ['calendar', 'days', 'calendar-days'],
+  },
+  {
+    name: 'call-disabled',
+    icon: HugeiconsCallDisabledIcon,
+    keywords: ['call', 'disabled', 'phone-off', 'phone', 'off'],
   },
   { name: 'cast', icon: HugeiconsCastIcon, keywords: ['cast'] },
   {
@@ -1992,6 +1998,7 @@ export {
   HugeiconsCalendarCheck01Icon,
   HugeiconsCalendarCogIcon,
   HugeiconsCalendarDaysIcon,
+  HugeiconsCallDisabledIcon,
   HugeiconsCastIcon,
   HugeiconsCctvCameraIcon,
   HugeiconsChartBarDecreasingIcon,
