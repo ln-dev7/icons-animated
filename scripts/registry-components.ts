@@ -1258,6 +1258,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-full-screen',
+    'path': path.join(__dirname, '../icons/hugeicons/full-screen.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-gallery-horizontal-end',
     'path': path.join(
       __dirname,
@@ -2472,6 +2478,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-copy',
     'path': path.join(__dirname, '../icons/phosphor/copy.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-corners-out',
+    'path': path.join(__dirname, '../icons/phosphor/corners-out.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -4425,6 +4437,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-map-pin-plus',
     'path': path.join(__dirname, '../icons/tabler/map-pin-plus.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-maximize',
+    'path': path.join(__dirname, '../icons/tabler/maximize.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

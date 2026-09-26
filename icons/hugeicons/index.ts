@@ -204,6 +204,7 @@ import { HugeiconsFolderXIcon } from './folder-x';
 import { HugeiconsFoldersIcon } from './folders';
 import { HugeiconsFrameIcon } from './frame';
 import { HugeiconsFrownIcon } from './frown';
+import { HugeiconsFullScreenIcon } from './full-screen';
 import { HugeiconsGalleryHorizontalEndIcon } from './gallery-horizontal-end';
 import { HugeiconsGalleryThumbnailsIcon } from './gallery-thumbnails';
 import { HugeiconsGalleryVerticalEndIcon } from './gallery-vertical-end';
@@ -1254,6 +1255,11 @@ const HUGEICONS_ICON_LIST = [
   { name: 'frame', icon: HugeiconsFrameIcon, keywords: ['frame'] },
   { name: 'frown', icon: HugeiconsFrownIcon, keywords: ['frown'] },
   {
+    name: 'full-screen',
+    icon: HugeiconsFullScreenIcon,
+    keywords: ['full', 'screen', 'maximize'],
+  },
+  {
     name: 'gallery-horizontal-end',
     icon: HugeiconsGalleryHorizontalEndIcon,
     keywords: ['gallery', 'horizontal', 'end', 'gallery-horizontal-end'],
@@ -1934,6 +1940,7 @@ export {
   HugeiconsFoldersIcon,
   HugeiconsFrameIcon,
   HugeiconsFrownIcon,
+  HugeiconsFullScreenIcon,
   HugeiconsGalleryHorizontalEndIcon,
   HugeiconsGalleryThumbnailsIcon,
   HugeiconsGalleryVerticalEndIcon,
