@@ -1954,6 +1954,19 @@
       ]
     },
     {
+      "name": "hugeicons-disc-3",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-disc-3.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-download",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -3548,6 +3561,19 @@
       "files": [
         {
           "path": "phosphor-cursor-click.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-disc",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-disc.tsx",
           "type": "registry:ui"
         }
       ]
@@ -5563,6 +5589,19 @@
       "files": [
         {
           "path": "tabler-device-cctv.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-disc",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-disc.tsx",
           "type": "registry:ui"
         }
       ]

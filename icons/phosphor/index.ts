@@ -91,6 +91,7 @@ import { PhosphorCreditCardIcon } from './credit-card';
 import { PhosphorCubeIcon } from './cube';
 import { PhosphorCurrencyCircleDollarIcon } from './currency-circle-dollar';
 import { PhosphorCursorClickIcon } from './cursor-click';
+import { PhosphorDiscIcon } from './disc';
 import { PhosphorDownloadIcon } from './download';
 import { PhosphorEnvelopeIcon } from './envelope';
 import { PhosphorEyeIcon } from './eye';
@@ -626,6 +627,7 @@ const PHOSPHOR_ICON_LIST = [
     icon: PhosphorCursorClickIcon,
     keywords: ['cursor', 'click', 'cursor-click'],
   },
+  { name: 'disc', icon: PhosphorDiscIcon, keywords: ['disc', 'disc-3', '3'] },
   {
     name: 'download',
     icon: PhosphorDownloadIcon,
@@ -974,6 +976,7 @@ export {
   PhosphorCubeIcon,
   PhosphorCurrencyCircleDollarIcon,
   PhosphorCursorClickIcon,
+  PhosphorDiscIcon,
   PhosphorDownloadIcon,
   PhosphorEnvelopeIcon,
   PhosphorEyeIcon,

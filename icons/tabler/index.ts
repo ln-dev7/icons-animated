@@ -108,6 +108,7 @@ import { TablerCpuIcon } from './cpu';
 import { TablerCreditCardIcon } from './credit-card';
 import { TablerCupIcon } from './cup';
 import { TablerDeviceCctvIcon } from './device-cctv';
+import { TablerDiscIcon } from './disc';
 import { TablerDownloadIcon } from './download';
 import { TablerEyeIcon } from './eye';
 import { TablerFilterIcon } from './filter';
@@ -651,6 +652,7 @@ const TABLER_ICON_LIST = [
     icon: TablerDeviceCctvIcon,
     keywords: ['device', 'cctv'],
   },
+  { name: 'disc', icon: TablerDiscIcon, keywords: ['disc', 'disc-3', '3'] },
   {
     name: 'download',
     icon: TablerDownloadIcon,
@@ -1014,6 +1016,7 @@ export {
   TablerCreditCardIcon,
   TablerCupIcon,
   TablerDeviceCctvIcon,
+  TablerDiscIcon,
   TablerDownloadIcon,
   TablerEyeIcon,
   TablerFilterIcon,

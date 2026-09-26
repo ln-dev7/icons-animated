@@ -922,6 +922,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-disc-3',
+    'path': path.join(__dirname, '../icons/hugeicons/disc-3.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-download',
     'path': path.join(__dirname, '../icons/hugeicons/download.tsx'),
     'registryDependencies': [],
@@ -1668,6 +1674,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-cursor-click',
     'path': path.join(__dirname, '../icons/phosphor/cursor-click.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-disc',
+    'path': path.join(__dirname, '../icons/phosphor/disc.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -2598,6 +2610,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-device-cctv',
     'path': path.join(__dirname, '../icons/tabler/device-cctv.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-disc',
+    'path': path.join(__dirname, '../icons/tabler/disc.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
