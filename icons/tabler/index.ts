@@ -52,6 +52,7 @@ import { TablerBookmarkMinusIcon } from './bookmark-minus';
 import { TablerBookmarkPlusIcon } from './bookmark-plus';
 import { TablerBoxIcon } from './box';
 import { TablerBrainIcon } from './brain';
+import { TablerBrandChromeIcon } from './brand-chrome';
 import { TablerBriefcaseIcon } from './briefcase';
 import { TablerCalendarIcon } from './calendar';
 import { TablerCalendarCheckIcon } from './calendar-check';
@@ -322,6 +323,11 @@ const TABLER_ICON_LIST = [
   },
   { name: 'box', icon: TablerBoxIcon, keywords: ['box'] },
   { name: 'brain', icon: TablerBrainIcon, keywords: ['brain'] },
+  {
+    name: 'brand-chrome',
+    icon: TablerBrandChromeIcon,
+    keywords: ['brand', 'chrome'],
+  },
   {
     name: 'briefcase',
     icon: TablerBriefcaseIcon,
@@ -752,6 +758,7 @@ export {
   TablerBookmarkPlusIcon,
   TablerBoxIcon,
   TablerBrainIcon,
+  TablerBrandChromeIcon,
   TablerBriefcaseIcon,
   TablerCalendarIcon,
   TablerCalendarCheckIcon,

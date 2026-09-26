@@ -61,6 +61,7 @@ import { PhosphorEnvelopeIcon } from './envelope';
 import { PhosphorEyeIcon } from './eye';
 import { PhosphorFilterIcon } from './filter';
 import { PhosphorGearIcon } from './gear';
+import { PhosphorGoogleChromeLogoIcon } from './google-chrome-logo';
 import { PhosphorHeartIcon } from './heart';
 import { PhosphorHouseIcon } from './house';
 import { PhosphorListIcon } from './list';
@@ -447,6 +448,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['settings', 'gear', 'cog', 'preferences', 'config'],
   },
   {
+    name: 'google-chrome-logo',
+    icon: PhosphorGoogleChromeLogoIcon,
+    keywords: ['google', 'chrome', 'logo'],
+  },
+  {
     name: 'heart',
     icon: PhosphorHeartIcon,
     keywords: ['heart', 'love', 'like', 'favorite', 'health'],
@@ -714,6 +720,7 @@ export {
   PhosphorEyeIcon,
   PhosphorFilterIcon,
   PhosphorGearIcon,
+  PhosphorGoogleChromeLogoIcon,
   PhosphorHeartIcon,
   PhosphorHouseIcon,
   PhosphorListIcon,

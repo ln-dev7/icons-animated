@@ -652,6 +652,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-chrome',
+    'path': path.join(__dirname, '../icons/hugeicons/chrome.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-download',
     'path': path.join(__dirname, '../icons/hugeicons/download.tsx'),
     'registryDependencies': [],
@@ -1201,6 +1207,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'phosphor-google-chrome-logo',
+    'path': path.join(__dirname, '../icons/phosphor/google-chrome-logo.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'phosphor-heart',
     'path': path.join(__dirname, '../icons/phosphor/heart.tsx'),
     'registryDependencies': [],
@@ -1731,6 +1743,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-brain',
     'path': path.join(__dirname, '../icons/tabler/brain.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-brand-chrome',
+    'path': path.join(__dirname, '../icons/tabler/brand-chrome.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

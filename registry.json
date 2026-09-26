@@ -1369,6 +1369,19 @@
       ]
     },
     {
+      "name": "hugeicons-chrome",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-chrome.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-download",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2552,6 +2565,19 @@
       ]
     },
     {
+      "name": "phosphor-google-chrome-logo",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-google-chrome-logo.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-heart",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -3704,6 +3730,19 @@
       "files": [
         {
           "path": "tabler-brain.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-brand-chrome",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-brand-chrome.tsx",
           "type": "registry:ui"
         }
       ]
