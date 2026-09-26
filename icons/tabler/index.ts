@@ -319,6 +319,7 @@ import { TablerSquaresIcon } from './squares';
 import { TablerStack2Icon } from './stack-2';
 import { TablerStarIcon } from './star';
 import { TablerStethoscopeIcon } from './stethoscope';
+import { TablerStopwatchIcon } from './stopwatch';
 import { TablerSunIcon } from './sun';
 import { TablerSunHighIcon } from './sun-high';
 import { TablerSunLowIcon } from './sun-low';
@@ -1819,6 +1820,11 @@ const TABLER_ICON_LIST = [
     icon: TablerStethoscopeIcon,
     keywords: ['stethoscope'],
   },
+  {
+    name: 'stopwatch',
+    icon: TablerStopwatchIcon,
+    keywords: ['stopwatch', 'timer'],
+  },
   { name: 'sun', icon: TablerSunIcon, keywords: ['sun'] },
   {
     name: 'sun-high',
@@ -2210,6 +2216,7 @@ export {
   TablerStack2Icon,
   TablerStarIcon,
   TablerStethoscopeIcon,
+  TablerStopwatchIcon,
   TablerSunIcon,
   TablerSunHighIcon,
   TablerSunLowIcon,

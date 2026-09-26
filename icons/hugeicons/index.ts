@@ -405,6 +405,7 @@ import { HugeiconsSquareStackIcon } from './square-stack';
 import { HugeiconsStampIcon } from './stamp';
 import { HugeiconsStarIcon } from './star';
 import { HugeiconsStethoscopeIcon } from './stethoscope';
+import { HugeiconsStopWatchIcon } from './stop-watch';
 import { HugeiconsSun03Icon } from './sun-03';
 import { HugeiconsSunCloud02Icon } from './sun-cloud-02';
 import { HugeiconsSunDimIcon } from './sun-dim';
@@ -2209,6 +2210,11 @@ const HUGEICONS_ICON_LIST = [
     icon: HugeiconsStethoscopeIcon,
     keywords: ['stethoscope'],
   },
+  {
+    name: 'stop-watch',
+    icon: HugeiconsStopWatchIcon,
+    keywords: ['stop', 'watch', 'timer'],
+  },
   { name: 'sun-03', icon: HugeiconsSun03Icon, keywords: ['sun', '03'] },
   {
     name: 'sun-cloud-02',
@@ -2719,6 +2725,7 @@ export {
   HugeiconsStampIcon,
   HugeiconsStarIcon,
   HugeiconsStethoscopeIcon,
+  HugeiconsStopWatchIcon,
   HugeiconsSun03Icon,
   HugeiconsSunCloud02Icon,
   HugeiconsSunDimIcon,

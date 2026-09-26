@@ -5295,6 +5295,19 @@
       ]
     },
     {
+      "name": "hugeicons-stop-watch",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-stop-watch.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-sun-03",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -9164,6 +9177,19 @@
       "files": [
         {
           "path": "phosphor-ticket.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-timer",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-timer.tsx",
           "type": "registry:ui"
         }
       ]
@@ -13415,6 +13441,19 @@
       "files": [
         {
           "path": "tabler-stethoscope.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-stopwatch",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-stopwatch.tsx",
           "type": "registry:ui"
         }
       ]
