@@ -1048,6 +1048,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-file-cog',
+    'path': path.join(__dirname, '../icons/hugeicons/file-cog.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-filter',
     'path': path.join(__dirname, '../icons/hugeicons/filter.tsx'),
     'registryDependencies': [],
@@ -2910,6 +2916,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-file-check',
     'path': path.join(__dirname, '../icons/tabler/file-check.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-file-settings',
+    'path': path.join(__dirname, '../icons/tabler/file-settings.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

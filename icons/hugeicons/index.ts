@@ -169,6 +169,7 @@ import { HugeiconsFigmaIcon } from './figma';
 import { HugeiconsFileChartLineIcon } from './file-chart-line';
 import { HugeiconsFileCheckIcon } from './file-check';
 import { HugeiconsFileCheckCornerIcon } from './file-check-corner';
+import { HugeiconsFileCogIcon } from './file-cog';
 import { HugeiconsFilterIcon } from './filter';
 import { HugeiconsHeartIcon } from './heart';
 import { HugeiconsHomeIcon } from './home';
@@ -983,6 +984,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['file', 'check', 'corner', 'file-check-2', '2'],
   },
   {
+    name: 'file-cog',
+    icon: HugeiconsFileCogIcon,
+    keywords: ['file', 'cog', 'file-cog'],
+  },
+  {
     name: 'filter',
     icon: HugeiconsFilterIcon,
     keywords: ['filter', 'sort', 'funnel', 'refine', 'search'],
@@ -1323,6 +1329,7 @@ export {
   HugeiconsFileChartLineIcon,
   HugeiconsFileCheckIcon,
   HugeiconsFileCheckCornerIcon,
+  HugeiconsFileCogIcon,
   HugeiconsFilterIcon,
   HugeiconsHeartIcon,
   HugeiconsHomeIcon,

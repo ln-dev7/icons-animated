@@ -2227,6 +2227,19 @@
       ]
     },
     {
+      "name": "hugeicons-file-cog",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-file-cog.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-filter",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -6239,6 +6252,19 @@
       "files": [
         {
           "path": "tabler-file-check.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-file-settings",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-file-settings.tsx",
           "type": "registry:ui"
         }
       ]
