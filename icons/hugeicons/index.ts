@@ -10,6 +10,7 @@ import { HugeiconsAlarmClockPlusIcon } from './alarm-clock-plus';
 import { HugeiconsAlarmSmokeIcon } from './alarm-smoke';
 import { HugeiconsAlignHorizontalSpaceAroundIcon } from './align-horizontal-space-around';
 import { HugeiconsAlignVerticalSpaceAroundIcon } from './align-vertical-space-around';
+import { HugeiconsAmbulanceIcon } from './ambulance';
 import { HugeiconsArrowDownIcon } from './arrow-down';
 import { HugeiconsArrowLeftIcon } from './arrow-left';
 import { HugeiconsArrowRightIcon } from './arrow-right';
@@ -104,6 +105,7 @@ const HUGEICONS_ICON_LIST = [
     icon: HugeiconsAlignVerticalSpaceAroundIcon,
     keywords: ['align', 'vertical', 'space', 'around', 'align-vertical'],
   },
+  { name: 'ambulance', icon: HugeiconsAmbulanceIcon, keywords: ['ambulance'] },
   {
     name: 'arrow-down',
     icon: HugeiconsArrowDownIcon,
@@ -386,6 +388,7 @@ export {
   HugeiconsAlarmSmokeIcon,
   HugeiconsAlignHorizontalSpaceAroundIcon,
   HugeiconsAlignVerticalSpaceAroundIcon,
+  HugeiconsAmbulanceIcon,
   HugeiconsArrowDownIcon,
   HugeiconsArrowLeftIcon,
   HugeiconsArrowRightIcon,

@@ -3,6 +3,7 @@ import { PhosphorAirplayIcon } from './airplay';
 import { PhosphorAlarmIcon } from './alarm';
 import { PhosphorAlignCenterHorizontalIcon } from './align-center-horizontal';
 import { PhosphorAlignCenterVerticalIcon } from './align-center-vertical';
+import { PhosphorAmbulanceIcon } from './ambulance';
 import { PhosphorArrowDownIcon } from './arrow-down';
 import { PhosphorArrowLeftIcon } from './arrow-left';
 import { PhosphorArrowRightIcon } from './arrow-right';
@@ -58,6 +59,7 @@ const PHOSPHOR_ICON_LIST = [
     icon: PhosphorAlignCenterVerticalIcon,
     keywords: ['align', 'center', 'vertical', 'align-vertical'],
   },
+  { name: 'ambulance', icon: PhosphorAmbulanceIcon, keywords: ['ambulance'] },
   {
     name: 'arrow-down',
     icon: PhosphorArrowDownIcon,
@@ -303,6 +305,7 @@ export {
   PhosphorAlarmIcon,
   PhosphorAlignCenterHorizontalIcon,
   PhosphorAlignCenterVerticalIcon,
+  PhosphorAmbulanceIcon,
   PhosphorArrowDownIcon,
   PhosphorArrowLeftIcon,
   PhosphorArrowRightIcon,
