@@ -52,6 +52,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-alarm-clock-plus',
+    'path': path.join(__dirname, '../icons/hugeicons/alarm-clock-plus.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-arrow-down',
     'path': path.join(__dirname, '../icons/hugeicons/arrow-down.tsx'),
     'registryDependencies': [],
@@ -492,6 +498,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-alarm-minus',
     'path': path.join(__dirname, '../icons/tabler/alarm-minus.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-alarm-plus',
+    'path': path.join(__dirname, '../icons/tabler/alarm-plus.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
