@@ -2833,6 +2833,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-wifi-low',
+    'path': path.join(__dirname, '../icons/hugeicons/wifi-low.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-x',
     'path': path.join(__dirname, '../icons/hugeicons/x.tsx'),
     'registryDependencies': [],
@@ -4680,6 +4686,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-wifi-high',
     'path': path.join(__dirname, '../icons/phosphor/wifi-high.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-wifi-low',
+    'path': path.join(__dirname, '../icons/phosphor/wifi-low.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -6870,6 +6882,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-wifi',
     'path': path.join(__dirname, '../icons/tabler/wifi.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-wifi-1',
+    'path': path.join(__dirname, '../icons/tabler/wifi-1.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
