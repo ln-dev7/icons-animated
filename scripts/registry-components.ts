@@ -22,6 +22,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-airplane-01',
+    'path': path.join(__dirname, '../icons/hugeicons/airplane-01.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-arrow-down',
     'path': path.join(__dirname, '../icons/hugeicons/arrow-down.tsx'),
     'registryDependencies': [],
@@ -216,6 +222,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'hugeicons-x',
     'path': path.join(__dirname, '../icons/hugeicons/x.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-airplane',
+    'path': path.join(__dirname, '../icons/phosphor/airplane.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -552,6 +564,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-pencil',
     'path': path.join(__dirname, '../icons/tabler/pencil.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-plane',
+    'path': path.join(__dirname, '../icons/tabler/plane.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

@@ -1,3 +1,4 @@
+import { PhosphorAirplaneIcon } from './airplane';
 import { PhosphorArrowDownIcon } from './arrow-down';
 import { PhosphorArrowLeftIcon } from './arrow-left';
 import { PhosphorArrowRightIcon } from './arrow-right';
@@ -33,6 +34,7 @@ import { PhosphorUserIcon } from './user';
 import { PhosphorXIcon } from './x';
 
 const PHOSPHOR_ICON_LIST = [
+  { name: 'airplane', icon: PhosphorAirplaneIcon, keywords: ['airplane'] },
   {
     name: 'arrow-down',
     icon: PhosphorArrowDownIcon,
@@ -198,6 +200,7 @@ const PHOSPHOR_ICON_LIST = [
 
 export {
   PHOSPHOR_ICON_LIST,
+  PhosphorAirplaneIcon,
   PhosphorArrowDownIcon,
   PhosphorArrowLeftIcon,
   PhosphorArrowRightIcon,

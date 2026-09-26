@@ -1,6 +1,7 @@
 import { HugeiconsAArrowDownIcon } from './a-arrow-down';
 import { HugeiconsAArrowUpIcon } from './a-arrow-up';
 import { HugeiconsAirVentIcon } from './air-vent';
+import { HugeiconsAirplane01Icon } from './airplane-01';
 import { HugeiconsArrowDownIcon } from './arrow-down';
 import { HugeiconsArrowLeftIcon } from './arrow-left';
 import { HugeiconsArrowRightIcon } from './arrow-right';
@@ -50,6 +51,11 @@ const HUGEICONS_ICON_LIST = [
     name: 'air-vent',
     icon: HugeiconsAirVentIcon,
     keywords: ['air', 'vent', 'air-vent'],
+  },
+  {
+    name: 'airplane-01',
+    icon: HugeiconsAirplane01Icon,
+    keywords: ['airplane', '01'],
   },
   {
     name: 'arrow-down',
@@ -223,6 +229,7 @@ export {
   HugeiconsAArrowDownIcon,
   HugeiconsAArrowUpIcon,
   HugeiconsAirVentIcon,
+  HugeiconsAirplane01Icon,
   HugeiconsArrowDownIcon,
   HugeiconsArrowLeftIcon,
   HugeiconsArrowRightIcon,

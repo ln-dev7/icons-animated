@@ -43,6 +43,19 @@
       ]
     },
     {
+      "name": "hugeicons-airplane-01",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-airplane-01.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-arrow-down",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -467,6 +480,19 @@
       "files": [
         {
           "path": "hugeicons-x.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-airplane",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-airplane.tsx",
           "type": "registry:ui"
         }
       ]
@@ -1195,6 +1221,19 @@
       "files": [
         {
           "path": "tabler-pencil.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-plane",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-plane.tsx",
           "type": "registry:ui"
         }
       ]

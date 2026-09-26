@@ -21,6 +21,7 @@ import { TablerLockIcon } from './lock';
 import { TablerMailIcon } from './mail';
 import { TablerMenuIcon } from './menu';
 import { TablerPencilIcon } from './pencil';
+import { TablerPlaneIcon } from './plane';
 import { TablerPlusIcon } from './plus';
 import { TablerRefreshIcon } from './refresh';
 import { TablerSaveIcon } from './save';
@@ -145,6 +146,7 @@ const TABLER_ICON_LIST = [
     icon: TablerPencilIcon,
     keywords: ['pencil', 'edit', 'write', 'pen', 'modify'],
   },
+  { name: 'plane', icon: TablerPlaneIcon, keywords: ['plane', 'airplane'] },
   {
     name: 'plus',
     icon: TablerPlusIcon,
@@ -227,6 +229,7 @@ export {
   TablerMailIcon,
   TablerMenuIcon,
   TablerPencilIcon,
+  TablerPlaneIcon,
   TablerPlusIcon,
   TablerRefreshIcon,
   TablerSaveIcon,
