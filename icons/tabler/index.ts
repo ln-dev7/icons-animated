@@ -26,6 +26,7 @@ import { TablerArrowRightIcon } from './arrow-right';
 import { TablerArrowUpIcon } from './arrow-up';
 import { TablerArrowUpLeftIcon } from './arrow-up-left';
 import { TablerArrowUpRightIcon } from './arrow-up-right';
+import { TablerAtIcon } from './at';
 import { TablerBellIcon } from './bell';
 import { TablerCalendarIcon } from './calendar';
 import { TablerCheckIcon } from './check';
@@ -200,6 +201,7 @@ const TABLER_ICON_LIST = [
     icon: TablerArrowUpRightIcon,
     keywords: ['arrow', 'up', 'right', 'arrow-up-right'],
   },
+  { name: 'at', icon: TablerAtIcon, keywords: ['at', 'at-sign', 'sign'] },
   {
     name: 'bell',
     icon: TablerBellIcon,
@@ -492,6 +494,7 @@ export {
   TablerArrowUpIcon,
   TablerArrowUpLeftIcon,
   TablerArrowUpRightIcon,
+  TablerAtIcon,
   TablerBellIcon,
   TablerCalendarIcon,
   TablerCheckIcon,
