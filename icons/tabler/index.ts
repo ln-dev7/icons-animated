@@ -131,6 +131,7 @@ import { TablerFileTextIcon } from './file-text';
 import { TablerFilterIcon } from './filter';
 import { TablerFingerprintIcon } from './fingerprint';
 import { TablerFishChristianityIcon } from './fish-christianity';
+import { TablerFlameIcon } from './flame';
 import { TablerGaugeIcon } from './gauge';
 import { TablerHeartIcon } from './heart';
 import { TablerHelpCircleIcon } from './help-circle';
@@ -777,6 +778,7 @@ const TABLER_ICON_LIST = [
     icon: TablerFishChristianityIcon,
     keywords: ['fish', 'christianity', 'fish-symbol', 'symbol'],
   },
+  { name: 'flame', icon: TablerFlameIcon, keywords: ['flame'] },
   {
     name: 'gauge',
     icon: TablerGaugeIcon,
@@ -1159,6 +1161,7 @@ export {
   TablerFilterIcon,
   TablerFingerprintIcon,
   TablerFishChristianityIcon,
+  TablerFlameIcon,
   TablerGaugeIcon,
   TablerHeartIcon,
   TablerHelpCircleIcon,

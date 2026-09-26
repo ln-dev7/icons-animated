@@ -2318,6 +2318,19 @@
       ]
     },
     {
+      "name": "hugeicons-flame",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-flame.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-heart",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -4172,6 +4185,19 @@
       "files": [
         {
           "path": "phosphor-fingerprint.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-flame",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-flame.tsx",
           "type": "registry:ui"
         }
       ]
@@ -6447,6 +6473,19 @@
       "files": [
         {
           "path": "tabler-fish-christianity.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-flame",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-flame.tsx",
           "type": "registry:ui"
         }
       ]
