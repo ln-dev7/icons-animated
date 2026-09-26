@@ -108,6 +108,7 @@ import { TablerCornerUpRightIcon } from './corner-up-right';
 import { TablerCpuIcon } from './cpu';
 import { TablerCreditCardIcon } from './credit-card';
 import { TablerCupIcon } from './cup';
+import { TablerCurrencyDollarIcon } from './currency-dollar';
 import { TablerDeviceCctvIcon } from './device-cctv';
 import { TablerDiscIcon } from './disc';
 import { TablerDownloadIcon } from './download';
@@ -654,6 +655,11 @@ const TABLER_ICON_LIST = [
   },
   { name: 'cup', icon: TablerCupIcon, keywords: ['cup', 'cup-soda', 'soda'] },
   {
+    name: 'currency-dollar',
+    icon: TablerCurrencyDollarIcon,
+    keywords: ['currency', 'dollar', 'dollar-sign', 'sign'],
+  },
+  {
     name: 'device-cctv',
     icon: TablerDeviceCctvIcon,
     keywords: ['device', 'cctv'],
@@ -1022,6 +1028,7 @@ export {
   TablerCpuIcon,
   TablerCreditCardIcon,
   TablerCupIcon,
+  TablerCurrencyDollarIcon,
   TablerDeviceCctvIcon,
   TablerDiscIcon,
   TablerDownloadIcon,

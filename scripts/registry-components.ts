@@ -934,6 +934,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-dollar-sign',
+    'path': path.join(__dirname, '../icons/hugeicons/dollar-sign.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-download',
     'path': path.join(__dirname, '../icons/hugeicons/download.tsx'),
     'registryDependencies': [],
@@ -1674,6 +1680,12 @@ export const components: ComponentDefinition[] = [
       __dirname,
       '../icons/phosphor/currency-circle-dollar.tsx'
     ),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-currency-dollar',
+    'path': path.join(__dirname, '../icons/phosphor/currency-dollar.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -2622,6 +2634,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-cup',
     'path': path.join(__dirname, '../icons/tabler/cup.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-currency-dollar',
+    'path': path.join(__dirname, '../icons/tabler/currency-dollar.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

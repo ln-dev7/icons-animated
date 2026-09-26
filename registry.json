@@ -1980,6 +1980,19 @@
       ]
     },
     {
+      "name": "hugeicons-dollar-sign",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-dollar-sign.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-download",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -3561,6 +3574,19 @@
       "files": [
         {
           "path": "phosphor-currency-circle-dollar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-currency-dollar",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-currency-dollar.tsx",
           "type": "registry:ui"
         }
       ]
@@ -5615,6 +5641,19 @@
       "files": [
         {
           "path": "tabler-cup.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-currency-dollar",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-currency-dollar.tsx",
           "type": "registry:ui"
         }
       ]
