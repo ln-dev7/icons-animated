@@ -199,6 +199,19 @@
       ]
     },
     {
+      "name": "hugeicons-archive",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-archive.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-arrow-down",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -740,6 +753,19 @@
       "files": [
         {
           "path": "phosphor-ambulance.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-archive",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-archive.tsx",
           "type": "registry:ui"
         }
       ]
@@ -1377,6 +1403,19 @@
       "files": [
         {
           "path": "tabler-ambulance.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-archive",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-archive.tsx",
           "type": "registry:ui"
         }
       ]

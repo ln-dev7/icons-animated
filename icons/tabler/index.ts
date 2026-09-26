@@ -9,6 +9,7 @@ import { TablerAlignCenterIcon } from './align-center';
 import { TablerAlignLeftIcon } from './align-left';
 import { TablerAlignRightIcon } from './align-right';
 import { TablerAmbulanceIcon } from './ambulance';
+import { TablerArchiveIcon } from './archive';
 import { TablerArrowDownIcon } from './arrow-down';
 import { TablerArrowLeftIcon } from './arrow-left';
 import { TablerArrowRightIcon } from './arrow-right';
@@ -94,6 +95,7 @@ const TABLER_ICON_LIST = [
     keywords: ['align', 'right', 'align-right'],
   },
   { name: 'ambulance', icon: TablerAmbulanceIcon, keywords: ['ambulance'] },
+  { name: 'archive', icon: TablerArchiveIcon, keywords: ['archive'] },
   {
     name: 'arrow-down',
     icon: TablerArrowDownIcon,
@@ -341,6 +343,7 @@ export {
   TablerAlignLeftIcon,
   TablerAlignRightIcon,
   TablerAmbulanceIcon,
+  TablerArchiveIcon,
   TablerArrowDownIcon,
   TablerArrowLeftIcon,
   TablerArrowRightIcon,

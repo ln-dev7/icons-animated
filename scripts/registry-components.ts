@@ -100,6 +100,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-archive',
+    'path': path.join(__dirname, '../icons/hugeicons/archive.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-arrow-down',
     'path': path.join(__dirname, '../icons/hugeicons/arrow-down.tsx'),
     'registryDependencies': [],
@@ -351,6 +357,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-ambulance',
     'path': path.join(__dirname, '../icons/phosphor/ambulance.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-archive',
+    'path': path.join(__dirname, '../icons/phosphor/archive.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -645,6 +657,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-ambulance',
     'path': path.join(__dirname, '../icons/tabler/ambulance.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-archive',
+    'path': path.join(__dirname, '../icons/tabler/archive.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
