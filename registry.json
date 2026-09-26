@@ -3319,6 +3319,19 @@
       ]
     },
     {
+      "name": "hugeicons-languages",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-languages.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-lock",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -6153,6 +6166,19 @@
       ]
     },
     {
+      "name": "phosphor-translate",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-translate.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-trash",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -8566,6 +8592,19 @@
       "files": [
         {
           "path": "tabler-keyboard.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-language",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-language.tsx",
           "type": "registry:ui"
         }
       ]
