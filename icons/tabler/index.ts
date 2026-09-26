@@ -226,6 +226,7 @@ import { TablerThumbDownIcon } from './thumb-down';
 import { TablerTrashIcon } from './trash';
 import { TablerUploadIcon } from './upload';
 import { TablerUserIcon } from './user';
+import { TablerWindmillIcon } from './windmill';
 import { TablerWorldIcon } from './world';
 import { TablerXIcon } from './x';
 
@@ -1292,6 +1293,11 @@ const TABLER_ICON_LIST = [
     icon: TablerUserIcon,
     keywords: ['user', 'person', 'profile', 'account', 'avatar'],
   },
+  {
+    name: 'windmill',
+    icon: TablerWindmillIcon,
+    keywords: ['windmill', 'loader-pinwheel', 'loader', 'pinwheel'],
+  },
   { name: 'world', icon: TablerWorldIcon, keywords: ['world', 'earth'] },
   {
     name: 'x',
@@ -1530,6 +1536,7 @@ export {
   TablerTrashIcon,
   TablerUploadIcon,
   TablerUserIcon,
+  TablerWindmillIcon,
   TablerWorldIcon,
   TablerXIcon,
 };

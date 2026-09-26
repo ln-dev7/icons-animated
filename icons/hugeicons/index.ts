@@ -266,6 +266,7 @@ import { HugeiconsLink04Icon } from './link-04';
 import { HugeiconsLinkedin02Icon } from './linkedin-02';
 import { HugeiconsLoaderIcon } from './loader';
 import { HugeiconsLoaderCircleIcon } from './loader-circle';
+import { HugeiconsLoaderPinwheelIcon } from './loader-pinwheel';
 import { HugeiconsLockIcon } from './lock';
 import { HugeiconsMailIcon } from './mail';
 import { HugeiconsMenuIcon } from './menu';
@@ -1470,6 +1471,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['loader', 'circle', 'loader-circle'],
   },
   {
+    name: 'loader-pinwheel',
+    icon: HugeiconsLoaderPinwheelIcon,
+    keywords: ['loader', 'pinwheel', 'loader-pinwheel'],
+  },
+  {
     name: 'lock',
     icon: HugeiconsLockIcon,
     keywords: [
@@ -1892,6 +1898,7 @@ export {
   HugeiconsLinkedin02Icon,
   HugeiconsLoaderIcon,
   HugeiconsLoaderCircleIcon,
+  HugeiconsLoaderPinwheelIcon,
   HugeiconsLockIcon,
   HugeiconsMailIcon,
   HugeiconsMenuIcon,
