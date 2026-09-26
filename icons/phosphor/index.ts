@@ -159,6 +159,7 @@ import { PhosphorKeyIcon } from './key';
 import { PhosphorKeyboardIcon } from './keyboard';
 import { PhosphorLayoutIcon } from './layout';
 import { PhosphorLeafIcon } from './leaf';
+import { PhosphorLinkIcon } from './link';
 import { PhosphorListIcon } from './list';
 import { PhosphorLockIcon } from './lock';
 import { PhosphorNotebookIcon } from './notebook';
@@ -991,6 +992,7 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['layout', 'layout-panel-top', 'panel', 'top'],
   },
   { name: 'leaf', icon: PhosphorLeafIcon, keywords: ['leaf'] },
+  { name: 'link', icon: PhosphorLinkIcon, keywords: ['link'] },
   {
     name: 'list',
     icon: PhosphorListIcon,
@@ -1383,6 +1385,7 @@ export {
   PhosphorKeyboardIcon,
   PhosphorLayoutIcon,
   PhosphorLeafIcon,
+  PhosphorLinkIcon,
   PhosphorListIcon,
   PhosphorLockIcon,
   PhosphorNotebookIcon,

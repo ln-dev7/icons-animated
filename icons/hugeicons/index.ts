@@ -261,6 +261,7 @@ import { HugeiconsLayoutGridIcon } from './layout-grid';
 import { HugeiconsLayoutPanelTopIcon } from './layout-panel-top';
 import { HugeiconsLeaf01Icon } from './leaf-01';
 import { HugeiconsLeafyGreenIcon } from './leafy-green';
+import { HugeiconsLink04Icon } from './link-04';
 import { HugeiconsLockIcon } from './lock';
 import { HugeiconsMailIcon } from './mail';
 import { HugeiconsMenuIcon } from './menu';
@@ -1451,6 +1452,7 @@ const HUGEICONS_ICON_LIST = [
     icon: HugeiconsLeafyGreenIcon,
     keywords: ['leafy', 'green', 'leafy-green'],
   },
+  { name: 'link-04', icon: HugeiconsLink04Icon, keywords: ['link', '04'] },
   {
     name: 'lock',
     icon: HugeiconsLockIcon,
@@ -1869,6 +1871,7 @@ export {
   HugeiconsLayoutPanelTopIcon,
   HugeiconsLeaf01Icon,
   HugeiconsLeafyGreenIcon,
+  HugeiconsLink04Icon,
   HugeiconsLockIcon,
   HugeiconsMailIcon,
   HugeiconsMenuIcon,
