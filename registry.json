@@ -1616,6 +1616,19 @@
       ]
     },
     {
+      "name": "hugeicons-cloud-rain",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-cloud-rain.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-download",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2859,6 +2872,19 @@
       "files": [
         {
           "path": "phosphor-cloud-lightning.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-cloud-rain",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-cloud-rain.tsx",
           "type": "registry:ui"
         }
       ]
@@ -4562,6 +4588,19 @@
       "files": [
         {
           "path": "tabler-cloud-download.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-cloud-rain",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-cloud-rain.tsx",
           "type": "registry:ui"
         }
       ]

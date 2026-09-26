@@ -84,6 +84,7 @@ import { TablerClipboardCheckIcon } from './clipboard-check';
 import { TablerClockIcon } from './clock';
 import { TablerCloudCogIcon } from './cloud-cog';
 import { TablerCloudDownloadIcon } from './cloud-download';
+import { TablerCloudRainIcon } from './cloud-rain';
 import { TablerCloudStormIcon } from './cloud-storm';
 import { TablerCoinIcon } from './coin';
 import { TablerDeviceCctvIcon } from './device-cctv';
@@ -534,6 +535,11 @@ const TABLER_ICON_LIST = [
     keywords: ['cloud', 'download', 'cloud-download'],
   },
   {
+    name: 'cloud-rain',
+    icon: TablerCloudRainIcon,
+    keywords: ['cloud', 'rain', 'cloud-rain'],
+  },
+  {
     name: 'cloud-storm',
     icon: TablerCloudStormIcon,
     keywords: ['cloud', 'storm', 'cloud-lightning', 'lightning'],
@@ -882,6 +888,7 @@ export {
   TablerClockIcon,
   TablerCloudCogIcon,
   TablerCloudDownloadIcon,
+  TablerCloudRainIcon,
   TablerCloudStormIcon,
   TablerCoinIcon,
   TablerDeviceCctvIcon,
