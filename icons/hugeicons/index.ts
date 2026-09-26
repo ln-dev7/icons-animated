@@ -421,6 +421,7 @@ import { HugeiconsTextAlignLeftIcon } from './text-align-left';
 import { HugeiconsTextAlignRightIcon } from './text-align-right';
 import { HugeiconsThermometerIcon } from './thermometer';
 import { HugeiconsThumbsDownIcon } from './thumbs-down';
+import { HugeiconsTicket01Icon } from './ticket-01';
 import { HugeiconsTrashIcon } from './trash';
 import { HugeiconsUnfoldMoreIcon } from './unfold-more';
 import { HugeiconsUniversalAccessIcon } from './universal-access';
@@ -2273,6 +2274,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['thumbs', 'down', 'downvote'],
   },
   {
+    name: 'ticket-01',
+    icon: HugeiconsTicket01Icon,
+    keywords: ['ticket', '01'],
+  },
+  {
     name: 'trash',
     icon: HugeiconsTrashIcon,
     keywords: ['trash', 'delete', 'remove', 'bin', 'garbage'],
@@ -2729,6 +2735,7 @@ export {
   HugeiconsTextAlignRightIcon,
   HugeiconsThermometerIcon,
   HugeiconsThumbsDownIcon,
+  HugeiconsTicket01Icon,
   HugeiconsTrashIcon,
   HugeiconsUnfoldMoreIcon,
   HugeiconsUniversalAccessIcon,

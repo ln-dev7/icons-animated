@@ -329,6 +329,7 @@ import { TablerTerminalIcon } from './terminal';
 import { TablerTextScan2Icon } from './text-scan-2';
 import { TablerThermometerIcon } from './thermometer';
 import { TablerThumbDownIcon } from './thumb-down';
+import { TablerTicketIcon } from './ticket';
 import { TablerTrashIcon } from './trash';
 import { TablerUploadIcon } from './upload';
 import { TablerUserIcon } from './user';
@@ -1852,6 +1853,7 @@ const TABLER_ICON_LIST = [
     icon: TablerThumbDownIcon,
     keywords: ['thumb', 'down', 'downvote'],
   },
+  { name: 'ticket', icon: TablerTicketIcon, keywords: ['ticket'] },
   {
     name: 'trash',
     icon: TablerTrashIcon,
@@ -2218,6 +2220,7 @@ export {
   TablerTextScan2Icon,
   TablerThermometerIcon,
   TablerThumbDownIcon,
+  TablerTicketIcon,
   TablerTrashIcon,
   TablerUploadIcon,
   TablerUserIcon,
