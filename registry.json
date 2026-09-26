@@ -5425,6 +5425,19 @@
       ]
     },
     {
+      "name": "hugeicons-terminal",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-terminal.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-text-align-center",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -9008,6 +9021,19 @@
       "files": [
         {
           "path": "phosphor-syringe.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-terminal",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-terminal.tsx",
           "type": "registry:ui"
         }
       ]
@@ -13415,6 +13441,19 @@
       "files": [
         {
           "path": "tabler-telescope.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-terminal",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-terminal.tsx",
           "type": "registry:ui"
         }
       ]

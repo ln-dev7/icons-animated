@@ -2551,6 +2551,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-terminal',
+    'path': path.join(__dirname, '../icons/hugeicons/terminal.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-text-align-center',
     'path': path.join(__dirname, '../icons/hugeicons/text-align-center.tsx'),
     'registryDependencies': [],
@@ -4224,6 +4230,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-syringe',
     'path': path.join(__dirname, '../icons/phosphor/syringe.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-terminal',
+    'path': path.join(__dirname, '../icons/phosphor/terminal.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -6270,6 +6282,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-telescope',
     'path': path.join(__dirname, '../icons/tabler/telescope.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-terminal',
+    'path': path.join(__dirname, '../icons/tabler/terminal.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
