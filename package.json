@@ -7,13 +7,14 @@
     "prebuild": "node scripts/download-fonts.js",
     "build": "next build",
     "start": "next start",
-    "lint": "prettier --write . && eslint --fix .",
+    "lint": "prettier --write . --cache --cache-location .next/cache/prettier && eslint --fix . --cache --cache-location .next/cache/eslint",
     "lint:check": "prettier --check . && eslint .",
-    "check-duplicates": "tsx scripts/check-duplicates.ts",
-    "check-imports": "tsx scripts/check-imports.ts",
-    "sync-registry": "tsx scripts/sync-registry.ts",
-    "build-registry": "tsx scripts/registry-build.ts",
-    "gen-cli": "pnpm run sync-registry && pnpm run build-registry && pnpm lint"
+    "check-duplicates": "node --import tsx scripts/check-duplicates.ts",
+    "check-imports": "node --import tsx scripts/check-imports.ts",
+    "check-registry": "node --import tsx scripts/check-registry.ts",
+    "sync-registry": "node --import tsx scripts/sync-registry.ts",
+    "build-registry": "node --import tsx scripts/registry-build.ts",
+    "gen-cli": "pnpm lint && pnpm run sync-registry && pnpm run build-registry && pnpm run check-registry"
   },
   "dependencies": {
     "@base-ui-components/react": "1.0.0-rc.0",

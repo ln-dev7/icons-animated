@@ -95,6 +95,58 @@
       ]
     },
     {
+      "name": "hugeicons-chevron-down",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-chevron-down.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "hugeicons-chevron-left",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-chevron-left.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "hugeicons-chevron-right",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-chevron-right.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "hugeicons-chevron-up",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-chevron-up.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-download",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -116,6 +168,19 @@
       "files": [
         {
           "path": "hugeicons-eye.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "hugeicons-filter",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-filter.tsx",
           "type": "registry:ui"
         }
       ]
@@ -212,6 +277,32 @@
       ]
     },
     {
+      "name": "hugeicons-refresh",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-refresh.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "hugeicons-save",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-save.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-search",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -233,6 +324,19 @@
       "files": [
         {
           "path": "hugeicons-settings.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "hugeicons-share",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-share.tsx",
           "type": "registry:ui"
         }
       ]
@@ -264,6 +368,19 @@
       ]
     },
     {
+      "name": "hugeicons-upload",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-upload.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-user",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -285,526 +402,6 @@
       "files": [
         {
           "path": "hugeicons-x.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "hugeicons-chevron-down",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "hugeicons-chevron-down.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "hugeicons-chevron-left",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "hugeicons-chevron-left.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "hugeicons-chevron-right",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "hugeicons-chevron-right.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "hugeicons-chevron-up",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "hugeicons-chevron-up.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "hugeicons-filter",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "hugeicons-filter.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "hugeicons-refresh",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "hugeicons-refresh.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "hugeicons-save",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "hugeicons-save.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "hugeicons-share",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "hugeicons-share.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "hugeicons-upload",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "hugeicons-upload.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tabler-arrow-down",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "tabler-arrow-down.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tabler-arrow-left",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "tabler-arrow-left.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tabler-arrow-right",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "tabler-arrow-right.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tabler-arrow-up",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "tabler-arrow-up.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tabler-bell",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "tabler-bell.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tabler-calendar",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "tabler-calendar.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tabler-check",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "tabler-check.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tabler-download",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "tabler-download.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tabler-eye",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "tabler-eye.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tabler-heart",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "tabler-heart.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tabler-home",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "tabler-home.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tabler-lock",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "tabler-lock.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tabler-mail",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "tabler-mail.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tabler-menu",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "tabler-menu.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tabler-pencil",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "tabler-pencil.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tabler-plus",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "tabler-plus.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tabler-search",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "tabler-search.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tabler-settings",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "tabler-settings.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tabler-star",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "tabler-star.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tabler-trash",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "tabler-trash.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tabler-user",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "tabler-user.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tabler-x",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "tabler-x.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tabler-chevron-down",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "tabler-chevron-down.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tabler-chevron-left",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "tabler-chevron-left.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tabler-chevron-right",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "tabler-chevron-right.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tabler-chevron-up",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "tabler-chevron-up.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tabler-filter",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "tabler-filter.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tabler-refresh",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "tabler-refresh.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tabler-save",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "tabler-save.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tabler-share",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "tabler-share.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tabler-upload",
-      "type": "registry:ui",
-      "registryDependencies": [],
-      "dependencies": ["motion"],
-      "devDependencies": [],
-      "files": [
-        {
-          "path": "tabler-upload.tsx",
           "type": "registry:ui"
         }
       ]
@@ -901,6 +498,58 @@
       ]
     },
     {
+      "name": "phosphor-chevron-down",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-chevron-down.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-chevron-left",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-chevron-left.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-chevron-right",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-chevron-right.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-chevron-up",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-chevron-up.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-download",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -935,6 +584,19 @@
       "files": [
         {
           "path": "phosphor-eye.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-filter",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-filter.tsx",
           "type": "registry:ui"
         }
       ]
@@ -1031,6 +693,32 @@
       ]
     },
     {
+      "name": "phosphor-refresh",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-refresh.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-save",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-save.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-search",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -1039,6 +727,19 @@
       "files": [
         {
           "path": "phosphor-search.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-share",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-share.tsx",
           "type": "registry:ui"
         }
       ]
@@ -1070,6 +771,19 @@
       ]
     },
     {
+      "name": "phosphor-upload",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-upload.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-user",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -1096,118 +810,404 @@
       ]
     },
     {
-      "name": "phosphor-chevron-down",
+      "name": "tabler-arrow-down",
       "type": "registry:ui",
       "registryDependencies": [],
       "dependencies": ["motion"],
       "devDependencies": [],
       "files": [
         {
-          "path": "phosphor-chevron-down.tsx",
+          "path": "tabler-arrow-down.tsx",
           "type": "registry:ui"
         }
       ]
     },
     {
-      "name": "phosphor-chevron-left",
+      "name": "tabler-arrow-left",
       "type": "registry:ui",
       "registryDependencies": [],
       "dependencies": ["motion"],
       "devDependencies": [],
       "files": [
         {
-          "path": "phosphor-chevron-left.tsx",
+          "path": "tabler-arrow-left.tsx",
           "type": "registry:ui"
         }
       ]
     },
     {
-      "name": "phosphor-chevron-right",
+      "name": "tabler-arrow-right",
       "type": "registry:ui",
       "registryDependencies": [],
       "dependencies": ["motion"],
       "devDependencies": [],
       "files": [
         {
-          "path": "phosphor-chevron-right.tsx",
+          "path": "tabler-arrow-right.tsx",
           "type": "registry:ui"
         }
       ]
     },
     {
-      "name": "phosphor-chevron-up",
+      "name": "tabler-arrow-up",
       "type": "registry:ui",
       "registryDependencies": [],
       "dependencies": ["motion"],
       "devDependencies": [],
       "files": [
         {
-          "path": "phosphor-chevron-up.tsx",
+          "path": "tabler-arrow-up.tsx",
           "type": "registry:ui"
         }
       ]
     },
     {
-      "name": "phosphor-filter",
+      "name": "tabler-bell",
       "type": "registry:ui",
       "registryDependencies": [],
       "dependencies": ["motion"],
       "devDependencies": [],
       "files": [
         {
-          "path": "phosphor-filter.tsx",
+          "path": "tabler-bell.tsx",
           "type": "registry:ui"
         }
       ]
     },
     {
-      "name": "phosphor-refresh",
+      "name": "tabler-calendar",
       "type": "registry:ui",
       "registryDependencies": [],
       "dependencies": ["motion"],
       "devDependencies": [],
       "files": [
         {
-          "path": "phosphor-refresh.tsx",
+          "path": "tabler-calendar.tsx",
           "type": "registry:ui"
         }
       ]
     },
     {
-      "name": "phosphor-save",
+      "name": "tabler-check",
       "type": "registry:ui",
       "registryDependencies": [],
       "dependencies": ["motion"],
       "devDependencies": [],
       "files": [
         {
-          "path": "phosphor-save.tsx",
+          "path": "tabler-check.tsx",
           "type": "registry:ui"
         }
       ]
     },
     {
-      "name": "phosphor-share",
+      "name": "tabler-chevron-down",
       "type": "registry:ui",
       "registryDependencies": [],
       "dependencies": ["motion"],
       "devDependencies": [],
       "files": [
         {
-          "path": "phosphor-share.tsx",
+          "path": "tabler-chevron-down.tsx",
           "type": "registry:ui"
         }
       ]
     },
     {
-      "name": "phosphor-upload",
+      "name": "tabler-chevron-left",
       "type": "registry:ui",
       "registryDependencies": [],
       "dependencies": ["motion"],
       "devDependencies": [],
       "files": [
         {
-          "path": "phosphor-upload.tsx",
+          "path": "tabler-chevron-left.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-chevron-right",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-chevron-right.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-chevron-up",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-chevron-up.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-download",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-download.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-eye",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-eye.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-filter",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-filter.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-heart",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-heart.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-home",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-home.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-lock",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-lock.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-mail",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-mail.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-menu",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-menu.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-pencil",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-pencil.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-plus",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-plus.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-refresh",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-refresh.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-save",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-save.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-search",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-search.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-settings",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-settings.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-share",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-share.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-star",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-star.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-trash",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-trash.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-upload",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-upload.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-user",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-user.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-x",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-x.tsx",
           "type": "registry:ui"
         }
       ]

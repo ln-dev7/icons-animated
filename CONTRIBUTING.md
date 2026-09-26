@@ -174,28 +174,26 @@ We welcome contributions to our project! Please follow these steps to contribute
    export { [Library][YourIconName]Icon } from '@/icons/[library]/[icon-name]';
    ```
 
-8. **Update the registry (for new icons):**
+8. **Generate and verify the registry:**
 
-   After creating a new icon, you need to update the registry so it can be used with the shadcn CLI.
-
-   a. Open `scripts/registry-components.ts`
-
-   b. Add your icon to the components array:
-
-   ```tsx
-   {
-     'name': '[library]-[icon-name]',
-     'path': path.join(__dirname, '../icons/[library]/[icon-name].tsx'),
-     'registryDependencies': [],
-     'dependencies': ['motion'],
-   },
-   ```
-
-   c. Run the registry build:
+   After adding or modifying an icon, run:
 
    ```
    pnpm run gen-cli
    ```
+
+   This formats and lints the sources first, discovers every `.tsx` icon recursively in the three library directories (excluding `index.tsx`), synchronizes the manifest, builds `registry.json` and `public/r/*.json`, and verifies their contents. New icons receive the registry name `[library]-[icon-name]` and the `motion` dependency automatically. No manual manifest entry is needed. Existing entries retain their custom metadata and dependencies; removed source files are removed from the generated registry.
+
+   Keep icon file names unique within each library, including nested directories. The same name in different libraries is allowed. Keep each library's imports, list and named exports in sync with its source files.
+
+   These checks are read-only and can also run in CI:
+
+   ```
+   pnpm run check-imports
+   pnpm run check-registry
+   ```
+
+   `check-imports` verifies imports, list names, component references and exports for every library. `check-registry` also checks for missing or orphaned manifest entries, stale generated files, and exact agreement between each distributed component and its source. Commit the generated manifest, `registry.json` and affected `public/r/*.json` files with the icon.
 
 9. Build the project to check for errors:
 

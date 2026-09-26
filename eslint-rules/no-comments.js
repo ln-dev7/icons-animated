@@ -20,7 +20,10 @@ module.exports = {
         const comments = sourceCode.getAllComments();
 
         for (const comment of comments) {
-          if (comment.value.trim() === 'use client') {
+          if (
+            comment.value.trim() === 'use client' ||
+            /@license\b/.test(comment.value)
+          ) {
             continue;
           }
 

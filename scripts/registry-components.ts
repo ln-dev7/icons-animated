@@ -1,31 +1,8 @@
 import path from 'path';
 
-import type { Schema } from './registry-schema';
-
-type ComponentDefinition = Partial<
-  Pick<
-    Schema,
-    | 'dependencies'
-    | 'devDependencies'
-    | 'registryDependencies'
-    | 'cssVars'
-    | 'tailwind'
-    | 'title'
-    | 'description'
-    | 'author'
-    | 'css'
-    | 'envVars'
-    | 'docs'
-    | 'categories'
-    | 'meta'
-  >
-> & {
-  name: string;
-  path: string;
-};
+import type { ComponentDefinition } from './registry-utils';
 
 export const components: ComponentDefinition[] = [
-  // Huge Icons
   {
     'name': 'hugeicons-arrow-down',
     'path': path.join(__dirname, '../icons/hugeicons/arrow-down.tsx'),
@@ -69,6 +46,30 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-chevron-down',
+    'path': path.join(__dirname, '../icons/hugeicons/chevron-down.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'hugeicons-chevron-left',
+    'path': path.join(__dirname, '../icons/hugeicons/chevron-left.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'hugeicons-chevron-right',
+    'path': path.join(__dirname, '../icons/hugeicons/chevron-right.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'hugeicons-chevron-up',
+    'path': path.join(__dirname, '../icons/hugeicons/chevron-up.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-download',
     'path': path.join(__dirname, '../icons/hugeicons/download.tsx'),
     'registryDependencies': [],
@@ -77,6 +78,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'hugeicons-eye',
     'path': path.join(__dirname, '../icons/hugeicons/eye.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'hugeicons-filter',
+    'path': path.join(__dirname, '../icons/hugeicons/filter.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -123,6 +130,18 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-refresh',
+    'path': path.join(__dirname, '../icons/hugeicons/refresh.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'hugeicons-save',
+    'path': path.join(__dirname, '../icons/hugeicons/save.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-search',
     'path': path.join(__dirname, '../icons/hugeicons/search.tsx'),
     'registryDependencies': [],
@@ -131,6 +150,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'hugeicons-settings',
     'path': path.join(__dirname, '../icons/hugeicons/settings.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'hugeicons-share',
+    'path': path.join(__dirname, '../icons/hugeicons/share.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -147,6 +172,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-upload',
+    'path': path.join(__dirname, '../icons/hugeicons/upload.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-user',
     'path': path.join(__dirname, '../icons/hugeicons/user.tsx'),
     'registryDependencies': [],
@@ -158,248 +189,6 @@ export const components: ComponentDefinition[] = [
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
-  {
-    'name': 'hugeicons-chevron-down',
-    'path': path.join(__dirname, '../icons/hugeicons/chevron-down.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'hugeicons-chevron-left',
-    'path': path.join(__dirname, '../icons/hugeicons/chevron-left.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'hugeicons-chevron-right',
-    'path': path.join(__dirname, '../icons/hugeicons/chevron-right.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'hugeicons-chevron-up',
-    'path': path.join(__dirname, '../icons/hugeicons/chevron-up.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'hugeicons-filter',
-    'path': path.join(__dirname, '../icons/hugeicons/filter.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'hugeicons-refresh',
-    'path': path.join(__dirname, '../icons/hugeicons/refresh.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'hugeicons-save',
-    'path': path.join(__dirname, '../icons/hugeicons/save.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'hugeicons-share',
-    'path': path.join(__dirname, '../icons/hugeicons/share.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'hugeicons-upload',
-    'path': path.join(__dirname, '../icons/hugeicons/upload.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  // Tabler Icons
-  {
-    'name': 'tabler-arrow-down',
-    'path': path.join(__dirname, '../icons/tabler/arrow-down.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'tabler-arrow-left',
-    'path': path.join(__dirname, '../icons/tabler/arrow-left.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'tabler-arrow-right',
-    'path': path.join(__dirname, '../icons/tabler/arrow-right.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'tabler-arrow-up',
-    'path': path.join(__dirname, '../icons/tabler/arrow-up.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'tabler-bell',
-    'path': path.join(__dirname, '../icons/tabler/bell.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'tabler-calendar',
-    'path': path.join(__dirname, '../icons/tabler/calendar.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'tabler-check',
-    'path': path.join(__dirname, '../icons/tabler/check.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'tabler-download',
-    'path': path.join(__dirname, '../icons/tabler/download.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'tabler-eye',
-    'path': path.join(__dirname, '../icons/tabler/eye.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'tabler-heart',
-    'path': path.join(__dirname, '../icons/tabler/heart.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'tabler-home',
-    'path': path.join(__dirname, '../icons/tabler/home.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'tabler-lock',
-    'path': path.join(__dirname, '../icons/tabler/lock.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'tabler-mail',
-    'path': path.join(__dirname, '../icons/tabler/mail.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'tabler-menu',
-    'path': path.join(__dirname, '../icons/tabler/menu.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'tabler-pencil',
-    'path': path.join(__dirname, '../icons/tabler/pencil.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'tabler-plus',
-    'path': path.join(__dirname, '../icons/tabler/plus.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'tabler-search',
-    'path': path.join(__dirname, '../icons/tabler/search.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'tabler-settings',
-    'path': path.join(__dirname, '../icons/tabler/settings.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'tabler-star',
-    'path': path.join(__dirname, '../icons/tabler/star.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'tabler-trash',
-    'path': path.join(__dirname, '../icons/tabler/trash.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'tabler-user',
-    'path': path.join(__dirname, '../icons/tabler/user.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'tabler-x',
-    'path': path.join(__dirname, '../icons/tabler/x.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'tabler-chevron-down',
-    'path': path.join(__dirname, '../icons/tabler/chevron-down.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'tabler-chevron-left',
-    'path': path.join(__dirname, '../icons/tabler/chevron-left.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'tabler-chevron-right',
-    'path': path.join(__dirname, '../icons/tabler/chevron-right.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'tabler-chevron-up',
-    'path': path.join(__dirname, '../icons/tabler/chevron-up.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'tabler-filter',
-    'path': path.join(__dirname, '../icons/tabler/filter.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'tabler-refresh',
-    'path': path.join(__dirname, '../icons/tabler/refresh.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'tabler-save',
-    'path': path.join(__dirname, '../icons/tabler/save.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'tabler-share',
-    'path': path.join(__dirname, '../icons/tabler/share.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  {
-    'name': 'tabler-upload',
-    'path': path.join(__dirname, '../icons/tabler/upload.tsx'),
-    'registryDependencies': [],
-    'dependencies': ['motion'],
-  },
-  // Phosphor Icons
   {
     'name': 'phosphor-arrow-down',
     'path': path.join(__dirname, '../icons/phosphor/arrow-down.tsx'),
@@ -443,6 +232,30 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'phosphor-chevron-down',
+    'path': path.join(__dirname, '../icons/phosphor/chevron-down.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-chevron-left',
+    'path': path.join(__dirname, '../icons/phosphor/chevron-left.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-chevron-right',
+    'path': path.join(__dirname, '../icons/phosphor/chevron-right.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-chevron-up',
+    'path': path.join(__dirname, '../icons/phosphor/chevron-up.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'phosphor-download',
     'path': path.join(__dirname, '../icons/phosphor/download.tsx'),
     'registryDependencies': [],
@@ -457,6 +270,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-eye',
     'path': path.join(__dirname, '../icons/phosphor/eye.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-filter',
+    'path': path.join(__dirname, '../icons/phosphor/filter.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -503,8 +322,26 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'phosphor-refresh',
+    'path': path.join(__dirname, '../icons/phosphor/refresh.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-save',
+    'path': path.join(__dirname, '../icons/phosphor/save.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'phosphor-search',
     'path': path.join(__dirname, '../icons/phosphor/search.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-share',
+    'path': path.join(__dirname, '../icons/phosphor/share.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -521,6 +358,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'phosphor-upload',
+    'path': path.join(__dirname, '../icons/phosphor/upload.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'phosphor-user',
     'path': path.join(__dirname, '../icons/phosphor/user.tsx'),
     'registryDependencies': [],
@@ -533,56 +376,188 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
-    'name': 'phosphor-chevron-down',
-    'path': path.join(__dirname, '../icons/phosphor/chevron-down.tsx'),
+    'name': 'tabler-arrow-down',
+    'path': path.join(__dirname, '../icons/tabler/arrow-down.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
   {
-    'name': 'phosphor-chevron-left',
-    'path': path.join(__dirname, '../icons/phosphor/chevron-left.tsx'),
+    'name': 'tabler-arrow-left',
+    'path': path.join(__dirname, '../icons/tabler/arrow-left.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
   {
-    'name': 'phosphor-chevron-right',
-    'path': path.join(__dirname, '../icons/phosphor/chevron-right.tsx'),
+    'name': 'tabler-arrow-right',
+    'path': path.join(__dirname, '../icons/tabler/arrow-right.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
   {
-    'name': 'phosphor-chevron-up',
-    'path': path.join(__dirname, '../icons/phosphor/chevron-up.tsx'),
+    'name': 'tabler-arrow-up',
+    'path': path.join(__dirname, '../icons/tabler/arrow-up.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
   {
-    'name': 'phosphor-filter',
-    'path': path.join(__dirname, '../icons/phosphor/filter.tsx'),
+    'name': 'tabler-bell',
+    'path': path.join(__dirname, '../icons/tabler/bell.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
   {
-    'name': 'phosphor-refresh',
-    'path': path.join(__dirname, '../icons/phosphor/refresh.tsx'),
+    'name': 'tabler-calendar',
+    'path': path.join(__dirname, '../icons/tabler/calendar.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
   {
-    'name': 'phosphor-save',
-    'path': path.join(__dirname, '../icons/phosphor/save.tsx'),
+    'name': 'tabler-check',
+    'path': path.join(__dirname, '../icons/tabler/check.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
   {
-    'name': 'phosphor-share',
-    'path': path.join(__dirname, '../icons/phosphor/share.tsx'),
+    'name': 'tabler-chevron-down',
+    'path': path.join(__dirname, '../icons/tabler/chevron-down.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
   {
-    'name': 'phosphor-upload',
-    'path': path.join(__dirname, '../icons/phosphor/upload.tsx'),
+    'name': 'tabler-chevron-left',
+    'path': path.join(__dirname, '../icons/tabler/chevron-left.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-chevron-right',
+    'path': path.join(__dirname, '../icons/tabler/chevron-right.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-chevron-up',
+    'path': path.join(__dirname, '../icons/tabler/chevron-up.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-download',
+    'path': path.join(__dirname, '../icons/tabler/download.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-eye',
+    'path': path.join(__dirname, '../icons/tabler/eye.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-filter',
+    'path': path.join(__dirname, '../icons/tabler/filter.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-heart',
+    'path': path.join(__dirname, '../icons/tabler/heart.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-home',
+    'path': path.join(__dirname, '../icons/tabler/home.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-lock',
+    'path': path.join(__dirname, '../icons/tabler/lock.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-mail',
+    'path': path.join(__dirname, '../icons/tabler/mail.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-menu',
+    'path': path.join(__dirname, '../icons/tabler/menu.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-pencil',
+    'path': path.join(__dirname, '../icons/tabler/pencil.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-plus',
+    'path': path.join(__dirname, '../icons/tabler/plus.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-refresh',
+    'path': path.join(__dirname, '../icons/tabler/refresh.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-save',
+    'path': path.join(__dirname, '../icons/tabler/save.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-search',
+    'path': path.join(__dirname, '../icons/tabler/search.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-settings',
+    'path': path.join(__dirname, '../icons/tabler/settings.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-share',
+    'path': path.join(__dirname, '../icons/tabler/share.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-star',
+    'path': path.join(__dirname, '../icons/tabler/star.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-trash',
+    'path': path.join(__dirname, '../icons/tabler/trash.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-upload',
+    'path': path.join(__dirname, '../icons/tabler/upload.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-user',
+    'path': path.join(__dirname, '../icons/tabler/user.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-x',
+    'path': path.join(__dirname, '../icons/tabler/x.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
