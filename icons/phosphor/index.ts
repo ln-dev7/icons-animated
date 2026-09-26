@@ -244,6 +244,7 @@ import { PhosphorSmileySadIcon } from './smiley-sad';
 import { PhosphorSnowflakeIcon } from './snowflake';
 import { PhosphorSortAscendingIcon } from './sort-ascending';
 import { PhosphorSortDescendingIcon } from './sort-descending';
+import { PhosphorSparkleIcon } from './sparkle';
 import { PhosphorSpinnerIcon } from './spinner';
 import { PhosphorSpinnerBallIcon } from './spinner-ball';
 import { PhosphorSpinnerGapIcon } from './spinner-gap';
@@ -1474,6 +1475,11 @@ const PHOSPHOR_ICON_LIST = [
     ],
   },
   {
+    name: 'sparkle',
+    icon: PhosphorSparkleIcon,
+    keywords: ['sparkle', 'sparkles'],
+  },
+  {
     name: 'spinner',
     icon: PhosphorSpinnerIcon,
     keywords: ['spinner', 'loader'],
@@ -1805,6 +1811,7 @@ export {
   PhosphorSnowflakeIcon,
   PhosphorSortAscendingIcon,
   PhosphorSortDescendingIcon,
+  PhosphorSparkleIcon,
   PhosphorSpinnerIcon,
   PhosphorSpinnerBallIcon,
   PhosphorSpinnerGapIcon,

@@ -5087,6 +5087,19 @@
       ]
     },
     {
+      "name": "hugeicons-sparkles",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-sparkles.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-star",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -8436,6 +8449,19 @@
       "files": [
         {
           "path": "phosphor-sort-descending.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-sparkle",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-sparkle.tsx",
           "type": "registry:ui"
         }
       ]
@@ -12583,6 +12609,19 @@
       "files": [
         {
           "path": "tabler-soup.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-sparkles",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-sparkles.tsx",
           "type": "registry:ui"
         }
       ]
