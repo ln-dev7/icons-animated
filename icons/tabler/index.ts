@@ -66,6 +66,7 @@ import { TablerLayoutAlignMiddleIcon } from './layout-align-middle';
 import { TablerLockIcon } from './lock';
 import { TablerMailIcon } from './mail';
 import { TablerMenuIcon } from './menu';
+import { TablerMessageChatbotIcon } from './message-chatbot';
 import { TablerMoodAngryIcon } from './mood-angry';
 import { TablerMoodAnnoyedIcon } from './mood-annoyed';
 import { TablerPaperclipIcon } from './paperclip';
@@ -419,6 +420,11 @@ const TABLER_ICON_LIST = [
     keywords: ['menu', 'hamburger', 'list', 'navigation', 'lines'],
   },
   {
+    name: 'message-chatbot',
+    icon: TablerMessageChatbotIcon,
+    keywords: ['message', 'chatbot', 'bot-message-square', 'bot', 'square'],
+  },
+  {
     name: 'mood-angry',
     icon: TablerMoodAngryIcon,
     keywords: ['mood', 'angry'],
@@ -636,6 +642,7 @@ export {
   TablerLockIcon,
   TablerMailIcon,
   TablerMenuIcon,
+  TablerMessageChatbotIcon,
   TablerMoodAngryIcon,
   TablerMoodAnnoyedIcon,
   TablerPaperclipIcon,

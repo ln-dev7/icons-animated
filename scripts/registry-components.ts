@@ -430,6 +430,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-bot-message-square',
+    'path': path.join(__dirname, '../icons/hugeicons/bot-message-square.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-calendar',
     'path': path.join(__dirname, '../icons/hugeicons/calendar.tsx'),
     'registryDependencies': [],
@@ -1521,6 +1527,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-menu',
     'path': path.join(__dirname, '../icons/tabler/menu.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-message-chatbot',
+    'path': path.join(__dirname, '../icons/tabler/message-chatbot.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
