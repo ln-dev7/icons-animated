@@ -5932,6 +5932,19 @@
       ]
     },
     {
+      "name": "hugeicons-waves",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-waves.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-x",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -9845,6 +9858,19 @@
       ]
     },
     {
+      "name": "phosphor-waves",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-waves.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-x",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -13506,6 +13532,19 @@
       "files": [
         {
           "path": "tabler-refresh-dot.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-ripple",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-ripple.tsx",
           "type": "registry:ui"
         }
       ]

@@ -298,6 +298,7 @@ import { PhosphorVibrateIcon } from './vibrate';
 import { PhosphorWalletIcon } from './wallet';
 import { PhosphorWashingMachineIcon } from './washing-machine';
 import { PhosphorWaveformIcon } from './waveform';
+import { PhosphorWavesIcon } from './waves';
 import { PhosphorXIcon } from './x';
 
 const PHOSPHOR_ICON_LIST = [
@@ -1736,6 +1737,7 @@ const PHOSPHOR_ICON_LIST = [
     icon: PhosphorWaveformIcon,
     keywords: ['waveform', 'audio-lines', 'audio', 'lines'],
   },
+  { name: 'waves', icon: PhosphorWavesIcon, keywords: ['waves'] },
   {
     name: 'x',
     icon: PhosphorXIcon,
@@ -2045,5 +2047,6 @@ export {
   PhosphorWalletIcon,
   PhosphorWashingMachineIcon,
   PhosphorWaveformIcon,
+  PhosphorWavesIcon,
   PhosphorXIcon,
 };
