@@ -463,6 +463,7 @@ import { HugeiconsWebhookIcon } from './webhook';
 import { HugeiconsWifi01Icon } from './wifi-01';
 import { HugeiconsWifiCogIcon } from './wifi-cog';
 import { HugeiconsWifiLowIcon } from './wifi-low';
+import { HugeiconsWifiPenIcon } from './wifi-pen';
 import { HugeiconsXIcon } from './x';
 
 const HUGEICONS_ICON_LIST = [
@@ -2472,6 +2473,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['wifi', 'low', 'wifi-low'],
   },
   {
+    name: 'wifi-pen',
+    icon: HugeiconsWifiPenIcon,
+    keywords: ['wifi', 'pen', 'wifi-pen'],
+  },
+  {
     name: 'x',
     icon: HugeiconsXIcon,
     keywords: ['close', 'x', 'cancel', 'dismiss', 'remove', 'delete'],
@@ -2945,5 +2951,6 @@ export {
   HugeiconsWifi01Icon,
   HugeiconsWifiCogIcon,
   HugeiconsWifiLowIcon,
+  HugeiconsWifiPenIcon,
   HugeiconsXIcon,
 };

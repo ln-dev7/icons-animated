@@ -6049,6 +6049,19 @@
       ]
     },
     {
+      "name": "hugeicons-wifi-pen",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-wifi-pen.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-x",
       "type": "registry:ui",
       "registryDependencies": [],
