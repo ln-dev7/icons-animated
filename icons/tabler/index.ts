@@ -36,6 +36,7 @@ import { TablerBattery1Icon } from './battery-1';
 import { TablerBattery2Icon } from './battery-2';
 import { TablerBattery4Icon } from './battery-4';
 import { TablerBatteryChargingIcon } from './battery-charging';
+import { TablerBatteryExclamationIcon } from './battery-exclamation';
 import { TablerBellIcon } from './bell';
 import { TablerCalendarIcon } from './calendar';
 import { TablerCheckIcon } from './check';
@@ -237,6 +238,11 @@ const TABLER_ICON_LIST = [
     name: 'battery-charging',
     icon: TablerBatteryChargingIcon,
     keywords: ['battery', 'charging', 'battery-charging'],
+  },
+  {
+    name: 'battery-exclamation',
+    icon: TablerBatteryExclamationIcon,
+    keywords: ['battery', 'exclamation', 'battery-warning', 'warning'],
   },
   {
     name: 'bell',
@@ -550,6 +556,7 @@ export {
   TablerBattery2Icon,
   TablerBattery4Icon,
   TablerBatteryChargingIcon,
+  TablerBatteryExclamationIcon,
   TablerBellIcon,
   TablerCalendarIcon,
   TablerCheckIcon,

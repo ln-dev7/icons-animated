@@ -667,6 +667,19 @@
       ]
     },
     {
+      "name": "hugeicons-battery-warning",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-battery-warning.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-bell",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -1494,6 +1507,19 @@
       "files": [
         {
           "path": "phosphor-battery-plus.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-battery-warning",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-battery-warning.tsx",
           "type": "registry:ui"
         }
       ]
@@ -2521,6 +2547,19 @@
       "files": [
         {
           "path": "tabler-battery-charging.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-battery-exclamation",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-battery-exclamation.tsx",
           "type": "registry:ui"
         }
       ]

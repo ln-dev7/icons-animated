@@ -30,6 +30,7 @@ import { PhosphorBatteryFullIcon } from './battery-full';
 import { PhosphorBatteryLowIcon } from './battery-low';
 import { PhosphorBatteryMediumIcon } from './battery-medium';
 import { PhosphorBatteryPlusIcon } from './battery-plus';
+import { PhosphorBatteryWarningIcon } from './battery-warning';
 import { PhosphorBellIcon } from './bell';
 import { PhosphorCalendarIcon } from './calendar';
 import { PhosphorCheckIcon } from './check';
@@ -244,6 +245,11 @@ const PHOSPHOR_ICON_LIST = [
     name: 'battery-plus',
     icon: PhosphorBatteryPlusIcon,
     keywords: ['battery', 'plus', 'battery-plus'],
+  },
+  {
+    name: 'battery-warning',
+    icon: PhosphorBatteryWarningIcon,
+    keywords: ['battery', 'warning', 'battery-warning'],
   },
   {
     name: 'bell',
@@ -556,6 +562,7 @@ export {
   PhosphorBatteryLowIcon,
   PhosphorBatteryMediumIcon,
   PhosphorBatteryPlusIcon,
+  PhosphorBatteryWarningIcon,
   PhosphorBellIcon,
   PhosphorCalendarIcon,
   PhosphorCheckIcon,

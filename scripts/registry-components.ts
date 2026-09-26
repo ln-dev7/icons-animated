@@ -316,6 +316,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-battery-warning',
+    'path': path.join(__dirname, '../icons/hugeicons/battery-warning.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-bell',
     'path': path.join(__dirname, '../icons/hugeicons/bell.tsx'),
     'registryDependencies': [],
@@ -699,6 +705,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-battery-plus',
     'path': path.join(__dirname, '../icons/phosphor/battery-plus.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-battery-warning',
+    'path': path.join(__dirname, '../icons/phosphor/battery-warning.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -1173,6 +1185,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-battery-charging',
     'path': path.join(__dirname, '../icons/tabler/battery-charging.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-battery-exclamation',
+    'path': path.join(__dirname, '../icons/tabler/battery-exclamation.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
