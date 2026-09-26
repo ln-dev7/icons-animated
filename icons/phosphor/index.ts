@@ -43,6 +43,7 @@ import { PhosphorBriefcaseIcon } from './briefcase';
 import { PhosphorCalendarIcon } from './calendar';
 import { PhosphorCalendarCheckIcon } from './calendar-check';
 import { PhosphorCalendarDotsIcon } from './calendar-dots';
+import { PhosphorCallBellIcon } from './call-bell';
 import { PhosphorCaretCircleDownIcon } from './caret-circle-down';
 import { PhosphorCaretCircleLeftIcon } from './caret-circle-left';
 import { PhosphorCaretCircleRightIcon } from './caret-circle-right';
@@ -336,6 +337,11 @@ const PHOSPHOR_ICON_LIST = [
     name: 'calendar-dots',
     icon: PhosphorCalendarDotsIcon,
     keywords: ['calendar', 'dots', 'calendar-days', 'days'],
+  },
+  {
+    name: 'call-bell',
+    icon: PhosphorCallBellIcon,
+    keywords: ['call', 'bell', 'concierge-bell', 'concierge'],
   },
   {
     name: 'caret-circle-down',
@@ -812,6 +818,7 @@ export {
   PhosphorCalendarIcon,
   PhosphorCalendarCheckIcon,
   PhosphorCalendarDotsIcon,
+  PhosphorCallBellIcon,
   PhosphorCaretCircleDownIcon,
   PhosphorCaretCircleLeftIcon,
   PhosphorCaretCircleRightIcon,

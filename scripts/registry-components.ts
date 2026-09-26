@@ -814,6 +814,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-concierge-bell',
+    'path': path.join(__dirname, '../icons/hugeicons/concierge-bell.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-download',
     'path': path.join(__dirname, '../icons/hugeicons/download.tsx'),
     'registryDependencies': [],
@@ -1257,6 +1263,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-calendar-dots',
     'path': path.join(__dirname, '../icons/phosphor/calendar-dots.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-call-bell',
+    'path': path.join(__dirname, '../icons/phosphor/call-bell.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
