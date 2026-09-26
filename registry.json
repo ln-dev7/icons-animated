@@ -836,6 +836,19 @@
       ]
     },
     {
+      "name": "hugeicons-bookmark-01",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-bookmark-01.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-calendar",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -1741,6 +1754,19 @@
       "files": [
         {
           "path": "phosphor-bone.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-bookmark",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-bookmark.tsx",
           "type": "registry:ui"
         }
       ]
@@ -2924,6 +2950,19 @@
       "files": [
         {
           "path": "tabler-book-2.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-bookmark",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-bookmark.tsx",
           "type": "registry:ui"
         }
       ]

@@ -47,6 +47,7 @@ import { TablerBluetoothOffIcon } from './bluetooth-off';
 import { TablerBoldIcon } from './bold';
 import { TablerBoneIcon } from './bone';
 import { TablerBook2Icon } from './book-2';
+import { TablerBookmarkIcon } from './bookmark';
 import { TablerCalendarIcon } from './calendar';
 import { TablerCheckIcon } from './check';
 import { TablerChevronDownIcon } from './chevron-down';
@@ -283,6 +284,7 @@ const TABLER_ICON_LIST = [
     icon: TablerBook2Icon,
     keywords: ['book', '2', 'book-text', 'text'],
   },
+  { name: 'bookmark', icon: TablerBookmarkIcon, keywords: ['bookmark'] },
   {
     name: 'calendar',
     icon: TablerCalendarIcon,
@@ -601,6 +603,7 @@ export {
   TablerBoldIcon,
   TablerBoneIcon,
   TablerBook2Icon,
+  TablerBookmarkIcon,
   TablerCalendarIcon,
   TablerCheckIcon,
   TablerChevronDownIcon,

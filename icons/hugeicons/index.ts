@@ -62,6 +62,7 @@ import { HugeiconsBluetoothSearchingIcon } from './bluetooth-searching';
 import { HugeiconsBoldIcon } from './bold';
 import { HugeiconsBone01Icon } from './bone-01';
 import { HugeiconsBookTextIcon } from './book-text';
+import { HugeiconsBookmark01Icon } from './bookmark-01';
 import { HugeiconsCalendarIcon } from './calendar';
 import { HugeiconsCheckIcon } from './check';
 import { HugeiconsChevronDownIcon } from './chevron-down';
@@ -389,6 +390,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['book', 'text', 'book-text'],
   },
   {
+    name: 'bookmark-01',
+    icon: HugeiconsBookmark01Icon,
+    keywords: ['bookmark', '01'],
+  },
+  {
     name: 'calendar',
     icon: HugeiconsCalendarIcon,
     keywords: ['calendar', 'date', 'schedule', 'event', 'day'],
@@ -664,6 +670,7 @@ export {
   HugeiconsBoldIcon,
   HugeiconsBone01Icon,
   HugeiconsBookTextIcon,
+  HugeiconsBookmark01Icon,
   HugeiconsCalendarIcon,
   HugeiconsCheckIcon,
   HugeiconsChevronDownIcon,
