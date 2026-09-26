@@ -1057,6 +1057,19 @@
       ]
     },
     {
+      "name": "hugeicons-cctv-camera",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-cctv-camera.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-check",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2422,6 +2435,19 @@
       ]
     },
     {
+      "name": "phosphor-security-camera",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-security-camera.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-share",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -3470,6 +3496,19 @@
       "files": [
         {
           "path": "tabler-chevron-up.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-device-cctv",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-device-cctv.tsx",
           "type": "registry:ui"
         }
       ]

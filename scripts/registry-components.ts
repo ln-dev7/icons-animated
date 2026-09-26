@@ -496,6 +496,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-cctv-camera',
+    'path': path.join(__dirname, '../icons/hugeicons/cctv-camera.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-check',
     'path': path.join(__dirname, '../icons/hugeicons/check.tsx'),
     'registryDependencies': [],
@@ -1129,6 +1135,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'phosphor-security-camera',
+    'path': path.join(__dirname, '../icons/phosphor/security-camera.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'phosphor-share',
     'path': path.join(__dirname, '../icons/phosphor/share.tsx'),
     'registryDependencies': [],
@@ -1611,6 +1623,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-chevron-up',
     'path': path.join(__dirname, '../icons/tabler/chevron-up.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-device-cctv',
+    'path': path.join(__dirname, '../icons/tabler/device-cctv.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

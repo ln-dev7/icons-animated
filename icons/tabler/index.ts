@@ -63,6 +63,7 @@ import { TablerChevronDownIcon } from './chevron-down';
 import { TablerChevronLeftIcon } from './chevron-left';
 import { TablerChevronRightIcon } from './chevron-right';
 import { TablerChevronUpIcon } from './chevron-up';
+import { TablerDeviceCctvIcon } from './device-cctv';
 import { TablerDownloadIcon } from './download';
 import { TablerEyeIcon } from './eye';
 import { TablerFilterIcon } from './filter';
@@ -394,6 +395,11 @@ const TABLER_ICON_LIST = [
     ],
   },
   {
+    name: 'device-cctv',
+    icon: TablerDeviceCctvIcon,
+    keywords: ['device', 'cctv'],
+  },
+  {
     name: 'download',
     icon: TablerDownloadIcon,
     keywords: ['download', 'save', 'arrow', 'get', 'export'],
@@ -681,6 +687,7 @@ export {
   TablerChevronLeftIcon,
   TablerChevronRightIcon,
   TablerChevronUpIcon,
+  TablerDeviceCctvIcon,
   TablerDownloadIcon,
   TablerEyeIcon,
   TablerFilterIcon,

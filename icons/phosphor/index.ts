@@ -72,6 +72,7 @@ import { PhosphorScreencastIcon } from './screencast';
 import { PhosphorSealPercentIcon } from './seal-percent';
 import { PhosphorSealWarningIcon } from './seal-warning';
 import { PhosphorSearchIcon } from './search';
+import { PhosphorSecurityCameraIcon } from './security-camera';
 import { PhosphorShareIcon } from './share';
 import { PhosphorShoppingCartIcon } from './shopping-cart';
 import { PhosphorSmileyAngryIcon } from './smiley-angry';
@@ -493,6 +494,11 @@ const PHOSPHOR_ICON_LIST = [
     ],
   },
   {
+    name: 'security-camera',
+    icon: PhosphorSecurityCameraIcon,
+    keywords: ['security', 'camera', 'cctv'],
+  },
+  {
     name: 'share',
     icon: PhosphorShareIcon,
     keywords: ['share', 'send', 'social', 'network', 'distribute'],
@@ -668,6 +674,7 @@ export {
   PhosphorSealPercentIcon,
   PhosphorSealWarningIcon,
   PhosphorSearchIcon,
+  PhosphorSecurityCameraIcon,
   PhosphorShareIcon,
   PhosphorShoppingCartIcon,
   PhosphorSmileyAngryIcon,
