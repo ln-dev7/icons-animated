@@ -2669,6 +2669,19 @@
       ]
     },
     {
+      "name": "hugeicons-frown",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-frown.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-heart",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -4996,6 +5009,19 @@
       ]
     },
     {
+      "name": "phosphor-smiley-sad",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-smiley-sad.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-sort-ascending",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -7240,6 +7266,19 @@
       "files": [
         {
           "path": "tabler-mood-annoyed.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-mood-sad",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-mood-sad.tsx",
           "type": "registry:ui"
         }
       ]
