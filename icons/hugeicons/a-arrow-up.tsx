@@ -56,9 +56,14 @@ const ICON_VARIANTS: Variants = {
     opacity: 1,
     transition: { duration: 0.18, ease: 'easeOut' },
   },
+  animate: { transition: { duration: 0.55, ease: 'easeInOut' } },
+};
+
+const DETAIL_0_VARIANTS: Variants = {
+  normal: { y: 0, transition: { duration: 0.18, ease: 'easeOut' } },
   animate: {
-    'y': [0, -2.4, 0.35, 0],
-    'transition': { 'duration': 0.55, 'ease': 'easeInOut' },
+    y: [0, -1.2, 0],
+    transition: { duration: 0.7, delay: 0, ease: 'easeInOut' },
   },
 };
 
@@ -152,12 +157,14 @@ const HugeiconsAArrowUpIcon = forwardRef<
               strokeLinejoin="round"
               strokeWidth="1.5"
             />
-            <path
+            <motion.path
               d="M18 8V17"
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="1.5"
+              variants={DETAIL_0_VARIANTS}
+              style={{ transformBox: 'fill-box', transformOrigin: 'center' }}
             />
             <path
               d="M2 18L6.05826 6.66218C6.37429 5.77927 7.62571 5.77927 7.94174 6.66219L12 18"
@@ -166,12 +173,14 @@ const HugeiconsAArrowUpIcon = forwardRef<
               strokeLinejoin="round"
               strokeWidth="1.5"
             />
-            <path
+            <motion.path
               d="M14 11C14 11 16.946 7.00001 18 7C19.0541 6.99999 22 11 22 11"
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="1.5"
+              variants={DETAIL_0_VARIANTS}
+              style={{ transformBox: 'fill-box', transformOrigin: 'center' }}
             />
           </motion.g>
         </svg>
