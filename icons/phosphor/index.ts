@@ -44,6 +44,7 @@ import { PhosphorChevronDownIcon } from './chevron-down';
 import { PhosphorChevronLeftIcon } from './chevron-left';
 import { PhosphorChevronRightIcon } from './chevron-right';
 import { PhosphorChevronUpIcon } from './chevron-up';
+import { PhosphorCubeIcon } from './cube';
 import { PhosphorDownloadIcon } from './download';
 import { PhosphorEnvelopeIcon } from './envelope';
 import { PhosphorEyeIcon } from './eye';
@@ -345,6 +346,7 @@ const PHOSPHOR_ICON_LIST = [
       'chevron-up',
     ],
   },
+  { name: 'cube', icon: PhosphorCubeIcon, keywords: ['cube', 'box'] },
   {
     name: 'download',
     icon: PhosphorDownloadIcon,
@@ -606,6 +608,7 @@ export {
   PhosphorChevronLeftIcon,
   PhosphorChevronRightIcon,
   PhosphorChevronUpIcon,
+  PhosphorCubeIcon,
   PhosphorDownloadIcon,
   PhosphorEnvelopeIcon,
   PhosphorEyeIcon,
