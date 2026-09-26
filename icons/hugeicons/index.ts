@@ -24,6 +24,7 @@ import { HugeiconsArrowLeftBigIcon } from './arrow-left-big';
 import { HugeiconsArrowRightIcon } from './arrow-right';
 import { HugeiconsArrowRightBigIcon } from './arrow-right-big';
 import { HugeiconsArrowUpIcon } from './arrow-up';
+import { HugeiconsArrowUpBigIcon } from './arrow-up-big';
 import { HugeiconsBellIcon } from './bell';
 import { HugeiconsCalendarIcon } from './calendar';
 import { HugeiconsCheckIcon } from './check';
@@ -200,6 +201,11 @@ const HUGEICONS_ICON_LIST = [
       'arrow-up-02',
       'arrow-up',
     ],
+  },
+  {
+    name: 'arrow-up-big',
+    icon: HugeiconsArrowUpBigIcon,
+    keywords: ['arrow', 'up', 'big', 'arrow-big-up'],
   },
   {
     name: 'bell',
@@ -444,6 +450,7 @@ export {
   HugeiconsArrowRightIcon,
   HugeiconsArrowRightBigIcon,
   HugeiconsArrowUpIcon,
+  HugeiconsArrowUpBigIcon,
   HugeiconsBellIcon,
   HugeiconsCalendarIcon,
   HugeiconsCheckIcon,
