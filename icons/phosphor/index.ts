@@ -56,6 +56,7 @@ import { PhosphorChevronLeftIcon } from './chevron-left';
 import { PhosphorChevronRightIcon } from './chevron-right';
 import { PhosphorChevronUpIcon } from './chevron-up';
 import { PhosphorCigaretteIcon } from './cigarette';
+import { PhosphorCigaretteSlashIcon } from './cigarette-slash';
 import { PhosphorCubeIcon } from './cube';
 import { PhosphorDownloadIcon } from './download';
 import { PhosphorEnvelopeIcon } from './envelope';
@@ -423,6 +424,11 @@ const PHOSPHOR_ICON_LIST = [
     ],
   },
   { name: 'cigarette', icon: PhosphorCigaretteIcon, keywords: ['cigarette'] },
+  {
+    name: 'cigarette-slash',
+    icon: PhosphorCigaretteSlashIcon,
+    keywords: ['cigarette', 'slash', 'cigarette-off', 'off'],
+  },
   { name: 'cube', icon: PhosphorCubeIcon, keywords: ['cube', 'box'] },
   {
     name: 'download',
@@ -717,6 +723,7 @@ export {
   PhosphorChevronRightIcon,
   PhosphorChevronUpIcon,
   PhosphorCigaretteIcon,
+  PhosphorCigaretteSlashIcon,
   PhosphorCubeIcon,
   PhosphorDownloadIcon,
   PhosphorEnvelopeIcon,

@@ -1395,6 +1395,19 @@
       ]
     },
     {
+      "name": "hugeicons-cigarette-off",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-cigarette-off.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-download",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2508,6 +2521,19 @@
       "files": [
         {
           "path": "phosphor-cigarette.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-cigarette-slash",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-cigarette-slash.tsx",
           "type": "registry:ui"
         }
       ]
@@ -4419,6 +4445,19 @@
       "files": [
         {
           "path": "tabler-smoking.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-smoking-no",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-smoking-no.tsx",
           "type": "registry:ui"
         }
       ]

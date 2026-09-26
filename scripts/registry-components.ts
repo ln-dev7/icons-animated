@@ -664,6 +664,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-cigarette-off',
+    'path': path.join(__dirname, '../icons/hugeicons/cigarette-off.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-download',
     'path': path.join(__dirname, '../icons/hugeicons/download.tsx'),
     'registryDependencies': [],
@@ -1179,6 +1185,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-cigarette',
     'path': path.join(__dirname, '../icons/phosphor/cigarette.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-cigarette-slash',
+    'path': path.join(__dirname, '../icons/phosphor/cigarette-slash.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -2061,6 +2073,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-smoking',
     'path': path.join(__dirname, '../icons/tabler/smoking.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-smoking-no',
+    'path': path.join(__dirname, '../icons/tabler/smoking-no.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
