@@ -2877,6 +2877,19 @@
       ]
     },
     {
+      "name": "hugeicons-git-pull-request-closed",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-git-pull-request-closed.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-heart",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -7552,6 +7565,19 @@
       "files": [
         {
           "path": "tabler-git-pull-request.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-git-pull-request-closed",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-git-pull-request-closed.tsx",
           "type": "registry:ui"
         }
       ]
