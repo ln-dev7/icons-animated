@@ -329,6 +329,7 @@ import { TablerThumbDownIcon } from './thumb-down';
 import { TablerTrashIcon } from './trash';
 import { TablerUploadIcon } from './upload';
 import { TablerUserIcon } from './user';
+import { TablerVaccineIcon } from './vaccine';
 import { TablerWindmillIcon } from './windmill';
 import { TablerWorldIcon } from './world';
 import { TablerXIcon } from './x';
@@ -1857,6 +1858,11 @@ const TABLER_ICON_LIST = [
     keywords: ['user', 'person', 'profile', 'account', 'avatar'],
   },
   {
+    name: 'vaccine',
+    icon: TablerVaccineIcon,
+    keywords: ['vaccine', 'syringe'],
+  },
+  {
     name: 'windmill',
     icon: TablerWindmillIcon,
     keywords: ['windmill', 'loader-pinwheel', 'loader', 'pinwheel'],
@@ -2202,6 +2208,7 @@ export {
   TablerTrashIcon,
   TablerUploadIcon,
   TablerUserIcon,
+  TablerVaccineIcon,
   TablerWindmillIcon,
   TablerWorldIcon,
   TablerXIcon,

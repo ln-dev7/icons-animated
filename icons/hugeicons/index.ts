@@ -413,6 +413,7 @@ import { HugeiconsSunMoonIcon } from './sun-moon';
 import { HugeiconsSunsetIcon } from './sunset';
 import { HugeiconsSwissFrancIcon } from './swiss-franc';
 import { HugeiconsSwitchCameraIcon } from './switch-camera';
+import { HugeiconsSyringeIcon } from './syringe';
 import { HugeiconsTextAlignCenterIcon } from './text-align-center';
 import { HugeiconsTextAlignLeftIcon } from './text-align-left';
 import { HugeiconsTextAlignRightIcon } from './text-align-right';
@@ -2236,6 +2237,7 @@ const HUGEICONS_ICON_LIST = [
     icon: HugeiconsSwitchCameraIcon,
     keywords: ['switch', 'camera', 'switch-camera'],
   },
+  { name: 'syringe', icon: HugeiconsSyringeIcon, keywords: ['syringe'] },
   {
     name: 'text-align-center',
     icon: HugeiconsTextAlignCenterIcon,
@@ -2705,6 +2707,7 @@ export {
   HugeiconsSunsetIcon,
   HugeiconsSwissFrancIcon,
   HugeiconsSwitchCameraIcon,
+  HugeiconsSyringeIcon,
   HugeiconsTextAlignCenterIcon,
   HugeiconsTextAlignLeftIcon,
   HugeiconsTextAlignRightIcon,

@@ -5399,6 +5399,19 @@
       ]
     },
     {
+      "name": "hugeicons-syringe",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-syringe.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-text-align-center",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -8969,6 +8982,19 @@
       "files": [
         {
           "path": "phosphor-sun-horizon.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-syringe",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-syringe.tsx",
           "type": "registry:ui"
         }
       ]
@@ -13428,6 +13454,19 @@
       "files": [
         {
           "path": "tabler-user.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-vaccine",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-vaccine.tsx",
           "type": "registry:ui"
         }
       ]
