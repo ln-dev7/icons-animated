@@ -5971,6 +5971,19 @@
       ]
     },
     {
+      "name": "hugeicons-waves-ladder",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-waves-ladder.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-x",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -9450,6 +9463,19 @@
       "files": [
         {
           "path": "phosphor-sun-horizon.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-swimming-pool",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-swimming-pool.tsx",
           "type": "registry:ui"
         }
       ]
@@ -13441,6 +13467,19 @@
       "files": [
         {
           "path": "tabler-plus.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-pool",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-pool.tsx",
           "type": "registry:ui"
         }
       ]

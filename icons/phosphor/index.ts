@@ -265,6 +265,7 @@ import { PhosphorStethoscopeIcon } from './stethoscope';
 import { PhosphorSunIcon } from './sun';
 import { PhosphorSunDimIcon } from './sun-dim';
 import { PhosphorSunHorizonIcon } from './sun-horizon';
+import { PhosphorSwimmingPoolIcon } from './swimming-pool';
 import { PhosphorSyringeIcon } from './syringe';
 import { PhosphorTerminalIcon } from './terminal';
 import { PhosphorTextAlignCenterIcon } from './text-align-center';
@@ -1608,6 +1609,11 @@ const PHOSPHOR_ICON_LIST = [
     icon: PhosphorSunHorizonIcon,
     keywords: ['sun', 'horizon', 'sunset'],
   },
+  {
+    name: 'swimming-pool',
+    icon: PhosphorSwimmingPoolIcon,
+    keywords: ['swimming', 'pool', 'waves-ladder', 'waves', 'ladder'],
+  },
   { name: 'syringe', icon: PhosphorSyringeIcon, keywords: ['syringe'] },
   { name: 'terminal', icon: PhosphorTerminalIcon, keywords: ['terminal'] },
   {
@@ -2014,6 +2020,7 @@ export {
   PhosphorSunIcon,
   PhosphorSunDimIcon,
   PhosphorSunHorizonIcon,
+  PhosphorSwimmingPoolIcon,
   PhosphorSyringeIcon,
   PhosphorTerminalIcon,
   PhosphorTextAlignCenterIcon,

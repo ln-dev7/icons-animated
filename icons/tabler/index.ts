@@ -270,6 +270,7 @@ import { TablerPlayerPauseIcon } from './player-pause';
 import { TablerPlayerPlayIcon } from './player-play';
 import { TablerPlugConnectedIcon } from './plug-connected';
 import { TablerPlusIcon } from './plus';
+import { TablerPoolIcon } from './pool';
 import { TablerPropellerIcon } from './propeller';
 import { TablerRadioIcon } from './radio';
 import { TablerReceiptIcon } from './receipt';
@@ -1602,6 +1603,11 @@ const TABLER_ICON_LIST = [
     keywords: ['plus', 'add', 'new', 'create', 'increase'],
   },
   {
+    name: 'pool',
+    icon: TablerPoolIcon,
+    keywords: ['pool', 'waves-ladder', 'waves', 'ladder'],
+  },
+  {
     name: 'propeller',
     icon: TablerPropellerIcon,
     keywords: ['propeller', 'fan'],
@@ -2275,6 +2281,7 @@ export {
   TablerPlayerPlayIcon,
   TablerPlugConnectedIcon,
   TablerPlusIcon,
+  TablerPoolIcon,
   TablerPropellerIcon,
   TablerRadioIcon,
   TablerReceiptIcon,
