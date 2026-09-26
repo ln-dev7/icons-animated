@@ -538,6 +538,15 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-chart-no-axes-column-decreasing',
+    'path': path.join(
+      __dirname,
+      '../icons/hugeicons/chart-no-axes-column-decreasing.tsx'
+    ),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-check',
     'path': path.join(__dirname, '../icons/hugeicons/check.tsx'),
     'registryDependencies': [],
