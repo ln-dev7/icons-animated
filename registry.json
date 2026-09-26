@@ -2045,6 +2045,19 @@
       ]
     },
     {
+      "name": "hugeicons-mouse-pointer-click",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-mouse-pointer-click.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-pencil",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -3496,6 +3509,19 @@
       "files": [
         {
           "path": "phosphor-currency-circle-dollar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-cursor-click",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-cursor-click.tsx",
           "type": "registry:ui"
         }
       ]
@@ -5160,6 +5186,19 @@
       "files": [
         {
           "path": "tabler-circle-dashed.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-click",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-click.tsx",
           "type": "registry:ui"
         }
       ]

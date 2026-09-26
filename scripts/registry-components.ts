@@ -964,6 +964,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-mouse-pointer-click',
+    'path': path.join(__dirname, '../icons/hugeicons/mouse-pointer-click.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-pencil',
     'path': path.join(__dirname, '../icons/hugeicons/pencil.tsx'),
     'registryDependencies': [],
@@ -1644,6 +1650,12 @@ export const components: ComponentDefinition[] = [
       __dirname,
       '../icons/phosphor/currency-circle-dollar.tsx'
     ),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-cursor-click',
+    'path': path.join(__dirname, '../icons/phosphor/cursor-click.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -2412,6 +2424,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-circle-dashed',
     'path': path.join(__dirname, '../icons/tabler/circle-dashed.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-click',
+    'path': path.join(__dirname, '../icons/tabler/click.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

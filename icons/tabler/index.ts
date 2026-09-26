@@ -81,6 +81,7 @@ import { TablerCircleChevronLeftIcon } from './circle-chevron-left';
 import { TablerCircleChevronRightIcon } from './circle-chevron-right';
 import { TablerCircleChevronUpIcon } from './circle-chevron-up';
 import { TablerCircleDashedIcon } from './circle-dashed';
+import { TablerClickIcon } from './click';
 import { TablerClipboardCheckIcon } from './clipboard-check';
 import { TablerClockIcon } from './clock';
 import { TablerCloudCogIcon } from './cloud-cog';
@@ -543,6 +544,11 @@ const TABLER_ICON_LIST = [
     keywords: ['circle', 'dashed', 'circle-dashed'],
   },
   {
+    name: 'click',
+    icon: TablerClickIcon,
+    keywords: ['click', 'cursor-click', 'cursor'],
+  },
+  {
     name: 'clipboard-check',
     icon: TablerClipboardCheckIcon,
     keywords: ['clipboard', 'check', 'clipboard-check'],
@@ -975,6 +981,7 @@ export {
   TablerCircleChevronRightIcon,
   TablerCircleChevronUpIcon,
   TablerCircleDashedIcon,
+  TablerClickIcon,
   TablerClipboardCheckIcon,
   TablerClockIcon,
   TablerCloudCogIcon,

@@ -155,6 +155,7 @@ import { HugeiconsHomeIcon } from './home';
 import { HugeiconsLockIcon } from './lock';
 import { HugeiconsMailIcon } from './mail';
 import { HugeiconsMenuIcon } from './menu';
+import { HugeiconsMousePointerClickIcon } from './mouse-pointer-click';
 import { HugeiconsPencilIcon } from './pencil';
 import { HugeiconsPieChartIcon } from './pie-chart';
 import { HugeiconsPlusIcon } from './plus';
@@ -934,6 +935,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['menu', 'hamburger', 'list', 'navigation', 'lines', 'menu-01'],
   },
   {
+    name: 'mouse-pointer-click',
+    icon: HugeiconsMousePointerClickIcon,
+    keywords: ['mouse', 'pointer', 'click', 'cursor-click', 'cursor'],
+  },
+  {
     name: 'pencil',
     icon: HugeiconsPencilIcon,
     keywords: ['pencil', 'edit', 'write', 'pen', 'modify'],
@@ -1213,6 +1219,7 @@ export {
   HugeiconsLockIcon,
   HugeiconsMailIcon,
   HugeiconsMenuIcon,
+  HugeiconsMousePointerClickIcon,
   HugeiconsPencilIcon,
   HugeiconsPieChartIcon,
   HugeiconsPlusIcon,
