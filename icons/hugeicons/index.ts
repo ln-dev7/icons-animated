@@ -171,6 +171,7 @@ import { HugeiconsFileCheckIcon } from './file-check';
 import { HugeiconsFileCheckCornerIcon } from './file-check-corner';
 import { HugeiconsFileCogIcon } from './file-cog';
 import { HugeiconsFilePenLineIcon } from './file-pen-line';
+import { HugeiconsFileStackIcon } from './file-stack';
 import { HugeiconsFilterIcon } from './filter';
 import { HugeiconsHeartIcon } from './heart';
 import { HugeiconsHomeIcon } from './home';
@@ -995,6 +996,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['file', 'pen', 'line', 'file-pen-line'],
   },
   {
+    name: 'file-stack',
+    icon: HugeiconsFileStackIcon,
+    keywords: ['file', 'stack', 'file-stack'],
+  },
+  {
     name: 'filter',
     icon: HugeiconsFilterIcon,
     keywords: ['filter', 'sort', 'funnel', 'refine', 'search'],
@@ -1337,6 +1343,7 @@ export {
   HugeiconsFileCheckCornerIcon,
   HugeiconsFileCogIcon,
   HugeiconsFilePenLineIcon,
+  HugeiconsFileStackIcon,
   HugeiconsFilterIcon,
   HugeiconsHeartIcon,
   HugeiconsHomeIcon,

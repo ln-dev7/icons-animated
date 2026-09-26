@@ -126,6 +126,7 @@ import { TablerFeatherIcon } from './feather';
 import { TablerFileCheckIcon } from './file-check';
 import { TablerFilePencilIcon } from './file-pencil';
 import { TablerFileSettingsIcon } from './file-settings';
+import { TablerFileStackIcon } from './file-stack';
 import { TablerFilterIcon } from './filter';
 import { TablerGaugeIcon } from './gauge';
 import { TablerHeartIcon } from './heart';
@@ -749,6 +750,11 @@ const TABLER_ICON_LIST = [
     keywords: ['file', 'settings', 'file-cog', 'cog'],
   },
   {
+    name: 'file-stack',
+    icon: TablerFileStackIcon,
+    keywords: ['file', 'stack', 'file-stack'],
+  },
+  {
     name: 'filter',
     icon: TablerFilterIcon,
     keywords: ['filter', 'sort', 'funnel', 'refine', 'search'],
@@ -1130,6 +1136,7 @@ export {
   TablerFileCheckIcon,
   TablerFilePencilIcon,
   TablerFileSettingsIcon,
+  TablerFileStackIcon,
   TablerFilterIcon,
   TablerGaugeIcon,
   TablerHeartIcon,
