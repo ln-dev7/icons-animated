@@ -2014,6 +2014,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-plane-landing',
+    'path': path.join(__dirname, '../icons/hugeicons/plane-landing.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-plus',
     'path': path.join(__dirname, '../icons/hugeicons/plus.tsx'),
     'registryDependencies': [],
@@ -2136,6 +2142,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-airplane',
     'path': path.join(__dirname, '../icons/phosphor/airplane.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-airplane-landing',
+    'path': path.join(__dirname, '../icons/phosphor/airplane-landing.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -5040,6 +5052,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-plane',
     'path': path.join(__dirname, '../icons/tabler/plane.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-plane-arrival',
+    'path': path.join(__dirname, '../icons/tabler/plane-arrival.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

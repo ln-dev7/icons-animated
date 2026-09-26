@@ -1,4 +1,5 @@
 import { PhosphorAirplaneIcon } from './airplane';
+import { PhosphorAirplaneLandingIcon } from './airplane-landing';
 import { PhosphorAirplayIcon } from './airplay';
 import { PhosphorAlarmIcon } from './alarm';
 import { PhosphorAlignCenterHorizontalIcon } from './align-center-horizontal';
@@ -238,6 +239,11 @@ import { PhosphorXIcon } from './x';
 
 const PHOSPHOR_ICON_LIST = [
   { name: 'airplane', icon: PhosphorAirplaneIcon, keywords: ['airplane'] },
+  {
+    name: 'airplane-landing',
+    icon: PhosphorAirplaneLandingIcon,
+    keywords: ['airplane', 'landing', 'plane-landing', 'plane'],
+  },
   { name: 'airplay', icon: PhosphorAirplayIcon, keywords: ['airplay'] },
   {
     name: 'alarm',
@@ -1423,6 +1429,7 @@ const PHOSPHOR_ICON_LIST = [
 export {
   PHOSPHOR_ICON_LIST,
   PhosphorAirplaneIcon,
+  PhosphorAirplaneLandingIcon,
   PhosphorAirplayIcon,
   PhosphorAlarmIcon,
   PhosphorAlignCenterHorizontalIcon,
