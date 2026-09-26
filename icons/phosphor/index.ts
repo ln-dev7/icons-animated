@@ -165,6 +165,7 @@ import { PhosphorLinkedinLogoIcon } from './linkedin-logo';
 import { PhosphorListIcon } from './list';
 import { PhosphorLockIcon } from './lock';
 import { PhosphorLockKeyIcon } from './lock-key';
+import { PhosphorLockKeyOpenIcon } from './lock-key-open';
 import { PhosphorNotebookIcon } from './notebook';
 import { PhosphorPaperclipIcon } from './paperclip';
 import { PhosphorPencilIcon } from './pencil';
@@ -1025,6 +1026,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['lock', 'key', 'lock-keyhole', 'keyhole'],
   },
   {
+    name: 'lock-key-open',
+    icon: PhosphorLockKeyOpenIcon,
+    keywords: ['lock', 'key', 'open', 'lock-keyhole-open', 'keyhole'],
+  },
+  {
     name: 'notebook',
     icon: PhosphorNotebookIcon,
     keywords: ['notebook', 'book-text', 'book', 'text'],
@@ -1427,6 +1433,7 @@ export {
   PhosphorListIcon,
   PhosphorLockIcon,
   PhosphorLockKeyIcon,
+  PhosphorLockKeyOpenIcon,
   PhosphorNotebookIcon,
   PhosphorPaperclipIcon,
   PhosphorPencilIcon,

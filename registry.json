@@ -3527,6 +3527,19 @@
       ]
     },
     {
+      "name": "hugeicons-lock-keyhole-open",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-lock-keyhole-open.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-mail",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -6018,6 +6031,19 @@
       "files": [
         {
           "path": "phosphor-lock-key.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-lock-key-open",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-lock-key-open.tsx",
           "type": "registry:ui"
         }
       ]
@@ -9047,6 +9073,19 @@
       "files": [
         {
           "path": "tabler-lock.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-lock-open",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-lock-open.tsx",
           "type": "registry:ui"
         }
       ]

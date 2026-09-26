@@ -189,6 +189,7 @@ import { TablerLinkIcon } from './link';
 import { TablerLoaderIcon } from './loader';
 import { TablerLoader2Icon } from './loader-2';
 import { TablerLockIcon } from './lock';
+import { TablerLockOpenIcon } from './lock-open';
 import { TablerMailIcon } from './mail';
 import { TablerMenuIcon } from './menu';
 import { TablerMessageChatbotIcon } from './message-chatbot';
@@ -1073,6 +1074,11 @@ const TABLER_ICON_LIST = [
     ],
   },
   {
+    name: 'lock-open',
+    icon: TablerLockOpenIcon,
+    keywords: ['lock', 'open', 'lock-keyhole-open', 'lock-open', 'keyhole'],
+  },
+  {
     name: 'mail',
     icon: TablerMailIcon,
     keywords: ['mail', 'email', 'envelope', 'message', 'letter'],
@@ -1499,6 +1505,7 @@ export {
   TablerLoaderIcon,
   TablerLoader2Icon,
   TablerLockIcon,
+  TablerLockOpenIcon,
   TablerMailIcon,
   TablerMenuIcon,
   TablerMessageChatbotIcon,
