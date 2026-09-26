@@ -2526,6 +2526,19 @@
       ]
     },
     {
+      "name": "hugeicons-folder-minus",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-folder-minus.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-heart",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -4419,6 +4432,19 @@
       "files": [
         {
           "path": "phosphor-folder-lock.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-folder-minus",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-folder-minus.tsx",
           "type": "registry:ui"
         }
       ]
@@ -6785,6 +6811,19 @@
       "files": [
         {
           "path": "tabler-folder-heart.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-folder-minus",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-folder-minus.tsx",
           "type": "registry:ui"
         }
       ]

@@ -116,6 +116,7 @@ import { PhosphorFingerprintIcon } from './fingerprint';
 import { PhosphorFlameIcon } from './flame';
 import { PhosphorFlaskIcon } from './flask';
 import { PhosphorFolderLockIcon } from './folder-lock';
+import { PhosphorFolderMinusIcon } from './folder-minus';
 import { PhosphorGearIcon } from './gear';
 import { PhosphorGearFineIcon } from './gear-fine';
 import { PhosphorGlobeHemisphereWestIcon } from './globe-hemisphere-west';
@@ -750,6 +751,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['folder', 'lock', 'folder-lock'],
   },
   {
+    name: 'folder-minus',
+    icon: PhosphorFolderMinusIcon,
+    keywords: ['folder', 'minus', 'folder-minus'],
+  },
+  {
     name: 'gear',
     icon: PhosphorGearIcon,
     keywords: ['settings', 'gear', 'cog', 'preferences', 'config'],
@@ -1107,6 +1113,7 @@ export {
   PhosphorFlameIcon,
   PhosphorFlaskIcon,
   PhosphorFolderLockIcon,
+  PhosphorFolderMinusIcon,
   PhosphorGearIcon,
   PhosphorGearFineIcon,
   PhosphorGlobeHemisphereWestIcon,

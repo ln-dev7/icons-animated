@@ -1186,6 +1186,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-folder-minus',
+    'path': path.join(__dirname, '../icons/hugeicons/folder-minus.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-heart',
     'path': path.join(__dirname, '../icons/hugeicons/heart.tsx'),
     'registryDependencies': [],
@@ -2070,6 +2076,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-folder-lock',
     'path': path.join(__dirname, '../icons/phosphor/folder-lock.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-folder-minus',
+    'path': path.join(__dirname, '../icons/phosphor/folder-minus.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -3162,6 +3174,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-folder-heart',
     'path': path.join(__dirname, '../icons/tabler/folder-heart.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-folder-minus',
+    'path': path.join(__dirname, '../icons/tabler/folder-minus.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
