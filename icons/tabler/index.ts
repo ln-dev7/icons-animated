@@ -135,6 +135,7 @@ import { TablerFlameIcon } from './flame';
 import { TablerFlaskIcon } from './flask';
 import { TablerFolderCheckIcon } from './folder-check';
 import { TablerFolderCodeIcon } from './folder-code';
+import { TablerFolderCogIcon } from './folder-cog';
 import { TablerGaugeIcon } from './gauge';
 import { TablerHeartIcon } from './heart';
 import { TablerHelpCircleIcon } from './help-circle';
@@ -794,6 +795,11 @@ const TABLER_ICON_LIST = [
     keywords: ['folder', 'code', 'folder-code'],
   },
   {
+    name: 'folder-cog',
+    icon: TablerFolderCogIcon,
+    keywords: ['folder', 'cog', 'folder-cog'],
+  },
+  {
     name: 'gauge',
     icon: TablerGaugeIcon,
     keywords: ['gauge', 'circle-gauge', 'circle'],
@@ -1179,6 +1185,7 @@ export {
   TablerFlaskIcon,
   TablerFolderCheckIcon,
   TablerFolderCodeIcon,
+  TablerFolderCogIcon,
   TablerGaugeIcon,
   TablerHeartIcon,
   TablerHelpCircleIcon,
