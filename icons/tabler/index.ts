@@ -55,22 +55,30 @@ const TABLER_ICON_LIST = [
   {
     name: 'arrow-down',
     icon: TablerArrowDownIcon,
-    keywords: ['arrow', 'down', 'direction', 'south', 'bottom'],
+    keywords: ['arrow', 'down', 'direction', 'south', 'bottom', 'arrow-down'],
   },
   {
     name: 'arrow-left',
     icon: TablerArrowLeftIcon,
-    keywords: ['arrow', 'left', 'direction', 'west', 'back'],
+    keywords: ['arrow', 'left', 'direction', 'west', 'back', 'arrow-left'],
   },
   {
     name: 'arrow-right',
     icon: TablerArrowRightIcon,
-    keywords: ['arrow', 'right', 'direction', 'east', 'forward', 'next'],
+    keywords: [
+      'arrow',
+      'right',
+      'direction',
+      'east',
+      'forward',
+      'next',
+      'arrow-right',
+    ],
   },
   {
     name: 'arrow-up',
     icon: TablerArrowUpIcon,
-    keywords: ['arrow', 'up', 'direction', 'north', 'top'],
+    keywords: ['arrow', 'up', 'direction', 'north', 'top', 'arrow-up'],
   },
   {
     name: 'bell',
@@ -90,22 +98,54 @@ const TABLER_ICON_LIST = [
   {
     name: 'chevron-down',
     icon: TablerChevronDownIcon,
-    keywords: ['chevron', 'down', 'direction', 'south', 'bottom', 'collapse'],
+    keywords: [
+      'chevron',
+      'down',
+      'direction',
+      'south',
+      'bottom',
+      'collapse',
+      'chevron-down',
+    ],
   },
   {
     name: 'chevron-left',
     icon: TablerChevronLeftIcon,
-    keywords: ['chevron', 'left', 'direction', 'west', 'back', 'previous'],
+    keywords: [
+      'chevron',
+      'left',
+      'direction',
+      'west',
+      'back',
+      'previous',
+      'chevron-left',
+    ],
   },
   {
     name: 'chevron-right',
     icon: TablerChevronRightIcon,
-    keywords: ['chevron', 'right', 'direction', 'east', 'forward', 'next'],
+    keywords: [
+      'chevron',
+      'right',
+      'direction',
+      'east',
+      'forward',
+      'next',
+      'chevron-right',
+    ],
   },
   {
     name: 'chevron-up',
     icon: TablerChevronUpIcon,
-    keywords: ['chevron', 'up', 'direction', 'north', 'top', 'expand'],
+    keywords: [
+      'chevron',
+      'up',
+      'direction',
+      'north',
+      'top',
+      'expand',
+      'chevron-up',
+    ],
   },
   {
     name: 'download',
@@ -135,7 +175,15 @@ const TABLER_ICON_LIST = [
   {
     name: 'lock',
     icon: TablerLockIcon,
-    keywords: ['lock', 'security', 'password', 'secure', 'private'],
+    keywords: [
+      'lock',
+      'security',
+      'password',
+      'secure',
+      'private',
+      'lock-keyhole',
+      'keyhole',
+    ],
   },
   {
     name: 'mail',
@@ -161,7 +209,15 @@ const TABLER_ICON_LIST = [
   {
     name: 'refresh',
     icon: TablerRefreshIcon,
-    keywords: ['refresh', 'reload', 'reload', 'update', 'sync', 'rotate'],
+    keywords: [
+      'refresh',
+      'reload',
+      'update',
+      'sync',
+      'rotate',
+      'refresh-ccw',
+      'ccw',
+    ],
   },
   {
     name: 'save',

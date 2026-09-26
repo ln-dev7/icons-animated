@@ -74,22 +74,55 @@ const HUGEICONS_ICON_LIST = [
   {
     name: 'arrow-down',
     icon: HugeiconsArrowDownIcon,
-    keywords: ['arrow', 'down', 'direction', 'south', 'bottom'],
+    keywords: [
+      'arrow',
+      'down',
+      'direction',
+      'south',
+      'bottom',
+      'arrow-down-02',
+      'arrow-down',
+    ],
   },
   {
     name: 'arrow-left',
     icon: HugeiconsArrowLeftIcon,
-    keywords: ['arrow', 'left', 'direction', 'west', 'back'],
+    keywords: [
+      'arrow',
+      'left',
+      'direction',
+      'west',
+      'back',
+      'arrow-left-02',
+      'arrow-left',
+    ],
   },
   {
     name: 'arrow-right',
     icon: HugeiconsArrowRightIcon,
-    keywords: ['arrow', 'right', 'direction', 'east', 'forward', 'next'],
+    keywords: [
+      'arrow',
+      'right',
+      'direction',
+      'east',
+      'forward',
+      'next',
+      'arrow-right-02',
+      'arrow-right',
+    ],
   },
   {
     name: 'arrow-up',
     icon: HugeiconsArrowUpIcon,
-    keywords: ['arrow', 'up', 'direction', 'north', 'top'],
+    keywords: [
+      'arrow',
+      'up',
+      'direction',
+      'north',
+      'top',
+      'arrow-up-02',
+      'arrow-up',
+    ],
   },
   {
     name: 'bell',
@@ -109,27 +142,59 @@ const HUGEICONS_ICON_LIST = [
   {
     name: 'chevron-down',
     icon: HugeiconsChevronDownIcon,
-    keywords: ['chevron', 'down', 'direction', 'south', 'bottom', 'collapse'],
+    keywords: [
+      'chevron',
+      'down',
+      'direction',
+      'south',
+      'bottom',
+      'collapse',
+      'chevron-down',
+    ],
   },
   {
     name: 'chevron-left',
     icon: HugeiconsChevronLeftIcon,
-    keywords: ['chevron', 'left', 'direction', 'west', 'back', 'previous'],
+    keywords: [
+      'chevron',
+      'left',
+      'direction',
+      'west',
+      'back',
+      'previous',
+      'chevron-left',
+    ],
   },
   {
     name: 'chevron-right',
     icon: HugeiconsChevronRightIcon,
-    keywords: ['chevron', 'right', 'direction', 'east', 'forward', 'next'],
+    keywords: [
+      'chevron',
+      'right',
+      'direction',
+      'east',
+      'forward',
+      'next',
+      'chevron-right',
+    ],
   },
   {
     name: 'chevron-up',
     icon: HugeiconsChevronUpIcon,
-    keywords: ['chevron', 'up', 'direction', 'north', 'top', 'expand'],
+    keywords: [
+      'chevron',
+      'up',
+      'direction',
+      'north',
+      'top',
+      'expand',
+      'chevron-up',
+    ],
   },
   {
     name: 'download',
     icon: HugeiconsDownloadIcon,
-    keywords: ['download', 'save', 'arrow', 'get', 'export'],
+    keywords: ['download', 'save', 'arrow', 'get', 'export', 'download-01'],
   },
   {
     name: 'eye',
@@ -149,12 +214,19 @@ const HUGEICONS_ICON_LIST = [
   {
     name: 'home',
     icon: HugeiconsHomeIcon,
-    keywords: ['home', 'house', 'building', 'main', 'dashboard'],
+    keywords: ['home', 'house', 'building', 'main', 'dashboard', 'home-01'],
   },
   {
     name: 'lock',
     icon: HugeiconsLockIcon,
-    keywords: ['lock', 'security', 'password', 'secure', 'private'],
+    keywords: [
+      'lock',
+      'security',
+      'password',
+      'secure',
+      'private',
+      'square-lock-01',
+    ],
   },
   {
     name: 'mail',
@@ -164,7 +236,7 @@ const HUGEICONS_ICON_LIST = [
   {
     name: 'menu',
     icon: HugeiconsMenuIcon,
-    keywords: ['menu', 'hamburger', 'list', 'navigation', 'lines'],
+    keywords: ['menu', 'hamburger', 'list', 'navigation', 'lines', 'menu-01'],
   },
   {
     name: 'pencil',
@@ -194,12 +266,26 @@ const HUGEICONS_ICON_LIST = [
   {
     name: 'search',
     icon: HugeiconsSearchIcon,
-    keywords: ['search', 'find', 'magnifying glass', 'lookup', 'query'],
+    keywords: [
+      'search',
+      'find',
+      'magnifying glass',
+      'lookup',
+      'query',
+      'search-01',
+    ],
   },
   {
     name: 'settings',
     icon: HugeiconsSettingsIcon,
-    keywords: ['settings', 'gear', 'cog', 'preferences', 'config'],
+    keywords: [
+      'settings',
+      'gear',
+      'cog',
+      'preferences',
+      'config',
+      'settings-02',
+    ],
   },
   {
     name: 'share',
@@ -224,7 +310,7 @@ const HUGEICONS_ICON_LIST = [
   {
     name: 'upload',
     icon: HugeiconsUploadIcon,
-    keywords: ['upload', 'send', 'arrow', 'put', 'import'],
+    keywords: ['upload', 'send', 'arrow', 'put', 'import', 'upload-01'],
   },
   {
     name: 'user',
