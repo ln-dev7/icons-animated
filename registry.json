@@ -5620,6 +5620,19 @@
       ]
     },
     {
+      "name": "hugeicons-trending-up-down",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-trending-up-down.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-unfold-more",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -13818,6 +13831,19 @@
       "files": [
         {
           "path": "tabler-trending-up.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-trending-up-down",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-trending-up-down.tsx",
           "type": "registry:ui"
         }
       ]
