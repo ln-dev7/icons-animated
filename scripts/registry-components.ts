@@ -1624,6 +1624,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-linkedin-02',
+    'path': path.join(__dirname, '../icons/hugeicons/linkedin-02.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-lock',
     'path': path.join(__dirname, '../icons/hugeicons/lock.tsx'),
     'registryDependencies': [],
@@ -2773,6 +2779,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'phosphor-linkedin-logo',
+    'path': path.join(__dirname, '../icons/phosphor/linkedin-logo.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'phosphor-list',
     'path': path.join(__dirname, '../icons/phosphor/list.tsx'),
     'registryDependencies': [],
@@ -3405,6 +3417,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-brand-instagram',
     'path': path.join(__dirname, '../icons/tabler/brand-instagram.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-brand-linkedin',
+    'path': path.join(__dirname, '../icons/tabler/brand-linkedin.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

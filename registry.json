@@ -3449,6 +3449,19 @@
       ]
     },
     {
+      "name": "hugeicons-linkedin-02",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-linkedin-02.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-lock",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -5906,6 +5919,19 @@
       ]
     },
     {
+      "name": "phosphor-linkedin-logo",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-linkedin-logo.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-list",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -7279,6 +7305,19 @@
       "files": [
         {
           "path": "tabler-brand-instagram.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-brand-linkedin",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-brand-linkedin.tsx",
           "type": "registry:ui"
         }
       ]

@@ -161,6 +161,7 @@ import { PhosphorLayoutIcon } from './layout';
 import { PhosphorLeafIcon } from './leaf';
 import { PhosphorLinkIcon } from './link';
 import { PhosphorLinkSimpleIcon } from './link-simple';
+import { PhosphorLinkedinLogoIcon } from './linkedin-logo';
 import { PhosphorListIcon } from './list';
 import { PhosphorLockIcon } from './lock';
 import { PhosphorNotebookIcon } from './notebook';
@@ -1000,6 +1001,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['link', 'simple', 'link-2', '2'],
   },
   {
+    name: 'linkedin-logo',
+    icon: PhosphorLinkedinLogoIcon,
+    keywords: ['linkedin', 'logo'],
+  },
+  {
     name: 'list',
     icon: PhosphorListIcon,
     keywords: ['menu', 'hamburger', 'list', 'navigation', 'lines'],
@@ -1393,6 +1399,7 @@ export {
   PhosphorLeafIcon,
   PhosphorLinkIcon,
   PhosphorLinkSimpleIcon,
+  PhosphorLinkedinLogoIcon,
   PhosphorListIcon,
   PhosphorLockIcon,
   PhosphorNotebookIcon,
