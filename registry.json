@@ -4385,6 +4385,19 @@
       ]
     },
     {
+      "name": "hugeicons-rabbit",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-rabbit.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-refresh",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -7305,6 +7318,19 @@
       "files": [
         {
           "path": "phosphor-question.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-rabbit",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-rabbit.tsx",
           "type": "registry:ui"
         }
       ]
