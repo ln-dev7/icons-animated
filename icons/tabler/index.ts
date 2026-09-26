@@ -267,6 +267,7 @@ import { TablerRockingChairIcon } from './rocking-chair';
 import { TablerRollercoasterIcon } from './rollercoaster';
 import { TablerRosetteDiscountIcon } from './rosette-discount';
 import { TablerRotateIcon } from './rotate';
+import { TablerRotateClockwiseIcon } from './rotate-clockwise';
 import { TablerSaveIcon } from './save';
 import { TablerSchoolIcon } from './school';
 import { TablerSearchIcon } from './search';
@@ -1500,6 +1501,11 @@ const TABLER_ICON_LIST = [
     keywords: ['rotate', 'rotate-ccw', 'ccw'],
   },
   {
+    name: 'rotate-clockwise',
+    icon: TablerRotateClockwiseIcon,
+    keywords: ['rotate', 'clockwise', 'rotate-cw', 'cw'],
+  },
+  {
     name: 'save',
     icon: TablerSaveIcon,
     keywords: ['save', 'store', 'disk', 'floppy', 'preserve'],
@@ -1919,6 +1925,7 @@ export {
   TablerRollercoasterIcon,
   TablerRosetteDiscountIcon,
   TablerRotateIcon,
+  TablerRotateClockwiseIcon,
   TablerSaveIcon,
   TablerSchoolIcon,
   TablerSearchIcon,

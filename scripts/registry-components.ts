@@ -2212,6 +2212,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-rotate-cw',
+    'path': path.join(__dirname, '../icons/hugeicons/rotate-cw.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-save',
     'path': path.join(__dirname, '../icons/hugeicons/save.tsx'),
     'registryDependencies': [],
@@ -5463,6 +5469,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-rotate',
     'path': path.join(__dirname, '../icons/tabler/rotate.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-rotate-clockwise',
+    'path': path.join(__dirname, '../icons/tabler/rotate-clockwise.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

@@ -4697,6 +4697,19 @@
       ]
     },
     {
+      "name": "hugeicons-rotate-cw",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-rotate-cw.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-save",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -11673,6 +11686,19 @@
       "files": [
         {
           "path": "tabler-rotate.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-rotate-clockwise",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-rotate-clockwise.tsx",
           "type": "registry:ui"
         }
       ]
