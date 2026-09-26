@@ -411,6 +411,7 @@ import { HugeiconsSunDimIcon } from './sun-dim';
 import { HugeiconsSunMediumIcon } from './sun-medium';
 import { HugeiconsSunMoonIcon } from './sun-moon';
 import { HugeiconsSunsetIcon } from './sunset';
+import { HugeiconsSwissFrancIcon } from './swiss-franc';
 import { HugeiconsTextAlignCenterIcon } from './text-align-center';
 import { HugeiconsTextAlignLeftIcon } from './text-align-left';
 import { HugeiconsTextAlignRightIcon } from './text-align-right';
@@ -2225,6 +2226,11 @@ const HUGEICONS_ICON_LIST = [
   },
   { name: 'sunset', icon: HugeiconsSunsetIcon, keywords: ['sunset'] },
   {
+    name: 'swiss-franc',
+    icon: HugeiconsSwissFrancIcon,
+    keywords: ['swiss', 'franc', 'swiss-franc'],
+  },
+  {
     name: 'text-align-center',
     icon: HugeiconsTextAlignCenterIcon,
     keywords: ['text', 'align', 'center', 'align-center'],
@@ -2691,6 +2697,7 @@ export {
   HugeiconsSunMediumIcon,
   HugeiconsSunMoonIcon,
   HugeiconsSunsetIcon,
+  HugeiconsSwissFrancIcon,
   HugeiconsTextAlignCenterIcon,
   HugeiconsTextAlignLeftIcon,
   HugeiconsTextAlignRightIcon,

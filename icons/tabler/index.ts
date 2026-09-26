@@ -125,6 +125,7 @@ import { TablerCreditCardIcon } from './credit-card';
 import { TablerCupIcon } from './cup';
 import { TablerCurrencyDollarIcon } from './currency-dollar';
 import { TablerCurrencyEuroIcon } from './currency-euro';
+import { TablerCurrencyFrankIcon } from './currency-frank';
 import { TablerCurrencyLariIcon } from './currency-lari';
 import { TablerCurrencyPesoIcon } from './currency-peso';
 import { TablerCurrencyPoundIcon } from './currency-pound';
@@ -916,6 +917,11 @@ const TABLER_ICON_LIST = [
     name: 'currency-euro',
     icon: TablerCurrencyEuroIcon,
     keywords: ['currency', 'euro'],
+  },
+  {
+    name: 'currency-frank',
+    icon: TablerCurrencyFrankIcon,
+    keywords: ['currency', 'frank', 'swiss-franc', 'swiss', 'franc'],
   },
   {
     name: 'currency-lari',
@@ -1986,6 +1992,7 @@ export {
   TablerCupIcon,
   TablerCurrencyDollarIcon,
   TablerCurrencyEuroIcon,
+  TablerCurrencyFrankIcon,
   TablerCurrencyLariIcon,
   TablerCurrencyPesoIcon,
   TablerCurrencyPoundIcon,

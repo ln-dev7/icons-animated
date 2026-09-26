@@ -5373,6 +5373,19 @@
       ]
     },
     {
+      "name": "hugeicons-swiss-franc",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-swiss-franc.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-text-align-center",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -10737,6 +10750,19 @@
       "files": [
         {
           "path": "tabler-currency-euro.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-currency-frank",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-currency-frank.tsx",
           "type": "registry:ui"
         }
       ]

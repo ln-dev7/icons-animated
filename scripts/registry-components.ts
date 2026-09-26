@@ -2527,6 +2527,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-swiss-franc',
+    'path': path.join(__dirname, '../icons/hugeicons/swiss-franc.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-text-align-center',
     'path': path.join(__dirname, '../icons/hugeicons/text-align-center.tsx'),
     'registryDependencies': [],
@@ -5025,6 +5031,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-currency-euro',
     'path': path.join(__dirname, '../icons/tabler/currency-euro.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-currency-frank',
+    'path': path.join(__dirname, '../icons/tabler/currency-frank.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
