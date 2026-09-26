@@ -256,6 +256,7 @@ import { TablerRadioIcon } from './radio';
 import { TablerReceiptIcon } from './receipt';
 import { TablerReceiptEuroIcon } from './receipt-euro';
 import { TablerReceiptRupeeIcon } from './receipt-rupee';
+import { TablerReceiptYenIcon } from './receipt-yen';
 import { TablerRefreshIcon } from './refresh';
 import { TablerRobotIcon } from './robot';
 import { TablerRosetteDiscountIcon } from './rosette-discount';
@@ -1437,6 +1438,11 @@ const TABLER_ICON_LIST = [
     keywords: ['receipt', 'rupee', 'receipt-indian-rupee', 'indian'],
   },
   {
+    name: 'receipt-yen',
+    icon: TablerReceiptYenIcon,
+    keywords: ['receipt', 'yen', 'receipt-japanese-yen', 'japanese'],
+  },
+  {
     name: 'refresh',
     icon: TablerRefreshIcon,
     keywords: [
@@ -1864,6 +1870,7 @@ export {
   TablerReceiptIcon,
   TablerReceiptEuroIcon,
   TablerReceiptRupeeIcon,
+  TablerReceiptYenIcon,
   TablerRefreshIcon,
   TablerRobotIcon,
   TablerRosetteDiscountIcon,

@@ -4476,6 +4476,19 @@
       ]
     },
     {
+      "name": "hugeicons-receipt-japanese-yen",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-receipt-japanese-yen.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-refresh",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -11257,6 +11270,19 @@
       "files": [
         {
           "path": "tabler-receipt-rupee.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-receipt-yen",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-receipt-yen.tsx",
           "type": "registry:ui"
         }
       ]

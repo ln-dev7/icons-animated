@@ -342,6 +342,7 @@ import { HugeiconsReceiptIcon } from './receipt';
 import { HugeiconsReceiptCentIcon } from './receipt-cent';
 import { HugeiconsReceiptEuroIcon } from './receipt-euro';
 import { HugeiconsReceiptIndianRupeeIcon } from './receipt-indian-rupee';
+import { HugeiconsReceiptJapaneseYenIcon } from './receipt-japanese-yen';
 import { HugeiconsRefreshIcon } from './refresh';
 import { HugeiconsSaveIcon } from './save';
 import { HugeiconsSearchIcon } from './search';
@@ -1869,6 +1870,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['receipt', 'indian', 'rupee', 'receipt-indian-rupee'],
   },
   {
+    name: 'receipt-japanese-yen',
+    icon: HugeiconsReceiptJapaneseYenIcon,
+    keywords: ['receipt', 'japanese', 'yen', 'receipt-japanese-yen'],
+  },
+  {
     name: 'refresh',
     icon: HugeiconsRefreshIcon,
     keywords: ['refresh', 'reload', 'reload', 'update', 'sync', 'rotate'],
@@ -2320,6 +2326,7 @@ export {
   HugeiconsReceiptCentIcon,
   HugeiconsReceiptEuroIcon,
   HugeiconsReceiptIndianRupeeIcon,
+  HugeiconsReceiptJapaneseYenIcon,
   HugeiconsRefreshIcon,
   HugeiconsSaveIcon,
   HugeiconsSearchIcon,
