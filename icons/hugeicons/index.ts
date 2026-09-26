@@ -246,6 +246,7 @@ import { HugeiconsHomeIcon } from './home';
 import { HugeiconsHourglassIcon } from './hourglass';
 import { HugeiconsIdCardIcon } from './id-card';
 import { HugeiconsIndianRupeeIcon } from './indian-rupee';
+import { HugeiconsInstagramIcon } from './instagram';
 import { HugeiconsLockIcon } from './lock';
 import { HugeiconsMailIcon } from './mail';
 import { HugeiconsMenuIcon } from './menu';
@@ -1389,6 +1390,7 @@ const HUGEICONS_ICON_LIST = [
     icon: HugeiconsIndianRupeeIcon,
     keywords: ['indian', 'rupee', 'indian-rupee'],
   },
+  { name: 'instagram', icon: HugeiconsInstagramIcon, keywords: ['instagram'] },
   {
     name: 'lock',
     icon: HugeiconsLockIcon,
@@ -1792,6 +1794,7 @@ export {
   HugeiconsHourglassIcon,
   HugeiconsIdCardIcon,
   HugeiconsIndianRupeeIcon,
+  HugeiconsInstagramIcon,
   HugeiconsLockIcon,
   HugeiconsMailIcon,
   HugeiconsMenuIcon,

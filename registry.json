@@ -3228,6 +3228,19 @@
       ]
     },
     {
+      "name": "hugeicons-instagram",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-instagram.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-lock",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -5581,6 +5594,19 @@
       ]
     },
     {
+      "name": "phosphor-instagram-logo",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-instagram-logo.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-list",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -6889,6 +6915,19 @@
       "files": [
         {
           "path": "tabler-brand-gitlab.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-brand-instagram",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-brand-instagram.tsx",
           "type": "registry:ui"
         }
       ]
