@@ -1516,6 +1516,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-indian-rupee',
+    'path': path.join(__dirname, '../icons/hugeicons/indian-rupee.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-lock',
     'path': path.join(__dirname, '../icons/hugeicons/lock.tsx'),
     'registryDependencies': [],
@@ -2277,6 +2283,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-currency-eur',
     'path': path.join(__dirname, '../icons/phosphor/currency-eur.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-currency-inr',
+    'path': path.join(__dirname, '../icons/phosphor/currency-inr.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -3549,6 +3561,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-currency-lari',
     'path': path.join(__dirname, '../icons/tabler/currency-lari.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-currency-rupee',
+    'path': path.join(__dirname, '../icons/tabler/currency-rupee.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

@@ -97,6 +97,7 @@ import { PhosphorCubeIcon } from './cube';
 import { PhosphorCurrencyCircleDollarIcon } from './currency-circle-dollar';
 import { PhosphorCurrencyDollarIcon } from './currency-dollar';
 import { PhosphorCurrencyEurIcon } from './currency-eur';
+import { PhosphorCurrencyInrIcon } from './currency-inr';
 import { PhosphorCursorClickIcon } from './cursor-click';
 import { PhosphorDetectiveIcon } from './detective';
 import { PhosphorDiscIcon } from './disc';
@@ -720,6 +721,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['currency', 'eur', 'euro'],
   },
   {
+    name: 'currency-inr',
+    icon: PhosphorCurrencyInrIcon,
+    keywords: ['currency', 'inr', 'indian-rupee', 'indian', 'rupee'],
+  },
+  {
     name: 'cursor-click',
     icon: PhosphorCursorClickIcon,
     keywords: ['cursor', 'click', 'cursor-click'],
@@ -1267,6 +1273,7 @@ export {
   PhosphorCurrencyCircleDollarIcon,
   PhosphorCurrencyDollarIcon,
   PhosphorCurrencyEurIcon,
+  PhosphorCurrencyInrIcon,
   PhosphorCursorClickIcon,
   PhosphorDetectiveIcon,
   PhosphorDiscIcon,

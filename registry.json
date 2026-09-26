@@ -3215,6 +3215,19 @@
       ]
     },
     {
+      "name": "hugeicons-indian-rupee",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-indian-rupee.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-lock",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -4835,6 +4848,19 @@
       "files": [
         {
           "path": "phosphor-currency-eur.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-currency-inr",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-currency-inr.tsx",
           "type": "registry:ui"
         }
       ]
@@ -7591,6 +7617,19 @@
       "files": [
         {
           "path": "tabler-currency-lari.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-currency-rupee",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-currency-rupee.tsx",
           "type": "registry:ui"
         }
       ]
