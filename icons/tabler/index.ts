@@ -305,6 +305,7 @@ import { TablerSprayIcon } from './spray';
 import { TablerSpyIcon } from './spy';
 import { TablerSquareArrowDownIcon } from './square-arrow-down';
 import { TablerSquareArrowLeftIcon } from './square-arrow-left';
+import { TablerSquareArrowRightIcon } from './square-arrow-right';
 import { TablerStack2Icon } from './stack-2';
 import { TablerStarIcon } from './star';
 import { TablerTextScan2Icon } from './text-scan-2';
@@ -1728,6 +1729,11 @@ const TABLER_ICON_LIST = [
     keywords: ['square', 'arrow', 'left', 'square-arrow-left'],
   },
   {
+    name: 'square-arrow-right',
+    icon: TablerSquareArrowRightIcon,
+    keywords: ['square', 'arrow', 'right', 'square-arrow-right'],
+  },
+  {
     name: 'stack-2',
     icon: TablerStack2Icon,
     keywords: ['stack', '2', 'layers'],
@@ -2084,6 +2090,7 @@ export {
   TablerSpyIcon,
   TablerSquareArrowDownIcon,
   TablerSquareArrowLeftIcon,
+  TablerSquareArrowRightIcon,
   TablerStack2Icon,
   TablerStarIcon,
   TablerTextScan2Icon,
