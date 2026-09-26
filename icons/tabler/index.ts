@@ -87,6 +87,7 @@ import { TablerSaveIcon } from './save';
 import { TablerSearchIcon } from './search';
 import { TablerSettingsIcon } from './settings';
 import { TablerShareIcon } from './share';
+import { TablerShoppingCartIcon } from './shopping-cart';
 import { TablerSortAscendingLettersIcon } from './sort-ascending-letters';
 import { TablerSortAscendingNumbersIcon } from './sort-ascending-numbers';
 import { TablerSortDescendingLettersIcon } from './sort-descending-letters';
@@ -524,6 +525,11 @@ const TABLER_ICON_LIST = [
     keywords: ['share', 'send', 'social', 'network', 'distribute'],
   },
   {
+    name: 'shopping-cart',
+    icon: TablerShoppingCartIcon,
+    keywords: ['shopping', 'cart'],
+  },
+  {
     name: 'sort-ascending-letters',
     icon: TablerSortAscendingLettersIcon,
     keywords: [
@@ -697,6 +703,7 @@ export {
   TablerSearchIcon,
   TablerSettingsIcon,
   TablerShareIcon,
+  TablerShoppingCartIcon,
   TablerSortAscendingLettersIcon,
   TablerSortAscendingNumbersIcon,
   TablerSortDescendingLettersIcon,

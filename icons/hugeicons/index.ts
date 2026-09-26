@@ -99,6 +99,7 @@ import { HugeiconsSaveIcon } from './save';
 import { HugeiconsSearchIcon } from './search';
 import { HugeiconsSettingsIcon } from './settings';
 import { HugeiconsShareIcon } from './share';
+import { HugeiconsShoppingCart01Icon } from './shopping-cart-01';
 import { HugeiconsStarIcon } from './star';
 import { HugeiconsTextAlignCenterIcon } from './text-align-center';
 import { HugeiconsTextAlignLeftIcon } from './text-align-left';
@@ -626,6 +627,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['share', 'send', 'social', 'network', 'distribute'],
   },
   {
+    name: 'shopping-cart-01',
+    icon: HugeiconsShoppingCart01Icon,
+    keywords: ['shopping', 'cart', '01'],
+  },
+  {
     name: 'star',
     icon: HugeiconsStarIcon,
     keywords: ['star', 'favorite', 'bookmark', 'rate', 'rating'],
@@ -775,6 +781,7 @@ export {
   HugeiconsSearchIcon,
   HugeiconsSettingsIcon,
   HugeiconsShareIcon,
+  HugeiconsShoppingCart01Icon,
   HugeiconsStarIcon,
   HugeiconsTextAlignCenterIcon,
   HugeiconsTextAlignLeftIcon,

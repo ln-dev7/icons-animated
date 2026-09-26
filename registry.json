@@ -1317,6 +1317,19 @@
       ]
     },
     {
+      "name": "hugeicons-shopping-cart-01",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-shopping-cart-01.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-star",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2391,6 +2404,19 @@
       "files": [
         {
           "path": "phosphor-share.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-shopping-cart",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-shopping-cart.tsx",
           "type": "registry:ui"
         }
       ]
@@ -3730,6 +3756,19 @@
       "files": [
         {
           "path": "tabler-share.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-shopping-cart",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-shopping-cart.tsx",
           "type": "registry:ui"
         }
       ]

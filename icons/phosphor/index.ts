@@ -72,6 +72,7 @@ import { PhosphorSealPercentIcon } from './seal-percent';
 import { PhosphorSealWarningIcon } from './seal-warning';
 import { PhosphorSearchIcon } from './search';
 import { PhosphorShareIcon } from './share';
+import { PhosphorShoppingCartIcon } from './shopping-cart';
 import { PhosphorSmileyAngryIcon } from './smiley-angry';
 import { PhosphorSmileyMehIcon } from './smiley-meh';
 import { PhosphorSortAscendingIcon } from './sort-ascending';
@@ -491,6 +492,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['share', 'send', 'social', 'network', 'distribute'],
   },
   {
+    name: 'shopping-cart',
+    icon: PhosphorShoppingCartIcon,
+    keywords: ['shopping', 'cart'],
+  },
+  {
     name: 'smiley-angry',
     icon: PhosphorSmileyAngryIcon,
     keywords: ['smiley', 'angry'],
@@ -656,6 +662,7 @@ export {
   PhosphorSealWarningIcon,
   PhosphorSearchIcon,
   PhosphorShareIcon,
+  PhosphorShoppingCartIcon,
   PhosphorSmileyAngryIcon,
   PhosphorSmileyMehIcon,
   PhosphorSortAscendingIcon,
