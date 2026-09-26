@@ -184,6 +184,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-universal-access',
+    'path': path.join(__dirname, '../icons/hugeicons/universal-access.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-upload',
     'path': path.join(__dirname, '../icons/hugeicons/upload.tsx'),
     'registryDependencies': [],
@@ -328,6 +334,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'phosphor-person-arms-spread',
+    'path': path.join(__dirname, '../icons/phosphor/person-arms-spread.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'phosphor-plus',
     'path': path.join(__dirname, '../icons/phosphor/plus.tsx'),
     'registryDependencies': [],
@@ -384,6 +396,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-x',
     'path': path.join(__dirname, '../icons/phosphor/x.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-accessible',
+    'path': path.join(__dirname, '../icons/tabler/accessible.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

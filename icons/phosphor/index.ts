@@ -19,6 +19,7 @@ import { PhosphorHouseIcon } from './house';
 import { PhosphorListIcon } from './list';
 import { PhosphorLockIcon } from './lock';
 import { PhosphorPencilIcon } from './pencil';
+import { PhosphorPersonArmsSpreadIcon } from './person-arms-spread';
 import { PhosphorPlusIcon } from './plus';
 import { PhosphorRefreshIcon } from './refresh';
 import { PhosphorSaveIcon } from './save';
@@ -57,6 +58,16 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['bell', 'notification', 'alert', 'ring', 'alarm'],
   },
   {
+    name: 'calendar',
+    icon: PhosphorCalendarIcon,
+    keywords: ['calendar', 'date', 'schedule', 'event', 'day'],
+  },
+  {
+    name: 'check',
+    icon: PhosphorCheckIcon,
+    keywords: ['check', 'done', 'success', 'complete', 'validate', 'tick'],
+  },
+  {
     name: 'chevron-down',
     icon: PhosphorChevronDownIcon,
     keywords: ['chevron', 'down', 'direction', 'south', 'bottom', 'collapse'],
@@ -77,16 +88,6 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['chevron', 'up', 'direction', 'north', 'top', 'expand'],
   },
   {
-    name: 'calendar',
-    icon: PhosphorCalendarIcon,
-    keywords: ['calendar', 'date', 'schedule', 'event', 'day'],
-  },
-  {
-    name: 'check',
-    icon: PhosphorCheckIcon,
-    keywords: ['check', 'done', 'success', 'complete', 'validate', 'tick'],
-  },
-  {
     name: 'download',
     icon: PhosphorDownloadIcon,
     keywords: ['download', 'save', 'arrow', 'get', 'export'],
@@ -97,14 +98,14 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['envelope', 'mail', 'email', 'message', 'letter'],
   },
   {
-    name: 'filter',
-    icon: PhosphorFilterIcon,
-    keywords: ['filter', 'sort', 'funnel', 'refine', 'search'],
-  },
-  {
     name: 'eye',
     icon: PhosphorEyeIcon,
     keywords: ['eye', 'view', 'see', 'visible', 'show', 'watch'],
+  },
+  {
+    name: 'filter',
+    icon: PhosphorFilterIcon,
+    keywords: ['filter', 'sort', 'funnel', 'refine', 'search'],
   },
   {
     name: 'gear',
@@ -135,6 +136,11 @@ const PHOSPHOR_ICON_LIST = [
     name: 'pencil',
     icon: PhosphorPencilIcon,
     keywords: ['pencil', 'edit', 'write', 'pen', 'modify'],
+  },
+  {
+    name: 'person-arms-spread',
+    icon: PhosphorPersonArmsSpreadIcon,
+    keywords: ['person', 'arms', 'spread', 'accessibility'],
   },
   {
     name: 'plus',
@@ -211,6 +217,7 @@ export {
   PhosphorListIcon,
   PhosphorLockIcon,
   PhosphorPencilIcon,
+  PhosphorPersonArmsSpreadIcon,
   PhosphorPlusIcon,
   PhosphorRefreshIcon,
   PhosphorSaveIcon,

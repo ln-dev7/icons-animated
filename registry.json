@@ -394,6 +394,19 @@
       ]
     },
     {
+      "name": "hugeicons-universal-access",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-universal-access.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-upload",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -706,6 +719,19 @@
       ]
     },
     {
+      "name": "phosphor-person-arms-spread",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-person-arms-spread.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-plus",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -831,6 +857,19 @@
       "files": [
         {
           "path": "phosphor-x.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-accessible",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-accessible.tsx",
           "type": "registry:ui"
         }
       ]

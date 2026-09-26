@@ -1,3 +1,4 @@
+import { TablerAccessibleIcon } from './accessible';
 import { TablerArrowDownIcon } from './arrow-down';
 import { TablerArrowLeftIcon } from './arrow-left';
 import { TablerArrowRightIcon } from './arrow-right';
@@ -32,6 +33,11 @@ import { TablerXIcon } from './x';
 
 const TABLER_ICON_LIST = [
   {
+    name: 'accessible',
+    icon: TablerAccessibleIcon,
+    keywords: ['accessible', 'accessibility'],
+  },
+  {
     name: 'arrow-down',
     icon: TablerArrowDownIcon,
     keywords: ['arrow', 'down', 'direction', 'south', 'bottom'],
@@ -57,6 +63,16 @@ const TABLER_ICON_LIST = [
     keywords: ['bell', 'notification', 'alert', 'ring', 'alarm'],
   },
   {
+    name: 'calendar',
+    icon: TablerCalendarIcon,
+    keywords: ['calendar', 'date', 'schedule', 'event', 'day'],
+  },
+  {
+    name: 'check',
+    icon: TablerCheckIcon,
+    keywords: ['check', 'done', 'success', 'complete', 'validate', 'tick'],
+  },
+  {
     name: 'chevron-down',
     icon: TablerChevronDownIcon,
     keywords: ['chevron', 'down', 'direction', 'south', 'bottom', 'collapse'],
@@ -75,16 +91,6 @@ const TABLER_ICON_LIST = [
     name: 'chevron-up',
     icon: TablerChevronUpIcon,
     keywords: ['chevron', 'up', 'direction', 'north', 'top', 'expand'],
-  },
-  {
-    name: 'calendar',
-    icon: TablerCalendarIcon,
-    keywords: ['calendar', 'date', 'schedule', 'event', 'day'],
-  },
-  {
-    name: 'check',
-    icon: TablerCheckIcon,
-    keywords: ['check', 'done', 'success', 'complete', 'validate', 'tick'],
   },
   {
     name: 'download',
@@ -190,6 +196,7 @@ const TABLER_ICON_LIST = [
 
 export {
   TABLER_ICON_LIST,
+  TablerAccessibleIcon,
   TablerArrowDownIcon,
   TablerArrowLeftIcon,
   TablerArrowRightIcon,

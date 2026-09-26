@@ -28,6 +28,7 @@ import { HugeiconsSettingsIcon } from './settings';
 import { HugeiconsShareIcon } from './share';
 import { HugeiconsStarIcon } from './star';
 import { HugeiconsTrashIcon } from './trash';
+import { HugeiconsUniversalAccessIcon } from './universal-access';
 import { HugeiconsUploadIcon } from './upload';
 import { HugeiconsUserIcon } from './user';
 import { HugeiconsXIcon } from './x';
@@ -184,6 +185,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['trash', 'delete', 'remove', 'bin', 'garbage'],
   },
   {
+    name: 'universal-access',
+    icon: HugeiconsUniversalAccessIcon,
+    keywords: ['universal', 'access', 'accessibility'],
+  },
+  {
     name: 'upload',
     icon: HugeiconsUploadIcon,
     keywords: ['upload', 'send', 'arrow', 'put', 'import'],
@@ -232,6 +238,7 @@ export {
   HugeiconsShareIcon,
   HugeiconsStarIcon,
   HugeiconsTrashIcon,
+  HugeiconsUniversalAccessIcon,
   HugeiconsUploadIcon,
   HugeiconsUserIcon,
   HugeiconsXIcon,
