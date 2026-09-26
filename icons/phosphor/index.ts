@@ -284,6 +284,7 @@ import { PhosphorTranslateIcon } from './translate';
 import { PhosphorTrashIcon } from './trash';
 import { PhosphorTreeIcon } from './tree';
 import { PhosphorTreeEvergreenIcon } from './tree-evergreen';
+import { PhosphorTreeStructureIcon } from './tree-structure';
 import { PhosphorTrendDownIcon } from './trend-down';
 import { PhosphorTrendUpIcon } from './trend-up';
 import { PhosphorTruckIcon } from './truck';
@@ -1685,6 +1686,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['tree', 'evergreen', 'tree-pine', 'pine'],
   },
   {
+    name: 'tree-structure',
+    icon: PhosphorTreeStructureIcon,
+    keywords: ['tree', 'structure', 'workflow'],
+  },
+  {
     name: 'trend-down',
     icon: PhosphorTrendDownIcon,
     keywords: ['trend', 'down', 'trending-down', 'trending'],
@@ -2055,6 +2061,7 @@ export {
   PhosphorTrashIcon,
   PhosphorTreeIcon,
   PhosphorTreeEvergreenIcon,
+  PhosphorTreeStructureIcon,
   PhosphorTrendDownIcon,
   PhosphorTrendUpIcon,
   PhosphorTruckIcon,

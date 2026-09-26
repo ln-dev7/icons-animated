@@ -6101,6 +6101,19 @@
       ]
     },
     {
+      "name": "hugeicons-workflow",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-workflow.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-x",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -9827,6 +9840,19 @@
       "files": [
         {
           "path": "phosphor-tree-evergreen.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-tree-structure",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-tree-structure.tsx",
           "type": "registry:ui"
         }
       ]
@@ -13922,6 +13948,19 @@
       "files": [
         {
           "path": "tabler-save.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-schema",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-schema.tsx",
           "type": "registry:ui"
         }
       ]

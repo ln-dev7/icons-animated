@@ -292,6 +292,7 @@ import { TablerRouteIcon } from './route';
 import { TablerRouterIcon } from './router';
 import { TablerRubberStampIcon } from './rubber-stamp';
 import { TablerSaveIcon } from './save';
+import { TablerSchemaIcon } from './schema';
 import { TablerSchoolIcon } from './school';
 import { TablerSearchIcon } from './search';
 import { TablerSelectorIcon } from './selector';
@@ -1700,6 +1701,7 @@ const TABLER_ICON_LIST = [
     icon: TablerSaveIcon,
     keywords: ['save', 'store', 'disk', 'floppy', 'preserve'],
   },
+  { name: 'schema', icon: TablerSchemaIcon, keywords: ['schema', 'workflow'] },
   {
     name: 'school',
     icon: TablerSchoolIcon,
@@ -2315,6 +2317,7 @@ export {
   TablerRouterIcon,
   TablerRubberStampIcon,
   TablerSaveIcon,
+  TablerSchemaIcon,
   TablerSchoolIcon,
   TablerSearchIcon,
   TablerSelectorIcon,
