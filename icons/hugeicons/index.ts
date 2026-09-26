@@ -251,6 +251,7 @@ import { HugeiconsItalicIcon } from './italic';
 import { HugeiconsJapaneseYenIcon } from './japanese-yen';
 import { HugeiconsKey01Icon } from './key-01';
 import { HugeiconsKeyRoundIcon } from './key-round';
+import { HugeiconsKeySquareIcon } from './key-square';
 import { HugeiconsLockIcon } from './lock';
 import { HugeiconsMailIcon } from './mail';
 import { HugeiconsMenuIcon } from './menu';
@@ -1408,6 +1409,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['key', 'round', 'key-circle', 'circle'],
   },
   {
+    name: 'key-square',
+    icon: HugeiconsKeySquareIcon,
+    keywords: ['key', 'square', 'key-square'],
+  },
+  {
     name: 'lock',
     icon: HugeiconsLockIcon,
     keywords: [
@@ -1815,6 +1821,7 @@ export {
   HugeiconsJapaneseYenIcon,
   HugeiconsKey01Icon,
   HugeiconsKeyRoundIcon,
+  HugeiconsKeySquareIcon,
   HugeiconsLockIcon,
   HugeiconsMailIcon,
   HugeiconsMenuIcon,
