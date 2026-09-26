@@ -2708,6 +2708,19 @@
       ]
     },
     {
+      "name": "hugeicons-gallery-vertical-end",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-gallery-vertical-end.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-heart",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -3821,6 +3834,19 @@
       "files": [
         {
           "path": "phosphor-call-bell.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-cards-three",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-cards-three.tsx",
           "type": "registry:ui"
         }
       ]
