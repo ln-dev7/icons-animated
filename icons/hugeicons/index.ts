@@ -300,6 +300,7 @@ import { HugeiconsMessageSquareIcon } from './message-square';
 import { HugeiconsMessageSquareCheckIcon } from './message-square-check';
 import { HugeiconsMessageSquareDashedIcon } from './message-square-dashed';
 import { HugeiconsMessageSquareMoreIcon } from './message-square-more';
+import { HugeiconsMessageSquarePlusIcon } from './message-square-plus';
 import { HugeiconsMousePointerClickIcon } from './mouse-pointer-click';
 import { HugeiconsPencilIcon } from './pencil';
 import { HugeiconsPieChartIcon } from './pie-chart';
@@ -1670,6 +1671,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['message', 'square', 'more', 'message-square-more'],
   },
   {
+    name: 'message-square-plus',
+    icon: HugeiconsMessageSquarePlusIcon,
+    keywords: ['message', 'square', 'plus', 'message-square-plus'],
+  },
+  {
     name: 'mouse-pointer-click',
     icon: HugeiconsMousePointerClickIcon,
     keywords: ['mouse', 'pointer', 'click', 'cursor-click', 'cursor'],
@@ -2104,6 +2110,7 @@ export {
   HugeiconsMessageSquareCheckIcon,
   HugeiconsMessageSquareDashedIcon,
   HugeiconsMessageSquareMoreIcon,
+  HugeiconsMessageSquarePlusIcon,
   HugeiconsMousePointerClickIcon,
   HugeiconsPencilIcon,
   HugeiconsPieChartIcon,
