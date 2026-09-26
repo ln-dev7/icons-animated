@@ -2779,6 +2779,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-washing-machine',
+    'path': path.join(__dirname, '../icons/hugeicons/washing-machine.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-x',
     'path': path.join(__dirname, '../icons/hugeicons/x.tsx'),
     'registryDependencies': [],
@@ -4590,6 +4596,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-wallet',
     'path': path.join(__dirname, '../icons/phosphor/wallet.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-washing-machine',
+    'path': path.join(__dirname, '../icons/phosphor/washing-machine.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -6756,6 +6768,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-wallet',
     'path': path.join(__dirname, '../icons/tabler/wallet.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-wash-machine',
+    'path': path.join(__dirname, '../icons/tabler/wash-machine.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

@@ -5919,6 +5919,19 @@
       ]
     },
     {
+      "name": "hugeicons-washing-machine",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-washing-machine.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-x",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -9801,6 +9814,19 @@
       "files": [
         {
           "path": "phosphor-wallet.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-washing-machine",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-washing-machine.tsx",
           "type": "registry:ui"
         }
       ]
@@ -14468,6 +14494,19 @@
       "files": [
         {
           "path": "tabler-wallet.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-wash-machine",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-wash-machine.tsx",
           "type": "registry:ui"
         }
       ]

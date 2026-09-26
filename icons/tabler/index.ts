@@ -355,6 +355,7 @@ import { TablerUsersIcon } from './users';
 import { TablerVaccineIcon } from './vaccine';
 import { TablerVolumeIcon } from './volume';
 import { TablerWalletIcon } from './wallet';
+import { TablerWashMachineIcon } from './wash-machine';
 import { TablerWindmillIcon } from './windmill';
 import { TablerWorldIcon } from './world';
 import { TablerXIcon } from './x';
@@ -1981,6 +1982,11 @@ const TABLER_ICON_LIST = [
   { name: 'volume', icon: TablerVolumeIcon, keywords: ['volume'] },
   { name: 'wallet', icon: TablerWalletIcon, keywords: ['wallet'] },
   {
+    name: 'wash-machine',
+    icon: TablerWashMachineIcon,
+    keywords: ['wash', 'machine', 'washing-machine', 'washing'],
+  },
+  {
     name: 'windmill',
     icon: TablerWindmillIcon,
     keywords: ['windmill', 'loader-pinwheel', 'loader', 'pinwheel'],
@@ -2352,6 +2358,7 @@ export {
   TablerVaccineIcon,
   TablerVolumeIcon,
   TablerWalletIcon,
+  TablerWashMachineIcon,
   TablerWindmillIcon,
   TablerWorldIcon,
   TablerXIcon,
