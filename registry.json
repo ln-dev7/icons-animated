@@ -2292,6 +2292,19 @@
       ]
     },
     {
+      "name": "hugeicons-finger-print",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-finger-print.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-heart",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -4133,6 +4146,19 @@
       "files": [
         {
           "path": "phosphor-filter.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-fingerprint",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-fingerprint.tsx",
           "type": "registry:ui"
         }
       ]
@@ -6382,6 +6408,19 @@
       "files": [
         {
           "path": "tabler-filter.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-fingerprint",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-fingerprint.tsx",
           "type": "registry:ui"
         }
       ]

@@ -1078,6 +1078,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-finger-print',
+    'path': path.join(__dirname, '../icons/hugeicons/finger-print.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-heart',
     'path': path.join(__dirname, '../icons/hugeicons/heart.tsx'),
     'registryDependencies': [],
@@ -1938,6 +1944,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-filter',
     'path': path.join(__dirname, '../icons/phosphor/filter.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-fingerprint',
+    'path': path.join(__dirname, '../icons/phosphor/fingerprint.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -2976,6 +2988,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-filter',
     'path': path.join(__dirname, '../icons/tabler/filter.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-fingerprint',
+    'path': path.join(__dirname, '../icons/tabler/fingerprint.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

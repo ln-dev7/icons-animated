@@ -174,6 +174,7 @@ import { HugeiconsFilePenLineIcon } from './file-pen-line';
 import { HugeiconsFileStackIcon } from './file-stack';
 import { HugeiconsFileTextIcon } from './file-text';
 import { HugeiconsFilterIcon } from './filter';
+import { HugeiconsFingerPrintIcon } from './finger-print';
 import { HugeiconsHeartIcon } from './heart';
 import { HugeiconsHomeIcon } from './home';
 import { HugeiconsLockIcon } from './lock';
@@ -1012,6 +1013,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['filter', 'sort', 'funnel', 'refine', 'search'],
   },
   {
+    name: 'finger-print',
+    icon: HugeiconsFingerPrintIcon,
+    keywords: ['finger', 'print', 'fingerprint'],
+  },
+  {
     name: 'heart',
     icon: HugeiconsHeartIcon,
     keywords: ['heart', 'love', 'like', 'favorite', 'health'],
@@ -1352,6 +1358,7 @@ export {
   HugeiconsFileStackIcon,
   HugeiconsFileTextIcon,
   HugeiconsFilterIcon,
+  HugeiconsFingerPrintIcon,
   HugeiconsHeartIcon,
   HugeiconsHomeIcon,
   HugeiconsLockIcon,

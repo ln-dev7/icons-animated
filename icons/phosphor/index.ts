@@ -112,6 +112,7 @@ import { PhosphorFileTextIcon } from './file-text';
 import { PhosphorFilesIcon } from './files';
 import { PhosphorFilmSlateIcon } from './film-slate';
 import { PhosphorFilterIcon } from './filter';
+import { PhosphorFingerprintIcon } from './fingerprint';
 import { PhosphorGearIcon } from './gear';
 import { PhosphorGearFineIcon } from './gear-fine';
 import { PhosphorGlobeHemisphereWestIcon } from './globe-hemisphere-west';
@@ -734,6 +735,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['filter', 'sort', 'funnel', 'refine', 'search'],
   },
   {
+    name: 'fingerprint',
+    icon: PhosphorFingerprintIcon,
+    keywords: ['fingerprint'],
+  },
+  {
     name: 'gear',
     icon: PhosphorGearIcon,
     keywords: ['settings', 'gear', 'cog', 'preferences', 'config'],
@@ -1087,6 +1093,7 @@ export {
   PhosphorFilesIcon,
   PhosphorFilmSlateIcon,
   PhosphorFilterIcon,
+  PhosphorFingerprintIcon,
   PhosphorGearIcon,
   PhosphorGearFineIcon,
   PhosphorGlobeHemisphereWestIcon,

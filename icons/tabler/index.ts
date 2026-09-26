@@ -129,6 +129,7 @@ import { TablerFileSettingsIcon } from './file-settings';
 import { TablerFileStackIcon } from './file-stack';
 import { TablerFileTextIcon } from './file-text';
 import { TablerFilterIcon } from './filter';
+import { TablerFingerprintIcon } from './fingerprint';
 import { TablerGaugeIcon } from './gauge';
 import { TablerHeartIcon } from './heart';
 import { TablerHelpCircleIcon } from './help-circle';
@@ -766,6 +767,11 @@ const TABLER_ICON_LIST = [
     keywords: ['filter', 'sort', 'funnel', 'refine', 'search'],
   },
   {
+    name: 'fingerprint',
+    icon: TablerFingerprintIcon,
+    keywords: ['fingerprint'],
+  },
+  {
     name: 'gauge',
     icon: TablerGaugeIcon,
     keywords: ['gauge', 'circle-gauge', 'circle'],
@@ -1145,6 +1151,7 @@ export {
   TablerFileStackIcon,
   TablerFileTextIcon,
   TablerFilterIcon,
+  TablerFingerprintIcon,
   TablerGaugeIcon,
   TablerHeartIcon,
   TablerHelpCircleIcon,
