@@ -51,6 +51,7 @@ import { TablerBookmarkIcon } from './bookmark';
 import { TablerBookmarkMinusIcon } from './bookmark-minus';
 import { TablerBookmarkPlusIcon } from './bookmark-plus';
 import { TablerBoxIcon } from './box';
+import { TablerBrainIcon } from './brain';
 import { TablerCalendarIcon } from './calendar';
 import { TablerCheckIcon } from './check';
 import { TablerChevronDownIcon } from './chevron-down';
@@ -302,6 +303,7 @@ const TABLER_ICON_LIST = [
     keywords: ['bookmark', 'plus', 'bookmark-plus'],
   },
   { name: 'box', icon: TablerBoxIcon, keywords: ['box'] },
+  { name: 'brain', icon: TablerBrainIcon, keywords: ['brain'] },
   {
     name: 'calendar',
     icon: TablerCalendarIcon,
@@ -635,6 +637,7 @@ export {
   TablerBookmarkMinusIcon,
   TablerBookmarkPlusIcon,
   TablerBoxIcon,
+  TablerBrainIcon,
   TablerCalendarIcon,
   TablerCheckIcon,
   TablerChevronDownIcon,
