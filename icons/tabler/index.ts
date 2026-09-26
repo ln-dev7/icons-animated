@@ -312,6 +312,7 @@ import { TablerSquareChevronDownIcon } from './square-chevron-down';
 import { TablerSquareChevronLeftIcon } from './square-chevron-left';
 import { TablerSquareChevronRightIcon } from './square-chevron-right';
 import { TablerSquareChevronUpIcon } from './square-chevron-up';
+import { TablerSquaresIcon } from './squares';
 import { TablerStack2Icon } from './stack-2';
 import { TablerStarIcon } from './star';
 import { TablerTextScan2Icon } from './text-scan-2';
@@ -1770,6 +1771,11 @@ const TABLER_ICON_LIST = [
     keywords: ['square', 'chevron', 'up', 'square-chevron-up'],
   },
   {
+    name: 'squares',
+    icon: TablerSquaresIcon,
+    keywords: ['squares', 'square-stack', 'square', 'stack'],
+  },
+  {
     name: 'stack-2',
     icon: TablerStack2Icon,
     keywords: ['stack', '2', 'layers'],
@@ -2133,6 +2139,7 @@ export {
   TablerSquareChevronLeftIcon,
   TablerSquareChevronRightIcon,
   TablerSquareChevronUpIcon,
+  TablerSquaresIcon,
   TablerStack2Icon,
   TablerStarIcon,
   TablerTextScan2Icon,

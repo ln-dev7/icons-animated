@@ -401,6 +401,7 @@ import { HugeiconsSquareChevronLeftIcon } from './square-chevron-left';
 import { HugeiconsSquareChevronRightIcon } from './square-chevron-right';
 import { HugeiconsSquareChevronUpIcon } from './square-chevron-up';
 import { HugeiconsSquarePenIcon } from './square-pen';
+import { HugeiconsSquareStackIcon } from './square-stack';
 import { HugeiconsStarIcon } from './star';
 import { HugeiconsSunCloud02Icon } from './sun-cloud-02';
 import { HugeiconsTextAlignCenterIcon } from './text-align-center';
@@ -2179,6 +2180,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['square', 'pen', 'square-pen'],
   },
   {
+    name: 'square-stack',
+    icon: HugeiconsSquareStackIcon,
+    keywords: ['square', 'stack', 'square-stack'],
+  },
+  {
     name: 'star',
     icon: HugeiconsStarIcon,
     keywords: ['star', 'favorite', 'bookmark', 'rate', 'rating'],
@@ -2645,6 +2651,7 @@ export {
   HugeiconsSquareChevronRightIcon,
   HugeiconsSquareChevronUpIcon,
   HugeiconsSquarePenIcon,
+  HugeiconsSquareStackIcon,
   HugeiconsStarIcon,
   HugeiconsSunCloud02Icon,
   HugeiconsTextAlignCenterIcon,
