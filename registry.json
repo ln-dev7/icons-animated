@@ -5113,6 +5113,19 @@
       ]
     },
     {
+      "name": "hugeicons-square-activity",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-square-activity.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-star",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -10516,6 +10529,19 @@
       "files": [
         {
           "path": "tabler-device-desktop-cog.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-device-heart-monitor",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-device-heart-monitor.tsx",
           "type": "registry:ui"
         }
       ]
