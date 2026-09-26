@@ -348,6 +348,7 @@ import { HugeiconsReceiptRussianRubleIcon } from './receipt-russian-ruble';
 import { HugeiconsReceiptSwissFrancIcon } from './receipt-swiss-franc';
 import { HugeiconsReceiptTextIcon } from './receipt-text';
 import { HugeiconsReceiptTurkishLiraIcon } from './receipt-turkish-lira';
+import { HugeiconsRedoIcon } from './redo';
 import { HugeiconsRefreshIcon } from './refresh';
 import { HugeiconsSaveIcon } from './save';
 import { HugeiconsSearchIcon } from './search';
@@ -1904,6 +1905,7 @@ const HUGEICONS_ICON_LIST = [
     icon: HugeiconsReceiptTurkishLiraIcon,
     keywords: ['receipt', 'turkish', 'lira', 'receipt-turkish-lira'],
   },
+  { name: 'redo', icon: HugeiconsRedoIcon, keywords: ['redo'] },
   {
     name: 'refresh',
     icon: HugeiconsRefreshIcon,
@@ -2362,6 +2364,7 @@ export {
   HugeiconsReceiptSwissFrancIcon,
   HugeiconsReceiptTextIcon,
   HugeiconsReceiptTurkishLiraIcon,
+  HugeiconsRedoIcon,
   HugeiconsRefreshIcon,
   HugeiconsSaveIcon,
   HugeiconsSearchIcon,
