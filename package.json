@@ -14,7 +14,8 @@
     "check-registry": "node --import tsx scripts/check-registry.ts",
     "sync-registry": "node --import tsx scripts/sync-registry.ts",
     "build-registry": "node --import tsx scripts/registry-build.ts",
-    "gen-cli": "pnpm lint && pnpm run sync-registry && pnpm run build-registry && pnpm run check-registry"
+    "gen-cli": "pnpm lint && pnpm run sync-registry && pnpm run build-registry && pnpm run check-registry",
+    "check-icon-content": "node --import tsx --test scripts/check-icon-content.test.ts"
   },
   "dependencies": {
     "@base-ui-components/react": "1.0.0-rc.0",
