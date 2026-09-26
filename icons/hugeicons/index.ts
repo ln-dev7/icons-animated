@@ -188,6 +188,7 @@ import { HugeiconsFolderDownIcon } from './folder-down';
 import { HugeiconsFolderGitIcon } from './folder-git';
 import { HugeiconsFolderGit2Icon } from './folder-git-2';
 import { HugeiconsFolderHeartIcon } from './folder-heart';
+import { HugeiconsFolderInputIcon } from './folder-input';
 import { HugeiconsHeartIcon } from './heart';
 import { HugeiconsHomeIcon } from './home';
 import { HugeiconsLockIcon } from './lock';
@@ -1092,6 +1093,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['folder', 'heart', 'folder-heart'],
   },
   {
+    name: 'folder-input',
+    icon: HugeiconsFolderInputIcon,
+    keywords: ['folder', 'input', 'folder-input'],
+  },
+  {
     name: 'heart',
     icon: HugeiconsHeartIcon,
     keywords: ['heart', 'love', 'like', 'favorite', 'health'],
@@ -1446,6 +1452,7 @@ export {
   HugeiconsFolderGitIcon,
   HugeiconsFolderGit2Icon,
   HugeiconsFolderHeartIcon,
+  HugeiconsFolderInputIcon,
   HugeiconsHeartIcon,
   HugeiconsHomeIcon,
   HugeiconsLockIcon,
