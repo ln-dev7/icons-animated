@@ -30,6 +30,19 @@
       ]
     },
     {
+      "name": "hugeicons-air-vent",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-air-vent.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-arrow-down",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -909,6 +922,19 @@
       "files": [
         {
           "path": "tabler-activity.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-air-conditioning",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-air-conditioning.tsx",
           "type": "registry:ui"
         }
       ]
