@@ -1576,6 +1576,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-laugh',
+    'path': path.join(__dirname, '../icons/hugeicons/laugh.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-lock',
     'path': path.join(__dirname, '../icons/hugeicons/lock.tsx'),
     'registryDependencies': [],
@@ -4071,6 +4077,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-mood-annoyed',
     'path': path.join(__dirname, '../icons/tabler/mood-annoyed.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-mood-happy',
+    'path': path.join(__dirname, '../icons/tabler/mood-happy.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

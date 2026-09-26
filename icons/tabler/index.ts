@@ -188,6 +188,7 @@ import { TablerMenuIcon } from './menu';
 import { TablerMessageChatbotIcon } from './message-chatbot';
 import { TablerMoodAngryIcon } from './mood-angry';
 import { TablerMoodAnnoyedIcon } from './mood-annoyed';
+import { TablerMoodHappyIcon } from './mood-happy';
 import { TablerMoodSadIcon } from './mood-sad';
 import { TablerPackagesIcon } from './packages';
 import { TablerPaperclipIcon } from './paperclip';
@@ -1071,6 +1072,11 @@ const TABLER_ICON_LIST = [
     keywords: ['mood', 'annoyed'],
   },
   {
+    name: 'mood-happy',
+    icon: TablerMoodHappyIcon,
+    keywords: ['mood', 'happy', 'laugh'],
+  },
+  {
     name: 'mood-sad',
     icon: TablerMoodSadIcon,
     keywords: ['mood', 'sad', 'frown'],
@@ -1456,6 +1462,7 @@ export {
   TablerMessageChatbotIcon,
   TablerMoodAngryIcon,
   TablerMoodAnnoyedIcon,
+  TablerMoodHappyIcon,
   TablerMoodSadIcon,
   TablerPackagesIcon,
   TablerPaperclipIcon,

@@ -255,6 +255,7 @@ import { HugeiconsKeySquareIcon } from './key-square';
 import { HugeiconsKeyboardIcon } from './keyboard';
 import { HugeiconsLanguagesIcon } from './languages';
 import { HugeiconsLaptopMinimalCheckIcon } from './laptop-minimal-check';
+import { HugeiconsLaughIcon } from './laugh';
 import { HugeiconsLockIcon } from './lock';
 import { HugeiconsMailIcon } from './mail';
 import { HugeiconsMenuIcon } from './menu';
@@ -1423,6 +1424,7 @@ const HUGEICONS_ICON_LIST = [
     icon: HugeiconsLaptopMinimalCheckIcon,
     keywords: ['laptop', 'minimal', 'check', 'laptop-minimal-check'],
   },
+  { name: 'laugh', icon: HugeiconsLaughIcon, keywords: ['laugh'] },
   {
     name: 'lock',
     icon: HugeiconsLockIcon,
@@ -1835,6 +1837,7 @@ export {
   HugeiconsKeyboardIcon,
   HugeiconsLanguagesIcon,
   HugeiconsLaptopMinimalCheckIcon,
+  HugeiconsLaughIcon,
   HugeiconsLockIcon,
   HugeiconsMailIcon,
   HugeiconsMenuIcon,
