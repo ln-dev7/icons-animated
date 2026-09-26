@@ -123,6 +123,7 @@ import { TablerExternalLinkIcon } from './external-link';
 import { TablerEyeIcon } from './eye';
 import { TablerEyeOffIcon } from './eye-off';
 import { TablerFeatherIcon } from './feather';
+import { TablerFileCheckIcon } from './file-check';
 import { TablerFilterIcon } from './filter';
 import { TablerGaugeIcon } from './gauge';
 import { TablerHeartIcon } from './heart';
@@ -731,6 +732,11 @@ const TABLER_ICON_LIST = [
   },
   { name: 'feather', icon: TablerFeatherIcon, keywords: ['feather'] },
   {
+    name: 'file-check',
+    icon: TablerFileCheckIcon,
+    keywords: ['file', 'check', 'file-check'],
+  },
+  {
     name: 'filter',
     icon: TablerFilterIcon,
     keywords: ['filter', 'sort', 'funnel', 'refine', 'search'],
@@ -1109,6 +1115,7 @@ export {
   TablerEyeIcon,
   TablerEyeOffIcon,
   TablerFeatherIcon,
+  TablerFileCheckIcon,
   TablerFilterIcon,
   TablerGaugeIcon,
   TablerHeartIcon,

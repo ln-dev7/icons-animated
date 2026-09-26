@@ -2201,6 +2201,19 @@
       ]
     },
     {
+      "name": "hugeicons-file-check",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-file-check.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-filter",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -6200,6 +6213,19 @@
       "files": [
         {
           "path": "tabler-feather.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-file-check",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-file-check.tsx",
           "type": "registry:ui"
         }
       ]
