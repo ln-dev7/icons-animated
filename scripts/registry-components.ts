@@ -2338,6 +2338,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-shredder',
+    'path': path.join(__dirname, '../icons/hugeicons/shredder.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-star',
     'path': path.join(__dirname, '../icons/hugeicons/star.tsx'),
     'registryDependencies': [],
@@ -5715,6 +5721,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-shopping-cart',
     'path': path.join(__dirname, '../icons/tabler/shopping-cart.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-shredder',
+    'path': path.join(__dirname, '../icons/tabler/shredder.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

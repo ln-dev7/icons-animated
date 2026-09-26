@@ -285,6 +285,7 @@ import { TablerShareIcon } from './share';
 import { TablerShieldCheckIcon } from './shield-check';
 import { TablerShipIcon } from './ship';
 import { TablerShoppingCartIcon } from './shopping-cart';
+import { TablerShredderIcon } from './shredder';
 import { TablerSmokingIcon } from './smoking';
 import { TablerSmokingNoIcon } from './smoking-no';
 import { TablerSortAscendingLettersIcon } from './sort-ascending-letters';
@@ -1581,6 +1582,7 @@ const TABLER_ICON_LIST = [
     icon: TablerShoppingCartIcon,
     keywords: ['shopping', 'cart'],
   },
+  { name: 'shredder', icon: TablerShredderIcon, keywords: ['shredder'] },
   {
     name: 'smoking',
     icon: TablerSmokingIcon,
@@ -1989,6 +1991,7 @@ export {
   TablerShieldCheckIcon,
   TablerShipIcon,
   TablerShoppingCartIcon,
+  TablerShredderIcon,
   TablerSmokingIcon,
   TablerSmokingNoIcon,
   TablerSortAscendingLettersIcon,
