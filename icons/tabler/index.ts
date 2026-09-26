@@ -124,6 +124,7 @@ import { TablerEyeIcon } from './eye';
 import { TablerEyeOffIcon } from './eye-off';
 import { TablerFeatherIcon } from './feather';
 import { TablerFileCheckIcon } from './file-check';
+import { TablerFilePencilIcon } from './file-pencil';
 import { TablerFileSettingsIcon } from './file-settings';
 import { TablerFilterIcon } from './filter';
 import { TablerGaugeIcon } from './gauge';
@@ -738,6 +739,11 @@ const TABLER_ICON_LIST = [
     keywords: ['file', 'check', 'file-check'],
   },
   {
+    name: 'file-pencil',
+    icon: TablerFilePencilIcon,
+    keywords: ['file', 'pencil', 'file-pen-line', 'pen', 'line'],
+  },
+  {
     name: 'file-settings',
     icon: TablerFileSettingsIcon,
     keywords: ['file', 'settings', 'file-cog', 'cog'],
@@ -1122,6 +1128,7 @@ export {
   TablerEyeOffIcon,
   TablerFeatherIcon,
   TablerFileCheckIcon,
+  TablerFilePencilIcon,
   TablerFileSettingsIcon,
   TablerFilterIcon,
   TablerGaugeIcon,
