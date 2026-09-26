@@ -240,6 +240,7 @@ import { HugeiconsHardDriveUploadIcon } from './hard-drive-upload';
 import { HugeiconsHatGlassesIcon } from './hat-glasses';
 import { HugeiconsHeartIcon } from './heart';
 import { HugeiconsHeartHandshakeIcon } from './heart-handshake';
+import { HugeiconsHeartPulseIcon } from './heart-pulse';
 import { HugeiconsHomeIcon } from './home';
 import { HugeiconsLockIcon } from './lock';
 import { HugeiconsMailIcon } from './mail';
@@ -1363,6 +1364,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['heart', 'handshake', 'heart-handshake'],
   },
   {
+    name: 'heart-pulse',
+    icon: HugeiconsHeartPulseIcon,
+    keywords: ['heart', 'pulse', 'heart-pulse'],
+  },
+  {
     name: 'home',
     icon: HugeiconsHomeIcon,
     keywords: ['home', 'house', 'building', 'main', 'dashboard', 'home-01'],
@@ -1764,6 +1770,7 @@ export {
   HugeiconsHatGlassesIcon,
   HugeiconsHeartIcon,
   HugeiconsHeartHandshakeIcon,
+  HugeiconsHeartPulseIcon,
   HugeiconsHomeIcon,
   HugeiconsLockIcon,
   HugeiconsMailIcon,

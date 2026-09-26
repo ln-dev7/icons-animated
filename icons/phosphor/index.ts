@@ -147,6 +147,7 @@ import { PhosphorHandGrabbingIcon } from './hand-grabbing';
 import { PhosphorHandHeartIcon } from './hand-heart';
 import { PhosphorHandPalmIcon } from './hand-palm';
 import { PhosphorHeartIcon } from './heart';
+import { PhosphorHeartbeatIcon } from './heartbeat';
 import { PhosphorHouseIcon } from './house';
 import { PhosphorListIcon } from './list';
 import { PhosphorLockIcon } from './lock';
@@ -929,6 +930,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['heart', 'love', 'like', 'favorite', 'health'],
   },
   {
+    name: 'heartbeat',
+    icon: PhosphorHeartbeatIcon,
+    keywords: ['heartbeat', 'heart-pulse', 'heart', 'pulse'],
+  },
+  {
     name: 'house',
     icon: PhosphorHouseIcon,
     keywords: ['home', 'house', 'building', 'main', 'dashboard'],
@@ -1297,6 +1303,7 @@ export {
   PhosphorHandHeartIcon,
   PhosphorHandPalmIcon,
   PhosphorHeartIcon,
+  PhosphorHeartbeatIcon,
   PhosphorHouseIcon,
   PhosphorListIcon,
   PhosphorLockIcon,

@@ -3150,6 +3150,19 @@
       ]
     },
     {
+      "name": "hugeicons-heart-pulse",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-heart-pulse.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-home",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -5433,6 +5446,19 @@
       "files": [
         {
           "path": "phosphor-heart.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-heartbeat",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-heartbeat.tsx",
           "type": "registry:ui"
         }
       ]
@@ -8124,6 +8150,19 @@
       "files": [
         {
           "path": "tabler-heart-handshake.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-heartbeat",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-heartbeat.tsx",
           "type": "registry:ui"
         }
       ]
