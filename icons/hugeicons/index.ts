@@ -316,6 +316,7 @@ import { HugeiconsPanelLeftOpenIcon } from './panel-left-open';
 import { HugeiconsPanelRightOpenIcon } from './panel-right-open';
 import { HugeiconsPartyPopperIcon } from './party-popper';
 import { HugeiconsPauseIcon } from './pause';
+import { HugeiconsPenTool03Icon } from './pen-tool-03';
 import { HugeiconsPencilIcon } from './pencil';
 import { HugeiconsPieChartIcon } from './pie-chart';
 import { HugeiconsPlusIcon } from './plus';
@@ -1745,6 +1746,11 @@ const HUGEICONS_ICON_LIST = [
   },
   { name: 'pause', icon: HugeiconsPauseIcon, keywords: ['pause'] },
   {
+    name: 'pen-tool-03',
+    icon: HugeiconsPenTool03Icon,
+    keywords: ['pen', 'tool', '03', 'pen-tool'],
+  },
+  {
     name: 'pencil',
     icon: HugeiconsPencilIcon,
     keywords: ['pencil', 'edit', 'write', 'pen', 'modify'],
@@ -2190,6 +2196,7 @@ export {
   HugeiconsPanelRightOpenIcon,
   HugeiconsPartyPopperIcon,
   HugeiconsPauseIcon,
+  HugeiconsPenTool03Icon,
   HugeiconsPencilIcon,
   HugeiconsPieChartIcon,
   HugeiconsPlusIcon,

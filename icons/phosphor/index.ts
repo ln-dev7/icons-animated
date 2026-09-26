@@ -186,6 +186,7 @@ import { PhosphorNotebookIcon } from './notebook';
 import { PhosphorPaletteIcon } from './palette';
 import { PhosphorPaperclipIcon } from './paperclip';
 import { PhosphorPauseIcon } from './pause';
+import { PhosphorPenNibIcon } from './pen-nib';
 import { PhosphorPencilIcon } from './pencil';
 import { PhosphorPersonArmsSpreadIcon } from './person-arms-spread';
 import { PhosphorPlugsConnectedIcon } from './plugs-connected';
@@ -1149,6 +1150,11 @@ const PHOSPHOR_ICON_LIST = [
   },
   { name: 'pause', icon: PhosphorPauseIcon, keywords: ['pause'] },
   {
+    name: 'pen-nib',
+    icon: PhosphorPenNibIcon,
+    keywords: ['pen', 'nib', 'pen-tool', 'tool'],
+  },
+  {
     name: 'pencil',
     icon: PhosphorPencilIcon,
     keywords: ['pencil', 'edit', 'write', 'pen', 'modify'],
@@ -1572,6 +1578,7 @@ export {
   PhosphorPaletteIcon,
   PhosphorPaperclipIcon,
   PhosphorPauseIcon,
+  PhosphorPenNibIcon,
   PhosphorPencilIcon,
   PhosphorPersonArmsSpreadIcon,
   PhosphorPlugsConnectedIcon,

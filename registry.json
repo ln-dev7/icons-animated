@@ -4138,6 +4138,19 @@
       ]
     },
     {
+      "name": "hugeicons-pen-tool-03",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-pen-tool-03.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-pencil",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -6863,6 +6876,19 @@
       "files": [
         {
           "path": "phosphor-pause.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-pen-nib",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-pen-nib.tsx",
           "type": "registry:ui"
         }
       ]
