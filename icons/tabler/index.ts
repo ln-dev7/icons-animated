@@ -110,6 +110,7 @@ import { TablerCpuIcon } from './cpu';
 import { TablerCreditCardIcon } from './credit-card';
 import { TablerCupIcon } from './cup';
 import { TablerCurrencyDollarIcon } from './currency-dollar';
+import { TablerCurrencyEuroIcon } from './currency-euro';
 import { TablerDeviceCctvIcon } from './device-cctv';
 import { TablerDiscIcon } from './disc';
 import { TablerDownloadIcon } from './download';
@@ -669,6 +670,11 @@ const TABLER_ICON_LIST = [
     keywords: ['currency', 'dollar', 'dollar-sign', 'sign'],
   },
   {
+    name: 'currency-euro',
+    icon: TablerCurrencyEuroIcon,
+    keywords: ['currency', 'euro'],
+  },
+  {
     name: 'device-cctv',
     icon: TablerDeviceCctvIcon,
     keywords: ['device', 'cctv'],
@@ -1046,6 +1052,7 @@ export {
   TablerCreditCardIcon,
   TablerCupIcon,
   TablerCurrencyDollarIcon,
+  TablerCurrencyEuroIcon,
   TablerDeviceCctvIcon,
   TablerDiscIcon,
   TablerDownloadIcon,

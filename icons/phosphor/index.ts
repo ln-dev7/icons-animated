@@ -91,6 +91,7 @@ import { PhosphorCreditCardIcon } from './credit-card';
 import { PhosphorCubeIcon } from './cube';
 import { PhosphorCurrencyCircleDollarIcon } from './currency-circle-dollar';
 import { PhosphorCurrencyDollarIcon } from './currency-dollar';
+import { PhosphorCurrencyEurIcon } from './currency-eur';
 import { PhosphorCursorClickIcon } from './cursor-click';
 import { PhosphorDiscIcon } from './disc';
 import { PhosphorDiscordLogoIcon } from './discord-logo';
@@ -634,6 +635,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['currency', 'dollar', 'dollar-sign', 'sign'],
   },
   {
+    name: 'currency-eur',
+    icon: PhosphorCurrencyEurIcon,
+    keywords: ['currency', 'eur', 'euro'],
+  },
+  {
     name: 'cursor-click',
     icon: PhosphorCursorClickIcon,
     keywords: ['cursor', 'click', 'cursor-click'],
@@ -1008,6 +1014,7 @@ export {
   PhosphorCubeIcon,
   PhosphorCurrencyCircleDollarIcon,
   PhosphorCurrencyDollarIcon,
+  PhosphorCurrencyEurIcon,
   PhosphorCursorClickIcon,
   PhosphorDiscIcon,
   PhosphorDiscordLogoIcon,

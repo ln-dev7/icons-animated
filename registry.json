@@ -2058,6 +2058,19 @@
       ]
     },
     {
+      "name": "hugeicons-euro",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-euro.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-eye",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -3652,6 +3665,19 @@
       "files": [
         {
           "path": "phosphor-currency-dollar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-currency-eur",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-currency-eur.tsx",
           "type": "registry:ui"
         }
       ]
@@ -5784,6 +5810,19 @@
       "files": [
         {
           "path": "tabler-currency-dollar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-currency-euro",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-currency-euro.tsx",
           "type": "registry:ui"
         }
       ]
