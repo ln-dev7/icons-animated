@@ -4528,6 +4528,19 @@
       ]
     },
     {
+      "name": "hugeicons-receipt-text",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-receipt-text.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-refresh",
       "type": "registry:ui",
       "registryDependencies": [],
