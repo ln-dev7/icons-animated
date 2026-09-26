@@ -5412,6 +5412,19 @@
       ]
     },
     {
+      "name": "hugeicons-telescope-01",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-telescope-01.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-text-align-center",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -13389,6 +13402,19 @@
       "files": [
         {
           "path": "tabler-sunset.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-telescope",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-telescope.tsx",
           "type": "registry:ui"
         }
       ]

@@ -414,6 +414,7 @@ import { HugeiconsSunsetIcon } from './sunset';
 import { HugeiconsSwissFrancIcon } from './swiss-franc';
 import { HugeiconsSwitchCameraIcon } from './switch-camera';
 import { HugeiconsSyringeIcon } from './syringe';
+import { HugeiconsTelescope01Icon } from './telescope-01';
 import { HugeiconsTextAlignCenterIcon } from './text-align-center';
 import { HugeiconsTextAlignLeftIcon } from './text-align-left';
 import { HugeiconsTextAlignRightIcon } from './text-align-right';
@@ -2239,6 +2240,11 @@ const HUGEICONS_ICON_LIST = [
   },
   { name: 'syringe', icon: HugeiconsSyringeIcon, keywords: ['syringe'] },
   {
+    name: 'telescope-01',
+    icon: HugeiconsTelescope01Icon,
+    keywords: ['telescope', '01'],
+  },
+  {
     name: 'text-align-center',
     icon: HugeiconsTextAlignCenterIcon,
     keywords: ['text', 'align', 'center', 'align-center'],
@@ -2708,6 +2714,7 @@ export {
   HugeiconsSwissFrancIcon,
   HugeiconsSwitchCameraIcon,
   HugeiconsSyringeIcon,
+  HugeiconsTelescope01Icon,
   HugeiconsTextAlignCenterIcon,
   HugeiconsTextAlignLeftIcon,
   HugeiconsTextAlignRightIcon,

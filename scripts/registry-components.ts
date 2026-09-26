@@ -2545,6 +2545,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-telescope-01',
+    'path': path.join(__dirname, '../icons/hugeicons/telescope-01.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-text-align-center',
     'path': path.join(__dirname, '../icons/hugeicons/text-align-center.tsx'),
     'registryDependencies': [],
@@ -6258,6 +6264,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-sunset',
     'path': path.join(__dirname, '../icons/tabler/sunset.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-telescope',
+    'path': path.join(__dirname, '../icons/tabler/telescope.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
