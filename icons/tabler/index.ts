@@ -335,6 +335,7 @@ import { TablerTerminalIcon } from './terminal';
 import { TablerTextScan2Icon } from './text-scan-2';
 import { TablerThermometerIcon } from './thermometer';
 import { TablerThumbDownIcon } from './thumb-down';
+import { TablerThumbUpIcon } from './thumb-up';
 import { TablerTicketIcon } from './ticket';
 import { TablerTornadoIcon } from './tornado';
 import { TablerTrashIcon } from './trash';
@@ -1896,6 +1897,11 @@ const TABLER_ICON_LIST = [
     icon: TablerThumbDownIcon,
     keywords: ['thumb', 'down', 'downvote'],
   },
+  {
+    name: 'thumb-up',
+    icon: TablerThumbUpIcon,
+    keywords: ['thumb', 'up', 'upvote'],
+  },
   { name: 'ticket', icon: TablerTicketIcon, keywords: ['ticket'] },
   { name: 'tornado', icon: TablerTornadoIcon, keywords: ['tornado'] },
   {
@@ -2292,6 +2298,7 @@ export {
   TablerTextScan2Icon,
   TablerThermometerIcon,
   TablerThumbDownIcon,
+  TablerThumbUpIcon,
   TablerTicketIcon,
   TablerTornadoIcon,
   TablerTrashIcon,

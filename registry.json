@@ -5529,6 +5529,19 @@
       ]
     },
     {
+      "name": "hugeicons-thumbs-up",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-thumbs-up.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-ticket-01",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -9372,6 +9385,19 @@
       "files": [
         {
           "path": "phosphor-thumbs-down.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-thumbs-up",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-thumbs-up.tsx",
           "type": "registry:ui"
         }
       ]
@@ -13961,6 +13987,19 @@
       "files": [
         {
           "path": "tabler-thumb-down.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-thumb-up",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-thumb-up.tsx",
           "type": "registry:ui"
         }
       ]

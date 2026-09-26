@@ -423,6 +423,7 @@ import { HugeiconsTextAlignLeftIcon } from './text-align-left';
 import { HugeiconsTextAlignRightIcon } from './text-align-right';
 import { HugeiconsThermometerIcon } from './thermometer';
 import { HugeiconsThumbsDownIcon } from './thumbs-down';
+import { HugeiconsThumbsUpIcon } from './thumbs-up';
 import { HugeiconsTicket01Icon } from './ticket-01';
 import { HugeiconsTornado01Icon } from './tornado-01';
 import { HugeiconsTrainTrackIcon } from './train-track';
@@ -2299,6 +2300,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['thumbs', 'down', 'downvote'],
   },
   {
+    name: 'thumbs-up',
+    icon: HugeiconsThumbsUpIcon,
+    keywords: ['thumbs', 'up', 'upvote'],
+  },
+  {
     name: 'ticket-01',
     icon: HugeiconsTicket01Icon,
     keywords: ['ticket', '01'],
@@ -2807,6 +2813,7 @@ export {
   HugeiconsTextAlignRightIcon,
   HugeiconsThermometerIcon,
   HugeiconsThumbsDownIcon,
+  HugeiconsThumbsUpIcon,
   HugeiconsTicket01Icon,
   HugeiconsTornado01Icon,
   HugeiconsTrainTrackIcon,
