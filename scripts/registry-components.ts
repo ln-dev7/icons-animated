@@ -1990,6 +1990,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-phone-missed',
+    'path': path.join(__dirname, '../icons/hugeicons/phone-missed.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-pie-chart',
     'path': path.join(__dirname, '../icons/hugeicons/pie-chart.tsx'),
     'registryDependencies': [],
@@ -3297,6 +3303,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-phone-transfer',
     'path': path.join(__dirname, '../icons/phosphor/phone-transfer.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-phone-x',
+    'path': path.join(__dirname, '../icons/phosphor/phone-x.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -4986,6 +4998,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-phone-outgoing',
     'path': path.join(__dirname, '../icons/tabler/phone-outgoing.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-phone-x',
+    'path': path.join(__dirname, '../icons/tabler/phone-x.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

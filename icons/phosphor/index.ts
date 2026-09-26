@@ -193,6 +193,7 @@ import { PhosphorPhoneIcon } from './phone';
 import { PhosphorPhoneCallIcon } from './phone-call';
 import { PhosphorPhoneIncomingIcon } from './phone-incoming';
 import { PhosphorPhoneTransferIcon } from './phone-transfer';
+import { PhosphorPhoneXIcon } from './phone-x';
 import { PhosphorPlugsConnectedIcon } from './plugs-connected';
 import { PhosphorPlusIcon } from './plus';
 import { PhosphorProhibitIcon } from './prohibit';
@@ -1185,6 +1186,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['phone', 'transfer', 'phone-forwarded', 'forwarded'],
   },
   {
+    name: 'phone-x',
+    icon: PhosphorPhoneXIcon,
+    keywords: ['phone', 'x', 'phone-missed', 'missed'],
+  },
+  {
     name: 'plugs-connected',
     icon: PhosphorPlugsConnectedIcon,
     keywords: ['plugs', 'connected', 'connect'],
@@ -1605,6 +1611,7 @@ export {
   PhosphorPhoneCallIcon,
   PhosphorPhoneIncomingIcon,
   PhosphorPhoneTransferIcon,
+  PhosphorPhoneXIcon,
   PhosphorPlugsConnectedIcon,
   PhosphorPlusIcon,
   PhosphorProhibitIcon,
