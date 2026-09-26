@@ -39,6 +39,7 @@ import { PhosphorBluetoothSlashIcon } from './bluetooth-slash';
 import { PhosphorBoneIcon } from './bone';
 import { PhosphorBookmarkIcon } from './bookmark';
 import { PhosphorBrainIcon } from './brain';
+import { PhosphorBriefcaseIcon } from './briefcase';
 import { PhosphorCalendarIcon } from './calendar';
 import { PhosphorCheckIcon } from './check';
 import { PhosphorChevronDownIcon } from './chevron-down';
@@ -282,6 +283,11 @@ const PHOSPHOR_ICON_LIST = [
   { name: 'bone', icon: PhosphorBoneIcon, keywords: ['bone'] },
   { name: 'bookmark', icon: PhosphorBookmarkIcon, keywords: ['bookmark'] },
   { name: 'brain', icon: PhosphorBrainIcon, keywords: ['brain'] },
+  {
+    name: 'briefcase',
+    icon: PhosphorBriefcaseIcon,
+    keywords: ['briefcase', 'briefcase-business', 'business'],
+  },
   {
     name: 'calendar',
     icon: PhosphorCalendarIcon,
@@ -605,6 +611,7 @@ export {
   PhosphorBoneIcon,
   PhosphorBookmarkIcon,
   PhosphorBrainIcon,
+  PhosphorBriefcaseIcon,
   PhosphorCalendarIcon,
   PhosphorCheckIcon,
   PhosphorChevronDownIcon,
