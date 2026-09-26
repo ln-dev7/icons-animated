@@ -910,6 +910,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-cup-soda',
+    'path': path.join(__dirname, '../icons/hugeicons/cup-soda.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-download',
     'path': path.join(__dirname, '../icons/hugeicons/download.tsx'),
     'registryDependencies': [],
@@ -2544,6 +2550,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-credit-card',
     'path': path.join(__dirname, '../icons/tabler/credit-card.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-cup',
+    'path': path.join(__dirname, '../icons/tabler/cup.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
