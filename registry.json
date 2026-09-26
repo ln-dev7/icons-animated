@@ -5139,6 +5139,19 @@
       ]
     },
     {
+      "name": "hugeicons-square-arrow-left-02",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-square-arrow-left-02.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-star",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -5719,6 +5732,19 @@
       "files": [
         {
           "path": "phosphor-arrow-square-down.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-arrow-square-left",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-arrow-square-left.tsx",
           "type": "registry:ui"
         }
       ]
@@ -12739,6 +12765,19 @@
       "files": [
         {
           "path": "tabler-square-arrow-down.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-square-arrow-left",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-square-arrow-left.tsx",
           "type": "registry:ui"
         }
       ]
