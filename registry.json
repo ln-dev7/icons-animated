@@ -4931,6 +4931,19 @@
       ]
     },
     {
+      "name": "hugeicons-ship-wheel",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-ship-wheel.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-shopping-cart-01",
       "type": "registry:ui",
       "registryDependencies": [],

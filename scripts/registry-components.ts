@@ -2320,6 +2320,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-ship-wheel',
+    'path': path.join(__dirname, '../icons/hugeicons/ship-wheel.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-shopping-cart-01',
     'path': path.join(__dirname, '../icons/hugeicons/shopping-cart-01.tsx'),
     'registryDependencies': [],
