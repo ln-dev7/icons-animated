@@ -305,6 +305,7 @@ import { HugeiconsMessageSquarePlusIcon } from './message-square-plus';
 import { HugeiconsMessageSquareXIcon } from './message-square-x';
 import { HugeiconsMic01Icon } from './mic-01';
 import { HugeiconsMicOff01Icon } from './mic-off-01';
+import { HugeiconsMonitorCheckIcon } from './monitor-check';
 import { HugeiconsMousePointerClickIcon } from './mouse-pointer-click';
 import { HugeiconsPencilIcon } from './pencil';
 import { HugeiconsPieChartIcon } from './pie-chart';
@@ -1696,6 +1697,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['mic', 'off', '01', 'mic-off'],
   },
   {
+    name: 'monitor-check',
+    icon: HugeiconsMonitorCheckIcon,
+    keywords: ['monitor', 'check', 'monitor-check'],
+  },
+  {
     name: 'mouse-pointer-click',
     icon: HugeiconsMousePointerClickIcon,
     keywords: ['mouse', 'pointer', 'click', 'cursor-click', 'cursor'],
@@ -2135,6 +2141,7 @@ export {
   HugeiconsMessageSquareXIcon,
   HugeiconsMic01Icon,
   HugeiconsMicOff01Icon,
+  HugeiconsMonitorCheckIcon,
   HugeiconsMousePointerClickIcon,
   HugeiconsPencilIcon,
   HugeiconsPieChartIcon,
