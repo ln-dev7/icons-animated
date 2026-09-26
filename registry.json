@@ -4619,6 +4619,19 @@
       ]
     },
     {
+      "name": "hugeicons-refresh-cw",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-refresh-cw.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-save",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -5290,6 +5303,19 @@
       "files": [
         {
           "path": "phosphor-arrow-up-right.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-arrows-clockwise",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-arrows-clockwise.tsx",
           "type": "registry:ui"
         }
       ]

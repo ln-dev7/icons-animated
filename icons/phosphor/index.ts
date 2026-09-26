@@ -33,6 +33,7 @@ import { PhosphorArrowSquareOutIcon } from './arrow-square-out';
 import { PhosphorArrowUpIcon } from './arrow-up';
 import { PhosphorArrowUpLeftIcon } from './arrow-up-left';
 import { PhosphorArrowUpRightIcon } from './arrow-up-right';
+import { PhosphorArrowsClockwiseIcon } from './arrows-clockwise';
 import { PhosphorArrowsCounterClockwiseIcon } from './arrows-counter-clockwise';
 import { PhosphorArrowsOutIcon } from './arrows-out';
 import { PhosphorArrowsOutSimpleIcon } from './arrows-out-simple';
@@ -460,6 +461,11 @@ const PHOSPHOR_ICON_LIST = [
     name: 'arrow-up-right',
     icon: PhosphorArrowUpRightIcon,
     keywords: ['arrow', 'up', 'right', 'arrow-up-right'],
+  },
+  {
+    name: 'arrows-clockwise',
+    icon: PhosphorArrowsClockwiseIcon,
+    keywords: ['arrows', 'clockwise', 'refresh-cw', 'refresh', 'cw'],
   },
   {
     name: 'arrows-counter-clockwise',
@@ -1518,6 +1524,7 @@ export {
   PhosphorArrowUpIcon,
   PhosphorArrowUpLeftIcon,
   PhosphorArrowUpRightIcon,
+  PhosphorArrowsClockwiseIcon,
   PhosphorArrowsCounterClockwiseIcon,
   PhosphorArrowsOutIcon,
   PhosphorArrowsOutSimpleIcon,
