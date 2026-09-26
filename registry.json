@@ -2760,6 +2760,19 @@
       ]
     },
     {
+      "name": "hugeicons-git-branch",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-git-branch.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-heart",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -4770,6 +4783,19 @@
       "files": [
         {
           "path": "phosphor-gear-fine.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-git-branch",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-git-branch.tsx",
           "type": "registry:ui"
         }
       ]
@@ -7279,6 +7305,19 @@
       "files": [
         {
           "path": "tabler-gavel.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-git-branch",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-git-branch.tsx",
           "type": "registry:ui"
         }
       ]

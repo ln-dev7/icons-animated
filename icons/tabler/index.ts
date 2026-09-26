@@ -150,6 +150,7 @@ import { TablerFoldersIcon } from './folders';
 import { TablerFrameIcon } from './frame';
 import { TablerGaugeIcon } from './gauge';
 import { TablerGavelIcon } from './gavel';
+import { TablerGitBranchIcon } from './git-branch';
 import { TablerHeartIcon } from './heart';
 import { TablerHelpCircleIcon } from './help-circle';
 import { TablerHomeIcon } from './home';
@@ -872,6 +873,11 @@ const TABLER_ICON_LIST = [
   },
   { name: 'gavel', icon: TablerGavelIcon, keywords: ['gavel'] },
   {
+    name: 'git-branch',
+    icon: TablerGitBranchIcon,
+    keywords: ['git', 'branch', 'git-branch'],
+  },
+  {
     name: 'heart',
     icon: TablerHeartIcon,
     keywords: ['heart', 'love', 'like', 'favorite', 'health'],
@@ -1272,6 +1278,7 @@ export {
   TablerFrameIcon,
   TablerGaugeIcon,
   TablerGavelIcon,
+  TablerGitBranchIcon,
   TablerHeartIcon,
   TablerHelpCircleIcon,
   TablerHomeIcon,

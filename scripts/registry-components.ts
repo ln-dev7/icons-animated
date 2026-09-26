@@ -1297,6 +1297,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-git-branch',
+    'path': path.join(__dirname, '../icons/hugeicons/git-branch.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-heart',
     'path': path.join(__dirname, '../icons/hugeicons/heart.tsx'),
     'registryDependencies': [],
@@ -2235,6 +2241,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-gear-fine',
     'path': path.join(__dirname, '../icons/phosphor/gear-fine.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-git-branch',
+    'path': path.join(__dirname, '../icons/phosphor/git-branch.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -3393,6 +3405,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-gavel',
     'path': path.join(__dirname, '../icons/tabler/gavel.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-git-branch',
+    'path': path.join(__dirname, '../icons/tabler/git-branch.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

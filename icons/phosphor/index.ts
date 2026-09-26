@@ -125,6 +125,7 @@ import { PhosphorGaugeIcon } from './gauge';
 import { PhosphorGavelIcon } from './gavel';
 import { PhosphorGearIcon } from './gear';
 import { PhosphorGearFineIcon } from './gear-fine';
+import { PhosphorGitBranchIcon } from './git-branch';
 import { PhosphorGlobeHemisphereWestIcon } from './globe-hemisphere-west';
 import { PhosphorGoogleChromeLogoIcon } from './google-chrome-logo';
 import { PhosphorHeartIcon } from './heart';
@@ -801,6 +802,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['gear', 'fine', 'cog'],
   },
   {
+    name: 'git-branch',
+    icon: PhosphorGitBranchIcon,
+    keywords: ['git', 'branch', 'git-branch'],
+  },
+  {
     name: 'globe-hemisphere-west',
     icon: PhosphorGlobeHemisphereWestIcon,
     keywords: ['globe', 'hemisphere', 'west', 'earth'],
@@ -1162,6 +1168,7 @@ export {
   PhosphorGavelIcon,
   PhosphorGearIcon,
   PhosphorGearFineIcon,
+  PhosphorGitBranchIcon,
   PhosphorGlobeHemisphereWestIcon,
   PhosphorGoogleChromeLogoIcon,
   PhosphorHeartIcon,
