@@ -337,6 +337,7 @@ import { HugeiconsProjectorIcon } from './projector';
 import { HugeiconsPulse01Icon } from './pulse-01';
 import { HugeiconsRabbitIcon } from './rabbit';
 import { HugeiconsRadioIcon } from './radio';
+import { HugeiconsRadioTowerIcon } from './radio-tower';
 import { HugeiconsRefreshIcon } from './refresh';
 import { HugeiconsSaveIcon } from './save';
 import { HugeiconsSearchIcon } from './search';
@@ -1843,6 +1844,11 @@ const HUGEICONS_ICON_LIST = [
   { name: 'rabbit', icon: HugeiconsRabbitIcon, keywords: ['rabbit'] },
   { name: 'radio', icon: HugeiconsRadioIcon, keywords: ['radio'] },
   {
+    name: 'radio-tower',
+    icon: HugeiconsRadioTowerIcon,
+    keywords: ['radio', 'tower', 'radio-tower'],
+  },
+  {
     name: 'refresh',
     icon: HugeiconsRefreshIcon,
     keywords: ['refresh', 'reload', 'reload', 'update', 'sync', 'rotate'],
@@ -2289,6 +2295,7 @@ export {
   HugeiconsPulse01Icon,
   HugeiconsRabbitIcon,
   HugeiconsRadioIcon,
+  HugeiconsRadioTowerIcon,
   HugeiconsRefreshIcon,
   HugeiconsSaveIcon,
   HugeiconsSearchIcon,

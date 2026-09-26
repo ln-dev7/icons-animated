@@ -2074,6 +2074,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-radio-tower',
+    'path': path.join(__dirname, '../icons/hugeicons/radio-tower.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-refresh',
     'path': path.join(__dirname, '../icons/hugeicons/refresh.tsx'),
     'registryDependencies': [],
@@ -2595,6 +2601,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-caret-up-down',
     'path': path.join(__dirname, '../icons/phosphor/caret-up-down.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-cell-tower',
+    'path': path.join(__dirname, '../icons/phosphor/cell-tower.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -4065,6 +4077,15 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-briefcase',
     'path': path.join(__dirname, '../icons/tabler/briefcase.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-building-broadcast-tower',
+    'path': path.join(
+      __dirname,
+      '../icons/tabler/building-broadcast-tower.tsx'
+    ),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

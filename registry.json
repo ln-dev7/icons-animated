@@ -4411,6 +4411,19 @@
       ]
     },
     {
+      "name": "hugeicons-radio-tower",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-radio-tower.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-refresh",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -5524,6 +5537,19 @@
       "files": [
         {
           "path": "phosphor-caret-up-down.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-cell-tower",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-cell-tower.tsx",
           "type": "registry:ui"
         }
       ]
@@ -8696,6 +8722,19 @@
       "files": [
         {
           "path": "tabler-briefcase.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-building-broadcast-tower",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-building-broadcast-tower.tsx",
           "type": "registry:ui"
         }
       ]
