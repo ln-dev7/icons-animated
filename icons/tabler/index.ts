@@ -144,6 +144,7 @@ import { TablerFolderPlusIcon } from './folder-plus';
 import { TablerFolderRootIcon } from './folder-root';
 import { TablerFolderUpIcon } from './folder-up';
 import { TablerFolderXIcon } from './folder-x';
+import { TablerFoldersIcon } from './folders';
 import { TablerGaugeIcon } from './gauge';
 import { TablerHeartIcon } from './heart';
 import { TablerHelpCircleIcon } from './help-circle';
@@ -847,6 +848,7 @@ const TABLER_ICON_LIST = [
     icon: TablerFolderXIcon,
     keywords: ['folder', 'x', 'folder-x'],
   },
+  { name: 'folders', icon: TablerFoldersIcon, keywords: ['folders'] },
   {
     name: 'gauge',
     icon: TablerGaugeIcon,
@@ -1242,6 +1244,7 @@ export {
   TablerFolderRootIcon,
   TablerFolderUpIcon,
   TablerFolderXIcon,
+  TablerFoldersIcon,
   TablerGaugeIcon,
   TablerHeartIcon,
   TablerHelpCircleIcon,

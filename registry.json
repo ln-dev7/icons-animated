@@ -2643,6 +2643,19 @@
       ]
     },
     {
+      "name": "hugeicons-folders",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-folders.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-heart",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -4575,6 +4588,19 @@
       "files": [
         {
           "path": "phosphor-folder-plus.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-folders",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-folders.tsx",
           "type": "registry:ui"
         }
       ]
@@ -7019,6 +7045,19 @@
       "files": [
         {
           "path": "tabler-folder-x.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-folders",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-folders.tsx",
           "type": "registry:ui"
         }
       ]
