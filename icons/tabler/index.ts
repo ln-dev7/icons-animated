@@ -148,6 +148,7 @@ import { TablerSortAscendingNumbersIcon } from './sort-ascending-numbers';
 import { TablerSortDescendingLettersIcon } from './sort-descending-letters';
 import { TablerSortDescendingNumbersIcon } from './sort-descending-numbers';
 import { TablerStarIcon } from './star';
+import { TablerThumbDownIcon } from './thumb-down';
 import { TablerTrashIcon } from './trash';
 import { TablerUploadIcon } from './upload';
 import { TablerUserIcon } from './user';
@@ -895,6 +896,11 @@ const TABLER_ICON_LIST = [
     keywords: ['star', 'favorite', 'bookmark', 'rate', 'rating'],
   },
   {
+    name: 'thumb-down',
+    icon: TablerThumbDownIcon,
+    keywords: ['thumb', 'down', 'downvote'],
+  },
+  {
     name: 'trash',
     icon: TablerTrashIcon,
     keywords: ['trash', 'delete', 'remove', 'bin', 'garbage'],
@@ -1068,6 +1074,7 @@ export {
   TablerSortDescendingLettersIcon,
   TablerSortDescendingNumbersIcon,
   TablerStarIcon,
+  TablerThumbDownIcon,
   TablerTrashIcon,
   TablerUploadIcon,
   TablerUserIcon,

@@ -175,6 +175,7 @@ import { HugeiconsSunCloud02Icon } from './sun-cloud-02';
 import { HugeiconsTextAlignCenterIcon } from './text-align-center';
 import { HugeiconsTextAlignLeftIcon } from './text-align-left';
 import { HugeiconsTextAlignRightIcon } from './text-align-right';
+import { HugeiconsThumbsDownIcon } from './thumbs-down';
 import { HugeiconsTrashIcon } from './trash';
 import { HugeiconsUnfoldMoreIcon } from './unfold-more';
 import { HugeiconsUniversalAccessIcon } from './universal-access';
@@ -1049,6 +1050,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['text', 'align', 'right', 'align-right'],
   },
   {
+    name: 'thumbs-down',
+    icon: HugeiconsThumbsDownIcon,
+    keywords: ['thumbs', 'down', 'downvote'],
+  },
+  {
     name: 'trash',
     icon: HugeiconsTrashIcon,
     keywords: ['trash', 'delete', 'remove', 'bin', 'garbage'],
@@ -1259,6 +1265,7 @@ export {
   HugeiconsTextAlignCenterIcon,
   HugeiconsTextAlignLeftIcon,
   HugeiconsTextAlignRightIcon,
+  HugeiconsThumbsDownIcon,
   HugeiconsTrashIcon,
   HugeiconsUnfoldMoreIcon,
   HugeiconsUniversalAccessIcon,

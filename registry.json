@@ -2305,6 +2305,19 @@
       ]
     },
     {
+      "name": "hugeicons-thumbs-down",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-thumbs-down.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-trash",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -4146,6 +4159,19 @@
       "files": [
         {
           "path": "phosphor-text-b.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-thumbs-down",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-thumbs-down.tsx",
           "type": "registry:ui"
         }
       ]
@@ -6161,6 +6187,19 @@
       "files": [
         {
           "path": "tabler-star.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-thumb-down",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-thumb-down.tsx",
           "type": "registry:ui"
         }
       ]
