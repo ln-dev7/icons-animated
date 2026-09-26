@@ -103,6 +103,7 @@ import { TablerCornerRightUpIcon } from './corner-right-up';
 import { TablerCornerUpLeftIcon } from './corner-up-left';
 import { TablerCornerUpRightIcon } from './corner-up-right';
 import { TablerCpuIcon } from './cpu';
+import { TablerCreditCardIcon } from './credit-card';
 import { TablerDeviceCctvIcon } from './device-cctv';
 import { TablerDownloadIcon } from './download';
 import { TablerEyeIcon } from './eye';
@@ -627,6 +628,11 @@ const TABLER_ICON_LIST = [
   },
   { name: 'cpu', icon: TablerCpuIcon, keywords: ['cpu'] },
   {
+    name: 'credit-card',
+    icon: TablerCreditCardIcon,
+    keywords: ['credit', 'card', 'credit-card'],
+  },
+  {
     name: 'device-cctv',
     icon: TablerDeviceCctvIcon,
     keywords: ['device', 'cctv'],
@@ -989,6 +995,7 @@ export {
   TablerCornerUpLeftIcon,
   TablerCornerUpRightIcon,
   TablerCpuIcon,
+  TablerCreditCardIcon,
   TablerDeviceCctvIcon,
   TablerDownloadIcon,
   TablerEyeIcon,

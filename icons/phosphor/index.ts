@@ -86,6 +86,7 @@ import { PhosphorCompassIcon } from './compass';
 import { PhosphorCookingPotIcon } from './cooking-pot';
 import { PhosphorCopyIcon } from './copy';
 import { PhosphorCpuIcon } from './cpu';
+import { PhosphorCreditCardIcon } from './credit-card';
 import { PhosphorCubeIcon } from './cube';
 import { PhosphorCurrencyCircleDollarIcon } from './currency-circle-dollar';
 import { PhosphorDownloadIcon } from './download';
@@ -602,6 +603,11 @@ const PHOSPHOR_ICON_LIST = [
   },
   { name: 'copy', icon: PhosphorCopyIcon, keywords: ['copy'] },
   { name: 'cpu', icon: PhosphorCpuIcon, keywords: ['cpu'] },
+  {
+    name: 'credit-card',
+    icon: PhosphorCreditCardIcon,
+    keywords: ['credit', 'card', 'credit-card'],
+  },
   { name: 'cube', icon: PhosphorCubeIcon, keywords: ['cube', 'box'] },
   {
     name: 'currency-circle-dollar',
@@ -951,6 +957,7 @@ export {
   PhosphorCookingPotIcon,
   PhosphorCopyIcon,
   PhosphorCpuIcon,
+  PhosphorCreditCardIcon,
   PhosphorCubeIcon,
   PhosphorCurrencyCircleDollarIcon,
   PhosphorDownloadIcon,

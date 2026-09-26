@@ -1915,6 +1915,19 @@
       ]
     },
     {
+      "name": "hugeicons-credit-card",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-credit-card.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-download",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -3431,6 +3444,19 @@
       "files": [
         {
           "path": "phosphor-cpu.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-credit-card",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-credit-card.tsx",
           "type": "registry:ui"
         }
       ]
@@ -5407,6 +5433,19 @@
       "files": [
         {
           "path": "tabler-cpu.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-credit-card",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-credit-card.tsx",
           "type": "registry:ui"
         }
       ]

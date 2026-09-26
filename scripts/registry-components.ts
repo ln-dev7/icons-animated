@@ -904,6 +904,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-credit-card',
+    'path': path.join(__dirname, '../icons/hugeicons/credit-card.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-download',
     'path': path.join(__dirname, '../icons/hugeicons/download.tsx'),
     'registryDependencies': [],
@@ -1611,6 +1617,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-cpu',
     'path': path.join(__dirname, '../icons/phosphor/cpu.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-credit-card',
+    'path': path.join(__dirname, '../icons/phosphor/credit-card.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -2526,6 +2538,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-cpu',
     'path': path.join(__dirname, '../icons/tabler/cpu.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-credit-card',
+    'path': path.join(__dirname, '../icons/tabler/credit-card.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

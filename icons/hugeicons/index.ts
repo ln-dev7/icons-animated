@@ -145,6 +145,7 @@ import { HugeiconsCornerRightUpIcon } from './corner-right-up';
 import { HugeiconsCornerUpLeftIcon } from './corner-up-left';
 import { HugeiconsCornerUpRightIcon } from './corner-up-right';
 import { HugeiconsCpuIcon } from './cpu';
+import { HugeiconsCreditCardIcon } from './credit-card';
 import { HugeiconsDownloadIcon } from './download';
 import { HugeiconsEyeIcon } from './eye';
 import { HugeiconsFilterIcon } from './filter';
@@ -875,6 +876,11 @@ const HUGEICONS_ICON_LIST = [
   },
   { name: 'cpu', icon: HugeiconsCpuIcon, keywords: ['cpu'] },
   {
+    name: 'credit-card',
+    icon: HugeiconsCreditCardIcon,
+    keywords: ['credit', 'card', 'credit-card'],
+  },
+  {
     name: 'download',
     icon: HugeiconsDownloadIcon,
     keywords: ['download', 'save', 'arrow', 'get', 'export', 'download-01'],
@@ -1191,6 +1197,7 @@ export {
   HugeiconsCornerUpLeftIcon,
   HugeiconsCornerUpRightIcon,
   HugeiconsCpuIcon,
+  HugeiconsCreditCardIcon,
   HugeiconsDownloadIcon,
   HugeiconsEyeIcon,
   HugeiconsFilterIcon,
