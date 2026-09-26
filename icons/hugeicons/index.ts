@@ -349,6 +349,7 @@ import { HugeiconsReceiptSwissFrancIcon } from './receipt-swiss-franc';
 import { HugeiconsReceiptTextIcon } from './receipt-text';
 import { HugeiconsReceiptTurkishLiraIcon } from './receipt-turkish-lira';
 import { HugeiconsRedoIcon } from './redo';
+import { HugeiconsRedoDotIcon } from './redo-dot';
 import { HugeiconsRefreshIcon } from './refresh';
 import { HugeiconsSaveIcon } from './save';
 import { HugeiconsSearchIcon } from './search';
@@ -1907,6 +1908,11 @@ const HUGEICONS_ICON_LIST = [
   },
   { name: 'redo', icon: HugeiconsRedoIcon, keywords: ['redo'] },
   {
+    name: 'redo-dot',
+    icon: HugeiconsRedoDotIcon,
+    keywords: ['redo', 'dot', 'redo-dot'],
+  },
+  {
     name: 'refresh',
     icon: HugeiconsRefreshIcon,
     keywords: ['refresh', 'reload', 'reload', 'update', 'sync', 'rotate'],
@@ -2365,6 +2371,7 @@ export {
   HugeiconsReceiptTextIcon,
   HugeiconsReceiptTurkishLiraIcon,
   HugeiconsRedoIcon,
+  HugeiconsRedoDotIcon,
   HugeiconsRefreshIcon,
   HugeiconsSaveIcon,
   HugeiconsSearchIcon,
