@@ -143,6 +143,7 @@ import { PhosphorHammerIcon } from './hammer';
 import { PhosphorHandCoinsIcon } from './hand-coins';
 import { PhosphorHandFistIcon } from './hand-fist';
 import { PhosphorHandGrabbingIcon } from './hand-grabbing';
+import { PhosphorHandHeartIcon } from './hand-heart';
 import { PhosphorHandPalmIcon } from './hand-palm';
 import { PhosphorHeartIcon } from './heart';
 import { PhosphorHouseIcon } from './house';
@@ -910,6 +911,11 @@ const PHOSPHOR_ICON_LIST = [
     icon: PhosphorHandGrabbingIcon,
     keywords: ['hand', 'grabbing', 'hand-grab', 'grab'],
   },
+  {
+    name: 'hand-heart',
+    icon: PhosphorHandHeartIcon,
+    keywords: ['hand', 'heart', 'hand-heart'],
+  },
   { name: 'hand-palm', icon: PhosphorHandPalmIcon, keywords: ['hand', 'palm'] },
   {
     name: 'heart',
@@ -1281,6 +1287,7 @@ export {
   PhosphorHandCoinsIcon,
   PhosphorHandFistIcon,
   PhosphorHandGrabbingIcon,
+  PhosphorHandHeartIcon,
   PhosphorHandPalmIcon,
   PhosphorHeartIcon,
   PhosphorHouseIcon,
