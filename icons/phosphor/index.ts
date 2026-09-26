@@ -132,6 +132,7 @@ import { PhosphorGitForkIcon } from './git-fork';
 import { PhosphorGitMergeIcon } from './git-merge';
 import { PhosphorGitPullRequestIcon } from './git-pull-request';
 import { PhosphorGithubLogoIcon } from './github-logo';
+import { PhosphorGitlabLogoIcon } from './gitlab-logo';
 import { PhosphorGlobeHemisphereWestIcon } from './globe-hemisphere-west';
 import { PhosphorGoogleChromeLogoIcon } from './google-chrome-logo';
 import { PhosphorHeartIcon } from './heart';
@@ -850,6 +851,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['github', 'logo'],
   },
   {
+    name: 'gitlab-logo',
+    icon: PhosphorGitlabLogoIcon,
+    keywords: ['gitlab', 'logo'],
+  },
+  {
     name: 'globe-hemisphere-west',
     icon: PhosphorGlobeHemisphereWestIcon,
     keywords: ['globe', 'hemisphere', 'west', 'earth'],
@@ -1218,6 +1224,7 @@ export {
   PhosphorGitMergeIcon,
   PhosphorGitPullRequestIcon,
   PhosphorGithubLogoIcon,
+  PhosphorGitlabLogoIcon,
   PhosphorGlobeHemisphereWestIcon,
   PhosphorGoogleChromeLogoIcon,
   PhosphorHeartIcon,

@@ -2916,6 +2916,19 @@
       ]
     },
     {
+      "name": "hugeicons-gitlab",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-gitlab.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-heart",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -5022,6 +5035,19 @@
       ]
     },
     {
+      "name": "phosphor-gitlab-logo",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-gitlab-logo.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-globe-hemisphere-west",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -6369,6 +6395,19 @@
       "files": [
         {
           "path": "tabler-brand-github.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-brand-gitlab",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-brand-gitlab.tsx",
           "type": "registry:ui"
         }
       ]
