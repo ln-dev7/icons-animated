@@ -142,6 +142,7 @@ import { HugeiconsCornerLeftDownIcon } from './corner-left-down';
 import { HugeiconsCornerLeftUpIcon } from './corner-left-up';
 import { HugeiconsCornerRightDownIcon } from './corner-right-down';
 import { HugeiconsCornerRightUpIcon } from './corner-right-up';
+import { HugeiconsCornerUpLeftIcon } from './corner-up-left';
 import { HugeiconsDownloadIcon } from './download';
 import { HugeiconsEyeIcon } from './eye';
 import { HugeiconsFilterIcon } from './filter';
@@ -861,6 +862,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['corner', 'right', 'up', 'corner-right-up'],
   },
   {
+    name: 'corner-up-left',
+    icon: HugeiconsCornerUpLeftIcon,
+    keywords: ['corner', 'up', 'left', 'corner-up-left'],
+  },
+  {
     name: 'download',
     icon: HugeiconsDownloadIcon,
     keywords: ['download', 'save', 'arrow', 'get', 'export', 'download-01'],
@@ -1174,6 +1180,7 @@ export {
   HugeiconsCornerLeftUpIcon,
   HugeiconsCornerRightDownIcon,
   HugeiconsCornerRightUpIcon,
+  HugeiconsCornerUpLeftIcon,
   HugeiconsDownloadIcon,
   HugeiconsEyeIcon,
   HugeiconsFilterIcon,
