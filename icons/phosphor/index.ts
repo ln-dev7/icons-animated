@@ -45,6 +45,7 @@ import { PhosphorCalendarCheckIcon } from './calendar-check';
 import { PhosphorCalendarDotsIcon } from './calendar-dots';
 import { PhosphorCaretCircleDownIcon } from './caret-circle-down';
 import { PhosphorCaretCircleLeftIcon } from './caret-circle-left';
+import { PhosphorCaretCircleRightIcon } from './caret-circle-right';
 import { PhosphorCaretLineLeftIcon } from './caret-line-left';
 import { PhosphorCaretUpDownIcon } from './caret-up-down';
 import { PhosphorChartBarIcon } from './chart-bar';
@@ -330,6 +331,11 @@ const PHOSPHOR_ICON_LIST = [
     name: 'caret-circle-left',
     icon: PhosphorCaretCircleLeftIcon,
     keywords: ['caret', 'circle', 'left', 'circle-chevron-left', 'chevron'],
+  },
+  {
+    name: 'caret-circle-right',
+    icon: PhosphorCaretCircleRightIcon,
+    keywords: ['caret', 'circle', 'right', 'circle-chevron-right', 'chevron'],
   },
   {
     name: 'caret-line-left',
@@ -730,6 +736,7 @@ export {
   PhosphorCalendarDotsIcon,
   PhosphorCaretCircleDownIcon,
   PhosphorCaretCircleLeftIcon,
+  PhosphorCaretCircleRightIcon,
   PhosphorCaretLineLeftIcon,
   PhosphorCaretUpDownIcon,
   PhosphorChartBarIcon,

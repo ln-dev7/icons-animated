@@ -1447,6 +1447,19 @@
       ]
     },
     {
+      "name": "hugeicons-circle-chevron-right",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-circle-chevron-right.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-download",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2417,6 +2430,19 @@
       "files": [
         {
           "path": "phosphor-caret-circle-left.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-caret-circle-right",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-caret-circle-right.tsx",
           "type": "registry:ui"
         }
       ]
@@ -4185,6 +4211,19 @@
       "files": [
         {
           "path": "tabler-circle-chevron-left.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-circle-chevron-right",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-circle-chevron-right.tsx",
           "type": "registry:ui"
         }
       ]

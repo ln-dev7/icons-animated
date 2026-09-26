@@ -77,6 +77,7 @@ import { TablerChevronUpIcon } from './chevron-up';
 import { TablerCircleCheckIcon } from './circle-check';
 import { TablerCircleChevronDownIcon } from './circle-chevron-down';
 import { TablerCircleChevronLeftIcon } from './circle-chevron-left';
+import { TablerCircleChevronRightIcon } from './circle-chevron-right';
 import { TablerDeviceCctvIcon } from './device-cctv';
 import { TablerDownloadIcon } from './download';
 import { TablerEyeIcon } from './eye';
@@ -492,6 +493,11 @@ const TABLER_ICON_LIST = [
     keywords: ['circle', 'chevron', 'left', 'circle-chevron-left'],
   },
   {
+    name: 'circle-chevron-right',
+    icon: TablerCircleChevronRightIcon,
+    keywords: ['circle', 'chevron', 'right', 'circle-chevron-right'],
+  },
+  {
     name: 'device-cctv',
     icon: TablerDeviceCctvIcon,
     keywords: ['device', 'cctv'],
@@ -813,6 +819,7 @@ export {
   TablerCircleCheckIcon,
   TablerCircleChevronDownIcon,
   TablerCircleChevronLeftIcon,
+  TablerCircleChevronRightIcon,
   TablerDeviceCctvIcon,
   TablerDownloadIcon,
   TablerEyeIcon,

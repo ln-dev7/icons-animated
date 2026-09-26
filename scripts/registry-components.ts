@@ -688,6 +688,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-circle-chevron-right',
+    'path': path.join(__dirname, '../icons/hugeicons/circle-chevron-right.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-download',
     'path': path.join(__dirname, '../icons/hugeicons/download.tsx'),
     'registryDependencies': [],
@@ -1137,6 +1143,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-caret-circle-left',
     'path': path.join(__dirname, '../icons/phosphor/caret-circle-left.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-caret-circle-right',
+    'path': path.join(__dirname, '../icons/phosphor/caret-circle-right.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -1953,6 +1965,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-circle-chevron-left',
     'path': path.join(__dirname, '../icons/tabler/circle-chevron-left.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-circle-chevron-right',
+    'path': path.join(__dirname, '../icons/tabler/circle-chevron-right.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
