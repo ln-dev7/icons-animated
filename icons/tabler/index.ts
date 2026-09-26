@@ -29,6 +29,7 @@ import { TablerArrowUpRightIcon } from './arrow-up-right';
 import { TablerAtIcon } from './at';
 import { TablerAtomIcon } from './atom';
 import { TablerAxeIcon } from './axe';
+import { TablerBanIcon } from './ban';
 import { TablerBellIcon } from './bell';
 import { TablerCalendarIcon } from './calendar';
 import { TablerCheckIcon } from './check';
@@ -208,6 +209,7 @@ const TABLER_ICON_LIST = [
   { name: 'at', icon: TablerAtIcon, keywords: ['at', 'at-sign', 'sign'] },
   { name: 'atom', icon: TablerAtomIcon, keywords: ['atom'] },
   { name: 'axe', icon: TablerAxeIcon, keywords: ['axe'] },
+  { name: 'ban', icon: TablerBanIcon, keywords: ['ban'] },
   {
     name: 'bell',
     icon: TablerBellIcon,
@@ -513,6 +515,7 @@ export {
   TablerAtIcon,
   TablerAtomIcon,
   TablerAxeIcon,
+  TablerBanIcon,
   TablerBellIcon,
   TablerCalendarIcon,
   TablerCheckIcon,

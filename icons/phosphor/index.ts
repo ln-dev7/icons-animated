@@ -44,6 +44,7 @@ import { PhosphorPaperclipIcon } from './paperclip';
 import { PhosphorPencilIcon } from './pencil';
 import { PhosphorPersonArmsSpreadIcon } from './person-arms-spread';
 import { PhosphorPlusIcon } from './plus';
+import { PhosphorProhibitIcon } from './prohibit';
 import { PhosphorPulseIcon } from './pulse';
 import { PhosphorRefreshIcon } from './refresh';
 import { PhosphorSaveIcon } from './save';
@@ -344,6 +345,11 @@ const PHOSPHOR_ICON_LIST = [
     icon: PhosphorPlusIcon,
     keywords: ['plus', 'add', 'new', 'create', 'increase'],
   },
+  {
+    name: 'prohibit',
+    icon: PhosphorProhibitIcon,
+    keywords: ['prohibit', 'ban'],
+  },
   { name: 'pulse', icon: PhosphorPulseIcon, keywords: ['pulse', 'activity'] },
   {
     name: 'refresh',
@@ -528,6 +534,7 @@ export {
   PhosphorPencilIcon,
   PhosphorPersonArmsSpreadIcon,
   PhosphorPlusIcon,
+  PhosphorProhibitIcon,
   PhosphorPulseIcon,
   PhosphorRefreshIcon,
   PhosphorSaveIcon,

@@ -563,6 +563,19 @@
       ]
     },
     {
+      "name": "hugeicons-ban",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-ban.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-bell",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -1577,6 +1590,19 @@
       ]
     },
     {
+      "name": "phosphor-prohibit",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-prohibit.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-pulse",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2235,6 +2261,19 @@
       "files": [
         {
           "path": "tabler-axe.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-ban",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-ban.tsx",
           "type": "registry:ui"
         }
       ]

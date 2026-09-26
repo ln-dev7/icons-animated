@@ -41,6 +41,7 @@ import { HugeiconsAudioLinesIcon } from './audio-lines';
 import { HugeiconsAxeIcon } from './axe';
 import { HugeiconsBadgeAlertIcon } from './badge-alert';
 import { HugeiconsBadgePercentIcon } from './badge-percent';
+import { HugeiconsBanIcon } from './ban';
 import { HugeiconsBellIcon } from './bell';
 import { HugeiconsCalendarIcon } from './calendar';
 import { HugeiconsCheckIcon } from './check';
@@ -295,6 +296,7 @@ const HUGEICONS_ICON_LIST = [
     icon: HugeiconsBadgePercentIcon,
     keywords: ['badge', 'percent', 'badge-percent'],
   },
+  { name: 'ban', icon: HugeiconsBanIcon, keywords: ['ban'] },
   {
     name: 'bell',
     icon: HugeiconsBellIcon,
@@ -555,6 +557,7 @@ export {
   HugeiconsAxeIcon,
   HugeiconsBadgeAlertIcon,
   HugeiconsBadgePercentIcon,
+  HugeiconsBanIcon,
   HugeiconsBellIcon,
   HugeiconsCalendarIcon,
   HugeiconsCheckIcon,
