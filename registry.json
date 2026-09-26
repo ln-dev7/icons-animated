@@ -1486,6 +1486,19 @@
       ]
     },
     {
+      "name": "hugeicons-circle-dollar-sign",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-circle-dollar-sign.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-download",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2703,6 +2716,19 @@
       "files": [
         {
           "path": "phosphor-cube.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-currency-circle-dollar",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-currency-circle-dollar.tsx",
           "type": "registry:ui"
         }
       ]
@@ -4302,6 +4328,19 @@
       "files": [
         {
           "path": "tabler-circle-dashed.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-coin",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-coin.tsx",
           "type": "registry:ui"
         }
       ]

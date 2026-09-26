@@ -80,6 +80,7 @@ import { TablerCircleChevronLeftIcon } from './circle-chevron-left';
 import { TablerCircleChevronRightIcon } from './circle-chevron-right';
 import { TablerCircleChevronUpIcon } from './circle-chevron-up';
 import { TablerCircleDashedIcon } from './circle-dashed';
+import { TablerCoinIcon } from './coin';
 import { TablerDeviceCctvIcon } from './device-cctv';
 import { TablerDownloadIcon } from './download';
 import { TablerEyeIcon } from './eye';
@@ -510,6 +511,11 @@ const TABLER_ICON_LIST = [
     keywords: ['circle', 'dashed', 'circle-dashed'],
   },
   {
+    name: 'coin',
+    icon: TablerCoinIcon,
+    keywords: ['coin', 'circle-dollar-sign', 'circle', 'dollar', 'sign'],
+  },
+  {
     name: 'device-cctv',
     icon: TablerDeviceCctvIcon,
     keywords: ['device', 'cctv'],
@@ -834,6 +840,7 @@ export {
   TablerCircleChevronRightIcon,
   TablerCircleChevronUpIcon,
   TablerCircleDashedIcon,
+  TablerCoinIcon,
   TablerDeviceCctvIcon,
   TablerDownloadIcon,
   TablerEyeIcon,
