@@ -40,6 +40,7 @@ import { HugeiconsAttachment01Icon } from './attachment-01';
 import { HugeiconsAudioLinesIcon } from './audio-lines';
 import { HugeiconsAxeIcon } from './axe';
 import { HugeiconsBadgeAlertIcon } from './badge-alert';
+import { HugeiconsBadgePercentIcon } from './badge-percent';
 import { HugeiconsBellIcon } from './bell';
 import { HugeiconsCalendarIcon } from './calendar';
 import { HugeiconsCheckIcon } from './check';
@@ -288,6 +289,11 @@ const HUGEICONS_ICON_LIST = [
     name: 'badge-alert',
     icon: HugeiconsBadgeAlertIcon,
     keywords: ['badge', 'alert', 'badge-alert'],
+  },
+  {
+    name: 'badge-percent',
+    icon: HugeiconsBadgePercentIcon,
+    keywords: ['badge', 'percent', 'badge-percent'],
   },
   {
     name: 'bell',
@@ -548,6 +554,7 @@ export {
   HugeiconsAudioLinesIcon,
   HugeiconsAxeIcon,
   HugeiconsBadgeAlertIcon,
+  HugeiconsBadgePercentIcon,
   HugeiconsBellIcon,
   HugeiconsCalendarIcon,
   HugeiconsCheckIcon,

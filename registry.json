@@ -550,6 +550,19 @@
       ]
     },
     {
+      "name": "hugeicons-badge-percent",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-badge-percent.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-bell",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -1603,6 +1616,19 @@
       ]
     },
     {
+      "name": "phosphor-seal-percent",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-seal-percent.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-seal-warning",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2521,6 +2547,19 @@
       "files": [
         {
           "path": "tabler-refresh.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-rosette-discount",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-rosette-discount.tsx",
           "type": "registry:ui"
         }
       ]

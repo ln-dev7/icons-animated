@@ -262,6 +262,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-badge-percent',
+    'path': path.join(__dirname, '../icons/hugeicons/badge-percent.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-bell',
     'path': path.join(__dirname, '../icons/hugeicons/bell.tsx'),
     'registryDependencies': [],
@@ -751,6 +757,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'phosphor-seal-percent',
+    'path': path.join(__dirname, '../icons/phosphor/seal-percent.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'phosphor-seal-warning',
     'path': path.join(__dirname, '../icons/phosphor/seal-warning.tsx'),
     'registryDependencies': [],
@@ -1173,6 +1185,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-refresh',
     'path': path.join(__dirname, '../icons/tabler/refresh.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-rosette-discount',
+    'path': path.join(__dirname, '../icons/tabler/rosette-discount.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

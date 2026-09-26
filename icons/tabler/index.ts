@@ -53,6 +53,7 @@ import { TablerPencilIcon } from './pencil';
 import { TablerPlaneIcon } from './plane';
 import { TablerPlusIcon } from './plus';
 import { TablerRefreshIcon } from './refresh';
+import { TablerRosetteDiscountIcon } from './rosette-discount';
 import { TablerSaveIcon } from './save';
 import { TablerSearchIcon } from './search';
 import { TablerSettingsIcon } from './settings';
@@ -372,6 +373,11 @@ const TABLER_ICON_LIST = [
     ],
   },
   {
+    name: 'rosette-discount',
+    icon: TablerRosetteDiscountIcon,
+    keywords: ['rosette', 'discount', 'badge-percent', 'badge', 'percent'],
+  },
+  {
     name: 'save',
     icon: TablerSaveIcon,
     keywords: ['save', 'store', 'disk', 'floppy', 'preserve'],
@@ -531,6 +537,7 @@ export {
   TablerPlaneIcon,
   TablerPlusIcon,
   TablerRefreshIcon,
+  TablerRosetteDiscountIcon,
   TablerSaveIcon,
   TablerSearchIcon,
   TablerSettingsIcon,
