@@ -2136,6 +2136,19 @@
       ]
     },
     {
+      "name": "hugeicons-facebook-02",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-facebook-02.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-filter",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -3891,6 +3904,19 @@
       ]
     },
     {
+      "name": "phosphor-facebook-logo",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-facebook-logo.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-film-slate",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -5238,6 +5264,19 @@
       "files": [
         {
           "path": "tabler-brand-dribbble.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-brand-facebook",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-brand-facebook.tsx",
           "type": "registry:ui"
         }
       ]

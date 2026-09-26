@@ -104,6 +104,7 @@ import { PhosphorDropIcon } from './drop';
 import { PhosphorEnvelopeIcon } from './envelope';
 import { PhosphorEyeIcon } from './eye';
 import { PhosphorEyeSlashIcon } from './eye-slash';
+import { PhosphorFacebookLogoIcon } from './facebook-logo';
 import { PhosphorFilmSlateIcon } from './film-slate';
 import { PhosphorFilterIcon } from './filter';
 import { PhosphorGearIcon } from './gear';
@@ -696,6 +697,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['eye', 'slash', 'eye-off', 'off'],
   },
   {
+    name: 'facebook-logo',
+    icon: PhosphorFacebookLogoIcon,
+    keywords: ['facebook', 'logo'],
+  },
+  {
     name: 'film-slate',
     icon: PhosphorFilmSlateIcon,
     keywords: ['film', 'slate', 'clap'],
@@ -1051,6 +1057,7 @@ export {
   PhosphorEnvelopeIcon,
   PhosphorEyeIcon,
   PhosphorEyeSlashIcon,
+  PhosphorFacebookLogoIcon,
   PhosphorFilmSlateIcon,
   PhosphorFilterIcon,
   PhosphorGearIcon,
