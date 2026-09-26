@@ -19,6 +19,7 @@ import { TablerArrowBigRightLineIcon } from './arrow-big-right-line';
 import { TablerArrowBigUpIcon } from './arrow-big-up';
 import { TablerArrowBigUpLineIcon } from './arrow-big-up-line';
 import { TablerArrowDownIcon } from './arrow-down';
+import { TablerArrowDownLeftIcon } from './arrow-down-left';
 import { TablerArrowLeftIcon } from './arrow-left';
 import { TablerArrowRightIcon } from './arrow-right';
 import { TablerArrowUpIcon } from './arrow-up';
@@ -151,6 +152,11 @@ const TABLER_ICON_LIST = [
     name: 'arrow-down',
     icon: TablerArrowDownIcon,
     keywords: ['arrow', 'down', 'direction', 'south', 'bottom', 'arrow-down'],
+  },
+  {
+    name: 'arrow-down-left',
+    icon: TablerArrowDownLeftIcon,
+    keywords: ['arrow', 'down', 'left', 'arrow-down-left'],
   },
   {
     name: 'arrow-left',
@@ -446,6 +452,7 @@ export {
   TablerArrowBigUpIcon,
   TablerArrowBigUpLineIcon,
   TablerArrowDownIcon,
+  TablerArrowDownLeftIcon,
   TablerArrowLeftIcon,
   TablerArrowRightIcon,
   TablerArrowUpIcon,
