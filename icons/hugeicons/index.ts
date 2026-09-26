@@ -291,6 +291,7 @@ import { HugeiconsMapPinXInsideIcon } from './map-pin-x-inside';
 import { HugeiconsMehIcon } from './meh';
 import { HugeiconsMenuIcon } from './menu';
 import { HugeiconsMessageCircleIcon } from './message-circle';
+import { HugeiconsMessageCircleCheckIcon } from './message-circle-check';
 import { HugeiconsMousePointerClickIcon } from './mouse-pointer-click';
 import { HugeiconsPencilIcon } from './pencil';
 import { HugeiconsPieChartIcon } from './pie-chart';
@@ -1616,6 +1617,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['message', 'circle', 'message-circle'],
   },
   {
+    name: 'message-circle-check',
+    icon: HugeiconsMessageCircleCheckIcon,
+    keywords: ['message', 'circle', 'check', 'message-circle-check'],
+  },
+  {
     name: 'mouse-pointer-click',
     icon: HugeiconsMousePointerClickIcon,
     keywords: ['mouse', 'pointer', 'click', 'cursor-click', 'cursor'],
@@ -2041,6 +2047,7 @@ export {
   HugeiconsMehIcon,
   HugeiconsMenuIcon,
   HugeiconsMessageCircleIcon,
+  HugeiconsMessageCircleCheckIcon,
   HugeiconsMousePointerClickIcon,
   HugeiconsPencilIcon,
   HugeiconsPieChartIcon,
