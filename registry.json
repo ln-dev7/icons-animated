@@ -5360,6 +5360,19 @@
       ]
     },
     {
+      "name": "hugeicons-sunset",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-sunset.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-text-align-center",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -8904,6 +8917,19 @@
       "files": [
         {
           "path": "phosphor-sun-dim.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-sun-horizon",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-sun-horizon.tsx",
           "type": "registry:ui"
         }
       ]
@@ -13259,6 +13285,19 @@
       "files": [
         {
           "path": "tabler-sun-moon.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-sunset",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-sunset.tsx",
           "type": "registry:ui"
         }
       ]

@@ -2521,6 +2521,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-sunset',
+    'path': path.join(__dirname, '../icons/hugeicons/sunset.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-text-align-center',
     'path': path.join(__dirname, '../icons/hugeicons/text-align-center.tsx'),
     'registryDependencies': [],
@@ -4176,6 +4182,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-sun-dim',
     'path': path.join(__dirname, '../icons/phosphor/sun-dim.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-sun-horizon',
+    'path': path.join(__dirname, '../icons/phosphor/sun-horizon.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -6198,6 +6210,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-sun-moon',
     'path': path.join(__dirname, '../icons/tabler/sun-moon.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-sunset',
+    'path': path.join(__dirname, '../icons/tabler/sunset.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

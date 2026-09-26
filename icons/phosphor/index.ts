@@ -261,6 +261,7 @@ import { PhosphorStarIcon } from './star';
 import { PhosphorStethoscopeIcon } from './stethoscope';
 import { PhosphorSunIcon } from './sun';
 import { PhosphorSunDimIcon } from './sun-dim';
+import { PhosphorSunHorizonIcon } from './sun-horizon';
 import { PhosphorTextAlignCenterIcon } from './text-align-center';
 import { PhosphorTextAlignLeftIcon } from './text-align-left';
 import { PhosphorTextAlignRightIcon } from './text-align-right';
@@ -1562,6 +1563,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['sun', 'dim', 'sun-dim'],
   },
   {
+    name: 'sun-horizon',
+    icon: PhosphorSunHorizonIcon,
+    keywords: ['sun', 'horizon', 'sunset'],
+  },
+  {
     name: 'text-align-center',
     icon: PhosphorTextAlignCenterIcon,
     keywords: ['text', 'align', 'center', 'align-center'],
@@ -1884,6 +1890,7 @@ export {
   PhosphorStethoscopeIcon,
   PhosphorSunIcon,
   PhosphorSunDimIcon,
+  PhosphorSunHorizonIcon,
   PhosphorTextAlignCenterIcon,
   PhosphorTextAlignLeftIcon,
   PhosphorTextAlignRightIcon,
