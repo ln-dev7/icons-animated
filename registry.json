@@ -3358,6 +3358,19 @@
       ]
     },
     {
+      "name": "hugeicons-layers-01",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-layers-01.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-lock",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -6096,6 +6109,19 @@
       "files": [
         {
           "path": "phosphor-sort-descending.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-stack",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-stack.tsx",
           "type": "registry:ui"
         }
       ]
@@ -9073,6 +9099,19 @@
       "files": [
         {
           "path": "tabler-spy.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-stack-2",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-stack-2.tsx",
           "type": "registry:ui"
         }
       ]
