@@ -3254,6 +3254,19 @@
       ]
     },
     {
+      "name": "hugeicons-japanese-yen",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-japanese-yen.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-lock",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -4887,6 +4900,19 @@
       "files": [
         {
           "path": "phosphor-currency-inr.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-currency-jpy",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-currency-jpy.tsx",
           "type": "registry:ui"
         }
       ]
@@ -7695,6 +7721,19 @@
       "files": [
         {
           "path": "tabler-currency-rupee.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-currency-yen",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-currency-yen.tsx",
           "type": "registry:ui"
         }
       ]

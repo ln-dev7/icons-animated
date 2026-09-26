@@ -120,6 +120,7 @@ import { TablerCurrencyDollarIcon } from './currency-dollar';
 import { TablerCurrencyEuroIcon } from './currency-euro';
 import { TablerCurrencyLariIcon } from './currency-lari';
 import { TablerCurrencyRupeeIcon } from './currency-rupee';
+import { TablerCurrencyYenIcon } from './currency-yen';
 import { TablerDashboardIcon } from './dashboard';
 import { TablerDeviceCctvIcon } from './device-cctv';
 import { TablerDiscIcon } from './disc';
@@ -779,6 +780,11 @@ const TABLER_ICON_LIST = [
     keywords: ['currency', 'rupee', 'indian-rupee', 'indian'],
   },
   {
+    name: 'currency-yen',
+    icon: TablerCurrencyYenIcon,
+    keywords: ['currency', 'yen', 'japanese-yen', 'japanese'],
+  },
+  {
     name: 'dashboard',
     icon: TablerDashboardIcon,
     keywords: ['dashboard', 'gauge'],
@@ -1368,6 +1374,7 @@ export {
   TablerCurrencyEuroIcon,
   TablerCurrencyLariIcon,
   TablerCurrencyRupeeIcon,
+  TablerCurrencyYenIcon,
   TablerDashboardIcon,
   TablerDeviceCctvIcon,
   TablerDiscIcon,
