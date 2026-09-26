@@ -259,6 +259,7 @@ import { PhosphorStackIcon } from './stack';
 import { PhosphorStampIcon } from './stamp';
 import { PhosphorStarIcon } from './star';
 import { PhosphorStethoscopeIcon } from './stethoscope';
+import { PhosphorSunIcon } from './sun';
 import { PhosphorTextAlignCenterIcon } from './text-align-center';
 import { PhosphorTextAlignLeftIcon } from './text-align-left';
 import { PhosphorTextAlignRightIcon } from './text-align-right';
@@ -1550,6 +1551,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['stethoscope'],
   },
   {
+    name: 'sun',
+    icon: PhosphorSunIcon,
+    keywords: ['sun', 'sun-medium', 'medium'],
+  },
+  {
     name: 'text-align-center',
     icon: PhosphorTextAlignCenterIcon,
     keywords: ['text', 'align', 'center', 'align-center'],
@@ -1870,6 +1876,7 @@ export {
   PhosphorStampIcon,
   PhosphorStarIcon,
   PhosphorStethoscopeIcon,
+  PhosphorSunIcon,
   PhosphorTextAlignCenterIcon,
   PhosphorTextAlignLeftIcon,
   PhosphorTextAlignRightIcon,

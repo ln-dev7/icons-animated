@@ -317,6 +317,7 @@ import { TablerSquaresIcon } from './squares';
 import { TablerStack2Icon } from './stack-2';
 import { TablerStarIcon } from './star';
 import { TablerStethoscopeIcon } from './stethoscope';
+import { TablerSunIcon } from './sun';
 import { TablerTextScan2Icon } from './text-scan-2';
 import { TablerThumbDownIcon } from './thumb-down';
 import { TablerTrashIcon } from './trash';
@@ -1797,6 +1798,7 @@ const TABLER_ICON_LIST = [
     icon: TablerStethoscopeIcon,
     keywords: ['stethoscope'],
   },
+  { name: 'sun', icon: TablerSunIcon, keywords: ['sun'] },
   {
     name: 'text-scan-2',
     icon: TablerTextScan2Icon,
@@ -2156,6 +2158,7 @@ export {
   TablerStack2Icon,
   TablerStarIcon,
   TablerStethoscopeIcon,
+  TablerSunIcon,
   TablerTextScan2Icon,
   TablerThumbDownIcon,
   TablerTrashIcon,

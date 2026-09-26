@@ -5295,6 +5295,19 @@
       ]
     },
     {
+      "name": "hugeicons-sun-03",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-sun-03.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-sun-cloud-02",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -8826,6 +8839,19 @@
       "files": [
         {
           "path": "phosphor-stethoscope.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-sun",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-sun.tsx",
           "type": "registry:ui"
         }
       ]
@@ -13129,6 +13155,19 @@
       "files": [
         {
           "path": "tabler-stethoscope.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-sun",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-sun.tsx",
           "type": "registry:ui"
         }
       ]
