@@ -328,6 +328,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-bell-electric',
+    'path': path.join(__dirname, '../icons/hugeicons/bell-electric.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-calendar',
     'path': path.join(__dirname, '../icons/hugeicons/calendar.tsx'),
     'registryDependencies': [],
@@ -1197,6 +1203,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-bell',
     'path': path.join(__dirname, '../icons/tabler/bell.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-bell-school',
+    'path': path.join(__dirname, '../icons/tabler/bell-school.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

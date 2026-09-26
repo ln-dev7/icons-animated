@@ -51,6 +51,7 @@ import { HugeiconsBatteryMedium01Icon } from './battery-medium-01';
 import { HugeiconsBatteryPlusIcon } from './battery-plus';
 import { HugeiconsBatteryWarningIcon } from './battery-warning';
 import { HugeiconsBellIcon } from './bell';
+import { HugeiconsBellElectricIcon } from './bell-electric';
 import { HugeiconsCalendarIcon } from './calendar';
 import { HugeiconsCheckIcon } from './check';
 import { HugeiconsChevronDownIcon } from './chevron-down';
@@ -343,6 +344,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['bell', 'notification', 'alert', 'ring', 'alarm'],
   },
   {
+    name: 'bell-electric',
+    icon: HugeiconsBellElectricIcon,
+    keywords: ['bell', 'electric', 'bell-electric'],
+  },
+  {
     name: 'calendar',
     icon: HugeiconsCalendarIcon,
     keywords: ['calendar', 'date', 'schedule', 'event', 'day'],
@@ -607,6 +613,7 @@ export {
   HugeiconsBatteryPlusIcon,
   HugeiconsBatteryWarningIcon,
   HugeiconsBellIcon,
+  HugeiconsBellElectricIcon,
   HugeiconsCalendarIcon,
   HugeiconsCheckIcon,
   HugeiconsChevronDownIcon,
