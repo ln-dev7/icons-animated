@@ -383,6 +383,7 @@ import { HugeiconsShowerHeadIcon } from './shower-head';
 import { HugeiconsShredderIcon } from './shredder';
 import { HugeiconsShrinkIcon } from './shrink';
 import { HugeiconsSlidersHorizontalIcon } from './sliders-horizontal';
+import { HugeiconsSmartphoneChargingIcon } from './smartphone-charging';
 import { HugeiconsStarIcon } from './star';
 import { HugeiconsSunCloud02Icon } from './sun-cloud-02';
 import { HugeiconsTextAlignCenterIcon } from './text-align-center';
@@ -2087,6 +2088,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['sliders', 'horizontal', 'sliders-horizontal'],
   },
   {
+    name: 'smartphone-charging',
+    icon: HugeiconsSmartphoneChargingIcon,
+    keywords: ['smartphone', 'charging', 'smartphone-charging'],
+  },
+  {
     name: 'star',
     icon: HugeiconsStarIcon,
     keywords: ['star', 'favorite', 'bookmark', 'rate', 'rating'],
@@ -2535,6 +2541,7 @@ export {
   HugeiconsShredderIcon,
   HugeiconsShrinkIcon,
   HugeiconsSlidersHorizontalIcon,
+  HugeiconsSmartphoneChargingIcon,
   HugeiconsStarIcon,
   HugeiconsSunCloud02Icon,
   HugeiconsTextAlignCenterIcon,

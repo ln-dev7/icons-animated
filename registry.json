@@ -5009,6 +5009,19 @@
       ]
     },
     {
+      "name": "hugeicons-smartphone-charging",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-smartphone-charging.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-star",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -10347,6 +10360,19 @@
       "files": [
         {
           "path": "tabler-device-desktop-cog.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-device-mobile-charging",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-device-mobile-charging.tsx",
           "type": "registry:ui"
         }
       ]

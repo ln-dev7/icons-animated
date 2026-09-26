@@ -136,6 +136,7 @@ import { TablerDashboardIcon } from './dashboard';
 import { TablerDeviceCctvIcon } from './device-cctv';
 import { TablerDeviceDesktopCheckIcon } from './device-desktop-check';
 import { TablerDeviceDesktopCogIcon } from './device-desktop-cog';
+import { TablerDeviceMobileChargingIcon } from './device-mobile-charging';
 import { TablerDeviceProjectorIcon } from './device-projector';
 import { TablerDiscIcon } from './disc';
 import { TablerDownloadIcon } from './download';
@@ -946,6 +947,17 @@ const TABLER_ICON_LIST = [
     name: 'device-desktop-cog',
     icon: TablerDeviceDesktopCogIcon,
     keywords: ['device', 'desktop', 'cog', 'monitor-cog', 'monitor'],
+  },
+  {
+    name: 'device-mobile-charging',
+    icon: TablerDeviceMobileChargingIcon,
+    keywords: [
+      'device',
+      'mobile',
+      'charging',
+      'smartphone-charging',
+      'smartphone',
+    ],
   },
   {
     name: 'device-projector',
@@ -1854,6 +1866,7 @@ export {
   TablerDeviceCctvIcon,
   TablerDeviceDesktopCheckIcon,
   TablerDeviceDesktopCogIcon,
+  TablerDeviceMobileChargingIcon,
   TablerDeviceProjectorIcon,
   TablerDiscIcon,
   TablerDownloadIcon,

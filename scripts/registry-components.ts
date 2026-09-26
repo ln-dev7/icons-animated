@@ -2356,6 +2356,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-smartphone-charging',
+    'path': path.join(__dirname, '../icons/hugeicons/smartphone-charging.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-star',
     'path': path.join(__dirname, '../icons/hugeicons/star.tsx'),
     'registryDependencies': [],
@@ -4842,6 +4848,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-device-desktop-cog',
     'path': path.join(__dirname, '../icons/tabler/device-desktop-cog.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-device-mobile-charging',
+    'path': path.join(__dirname, '../icons/tabler/device-mobile-charging.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
