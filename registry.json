@@ -6153,6 +6153,19 @@
       ]
     },
     {
+      "name": "hugeicons-zap",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-zap.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-airplane",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -8610,6 +8623,19 @@
       ]
     },
     {
+      "name": "phosphor-lightning",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-lightning.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-link",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -10893,6 +10919,19 @@
       "files": [
         {
           "path": "tabler-bold.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-bolt",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-bolt.tsx",
           "type": "registry:ui"
         }
       ]

@@ -53,6 +53,7 @@ import { TablerBluetoothIcon } from './bluetooth';
 import { TablerBluetoothConnectedIcon } from './bluetooth-connected';
 import { TablerBluetoothOffIcon } from './bluetooth-off';
 import { TablerBoldIcon } from './bold';
+import { TablerBoltIcon } from './bolt';
 import { TablerBoneIcon } from './bone';
 import { TablerBook2Icon } from './book-2';
 import { TablerBookmarkIcon } from './bookmark';
@@ -601,6 +602,7 @@ const TABLER_ICON_LIST = [
     keywords: ['bluetooth', 'off', 'bluetooth-off'],
   },
   { name: 'bold', icon: TablerBoldIcon, keywords: ['bold'] },
+  { name: 'bolt', icon: TablerBoltIcon, keywords: ['bolt', 'zap'] },
   { name: 'bone', icon: TablerBoneIcon, keywords: ['bone'] },
   {
     name: 'book-2',
@@ -2086,6 +2088,7 @@ export {
   TablerBluetoothConnectedIcon,
   TablerBluetoothOffIcon,
   TablerBoldIcon,
+  TablerBoltIcon,
   TablerBoneIcon,
   TablerBook2Icon,
   TablerBookmarkIcon,
