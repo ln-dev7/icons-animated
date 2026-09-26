@@ -300,6 +300,7 @@ import { PhosphorWalletIcon } from './wallet';
 import { PhosphorWashingMachineIcon } from './washing-machine';
 import { PhosphorWaveformIcon } from './waveform';
 import { PhosphorWavesIcon } from './waves';
+import { PhosphorWebhooksLogoIcon } from './webhooks-logo';
 import { PhosphorXIcon } from './x';
 
 const PHOSPHOR_ICON_LIST = [
@@ -1745,6 +1746,11 @@ const PHOSPHOR_ICON_LIST = [
   },
   { name: 'waves', icon: PhosphorWavesIcon, keywords: ['waves'] },
   {
+    name: 'webhooks-logo',
+    icon: PhosphorWebhooksLogoIcon,
+    keywords: ['webhooks', 'logo', 'webhook'],
+  },
+  {
     name: 'x',
     icon: PhosphorXIcon,
     keywords: ['close', 'x', 'cancel', 'dismiss', 'remove', 'delete'],
@@ -2055,5 +2061,6 @@ export {
   PhosphorWashingMachineIcon,
   PhosphorWaveformIcon,
   PhosphorWavesIcon,
+  PhosphorWebhooksLogoIcon,
   PhosphorXIcon,
 };

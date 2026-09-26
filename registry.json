@@ -5997,6 +5997,19 @@
       ]
     },
     {
+      "name": "hugeicons-webhook",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-webhook.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-x",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -9931,6 +9944,19 @@
       "files": [
         {
           "path": "phosphor-waves.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-webhooks-logo",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-webhooks-logo.tsx",
           "type": "registry:ui"
         }
       ]
@@ -14624,6 +14650,19 @@
       "files": [
         {
           "path": "tabler-wash-machine.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-webhook",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-webhook.tsx",
           "type": "registry:ui"
         }
       ]

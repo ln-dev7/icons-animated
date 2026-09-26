@@ -459,6 +459,7 @@ import { HugeiconsWavesArrowDownIcon } from './waves-arrow-down';
 import { HugeiconsWavesArrowUpIcon } from './waves-arrow-up';
 import { HugeiconsWavesLadderIcon } from './waves-ladder';
 import { HugeiconsWaypointsIcon } from './waypoints';
+import { HugeiconsWebhookIcon } from './webhook';
 import { HugeiconsXIcon } from './x';
 
 const HUGEICONS_ICON_LIST = [
@@ -2455,6 +2456,7 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['waves', 'ladder', 'waves-ladder'],
   },
   { name: 'waypoints', icon: HugeiconsWaypointsIcon, keywords: ['waypoints'] },
+  { name: 'webhook', icon: HugeiconsWebhookIcon, keywords: ['webhook'] },
   {
     name: 'x',
     icon: HugeiconsXIcon,
@@ -2925,5 +2927,6 @@ export {
   HugeiconsWavesArrowUpIcon,
   HugeiconsWavesLadderIcon,
   HugeiconsWaypointsIcon,
+  HugeiconsWebhookIcon,
   HugeiconsXIcon,
 };
