@@ -56,10 +56,33 @@ const ICON_VARIANTS: Variants = {
     opacity: 1,
     transition: { duration: 0.18, ease: 'easeOut' },
   },
+  animate: { transition: { duration: 1, ease: 'easeInOut' } },
+};
+
+const DETAIL_0_VARIANTS: Variants = {
+  normal: { y: 0, opacity: 1, transition: { duration: 0.18, ease: 'easeOut' } },
   animate: {
-    'x': [0, 1.2, -0.6, 0],
-    'y': [0, -0.35, 0, 0],
-    'transition': { 'duration': 1, 'ease': 'easeInOut' },
+    y: [0, 0.65, 0],
+    opacity: [1, 0.4, 1],
+    transition: { duration: 0.7, delay: 0.0, ease: 'easeInOut' },
+  },
+};
+
+const DETAIL_1_VARIANTS: Variants = {
+  normal: { y: 0, opacity: 1, transition: { duration: 0.18, ease: 'easeOut' } },
+  animate: {
+    y: [0, 0.65, 0],
+    opacity: [1, 0.4, 1],
+    transition: { duration: 0.7, delay: 0.06, ease: 'easeInOut' },
+  },
+};
+
+const DETAIL_2_VARIANTS: Variants = {
+  normal: { y: 0, opacity: 1, transition: { duration: 0.18, ease: 'easeOut' } },
+  animate: {
+    y: [0, 0.65, 0],
+    opacity: [1, 0.4, 1],
+    transition: { duration: 0.7, delay: 0.12, ease: 'easeInOut' },
   },
 };
 
@@ -160,26 +183,32 @@ const HugeiconsAirVentIcon = forwardRef<
               strokeLinejoin="round"
               strokeWidth="1.5"
             />
-            <path
+            <motion.path
               d="M16 15V19C16 20.1046 16.8954 21 18 21C19.1046 21 20 20.1046 20 19"
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="1.5"
+              variants={DETAIL_0_VARIANTS}
+              style={{ transformBox: 'fill-box', transformOrigin: 'center' }}
             />
-            <path
+            <motion.path
               d="M8 15V17C8 18.1046 7.10457 19 6 19C4.89543 19 4 18.1046 4 17"
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="1.5"
+              variants={DETAIL_2_VARIANTS}
+              style={{ transformBox: 'fill-box', transformOrigin: 'center' }}
             />
-            <path
+            <motion.path
               d="M12 15V19"
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="1.5"
+              variants={DETAIL_1_VARIANTS}
+              style={{ transformBox: 'fill-box', transformOrigin: 'center' }}
             />
           </motion.g>
         </svg>
