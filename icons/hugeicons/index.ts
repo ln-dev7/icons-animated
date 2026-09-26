@@ -65,6 +65,7 @@ import { HugeiconsBookTextIcon } from './book-text';
 import { HugeiconsBookmark01Icon } from './bookmark-01';
 import { HugeiconsBookmarkCheck01Icon } from './bookmark-check-01';
 import { HugeiconsBookmarkMinus01Icon } from './bookmark-minus-01';
+import { HugeiconsBookmarkPlusIcon } from './bookmark-plus';
 import { HugeiconsCalendarIcon } from './calendar';
 import { HugeiconsCheckIcon } from './check';
 import { HugeiconsChevronDownIcon } from './chevron-down';
@@ -407,6 +408,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['bookmark', 'minus', '01', 'bookmark-minus'],
   },
   {
+    name: 'bookmark-plus',
+    icon: HugeiconsBookmarkPlusIcon,
+    keywords: ['bookmark', 'plus', 'bookmark-plus'],
+  },
+  {
     name: 'calendar',
     icon: HugeiconsCalendarIcon,
     keywords: ['calendar', 'date', 'schedule', 'event', 'day'],
@@ -685,6 +691,7 @@ export {
   HugeiconsBookmark01Icon,
   HugeiconsBookmarkCheck01Icon,
   HugeiconsBookmarkMinus01Icon,
+  HugeiconsBookmarkPlusIcon,
   HugeiconsCalendarIcon,
   HugeiconsCheckIcon,
   HugeiconsChevronDownIcon,
