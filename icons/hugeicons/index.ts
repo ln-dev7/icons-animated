@@ -345,6 +345,7 @@ import { HugeiconsReceiptIndianRupeeIcon } from './receipt-indian-rupee';
 import { HugeiconsReceiptJapaneseYenIcon } from './receipt-japanese-yen';
 import { HugeiconsReceiptPoundSterlingIcon } from './receipt-pound-sterling';
 import { HugeiconsReceiptRussianRubleIcon } from './receipt-russian-ruble';
+import { HugeiconsReceiptSwissFrancIcon } from './receipt-swiss-franc';
 import { HugeiconsRefreshIcon } from './refresh';
 import { HugeiconsSaveIcon } from './save';
 import { HugeiconsSearchIcon } from './search';
@@ -1887,6 +1888,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['receipt', 'russian', 'ruble', 'receipt-russian-ruble'],
   },
   {
+    name: 'receipt-swiss-franc',
+    icon: HugeiconsReceiptSwissFrancIcon,
+    keywords: ['receipt', 'swiss', 'franc', 'receipt-swiss-franc'],
+  },
+  {
     name: 'refresh',
     icon: HugeiconsRefreshIcon,
     keywords: ['refresh', 'reload', 'reload', 'update', 'sync', 'rotate'],
@@ -2341,6 +2347,7 @@ export {
   HugeiconsReceiptJapaneseYenIcon,
   HugeiconsReceiptPoundSterlingIcon,
   HugeiconsReceiptRussianRubleIcon,
+  HugeiconsReceiptSwissFrancIcon,
   HugeiconsRefreshIcon,
   HugeiconsSaveIcon,
   HugeiconsSearchIcon,

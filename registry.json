@@ -4515,6 +4515,19 @@
       ]
     },
     {
+      "name": "hugeicons-receipt-swiss-franc",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-receipt-swiss-franc.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-refresh",
       "type": "registry:ui",
       "registryDependencies": [],

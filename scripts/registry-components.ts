@@ -2128,6 +2128,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-receipt-swiss-franc',
+    'path': path.join(__dirname, '../icons/hugeicons/receipt-swiss-franc.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-refresh',
     'path': path.join(__dirname, '../icons/hugeicons/refresh.tsx'),
     'registryDependencies': [],
