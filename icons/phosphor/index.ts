@@ -31,6 +31,7 @@ import { PhosphorArrowUpIcon } from './arrow-up';
 import { PhosphorArrowUpLeftIcon } from './arrow-up-left';
 import { PhosphorArrowUpRightIcon } from './arrow-up-right';
 import { PhosphorArrowsOutIcon } from './arrows-out';
+import { PhosphorArrowsOutSimpleIcon } from './arrows-out-simple';
 import { PhosphorAtIcon } from './at';
 import { PhosphorAtomIcon } from './atom';
 import { PhosphorAxeIcon } from './axe';
@@ -419,6 +420,11 @@ const PHOSPHOR_ICON_LIST = [
     name: 'arrows-out',
     icon: PhosphorArrowsOutIcon,
     keywords: ['arrows', 'out', 'expand'],
+  },
+  {
+    name: 'arrows-out-simple',
+    icon: PhosphorArrowsOutSimpleIcon,
+    keywords: ['arrows', 'out', 'simple', 'maximize-2', 'maximize', '2'],
   },
   { name: 'at', icon: PhosphorAtIcon, keywords: ['at', 'at-sign', 'sign'] },
   { name: 'atom', icon: PhosphorAtomIcon, keywords: ['atom'] },
@@ -1337,6 +1343,7 @@ export {
   PhosphorArrowUpLeftIcon,
   PhosphorArrowUpRightIcon,
   PhosphorArrowsOutIcon,
+  PhosphorArrowsOutSimpleIcon,
   PhosphorAtIcon,
   PhosphorAtomIcon,
   PhosphorAxeIcon,
