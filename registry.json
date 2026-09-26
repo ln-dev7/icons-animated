@@ -6075,6 +6075,19 @@
       ]
     },
     {
+      "name": "hugeicons-wind",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-wind.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-x",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -10048,6 +10061,19 @@
       "files": [
         {
           "path": "phosphor-wifi-low.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-wind",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-wind.tsx",
           "type": "registry:ui"
         }
       ]
@@ -14780,6 +14806,19 @@
       "files": [
         {
           "path": "tabler-wifi-1.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-wind",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-wind.tsx",
           "type": "registry:ui"
         }
       ]

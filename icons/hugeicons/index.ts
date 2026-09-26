@@ -465,6 +465,7 @@ import { HugeiconsWifiCogIcon } from './wifi-cog';
 import { HugeiconsWifiLowIcon } from './wifi-low';
 import { HugeiconsWifiPenIcon } from './wifi-pen';
 import { HugeiconsWifiSyncIcon } from './wifi-sync';
+import { HugeiconsWindIcon } from './wind';
 import { HugeiconsXIcon } from './x';
 
 const HUGEICONS_ICON_LIST = [
@@ -2483,6 +2484,7 @@ const HUGEICONS_ICON_LIST = [
     icon: HugeiconsWifiSyncIcon,
     keywords: ['wifi', 'sync', 'wifi-sync'],
   },
+  { name: 'wind', icon: HugeiconsWindIcon, keywords: ['wind'] },
   {
     name: 'x',
     icon: HugeiconsXIcon,
@@ -2959,5 +2961,6 @@ export {
   HugeiconsWifiLowIcon,
   HugeiconsWifiPenIcon,
   HugeiconsWifiSyncIcon,
+  HugeiconsWindIcon,
   HugeiconsXIcon,
 };

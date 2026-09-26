@@ -303,6 +303,7 @@ import { PhosphorWavesIcon } from './waves';
 import { PhosphorWebhooksLogoIcon } from './webhooks-logo';
 import { PhosphorWifiHighIcon } from './wifi-high';
 import { PhosphorWifiLowIcon } from './wifi-low';
+import { PhosphorWindIcon } from './wind';
 import { PhosphorXIcon } from './x';
 
 const PHOSPHOR_ICON_LIST = [
@@ -1758,6 +1759,7 @@ const PHOSPHOR_ICON_LIST = [
     icon: PhosphorWifiLowIcon,
     keywords: ['wifi', 'low', 'wifi-low'],
   },
+  { name: 'wind', icon: PhosphorWindIcon, keywords: ['wind'] },
   {
     name: 'x',
     icon: PhosphorXIcon,
@@ -2072,5 +2074,6 @@ export {
   PhosphorWebhooksLogoIcon,
   PhosphorWifiHighIcon,
   PhosphorWifiLowIcon,
+  PhosphorWindIcon,
   PhosphorXIcon,
 };
