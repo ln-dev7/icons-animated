@@ -4463,6 +4463,19 @@
       ]
     },
     {
+      "name": "hugeicons-receipt-indian-rupee",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-receipt-indian-rupee.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-refresh",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -11231,6 +11244,19 @@
       "files": [
         {
           "path": "tabler-receipt-euro.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-receipt-rupee",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-receipt-rupee.tsx",
           "type": "registry:ui"
         }
       ]
