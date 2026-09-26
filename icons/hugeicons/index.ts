@@ -8,6 +8,7 @@ import { HugeiconsAlarmClockCheckIcon } from './alarm-clock-check';
 import { HugeiconsAlarmClockMinusIcon } from './alarm-clock-minus';
 import { HugeiconsAlarmClockPlusIcon } from './alarm-clock-plus';
 import { HugeiconsAlarmSmokeIcon } from './alarm-smoke';
+import { HugeiconsAlignHorizontalSpaceAroundIcon } from './align-horizontal-space-around';
 import { HugeiconsArrowDownIcon } from './arrow-down';
 import { HugeiconsArrowLeftIcon } from './arrow-left';
 import { HugeiconsArrowRightIcon } from './arrow-right';
@@ -89,6 +90,11 @@ const HUGEICONS_ICON_LIST = [
     name: 'alarm-smoke',
     icon: HugeiconsAlarmSmokeIcon,
     keywords: ['alarm', 'smoke', 'alarm-smoke'],
+  },
+  {
+    name: 'align-horizontal-space-around',
+    icon: HugeiconsAlignHorizontalSpaceAroundIcon,
+    keywords: ['align', 'horizontal', 'space', 'around', 'align-horizontal'],
   },
   {
     name: 'arrow-down',
@@ -360,6 +366,7 @@ export {
   HugeiconsAlarmClockMinusIcon,
   HugeiconsAlarmClockPlusIcon,
   HugeiconsAlarmSmokeIcon,
+  HugeiconsAlignHorizontalSpaceAroundIcon,
   HugeiconsArrowDownIcon,
   HugeiconsArrowLeftIcon,
   HugeiconsArrowRightIcon,

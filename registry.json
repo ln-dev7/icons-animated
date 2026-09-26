@@ -134,6 +134,19 @@
       ]
     },
     {
+      "name": "hugeicons-align-horizontal-space-around",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-align-horizontal-space-around.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-arrow-down",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -610,6 +623,19 @@
       "files": [
         {
           "path": "phosphor-alarm.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-align-center-horizontal",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-align-center-horizontal.tsx",
           "type": "registry:ui"
         }
       ]
@@ -1364,6 +1390,19 @@
       "files": [
         {
           "path": "tabler-home.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-layout-align-center",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-layout-align-center.tsx",
           "type": "registry:ui"
         }
       ]

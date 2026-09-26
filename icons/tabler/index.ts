@@ -22,6 +22,7 @@ import { TablerEyeIcon } from './eye';
 import { TablerFilterIcon } from './filter';
 import { TablerHeartIcon } from './heart';
 import { TablerHomeIcon } from './home';
+import { TablerLayoutAlignCenterIcon } from './layout-align-center';
 import { TablerLockIcon } from './lock';
 import { TablerMailIcon } from './mail';
 import { TablerMenuIcon } from './menu';
@@ -197,6 +198,11 @@ const TABLER_ICON_LIST = [
     keywords: ['home', 'house', 'building', 'main', 'dashboard'],
   },
   {
+    name: 'layout-align-center',
+    icon: TablerLayoutAlignCenterIcon,
+    keywords: ['layout', 'align', 'center', 'align-horizontal', 'horizontal'],
+  },
+  {
     name: 'lock',
     icon: TablerLockIcon,
     keywords: [
@@ -316,6 +322,7 @@ export {
   TablerFilterIcon,
   TablerHeartIcon,
   TablerHomeIcon,
+  TablerLayoutAlignCenterIcon,
   TablerLockIcon,
   TablerMailIcon,
   TablerMenuIcon,

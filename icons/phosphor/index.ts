@@ -1,6 +1,7 @@
 import { PhosphorAirplaneIcon } from './airplane';
 import { PhosphorAirplayIcon } from './airplay';
 import { PhosphorAlarmIcon } from './alarm';
+import { PhosphorAlignCenterHorizontalIcon } from './align-center-horizontal';
 import { PhosphorArrowDownIcon } from './arrow-down';
 import { PhosphorArrowLeftIcon } from './arrow-left';
 import { PhosphorArrowRightIcon } from './arrow-right';
@@ -43,6 +44,11 @@ const PHOSPHOR_ICON_LIST = [
     name: 'alarm',
     icon: PhosphorAlarmIcon,
     keywords: ['alarm', 'alarm-clock', 'clock'],
+  },
+  {
+    name: 'align-center-horizontal',
+    icon: PhosphorAlignCenterHorizontalIcon,
+    keywords: ['align', 'center', 'horizontal', 'align-horizontal'],
   },
   {
     name: 'arrow-down',
@@ -277,6 +283,7 @@ export {
   PhosphorAirplaneIcon,
   PhosphorAirplayIcon,
   PhosphorAlarmIcon,
+  PhosphorAlignCenterHorizontalIcon,
   PhosphorArrowDownIcon,
   PhosphorArrowLeftIcon,
   PhosphorArrowRightIcon,
