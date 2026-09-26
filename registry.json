@@ -290,6 +290,19 @@
       ]
     },
     {
+      "name": "hugeicons-arrow-down-zero-one",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-arrow-down-zero-one.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-arrow-left",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -1369,6 +1382,19 @@
       ]
     },
     {
+      "name": "phosphor-sort-ascending",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-sort-ascending.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-star",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2131,6 +2157,19 @@
       "files": [
         {
           "path": "tabler-share.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-sort-ascending-numbers",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-sort-ascending-numbers.tsx",
           "type": "registry:ui"
         }
       ]

@@ -43,6 +43,7 @@ import { PhosphorSearchIcon } from './search';
 import { PhosphorShareIcon } from './share';
 import { PhosphorSmileyAngryIcon } from './smiley-angry';
 import { PhosphorSmileyMehIcon } from './smiley-meh';
+import { PhosphorSortAscendingIcon } from './sort-ascending';
 import { PhosphorStarIcon } from './star';
 import { PhosphorTextAlignCenterIcon } from './text-align-center';
 import { PhosphorTextAlignLeftIcon } from './text-align-left';
@@ -351,6 +352,22 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['smiley', 'meh', 'annoyed'],
   },
   {
+    name: 'sort-ascending',
+    icon: PhosphorSortAscendingIcon,
+    keywords: [
+      'sort',
+      'ascending',
+      'arrow-down-0-1',
+      'arrow-down-a-z',
+      'arrow',
+      'down',
+      '0',
+      '1',
+      'a',
+      'z',
+    ],
+  },
+  {
     name: 'star',
     icon: PhosphorStarIcon,
     keywords: ['star', 'favorite', 'bookmark', 'rate', 'rating'],
@@ -439,6 +456,7 @@ export {
   PhosphorShareIcon,
   PhosphorSmileyAngryIcon,
   PhosphorSmileyMehIcon,
+  PhosphorSortAscendingIcon,
   PhosphorStarIcon,
   PhosphorTextAlignCenterIcon,
   PhosphorTextAlignLeftIcon,

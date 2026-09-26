@@ -142,6 +142,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-arrow-down-zero-one',
+    'path': path.join(__dirname, '../icons/hugeicons/arrow-down-zero-one.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-arrow-left',
     'path': path.join(__dirname, '../icons/hugeicons/arrow-left.tsx'),
     'registryDependencies': [],
@@ -643,6 +649,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'phosphor-sort-ascending',
+    'path': path.join(__dirname, '../icons/phosphor/sort-ascending.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'phosphor-star',
     'path': path.join(__dirname, '../icons/phosphor/star.tsx'),
     'registryDependencies': [],
@@ -993,6 +1005,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-share',
     'path': path.join(__dirname, '../icons/tabler/share.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-sort-ascending-numbers',
+    'path': path.join(__dirname, '../icons/tabler/sort-ascending-numbers.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
