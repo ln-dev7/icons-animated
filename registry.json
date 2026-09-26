@@ -1252,6 +1252,19 @@
       ]
     },
     {
+      "name": "hugeicons-chess-pawn",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-chess-pawn.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-chevron-down",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -3756,6 +3769,19 @@
       "files": [
         {
           "path": "tabler-checks.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-chess",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-chess.tsx",
           "type": "registry:ui"
         }
       ]
