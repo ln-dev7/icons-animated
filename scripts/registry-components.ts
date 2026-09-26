@@ -1156,6 +1156,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-folder-heart',
+    'path': path.join(__dirname, '../icons/hugeicons/folder-heart.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-heart',
     'path': path.join(__dirname, '../icons/hugeicons/heart.tsx'),
     'registryDependencies': [],
@@ -3120,6 +3126,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-folder-down',
     'path': path.join(__dirname, '../icons/tabler/folder-down.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-folder-heart',
+    'path': path.join(__dirname, '../icons/tabler/folder-heart.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
