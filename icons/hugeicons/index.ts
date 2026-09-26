@@ -468,6 +468,7 @@ import { HugeiconsWifiSyncIcon } from './wifi-sync';
 import { HugeiconsWindIcon } from './wind';
 import { HugeiconsWindArrowDownIcon } from './wind-arrow-down';
 import { HugeiconsWorkflowIcon } from './workflow';
+import { HugeiconsWrench01Icon } from './wrench-01';
 import { HugeiconsXIcon } from './x';
 
 const HUGEICONS_ICON_LIST = [
@@ -2494,6 +2495,11 @@ const HUGEICONS_ICON_LIST = [
   },
   { name: 'workflow', icon: HugeiconsWorkflowIcon, keywords: ['workflow'] },
   {
+    name: 'wrench-01',
+    icon: HugeiconsWrench01Icon,
+    keywords: ['wrench', '01'],
+  },
+  {
     name: 'x',
     icon: HugeiconsXIcon,
     keywords: ['close', 'x', 'cancel', 'dismiss', 'remove', 'delete'],
@@ -2972,5 +2978,6 @@ export {
   HugeiconsWindIcon,
   HugeiconsWindArrowDownIcon,
   HugeiconsWorkflowIcon,
+  HugeiconsWrench01Icon,
   HugeiconsXIcon,
 };

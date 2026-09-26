@@ -6114,6 +6114,19 @@
       ]
     },
     {
+      "name": "hugeicons-wrench-01",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-wrench-01.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-x",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -10113,6 +10126,19 @@
       "files": [
         {
           "path": "phosphor-wind.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-wrench",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-wrench.tsx",
           "type": "registry:ui"
         }
       ]
@@ -14585,6 +14611,19 @@
       "files": [
         {
           "path": "tabler-ticket.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-tool",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-tool.tsx",
           "type": "registry:ui"
         }
       ]

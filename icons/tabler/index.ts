@@ -341,6 +341,7 @@ import { TablerThermometerIcon } from './thermometer';
 import { TablerThumbDownIcon } from './thumb-down';
 import { TablerThumbUpIcon } from './thumb-up';
 import { TablerTicketIcon } from './ticket';
+import { TablerToolIcon } from './tool';
 import { TablerTornadoIcon } from './tornado';
 import { TablerTrashIcon } from './trash';
 import { TablerTreeIcon } from './tree';
@@ -1930,6 +1931,7 @@ const TABLER_ICON_LIST = [
     keywords: ['thumb', 'up', 'upvote'],
   },
   { name: 'ticket', icon: TablerTicketIcon, keywords: ['ticket'] },
+  { name: 'tool', icon: TablerToolIcon, keywords: ['tool', 'wrench'] },
   { name: 'tornado', icon: TablerTornadoIcon, keywords: ['tornado'] },
   {
     name: 'trash',
@@ -2366,6 +2368,7 @@ export {
   TablerThumbDownIcon,
   TablerThumbUpIcon,
   TablerTicketIcon,
+  TablerToolIcon,
   TablerTornadoIcon,
   TablerTrashIcon,
   TablerTreeIcon,
