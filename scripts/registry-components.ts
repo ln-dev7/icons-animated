@@ -1942,6 +1942,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-pause',
+    'path': path.join(__dirname, '../icons/hugeicons/pause.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-pencil',
     'path': path.join(__dirname, '../icons/hugeicons/pencil.tsx'),
     'registryDependencies': [],
@@ -3207,6 +3213,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-paperclip',
     'path': path.join(__dirname, '../icons/phosphor/paperclip.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-pause',
+    'path': path.join(__dirname, '../icons/phosphor/pause.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -4884,6 +4896,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-plane',
     'path': path.join(__dirname, '../icons/tabler/plane.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-player-pause',
+    'path': path.join(__dirname, '../icons/tabler/player-pause.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

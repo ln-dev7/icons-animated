@@ -315,6 +315,7 @@ import { HugeiconsPanelLeftCloseIcon } from './panel-left-close';
 import { HugeiconsPanelLeftOpenIcon } from './panel-left-open';
 import { HugeiconsPanelRightOpenIcon } from './panel-right-open';
 import { HugeiconsPartyPopperIcon } from './party-popper';
+import { HugeiconsPauseIcon } from './pause';
 import { HugeiconsPencilIcon } from './pencil';
 import { HugeiconsPieChartIcon } from './pie-chart';
 import { HugeiconsPlusIcon } from './plus';
@@ -1742,6 +1743,7 @@ const HUGEICONS_ICON_LIST = [
     icon: HugeiconsPartyPopperIcon,
     keywords: ['party', 'popper', 'party-popper'],
   },
+  { name: 'pause', icon: HugeiconsPauseIcon, keywords: ['pause'] },
   {
     name: 'pencil',
     icon: HugeiconsPencilIcon,
@@ -2187,6 +2189,7 @@ export {
   HugeiconsPanelLeftOpenIcon,
   HugeiconsPanelRightOpenIcon,
   HugeiconsPartyPopperIcon,
+  HugeiconsPauseIcon,
   HugeiconsPencilIcon,
   HugeiconsPieChartIcon,
   HugeiconsPlusIcon,

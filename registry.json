@@ -4125,6 +4125,19 @@
       ]
     },
     {
+      "name": "hugeicons-pause",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-pause.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-pencil",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -6837,6 +6850,19 @@
       "files": [
         {
           "path": "phosphor-paperclip.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-pause",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-pause.tsx",
           "type": "registry:ui"
         }
       ]
@@ -10451,6 +10477,19 @@
       "files": [
         {
           "path": "tabler-plane.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-player-pause",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-player-pause.tsx",
           "type": "registry:ui"
         }
       ]

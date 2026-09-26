@@ -234,6 +234,7 @@ import { TablerPaletteIcon } from './palette';
 import { TablerPaperclipIcon } from './paperclip';
 import { TablerPencilIcon } from './pencil';
 import { TablerPlaneIcon } from './plane';
+import { TablerPlayerPauseIcon } from './player-pause';
 import { TablerPlugConnectedIcon } from './plug-connected';
 import { TablerPlusIcon } from './plus';
 import { TablerPropellerIcon } from './propeller';
@@ -1320,6 +1321,11 @@ const TABLER_ICON_LIST = [
   },
   { name: 'plane', icon: TablerPlaneIcon, keywords: ['plane', 'airplane'] },
   {
+    name: 'player-pause',
+    icon: TablerPlayerPauseIcon,
+    keywords: ['player', 'pause'],
+  },
+  {
     name: 'plug-connected',
     icon: TablerPlugConnectedIcon,
     keywords: ['plug', 'connected', 'connect'],
@@ -1740,6 +1746,7 @@ export {
   TablerPaperclipIcon,
   TablerPencilIcon,
   TablerPlaneIcon,
+  TablerPlayerPauseIcon,
   TablerPlugConnectedIcon,
   TablerPlusIcon,
   TablerPropellerIcon,
