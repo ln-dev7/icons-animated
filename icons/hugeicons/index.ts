@@ -108,6 +108,7 @@ import { HugeiconsCigaretteIcon } from './cigarette';
 import { HugeiconsCigaretteOffIcon } from './cigarette-off';
 import { HugeiconsCircleCheckIcon } from './circle-check';
 import { HugeiconsCircleChevronDownIcon } from './circle-chevron-down';
+import { HugeiconsCircleChevronLeftIcon } from './circle-chevron-left';
 import { HugeiconsDownloadIcon } from './download';
 import { HugeiconsEyeIcon } from './eye';
 import { HugeiconsFilterIcon } from './filter';
@@ -680,6 +681,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['circle', 'chevron', 'down', 'circle-chevron-down'],
   },
   {
+    name: 'circle-chevron-left',
+    icon: HugeiconsCircleChevronLeftIcon,
+    keywords: ['circle', 'chevron', 'left', 'circle-chevron-left'],
+  },
+  {
     name: 'download',
     icon: HugeiconsDownloadIcon,
     keywords: ['download', 'save', 'arrow', 'get', 'export', 'download-01'],
@@ -954,6 +960,7 @@ export {
   HugeiconsCigaretteOffIcon,
   HugeiconsCircleCheckIcon,
   HugeiconsCircleChevronDownIcon,
+  HugeiconsCircleChevronLeftIcon,
   HugeiconsDownloadIcon,
   HugeiconsEyeIcon,
   HugeiconsFilterIcon,
