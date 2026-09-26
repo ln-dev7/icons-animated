@@ -43,6 +43,7 @@ import { HugeiconsBadgeAlertIcon } from './badge-alert';
 import { HugeiconsBadgePercentIcon } from './badge-percent';
 import { HugeiconsBanIcon } from './ban';
 import { HugeiconsBananaIcon } from './banana';
+import { HugeiconsBatteryIcon } from './battery';
 import { HugeiconsBellIcon } from './bell';
 import { HugeiconsCalendarIcon } from './calendar';
 import { HugeiconsCheckIcon } from './check';
@@ -299,6 +300,7 @@ const HUGEICONS_ICON_LIST = [
   },
   { name: 'ban', icon: HugeiconsBanIcon, keywords: ['ban'] },
   { name: 'banana', icon: HugeiconsBananaIcon, keywords: ['banana'] },
+  { name: 'battery', icon: HugeiconsBatteryIcon, keywords: ['battery'] },
   {
     name: 'bell',
     icon: HugeiconsBellIcon,
@@ -561,6 +563,7 @@ export {
   HugeiconsBadgePercentIcon,
   HugeiconsBanIcon,
   HugeiconsBananaIcon,
+  HugeiconsBatteryIcon,
   HugeiconsBellIcon,
   HugeiconsCalendarIcon,
   HugeiconsCheckIcon,

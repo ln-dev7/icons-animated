@@ -31,6 +31,7 @@ import { TablerAtomIcon } from './atom';
 import { TablerAxeIcon } from './axe';
 import { TablerBanIcon } from './ban';
 import { TablerBananaIcon } from './banana';
+import { TablerBatteryIcon } from './battery';
 import { TablerBellIcon } from './bell';
 import { TablerCalendarIcon } from './calendar';
 import { TablerCheckIcon } from './check';
@@ -212,6 +213,7 @@ const TABLER_ICON_LIST = [
   { name: 'axe', icon: TablerAxeIcon, keywords: ['axe'] },
   { name: 'ban', icon: TablerBanIcon, keywords: ['ban'] },
   { name: 'banana', icon: TablerBananaIcon, keywords: ['banana'] },
+  { name: 'battery', icon: TablerBatteryIcon, keywords: ['battery'] },
   {
     name: 'bell',
     icon: TablerBellIcon,
@@ -519,6 +521,7 @@ export {
   TablerAxeIcon,
   TablerBanIcon,
   TablerBananaIcon,
+  TablerBatteryIcon,
   TablerBellIcon,
   TablerCalendarIcon,
   TablerCheckIcon,
