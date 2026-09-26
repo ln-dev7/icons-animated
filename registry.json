@@ -1161,6 +1161,19 @@
       ]
     },
     {
+      "name": "hugeicons-chart-scatter",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-chart-scatter.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-check",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2196,6 +2209,19 @@
       "files": [
         {
           "path": "phosphor-chart-pie.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-chart-scatter",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-chart-scatter.tsx",
           "type": "registry:ui"
         }
       ]
@@ -3613,6 +3639,19 @@
       "files": [
         {
           "path": "tabler-chart-pie.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-chart-scatter",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-chart-scatter.tsx",
           "type": "registry:ui"
         }
       ]

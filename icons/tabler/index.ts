@@ -61,6 +61,7 @@ import { TablerCastIcon } from './cast';
 import { TablerChartBarPopularIcon } from './chart-bar-popular';
 import { TablerChartLineIcon } from './chart-line';
 import { TablerChartPieIcon } from './chart-pie';
+import { TablerChartScatterIcon } from './chart-scatter';
 import { TablerCheckIcon } from './check';
 import { TablerChevronDownIcon } from './chevron-down';
 import { TablerChevronLeftIcon } from './chevron-left';
@@ -364,6 +365,11 @@ const TABLER_ICON_LIST = [
     name: 'chart-pie',
     icon: TablerChartPieIcon,
     keywords: ['chart', 'pie', 'chart-pie'],
+  },
+  {
+    name: 'chart-scatter',
+    icon: TablerChartScatterIcon,
+    keywords: ['chart', 'scatter', 'chart-scatter'],
   },
   {
     name: 'check',
@@ -713,6 +719,7 @@ export {
   TablerChartBarPopularIcon,
   TablerChartLineIcon,
   TablerChartPieIcon,
+  TablerChartScatterIcon,
   TablerCheckIcon,
   TablerChevronDownIcon,
   TablerChevronLeftIcon,

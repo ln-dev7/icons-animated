@@ -556,6 +556,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-chart-scatter',
+    'path': path.join(__dirname, '../icons/hugeicons/chart-scatter.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-check',
     'path': path.join(__dirname, '../icons/hugeicons/check.tsx'),
     'registryDependencies': [],
@@ -1035,6 +1041,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-chart-pie',
     'path': path.join(__dirname, '../icons/phosphor/chart-pie.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-chart-scatter',
+    'path': path.join(__dirname, '../icons/phosphor/chart-scatter.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -1689,6 +1701,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-chart-pie',
     'path': path.join(__dirname, '../icons/tabler/chart-pie.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-chart-scatter',
+    'path': path.join(__dirname, '../icons/tabler/chart-scatter.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
