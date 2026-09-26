@@ -342,6 +342,19 @@
       ]
     },
     {
+      "name": "hugeicons-arrow-down-za",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-arrow-down-za.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-arrow-down-zero-one",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2300,6 +2313,19 @@
       "files": [
         {
           "path": "tabler-sort-ascending-numbers.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-sort-descending-letters",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-sort-descending-letters.tsx",
           "type": "registry:ui"
         }
       ]
