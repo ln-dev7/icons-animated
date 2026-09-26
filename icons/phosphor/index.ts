@@ -248,6 +248,7 @@ import { PhosphorSparkleIcon } from './sparkle';
 import { PhosphorSpinnerIcon } from './spinner';
 import { PhosphorSpinnerBallIcon } from './spinner-ball';
 import { PhosphorSpinnerGapIcon } from './spinner-gap';
+import { PhosphorSprayBottleIcon } from './spray-bottle';
 import { PhosphorSquaresFourIcon } from './squares-four';
 import { PhosphorStackIcon } from './stack';
 import { PhosphorStarIcon } from './star';
@@ -1495,6 +1496,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['spinner', 'gap', 'loader-circle', 'loader', 'circle'],
   },
   {
+    name: 'spray-bottle',
+    icon: PhosphorSprayBottleIcon,
+    keywords: ['spray', 'bottle', 'spray-can', 'can'],
+  },
+  {
     name: 'squares-four',
     icon: PhosphorSquaresFourIcon,
     keywords: ['squares', 'four', 'layout-grid', 'layout', 'grid'],
@@ -1815,6 +1821,7 @@ export {
   PhosphorSpinnerIcon,
   PhosphorSpinnerBallIcon,
   PhosphorSpinnerGapIcon,
+  PhosphorSprayBottleIcon,
   PhosphorSquaresFourIcon,
   PhosphorStackIcon,
   PhosphorStarIcon,

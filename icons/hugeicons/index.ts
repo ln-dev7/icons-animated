@@ -390,6 +390,7 @@ import { HugeiconsSmilePlusIcon } from './smile-plus';
 import { HugeiconsSnowflakeIcon } from './snowflake';
 import { HugeiconsSoupIcon } from './soup';
 import { HugeiconsSparklesIcon } from './sparkles';
+import { HugeiconsSprayCanIcon } from './spray-can';
 import { HugeiconsStarIcon } from './star';
 import { HugeiconsSunCloud02Icon } from './sun-cloud-02';
 import { HugeiconsTextAlignCenterIcon } from './text-align-center';
@@ -2113,6 +2114,11 @@ const HUGEICONS_ICON_LIST = [
   { name: 'soup', icon: HugeiconsSoupIcon, keywords: ['soup'] },
   { name: 'sparkles', icon: HugeiconsSparklesIcon, keywords: ['sparkles'] },
   {
+    name: 'spray-can',
+    icon: HugeiconsSprayCanIcon,
+    keywords: ['spray', 'can', 'spray-can'],
+  },
+  {
     name: 'star',
     icon: HugeiconsStarIcon,
     keywords: ['star', 'favorite', 'bookmark', 'rate', 'rating'],
@@ -2568,6 +2574,7 @@ export {
   HugeiconsSnowflakeIcon,
   HugeiconsSoupIcon,
   HugeiconsSparklesIcon,
+  HugeiconsSprayCanIcon,
   HugeiconsStarIcon,
   HugeiconsSunCloud02Icon,
   HugeiconsTextAlignCenterIcon,

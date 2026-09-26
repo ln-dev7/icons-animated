@@ -5100,6 +5100,19 @@
       ]
     },
     {
+      "name": "hugeicons-spray-can",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-spray-can.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-star",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -8501,6 +8514,19 @@
       "files": [
         {
           "path": "phosphor-spinner-gap.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-spray-bottle",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-spray-bottle.tsx",
           "type": "registry:ui"
         }
       ]
@@ -12622,6 +12648,19 @@
       "files": [
         {
           "path": "tabler-sparkles.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-spray",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-spray.tsx",
           "type": "registry:ui"
         }
       ]

@@ -300,6 +300,7 @@ import { TablerSortDescendingLettersIcon } from './sort-descending-letters';
 import { TablerSortDescendingNumbersIcon } from './sort-descending-numbers';
 import { TablerSoupIcon } from './soup';
 import { TablerSparklesIcon } from './sparkles';
+import { TablerSprayIcon } from './spray';
 import { TablerSpyIcon } from './spy';
 import { TablerStack2Icon } from './stack-2';
 import { TablerStarIcon } from './star';
@@ -1692,6 +1693,11 @@ const TABLER_ICON_LIST = [
   { name: 'soup', icon: TablerSoupIcon, keywords: ['soup'] },
   { name: 'sparkles', icon: TablerSparklesIcon, keywords: ['sparkles'] },
   {
+    name: 'spray',
+    icon: TablerSprayIcon,
+    keywords: ['spray', 'spray-can', 'can'],
+  },
+  {
     name: 'spy',
     icon: TablerSpyIcon,
     keywords: ['spy', 'hat-glasses', 'hat', 'glasses'],
@@ -2048,6 +2054,7 @@ export {
   TablerSortDescendingNumbersIcon,
   TablerSoupIcon,
   TablerSparklesIcon,
+  TablerSprayIcon,
   TablerSpyIcon,
   TablerStack2Icon,
   TablerStarIcon,

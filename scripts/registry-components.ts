@@ -2398,6 +2398,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-spray-can',
+    'path': path.join(__dirname, '../icons/hugeicons/spray-can.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-star',
     'path': path.join(__dirname, '../icons/hugeicons/star.tsx'),
     'registryDependencies': [],
@@ -3987,6 +3993,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-spinner-gap',
     'path': path.join(__dirname, '../icons/phosphor/spinner-gap.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-spray-bottle',
+    'path': path.join(__dirname, '../icons/phosphor/spray-bottle.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -5901,6 +5913,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-sparkles',
     'path': path.join(__dirname, '../icons/tabler/sparkles.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-spray',
+    'path': path.join(__dirname, '../icons/tabler/spray.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
