@@ -59,6 +59,7 @@ import { PhosphorTextAlignRightIcon } from './text-align-right';
 import { PhosphorTrashIcon } from './trash';
 import { PhosphorUploadIcon } from './upload';
 import { PhosphorUserIcon } from './user';
+import { PhosphorWaveformIcon } from './waveform';
 import { PhosphorXIcon } from './x';
 
 const PHOSPHOR_ICON_LIST = [
@@ -454,6 +455,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['user', 'person', 'profile', 'account', 'avatar'],
   },
   {
+    name: 'waveform',
+    icon: PhosphorWaveformIcon,
+    keywords: ['waveform', 'audio-lines', 'audio', 'lines'],
+  },
+  {
     name: 'x',
     icon: PhosphorXIcon,
     keywords: ['close', 'x', 'cancel', 'dismiss', 'remove', 'delete'],
@@ -523,5 +529,6 @@ export {
   PhosphorTrashIcon,
   PhosphorUploadIcon,
   PhosphorUserIcon,
+  PhosphorWaveformIcon,
   PhosphorXIcon,
 };

@@ -244,6 +244,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-audio-lines',
+    'path': path.join(__dirname, '../icons/hugeicons/audio-lines.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-bell',
     'path': path.join(__dirname, '../icons/hugeicons/bell.tsx'),
     'registryDependencies': [],
@@ -801,6 +807,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-user',
     'path': path.join(__dirname, '../icons/phosphor/user.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-waveform',
+    'path': path.join(__dirname, '../icons/phosphor/waveform.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
