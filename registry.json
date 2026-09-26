@@ -5256,6 +5256,19 @@
       ]
     },
     {
+      "name": "hugeicons-stamp",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-stamp.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-star",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -8761,6 +8774,19 @@
       "files": [
         {
           "path": "phosphor-stack.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-stamp",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-stamp.tsx",
           "type": "registry:ui"
         }
       ]
@@ -12596,6 +12622,19 @@
       "files": [
         {
           "path": "tabler-router.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-rubber-stamp",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-rubber-stamp.tsx",
           "type": "registry:ui"
         }
       ]

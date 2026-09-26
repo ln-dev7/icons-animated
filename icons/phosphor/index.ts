@@ -256,6 +256,7 @@ import { PhosphorSpinnerGapIcon } from './spinner-gap';
 import { PhosphorSprayBottleIcon } from './spray-bottle';
 import { PhosphorSquaresFourIcon } from './squares-four';
 import { PhosphorStackIcon } from './stack';
+import { PhosphorStampIcon } from './stamp';
 import { PhosphorStarIcon } from './star';
 import { PhosphorTextAlignCenterIcon } from './text-align-center';
 import { PhosphorTextAlignLeftIcon } from './text-align-left';
@@ -1536,6 +1537,7 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['squares', 'four', 'layout-grid', 'layout', 'grid'],
   },
   { name: 'stack', icon: PhosphorStackIcon, keywords: ['stack', 'layers'] },
+  { name: 'stamp', icon: PhosphorStampIcon, keywords: ['stamp'] },
   {
     name: 'star',
     icon: PhosphorStarIcon,
@@ -1859,6 +1861,7 @@ export {
   PhosphorSprayBottleIcon,
   PhosphorSquaresFourIcon,
   PhosphorStackIcon,
+  PhosphorStampIcon,
   PhosphorStarIcon,
   PhosphorTextAlignCenterIcon,
   PhosphorTextAlignLeftIcon,

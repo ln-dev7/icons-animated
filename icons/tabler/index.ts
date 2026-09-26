@@ -280,6 +280,7 @@ import { TablerRotateIcon } from './rotate';
 import { TablerRotateClockwiseIcon } from './rotate-clockwise';
 import { TablerRouteIcon } from './route';
 import { TablerRouterIcon } from './router';
+import { TablerRubberStampIcon } from './rubber-stamp';
 import { TablerSaveIcon } from './save';
 import { TablerSchoolIcon } from './school';
 import { TablerSearchIcon } from './search';
@@ -1603,6 +1604,11 @@ const TABLER_ICON_LIST = [
   { name: 'route', icon: TablerRouteIcon, keywords: ['route'] },
   { name: 'router', icon: TablerRouterIcon, keywords: ['router'] },
   {
+    name: 'rubber-stamp',
+    icon: TablerRubberStampIcon,
+    keywords: ['rubber', 'stamp'],
+  },
+  {
     name: 'save',
     icon: TablerSaveIcon,
     keywords: ['save', 'store', 'disk', 'floppy', 'preserve'],
@@ -2107,6 +2113,7 @@ export {
   TablerRotateClockwiseIcon,
   TablerRouteIcon,
   TablerRouterIcon,
+  TablerRubberStampIcon,
   TablerSaveIcon,
   TablerSchoolIcon,
   TablerSearchIcon,
