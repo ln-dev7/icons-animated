@@ -2032,6 +2032,19 @@
       ]
     },
     {
+      "name": "hugeicons-drum",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-drum.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-eye",
       "type": "registry:ui",
       "registryDependencies": [],
