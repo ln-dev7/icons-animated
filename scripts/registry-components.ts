@@ -2443,6 +2443,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-square-chevron-left',
+    'path': path.join(__dirname, '../icons/hugeicons/square-chevron-left.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-star',
     'path': path.join(__dirname, '../icons/hugeicons/star.tsx'),
     'registryDependencies': [],
@@ -6024,6 +6030,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-square-chevron-down',
     'path': path.join(__dirname, '../icons/tabler/square-chevron-down.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-square-chevron-left',
+    'path': path.join(__dirname, '../icons/tabler/square-chevron-left.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
