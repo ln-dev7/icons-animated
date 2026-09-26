@@ -339,6 +339,7 @@ import { HugeiconsRabbitIcon } from './rabbit';
 import { HugeiconsRadioIcon } from './radio';
 import { HugeiconsRadioTowerIcon } from './radio-tower';
 import { HugeiconsReceiptIcon } from './receipt';
+import { HugeiconsReceiptCentIcon } from './receipt-cent';
 import { HugeiconsRefreshIcon } from './refresh';
 import { HugeiconsSaveIcon } from './save';
 import { HugeiconsSearchIcon } from './search';
@@ -1851,6 +1852,11 @@ const HUGEICONS_ICON_LIST = [
   },
   { name: 'receipt', icon: HugeiconsReceiptIcon, keywords: ['receipt'] },
   {
+    name: 'receipt-cent',
+    icon: HugeiconsReceiptCentIcon,
+    keywords: ['receipt', 'cent', 'receipt-cent'],
+  },
+  {
     name: 'refresh',
     icon: HugeiconsRefreshIcon,
     keywords: ['refresh', 'reload', 'reload', 'update', 'sync', 'rotate'],
@@ -2299,6 +2305,7 @@ export {
   HugeiconsRadioIcon,
   HugeiconsRadioTowerIcon,
   HugeiconsReceiptIcon,
+  HugeiconsReceiptCentIcon,
   HugeiconsRefreshIcon,
   HugeiconsSaveIcon,
   HugeiconsSearchIcon,
