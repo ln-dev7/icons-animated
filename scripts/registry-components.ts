@@ -1672,6 +1672,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-log-in',
+    'path': path.join(__dirname, '../icons/hugeicons/log-in.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-mail',
     'path': path.join(__dirname, '../icons/hugeicons/mail.tsx'),
     'registryDependencies': [],
@@ -2965,6 +2971,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'phosphor-sign-in',
+    'path': path.join(__dirname, '../icons/phosphor/sign-in.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'phosphor-smiley-angry',
     'path': path.join(__dirname, '../icons/phosphor/smiley-angry.tsx'),
     'registryDependencies': [],
@@ -4251,6 +4263,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-lock-open',
     'path': path.join(__dirname, '../icons/tabler/lock-open.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-login',
+    'path': path.join(__dirname, '../icons/tabler/login.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

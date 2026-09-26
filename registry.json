@@ -3553,6 +3553,19 @@
       ]
     },
     {
+      "name": "hugeicons-log-in",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-log-in.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-mail",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -6317,6 +6330,19 @@
       "files": [
         {
           "path": "phosphor-shopping-cart.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-sign-in",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-sign-in.tsx",
           "type": "registry:ui"
         }
       ]
@@ -9112,6 +9138,19 @@
       "files": [
         {
           "path": "tabler-lock-open.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-login",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-login.tsx",
           "type": "registry:ui"
         }
       ]
