@@ -1837,6 +1837,15 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-message-square-dashed',
+    'path': path.join(
+      __dirname,
+      '../icons/hugeicons/message-square-dashed.tsx'
+    ),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-mouse-pointer-click',
     'path': path.join(__dirname, '../icons/hugeicons/mouse-pointer-click.tsx'),
     'registryDependencies': [],

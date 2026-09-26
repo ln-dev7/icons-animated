@@ -3904,6 +3904,19 @@
       ]
     },
     {
+      "name": "hugeicons-message-square-dashed",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-message-square-dashed.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-mouse-pointer-click",
       "type": "registry:ui",
       "registryDependencies": [],
