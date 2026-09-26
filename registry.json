@@ -849,6 +849,19 @@
       ]
     },
     {
+      "name": "hugeicons-bookmark-check-01",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-bookmark-check-01.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-calendar",
       "type": "registry:ui",
       "registryDependencies": [],
