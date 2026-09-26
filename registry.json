@@ -5321,6 +5321,19 @@
       ]
     },
     {
+      "name": "hugeicons-sun-dim",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-sun-dim.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-text-align-center",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -8852,6 +8865,19 @@
       "files": [
         {
           "path": "phosphor-sun.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-sun-dim",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-sun-dim.tsx",
           "type": "registry:ui"
         }
       ]
@@ -13168,6 +13194,19 @@
       "files": [
         {
           "path": "tabler-sun.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-sun-low",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-sun-low.tsx",
           "type": "registry:ui"
         }
       ]

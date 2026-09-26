@@ -260,6 +260,7 @@ import { PhosphorStampIcon } from './stamp';
 import { PhosphorStarIcon } from './star';
 import { PhosphorStethoscopeIcon } from './stethoscope';
 import { PhosphorSunIcon } from './sun';
+import { PhosphorSunDimIcon } from './sun-dim';
 import { PhosphorTextAlignCenterIcon } from './text-align-center';
 import { PhosphorTextAlignLeftIcon } from './text-align-left';
 import { PhosphorTextAlignRightIcon } from './text-align-right';
@@ -1556,6 +1557,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['sun', 'sun-medium', 'medium'],
   },
   {
+    name: 'sun-dim',
+    icon: PhosphorSunDimIcon,
+    keywords: ['sun', 'dim', 'sun-dim'],
+  },
+  {
     name: 'text-align-center',
     icon: PhosphorTextAlignCenterIcon,
     keywords: ['text', 'align', 'center', 'align-center'],
@@ -1877,6 +1883,7 @@ export {
   PhosphorStarIcon,
   PhosphorStethoscopeIcon,
   PhosphorSunIcon,
+  PhosphorSunDimIcon,
   PhosphorTextAlignCenterIcon,
   PhosphorTextAlignLeftIcon,
   PhosphorTextAlignRightIcon,
