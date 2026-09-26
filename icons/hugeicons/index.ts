@@ -75,6 +75,7 @@ import { HugeiconsBrainIcon } from './brain';
 import { HugeiconsBriefcaseBusinessIcon } from './briefcase-business';
 import { HugeiconsCalendarIcon } from './calendar';
 import { HugeiconsCalendarCheckIcon } from './calendar-check';
+import { HugeiconsCalendarCheck01Icon } from './calendar-check-01';
 import { HugeiconsCheckIcon } from './check';
 import { HugeiconsChevronDownIcon } from './chevron-down';
 import { HugeiconsChevronLeftIcon } from './chevron-left';
@@ -450,6 +451,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['calendar', 'check', 'calendar-check'],
   },
   {
+    name: 'calendar-check-01',
+    icon: HugeiconsCalendarCheck01Icon,
+    keywords: ['calendar', 'check', '01', 'calendar-check-2', '2'],
+  },
+  {
     name: 'check',
     icon: HugeiconsCheckIcon,
     keywords: ['check', 'done', 'success', 'complete', 'validate', 'tick'],
@@ -733,6 +739,7 @@ export {
   HugeiconsBriefcaseBusinessIcon,
   HugeiconsCalendarIcon,
   HugeiconsCalendarCheckIcon,
+  HugeiconsCalendarCheck01Icon,
   HugeiconsCheckIcon,
   HugeiconsChevronDownIcon,
   HugeiconsChevronLeftIcon,

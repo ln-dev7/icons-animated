@@ -1005,6 +1005,19 @@
       ]
     },
     {
+      "name": "hugeicons-calendar-check-01",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-calendar-check-01.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-check",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -3249,6 +3262,19 @@
       "files": [
         {
           "path": "tabler-calendar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-calendar-check",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-calendar-check.tsx",
           "type": "registry:ui"
         }
       ]

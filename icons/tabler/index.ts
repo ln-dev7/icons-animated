@@ -54,6 +54,7 @@ import { TablerBoxIcon } from './box';
 import { TablerBrainIcon } from './brain';
 import { TablerBriefcaseIcon } from './briefcase';
 import { TablerCalendarIcon } from './calendar';
+import { TablerCalendarCheckIcon } from './calendar-check';
 import { TablerCheckIcon } from './check';
 import { TablerChevronDownIcon } from './chevron-down';
 import { TablerChevronLeftIcon } from './chevron-left';
@@ -314,6 +315,11 @@ const TABLER_ICON_LIST = [
     name: 'calendar',
     icon: TablerCalendarIcon,
     keywords: ['calendar', 'date', 'schedule', 'event', 'day'],
+  },
+  {
+    name: 'calendar-check',
+    icon: TablerCalendarCheckIcon,
+    keywords: ['calendar', 'check', 'calendar-check-2', '2'],
   },
   {
     name: 'check',
@@ -646,6 +652,7 @@ export {
   TablerBrainIcon,
   TablerBriefcaseIcon,
   TablerCalendarIcon,
+  TablerCalendarCheckIcon,
   TablerCheckIcon,
   TablerChevronDownIcon,
   TablerChevronLeftIcon,
