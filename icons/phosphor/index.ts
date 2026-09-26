@@ -193,6 +193,7 @@ import { PhosphorMoonIcon } from './moon';
 import { PhosphorNotebookIcon } from './notebook';
 import { PhosphorPaletteIcon } from './palette';
 import { PhosphorPaperclipIcon } from './paperclip';
+import { PhosphorPathIcon } from './path';
 import { PhosphorPauseIcon } from './pause';
 import { PhosphorPenNibIcon } from './pen-nib';
 import { PhosphorPencilIcon } from './pencil';
@@ -1215,6 +1216,7 @@ const PHOSPHOR_ICON_LIST = [
     icon: PhosphorPaperclipIcon,
     keywords: ['paperclip', 'attach-file', 'attach', 'file'],
   },
+  { name: 'path', icon: PhosphorPathIcon, keywords: ['path', 'route'] },
   { name: 'pause', icon: PhosphorPauseIcon, keywords: ['pause'] },
   {
     name: 'pen-nib',
@@ -1692,6 +1694,7 @@ export {
   PhosphorNotebookIcon,
   PhosphorPaletteIcon,
   PhosphorPaperclipIcon,
+  PhosphorPathIcon,
   PhosphorPauseIcon,
   PhosphorPenNibIcon,
   PhosphorPencilIcon,

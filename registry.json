@@ -4710,6 +4710,19 @@
       ]
     },
     {
+      "name": "hugeicons-route-01",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-route-01.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-save",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -7461,6 +7474,19 @@
       "files": [
         {
           "path": "phosphor-paperclip.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-path",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-path.tsx",
           "type": "registry:ui"
         }
       ]
@@ -11699,6 +11725,19 @@
       "files": [
         {
           "path": "tabler-rotate-clockwise.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-route",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-route.tsx",
           "type": "registry:ui"
         }
       ]

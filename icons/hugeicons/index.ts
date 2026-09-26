@@ -360,6 +360,7 @@ import { HugeiconsRockingChairIcon } from './rocking-chair';
 import { HugeiconsRollerCoasterIcon } from './roller-coaster';
 import { HugeiconsRotateCcwIcon } from './rotate-ccw';
 import { HugeiconsRotateCwIcon } from './rotate-cw';
+import { HugeiconsRoute01Icon } from './route-01';
 import { HugeiconsSaveIcon } from './save';
 import { HugeiconsSearchIcon } from './search';
 import { HugeiconsSettingsIcon } from './settings';
@@ -1967,6 +1968,7 @@ const HUGEICONS_ICON_LIST = [
     icon: HugeiconsRotateCwIcon,
     keywords: ['rotate', 'cw', 'rotate-cw'],
   },
+  { name: 'route-01', icon: HugeiconsRoute01Icon, keywords: ['route', '01'] },
   {
     name: 'save',
     icon: HugeiconsSaveIcon,
@@ -2432,6 +2434,7 @@ export {
   HugeiconsRollerCoasterIcon,
   HugeiconsRotateCcwIcon,
   HugeiconsRotateCwIcon,
+  HugeiconsRoute01Icon,
   HugeiconsSaveIcon,
   HugeiconsSearchIcon,
   HugeiconsSettingsIcon,

@@ -268,6 +268,7 @@ import { TablerRollercoasterIcon } from './rollercoaster';
 import { TablerRosetteDiscountIcon } from './rosette-discount';
 import { TablerRotateIcon } from './rotate';
 import { TablerRotateClockwiseIcon } from './rotate-clockwise';
+import { TablerRouteIcon } from './route';
 import { TablerSaveIcon } from './save';
 import { TablerSchoolIcon } from './school';
 import { TablerSearchIcon } from './search';
@@ -1505,6 +1506,7 @@ const TABLER_ICON_LIST = [
     icon: TablerRotateClockwiseIcon,
     keywords: ['rotate', 'clockwise', 'rotate-cw', 'cw'],
   },
+  { name: 'route', icon: TablerRouteIcon, keywords: ['route'] },
   {
     name: 'save',
     icon: TablerSaveIcon,
@@ -1926,6 +1928,7 @@ export {
   TablerRosetteDiscountIcon,
   TablerRotateIcon,
   TablerRotateClockwiseIcon,
+  TablerRouteIcon,
   TablerSaveIcon,
   TablerSchoolIcon,
   TablerSearchIcon,
