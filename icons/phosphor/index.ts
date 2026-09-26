@@ -75,6 +75,7 @@ import { PhosphorCloudSnowIcon } from './cloud-snow';
 import { PhosphorCloudSunIcon } from './cloud-sun';
 import { PhosphorCoffeeIcon } from './coffee';
 import { PhosphorCompassIcon } from './compass';
+import { PhosphorCookingPotIcon } from './cooking-pot';
 import { PhosphorCubeIcon } from './cube';
 import { PhosphorCurrencyCircleDollarIcon } from './currency-circle-dollar';
 import { PhosphorDownloadIcon } from './download';
@@ -530,6 +531,11 @@ const PHOSPHOR_ICON_LIST = [
   },
   { name: 'coffee', icon: PhosphorCoffeeIcon, keywords: ['coffee'] },
   { name: 'compass', icon: PhosphorCompassIcon, keywords: ['compass'] },
+  {
+    name: 'cooking-pot',
+    icon: PhosphorCookingPotIcon,
+    keywords: ['cooking', 'pot', 'cooking-pot'],
+  },
   { name: 'cube', icon: PhosphorCubeIcon, keywords: ['cube', 'box'] },
   {
     name: 'currency-circle-dollar',
@@ -868,6 +874,7 @@ export {
   PhosphorCloudSunIcon,
   PhosphorCoffeeIcon,
   PhosphorCompassIcon,
+  PhosphorCookingPotIcon,
   PhosphorCubeIcon,
   PhosphorCurrencyCircleDollarIcon,
   PhosphorDownloadIcon,

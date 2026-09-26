@@ -838,6 +838,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-cooking-pot',
+    'path': path.join(__dirname, '../icons/hugeicons/cooking-pot.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-download',
     'path': path.join(__dirname, '../icons/hugeicons/download.tsx'),
     'registryDependencies': [],
@@ -1473,6 +1479,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-compass',
     'path': path.join(__dirname, '../icons/phosphor/compass.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-cooking-pot',
+    'path': path.join(__dirname, '../icons/phosphor/cooking-pot.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
