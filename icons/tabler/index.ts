@@ -126,6 +126,7 @@ import { TablerCurrencyEuroIcon } from './currency-euro';
 import { TablerCurrencyLariIcon } from './currency-lari';
 import { TablerCurrencyPesoIcon } from './currency-peso';
 import { TablerCurrencyPoundIcon } from './currency-pound';
+import { TablerCurrencyRiyalIcon } from './currency-riyal';
 import { TablerCurrencyRubleIcon } from './currency-ruble';
 import { TablerCurrencyRupeeIcon } from './currency-rupee';
 import { TablerCurrencyYenIcon } from './currency-yen';
@@ -885,6 +886,11 @@ const TABLER_ICON_LIST = [
     name: 'currency-pound',
     icon: TablerCurrencyPoundIcon,
     keywords: ['currency', 'pound', 'pound-sterling', 'sterling'],
+  },
+  {
+    name: 'currency-riyal',
+    icon: TablerCurrencyRiyalIcon,
+    keywords: ['currency', 'riyal', 'saudi-riyal', 'saudi'],
   },
   {
     name: 'currency-ruble',
@@ -1794,6 +1800,7 @@ export {
   TablerCurrencyLariIcon,
   TablerCurrencyPesoIcon,
   TablerCurrencyPoundIcon,
+  TablerCurrencyRiyalIcon,
   TablerCurrencyRubleIcon,
   TablerCurrencyRupeeIcon,
   TablerCurrencyYenIcon,

@@ -4762,6 +4762,19 @@
       ]
     },
     {
+      "name": "hugeicons-saudi-riyal",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-saudi-riyal.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-save",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -9931,6 +9944,19 @@
       "files": [
         {
           "path": "tabler-currency-pound.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-currency-riyal",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-currency-riyal.tsx",
           "type": "registry:ui"
         }
       ]

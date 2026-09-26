@@ -364,6 +364,7 @@ import { HugeiconsRoute01Icon } from './route-01';
 import { HugeiconsRouterIcon } from './router';
 import { HugeiconsRussianRubleIcon } from './russian-ruble';
 import { HugeiconsSatelliteDishIcon } from './satellite-dish';
+import { HugeiconsSaudiRiyalIcon } from './saudi-riyal';
 import { HugeiconsSaveIcon } from './save';
 import { HugeiconsSearchIcon } from './search';
 import { HugeiconsSettingsIcon } from './settings';
@@ -1984,6 +1985,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['satellite', 'dish', 'satellite-dish'],
   },
   {
+    name: 'saudi-riyal',
+    icon: HugeiconsSaudiRiyalIcon,
+    keywords: ['saudi', 'riyal', 'saudi-riyal'],
+  },
+  {
     name: 'save',
     icon: HugeiconsSaveIcon,
     keywords: ['save', 'store', 'disk', 'floppy', 'preserve'],
@@ -2452,6 +2458,7 @@ export {
   HugeiconsRouterIcon,
   HugeiconsRussianRubleIcon,
   HugeiconsSatelliteDishIcon,
+  HugeiconsSaudiRiyalIcon,
   HugeiconsSaveIcon,
   HugeiconsSearchIcon,
   HugeiconsSettingsIcon,

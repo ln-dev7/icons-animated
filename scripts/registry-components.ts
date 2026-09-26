@@ -2242,6 +2242,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-saudi-riyal',
+    'path': path.join(__dirname, '../icons/hugeicons/saudi-riyal.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-save',
     'path': path.join(__dirname, '../icons/hugeicons/save.tsx'),
     'registryDependencies': [],
@@ -4650,6 +4656,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-currency-pound',
     'path': path.join(__dirname, '../icons/tabler/currency-pound.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-currency-riyal',
+    'path': path.join(__dirname, '../icons/tabler/currency-riyal.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
