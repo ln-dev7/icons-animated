@@ -85,6 +85,7 @@ import { TablerDeviceCctvIcon } from './device-cctv';
 import { TablerDownloadIcon } from './download';
 import { TablerEyeIcon } from './eye';
 import { TablerFilterIcon } from './filter';
+import { TablerGaugeIcon } from './gauge';
 import { TablerHeartIcon } from './heart';
 import { TablerHomeIcon } from './home';
 import { TablerLayoutAlignCenterIcon } from './layout-align-center';
@@ -536,6 +537,11 @@ const TABLER_ICON_LIST = [
     keywords: ['filter', 'sort', 'funnel', 'refine', 'search'],
   },
   {
+    name: 'gauge',
+    icon: TablerGaugeIcon,
+    keywords: ['gauge', 'circle-gauge', 'circle'],
+  },
+  {
     name: 'heart',
     icon: TablerHeartIcon,
     keywords: ['heart', 'love', 'like', 'favorite', 'health'],
@@ -845,6 +851,7 @@ export {
   TablerDownloadIcon,
   TablerEyeIcon,
   TablerFilterIcon,
+  TablerGaugeIcon,
   TablerHeartIcon,
   TablerHomeIcon,
   TablerLayoutAlignCenterIcon,

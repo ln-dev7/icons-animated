@@ -712,6 +712,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-circle-gauge',
+    'path': path.join(__dirname, '../icons/hugeicons/circle-gauge.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-download',
     'path': path.join(__dirname, '../icons/hugeicons/download.tsx'),
     'registryDependencies': [],
@@ -2052,6 +2058,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-filter',
     'path': path.join(__dirname, '../icons/tabler/filter.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-gauge',
+    'path': path.join(__dirname, '../icons/tabler/gauge.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
