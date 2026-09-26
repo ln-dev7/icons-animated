@@ -1390,6 +1390,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-grip',
+    'path': path.join(__dirname, '../icons/hugeicons/grip.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-heart',
     'path': path.join(__dirname, '../icons/hugeicons/heart.tsx'),
     'registryDependencies': [],
@@ -2172,6 +2178,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-discord-logo',
     'path': path.join(__dirname, '../icons/phosphor/discord-logo.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-dots-nine',
+    'path': path.join(__dirname, '../icons/phosphor/dots-nine.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -3594,6 +3606,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-git-pull-request-closed',
     'path': path.join(__dirname, '../icons/tabler/git-pull-request-closed.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-grid-dots',
+    'path': path.join(__dirname, '../icons/tabler/grid-dots.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

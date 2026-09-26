@@ -99,6 +99,7 @@ import { PhosphorCurrencyEurIcon } from './currency-eur';
 import { PhosphorCursorClickIcon } from './cursor-click';
 import { PhosphorDiscIcon } from './disc';
 import { PhosphorDiscordLogoIcon } from './discord-logo';
+import { PhosphorDotsNineIcon } from './dots-nine';
 import { PhosphorDownloadIcon } from './download';
 import { PhosphorDribbbleLogoIcon } from './dribbble-logo';
 import { PhosphorDropIcon } from './drop';
@@ -712,6 +713,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['discord', 'logo'],
   },
   {
+    name: 'dots-nine',
+    icon: PhosphorDotsNineIcon,
+    keywords: ['dots', 'nine', 'grip'],
+  },
+  {
     name: 'download',
     icon: PhosphorDownloadIcon,
     keywords: ['download', 'save', 'arrow', 'get', 'export'],
@@ -1197,6 +1203,7 @@ export {
   PhosphorCursorClickIcon,
   PhosphorDiscIcon,
   PhosphorDiscordLogoIcon,
+  PhosphorDotsNineIcon,
   PhosphorDownloadIcon,
   PhosphorDribbbleLogoIcon,
   PhosphorDropIcon,

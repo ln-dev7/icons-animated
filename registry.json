@@ -2942,6 +2942,19 @@
       ]
     },
     {
+      "name": "hugeicons-grip",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-grip.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-heart",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -4614,6 +4627,19 @@
       "files": [
         {
           "path": "phosphor-discord-logo.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-dots-nine",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-dots-nine.tsx",
           "type": "registry:ui"
         }
       ]
@@ -7695,6 +7721,19 @@
       "files": [
         {
           "path": "tabler-git-pull-request-closed.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-grid-dots",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-grid-dots.tsx",
           "type": "registry:ui"
         }
       ]
