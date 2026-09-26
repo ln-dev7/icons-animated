@@ -38,6 +38,7 @@ import { HugeiconsAtSignIcon } from './at-sign';
 import { HugeiconsAtom02Icon } from './atom-02';
 import { HugeiconsAttachment01Icon } from './attachment-01';
 import { HugeiconsAudioLinesIcon } from './audio-lines';
+import { HugeiconsAxeIcon } from './axe';
 import { HugeiconsBellIcon } from './bell';
 import { HugeiconsCalendarIcon } from './calendar';
 import { HugeiconsCheckIcon } from './check';
@@ -281,6 +282,7 @@ const HUGEICONS_ICON_LIST = [
     icon: HugeiconsAudioLinesIcon,
     keywords: ['audio', 'lines', 'audio-lines'],
   },
+  { name: 'axe', icon: HugeiconsAxeIcon, keywords: ['axe'] },
   {
     name: 'bell',
     icon: HugeiconsBellIcon,
@@ -538,6 +540,7 @@ export {
   HugeiconsAtom02Icon,
   HugeiconsAttachment01Icon,
   HugeiconsAudioLinesIcon,
+  HugeiconsAxeIcon,
   HugeiconsBellIcon,
   HugeiconsCalendarIcon,
   HugeiconsCheckIcon,
