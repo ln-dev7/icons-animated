@@ -159,6 +159,7 @@ import { HugeiconsDrumIcon } from './drum';
 import { HugeiconsEarthIcon } from './earth';
 import { HugeiconsEuroIcon } from './euro';
 import { HugeiconsEvChargerIcon } from './ev-charger';
+import { HugeiconsExternalLinkIcon } from './external-link';
 import { HugeiconsEyeIcon } from './eye';
 import { HugeiconsFilterIcon } from './filter';
 import { HugeiconsHeartIcon } from './heart';
@@ -936,6 +937,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['ev', 'charger', 'ev-charger'],
   },
   {
+    name: 'external-link',
+    icon: HugeiconsExternalLinkIcon,
+    keywords: ['external', 'link', 'external-link'],
+  },
+  {
     name: 'eye',
     icon: HugeiconsEyeIcon,
     keywords: ['eye', 'view', 'see', 'visible', 'show', 'watch'],
@@ -1271,6 +1277,7 @@ export {
   HugeiconsEarthIcon,
   HugeiconsEuroIcon,
   HugeiconsEvChargerIcon,
+  HugeiconsExternalLinkIcon,
   HugeiconsEyeIcon,
   HugeiconsFilterIcon,
   HugeiconsHeartIcon,

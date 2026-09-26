@@ -117,6 +117,7 @@ import { TablerDeviceCctvIcon } from './device-cctv';
 import { TablerDiscIcon } from './disc';
 import { TablerDownloadIcon } from './download';
 import { TablerDropletIcon } from './droplet';
+import { TablerExternalLinkIcon } from './external-link';
 import { TablerEyeIcon } from './eye';
 import { TablerFilterIcon } from './filter';
 import { TablerGaugeIcon } from './gauge';
@@ -699,6 +700,11 @@ const TABLER_ICON_LIST = [
   },
   { name: 'droplet', icon: TablerDropletIcon, keywords: ['droplet'] },
   {
+    name: 'external-link',
+    icon: TablerExternalLinkIcon,
+    keywords: ['external', 'link', 'external-link'],
+  },
+  {
     name: 'eye',
     icon: TablerEyeIcon,
     keywords: ['eye', 'view', 'see', 'visible', 'show', 'watch'],
@@ -1071,6 +1077,7 @@ export {
   TablerDiscIcon,
   TablerDownloadIcon,
   TablerDropletIcon,
+  TablerExternalLinkIcon,
   TablerEyeIcon,
   TablerFilterIcon,
   TablerGaugeIcon,

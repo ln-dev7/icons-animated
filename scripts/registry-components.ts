@@ -988,6 +988,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-external-link',
+    'path': path.join(__dirname, '../icons/hugeicons/external-link.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-eye',
     'path': path.join(__dirname, '../icons/hugeicons/eye.tsx'),
     'registryDependencies': [],
@@ -1341,6 +1347,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-arrow-right',
     'path': path.join(__dirname, '../icons/phosphor/arrow-right.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-arrow-square-out',
+    'path': path.join(__dirname, '../icons/phosphor/arrow-square-out.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -2778,6 +2790,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-droplet',
     'path': path.join(__dirname, '../icons/tabler/droplet.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-external-link',
+    'path': path.join(__dirname, '../icons/tabler/external-link.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
