@@ -168,6 +168,7 @@ import { PhosphorLockKeyIcon } from './lock-key';
 import { PhosphorLockKeyOpenIcon } from './lock-key-open';
 import { PhosphorLockOpenIcon } from './lock-open';
 import { PhosphorMailboxIcon } from './mailbox';
+import { PhosphorMapPinIcon } from './map-pin';
 import { PhosphorNotebookIcon } from './notebook';
 import { PhosphorPaperclipIcon } from './paperclip';
 import { PhosphorPencilIcon } from './pencil';
@@ -1041,6 +1042,11 @@ const PHOSPHOR_ICON_LIST = [
   },
   { name: 'mailbox', icon: PhosphorMailboxIcon, keywords: ['mailbox'] },
   {
+    name: 'map-pin',
+    icon: PhosphorMapPinIcon,
+    keywords: ['map', 'pin', 'map-pin'],
+  },
+  {
     name: 'notebook',
     icon: PhosphorNotebookIcon,
     keywords: ['notebook', 'book-text', 'book', 'text'],
@@ -1456,6 +1462,7 @@ export {
   PhosphorLockKeyOpenIcon,
   PhosphorLockOpenIcon,
   PhosphorMailboxIcon,
+  PhosphorMapPinIcon,
   PhosphorNotebookIcon,
   PhosphorPaperclipIcon,
   PhosphorPencilIcon,

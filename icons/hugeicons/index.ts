@@ -267,6 +267,7 @@ import { HugeiconsLinkedin02Icon } from './linkedin-02';
 import { HugeiconsLoaderIcon } from './loader';
 import { HugeiconsLoaderCircleIcon } from './loader-circle';
 import { HugeiconsLoaderPinwheelIcon } from './loader-pinwheel';
+import { HugeiconsLocation01Icon } from './location-01';
 import { HugeiconsLockIcon } from './lock';
 import { HugeiconsLockKeyholeIcon } from './lock-keyhole';
 import { HugeiconsLockKeyholeOpenIcon } from './lock-keyhole-open';
@@ -1483,6 +1484,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['loader', 'pinwheel', 'loader-pinwheel'],
   },
   {
+    name: 'location-01',
+    icon: HugeiconsLocation01Icon,
+    keywords: ['location', '01', 'map-pin', 'map', 'pin'],
+  },
+  {
     name: 'lock',
     icon: HugeiconsLockIcon,
     keywords: [
@@ -1937,6 +1943,7 @@ export {
   HugeiconsLoaderIcon,
   HugeiconsLoaderCircleIcon,
   HugeiconsLoaderPinwheelIcon,
+  HugeiconsLocation01Icon,
   HugeiconsLockIcon,
   HugeiconsLockKeyholeIcon,
   HugeiconsLockKeyholeOpenIcon,

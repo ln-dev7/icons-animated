@@ -3501,6 +3501,19 @@
       ]
     },
     {
+      "name": "hugeicons-location-01",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-location-01.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-lock",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -6135,6 +6148,19 @@
       "files": [
         {
           "path": "phosphor-mailbox.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-map-pin",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-map-pin.tsx",
           "type": "registry:ui"
         }
       ]
@@ -9268,6 +9294,19 @@
       "files": [
         {
           "path": "tabler-mailbox.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-map-pin",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-map-pin.tsx",
           "type": "registry:ui"
         }
       ]
