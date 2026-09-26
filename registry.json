@@ -4307,6 +4307,19 @@
       ]
     },
     {
+      "name": "hugeicons-play",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-play.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-plus",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -7149,6 +7162,19 @@
       "files": [
         {
           "path": "phosphor-phone-x.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-play",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-play.tsx",
           "type": "registry:ui"
         }
       ]
@@ -10880,6 +10906,19 @@
       "files": [
         {
           "path": "tabler-player-pause.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-player-play",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-player-play.tsx",
           "type": "registry:ui"
         }
       ]
