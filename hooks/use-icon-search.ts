@@ -7,7 +7,7 @@ type IconItem = {
   keywords: string[];
 };
 
-const useIconSearch = <T extends IconItem>(icons: T[]) => {
+const useIconSearch = <T extends IconItem>(icons: readonly T[]) => {
   const [query, setQuery] = useState('');
 
   const filteredIcons = useMemo(() => {

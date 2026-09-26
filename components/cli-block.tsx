@@ -1,53 +1,60 @@
 'use client';
 
 import type { IconStatus } from '@/components/ui/icon-state';
-import { useRef, useState, useTransition } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { ScrollArea as BaseScrollArea } from '@base-ui-components/react/scroll-area';
 import { CopyIcon } from 'lucide-react';
+import { AnimatePresence, motion } from 'motion/react';
 import { toast } from 'sonner';
 
 import { IconState } from '@/components/ui/icon-state';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { TextLoop } from '@/components/ui/text-loop';
 import { PACKAGE_MANAGER } from '@/constants';
-import { getIconListByLibrary } from '@/helpers/get-icon-list';
 import { getPackageManagerPrefix } from '@/lib/get-package-manager-prefix';
 import { cn } from '@/lib/utils';
 import { useIconLibrary } from '@/providers/icon-library';
 import { usePackageNameContext } from '@/providers/package-name';
 
-const CliBlock = () => {
-  const { library } = useIconLibrary();
-  const iconList = getIconListByLibrary(library);
-  const icons = iconList.map(({ name, keywords }) => ({ name, keywords }));
+const CliBlockContent = () => {
+  const { library, iconList, isLoading, loadError } = useIconLibrary();
+  const icons = useMemo(() => {
+    const shortNames = iconList.filter((icon) => icon.name.length <= 20);
+    return shortNames.length ? shortNames : iconList;
+  }, [iconList]);
   const [state, setState] = useState<IconStatus>('idle');
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [_, startTransition] = useTransition();
-  const currentIconName = useRef('');
-
+  const [currentIndex, setCurrentIndex] = useState(0);
   const { packageName, setPackageName } = usePackageNameContext();
+  const currentIcon = icons[currentIndex] ?? icons[0];
+  const command = currentIcon
+    ? `${getPackageManagerPrefix(packageName)} shadcn add @icons-animated/${library}-${currentIcon.name}`
+    : '';
 
-  const handleCopyToClipboard = () => {
-    startTransition(async () => {
-      const iconName = currentIconName.current || icons[0].name;
+  useEffect(() => {
+    if (icons.length < 2) return;
+    const timer = setInterval(() => {
+      setCurrentIndex((index) => (index + 1) % icons.length);
+    }, 1500);
+    return () => clearInterval(timer);
+  }, [icons.length]);
 
-      try {
-        await navigator.clipboard.writeText(
-          `${getPackageManagerPrefix(packageName)} shadcn add @icons-animated/${library}-${iconName}`
-        );
+  useEffect(() => {
+    if (state !== 'done' && state !== 'error') return;
+    const timer = setTimeout(() => setState('idle'), 2000);
+    return () => clearTimeout(timer);
+  }, [state]);
 
-        setState('done');
-        await new Promise((resolve) => setTimeout(resolve, 2000));
-        setState('idle');
-      } catch {
-        toast.error('Failed to copy to clipboard', {
-          description: 'Please check your browser permissions.',
-        });
-        setState('error');
-        await new Promise((resolve) => setTimeout(resolve, 2000));
-        setState('idle');
-      }
-    });
+  const handleCopyToClipboard = async () => {
+    if (!command || state !== 'idle') return;
+    setState('loading');
+    try {
+      await navigator.clipboard.writeText(command);
+      setState('done');
+    } catch {
+      toast.error('Failed to copy to clipboard', {
+        description: 'Please check your browser permissions.',
+      });
+      setState('error');
+    }
   };
 
   return (
@@ -64,7 +71,6 @@ const CliBlock = () => {
             </TabsTrigger>
           ))}
         </TabsList>
-        {/* eslint-disable-next-line react-hooks/refs */}
         {Object.values(PACKAGE_MANAGER).map((pm) => (
           <TabsContent
             key={pm}
@@ -89,56 +95,63 @@ const CliBlock = () => {
                   'after:w-[calc(min(40px,var(--scroll-area-overflow-x-end,100px))+100px)] after:bg-[linear-gradient(to_left,white_0%,white_30%,transparent)] after:[--scroll-area-overflow-x-end:inherit] dark:after:bg-[linear-gradient(to_left,rgb(47_47_47/1)_0%,rgb(47_47_47/1)_30%,transparent)]'
                 )}
               >
-                <span className="sr-only">
-                  {getPackageManagerPrefix(pm)} shadcn add @icons-animated/
-                  {library}-{currentIconName.current}
-                </span>
-                <span
-                  className="text-neutral-600 dark:text-neutral-400"
-                  aria-hidden="true"
-                >
-                  {getPackageManagerPrefix(pm)}
-                </span>{' '}
-                <span className="text-black dark:text-white" aria-hidden="true">
-                  shadcn add @icons-animated/{library}-
-                </span>
-                <TextLoop
-                  onIndexChange={(index) => {
-                    currentIconName.current = icons[index].name;
-                  }}
-                  transition={{
-                    duration: 0.25,
-                  }}
-                  interval={1.5}
-                  variants={{
-                    initial: {
-                      y: -12,
-                      rotateX: -90,
-                      opacity: 0,
-                      filter: 'blur(2px)',
-                    },
-                    animate: {
-                      y: 0,
-                      rotateX: 0,
-                      opacity: 1,
-                      filter: 'blur(0px)',
-                    },
-                    exit: {
-                      y: 12,
-                      rotateX: 90,
-                      opacity: 0,
-                      filter: 'blur(2px)',
-                    },
-                  }}
-                >
-                  {icons
-                    .filter((icon) => icon.name.length <= 20)
-                    .map((icon) => (
-                      <span key={icon.name} className="text-primary shrink-0">
-                        {icon.name}
-                      </span>
-                    ))}
-                </TextLoop>
+                {currentIcon ? (
+                  <>
+                    <span className="sr-only">{command}</span>
+                    <span
+                      className="text-neutral-600 dark:text-neutral-400"
+                      aria-hidden="true"
+                    >
+                      {getPackageManagerPrefix(pm)}
+                    </span>{' '}
+                    <span
+                      className="text-black dark:text-white"
+                      aria-hidden="true"
+                    >
+                      shadcn add @icons-animated/{library}-
+                    </span>
+                    <span
+                      className="relative inline-block whitespace-nowrap"
+                      aria-hidden="true"
+                    >
+                      <AnimatePresence mode="popLayout" initial={false}>
+                        <motion.span
+                          key={currentIcon.name}
+                          className="text-primary inline-block shrink-0"
+                          initial={{
+                            y: -12,
+                            rotateX: -90,
+                            opacity: 0,
+                            filter: 'blur(2px)',
+                          }}
+                          animate={{
+                            y: 0,
+                            rotateX: 0,
+                            opacity: 1,
+                            filter: 'blur(0px)',
+                          }}
+                          exit={{
+                            y: 12,
+                            rotateX: 90,
+                            opacity: 0,
+                            filter: 'blur(2px)',
+                          }}
+                          transition={{ duration: 0.25 }}
+                        >
+                          {currentIcon.name}
+                        </motion.span>
+                      </AnimatePresence>
+                    </span>
+                  </>
+                ) : (
+                  <span role="status" className="text-secondary">
+                    {isLoading
+                      ? 'Loading icons…'
+                      : loadError
+                        ? 'Icon library unavailable'
+                        : 'No icons available'}
+                  </span>
+                )}
               </BaseScrollArea.Viewport>
               <BaseScrollArea.Scrollbar
                 keepMounted={false}
@@ -151,7 +164,7 @@ const CliBlock = () => {
                 tabIndex={0}
                 type="button"
                 aria-label="Copy to clipboard"
-                aria-disabled={state !== 'idle'}
+                disabled={!currentIcon || state !== 'idle'}
                 onClick={handleCopyToClipboard}
                 className="focus-visible:outline-primary supports-[corner-shape:squircle]:corner-squircle absolute top-1/2 right-1.5 z-20 -translate-y-1/2 cursor-pointer rounded-[6px] p-2 transition-[background-color] duration-100 focus-within:outline-offset-1 hover:bg-neutral-100 focus-visible:outline-1 supports-[corner-shape:squircle]:rounded-[8px] dark:hover:bg-neutral-700"
               >
@@ -165,6 +178,11 @@ const CliBlock = () => {
       </Tabs>
     </div>
   );
+};
+
+const CliBlock = () => {
+  const { library } = useIconLibrary();
+  return <CliBlockContent key={library} />;
 };
 
 export { CliBlock };

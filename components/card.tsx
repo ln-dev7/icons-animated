@@ -17,6 +17,7 @@ import {
 } from '@/components/ui/tooltip';
 import { useTouchDevice } from '@/hooks/use-touch-device';
 import { getPackageManagerPrefix } from '@/lib/get-package-manager-prefix';
+import { cn } from '@/lib/utils';
 import { useIconLibrary } from '@/providers/icon-library';
 import { usePackageNameContext } from '@/providers/package-name';
 
@@ -41,55 +42,84 @@ const Card = ({ children, animationRef, ...props }: CardProps) => {
     };
   }, []);
 
-  const handlePlayClick = (e: React.MouseEvent) => {
-    e.stopPropagation();
-
-    if (isAnimating) {
-      animationRef?.current?.stopAnimation();
-      setIsAnimating(false);
-      if (timeoutRef.current) {
-        clearTimeout(timeoutRef.current);
-        timeoutRef.current = null;
-      }
-    } else {
-      animationRef?.current?.startAnimation();
-      setIsAnimating(true);
-
-      timeoutRef.current = setTimeout(() => {
-        setIsAnimating(false);
-        animationRef?.current?.stopAnimation();
-      }, 1500);
+  const stopAnimation = () => {
+    animationRef?.current?.stopAnimation();
+    setIsAnimating(false);
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+      timeoutRef.current = null;
     }
+  };
+
+  const startAnimation = () => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    animationRef?.current?.startAnimation();
+    setIsAnimating(true);
+    timeoutRef.current = setTimeout(() => {
+      setIsAnimating(false);
+      animationRef?.current?.stopAnimation();
+      timeoutRef.current = null;
+    }, 1500);
+  };
+
+  const toggleAnimation = () => {
+    if (isAnimating) stopAnimation();
+    else startAnimation();
   };
 
   return (
     <div
-      className="group/card supports-[corner-shape:squircle]:corner-squircle relative flex flex-col items-center justify-center bg-white px-[28px] pt-[50px] dark:bg-[#0A0A0A]"
+      className="group/card focus-visible:outline-primary supports-[corner-shape:squircle]:corner-squircle relative flex flex-col items-center justify-center bg-white px-[28px] pt-[50px] focus-visible:outline-2 focus-visible:-outline-offset-2 dark:bg-[#0A0A0A]"
+      role="group"
+      tabIndex={0}
       {...props}
       onMouseEnter={!isTouchDevice ? props.onMouseEnter : undefined}
       onMouseLeave={!isTouchDevice ? props.onMouseLeave : undefined}
+      onFocus={(event) => {
+        props.onFocus?.(event);
+        if (event.target === event.currentTarget) startAnimation();
+      }}
+      onBlur={(event) => {
+        props.onBlur?.(event);
+        if (!event.currentTarget.contains(event.relatedTarget)) stopAnimation();
+      }}
+      onKeyDown={(event) => {
+        props.onKeyDown?.(event);
+        if (
+          event.target === event.currentTarget &&
+          (event.key === 'Enter' || event.key === ' ')
+        ) {
+          event.preventDefault();
+          toggleAnimation();
+        }
+      }}
     >
-      {isTouchDevice && (
-        <button
-          type="button"
-          aria-label={isAnimating ? 'Stop animation' : 'Play animation'}
-          aria-pressed={isAnimating}
-          onClick={handlePlayClick}
-          className="focus-visible:outline-primary supports-[corner-shape:squircle]:corner-squircle absolute top-3 right-3 z-10 flex size-10 cursor-pointer items-center justify-center rounded-[14px] bg-neutral-200/20 transition-[background-color] duration-100 focus-within:-outline-offset-1 hover:bg-neutral-200 focus-visible:outline-1 supports-[corner-shape:squircle]:rounded-[20px] dark:bg-neutral-800/20 dark:hover:bg-neutral-700"
-        >
-          {isAnimating ? (
-            <PauseIcon
-              className="size-4 text-neutral-800 dark:text-neutral-100"
-              aria-hidden="true"
-            />
-          ) : (
-            <PlayIcon
-              className="size-4 text-neutral-800 dark:text-neutral-100"
-              aria-hidden="true"
-            />
-          )}
-        </button>
-      )}
+      <button
+        type="button"
+        aria-label={isAnimating ? 'Stop animation' : 'Play animation'}
+        aria-pressed={isAnimating}
+        onClick={(event) => {
+          event.stopPropagation();
+          toggleAnimation();
+        }}
+        className={cn(
+          'focus-visible:outline-primary supports-[corner-shape:squircle]:corner-squircle absolute top-3 right-3 z-10 flex size-10 cursor-pointer items-center justify-center rounded-[14px] bg-neutral-200/20 transition-[background-color,opacity] duration-100 focus-within:-outline-offset-1 hover:bg-neutral-200 focus-visible:outline-1 supports-[corner-shape:squircle]:rounded-[20px] dark:bg-neutral-800/20 dark:hover:bg-neutral-700',
+          !isTouchDevice &&
+            'opacity-0 group-focus-within/card:opacity-100 group-hover/card:opacity-100 focus-visible:opacity-100'
+        )}
+      >
+        {isAnimating ? (
+          <PauseIcon
+            className="size-4 text-neutral-800 dark:text-neutral-100"
+            aria-hidden="true"
+          />
+        ) : (
+          <PlayIcon
+            className="size-4 text-neutral-800 dark:text-neutral-100"
+            aria-hidden="true"
+          />
+        )}
+      </button>
       {children}
     </div>
   );
@@ -211,7 +241,7 @@ const CopyCodeAction = ({ name }: Pick<Icon, 'name'>) => {
 const Actions = ({ name }: Pick<Icon, 'name'>) => {
   return (
     <TooltipProvider>
-      <div className="my-6 flex items-center justify-center gap-2 opacity-0 transition-opacity duration-100 group-hover/card:opacity-100 has-focus-visible:opacity-100 has-data-busy:opacity-100 has-data-popup-open:opacity-100 [@media(hover:none)]:opacity-100">
+      <div className="my-6 flex items-center justify-center gap-2 opacity-0 transition-opacity duration-100 group-focus-within/card:opacity-100 group-hover/card:opacity-100 has-focus-visible:opacity-100 has-data-busy:opacity-100 has-data-popup-open:opacity-100 [@media(hover:none)]:opacity-100">
         <CopyCodeAction name={name} />
         <CopyCLIAction name={name} />
       </div>

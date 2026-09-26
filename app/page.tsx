@@ -67,7 +67,7 @@ const Home = () => {
           target="_blank"
           rel="noopener noreferrer"
           tabIndex={0}
-          className="hover:decoration-primary focus-visible:outline-primary text-primary hover:underline hover:underline-offset-3 transition-[decoration-color] duration-100 focus-within:outline-offset-0 focus-visible:outline-1"
+          className="hover:decoration-primary focus-visible:outline-primary text-primary transition-[decoration-color] duration-100 focus-within:outline-offset-0 hover:underline hover:underline-offset-3 focus-visible:outline-1"
         >
           Square UI
         </a>{' '}

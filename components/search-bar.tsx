@@ -51,6 +51,7 @@ const SearchBar = ({
           <svg
             className="text-secondary pointer-events-none absolute left-3 size-5"
             xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -63,7 +64,9 @@ const SearchBar = ({
           </svg>
           <input
             ref={inputRef}
-            type="text"
+            type="search"
+            aria-label="Search icons by name or keyword"
+            aria-controls="icon-results"
             value={value}
             onChange={(e) => onChange(e.target.value)}
             placeholder="Search"
