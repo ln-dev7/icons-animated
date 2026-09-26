@@ -6010,6 +6010,19 @@
       ]
     },
     {
+      "name": "hugeicons-wifi-01",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-wifi-01.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-x",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -9957,6 +9970,19 @@
       "files": [
         {
           "path": "phosphor-webhooks-logo.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-wifi-high",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-wifi-high.tsx",
           "type": "registry:ui"
         }
       ]
@@ -14663,6 +14689,19 @@
       "files": [
         {
           "path": "tabler-webhook.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-wifi",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-wifi.tsx",
           "type": "registry:ui"
         }
       ]

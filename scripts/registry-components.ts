@@ -2821,6 +2821,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-wifi-01',
+    'path': path.join(__dirname, '../icons/hugeicons/wifi-01.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-x',
     'path': path.join(__dirname, '../icons/hugeicons/x.tsx'),
     'registryDependencies': [],
@@ -4662,6 +4668,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-webhooks-logo',
     'path': path.join(__dirname, '../icons/phosphor/webhooks-logo.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-wifi-high',
+    'path': path.join(__dirname, '../icons/phosphor/wifi-high.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -6846,6 +6858,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-webhook',
     'path': path.join(__dirname, '../icons/tabler/webhook.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-wifi',
+    'path': path.join(__dirname, '../icons/tabler/wifi.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

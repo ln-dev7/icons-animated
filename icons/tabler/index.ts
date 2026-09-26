@@ -359,6 +359,7 @@ import { TablerVolumeIcon } from './volume';
 import { TablerWalletIcon } from './wallet';
 import { TablerWashMachineIcon } from './wash-machine';
 import { TablerWebhookIcon } from './webhook';
+import { TablerWifiIcon } from './wifi';
 import { TablerWindmillIcon } from './windmill';
 import { TablerWorldIcon } from './world';
 import { TablerXIcon } from './x';
@@ -1996,6 +1997,7 @@ const TABLER_ICON_LIST = [
     keywords: ['wash', 'machine', 'washing-machine', 'washing'],
   },
   { name: 'webhook', icon: TablerWebhookIcon, keywords: ['webhook'] },
+  { name: 'wifi', icon: TablerWifiIcon, keywords: ['wifi'] },
   {
     name: 'windmill',
     icon: TablerWindmillIcon,
@@ -2372,6 +2374,7 @@ export {
   TablerWalletIcon,
   TablerWashMachineIcon,
   TablerWebhookIcon,
+  TablerWifiIcon,
   TablerWindmillIcon,
   TablerWorldIcon,
   TablerXIcon,

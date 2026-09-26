@@ -301,6 +301,7 @@ import { PhosphorWashingMachineIcon } from './washing-machine';
 import { PhosphorWaveformIcon } from './waveform';
 import { PhosphorWavesIcon } from './waves';
 import { PhosphorWebhooksLogoIcon } from './webhooks-logo';
+import { PhosphorWifiHighIcon } from './wifi-high';
 import { PhosphorXIcon } from './x';
 
 const PHOSPHOR_ICON_LIST = [
@@ -1750,6 +1751,7 @@ const PHOSPHOR_ICON_LIST = [
     icon: PhosphorWebhooksLogoIcon,
     keywords: ['webhooks', 'logo', 'webhook'],
   },
+  { name: 'wifi-high', icon: PhosphorWifiHighIcon, keywords: ['wifi', 'high'] },
   {
     name: 'x',
     icon: PhosphorXIcon,
@@ -2062,5 +2064,6 @@ export {
   PhosphorWaveformIcon,
   PhosphorWavesIcon,
   PhosphorWebhooksLogoIcon,
+  PhosphorWifiHighIcon,
   PhosphorXIcon,
 };

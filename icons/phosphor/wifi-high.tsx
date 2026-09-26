@@ -1,0 +1,192 @@
+/**
+ * @license
+ * MIT License
+ *
+ * Copyright (c) 2023 Phosphor Icons
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+'use client';
+
+import type { Variants } from 'motion/react';
+import type { HTMLAttributes } from 'react';
+import {
+  forwardRef,
+  useCallback,
+  useEffect,
+  useImperativeHandle,
+  useRef,
+} from 'react';
+import { motion, useAnimation, useReducedMotion } from 'motion/react';
+
+import { cn } from '@/lib/utils';
+
+export interface PhosphorWifiHighIconHandle {
+  startAnimation: () => void;
+  stopAnimation: () => void;
+}
+interface PhosphorWifiHighIconProps extends HTMLAttributes<HTMLDivElement> {
+  size?: number;
+}
+
+const ICON_VARIANTS: Variants = {
+  normal: {
+    x: 0,
+    y: 0,
+    rotate: 0,
+    scale: 1,
+    scaleX: 1,
+    scaleY: 1,
+    opacity: 1,
+    transition: { duration: 0.18, ease: 'easeOut' },
+  },
+  animate: { transition: { duration: 0.75, ease: 'easeInOut' } },
+};
+
+const DETAIL_0_VARIANTS: Variants = {
+  normal: { opacity: 1, transition: { duration: 0.18, ease: 'easeOut' } },
+  animate: {
+    opacity: [1, 0.2, 1],
+    transition: { duration: 0.55, delay: 0, ease: 'easeInOut' },
+  },
+};
+
+const DETAIL_1_VARIANTS: Variants = {
+  normal: { opacity: 1, transition: { duration: 0.18, ease: 'easeOut' } },
+  animate: {
+    opacity: [1, 0.2, 1],
+    transition: { duration: 0.55, delay: 0.12, ease: 'easeInOut' },
+  },
+};
+
+const DETAIL_2_VARIANTS: Variants = {
+  normal: { opacity: 1, transition: { duration: 0.18, ease: 'easeOut' } },
+  animate: {
+    opacity: [1, 0.2, 1],
+    transition: { duration: 0.55, delay: 0.24, ease: 'easeInOut' },
+  },
+};
+
+const PhosphorWifiHighIcon = forwardRef<
+  PhosphorWifiHighIconHandle,
+  PhosphorWifiHighIconProps
+>(
+  (
+    {
+      onMouseEnter,
+      onMouseLeave,
+      onFocus,
+      onBlur,
+      className,
+      size = 28,
+      ...props
+    },
+    ref
+  ) => {
+    const controls = useAnimation();
+    const reducedMotion = useReducedMotion();
+    const sequence = useRef(0);
+    const startAnimation = useCallback(() => {
+      const current = ++sequence.current;
+      controls.stop();
+      controls.set('normal');
+      if (reducedMotion) return;
+      void controls.start('animate').then(() => {
+        if (sequence.current === current) controls.set('normal');
+      });
+    }, [controls, reducedMotion]);
+    const stopAnimation = useCallback(() => {
+      sequence.current += 1;
+      void controls.start('normal');
+    }, [controls]);
+    useImperativeHandle(ref, () => ({ startAnimation, stopAnimation }), [
+      startAnimation,
+      stopAnimation,
+    ]);
+    useEffect(() => {
+      if (reducedMotion) {
+        sequence.current += 1;
+        controls.set('normal');
+      }
+      return () => {
+        sequence.current += 1;
+        controls.stop();
+      };
+    }, [controls, reducedMotion]);
+    return (
+      <div
+        {...props}
+        className={cn(className)}
+        onMouseEnter={(event) => {
+          if (!ref) startAnimation();
+          onMouseEnter?.(event);
+        }}
+        onMouseLeave={(event) => {
+          if (!ref) stopAnimation();
+          onMouseLeave?.(event);
+        }}
+        onFocus={(event) => {
+          if (!ref) startAnimation();
+          onFocus?.(event);
+        }}
+        onBlur={(event) => {
+          if (!ref) stopAnimation();
+          onBlur?.(event);
+        }}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width={size}
+          height={size}
+          viewBox="0 0 256 256"
+          fill="currentColor"
+          overflow="visible"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <motion.g
+            initial="normal"
+            animate={controls}
+            variants={ICON_VARIANTS}
+            style={{ transformOrigin: '128px 128px' }}
+          >
+            <path d="M140,204a12,12,0,1,1-12-12A12,12,0,0,1,140,204Z" />
+            <motion.path
+              d="M237.08,87A172,172,0,0,0,18.92,87,8,8,0,0,0,29.08,99.37a156,156,0,0,1,197.84,0A8,8,0,0,0,237.08,87Z"
+              variants={DETAIL_2_VARIANTS}
+              style={{ transformBox: 'fill-box', transformOrigin: 'center' }}
+            />
+            <motion.path
+              d="M205,122.77a124,124,0,0,0-153.94,0A8,8,0,0,0,61,135.31a108,108,0,0,1,134.06,0,8,8,0,0,0,11.24-1.3A8,8,0,0,0,205,122.77Z"
+              variants={DETAIL_1_VARIANTS}
+              style={{ transformBox: 'fill-box', transformOrigin: 'center' }}
+            />
+            <motion.path
+              d="M172.74,158.53a76.05,76.05,0,0,0-89.42,0,8,8,0,0,0,9.42,12.94,60,60,0,0,1,70.58,0,8,8,0,1,0,9.42-12.94Z"
+              variants={DETAIL_0_VARIANTS}
+              style={{ transformBox: 'fill-box', transformOrigin: 'center' }}
+            />
+          </motion.g>
+        </svg>
+      </div>
+    );
+  }
+);
+PhosphorWifiHighIcon.displayName = 'PhosphorWifiHighIcon';
+export { PhosphorWifiHighIcon };
