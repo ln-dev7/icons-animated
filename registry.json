@@ -1967,6 +1967,19 @@
       ]
     },
     {
+      "name": "hugeicons-discord",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-discord.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-download",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -3579,6 +3592,19 @@
       ]
     },
     {
+      "name": "phosphor-discord-logo",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-discord-logo.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-download",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -4900,6 +4926,19 @@
       "files": [
         {
           "path": "tabler-brand-chrome.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-brand-discord",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-brand-discord.tsx",
           "type": "registry:ui"
         }
       ]

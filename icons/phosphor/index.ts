@@ -92,6 +92,7 @@ import { PhosphorCubeIcon } from './cube';
 import { PhosphorCurrencyCircleDollarIcon } from './currency-circle-dollar';
 import { PhosphorCursorClickIcon } from './cursor-click';
 import { PhosphorDiscIcon } from './disc';
+import { PhosphorDiscordLogoIcon } from './discord-logo';
 import { PhosphorDownloadIcon } from './download';
 import { PhosphorEnvelopeIcon } from './envelope';
 import { PhosphorEyeIcon } from './eye';
@@ -629,6 +630,11 @@ const PHOSPHOR_ICON_LIST = [
   },
   { name: 'disc', icon: PhosphorDiscIcon, keywords: ['disc', 'disc-3', '3'] },
   {
+    name: 'discord-logo',
+    icon: PhosphorDiscordLogoIcon,
+    keywords: ['discord', 'logo'],
+  },
+  {
     name: 'download',
     icon: PhosphorDownloadIcon,
     keywords: ['download', 'save', 'arrow', 'get', 'export'],
@@ -977,6 +983,7 @@ export {
   PhosphorCurrencyCircleDollarIcon,
   PhosphorCursorClickIcon,
   PhosphorDiscIcon,
+  PhosphorDiscordLogoIcon,
   PhosphorDownloadIcon,
   PhosphorEnvelopeIcon,
   PhosphorEyeIcon,

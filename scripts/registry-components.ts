@@ -928,6 +928,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-discord',
+    'path': path.join(__dirname, '../icons/hugeicons/discord.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-download',
     'path': path.join(__dirname, '../icons/hugeicons/download.tsx'),
     'registryDependencies': [],
@@ -1684,6 +1690,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'phosphor-discord-logo',
+    'path': path.join(__dirname, '../icons/phosphor/discord-logo.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'phosphor-download',
     'path': path.join(__dirname, '../icons/phosphor/download.tsx'),
     'registryDependencies': [],
@@ -2292,6 +2304,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-brand-chrome',
     'path': path.join(__dirname, '../icons/tabler/brand-chrome.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-brand-discord',
+    'path': path.join(__dirname, '../icons/tabler/brand-discord.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

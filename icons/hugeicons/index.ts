@@ -149,6 +149,7 @@ import { HugeiconsCreditCardIcon } from './credit-card';
 import { HugeiconsCupSodaIcon } from './cup-soda';
 import { HugeiconsDatabaseBackupIcon } from './database-backup';
 import { HugeiconsDisc3Icon } from './disc-3';
+import { HugeiconsDiscordIcon } from './discord';
 import { HugeiconsDownloadIcon } from './download';
 import { HugeiconsEyeIcon } from './eye';
 import { HugeiconsFilterIcon } from './filter';
@@ -899,6 +900,7 @@ const HUGEICONS_ICON_LIST = [
     icon: HugeiconsDisc3Icon,
     keywords: ['disc', '3', 'disc-3'],
   },
+  { name: 'discord', icon: HugeiconsDiscordIcon, keywords: ['discord'] },
   {
     name: 'download',
     icon: HugeiconsDownloadIcon,
@@ -1225,6 +1227,7 @@ export {
   HugeiconsCupSodaIcon,
   HugeiconsDatabaseBackupIcon,
   HugeiconsDisc3Icon,
+  HugeiconsDiscordIcon,
   HugeiconsDownloadIcon,
   HugeiconsEyeIcon,
   HugeiconsFilterIcon,
