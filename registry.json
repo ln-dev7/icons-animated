@@ -1421,6 +1421,19 @@
       ]
     },
     {
+      "name": "hugeicons-circle-chevron-down",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-circle-chevron-down.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-download",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2365,6 +2378,19 @@
       "files": [
         {
           "path": "phosphor-calendar-dots.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-caret-circle-down",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-caret-circle-down.tsx",
           "type": "registry:ui"
         }
       ]
@@ -4107,6 +4133,19 @@
       "files": [
         {
           "path": "tabler-circle-check.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-circle-chevron-down",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-circle-chevron-down.tsx",
           "type": "registry:ui"
         }
       ]
