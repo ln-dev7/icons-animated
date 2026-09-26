@@ -47,6 +47,7 @@ import { TablerMailIcon } from './mail';
 import { TablerMenuIcon } from './menu';
 import { TablerMoodAngryIcon } from './mood-angry';
 import { TablerMoodAnnoyedIcon } from './mood-annoyed';
+import { TablerPaperclipIcon } from './paperclip';
 import { TablerPencilIcon } from './pencil';
 import { TablerPlaneIcon } from './plane';
 import { TablerPlusIcon } from './plus';
@@ -340,6 +341,11 @@ const TABLER_ICON_LIST = [
     keywords: ['mood', 'annoyed'],
   },
   {
+    name: 'paperclip',
+    icon: TablerPaperclipIcon,
+    keywords: ['paperclip', 'attach-file', 'attach', 'file'],
+  },
+  {
     name: 'pencil',
     icon: TablerPencilIcon,
     keywords: ['pencil', 'edit', 'write', 'pen', 'modify'],
@@ -517,6 +523,7 @@ export {
   TablerMenuIcon,
   TablerMoodAngryIcon,
   TablerMoodAnnoyedIcon,
+  TablerPaperclipIcon,
   TablerPencilIcon,
   TablerPlaneIcon,
   TablerPlusIcon,

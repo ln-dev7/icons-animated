@@ -238,6 +238,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-attachment-01',
+    'path': path.join(__dirname, '../icons/hugeicons/attachment-01.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-bell',
     'path': path.join(__dirname, '../icons/hugeicons/bell.tsx'),
     'registryDependencies': [],
@@ -679,6 +685,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'phosphor-paperclip',
+    'path': path.join(__dirname, '../icons/phosphor/paperclip.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'phosphor-pencil',
     'path': path.join(__dirname, '../icons/phosphor/pencil.tsx'),
     'registryDependencies': [],
@@ -1089,6 +1101,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-mood-annoyed',
     'path': path.join(__dirname, '../icons/tabler/mood-annoyed.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-paperclip',
+    'path': path.join(__dirname, '../icons/tabler/paperclip.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

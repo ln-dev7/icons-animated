@@ -39,6 +39,7 @@ import { PhosphorHeartIcon } from './heart';
 import { PhosphorHouseIcon } from './house';
 import { PhosphorListIcon } from './list';
 import { PhosphorLockIcon } from './lock';
+import { PhosphorPaperclipIcon } from './paperclip';
 import { PhosphorPencilIcon } from './pencil';
 import { PhosphorPersonArmsSpreadIcon } from './person-arms-spread';
 import { PhosphorPlusIcon } from './plus';
@@ -319,6 +320,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['lock', 'security', 'password', 'secure', 'private'],
   },
   {
+    name: 'paperclip',
+    icon: PhosphorPaperclipIcon,
+    keywords: ['paperclip', 'attach-file', 'attach', 'file'],
+  },
+  {
     name: 'pencil',
     icon: PhosphorPencilIcon,
     keywords: ['pencil', 'edit', 'write', 'pen', 'modify'],
@@ -497,6 +503,7 @@ export {
   PhosphorHouseIcon,
   PhosphorListIcon,
   PhosphorLockIcon,
+  PhosphorPaperclipIcon,
   PhosphorPencilIcon,
   PhosphorPersonArmsSpreadIcon,
   PhosphorPlusIcon,

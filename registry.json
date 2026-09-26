@@ -498,6 +498,19 @@
       ]
     },
     {
+      "name": "hugeicons-attachment-01",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-attachment-01.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-bell",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -1447,6 +1460,19 @@
       ]
     },
     {
+      "name": "phosphor-paperclip",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-paperclip.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-pencil",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2339,6 +2365,19 @@
       "files": [
         {
           "path": "tabler-mood-annoyed.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-paperclip",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-paperclip.tsx",
           "type": "registry:ui"
         }
       ]
