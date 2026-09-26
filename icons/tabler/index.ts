@@ -31,6 +31,7 @@ import { TablerLockIcon } from './lock';
 import { TablerMailIcon } from './mail';
 import { TablerMenuIcon } from './menu';
 import { TablerMoodAngryIcon } from './mood-angry';
+import { TablerMoodAnnoyedIcon } from './mood-annoyed';
 import { TablerPencilIcon } from './pencil';
 import { TablerPlaneIcon } from './plane';
 import { TablerPlusIcon } from './plus';
@@ -252,6 +253,11 @@ const TABLER_ICON_LIST = [
     keywords: ['mood', 'angry'],
   },
   {
+    name: 'mood-annoyed',
+    icon: TablerMoodAnnoyedIcon,
+    keywords: ['mood', 'annoyed'],
+  },
+  {
     name: 'pencil',
     icon: TablerPencilIcon,
     keywords: ['pencil', 'edit', 'write', 'pen', 'modify'],
@@ -357,6 +363,7 @@ export {
   TablerMailIcon,
   TablerMenuIcon,
   TablerMoodAngryIcon,
+  TablerMoodAnnoyedIcon,
   TablerPencilIcon,
   TablerPlaneIcon,
   TablerPlusIcon,

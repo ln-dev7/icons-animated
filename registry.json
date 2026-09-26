@@ -186,6 +186,19 @@
       ]
     },
     {
+      "name": "hugeicons-annoyed",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-annoyed.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-arrow-down",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -1109,6 +1122,19 @@
       ]
     },
     {
+      "name": "phosphor-smiley-meh",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-smiley-meh.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-star",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -1637,6 +1663,19 @@
       "files": [
         {
           "path": "tabler-mood-angry.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-mood-annoyed",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-mood-annoyed.tsx",
           "type": "registry:ui"
         }
       ]

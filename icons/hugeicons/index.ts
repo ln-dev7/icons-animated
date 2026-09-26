@@ -12,6 +12,7 @@ import { HugeiconsAlignHorizontalSpaceAroundIcon } from './align-horizontal-spac
 import { HugeiconsAlignVerticalSpaceAroundIcon } from './align-vertical-space-around';
 import { HugeiconsAmbulanceIcon } from './ambulance';
 import { HugeiconsAngryIcon } from './angry';
+import { HugeiconsAnnoyedIcon } from './annoyed';
 import { HugeiconsArrowDownIcon } from './arrow-down';
 import { HugeiconsArrowLeftIcon } from './arrow-left';
 import { HugeiconsArrowRightIcon } from './arrow-right';
@@ -108,6 +109,7 @@ const HUGEICONS_ICON_LIST = [
   },
   { name: 'ambulance', icon: HugeiconsAmbulanceIcon, keywords: ['ambulance'] },
   { name: 'angry', icon: HugeiconsAngryIcon, keywords: ['angry'] },
+  { name: 'annoyed', icon: HugeiconsAnnoyedIcon, keywords: ['annoyed'] },
   {
     name: 'arrow-down',
     icon: HugeiconsArrowDownIcon,
@@ -392,6 +394,7 @@ export {
   HugeiconsAlignVerticalSpaceAroundIcon,
   HugeiconsAmbulanceIcon,
   HugeiconsAngryIcon,
+  HugeiconsAnnoyedIcon,
   HugeiconsArrowDownIcon,
   HugeiconsArrowLeftIcon,
   HugeiconsArrowRightIcon,

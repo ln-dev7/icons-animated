@@ -94,6 +94,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-annoyed',
+    'path': path.join(__dirname, '../icons/hugeicons/annoyed.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-arrow-down',
     'path': path.join(__dirname, '../icons/hugeicons/arrow-down.tsx'),
     'registryDependencies': [],
@@ -523,6 +529,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'phosphor-smiley-meh',
+    'path': path.join(__dirname, '../icons/phosphor/smiley-meh.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'phosphor-star',
     'path': path.join(__dirname, '../icons/phosphor/star.tsx'),
     'registryDependencies': [],
@@ -765,6 +777,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-mood-angry',
     'path': path.join(__dirname, '../icons/tabler/mood-angry.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-mood-annoyed',
+    'path': path.join(__dirname, '../icons/tabler/mood-annoyed.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
