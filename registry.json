@@ -2305,6 +2305,19 @@
       ]
     },
     {
+      "name": "hugeicons-fish-symbol",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-fish-symbol.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-heart",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -6421,6 +6434,19 @@
       "files": [
         {
           "path": "tabler-fingerprint.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-fish-christianity",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-fish-christianity.tsx",
           "type": "registry:ui"
         }
       ]

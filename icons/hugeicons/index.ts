@@ -175,6 +175,7 @@ import { HugeiconsFileStackIcon } from './file-stack';
 import { HugeiconsFileTextIcon } from './file-text';
 import { HugeiconsFilterIcon } from './filter';
 import { HugeiconsFingerPrintIcon } from './finger-print';
+import { HugeiconsFishSymbolIcon } from './fish-symbol';
 import { HugeiconsHeartIcon } from './heart';
 import { HugeiconsHomeIcon } from './home';
 import { HugeiconsLockIcon } from './lock';
@@ -1018,6 +1019,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['finger', 'print', 'fingerprint'],
   },
   {
+    name: 'fish-symbol',
+    icon: HugeiconsFishSymbolIcon,
+    keywords: ['fish', 'symbol', 'fish-symbol'],
+  },
+  {
     name: 'heart',
     icon: HugeiconsHeartIcon,
     keywords: ['heart', 'love', 'like', 'favorite', 'health'],
@@ -1359,6 +1365,7 @@ export {
   HugeiconsFileTextIcon,
   HugeiconsFilterIcon,
   HugeiconsFingerPrintIcon,
+  HugeiconsFishSymbolIcon,
   HugeiconsHeartIcon,
   HugeiconsHomeIcon,
   HugeiconsLockIcon,

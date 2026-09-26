@@ -1084,6 +1084,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-fish-symbol',
+    'path': path.join(__dirname, '../icons/hugeicons/fish-symbol.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-heart',
     'path': path.join(__dirname, '../icons/hugeicons/heart.tsx'),
     'registryDependencies': [],
@@ -2994,6 +3000,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-fingerprint',
     'path': path.join(__dirname, '../icons/tabler/fingerprint.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-fish-christianity',
+    'path': path.join(__dirname, '../icons/tabler/fish-christianity.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
