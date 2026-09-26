@@ -3956,6 +3956,19 @@
       ]
     },
     {
+      "name": "hugeicons-mic-01",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-mic-01.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-mouse-pointer-click",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -6564,6 +6577,19 @@
       "files": [
         {
           "path": "phosphor-map-pin-plus.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-microphone",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-microphone.tsx",
           "type": "registry:ui"
         }
       ]
@@ -9931,6 +9957,19 @@
       "files": [
         {
           "path": "tabler-message-x.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-microphone",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-microphone.tsx",
           "type": "registry:ui"
         }
       ]

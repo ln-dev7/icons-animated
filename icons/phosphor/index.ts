@@ -176,6 +176,7 @@ import { PhosphorLockOpenIcon } from './lock-open';
 import { PhosphorMailboxIcon } from './mailbox';
 import { PhosphorMapPinIcon } from './map-pin';
 import { PhosphorMapPinPlusIcon } from './map-pin-plus';
+import { PhosphorMicrophoneIcon } from './microphone';
 import { PhosphorNotebookIcon } from './notebook';
 import { PhosphorPaperclipIcon } from './paperclip';
 import { PhosphorPencilIcon } from './pencil';
@@ -1103,6 +1104,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['map', 'pin', 'plus', 'map-pin-plus-inside', 'inside'],
   },
   {
+    name: 'microphone',
+    icon: PhosphorMicrophoneIcon,
+    keywords: ['microphone', 'mic'],
+  },
+  {
     name: 'notebook',
     icon: PhosphorNotebookIcon,
     keywords: ['notebook', 'book-text', 'book', 'text'],
@@ -1526,6 +1532,7 @@ export {
   PhosphorMailboxIcon,
   PhosphorMapPinIcon,
   PhosphorMapPinPlusIcon,
+  PhosphorMicrophoneIcon,
   PhosphorNotebookIcon,
   PhosphorPaperclipIcon,
   PhosphorPencilIcon,

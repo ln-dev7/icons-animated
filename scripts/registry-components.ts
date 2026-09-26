@@ -1864,6 +1864,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-mic-01',
+    'path': path.join(__dirname, '../icons/hugeicons/mic-01.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-mouse-pointer-click',
     'path': path.join(__dirname, '../icons/hugeicons/mouse-pointer-click.tsx'),
     'registryDependencies': [],
@@ -3081,6 +3087,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-map-pin-plus',
     'path': path.join(__dirname, '../icons/phosphor/map-pin-plus.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-microphone',
+    'path': path.join(__dirname, '../icons/phosphor/microphone.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -4635,6 +4647,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-message-x',
     'path': path.join(__dirname, '../icons/tabler/message-x.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-microphone',
+    'path': path.join(__dirname, '../icons/tabler/microphone.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

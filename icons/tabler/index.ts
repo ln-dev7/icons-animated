@@ -213,6 +213,7 @@ import { TablerMessageCircleXIcon } from './message-circle-x';
 import { TablerMessageDotsIcon } from './message-dots';
 import { TablerMessagePlusIcon } from './message-plus';
 import { TablerMessageXIcon } from './message-x';
+import { TablerMicrophoneIcon } from './microphone';
 import { TablerMoodAngryIcon } from './mood-angry';
 import { TablerMoodAnnoyedIcon } from './mood-annoyed';
 import { TablerMoodHappyIcon } from './mood-happy';
@@ -1199,6 +1200,11 @@ const TABLER_ICON_LIST = [
     keywords: ['message', 'x', 'message-square-x', 'square'],
   },
   {
+    name: 'microphone',
+    icon: TablerMicrophoneIcon,
+    keywords: ['microphone', 'mic'],
+  },
+  {
     name: 'mood-angry',
     icon: TablerMoodAngryIcon,
     keywords: ['mood', 'angry'],
@@ -1639,6 +1645,7 @@ export {
   TablerMessageDotsIcon,
   TablerMessagePlusIcon,
   TablerMessageXIcon,
+  TablerMicrophoneIcon,
   TablerMoodAngryIcon,
   TablerMoodAnnoyedIcon,
   TablerMoodHappyIcon,
