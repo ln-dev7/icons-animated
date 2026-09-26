@@ -204,6 +204,7 @@ import { TablerMapPinPlusIcon } from './map-pin-plus';
 import { TablerMaximizeIcon } from './maximize';
 import { TablerMenuIcon } from './menu';
 import { TablerMessageChatbotIcon } from './message-chatbot';
+import { TablerMessageCircleIcon } from './message-circle';
 import { TablerMoodAngryIcon } from './mood-angry';
 import { TablerMoodAnnoyedIcon } from './mood-annoyed';
 import { TablerMoodHappyIcon } from './mood-happy';
@@ -1145,6 +1146,11 @@ const TABLER_ICON_LIST = [
     keywords: ['message', 'chatbot', 'bot-message-square', 'bot', 'square'],
   },
   {
+    name: 'message-circle',
+    icon: TablerMessageCircleIcon,
+    keywords: ['message', 'circle', 'message-circle'],
+  },
+  {
     name: 'mood-angry',
     icon: TablerMoodAngryIcon,
     keywords: ['mood', 'angry'],
@@ -1576,6 +1582,7 @@ export {
   TablerMaximizeIcon,
   TablerMenuIcon,
   TablerMessageChatbotIcon,
+  TablerMessageCircleIcon,
   TablerMoodAngryIcon,
   TablerMoodAnnoyedIcon,
   TablerMoodHappyIcon,

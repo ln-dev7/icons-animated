@@ -1,0 +1,182 @@
+/**
+ * @license
+ * MIT License
+ *
+ * Copyright (c) 2020-2026 Paweł Kuna
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+'use client';
+
+import type { Variants } from 'motion/react';
+import type { HTMLAttributes } from 'react';
+import {
+  forwardRef,
+  useCallback,
+  useEffect,
+  useImperativeHandle,
+  useRef,
+} from 'react';
+import { motion, useAnimation, useReducedMotion } from 'motion/react';
+
+import { cn } from '@/lib/utils';
+
+export interface TablerMessageCircleIconHandle {
+  startAnimation: () => void;
+  stopAnimation: () => void;
+}
+interface TablerMessageCircleIconProps extends HTMLAttributes<HTMLDivElement> {
+  size?: number;
+}
+
+const ICON_VARIANTS: Variants = {
+  normal: {
+    x: 0,
+    y: 0,
+    rotate: 0,
+    scale: 1,
+    scaleX: 1,
+    scaleY: 1,
+    opacity: 1,
+    transition: { duration: 0.18, ease: 'easeOut' },
+  },
+  animate: {
+    x: [0, 0.45, 0],
+    transition: { duration: 0.65, ease: 'easeInOut' },
+  },
+};
+
+const ELEMENT_VARIANTS: Variants = {
+  normal: {
+    pathLength: 1,
+    opacity: 1,
+    scaleY: 1,
+    y: 0,
+    transition: { duration: 0.18 },
+  },
+  animate: (index: number) => ({
+    ...{ pathLength: [0.3, 1], opacity: [0.45, 1] },
+    transition: {
+      duration: 0.5,
+      delay: Math.min(index * 0.055, 0.22),
+      ease: 'easeInOut',
+    },
+  }),
+};
+
+const TablerMessageCircleIcon = forwardRef<
+  TablerMessageCircleIconHandle,
+  TablerMessageCircleIconProps
+>(
+  (
+    {
+      onMouseEnter,
+      onMouseLeave,
+      onFocus,
+      onBlur,
+      className,
+      size = 28,
+      ...props
+    },
+    ref
+  ) => {
+    const controls = useAnimation();
+    const reducedMotion = useReducedMotion();
+    const sequence = useRef(0);
+    const startAnimation = useCallback(() => {
+      const current = ++sequence.current;
+      controls.stop();
+      controls.set('normal');
+      if (reducedMotion) return;
+      void controls.start('animate').then(() => {
+        if (sequence.current === current) controls.set('normal');
+      });
+    }, [controls, reducedMotion]);
+    const stopAnimation = useCallback(() => {
+      sequence.current += 1;
+      void controls.start('normal');
+    }, [controls]);
+    useImperativeHandle(ref, () => ({ startAnimation, stopAnimation }), [
+      startAnimation,
+      stopAnimation,
+    ]);
+    useEffect(() => {
+      if (reducedMotion) {
+        sequence.current += 1;
+        controls.set('normal');
+      }
+      return () => {
+        sequence.current += 1;
+        controls.stop();
+      };
+    }, [controls, reducedMotion]);
+    return (
+      <div
+        {...props}
+        className={cn(className)}
+        onMouseEnter={(event) => {
+          if (!ref) startAnimation();
+          onMouseEnter?.(event);
+        }}
+        onMouseLeave={(event) => {
+          if (!ref) stopAnimation();
+          onMouseLeave?.(event);
+        }}
+        onFocus={(event) => {
+          if (!ref) startAnimation();
+          onFocus?.(event);
+        }}
+        onBlur={(event) => {
+          if (!ref) stopAnimation();
+          onBlur?.(event);
+        }}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width={size}
+          height={size}
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          overflow="visible"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <motion.g
+            initial="normal"
+            animate={controls}
+            variants={ICON_VARIANTS}
+            style={{ transformOrigin: '12px 12px' }}
+          >
+            <motion.path
+              d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1"
+              variants={ELEMENT_VARIANTS}
+              custom={0}
+            />
+          </motion.g>
+        </svg>
+      </div>
+    );
+  }
+);
+TablerMessageCircleIcon.displayName = 'TablerMessageCircleIcon';
+export { TablerMessageCircleIcon };

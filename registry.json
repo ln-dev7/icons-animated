@@ -3800,6 +3800,19 @@
       ]
     },
     {
+      "name": "hugeicons-message-circle",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-message-circle.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-mouse-pointer-click",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -5017,6 +5030,19 @@
       "files": [
         {
           "path": "phosphor-chart-scatter.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-chat-circle",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-chat-circle.tsx",
           "type": "registry:ui"
         }
       ]
@@ -9606,6 +9632,19 @@
       "files": [
         {
           "path": "tabler-message-chatbot.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-message-circle",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-message-circle.tsx",
           "type": "registry:ui"
         }
       ]
