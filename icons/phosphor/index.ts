@@ -43,6 +43,7 @@ import { PhosphorBriefcaseIcon } from './briefcase';
 import { PhosphorCalendarIcon } from './calendar';
 import { PhosphorCalendarCheckIcon } from './calendar-check';
 import { PhosphorCalendarDotsIcon } from './calendar-dots';
+import { PhosphorCaretLineLeftIcon } from './caret-line-left';
 import { PhosphorChartBarIcon } from './chart-bar';
 import { PhosphorChartLineIcon } from './chart-line';
 import { PhosphorChartPieIcon } from './chart-pie';
@@ -312,6 +313,11 @@ const PHOSPHOR_ICON_LIST = [
     name: 'calendar-dots',
     icon: PhosphorCalendarDotsIcon,
     keywords: ['calendar', 'dots', 'calendar-days', 'days'],
+  },
+  {
+    name: 'caret-line-left',
+    icon: PhosphorCaretLineLeftIcon,
+    keywords: ['caret', 'line', 'left', 'chevron-first', 'chevron', 'first'],
   },
   {
     name: 'chart-bar',
@@ -684,6 +690,7 @@ export {
   PhosphorCalendarIcon,
   PhosphorCalendarCheckIcon,
   PhosphorCalendarDotsIcon,
+  PhosphorCaretLineLeftIcon,
   PhosphorChartBarIcon,
   PhosphorChartLineIcon,
   PhosphorChartPieIcon,

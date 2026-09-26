@@ -610,6 +610,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-chevron-first',
+    'path': path.join(__dirname, '../icons/hugeicons/chevron-first.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-chevron-left',
     'path': path.join(__dirname, '../icons/hugeicons/chevron-left.tsx'),
     'registryDependencies': [],
@@ -1059,6 +1065,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-calendar-dots',
     'path': path.join(__dirname, '../icons/phosphor/calendar-dots.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-caret-line-left',
+    'path': path.join(__dirname, '../icons/phosphor/caret-line-left.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -1797,6 +1809,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-chevron-left',
     'path': path.join(__dirname, '../icons/tabler/chevron-left.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-chevron-left-pipe',
+    'path': path.join(__dirname, '../icons/tabler/chevron-left-pipe.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

@@ -96,6 +96,7 @@ import { HugeiconsChessKingIcon } from './chess-king';
 import { HugeiconsChessKnightIcon } from './chess-knight';
 import { HugeiconsChessPawnIcon } from './chess-pawn';
 import { HugeiconsChevronDownIcon } from './chevron-down';
+import { HugeiconsChevronFirstIcon } from './chevron-first';
 import { HugeiconsChevronLeftIcon } from './chevron-left';
 import { HugeiconsChevronRightIcon } from './chevron-right';
 import { HugeiconsChevronUpIcon } from './chevron-up';
@@ -594,6 +595,11 @@ const HUGEICONS_ICON_LIST = [
     ],
   },
   {
+    name: 'chevron-first',
+    icon: HugeiconsChevronFirstIcon,
+    keywords: ['chevron', 'first', 'chevron-first'],
+  },
+  {
     name: 'chevron-left',
     icon: HugeiconsChevronLeftIcon,
     keywords: [
@@ -890,6 +896,7 @@ export {
   HugeiconsChessKnightIcon,
   HugeiconsChessPawnIcon,
   HugeiconsChevronDownIcon,
+  HugeiconsChevronFirstIcon,
   HugeiconsChevronLeftIcon,
   HugeiconsChevronRightIcon,
   HugeiconsChevronUpIcon,

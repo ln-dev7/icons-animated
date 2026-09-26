@@ -1278,6 +1278,19 @@
       ]
     },
     {
+      "name": "hugeicons-chevron-first",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-chevron-first.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-chevron-left",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2248,6 +2261,19 @@
       "files": [
         {
           "path": "phosphor-calendar-dots.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-caret-line-left",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-caret-line-left.tsx",
           "type": "registry:ui"
         }
       ]
@@ -3847,6 +3873,19 @@
       "files": [
         {
           "path": "tabler-chevron-left.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-chevron-left-pipe",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-chevron-left-pipe.tsx",
           "type": "registry:ui"
         }
       ]

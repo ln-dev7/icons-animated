@@ -70,6 +70,7 @@ import { TablerChessKingIcon } from './chess-king';
 import { TablerChessKnightIcon } from './chess-knight';
 import { TablerChevronDownIcon } from './chevron-down';
 import { TablerChevronLeftIcon } from './chevron-left';
+import { TablerChevronLeftPipeIcon } from './chevron-left-pipe';
 import { TablerChevronRightIcon } from './chevron-right';
 import { TablerChevronUpIcon } from './chevron-up';
 import { TablerDeviceCctvIcon } from './device-cctv';
@@ -433,6 +434,11 @@ const TABLER_ICON_LIST = [
     ],
   },
   {
+    name: 'chevron-left-pipe',
+    icon: TablerChevronLeftPipeIcon,
+    keywords: ['chevron', 'left', 'pipe', 'chevron-first', 'first'],
+  },
+  {
     name: 'chevron-right',
     icon: TablerChevronRightIcon,
     keywords: [
@@ -758,6 +764,7 @@ export {
   TablerChessKnightIcon,
   TablerChevronDownIcon,
   TablerChevronLeftIcon,
+  TablerChevronLeftPipeIcon,
   TablerChevronRightIcon,
   TablerChevronUpIcon,
   TablerDeviceCctvIcon,
