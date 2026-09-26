@@ -3722,6 +3722,19 @@
       ]
     },
     {
+      "name": "hugeicons-map-pin-plus-inside",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-map-pin-plus-inside.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-menu",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -6252,6 +6265,19 @@
       "files": [
         {
           "path": "phosphor-map-pin.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-map-pin-plus",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-map-pin-plus.tsx",
           "type": "registry:ui"
         }
       ]

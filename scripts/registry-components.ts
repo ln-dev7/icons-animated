@@ -1750,6 +1750,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-map-pin-plus-inside',
+    'path': path.join(__dirname, '../icons/hugeicons/map-pin-plus-inside.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-menu',
     'path': path.join(__dirname, '../icons/hugeicons/menu.tsx'),
     'registryDependencies': [],
@@ -2931,6 +2937,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-map-pin',
     'path': path.join(__dirname, '../icons/phosphor/map-pin.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-map-pin-plus',
+    'path': path.join(__dirname, '../icons/phosphor/map-pin-plus.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
