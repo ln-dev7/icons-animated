@@ -127,6 +127,7 @@ import { PhosphorGearIcon } from './gear';
 import { PhosphorGearFineIcon } from './gear-fine';
 import { PhosphorGitBranchIcon } from './git-branch';
 import { PhosphorGitCommitIcon } from './git-commit';
+import { PhosphorGitDiffIcon } from './git-diff';
 import { PhosphorGlobeHemisphereWestIcon } from './globe-hemisphere-west';
 import { PhosphorGoogleChromeLogoIcon } from './google-chrome-logo';
 import { PhosphorHeartIcon } from './heart';
@@ -813,6 +814,18 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['git', 'commit', 'git-commit-horizontal', 'horizontal'],
   },
   {
+    name: 'git-diff',
+    icon: PhosphorGitDiffIcon,
+    keywords: [
+      'git',
+      'diff',
+      'git-compare',
+      'git-compare-arrows',
+      'compare',
+      'arrows',
+    ],
+  },
+  {
     name: 'globe-hemisphere-west',
     icon: PhosphorGlobeHemisphereWestIcon,
     keywords: ['globe', 'hemisphere', 'west', 'earth'],
@@ -1176,6 +1189,7 @@ export {
   PhosphorGearFineIcon,
   PhosphorGitBranchIcon,
   PhosphorGitCommitIcon,
+  PhosphorGitDiffIcon,
   PhosphorGlobeHemisphereWestIcon,
   PhosphorGoogleChromeLogoIcon,
   PhosphorHeartIcon,

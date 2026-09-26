@@ -2799,6 +2799,19 @@
       ]
     },
     {
+      "name": "hugeicons-git-compare",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-git-compare.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-heart",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -4835,6 +4848,19 @@
       "files": [
         {
           "path": "phosphor-git-commit.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-git-diff",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-git-diff.tsx",
           "type": "registry:ui"
         }
       ]
@@ -7370,6 +7396,19 @@
       "files": [
         {
           "path": "tabler-git-commit.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-git-compare",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-git-compare.tsx",
           "type": "registry:ui"
         }
       ]
