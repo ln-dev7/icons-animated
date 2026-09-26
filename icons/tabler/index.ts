@@ -171,6 +171,7 @@ import { TablerHeartbeatIcon } from './heartbeat';
 import { TablerHelpCircleIcon } from './help-circle';
 import { TablerHistoryIcon } from './history';
 import { TablerHomeIcon } from './home';
+import { TablerHourglassIcon } from './hourglass';
 import { TablerLayoutAlignCenterIcon } from './layout-align-center';
 import { TablerLayoutAlignMiddleIcon } from './layout-align-middle';
 import { TablerLockIcon } from './lock';
@@ -984,6 +985,7 @@ const TABLER_ICON_LIST = [
     icon: TablerHomeIcon,
     keywords: ['home', 'house', 'building', 'main', 'dashboard'],
   },
+  { name: 'hourglass', icon: TablerHourglassIcon, keywords: ['hourglass'] },
   {
     name: 'layout-align-center',
     icon: TablerLayoutAlignCenterIcon,
@@ -1401,6 +1403,7 @@ export {
   TablerHelpCircleIcon,
   TablerHistoryIcon,
   TablerHomeIcon,
+  TablerHourglassIcon,
   TablerLayoutAlignCenterIcon,
   TablerLayoutAlignMiddleIcon,
   TablerLockIcon,

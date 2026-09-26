@@ -3189,6 +3189,19 @@
       ]
     },
     {
+      "name": "hugeicons-hourglass",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-hourglass.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-lock",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -5485,6 +5498,19 @@
       "files": [
         {
           "path": "phosphor-heartbeat.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-hourglass",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-hourglass.tsx",
           "type": "registry:ui"
         }
       ]
@@ -8228,6 +8254,19 @@
       "files": [
         {
           "path": "tabler-home.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-hourglass",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-hourglass.tsx",
           "type": "registry:ui"
         }
       ]

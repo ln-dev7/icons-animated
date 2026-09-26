@@ -149,6 +149,7 @@ import { PhosphorHandHeartIcon } from './hand-heart';
 import { PhosphorHandPalmIcon } from './hand-palm';
 import { PhosphorHeartIcon } from './heart';
 import { PhosphorHeartbeatIcon } from './heartbeat';
+import { PhosphorHourglassIcon } from './hourglass';
 import { PhosphorHouseIcon } from './house';
 import { PhosphorListIcon } from './list';
 import { PhosphorLockIcon } from './lock';
@@ -940,6 +941,7 @@ const PHOSPHOR_ICON_LIST = [
     icon: PhosphorHeartbeatIcon,
     keywords: ['heartbeat', 'heart-pulse', 'heart', 'pulse'],
   },
+  { name: 'hourglass', icon: PhosphorHourglassIcon, keywords: ['hourglass'] },
   {
     name: 'house',
     icon: PhosphorHouseIcon,
@@ -1311,6 +1313,7 @@ export {
   PhosphorHandPalmIcon,
   PhosphorHeartIcon,
   PhosphorHeartbeatIcon,
+  PhosphorHourglassIcon,
   PhosphorHouseIcon,
   PhosphorListIcon,
   PhosphorLockIcon,
