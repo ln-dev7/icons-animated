@@ -5204,6 +5204,19 @@
       ]
     },
     {
+      "name": "hugeicons-square-chevron-right",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-square-chevron-right.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-star",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -12908,6 +12921,19 @@
       "files": [
         {
           "path": "tabler-square-chevron-left.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-square-chevron-right",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-square-chevron-right.tsx",
           "type": "registry:ui"
         }
       ]
