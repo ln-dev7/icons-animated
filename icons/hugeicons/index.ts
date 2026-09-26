@@ -343,6 +343,7 @@ import { HugeiconsReceiptCentIcon } from './receipt-cent';
 import { HugeiconsReceiptEuroIcon } from './receipt-euro';
 import { HugeiconsReceiptIndianRupeeIcon } from './receipt-indian-rupee';
 import { HugeiconsReceiptJapaneseYenIcon } from './receipt-japanese-yen';
+import { HugeiconsReceiptPoundSterlingIcon } from './receipt-pound-sterling';
 import { HugeiconsRefreshIcon } from './refresh';
 import { HugeiconsSaveIcon } from './save';
 import { HugeiconsSearchIcon } from './search';
@@ -1875,6 +1876,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['receipt', 'japanese', 'yen', 'receipt-japanese-yen'],
   },
   {
+    name: 'receipt-pound-sterling',
+    icon: HugeiconsReceiptPoundSterlingIcon,
+    keywords: ['receipt', 'pound', 'sterling', 'receipt-pound-sterling'],
+  },
+  {
     name: 'refresh',
     icon: HugeiconsRefreshIcon,
     keywords: ['refresh', 'reload', 'reload', 'update', 'sync', 'rotate'],
@@ -2327,6 +2333,7 @@ export {
   HugeiconsReceiptEuroIcon,
   HugeiconsReceiptIndianRupeeIcon,
   HugeiconsReceiptJapaneseYenIcon,
+  HugeiconsReceiptPoundSterlingIcon,
   HugeiconsRefreshIcon,
   HugeiconsSaveIcon,
   HugeiconsSearchIcon,

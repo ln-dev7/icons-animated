@@ -4489,6 +4489,19 @@
       ]
     },
     {
+      "name": "hugeicons-receipt-pound-sterling",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-receipt-pound-sterling.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-refresh",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -11257,6 +11270,19 @@
       "files": [
         {
           "path": "tabler-receipt-euro.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-receipt-pound",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-receipt-pound.tsx",
           "type": "registry:ui"
         }
       ]

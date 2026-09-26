@@ -2110,6 +2110,15 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-receipt-pound-sterling',
+    'path': path.join(
+      __dirname,
+      '../icons/hugeicons/receipt-pound-sterling.tsx'
+    ),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-refresh',
     'path': path.join(__dirname, '../icons/hugeicons/refresh.tsx'),
     'registryDependencies': [],
@@ -5259,6 +5268,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-receipt-euro',
     'path': path.join(__dirname, '../icons/tabler/receipt-euro.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-receipt-pound',
+    'path': path.join(__dirname, '../icons/tabler/receipt-pound.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
