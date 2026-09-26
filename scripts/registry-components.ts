@@ -406,6 +406,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-bookmark-minus-01',
+    'path': path.join(__dirname, '../icons/hugeicons/bookmark-minus-01.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-calendar',
     'path': path.join(__dirname, '../icons/hugeicons/calendar.tsx'),
     'registryDependencies': [],
@@ -1383,6 +1389,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-bookmark',
     'path': path.join(__dirname, '../icons/tabler/bookmark.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-bookmark-minus',
+    'path': path.join(__dirname, '../icons/tabler/bookmark-minus.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

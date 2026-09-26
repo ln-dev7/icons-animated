@@ -862,6 +862,19 @@
       ]
     },
     {
+      "name": "hugeicons-bookmark-minus-01",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-bookmark-minus-01.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-calendar",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2976,6 +2989,19 @@
       "files": [
         {
           "path": "tabler-bookmark.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-bookmark-minus",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-bookmark-minus.tsx",
           "type": "registry:ui"
         }
       ]
