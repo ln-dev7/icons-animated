@@ -55,6 +55,7 @@ import { PhosphorBinaryIcon } from './binary';
 import { PhosphorBluetoothIcon } from './bluetooth';
 import { PhosphorBluetoothConnectedIcon } from './bluetooth-connected';
 import { PhosphorBluetoothSlashIcon } from './bluetooth-slash';
+import { PhosphorBoatIcon } from './boat';
 import { PhosphorBoneIcon } from './bone';
 import { PhosphorBookmarkIcon } from './bookmark';
 import { PhosphorBrainIcon } from './brain';
@@ -567,6 +568,7 @@ const PHOSPHOR_ICON_LIST = [
     icon: PhosphorBluetoothSlashIcon,
     keywords: ['bluetooth', 'slash', 'bluetooth-off', 'off'],
   },
+  { name: 'boat', icon: PhosphorBoatIcon, keywords: ['boat', 'ship'] },
   { name: 'bone', icon: PhosphorBoneIcon, keywords: ['bone'] },
   { name: 'bookmark', icon: PhosphorBookmarkIcon, keywords: ['bookmark'] },
   { name: 'brain', icon: PhosphorBrainIcon, keywords: ['brain'] },
@@ -1586,6 +1588,7 @@ export {
   PhosphorBluetoothIcon,
   PhosphorBluetoothConnectedIcon,
   PhosphorBluetoothSlashIcon,
+  PhosphorBoatIcon,
   PhosphorBoneIcon,
   PhosphorBookmarkIcon,
   PhosphorBrainIcon,

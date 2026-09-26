@@ -4918,6 +4918,19 @@
       ]
     },
     {
+      "name": "hugeicons-ship",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-ship.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-shopping-cart-01",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -5823,6 +5836,19 @@
       "files": [
         {
           "path": "phosphor-bluetooth-slash.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-boat",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-boat.tsx",
           "type": "registry:ui"
         }
       ]
@@ -12128,6 +12154,19 @@
       "files": [
         {
           "path": "tabler-shield-check.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-ship",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-ship.tsx",
           "type": "registry:ui"
         }
       ]

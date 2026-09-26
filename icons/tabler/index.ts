@@ -283,6 +283,7 @@ import { TablerServerCogIcon } from './server-cog';
 import { TablerSettingsIcon } from './settings';
 import { TablerShareIcon } from './share';
 import { TablerShieldCheckIcon } from './shield-check';
+import { TablerShipIcon } from './ship';
 import { TablerShoppingCartIcon } from './shopping-cart';
 import { TablerSmokingIcon } from './smoking';
 import { TablerSmokingNoIcon } from './smoking-no';
@@ -1574,6 +1575,7 @@ const TABLER_ICON_LIST = [
     icon: TablerShieldCheckIcon,
     keywords: ['shield', 'check', 'shield-check'],
   },
+  { name: 'ship', icon: TablerShipIcon, keywords: ['ship'] },
   {
     name: 'shopping-cart',
     icon: TablerShoppingCartIcon,
@@ -1985,6 +1987,7 @@ export {
   TablerSettingsIcon,
   TablerShareIcon,
   TablerShieldCheckIcon,
+  TablerShipIcon,
   TablerShoppingCartIcon,
   TablerSmokingIcon,
   TablerSmokingNoIcon,

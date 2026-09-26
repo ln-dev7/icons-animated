@@ -376,6 +376,7 @@ import { HugeiconsServerCrashIcon } from './server-crash';
 import { HugeiconsSettingsIcon } from './settings';
 import { HugeiconsShareIcon } from './share';
 import { HugeiconsShieldCheckIcon } from './shield-check';
+import { HugeiconsShipIcon } from './ship';
 import { HugeiconsShoppingCart01Icon } from './shopping-cart-01';
 import { HugeiconsStarIcon } from './star';
 import { HugeiconsSunCloud02Icon } from './sun-cloud-02';
@@ -2057,6 +2058,7 @@ const HUGEICONS_ICON_LIST = [
     icon: HugeiconsShieldCheckIcon,
     keywords: ['shield', 'check', 'shield-check'],
   },
+  { name: 'ship', icon: HugeiconsShipIcon, keywords: ['ship'] },
   {
     name: 'shopping-cart-01',
     icon: HugeiconsShoppingCart01Icon,
@@ -2504,6 +2506,7 @@ export {
   HugeiconsSettingsIcon,
   HugeiconsShareIcon,
   HugeiconsShieldCheckIcon,
+  HugeiconsShipIcon,
   HugeiconsShoppingCart01Icon,
   HugeiconsStarIcon,
   HugeiconsSunCloud02Icon,
