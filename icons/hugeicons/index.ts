@@ -126,6 +126,7 @@ import { HugeiconsTextAlignCenterIcon } from './text-align-center';
 import { HugeiconsTextAlignLeftIcon } from './text-align-left';
 import { HugeiconsTextAlignRightIcon } from './text-align-right';
 import { HugeiconsTrashIcon } from './trash';
+import { HugeiconsUnfoldMoreIcon } from './unfold-more';
 import { HugeiconsUniversalAccessIcon } from './universal-access';
 import { HugeiconsUploadIcon } from './upload';
 import { HugeiconsUserIcon } from './user';
@@ -793,6 +794,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['trash', 'delete', 'remove', 'bin', 'garbage'],
   },
   {
+    name: 'unfold-more',
+    icon: HugeiconsUnfoldMoreIcon,
+    keywords: ['unfold', 'more', 'chevrons-up-down', 'chevrons', 'up', 'down'],
+  },
+  {
     name: 'universal-access',
     icon: HugeiconsUniversalAccessIcon,
     keywords: ['universal', 'access', 'accessibility'],
@@ -944,6 +950,7 @@ export {
   HugeiconsTextAlignLeftIcon,
   HugeiconsTextAlignRightIcon,
   HugeiconsTrashIcon,
+  HugeiconsUnfoldMoreIcon,
   HugeiconsUniversalAccessIcon,
   HugeiconsUploadIcon,
   HugeiconsUserIcon,

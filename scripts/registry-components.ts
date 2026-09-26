@@ -790,6 +790,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-unfold-more',
+    'path': path.join(__dirname, '../icons/hugeicons/unfold-more.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-universal-access',
     'path': path.join(__dirname, '../icons/hugeicons/universal-access.tsx'),
     'registryDependencies': [],
@@ -1089,6 +1095,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-caret-line-left',
     'path': path.join(__dirname, '../icons/phosphor/caret-line-left.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-caret-up-down',
+    'path': path.join(__dirname, '../icons/phosphor/caret-up-down.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -1989,6 +2001,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-search',
     'path': path.join(__dirname, '../icons/tabler/search.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-selector',
+    'path': path.join(__dirname, '../icons/tabler/selector.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

@@ -97,6 +97,7 @@ import { TablerRobotIcon } from './robot';
 import { TablerRosetteDiscountIcon } from './rosette-discount';
 import { TablerSaveIcon } from './save';
 import { TablerSearchIcon } from './search';
+import { TablerSelectorIcon } from './selector';
 import { TablerSettingsIcon } from './settings';
 import { TablerShareIcon } from './share';
 import { TablerShoppingCartIcon } from './shopping-cart';
@@ -593,6 +594,11 @@ const TABLER_ICON_LIST = [
     keywords: ['search', 'find', 'magnifying glass', 'lookup', 'query'],
   },
   {
+    name: 'selector',
+    icon: TablerSelectorIcon,
+    keywords: ['selector', 'chevrons-up-down', 'chevrons', 'up', 'down'],
+  },
+  {
     name: 'settings',
     icon: TablerSettingsIcon,
     keywords: ['settings', 'gear', 'cog', 'preferences', 'config'],
@@ -791,6 +797,7 @@ export {
   TablerRosetteDiscountIcon,
   TablerSaveIcon,
   TablerSearchIcon,
+  TablerSelectorIcon,
   TablerSettingsIcon,
   TablerShareIcon,
   TablerShoppingCartIcon,

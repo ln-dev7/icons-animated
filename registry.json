@@ -1668,6 +1668,19 @@
       ]
     },
     {
+      "name": "hugeicons-unfold-more",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-unfold-more.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-universal-access",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2313,6 +2326,19 @@
       "files": [
         {
           "path": "phosphor-caret-line-left.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-caret-up-down",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-caret-up-down.tsx",
           "type": "registry:ui"
         }
       ]
@@ -4263,6 +4289,19 @@
       "files": [
         {
           "path": "tabler-search.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-selector",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-selector.tsx",
           "type": "registry:ui"
         }
       ]
