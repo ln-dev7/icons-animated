@@ -185,6 +185,7 @@ import { PhosphorTextAlignCenterIcon } from './text-align-center';
 import { PhosphorTextAlignLeftIcon } from './text-align-left';
 import { PhosphorTextAlignRightIcon } from './text-align-right';
 import { PhosphorTextBIcon } from './text-b';
+import { PhosphorTextItalicIcon } from './text-italic';
 import { PhosphorThumbsDownIcon } from './thumbs-down';
 import { PhosphorTrashIcon } from './trash';
 import { PhosphorUploadIcon } from './upload';
@@ -1147,6 +1148,11 @@ const PHOSPHOR_ICON_LIST = [
   },
   { name: 'text-b', icon: PhosphorTextBIcon, keywords: ['text', 'b', 'bold'] },
   {
+    name: 'text-italic',
+    icon: PhosphorTextItalicIcon,
+    keywords: ['text', 'italic'],
+  },
+  {
     name: 'thumbs-down',
     icon: PhosphorThumbsDownIcon,
     keywords: ['thumbs', 'down', 'downvote'],
@@ -1367,6 +1373,7 @@ export {
   PhosphorTextAlignLeftIcon,
   PhosphorTextAlignRightIcon,
   PhosphorTextBIcon,
+  PhosphorTextItalicIcon,
   PhosphorThumbsDownIcon,
   PhosphorTrashIcon,
   PhosphorUploadIcon,
