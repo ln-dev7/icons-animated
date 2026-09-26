@@ -1279,6 +1279,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-gauge',
+    'path': path.join(__dirname, '../icons/hugeicons/gauge.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-heart',
     'path': path.join(__dirname, '../icons/hugeicons/heart.tsx'),
     'registryDependencies': [],
@@ -2193,6 +2199,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-folders',
     'path': path.join(__dirname, '../icons/phosphor/folders.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-gauge',
+    'path': path.join(__dirname, '../icons/phosphor/gauge.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -3153,6 +3165,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-currency-euro',
     'path': path.join(__dirname, '../icons/tabler/currency-euro.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-dashboard',
+    'path': path.join(__dirname, '../icons/tabler/dashboard.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

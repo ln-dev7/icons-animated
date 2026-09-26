@@ -2721,6 +2721,19 @@
       ]
     },
     {
+      "name": "hugeicons-gauge",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-gauge.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-heart",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -4679,6 +4692,19 @@
       "files": [
         {
           "path": "phosphor-folders.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-gauge",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-gauge.tsx",
           "type": "registry:ui"
         }
       ]
@@ -6759,6 +6785,19 @@
       "files": [
         {
           "path": "tabler-currency-euro.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-dashboard",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-dashboard.tsx",
           "type": "registry:ui"
         }
       ]

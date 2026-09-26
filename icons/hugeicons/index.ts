@@ -207,6 +207,7 @@ import { HugeiconsFrownIcon } from './frown';
 import { HugeiconsGalleryHorizontalEndIcon } from './gallery-horizontal-end';
 import { HugeiconsGalleryThumbnailsIcon } from './gallery-thumbnails';
 import { HugeiconsGalleryVerticalEndIcon } from './gallery-vertical-end';
+import { HugeiconsGaugeIcon } from './gauge';
 import { HugeiconsHeartIcon } from './heart';
 import { HugeiconsHomeIcon } from './home';
 import { HugeiconsLockIcon } from './lock';
@@ -1193,6 +1194,7 @@ const HUGEICONS_ICON_LIST = [
     icon: HugeiconsGalleryVerticalEndIcon,
     keywords: ['gallery', 'vertical', 'end', 'gallery-vertical-end'],
   },
+  { name: 'gauge', icon: HugeiconsGaugeIcon, keywords: ['gauge'] },
   {
     name: 'heart',
     icon: HugeiconsHeartIcon,
@@ -1567,6 +1569,7 @@ export {
   HugeiconsGalleryHorizontalEndIcon,
   HugeiconsGalleryThumbnailsIcon,
   HugeiconsGalleryVerticalEndIcon,
+  HugeiconsGaugeIcon,
   HugeiconsHeartIcon,
   HugeiconsHomeIcon,
   HugeiconsLockIcon,
