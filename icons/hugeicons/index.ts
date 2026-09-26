@@ -366,6 +366,7 @@ import { HugeiconsRussianRubleIcon } from './russian-ruble';
 import { HugeiconsSatelliteDishIcon } from './satellite-dish';
 import { HugeiconsSaudiRiyalIcon } from './saudi-riyal';
 import { HugeiconsSaveIcon } from './save';
+import { HugeiconsScanFaceIcon } from './scan-face';
 import { HugeiconsSearchIcon } from './search';
 import { HugeiconsSettingsIcon } from './settings';
 import { HugeiconsShareIcon } from './share';
@@ -1995,6 +1996,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['save', 'store', 'disk', 'floppy', 'preserve'],
   },
   {
+    name: 'scan-face',
+    icon: HugeiconsScanFaceIcon,
+    keywords: ['scan', 'face', 'scan-face'],
+  },
+  {
     name: 'search',
     icon: HugeiconsSearchIcon,
     keywords: [
@@ -2460,6 +2466,7 @@ export {
   HugeiconsSatelliteDishIcon,
   HugeiconsSaudiRiyalIcon,
   HugeiconsSaveIcon,
+  HugeiconsScanFaceIcon,
   HugeiconsSearchIcon,
   HugeiconsSettingsIcon,
   HugeiconsShareIcon,

@@ -4788,6 +4788,19 @@
       ]
     },
     {
+      "name": "hugeicons-scan-face",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-scan-face.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-search",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -7869,6 +7882,19 @@
       ]
     },
     {
+      "name": "phosphor-scan-smiley",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-scan-smiley.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-screencast",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -10139,6 +10165,19 @@
       "files": [
         {
           "path": "tabler-eye-off.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-face-id",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-face-id.tsx",
           "type": "registry:ui"
         }
       ]

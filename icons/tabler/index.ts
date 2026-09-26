@@ -141,6 +141,7 @@ import { TablerDropletIcon } from './droplet';
 import { TablerExternalLinkIcon } from './external-link';
 import { TablerEyeIcon } from './eye';
 import { TablerEyeOffIcon } from './eye-off';
+import { TablerFaceIdIcon } from './face-id';
 import { TablerFeatherIcon } from './feather';
 import { TablerFileCheckIcon } from './file-check';
 import { TablerFilePencilIcon } from './file-pencil';
@@ -953,6 +954,11 @@ const TABLER_ICON_LIST = [
     name: 'eye-off',
     icon: TablerEyeOffIcon,
     keywords: ['eye', 'off', 'eye-off'],
+  },
+  {
+    name: 'face-id',
+    icon: TablerFaceIdIcon,
+    keywords: ['face', 'id', 'scan-face', 'scan'],
   },
   { name: 'feather', icon: TablerFeatherIcon, keywords: ['feather'] },
   {
@@ -1815,6 +1821,7 @@ export {
   TablerExternalLinkIcon,
   TablerEyeIcon,
   TablerEyeOffIcon,
+  TablerFaceIdIcon,
   TablerFeatherIcon,
   TablerFileCheckIcon,
   TablerFilePencilIcon,
