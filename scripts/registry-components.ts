@@ -748,6 +748,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-cloud-cog',
+    'path': path.join(__dirname, '../icons/hugeicons/cloud-cog.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-download',
     'path': path.join(__dirname, '../icons/hugeicons/download.tsx'),
     'registryDependencies': [],
@@ -2088,6 +2094,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-clock',
     'path': path.join(__dirname, '../icons/tabler/clock.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-cloud-cog',
+    'path': path.join(__dirname, '../icons/tabler/cloud-cog.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

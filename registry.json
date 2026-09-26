@@ -1577,6 +1577,19 @@
       ]
     },
     {
+      "name": "hugeicons-cloud-cog",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-cloud-cog.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-download",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -4471,6 +4484,19 @@
       "files": [
         {
           "path": "tabler-clock.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-cloud-cog",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-cloud-cog.tsx",
           "type": "registry:ui"
         }
       ]
