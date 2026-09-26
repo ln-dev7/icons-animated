@@ -182,6 +182,7 @@ import { PhosphorMicrophoneIcon } from './microphone';
 import { PhosphorMicrophoneSlashIcon } from './microphone-slash';
 import { PhosphorMoonIcon } from './moon';
 import { PhosphorNotebookIcon } from './notebook';
+import { PhosphorPaletteIcon } from './palette';
 import { PhosphorPaperclipIcon } from './paperclip';
 import { PhosphorPencilIcon } from './pencil';
 import { PhosphorPersonArmsSpreadIcon } from './person-arms-spread';
@@ -1133,6 +1134,7 @@ const PHOSPHOR_ICON_LIST = [
     icon: PhosphorNotebookIcon,
     keywords: ['notebook', 'book-text', 'book', 'text'],
   },
+  { name: 'palette', icon: PhosphorPaletteIcon, keywords: ['palette'] },
   {
     name: 'paperclip',
     icon: PhosphorPaperclipIcon,
@@ -1558,6 +1560,7 @@ export {
   PhosphorMicrophoneSlashIcon,
   PhosphorMoonIcon,
   PhosphorNotebookIcon,
+  PhosphorPaletteIcon,
   PhosphorPaperclipIcon,
   PhosphorPencilIcon,
   PhosphorPersonArmsSpreadIcon,

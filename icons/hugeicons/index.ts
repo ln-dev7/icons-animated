@@ -310,6 +310,7 @@ import { HugeiconsMonitorCogIcon } from './monitor-cog';
 import { HugeiconsMoon02Icon } from './moon-02';
 import { HugeiconsMousePointerClickIcon } from './mouse-pointer-click';
 import { HugeiconsNfcIcon } from './nfc';
+import { HugeiconsPaletteIcon } from './palette';
 import { HugeiconsPencilIcon } from './pencil';
 import { HugeiconsPieChartIcon } from './pie-chart';
 import { HugeiconsPlusIcon } from './plus';
@@ -1716,6 +1717,7 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['mouse', 'pointer', 'click', 'cursor-click', 'cursor'],
   },
   { name: 'nfc', icon: HugeiconsNfcIcon, keywords: ['nfc'] },
+  { name: 'palette', icon: HugeiconsPaletteIcon, keywords: ['palette'] },
   {
     name: 'pencil',
     icon: HugeiconsPencilIcon,
@@ -2156,6 +2158,7 @@ export {
   HugeiconsMoon02Icon,
   HugeiconsMousePointerClickIcon,
   HugeiconsNfcIcon,
+  HugeiconsPaletteIcon,
   HugeiconsPencilIcon,
   HugeiconsPieChartIcon,
   HugeiconsPlusIcon,

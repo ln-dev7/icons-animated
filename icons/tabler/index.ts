@@ -226,6 +226,7 @@ import { TablerMoodSadIcon } from './mood-sad';
 import { TablerMoonIcon } from './moon';
 import { TablerNfcIcon } from './nfc';
 import { TablerPackagesIcon } from './packages';
+import { TablerPaletteIcon } from './palette';
 import { TablerPaperclipIcon } from './paperclip';
 import { TablerPencilIcon } from './pencil';
 import { TablerPlaneIcon } from './plane';
@@ -1258,6 +1259,7 @@ const TABLER_ICON_LIST = [
     icon: TablerPackagesIcon,
     keywords: ['packages', 'boxes'],
   },
+  { name: 'palette', icon: TablerPaletteIcon, keywords: ['palette'] },
   {
     name: 'paperclip',
     icon: TablerPaperclipIcon,
@@ -1682,6 +1684,7 @@ export {
   TablerMoonIcon,
   TablerNfcIcon,
   TablerPackagesIcon,
+  TablerPaletteIcon,
   TablerPaperclipIcon,
   TablerPencilIcon,
   TablerPlaneIcon,

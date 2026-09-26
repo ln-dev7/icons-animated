@@ -4060,6 +4060,19 @@
       ]
     },
     {
+      "name": "hugeicons-palette",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-palette.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-pencil",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -6733,6 +6746,19 @@
       "files": [
         {
           "path": "phosphor-notebook.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-palette",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-palette.tsx",
           "type": "registry:ui"
         }
       ]
@@ -10256,6 +10282,19 @@
       "files": [
         {
           "path": "tabler-packages.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-palette",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-palette.tsx",
           "type": "registry:ui"
         }
       ]
