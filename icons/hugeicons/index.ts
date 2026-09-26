@@ -118,6 +118,7 @@ import { HugeiconsCircleQuestionMarkIcon } from './circle-question-mark';
 import { HugeiconsClapperboardIcon } from './clapperboard';
 import { HugeiconsClipboardCheckIcon } from './clipboard-check';
 import { HugeiconsClock01Icon } from './clock-01';
+import { HugeiconsCloudBackupIcon } from './cloud-backup';
 import { HugeiconsDownloadIcon } from './download';
 import { HugeiconsEyeIcon } from './eye';
 import { HugeiconsFilterIcon } from './filter';
@@ -736,6 +737,11 @@ const HUGEICONS_ICON_LIST = [
   },
   { name: 'clock-01', icon: HugeiconsClock01Icon, keywords: ['clock', '01'] },
   {
+    name: 'cloud-backup',
+    icon: HugeiconsCloudBackupIcon,
+    keywords: ['cloud', 'backup', 'cloud-backup'],
+  },
+  {
     name: 'download',
     icon: HugeiconsDownloadIcon,
     keywords: ['download', 'save', 'arrow', 'get', 'export', 'download-01'],
@@ -1020,6 +1026,7 @@ export {
   HugeiconsClapperboardIcon,
   HugeiconsClipboardCheckIcon,
   HugeiconsClock01Icon,
+  HugeiconsCloudBackupIcon,
   HugeiconsDownloadIcon,
   HugeiconsEyeIcon,
   HugeiconsFilterIcon,
