@@ -1681,6 +1681,19 @@
       ]
     },
     {
+      "name": "hugeicons-coffee-03",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-coffee-03.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-download",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2989,6 +3002,19 @@
       "files": [
         {
           "path": "phosphor-cloud-sun.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-coffee",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-coffee.tsx",
           "type": "registry:ui"
         }
       ]
@@ -4744,6 +4770,19 @@
       "files": [
         {
           "path": "tabler-cloud-upload.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-coffee",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-coffee.tsx",
           "type": "registry:ui"
         }
       ]

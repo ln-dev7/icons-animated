@@ -88,6 +88,7 @@ import { TablerCloudRainIcon } from './cloud-rain';
 import { TablerCloudSnowIcon } from './cloud-snow';
 import { TablerCloudStormIcon } from './cloud-storm';
 import { TablerCloudUploadIcon } from './cloud-upload';
+import { TablerCoffeeIcon } from './coffee';
 import { TablerCoinIcon } from './coin';
 import { TablerDeviceCctvIcon } from './device-cctv';
 import { TablerDownloadIcon } from './download';
@@ -556,6 +557,7 @@ const TABLER_ICON_LIST = [
     icon: TablerCloudUploadIcon,
     keywords: ['cloud', 'upload', 'cloud-upload'],
   },
+  { name: 'coffee', icon: TablerCoffeeIcon, keywords: ['coffee'] },
   {
     name: 'coin',
     icon: TablerCoinIcon,
@@ -904,6 +906,7 @@ export {
   TablerCloudSnowIcon,
   TablerCloudStormIcon,
   TablerCloudUploadIcon,
+  TablerCoffeeIcon,
   TablerCoinIcon,
   TablerDeviceCctvIcon,
   TablerDownloadIcon,
