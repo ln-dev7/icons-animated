@@ -868,6 +868,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-corner-left-up',
+    'path': path.join(__dirname, '../icons/hugeicons/corner-left-up.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-download',
     'path': path.join(__dirname, '../icons/hugeicons/download.tsx'),
     'registryDependencies': [],
@@ -1122,6 +1128,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-arrow-elbow-left-down',
     'path': path.join(__dirname, '../icons/phosphor/arrow-elbow-left-down.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-arrow-elbow-left-up',
+    'path': path.join(__dirname, '../icons/phosphor/arrow-elbow-left-up.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -2415,6 +2427,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-corner-left-down',
     'path': path.join(__dirname, '../icons/tabler/corner-left-down.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-corner-left-up',
+    'path': path.join(__dirname, '../icons/tabler/corner-left-up.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
