@@ -26,6 +26,7 @@ import { TablerArrowRightIcon } from './arrow-right';
 import { TablerArrowUpIcon } from './arrow-up';
 import { TablerArrowUpLeftIcon } from './arrow-up-left';
 import { TablerArrowUpRightIcon } from './arrow-up-right';
+import { TablerArrowsMaximizeIcon } from './arrows-maximize';
 import { TablerAtIcon } from './at';
 import { TablerAtomIcon } from './atom';
 import { TablerAxeIcon } from './axe';
@@ -295,6 +296,11 @@ const TABLER_ICON_LIST = [
     name: 'arrow-up-right',
     icon: TablerArrowUpRightIcon,
     keywords: ['arrow', 'up', 'right', 'arrow-up-right'],
+  },
+  {
+    name: 'arrows-maximize',
+    icon: TablerArrowsMaximizeIcon,
+    keywords: ['arrows', 'maximize', 'expand'],
   },
   { name: 'at', icon: TablerAtIcon, keywords: ['at', 'at-sign', 'sign'] },
   { name: 'atom', icon: TablerAtomIcon, keywords: ['atom'] },
@@ -974,6 +980,7 @@ export {
   TablerArrowUpIcon,
   TablerArrowUpLeftIcon,
   TablerArrowUpRightIcon,
+  TablerArrowsMaximizeIcon,
   TablerAtIcon,
   TablerAtomIcon,
   TablerAxeIcon,
