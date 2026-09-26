@@ -1456,6 +1456,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-hard-drive-download',
+    'path': path.join(__dirname, '../icons/hugeicons/hard-drive-download.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-heart',
     'path': path.join(__dirname, '../icons/hugeicons/heart.tsx'),
     'registryDependencies': [],

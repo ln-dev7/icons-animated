@@ -3085,6 +3085,19 @@
       ]
     },
     {
+      "name": "hugeicons-hard-drive-download",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-hard-drive-download.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-heart",
       "type": "registry:ui",
       "registryDependencies": [],

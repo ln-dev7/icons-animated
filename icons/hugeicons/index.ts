@@ -235,6 +235,7 @@ import { HugeiconsHandGrabIcon } from './hand-grab';
 import { HugeiconsHandHeartIcon } from './hand-heart';
 import { HugeiconsHandHelpingIcon } from './hand-helping';
 import { HugeiconsHandMetalIcon } from './hand-metal';
+import { HugeiconsHardDriveDownloadIcon } from './hard-drive-download';
 import { HugeiconsHeartIcon } from './heart';
 import { HugeiconsHomeIcon } from './home';
 import { HugeiconsLockIcon } from './lock';
@@ -1334,6 +1335,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['hand', 'metal', 'hand-metal'],
   },
   {
+    name: 'hard-drive-download',
+    icon: HugeiconsHardDriveDownloadIcon,
+    keywords: ['hard', 'drive', 'download', 'hard-drive-download'],
+  },
+  {
     name: 'heart',
     icon: HugeiconsHeartIcon,
     keywords: ['heart', 'love', 'like', 'favorite', 'health'],
@@ -1735,6 +1741,7 @@ export {
   HugeiconsHandHeartIcon,
   HugeiconsHandHelpingIcon,
   HugeiconsHandMetalIcon,
+  HugeiconsHardDriveDownloadIcon,
   HugeiconsHeartIcon,
   HugeiconsHomeIcon,
   HugeiconsLockIcon,
