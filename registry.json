@@ -3163,6 +3163,19 @@
       ]
     },
     {
+      "name": "hugeicons-history",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-history.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-home",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -4575,6 +4588,19 @@
       "files": [
         {
           "path": "phosphor-clock.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-clock-counter-clockwise",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-clock-counter-clockwise.tsx",
           "type": "registry:ui"
         }
       ]
@@ -8176,6 +8202,19 @@
       "files": [
         {
           "path": "tabler-help-circle.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-history",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-history.tsx",
           "type": "registry:ui"
         }
       ]

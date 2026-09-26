@@ -169,6 +169,7 @@ import { TablerHeartIcon } from './heart';
 import { TablerHeartHandshakeIcon } from './heart-handshake';
 import { TablerHeartbeatIcon } from './heartbeat';
 import { TablerHelpCircleIcon } from './help-circle';
+import { TablerHistoryIcon } from './history';
 import { TablerHomeIcon } from './home';
 import { TablerLayoutAlignCenterIcon } from './layout-align-center';
 import { TablerLayoutAlignMiddleIcon } from './layout-align-middle';
@@ -977,6 +978,7 @@ const TABLER_ICON_LIST = [
     icon: TablerHelpCircleIcon,
     keywords: ['help', 'circle', 'circle-help'],
   },
+  { name: 'history', icon: TablerHistoryIcon, keywords: ['history'] },
   {
     name: 'home',
     icon: TablerHomeIcon,
@@ -1397,6 +1399,7 @@ export {
   TablerHeartHandshakeIcon,
   TablerHeartbeatIcon,
   TablerHelpCircleIcon,
+  TablerHistoryIcon,
   TablerHomeIcon,
   TablerLayoutAlignCenterIcon,
   TablerLayoutAlignMiddleIcon,
