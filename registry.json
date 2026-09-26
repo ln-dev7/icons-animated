@@ -771,6 +771,19 @@
       ]
     },
     {
+      "name": "hugeicons-bluetooth-off",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-bluetooth-off.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-calendar",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -1650,6 +1663,19 @@
       "files": [
         {
           "path": "phosphor-bluetooth-connected.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-bluetooth-slash",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-bluetooth-slash.tsx",
           "type": "registry:ui"
         }
       ]
@@ -2755,6 +2781,19 @@
       "files": [
         {
           "path": "tabler-bluetooth-connected.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-bluetooth-off",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-bluetooth-off.tsx",
           "type": "registry:ui"
         }
       ]

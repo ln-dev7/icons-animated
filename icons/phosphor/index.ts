@@ -35,6 +35,7 @@ import { PhosphorBellIcon } from './bell';
 import { PhosphorBinaryIcon } from './binary';
 import { PhosphorBluetoothIcon } from './bluetooth';
 import { PhosphorBluetoothConnectedIcon } from './bluetooth-connected';
+import { PhosphorBluetoothSlashIcon } from './bluetooth-slash';
 import { PhosphorCalendarIcon } from './calendar';
 import { PhosphorCheckIcon } from './check';
 import { PhosphorChevronDownIcon } from './chevron-down';
@@ -265,6 +266,11 @@ const PHOSPHOR_ICON_LIST = [
     name: 'bluetooth-connected',
     icon: PhosphorBluetoothConnectedIcon,
     keywords: ['bluetooth', 'connected', 'bluetooth-connected'],
+  },
+  {
+    name: 'bluetooth-slash',
+    icon: PhosphorBluetoothSlashIcon,
+    keywords: ['bluetooth', 'slash', 'bluetooth-off', 'off'],
   },
   {
     name: 'calendar',
@@ -577,6 +583,7 @@ export {
   PhosphorBinaryIcon,
   PhosphorBluetoothIcon,
   PhosphorBluetoothConnectedIcon,
+  PhosphorBluetoothSlashIcon,
   PhosphorCalendarIcon,
   PhosphorCheckIcon,
   PhosphorChevronDownIcon,
