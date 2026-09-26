@@ -44,6 +44,7 @@ import { HugeiconsBadgePercentIcon } from './badge-percent';
 import { HugeiconsBanIcon } from './ban';
 import { HugeiconsBananaIcon } from './banana';
 import { HugeiconsBatteryIcon } from './battery';
+import { HugeiconsBatteryCharging02Icon } from './battery-charging-02';
 import { HugeiconsBellIcon } from './bell';
 import { HugeiconsCalendarIcon } from './calendar';
 import { HugeiconsCheckIcon } from './check';
@@ -301,6 +302,11 @@ const HUGEICONS_ICON_LIST = [
   { name: 'ban', icon: HugeiconsBanIcon, keywords: ['ban'] },
   { name: 'banana', icon: HugeiconsBananaIcon, keywords: ['banana'] },
   { name: 'battery', icon: HugeiconsBatteryIcon, keywords: ['battery'] },
+  {
+    name: 'battery-charging-02',
+    icon: HugeiconsBatteryCharging02Icon,
+    keywords: ['battery', 'charging', '02', 'battery-charging'],
+  },
   {
     name: 'bell',
     icon: HugeiconsBellIcon,
@@ -564,6 +570,7 @@ export {
   HugeiconsBanIcon,
   HugeiconsBananaIcon,
   HugeiconsBatteryIcon,
+  HugeiconsBatteryCharging02Icon,
   HugeiconsBellIcon,
   HugeiconsCalendarIcon,
   HugeiconsCheckIcon,

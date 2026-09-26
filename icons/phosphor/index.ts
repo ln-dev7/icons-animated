@@ -24,6 +24,7 @@ import { PhosphorArrowUpRightIcon } from './arrow-up-right';
 import { PhosphorAtIcon } from './at';
 import { PhosphorAtomIcon } from './atom';
 import { PhosphorAxeIcon } from './axe';
+import { PhosphorBatteryChargingIcon } from './battery-charging';
 import { PhosphorBatteryEmptyIcon } from './battery-empty';
 import { PhosphorBellIcon } from './bell';
 import { PhosphorCalendarIcon } from './calendar';
@@ -210,6 +211,11 @@ const PHOSPHOR_ICON_LIST = [
   { name: 'at', icon: PhosphorAtIcon, keywords: ['at', 'at-sign', 'sign'] },
   { name: 'atom', icon: PhosphorAtomIcon, keywords: ['atom'] },
   { name: 'axe', icon: PhosphorAxeIcon, keywords: ['axe'] },
+  {
+    name: 'battery-charging',
+    icon: PhosphorBatteryChargingIcon,
+    keywords: ['battery', 'charging', 'battery-charging'],
+  },
   {
     name: 'battery-empty',
     icon: PhosphorBatteryEmptyIcon,
@@ -520,6 +526,7 @@ export {
   PhosphorAtIcon,
   PhosphorAtomIcon,
   PhosphorAxeIcon,
+  PhosphorBatteryChargingIcon,
   PhosphorBatteryEmptyIcon,
   PhosphorBellIcon,
   PhosphorCalendarIcon,

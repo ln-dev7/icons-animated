@@ -602,6 +602,19 @@
       ]
     },
     {
+      "name": "hugeicons-battery-charging-02",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-battery-charging-02.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-bell",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -1351,6 +1364,19 @@
       "files": [
         {
           "path": "phosphor-axe.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-battery-charging",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-battery-charging.tsx",
           "type": "registry:ui"
         }
       ]
@@ -2339,6 +2365,19 @@
       "files": [
         {
           "path": "tabler-battery.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-battery-charging",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-battery-charging.tsx",
           "type": "registry:ui"
         }
       ]
