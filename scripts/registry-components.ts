@@ -2164,6 +2164,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-refresh-ccw',
+    'path': path.join(__dirname, '../icons/hugeicons/refresh-ccw.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-save',
     'path': path.join(__dirname, '../icons/hugeicons/save.tsx'),
     'registryDependencies': [],
@@ -2481,6 +2487,15 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-arrow-up-right',
     'path': path.join(__dirname, '../icons/phosphor/arrow-up-right.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-arrows-counter-clockwise',
+    'path': path.join(
+      __dirname,
+      '../icons/phosphor/arrows-counter-clockwise.tsx'
+    ),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

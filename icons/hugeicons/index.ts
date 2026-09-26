@@ -351,6 +351,7 @@ import { HugeiconsReceiptTurkishLiraIcon } from './receipt-turkish-lira';
 import { HugeiconsRedoIcon } from './redo';
 import { HugeiconsRedoDotIcon } from './redo-dot';
 import { HugeiconsRefreshIcon } from './refresh';
+import { HugeiconsRefreshCcwIcon } from './refresh-ccw';
 import { HugeiconsSaveIcon } from './save';
 import { HugeiconsSearchIcon } from './search';
 import { HugeiconsSettingsIcon } from './settings';
@@ -1918,6 +1919,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['refresh', 'reload', 'reload', 'update', 'sync', 'rotate'],
   },
   {
+    name: 'refresh-ccw',
+    icon: HugeiconsRefreshCcwIcon,
+    keywords: ['refresh', 'ccw', 'refresh-ccw'],
+  },
+  {
     name: 'save',
     icon: HugeiconsSaveIcon,
     keywords: ['save', 'store', 'disk', 'floppy', 'preserve'],
@@ -2373,6 +2379,7 @@ export {
   HugeiconsRedoIcon,
   HugeiconsRedoDotIcon,
   HugeiconsRefreshIcon,
+  HugeiconsRefreshCcwIcon,
   HugeiconsSaveIcon,
   HugeiconsSearchIcon,
   HugeiconsSettingsIcon,
