@@ -2881,6 +2881,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-youtube',
+    'path': path.join(__dirname, '../icons/hugeicons/youtube.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'phosphor-airplane',
     'path': path.join(__dirname, '../icons/phosphor/airplane.tsx'),
     'registryDependencies': [],
@@ -4756,6 +4762,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'phosphor-youtube-logo',
+    'path': path.join(__dirname, '../icons/phosphor/youtube-logo.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'tabler-accessible',
     'path': path.join(__dirname, '../icons/tabler/accessible.tsx'),
     'registryDependencies': [],
@@ -5190,6 +5202,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-brand-twitter',
     'path': path.join(__dirname, '../icons/tabler/brand-twitter.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-brand-youtube',
+    'path': path.join(__dirname, '../icons/tabler/brand-youtube.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

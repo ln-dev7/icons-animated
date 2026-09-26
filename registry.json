@@ -6140,6 +6140,19 @@
       ]
     },
     {
+      "name": "hugeicons-youtube",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-youtube.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-airplane",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -10157,6 +10170,19 @@
       ]
     },
     {
+      "name": "phosphor-youtube-logo",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-youtube-logo.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "tabler-accessible",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -11101,6 +11127,19 @@
       "files": [
         {
           "path": "tabler-brand-twitter.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-brand-youtube",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-brand-youtube.tsx",
           "type": "registry:ui"
         }
       ]

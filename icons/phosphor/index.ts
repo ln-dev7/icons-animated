@@ -307,6 +307,7 @@ import { PhosphorWifiLowIcon } from './wifi-low';
 import { PhosphorWindIcon } from './wind';
 import { PhosphorWrenchIcon } from './wrench';
 import { PhosphorXIcon } from './x';
+import { PhosphorYoutubeLogoIcon } from './youtube-logo';
 
 const PHOSPHOR_ICON_LIST = [
   { name: 'airplane', icon: PhosphorAirplaneIcon, keywords: ['airplane'] },
@@ -1773,6 +1774,11 @@ const PHOSPHOR_ICON_LIST = [
     icon: PhosphorXIcon,
     keywords: ['close', 'x', 'cancel', 'dismiss', 'remove', 'delete'],
   },
+  {
+    name: 'youtube-logo',
+    icon: PhosphorYoutubeLogoIcon,
+    keywords: ['youtube', 'logo'],
+  },
 ];
 
 export {
@@ -2086,4 +2092,5 @@ export {
   PhosphorWindIcon,
   PhosphorWrenchIcon,
   PhosphorXIcon,
+  PhosphorYoutubeLogoIcon,
 };

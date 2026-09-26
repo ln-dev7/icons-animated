@@ -470,6 +470,7 @@ import { HugeiconsWindArrowDownIcon } from './wind-arrow-down';
 import { HugeiconsWorkflowIcon } from './workflow';
 import { HugeiconsWrench01Icon } from './wrench-01';
 import { HugeiconsXIcon } from './x';
+import { HugeiconsYoutubeIcon } from './youtube';
 
 const HUGEICONS_ICON_LIST = [
   {
@@ -2504,6 +2505,7 @@ const HUGEICONS_ICON_LIST = [
     icon: HugeiconsXIcon,
     keywords: ['close', 'x', 'cancel', 'dismiss', 'remove', 'delete'],
   },
+  { name: 'youtube', icon: HugeiconsYoutubeIcon, keywords: ['youtube'] },
 ];
 
 export {
@@ -2980,4 +2982,5 @@ export {
   HugeiconsWorkflowIcon,
   HugeiconsWrench01Icon,
   HugeiconsXIcon,
+  HugeiconsYoutubeIcon,
 };
