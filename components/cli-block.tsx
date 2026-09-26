@@ -10,13 +10,20 @@ import { toast } from 'sonner';
 import { IconState } from '@/components/ui/icon-state';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { PACKAGE_MANAGER } from '@/constants';
+import {
+  getIconInstallCommand,
+  getIconInstallParts,
+} from '@/lib/get-icon-install-command';
 import { getPackageManagerPrefix } from '@/lib/get-package-manager-prefix';
 import { cn } from '@/lib/utils';
+import { useIconFramework } from '@/providers/icon-framework';
 import { useIconLibrary } from '@/providers/icon-library';
 import { usePackageNameContext } from '@/providers/package-name';
 
 const CliBlockContent = () => {
   const { library, iconList, isLoading, loadError } = useIconLibrary();
+  const { framework } = useIconFramework();
+  const installParts = getIconInstallParts(library, framework);
   const icons = useMemo(() => {
     const shortNames = iconList.filter((icon) => icon.name.length <= 20);
     return shortNames.length ? shortNames : iconList;
@@ -26,7 +33,7 @@ const CliBlockContent = () => {
   const { packageName, setPackageName } = usePackageNameContext();
   const currentIcon = icons[currentIndex] ?? icons[0];
   const command = currentIcon
-    ? `${getPackageManagerPrefix(packageName)} shadcn add @icons-animated/${library}-${currentIcon.name}`
+    ? getIconInstallCommand(packageName, library, currentIcon.name, framework)
     : '';
 
   useEffect(() => {
@@ -108,7 +115,7 @@ const CliBlockContent = () => {
                       className="text-black dark:text-white"
                       aria-hidden="true"
                     >
-                      shadcn add @icons-animated/{library}-
+                      {installParts.prefix}
                     </span>
                     <span
                       className="relative inline-block whitespace-nowrap"
@@ -142,6 +149,7 @@ const CliBlockContent = () => {
                         </motion.span>
                       </AnimatePresence>
                     </span>
+                    <span aria-hidden="true">{installParts.suffix}</span>
                   </>
                 ) : (
                   <span role="status" className="text-secondary">
@@ -182,7 +190,8 @@ const CliBlockContent = () => {
 
 const CliBlock = () => {
   const { library } = useIconLibrary();
-  return <CliBlockContent key={library} />;
+  const { framework } = useIconFramework();
+  return <CliBlockContent key={`${library}-${framework}`} />;
 };
 
 export { CliBlock };

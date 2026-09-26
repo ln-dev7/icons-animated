@@ -15,9 +15,11 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
+import { FRAMEWORK_INFO } from '@/constants/frameworks';
 import { useTouchDevice } from '@/hooks/use-touch-device';
-import { getPackageManagerPrefix } from '@/lib/get-package-manager-prefix';
+import { getIconInstallCommand } from '@/lib/get-icon-install-command';
 import { cn } from '@/lib/utils';
+import { useIconFramework } from '@/providers/icon-framework';
 import { useIconLibrary } from '@/providers/icon-library';
 import { usePackageNameContext } from '@/providers/package-name';
 
@@ -133,27 +135,69 @@ const Title = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
+const useCopyState = () => {
+  const [state, setState] = useState<IconStatus>('idle');
+  const mounted = useRef(false);
+  const busy = useRef(false);
+  const request = useRef(0);
+  const timeout = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    mounted.current = true;
+    return () => {
+      mounted.current = false;
+      request.current += 1;
+      if (timeout.current) clearTimeout(timeout.current);
+    };
+  }, []);
+
+  const isCurrent = (id: number) => mounted.current && request.current === id;
+
+  const begin = () => {
+    if (!mounted.current || busy.current) return null;
+    busy.current = true;
+    const id = ++request.current;
+    setState('loading');
+    return id;
+  };
+
+  const finish = (id: number, status: 'done' | 'error') => {
+    if (!isCurrent(id)) return;
+    setState(status);
+    timeout.current = setTimeout(() => {
+      if (!isCurrent(id)) return;
+      busy.current = false;
+      timeout.current = null;
+      setState('idle');
+    }, 2000);
+  };
+
+  return { state, begin, isCurrent, finish };
+};
+
 const CopyCLIAction = ({ name }: Pick<Icon, 'name'>) => {
   const { packageName } = usePackageNameContext();
   const { library } = useIconLibrary();
+  const { framework } = useIconFramework();
 
-  const [state, setState] = useState<IconStatus>('idle');
+  const { state, begin, isCurrent, finish } = useCopyState();
 
   const handleCopy = async () => {
-    if (state !== 'idle') return;
+    const request = begin();
+    if (request === null) return;
 
     try {
+      if (!isCurrent(request)) return;
       await navigator.clipboard.writeText(
-        `${getPackageManagerPrefix(packageName)} shadcn add @icons-animated/${library}-${name}`
+        getIconInstallCommand(packageName, library, name, framework)
       );
-      setState('done');
-      setTimeout(() => setState('idle'), 2000);
+      finish(request, 'done');
     } catch {
+      if (!isCurrent(request)) return;
       toast.error('Failed to copy to clipboard', {
         description: 'Please check your browser permissions.',
       });
-      setState('error');
-      setTimeout(() => setState('idle'), 2000);
+      finish(request, 'error');
     }
   };
 
@@ -161,7 +205,7 @@ const CopyCLIAction = ({ name }: Pick<Icon, 'name'>) => {
     <Tooltip>
       <TooltipTrigger
         tabIndex={0}
-        aria-label="Copy shadcn/cli command"
+        aria-label={`Copy ${FRAMEWORK_INFO[framework].name} install command`}
         aria-disabled={state !== 'idle'}
         data-busy={state !== 'idle' ? '' : undefined}
         className="focus-visible:outline-primary supports-[corner-shape:squircle]:corner-squircle flex size-10 cursor-pointer items-center justify-center rounded-[14px] bg-neutral-200/20 transition-[background-color] duration-100 focus-within:-outline-offset-1 hover:bg-neutral-200 focus-visible:outline-1 supports-[corner-shape:squircle]:rounded-[20px] dark:bg-neutral-800/20 dark:hover:bg-neutral-700"
@@ -177,7 +221,7 @@ const CopyCLIAction = ({ name }: Pick<Icon, 'name'>) => {
       <TooltipContent>
         Copy{' '}
         <code className="rounded-[4px] bg-neutral-50/20 px-1 py-0.5 font-mono">
-          shadcn/cli
+          {FRAMEWORK_INFO[framework].cli}
         </code>{' '}
         command
       </TooltipContent>
@@ -187,26 +231,25 @@ const CopyCLIAction = ({ name }: Pick<Icon, 'name'>) => {
 
 const CopyCodeAction = ({ name }: Pick<Icon, 'name'>) => {
   const { library } = useIconLibrary();
+  const { framework } = useIconFramework();
 
-  const [state, setState] = useState<IconStatus>('idle');
+  const { state, begin, isCurrent, finish } = useCopyState();
 
   const handleCopy = async () => {
-    if (state !== 'idle') return;
+    const request = begin();
+    if (request === null) return;
 
     try {
-      setState('loading');
-
-      const content = await getIconContent(library, name);
-
+      const content = await getIconContent(library, name, framework);
+      if (!isCurrent(request)) return;
       await navigator.clipboard.writeText(content);
-      setState('done');
-      setTimeout(() => setState('idle'), 2000);
+      finish(request, 'done');
     } catch {
+      if (!isCurrent(request)) return;
       toast.error('Failed to copy to clipboard', {
         description: 'Please check your browser permissions.',
       });
-      setState('error');
-      setTimeout(() => setState('idle'), 2000);
+      finish(request, 'error');
     }
   };
 
@@ -215,7 +258,7 @@ const CopyCodeAction = ({ name }: Pick<Icon, 'name'>) => {
       <TooltipTrigger
         tabIndex={0}
         className="focus-visible:outline-primary supports-[corner-shape:squircle]:corner-squircle flex size-10 cursor-pointer items-center justify-center rounded-[14px] bg-neutral-200/20 transition-[background-color] duration-100 focus-within:-outline-offset-1 hover:bg-neutral-200 focus-visible:outline-1 supports-[corner-shape:squircle]:rounded-[20px] dark:bg-neutral-800/20 dark:hover:bg-neutral-700"
-        aria-label="Copy .tsx code"
+        aria-label={`Copy .${FRAMEWORK_INFO[framework].extension} code`}
         aria-disabled={state !== 'idle'}
         data-busy={state !== 'idle' ? '' : undefined}
         onClick={handleCopy}
@@ -230,7 +273,7 @@ const CopyCodeAction = ({ name }: Pick<Icon, 'name'>) => {
       <TooltipContent>
         Copy{' '}
         <code className="rounded-[4px] bg-neutral-50/20 px-1 py-0.5 font-mono">
-          .tsx
+          .{FRAMEWORK_INFO[framework].extension}
         </code>{' '}
         code
       </TooltipContent>
@@ -239,11 +282,15 @@ const CopyCodeAction = ({ name }: Pick<Icon, 'name'>) => {
 };
 
 const Actions = ({ name }: Pick<Icon, 'name'>) => {
+  const { library } = useIconLibrary();
+  const { framework } = useIconFramework();
+  const actionKey = `${library}-${framework}-${name}`;
+
   return (
     <TooltipProvider>
       <div className="my-6 flex items-center justify-center gap-2 opacity-0 transition-opacity duration-100 group-focus-within/card:opacity-100 group-hover/card:opacity-100 has-focus-visible:opacity-100 has-data-busy:opacity-100 has-data-popup-open:opacity-100 [@media(hover:none)]:opacity-100">
-        <CopyCodeAction name={name} />
-        <CopyCLIAction name={name} />
+        <CopyCodeAction key={`code-${actionKey}`} name={name} />
+        <CopyCLIAction key={`cli-${actionKey}`} name={name} />
       </div>
     </TooltipProvider>
   );

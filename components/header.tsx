@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 
+import { FrameworkSelector } from '@/components/framework-selector';
 import { GithubStartsButton } from '@/components/github-button';
 import { LibrarySelector } from '@/components/library-selector';
 import { ThemeToggle } from '@/components/ui/theme-toggle';
@@ -51,27 +52,30 @@ const Header = () => {
 
   return (
     <header className="mx-auto mt-[25px] w-full max-w-7xl px-4 font-mono">
-      <div className="flex h-full w-full justify-between gap-4">
-        <div className="relative mr-auto flex h-[42px] items-center gap-2 font-sans text-base max-[524px]:translate-y-[-2px] min-[395px]:text-xl">
-          <Link
-            href="/"
-            aria-label="Icons Animated - Home"
-            tabIndex={0}
-            className="focus-visible:outline-primary flex items-center gap-2 focus-within:outline-offset-4 focus-visible:outline-1"
-          >
-            <Logo className="text-primary w-6 shrink-0 data-[type='christmas']:translate-y-[-4px] min-[395px]:w-8" />
-            <span className="shrink-0">icons-animated</span>
-          </Link>
-          <a
-            href={currentLib.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-primary absolute right-0 -bottom-2 text-sm italic hover:underline"
-          >
-            {currentLib.name}
-          </a>
+      <div className="flex h-full w-full flex-wrap items-center justify-between gap-4">
+        <div className="mr-auto flex h-[42px] shrink-0 items-center gap-2 font-sans text-base min-[395px]:text-xl">
+          <div className="relative">
+            <Link
+              href="/"
+              aria-label="Icons Animated - Home"
+              tabIndex={0}
+              className="focus-visible:outline-primary flex items-center gap-2 focus-within:outline-offset-4 focus-visible:outline-1"
+            >
+              <Logo className="text-primary w-6 shrink-0 data-[type='christmas']:translate-y-[-4px] min-[395px]:w-8" />
+              <span className="shrink-0">icons-animated</span>
+            </Link>
+            <a
+              href={currentLib.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary absolute right-0 -bottom-2 text-sm italic hover:underline"
+            >
+              {currentLib.name}
+            </a>
+          </div>
+          <FrameworkSelector />
         </div>
-        <div className="ml-auto flex w-full flex-1 flex-wrap-reverse items-center justify-end gap-2">
+        <div className="ml-auto flex w-full flex-wrap items-center justify-between gap-2 min-[760px]:w-auto min-[760px]:justify-end">
           <LibrarySelector />
           <a
             href="https://lndev.mychariow.shop/prd_3cu1s0"
@@ -93,7 +97,7 @@ const Header = () => {
                 className="fill-primary"
               />
             </svg>
-            Sponsor Project
+            <span className="hidden sm:inline">Sponsor Project</span>
           </a>
           <div className="flex items-center gap-2">
             <ThemeToggle />

@@ -27,7 +27,7 @@ const LibrarySelector = () => {
 
   return (
     <Select value={library} onValueChange={handleValueChange}>
-      <SelectTrigger className="w-32 text-sm">
+      <SelectTrigger aria-label="Icon library" className="w-32 text-sm">
         <SelectValue placeholder="Select library" />
       </SelectTrigger>
       <SelectContent className="bg-background/80 backdrop-blur-md">
