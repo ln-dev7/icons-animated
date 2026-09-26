@@ -1668,6 +1668,19 @@
       ]
     },
     {
+      "name": "hugeicons-cloud-upload",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-cloud-upload.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-download",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2911,6 +2924,19 @@
       "files": [
         {
           "path": "phosphor-cloud-arrow-down.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-cloud-arrow-up",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-cloud-arrow-up.tsx",
           "type": "registry:ui"
         }
       ]
@@ -4705,6 +4731,19 @@
       "files": [
         {
           "path": "tabler-cloud-storm.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-cloud-upload",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-cloud-upload.tsx",
           "type": "registry:ui"
         }
       ]
