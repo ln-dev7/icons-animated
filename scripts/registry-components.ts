@@ -2893,6 +2893,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-zap-off',
+    'path': path.join(__dirname, '../icons/hugeicons/zap-off.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'phosphor-airplane',
     'path': path.join(__dirname, '../icons/phosphor/airplane.tsx'),
     'registryDependencies': [],
@@ -4054,6 +4060,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'phosphor-lightning-slash',
+    'path': path.join(__dirname, '../icons/phosphor/lightning-slash.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'phosphor-link',
     'path': path.join(__dirname, '../icons/phosphor/link.tsx'),
     'registryDependencies': [],
@@ -5112,6 +5124,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-bolt',
     'path': path.join(__dirname, '../icons/tabler/bolt.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-bolt-off',
+    'path': path.join(__dirname, '../icons/tabler/bolt-off.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

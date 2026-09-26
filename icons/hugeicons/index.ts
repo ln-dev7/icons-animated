@@ -472,6 +472,7 @@ import { HugeiconsWrench01Icon } from './wrench-01';
 import { HugeiconsXIcon } from './x';
 import { HugeiconsYoutubeIcon } from './youtube';
 import { HugeiconsZapIcon } from './zap';
+import { HugeiconsZapOffIcon } from './zap-off';
 
 const HUGEICONS_ICON_LIST = [
   {
@@ -2508,6 +2509,11 @@ const HUGEICONS_ICON_LIST = [
   },
   { name: 'youtube', icon: HugeiconsYoutubeIcon, keywords: ['youtube'] },
   { name: 'zap', icon: HugeiconsZapIcon, keywords: ['zap'] },
+  {
+    name: 'zap-off',
+    icon: HugeiconsZapOffIcon,
+    keywords: ['zap', 'off', 'zap-off'],
+  },
 ];
 
 export {
@@ -2986,4 +2992,5 @@ export {
   HugeiconsXIcon,
   HugeiconsYoutubeIcon,
   HugeiconsZapIcon,
+  HugeiconsZapOffIcon,
 };

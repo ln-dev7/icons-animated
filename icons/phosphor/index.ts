@@ -188,6 +188,7 @@ import { PhosphorKeyboardIcon } from './keyboard';
 import { PhosphorLayoutIcon } from './layout';
 import { PhosphorLeafIcon } from './leaf';
 import { PhosphorLightningIcon } from './lightning';
+import { PhosphorLightningSlashIcon } from './lightning-slash';
 import { PhosphorLinkIcon } from './link';
 import { PhosphorLinkSimpleIcon } from './link-simple';
 import { PhosphorLinkedinLogoIcon } from './linkedin-logo';
@@ -1262,6 +1263,11 @@ const PHOSPHOR_ICON_LIST = [
     icon: PhosphorLightningIcon,
     keywords: ['lightning', 'zap'],
   },
+  {
+    name: 'lightning-slash',
+    icon: PhosphorLightningSlashIcon,
+    keywords: ['lightning', 'slash', 'zap-off', 'zap', 'off'],
+  },
   { name: 'link', icon: PhosphorLinkIcon, keywords: ['link'] },
   {
     name: 'link-simple',
@@ -1979,6 +1985,7 @@ export {
   PhosphorLayoutIcon,
   PhosphorLeafIcon,
   PhosphorLightningIcon,
+  PhosphorLightningSlashIcon,
   PhosphorLinkIcon,
   PhosphorLinkSimpleIcon,
   PhosphorLinkedinLogoIcon,
