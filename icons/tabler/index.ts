@@ -50,6 +50,7 @@ import { TablerSearchIcon } from './search';
 import { TablerSettingsIcon } from './settings';
 import { TablerShareIcon } from './share';
 import { TablerSortAscendingNumbersIcon } from './sort-ascending-numbers';
+import { TablerSortDescendingNumbersIcon } from './sort-descending-numbers';
 import { TablerStarIcon } from './star';
 import { TablerTrashIcon } from './trash';
 import { TablerUploadIcon } from './upload';
@@ -367,6 +368,20 @@ const TABLER_ICON_LIST = [
     ],
   },
   {
+    name: 'sort-descending-numbers',
+    icon: TablerSortDescendingNumbersIcon,
+    keywords: [
+      'sort',
+      'descending',
+      'numbers',
+      'arrow-down-1-0',
+      'arrow',
+      'down',
+      '1',
+      '0',
+    ],
+  },
+  {
     name: 'star',
     icon: TablerStarIcon,
     keywords: ['star', 'favorite', 'bookmark', 'rate', 'rating'],
@@ -447,6 +462,7 @@ export {
   TablerSettingsIcon,
   TablerShareIcon,
   TablerSortAscendingNumbersIcon,
+  TablerSortDescendingNumbersIcon,
   TablerStarIcon,
   TablerTrashIcon,
   TablerUploadIcon,
