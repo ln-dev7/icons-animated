@@ -1538,6 +1538,19 @@
       ]
     },
     {
+      "name": "hugeicons-clipboard-check",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-clipboard-check.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-download",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -4393,6 +4406,19 @@
       "files": [
         {
           "path": "tabler-circle-dashed.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-clipboard-check",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-clipboard-check.tsx",
           "type": "registry:ui"
         }
       ]

@@ -730,6 +730,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-clipboard-check',
+    'path': path.join(__dirname, '../icons/hugeicons/clipboard-check.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-download',
     'path': path.join(__dirname, '../icons/hugeicons/download.tsx'),
     'registryDependencies': [],
@@ -2052,6 +2058,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-circle-dashed',
     'path': path.join(__dirname, '../icons/tabler/circle-dashed.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-clipboard-check',
+    'path': path.join(__dirname, '../icons/tabler/clipboard-check.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

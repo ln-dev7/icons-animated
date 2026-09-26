@@ -116,6 +116,7 @@ import { HugeiconsCircleDollarSignIcon } from './circle-dollar-sign';
 import { HugeiconsCircleGaugeIcon } from './circle-gauge';
 import { HugeiconsCircleQuestionMarkIcon } from './circle-question-mark';
 import { HugeiconsClapperboardIcon } from './clapperboard';
+import { HugeiconsClipboardCheckIcon } from './clipboard-check';
 import { HugeiconsDownloadIcon } from './download';
 import { HugeiconsEyeIcon } from './eye';
 import { HugeiconsFilterIcon } from './filter';
@@ -728,6 +729,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['clapperboard', 'clap'],
   },
   {
+    name: 'clipboard-check',
+    icon: HugeiconsClipboardCheckIcon,
+    keywords: ['clipboard', 'check', 'clipboard-check'],
+  },
+  {
     name: 'download',
     icon: HugeiconsDownloadIcon,
     keywords: ['download', 'save', 'arrow', 'get', 'export', 'download-01'],
@@ -1010,6 +1016,7 @@ export {
   HugeiconsCircleGaugeIcon,
   HugeiconsCircleQuestionMarkIcon,
   HugeiconsClapperboardIcon,
+  HugeiconsClipboardCheckIcon,
   HugeiconsDownloadIcon,
   HugeiconsEyeIcon,
   HugeiconsFilterIcon,
