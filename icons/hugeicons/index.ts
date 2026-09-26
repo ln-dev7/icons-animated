@@ -445,6 +445,7 @@ import { HugeiconsUploadIcon } from './upload';
 import { HugeiconsUserIcon } from './user';
 import { HugeiconsUserCheck01Icon } from './user-check-01';
 import { HugeiconsUserPlusIcon } from './user-plus';
+import { HugeiconsUserRoundCheckIcon } from './user-round-check';
 import { HugeiconsXIcon } from './x';
 
 const HUGEICONS_ICON_LIST = [
@@ -2392,6 +2393,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['user', 'plus', 'user-plus'],
   },
   {
+    name: 'user-round-check',
+    icon: HugeiconsUserRoundCheckIcon,
+    keywords: ['user', 'round', 'check', 'user-round-check'],
+  },
+  {
     name: 'x',
     icon: HugeiconsXIcon,
     keywords: ['close', 'x', 'cancel', 'dismiss', 'remove', 'delete'],
@@ -2847,5 +2853,6 @@ export {
   HugeiconsUserIcon,
   HugeiconsUserCheck01Icon,
   HugeiconsUserPlusIcon,
+  HugeiconsUserRoundCheckIcon,
   HugeiconsXIcon,
 };
