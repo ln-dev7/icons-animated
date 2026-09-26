@@ -225,6 +225,19 @@
       ]
     },
     {
+      "name": "hugeicons-arrow-down-big",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-arrow-down-big.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-arrow-left",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -779,6 +792,19 @@
       "files": [
         {
           "path": "phosphor-arrow-down.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-arrow-fat-down",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-arrow-fat-down.tsx",
           "type": "registry:ui"
         }
       ]
@@ -1416,6 +1442,19 @@
       "files": [
         {
           "path": "tabler-archive.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-arrow-big-down",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-arrow-big-down.tsx",
           "type": "registry:ui"
         }
       ]
