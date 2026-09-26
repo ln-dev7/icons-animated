@@ -1732,6 +1732,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-map-pin-minus-inside',
+    'path': path.join(__dirname, '../icons/hugeicons/map-pin-minus-inside.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-menu',
     'path': path.join(__dirname, '../icons/hugeicons/menu.tsx'),
     'registryDependencies': [],

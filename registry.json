@@ -3683,6 +3683,19 @@
       ]
     },
     {
+      "name": "hugeicons-map-pin-minus-inside",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-map-pin-minus-inside.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-menu",
       "type": "registry:ui",
       "registryDependencies": [],
