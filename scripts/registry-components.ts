@@ -2605,6 +2605,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-train-track',
+    'path': path.join(__dirname, '../icons/hugeicons/train-track.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-trash',
     'path': path.join(__dirname, '../icons/hugeicons/trash.tsx'),
     'registryDependencies': [],
