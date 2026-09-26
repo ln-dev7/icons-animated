@@ -3111,6 +3111,19 @@
       ]
     },
     {
+      "name": "hugeicons-hat-glasses",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-hat-glasses.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-heart",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -4757,6 +4770,19 @@
       "files": [
         {
           "path": "phosphor-cursor-click.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-detective",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-detective.tsx",
           "type": "registry:ui"
         }
       ]
@@ -8514,6 +8540,19 @@
       "files": [
         {
           "path": "tabler-sort-descending-numbers.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-spy",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-spy.tsx",
           "type": "registry:ui"
         }
       ]

@@ -1468,6 +1468,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-hat-glasses',
+    'path': path.join(__dirname, '../icons/hugeicons/hat-glasses.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-heart',
     'path': path.join(__dirname, '../icons/hugeicons/heart.tsx'),
     'registryDependencies': [],
@@ -2238,6 +2244,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-cursor-click',
     'path': path.join(__dirname, '../icons/phosphor/cursor-click.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-detective',
+    'path': path.join(__dirname, '../icons/phosphor/detective.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -3972,6 +3984,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-sort-descending-numbers',
     'path': path.join(__dirname, '../icons/tabler/sort-descending-numbers.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-spy',
+    'path': path.join(__dirname, '../icons/tabler/spy.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
