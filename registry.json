@@ -95,6 +95,19 @@
       ]
     },
     {
+      "name": "hugeicons-alarm-clock-minus",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-alarm-clock-minus.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-arrow-down",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -1039,6 +1052,19 @@
       "files": [
         {
           "path": "tabler-alarm.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-alarm-minus",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-alarm-minus.tsx",
           "type": "registry:ui"
         }
       ]

@@ -5,6 +5,7 @@ import { HugeiconsAirplane01Icon } from './airplane-01';
 import { HugeiconsAirplayIcon } from './airplay';
 import { HugeiconsAlarmClockIcon } from './alarm-clock';
 import { HugeiconsAlarmClockCheckIcon } from './alarm-clock-check';
+import { HugeiconsAlarmClockMinusIcon } from './alarm-clock-minus';
 import { HugeiconsArrowDownIcon } from './arrow-down';
 import { HugeiconsArrowLeftIcon } from './arrow-left';
 import { HugeiconsArrowRightIcon } from './arrow-right';
@@ -70,6 +71,11 @@ const HUGEICONS_ICON_LIST = [
     name: 'alarm-clock-check',
     icon: HugeiconsAlarmClockCheckIcon,
     keywords: ['alarm', 'clock', 'check', 'alarm-clock-check'],
+  },
+  {
+    name: 'alarm-clock-minus',
+    icon: HugeiconsAlarmClockMinusIcon,
+    keywords: ['alarm', 'clock', 'minus', 'alarm-clock-minus'],
   },
   {
     name: 'arrow-down',
@@ -333,6 +339,7 @@ export {
   HugeiconsAirplayIcon,
   HugeiconsAlarmClockIcon,
   HugeiconsAlarmClockCheckIcon,
+  HugeiconsAlarmClockMinusIcon,
   HugeiconsArrowDownIcon,
   HugeiconsArrowLeftIcon,
   HugeiconsArrowRightIcon,
