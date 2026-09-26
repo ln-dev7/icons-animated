@@ -1600,6 +1600,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-leaf-01',
+    'path': path.join(__dirname, '../icons/hugeicons/leaf-01.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-lock',
     'path': path.join(__dirname, '../icons/hugeicons/lock.tsx'),
     'registryDependencies': [],
@@ -2727,6 +2733,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-layout',
     'path': path.join(__dirname, '../icons/phosphor/layout.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-leaf',
+    'path': path.join(__dirname, '../icons/phosphor/leaf.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -4083,6 +4095,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-layout-grid',
     'path': path.join(__dirname, '../icons/tabler/layout-grid.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-leaf',
+    'path': path.join(__dirname, '../icons/tabler/leaf.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

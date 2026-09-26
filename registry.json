@@ -3397,6 +3397,19 @@
       ]
     },
     {
+      "name": "hugeicons-leaf-01",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-leaf-01.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-lock",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -5810,6 +5823,19 @@
       "files": [
         {
           "path": "phosphor-layout.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-leaf",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-leaf.tsx",
           "type": "registry:ui"
         }
       ]
@@ -8748,6 +8774,19 @@
       "files": [
         {
           "path": "tabler-layout-grid.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-leaf",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-leaf.tsx",
           "type": "registry:ui"
         }
       ]
