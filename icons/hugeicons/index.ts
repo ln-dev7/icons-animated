@@ -443,6 +443,7 @@ import { HugeiconsUnfoldMoreIcon } from './unfold-more';
 import { HugeiconsUniversalAccessIcon } from './universal-access';
 import { HugeiconsUploadIcon } from './upload';
 import { HugeiconsUserIcon } from './user';
+import { HugeiconsUserCheck01Icon } from './user-check-01';
 import { HugeiconsXIcon } from './x';
 
 const HUGEICONS_ICON_LIST = [
@@ -2380,6 +2381,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['user', 'person', 'profile', 'account', 'avatar'],
   },
   {
+    name: 'user-check-01',
+    icon: HugeiconsUserCheck01Icon,
+    keywords: ['user', 'check', '01', 'user-check'],
+  },
+  {
     name: 'x',
     icon: HugeiconsXIcon,
     keywords: ['close', 'x', 'cancel', 'dismiss', 'remove', 'delete'],
@@ -2833,5 +2839,6 @@ export {
   HugeiconsUniversalAccessIcon,
   HugeiconsUploadIcon,
   HugeiconsUserIcon,
+  HugeiconsUserCheck01Icon,
   HugeiconsXIcon,
 };
