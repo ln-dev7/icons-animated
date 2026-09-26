@@ -73,6 +73,15 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-align-vertical-space-around',
+    'path': path.join(
+      __dirname,
+      '../icons/hugeicons/align-vertical-space-around.tsx'
+    ),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-arrow-down',
     'path': path.join(__dirname, '../icons/hugeicons/arrow-down.tsx'),
     'registryDependencies': [],
@@ -312,6 +321,12 @@ export const components: ComponentDefinition[] = [
       __dirname,
       '../icons/phosphor/align-center-horizontal.tsx'
     ),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-align-center-vertical',
+    'path': path.join(__dirname, '../icons/phosphor/align-center-vertical.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -690,6 +705,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-layout-align-center',
     'path': path.join(__dirname, '../icons/tabler/layout-align-center.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-layout-align-middle',
+    'path': path.join(__dirname, '../icons/tabler/layout-align-middle.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

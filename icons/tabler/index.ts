@@ -25,6 +25,7 @@ import { TablerFilterIcon } from './filter';
 import { TablerHeartIcon } from './heart';
 import { TablerHomeIcon } from './home';
 import { TablerLayoutAlignCenterIcon } from './layout-align-center';
+import { TablerLayoutAlignMiddleIcon } from './layout-align-middle';
 import { TablerLockIcon } from './lock';
 import { TablerMailIcon } from './mail';
 import { TablerMenuIcon } from './menu';
@@ -215,6 +216,11 @@ const TABLER_ICON_LIST = [
     keywords: ['layout', 'align', 'center', 'align-horizontal', 'horizontal'],
   },
   {
+    name: 'layout-align-middle',
+    icon: TablerLayoutAlignMiddleIcon,
+    keywords: ['layout', 'align', 'middle', 'align-vertical', 'vertical'],
+  },
+  {
     name: 'lock',
     icon: TablerLockIcon,
     keywords: [
@@ -337,6 +343,7 @@ export {
   TablerHeartIcon,
   TablerHomeIcon,
   TablerLayoutAlignCenterIcon,
+  TablerLayoutAlignMiddleIcon,
   TablerLockIcon,
   TablerMailIcon,
   TablerMenuIcon,
