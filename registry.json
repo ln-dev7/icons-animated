@@ -3202,6 +3202,19 @@
       ]
     },
     {
+      "name": "hugeicons-id-card",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-id-card.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-lock",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -5524,6 +5537,19 @@
       "files": [
         {
           "path": "phosphor-house.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-identification-card",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-identification-card.tsx",
           "type": "registry:ui"
         }
       ]
@@ -8267,6 +8293,19 @@
       "files": [
         {
           "path": "tabler-hourglass.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-id",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-id.tsx",
           "type": "registry:ui"
         }
       ]

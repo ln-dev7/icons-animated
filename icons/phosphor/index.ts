@@ -151,6 +151,7 @@ import { PhosphorHeartIcon } from './heart';
 import { PhosphorHeartbeatIcon } from './heartbeat';
 import { PhosphorHourglassIcon } from './hourglass';
 import { PhosphorHouseIcon } from './house';
+import { PhosphorIdentificationCardIcon } from './identification-card';
 import { PhosphorListIcon } from './list';
 import { PhosphorLockIcon } from './lock';
 import { PhosphorNotebookIcon } from './notebook';
@@ -948,6 +949,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['home', 'house', 'building', 'main', 'dashboard'],
   },
   {
+    name: 'identification-card',
+    icon: PhosphorIdentificationCardIcon,
+    keywords: ['identification', 'card', 'id-card', 'id'],
+  },
+  {
     name: 'list',
     icon: PhosphorListIcon,
     keywords: ['menu', 'hamburger', 'list', 'navigation', 'lines'],
@@ -1315,6 +1321,7 @@ export {
   PhosphorHeartbeatIcon,
   PhosphorHourglassIcon,
   PhosphorHouseIcon,
+  PhosphorIdentificationCardIcon,
   PhosphorListIcon,
   PhosphorLockIcon,
   PhosphorNotebookIcon,
