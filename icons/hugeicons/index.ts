@@ -370,6 +370,7 @@ import { HugeiconsScanFaceIcon } from './scan-face';
 import { HugeiconsScanTextIcon } from './scan-text';
 import { HugeiconsSearchIcon } from './search';
 import { HugeiconsSendIcon } from './send';
+import { HugeiconsServerIcon } from './server';
 import { HugeiconsSettingsIcon } from './settings';
 import { HugeiconsShareIcon } from './share';
 import { HugeiconsShoppingCart01Icon } from './shopping-cart-01';
@@ -2020,6 +2021,7 @@ const HUGEICONS_ICON_LIST = [
     ],
   },
   { name: 'send', icon: HugeiconsSendIcon, keywords: ['send'] },
+  { name: 'server', icon: HugeiconsServerIcon, keywords: ['server'] },
   {
     name: 'settings',
     icon: HugeiconsSettingsIcon,
@@ -2478,6 +2480,7 @@ export {
   HugeiconsScanTextIcon,
   HugeiconsSearchIcon,
   HugeiconsSendIcon,
+  HugeiconsServerIcon,
   HugeiconsSettingsIcon,
   HugeiconsShareIcon,
   HugeiconsShoppingCart01Icon,

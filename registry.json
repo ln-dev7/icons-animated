@@ -4840,6 +4840,19 @@
       ]
     },
     {
+      "name": "hugeicons-server",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-server.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-settings",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -7227,6 +7240,19 @@
       "files": [
         {
           "path": "phosphor-hand-palm.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-hard-drives",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-hard-drives.tsx",
           "type": "registry:ui"
         }
       ]
@@ -11985,6 +12011,19 @@
       "files": [
         {
           "path": "tabler-send.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-server",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-server.tsx",
           "type": "registry:ui"
         }
       ]
