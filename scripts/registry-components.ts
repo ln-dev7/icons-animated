@@ -490,6 +490,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-cast',
+    'path': path.join(__dirname, '../icons/hugeicons/cast.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-check',
     'path': path.join(__dirname, '../icons/hugeicons/check.tsx'),
     'registryDependencies': [],
@@ -1099,6 +1105,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'phosphor-screencast',
+    'path': path.join(__dirname, '../icons/phosphor/screencast.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'phosphor-seal-percent',
     'path': path.join(__dirname, '../icons/phosphor/seal-percent.tsx'),
     'registryDependencies': [],
@@ -1563,6 +1575,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-calendar-week',
     'path': path.join(__dirname, '../icons/tabler/calendar-week.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-cast',
+    'path': path.join(__dirname, '../icons/tabler/cast.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

@@ -57,6 +57,7 @@ import { TablerCalendarIcon } from './calendar';
 import { TablerCalendarCheckIcon } from './calendar-check';
 import { TablerCalendarCogIcon } from './calendar-cog';
 import { TablerCalendarWeekIcon } from './calendar-week';
+import { TablerCastIcon } from './cast';
 import { TablerCheckIcon } from './check';
 import { TablerChevronDownIcon } from './chevron-down';
 import { TablerChevronLeftIcon } from './chevron-left';
@@ -334,6 +335,7 @@ const TABLER_ICON_LIST = [
     icon: TablerCalendarWeekIcon,
     keywords: ['calendar', 'week', 'calendar-days', 'days'],
   },
+  { name: 'cast', icon: TablerCastIcon, keywords: ['cast'] },
   {
     name: 'check',
     icon: TablerCheckIcon,
@@ -673,6 +675,7 @@ export {
   TablerCalendarCheckIcon,
   TablerCalendarCogIcon,
   TablerCalendarWeekIcon,
+  TablerCastIcon,
   TablerCheckIcon,
   TablerChevronDownIcon,
   TablerChevronLeftIcon,

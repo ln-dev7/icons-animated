@@ -78,6 +78,7 @@ import { HugeiconsCalendarCheckIcon } from './calendar-check';
 import { HugeiconsCalendarCheck01Icon } from './calendar-check-01';
 import { HugeiconsCalendarCogIcon } from './calendar-cog';
 import { HugeiconsCalendarDaysIcon } from './calendar-days';
+import { HugeiconsCastIcon } from './cast';
 import { HugeiconsCheckIcon } from './check';
 import { HugeiconsChevronDownIcon } from './chevron-down';
 import { HugeiconsChevronLeftIcon } from './chevron-left';
@@ -468,6 +469,7 @@ const HUGEICONS_ICON_LIST = [
     icon: HugeiconsCalendarDaysIcon,
     keywords: ['calendar', 'days', 'calendar-days'],
   },
+  { name: 'cast', icon: HugeiconsCastIcon, keywords: ['cast'] },
   {
     name: 'check',
     icon: HugeiconsCheckIcon,
@@ -760,6 +762,7 @@ export {
   HugeiconsCalendarCheck01Icon,
   HugeiconsCalendarCogIcon,
   HugeiconsCalendarDaysIcon,
+  HugeiconsCastIcon,
   HugeiconsCheckIcon,
   HugeiconsChevronDownIcon,
   HugeiconsChevronLeftIcon,

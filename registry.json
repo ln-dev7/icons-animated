@@ -1044,6 +1044,19 @@
       ]
     },
     {
+      "name": "hugeicons-cast",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-cast.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-check",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2357,6 +2370,19 @@
       ]
     },
     {
+      "name": "phosphor-screencast",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-screencast.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-seal-percent",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -3366,6 +3392,19 @@
       "files": [
         {
           "path": "tabler-calendar-week.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-cast",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-cast.tsx",
           "type": "registry:ui"
         }
       ]
