@@ -258,6 +258,7 @@ import { PhosphorSquaresFourIcon } from './squares-four';
 import { PhosphorStackIcon } from './stack';
 import { PhosphorStampIcon } from './stamp';
 import { PhosphorStarIcon } from './star';
+import { PhosphorStethoscopeIcon } from './stethoscope';
 import { PhosphorTextAlignCenterIcon } from './text-align-center';
 import { PhosphorTextAlignLeftIcon } from './text-align-left';
 import { PhosphorTextAlignRightIcon } from './text-align-right';
@@ -1544,6 +1545,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['star', 'favorite', 'bookmark', 'rate', 'rating'],
   },
   {
+    name: 'stethoscope',
+    icon: PhosphorStethoscopeIcon,
+    keywords: ['stethoscope'],
+  },
+  {
     name: 'text-align-center',
     icon: PhosphorTextAlignCenterIcon,
     keywords: ['text', 'align', 'center', 'align-center'],
@@ -1863,6 +1869,7 @@ export {
   PhosphorStackIcon,
   PhosphorStampIcon,
   PhosphorStarIcon,
+  PhosphorStethoscopeIcon,
   PhosphorTextAlignCenterIcon,
   PhosphorTextAlignLeftIcon,
   PhosphorTextAlignRightIcon,

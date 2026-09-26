@@ -404,6 +404,7 @@ import { HugeiconsSquarePenIcon } from './square-pen';
 import { HugeiconsSquareStackIcon } from './square-stack';
 import { HugeiconsStampIcon } from './stamp';
 import { HugeiconsStarIcon } from './star';
+import { HugeiconsStethoscopeIcon } from './stethoscope';
 import { HugeiconsSunCloud02Icon } from './sun-cloud-02';
 import { HugeiconsTextAlignCenterIcon } from './text-align-center';
 import { HugeiconsTextAlignLeftIcon } from './text-align-left';
@@ -2192,6 +2193,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['star', 'favorite', 'bookmark', 'rate', 'rating'],
   },
   {
+    name: 'stethoscope',
+    icon: HugeiconsStethoscopeIcon,
+    keywords: ['stethoscope'],
+  },
+  {
     name: 'sun-cloud-02',
     icon: HugeiconsSunCloud02Icon,
     keywords: ['sun', 'cloud', '02', 'cloud-sun'],
@@ -2656,6 +2662,7 @@ export {
   HugeiconsSquareStackIcon,
   HugeiconsStampIcon,
   HugeiconsStarIcon,
+  HugeiconsStethoscopeIcon,
   HugeiconsSunCloud02Icon,
   HugeiconsTextAlignCenterIcon,
   HugeiconsTextAlignLeftIcon,
