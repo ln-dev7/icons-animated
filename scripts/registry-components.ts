@@ -346,6 +346,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-blocks',
+    'path': path.join(__dirname, '../icons/hugeicons/blocks.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-calendar',
     'path': path.join(__dirname, '../icons/hugeicons/calendar.tsx'),
     'registryDependencies': [],
@@ -1233,6 +1239,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-binary',
     'path': path.join(__dirname, '../icons/tabler/binary.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-blocks',
+    'path': path.join(__dirname, '../icons/tabler/blocks.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
