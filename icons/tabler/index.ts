@@ -203,6 +203,7 @@ import { TablerMapPinOffIcon } from './map-pin-off';
 import { TablerMapPinPlusIcon } from './map-pin-plus';
 import { TablerMaximizeIcon } from './maximize';
 import { TablerMenuIcon } from './menu';
+import { TablerMessageIcon } from './message';
 import { TablerMessageChatbotIcon } from './message-chatbot';
 import { TablerMessageCircleIcon } from './message-circle';
 import { TablerMessageCircleCheckIcon } from './message-circle-check';
@@ -1144,6 +1145,11 @@ const TABLER_ICON_LIST = [
     keywords: ['menu', 'hamburger', 'list', 'navigation', 'lines'],
   },
   {
+    name: 'message',
+    icon: TablerMessageIcon,
+    keywords: ['message', 'message-square', 'square'],
+  },
+  {
     name: 'message-chatbot',
     icon: TablerMessageChatbotIcon,
     keywords: ['message', 'chatbot', 'bot-message-square', 'bot', 'square'],
@@ -1599,6 +1605,7 @@ export {
   TablerMapPinPlusIcon,
   TablerMaximizeIcon,
   TablerMenuIcon,
+  TablerMessageIcon,
   TablerMessageChatbotIcon,
   TablerMessageCircleIcon,
   TablerMessageCircleCheckIcon,
