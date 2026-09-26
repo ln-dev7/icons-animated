@@ -182,6 +182,7 @@ import { TablerKeyboardIcon } from './keyboard';
 import { TablerLanguageIcon } from './language';
 import { TablerLayoutAlignCenterIcon } from './layout-align-center';
 import { TablerLayoutAlignMiddleIcon } from './layout-align-middle';
+import { TablerLayoutGridIcon } from './layout-grid';
 import { TablerLockIcon } from './lock';
 import { TablerMailIcon } from './mail';
 import { TablerMenuIcon } from './menu';
@@ -1035,6 +1036,11 @@ const TABLER_ICON_LIST = [
     keywords: ['layout', 'align', 'middle', 'align-vertical', 'vertical'],
   },
   {
+    name: 'layout-grid',
+    icon: TablerLayoutGridIcon,
+    keywords: ['layout', 'grid', 'layout-grid'],
+  },
+  {
     name: 'lock',
     icon: TablerLockIcon,
     keywords: [
@@ -1462,6 +1468,7 @@ export {
   TablerLanguageIcon,
   TablerLayoutAlignCenterIcon,
   TablerLayoutAlignMiddleIcon,
+  TablerLayoutGridIcon,
   TablerLockIcon,
   TablerMailIcon,
   TablerMenuIcon,

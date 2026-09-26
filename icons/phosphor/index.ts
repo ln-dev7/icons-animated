@@ -183,6 +183,7 @@ import { PhosphorSmileyMehIcon } from './smiley-meh';
 import { PhosphorSmileySadIcon } from './smiley-sad';
 import { PhosphorSortAscendingIcon } from './sort-ascending';
 import { PhosphorSortDescendingIcon } from './sort-descending';
+import { PhosphorSquaresFourIcon } from './squares-four';
 import { PhosphorStackIcon } from './stack';
 import { PhosphorStarIcon } from './star';
 import { PhosphorTextAlignCenterIcon } from './text-align-center';
@@ -1142,6 +1143,11 @@ const PHOSPHOR_ICON_LIST = [
       'a',
     ],
   },
+  {
+    name: 'squares-four',
+    icon: PhosphorSquaresFourIcon,
+    keywords: ['squares', 'four', 'layout-grid', 'layout', 'grid'],
+  },
   { name: 'stack', icon: PhosphorStackIcon, keywords: ['stack', 'layers'] },
   {
     name: 'star',
@@ -1393,6 +1399,7 @@ export {
   PhosphorSmileySadIcon,
   PhosphorSortAscendingIcon,
   PhosphorSortDescendingIcon,
+  PhosphorSquaresFourIcon,
   PhosphorStackIcon,
   PhosphorStarIcon,
   PhosphorTextAlignCenterIcon,

@@ -257,6 +257,7 @@ import { HugeiconsLanguagesIcon } from './languages';
 import { HugeiconsLaptopMinimalCheckIcon } from './laptop-minimal-check';
 import { HugeiconsLaughIcon } from './laugh';
 import { HugeiconsLayers01Icon } from './layers-01';
+import { HugeiconsLayoutGridIcon } from './layout-grid';
 import { HugeiconsLockIcon } from './lock';
 import { HugeiconsMailIcon } from './mail';
 import { HugeiconsMenuIcon } from './menu';
@@ -1432,6 +1433,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['layers', '01'],
   },
   {
+    name: 'layout-grid',
+    icon: HugeiconsLayoutGridIcon,
+    keywords: ['layout', 'grid', 'layout-grid'],
+  },
+  {
     name: 'lock',
     icon: HugeiconsLockIcon,
     keywords: [
@@ -1845,6 +1851,7 @@ export {
   HugeiconsLaptopMinimalCheckIcon,
   HugeiconsLaughIcon,
   HugeiconsLayers01Icon,
+  HugeiconsLayoutGridIcon,
   HugeiconsLockIcon,
   HugeiconsMailIcon,
   HugeiconsMenuIcon,

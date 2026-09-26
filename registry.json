@@ -3371,6 +3371,19 @@
       ]
     },
     {
+      "name": "hugeicons-layout-grid",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-layout-grid.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-lock",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -6114,6 +6127,19 @@
       ]
     },
     {
+      "name": "phosphor-squares-four",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-squares-four.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-stack",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -8683,6 +8709,19 @@
       "files": [
         {
           "path": "tabler-layout-align-middle.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-layout-grid",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-layout-grid.tsx",
           "type": "registry:ui"
         }
       ]
