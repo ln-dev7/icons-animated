@@ -14,6 +14,7 @@ import { HugeiconsAmbulanceIcon } from './ambulance';
 import { HugeiconsAngryIcon } from './angry';
 import { HugeiconsAnnoyedIcon } from './annoyed';
 import { HugeiconsArchiveIcon } from './archive';
+import { HugeiconsArrowBigDownDashIcon } from './arrow-big-down-dash';
 import { HugeiconsArrowDownIcon } from './arrow-down';
 import { HugeiconsArrowDownBigIcon } from './arrow-down-big';
 import { HugeiconsArrowLeftIcon } from './arrow-left';
@@ -113,6 +114,11 @@ const HUGEICONS_ICON_LIST = [
   { name: 'angry', icon: HugeiconsAngryIcon, keywords: ['angry'] },
   { name: 'annoyed', icon: HugeiconsAnnoyedIcon, keywords: ['annoyed'] },
   { name: 'archive', icon: HugeiconsArchiveIcon, keywords: ['archive'] },
+  {
+    name: 'arrow-big-down-dash',
+    icon: HugeiconsArrowBigDownDashIcon,
+    keywords: ['arrow', 'big', 'down', 'dash', 'arrow-big-down-dash'],
+  },
   {
     name: 'arrow-down',
     icon: HugeiconsArrowDownIcon,
@@ -404,6 +410,7 @@ export {
   HugeiconsAngryIcon,
   HugeiconsAnnoyedIcon,
   HugeiconsArchiveIcon,
+  HugeiconsArrowBigDownDashIcon,
   HugeiconsArrowDownIcon,
   HugeiconsArrowDownBigIcon,
   HugeiconsArrowLeftIcon,
