@@ -293,6 +293,7 @@ import { TablerShoppingCartIcon } from './shopping-cart';
 import { TablerShredderIcon } from './shredder';
 import { TablerSmokingIcon } from './smoking';
 import { TablerSmokingNoIcon } from './smoking-no';
+import { TablerSnowflakeIcon } from './snowflake';
 import { TablerSortAscendingLettersIcon } from './sort-ascending-letters';
 import { TablerSortAscendingNumbersIcon } from './sort-ascending-numbers';
 import { TablerSortDescendingLettersIcon } from './sort-descending-letters';
@@ -1629,6 +1630,7 @@ const TABLER_ICON_LIST = [
     icon: TablerSmokingNoIcon,
     keywords: ['smoking', 'no', 'cigarette-off', 'cigarette', 'off'],
   },
+  { name: 'snowflake', icon: TablerSnowflakeIcon, keywords: ['snowflake'] },
   {
     name: 'sort-ascending-letters',
     icon: TablerSortAscendingLettersIcon,
@@ -2035,6 +2037,7 @@ export {
   TablerShredderIcon,
   TablerSmokingIcon,
   TablerSmokingNoIcon,
+  TablerSnowflakeIcon,
   TablerSortAscendingLettersIcon,
   TablerSortAscendingNumbersIcon,
   TablerSortDescendingLettersIcon,

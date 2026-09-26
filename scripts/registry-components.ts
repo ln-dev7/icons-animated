@@ -2380,6 +2380,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-snowflake',
+    'path': path.join(__dirname, '../icons/hugeicons/snowflake.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-star',
     'path': path.join(__dirname, '../icons/hugeicons/star.tsx'),
     'registryDependencies': [],
@@ -3921,6 +3927,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-smiley-sad',
     'path': path.join(__dirname, '../icons/phosphor/smiley-sad.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-snowflake',
+    'path': path.join(__dirname, '../icons/phosphor/snowflake.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -5823,6 +5835,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-smoking-no',
     'path': path.join(__dirname, '../icons/tabler/smoking-no.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-snowflake',
+    'path': path.join(__dirname, '../icons/tabler/snowflake.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
