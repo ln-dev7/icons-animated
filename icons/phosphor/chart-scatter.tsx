@@ -56,9 +56,72 @@ const ICON_VARIANTS: Variants = {
     opacity: 1,
     transition: { duration: 0.18, ease: 'easeOut' },
   },
+  animate: { 'transition': { 'duration': 0.75, 'ease': 'easeInOut' } },
+};
+
+const DETAIL_0_VARIANTS: Variants = {
+  normal: {
+    'opacity': 1,
+    'transition': { 'duration': 0.18, 'ease': 'easeOut' },
+  },
   animate: {
-    scaleY: [1, 0.78, 1.04, 1],
-    transition: { duration: 0.75, ease: 'easeInOut' },
+    'opacity': [1, 0.25, 1],
+    'transition': { 'duration': 0.6, 'delay': 0.0, 'ease': 'easeInOut' },
+  },
+};
+
+const DETAIL_1_VARIANTS: Variants = {
+  normal: {
+    'opacity': 1,
+    'transition': { 'duration': 0.18, 'ease': 'easeOut' },
+  },
+  animate: {
+    'opacity': [1, 0.25, 1],
+    'transition': { 'duration': 0.6, 'delay': 0.08, 'ease': 'easeInOut' },
+  },
+};
+
+const DETAIL_2_VARIANTS: Variants = {
+  normal: {
+    'opacity': 1,
+    'transition': { 'duration': 0.18, 'ease': 'easeOut' },
+  },
+  animate: {
+    'opacity': [1, 0.25, 1],
+    'transition': { 'duration': 0.6, 'delay': 0.16, 'ease': 'easeInOut' },
+  },
+};
+
+const DETAIL_3_VARIANTS: Variants = {
+  normal: {
+    'opacity': 1,
+    'transition': { 'duration': 0.18, 'ease': 'easeOut' },
+  },
+  animate: {
+    'opacity': [1, 0.25, 1],
+    'transition': { 'duration': 0.6, 'delay': 0.24, 'ease': 'easeInOut' },
+  },
+};
+
+const DETAIL_4_VARIANTS: Variants = {
+  normal: {
+    'opacity': 1,
+    'transition': { 'duration': 0.18, 'ease': 'easeOut' },
+  },
+  animate: {
+    'opacity': [1, 0.25, 1],
+    'transition': { 'duration': 0.6, 'delay': 0.32, 'ease': 'easeInOut' },
+  },
+};
+
+const DETAIL_5_VARIANTS: Variants = {
+  normal: {
+    'opacity': 1,
+    'transition': { 'duration': 0.18, 'ease': 'easeOut' },
+  },
+  animate: {
+    'opacity': [1, 0.25, 1],
+    'transition': { 'duration': 0.6, 'delay': 0.4, 'ease': 'easeInOut' },
   },
 };
 
@@ -145,7 +208,37 @@ const PhosphorChartScatterIcon = forwardRef<
             variants={ICON_VARIANTS}
             style={{ transformOrigin: '128px 128px' }}
           >
-            <path d="M232,208a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V48a8,8,0,0,1,16,0V200H224A8,8,0,0,1,232,208ZM132,160a12,12,0,1,0-12-12A12,12,0,0,0,132,160Zm-24-56A12,12,0,1,0,96,92,12,12,0,0,0,108,104ZM76,176a12,12,0,1,0-12-12A12,12,0,0,0,76,176Zm96-48a12,12,0,1,0-12-12A12,12,0,0,0,172,128Zm24-40a12,12,0,1,0-12-12A12,12,0,0,0,196,88Zm-20,76a12,12,0,1,0,12-12A12,12,0,0,0,176,164Z" />
+            <path d="M232,208a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V48a8,8,0,0,1,16,0V200H224A8,8,0,0,1,232,208Z" />
+            <motion.path
+              d="M132,160a12,12,0,1,0-12-12A12,12,0,0,0,132,160Z"
+              variants={DETAIL_2_VARIANTS}
+              style={{ transformBox: 'fill-box', transformOrigin: 'center' }}
+            />
+            <motion.path
+              d="M108,104A12,12,0,1,0,96,92,12,12,0,0,0,108,104Z"
+              variants={DETAIL_1_VARIANTS}
+              style={{ transformBox: 'fill-box', transformOrigin: 'center' }}
+            />
+            <motion.path
+              d="M76,176a12,12,0,1,0-12-12A12,12,0,0,0,76,176Z"
+              variants={DETAIL_0_VARIANTS}
+              style={{ transformBox: 'fill-box', transformOrigin: 'center' }}
+            />
+            <motion.path
+              d="M172,128a12,12,0,1,0-12-12A12,12,0,0,0,172,128Z"
+              variants={DETAIL_3_VARIANTS}
+              style={{ transformBox: 'fill-box', transformOrigin: 'center' }}
+            />
+            <motion.path
+              d="M196,88a12,12,0,1,0-12-12A12,12,0,0,0,196,88Z"
+              variants={DETAIL_5_VARIANTS}
+              style={{ transformBox: 'fill-box', transformOrigin: 'center' }}
+            />
+            <motion.path
+              d="M176,164a12,12,0,1,0,12-12A12,12,0,0,0,176,164Z"
+              variants={DETAIL_4_VARIANTS}
+              style={{ transformBox: 'fill-box', transformOrigin: 'center' }}
+            />
           </motion.g>
         </svg>
       </div>
