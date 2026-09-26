@@ -83,6 +83,7 @@ import { TablerCircleDashedIcon } from './circle-dashed';
 import { TablerClipboardCheckIcon } from './clipboard-check';
 import { TablerClockIcon } from './clock';
 import { TablerCloudCogIcon } from './cloud-cog';
+import { TablerCloudDownloadIcon } from './cloud-download';
 import { TablerCoinIcon } from './coin';
 import { TablerDeviceCctvIcon } from './device-cctv';
 import { TablerDownloadIcon } from './download';
@@ -527,6 +528,11 @@ const TABLER_ICON_LIST = [
     keywords: ['cloud', 'cog', 'cloud-cog'],
   },
   {
+    name: 'cloud-download',
+    icon: TablerCloudDownloadIcon,
+    keywords: ['cloud', 'download', 'cloud-download'],
+  },
+  {
     name: 'coin',
     icon: TablerCoinIcon,
     keywords: ['coin', 'circle-dollar-sign', 'circle', 'dollar', 'sign'],
@@ -869,6 +875,7 @@ export {
   TablerClipboardCheckIcon,
   TablerClockIcon,
   TablerCloudCogIcon,
+  TablerCloudDownloadIcon,
   TablerCoinIcon,
   TablerDeviceCctvIcon,
   TablerDownloadIcon,

@@ -754,6 +754,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-cloud-download',
+    'path': path.join(__dirname, '../icons/hugeicons/cloud-download.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-download',
     'path': path.join(__dirname, '../icons/hugeicons/download.tsx'),
     'registryDependencies': [],
@@ -1317,6 +1323,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-clock',
     'path': path.join(__dirname, '../icons/phosphor/clock.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-cloud-arrow-down',
+    'path': path.join(__dirname, '../icons/phosphor/cloud-arrow-down.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -2100,6 +2112,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-cloud-cog',
     'path': path.join(__dirname, '../icons/tabler/cloud-cog.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-cloud-download',
+    'path': path.join(__dirname, '../icons/tabler/cloud-download.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

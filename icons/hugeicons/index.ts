@@ -120,6 +120,7 @@ import { HugeiconsClipboardCheckIcon } from './clipboard-check';
 import { HugeiconsClock01Icon } from './clock-01';
 import { HugeiconsCloudBackupIcon } from './cloud-backup';
 import { HugeiconsCloudCogIcon } from './cloud-cog';
+import { HugeiconsCloudDownloadIcon } from './cloud-download';
 import { HugeiconsDownloadIcon } from './download';
 import { HugeiconsEyeIcon } from './eye';
 import { HugeiconsFilterIcon } from './filter';
@@ -748,6 +749,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['cloud', 'cog', 'cloud-cog'],
   },
   {
+    name: 'cloud-download',
+    icon: HugeiconsCloudDownloadIcon,
+    keywords: ['cloud', 'download', 'cloud-download'],
+  },
+  {
     name: 'download',
     icon: HugeiconsDownloadIcon,
     keywords: ['download', 'save', 'arrow', 'get', 'export', 'download-01'],
@@ -1034,6 +1040,7 @@ export {
   HugeiconsClock01Icon,
   HugeiconsCloudBackupIcon,
   HugeiconsCloudCogIcon,
+  HugeiconsCloudDownloadIcon,
   HugeiconsDownloadIcon,
   HugeiconsEyeIcon,
   HugeiconsFilterIcon,
