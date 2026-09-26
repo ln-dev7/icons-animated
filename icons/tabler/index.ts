@@ -254,6 +254,7 @@ import { TablerPlusIcon } from './plus';
 import { TablerPropellerIcon } from './propeller';
 import { TablerRadioIcon } from './radio';
 import { TablerReceiptIcon } from './receipt';
+import { TablerReceiptEuroIcon } from './receipt-euro';
 import { TablerRefreshIcon } from './refresh';
 import { TablerRobotIcon } from './robot';
 import { TablerRosetteDiscountIcon } from './rosette-discount';
@@ -1425,6 +1426,11 @@ const TABLER_ICON_LIST = [
     keywords: ['receipt', 'receipt-text', 'text'],
   },
   {
+    name: 'receipt-euro',
+    icon: TablerReceiptEuroIcon,
+    keywords: ['receipt', 'euro', 'receipt-euro'],
+  },
+  {
     name: 'refresh',
     icon: TablerRefreshIcon,
     keywords: [
@@ -1850,6 +1856,7 @@ export {
   TablerPropellerIcon,
   TablerRadioIcon,
   TablerReceiptIcon,
+  TablerReceiptEuroIcon,
   TablerRefreshIcon,
   TablerRobotIcon,
   TablerRosetteDiscountIcon,
