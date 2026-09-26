@@ -1303,6 +1303,15 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-git-commit-horizontal',
+    'path': path.join(
+      __dirname,
+      '../icons/hugeicons/git-commit-horizontal.tsx'
+    ),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-heart',
     'path': path.join(__dirname, '../icons/hugeicons/heart.tsx'),
     'registryDependencies': [],
@@ -2247,6 +2256,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-git-branch',
     'path': path.join(__dirname, '../icons/phosphor/git-branch.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-git-commit',
+    'path': path.join(__dirname, '../icons/phosphor/git-commit.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
