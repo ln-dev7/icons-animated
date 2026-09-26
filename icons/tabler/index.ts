@@ -199,6 +199,7 @@ import { TablerMapPinIcon } from './map-pin';
 import { TablerMapPinCheckIcon } from './map-pin-check';
 import { TablerMapPinMinusIcon } from './map-pin-minus';
 import { TablerMapPinOffIcon } from './map-pin-off';
+import { TablerMapPinPlusIcon } from './map-pin-plus';
 import { TablerMenuIcon } from './menu';
 import { TablerMessageChatbotIcon } from './message-chatbot';
 import { TablerMoodAngryIcon } from './mood-angry';
@@ -1120,6 +1121,11 @@ const TABLER_ICON_LIST = [
     keywords: ['map', 'pin', 'off', 'map-pin-off'],
   },
   {
+    name: 'map-pin-plus',
+    icon: TablerMapPinPlusIcon,
+    keywords: ['map', 'pin', 'plus', 'map-pin-plus'],
+  },
+  {
     name: 'menu',
     icon: TablerMenuIcon,
     keywords: ['menu', 'hamburger', 'list', 'navigation', 'lines'],
@@ -1551,6 +1557,7 @@ export {
   TablerMapPinCheckIcon,
   TablerMapPinMinusIcon,
   TablerMapPinOffIcon,
+  TablerMapPinPlusIcon,
   TablerMenuIcon,
   TablerMessageChatbotIcon,
   TablerMoodAngryIcon,
