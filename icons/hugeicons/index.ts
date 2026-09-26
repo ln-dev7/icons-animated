@@ -367,6 +367,7 @@ import { HugeiconsSatelliteDishIcon } from './satellite-dish';
 import { HugeiconsSaudiRiyalIcon } from './saudi-riyal';
 import { HugeiconsSaveIcon } from './save';
 import { HugeiconsScanFaceIcon } from './scan-face';
+import { HugeiconsScanTextIcon } from './scan-text';
 import { HugeiconsSearchIcon } from './search';
 import { HugeiconsSettingsIcon } from './settings';
 import { HugeiconsShareIcon } from './share';
@@ -2001,6 +2002,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['scan', 'face', 'scan-face'],
   },
   {
+    name: 'scan-text',
+    icon: HugeiconsScanTextIcon,
+    keywords: ['scan', 'text', 'scan-text'],
+  },
+  {
     name: 'search',
     icon: HugeiconsSearchIcon,
     keywords: [
@@ -2467,6 +2473,7 @@ export {
   HugeiconsSaudiRiyalIcon,
   HugeiconsSaveIcon,
   HugeiconsScanFaceIcon,
+  HugeiconsScanTextIcon,
   HugeiconsSearchIcon,
   HugeiconsSettingsIcon,
   HugeiconsShareIcon,

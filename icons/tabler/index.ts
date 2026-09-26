@@ -289,6 +289,7 @@ import { TablerSortDescendingNumbersIcon } from './sort-descending-numbers';
 import { TablerSpyIcon } from './spy';
 import { TablerStack2Icon } from './stack-2';
 import { TablerStarIcon } from './star';
+import { TablerTextScan2Icon } from './text-scan-2';
 import { TablerThumbDownIcon } from './thumb-down';
 import { TablerTrashIcon } from './trash';
 import { TablerUploadIcon } from './upload';
@@ -1644,6 +1645,11 @@ const TABLER_ICON_LIST = [
     keywords: ['star', 'favorite', 'bookmark', 'rate', 'rating'],
   },
   {
+    name: 'text-scan-2',
+    icon: TablerTextScan2Icon,
+    keywords: ['text', 'scan', '2', 'scan-text'],
+  },
+  {
     name: 'thumb-down',
     icon: TablerThumbDownIcon,
     keywords: ['thumb', 'down', 'downvote'],
@@ -1969,6 +1975,7 @@ export {
   TablerSpyIcon,
   TablerStack2Icon,
   TablerStarIcon,
+  TablerTextScan2Icon,
   TablerThumbDownIcon,
   TablerTrashIcon,
   TablerUploadIcon,

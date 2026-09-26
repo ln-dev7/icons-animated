@@ -4801,6 +4801,19 @@
       ]
     },
     {
+      "name": "hugeicons-scan-text",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-scan-text.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-search",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -12089,6 +12102,19 @@
       "files": [
         {
           "path": "tabler-star.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-text-scan-2",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-text-scan-2.tsx",
           "type": "registry:ui"
         }
       ]

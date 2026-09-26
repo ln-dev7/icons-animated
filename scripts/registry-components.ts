@@ -2260,6 +2260,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-scan-text',
+    'path': path.join(__dirname, '../icons/hugeicons/scan-text.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-search',
     'path': path.join(__dirname, '../icons/hugeicons/search.tsx'),
     'registryDependencies': [],
@@ -5655,6 +5661,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-star',
     'path': path.join(__dirname, '../icons/tabler/star.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-text-scan-2',
+    'path': path.join(__dirname, '../icons/tabler/text-scan-2.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
