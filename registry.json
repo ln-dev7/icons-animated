@@ -2786,6 +2786,19 @@
       ]
     },
     {
+      "name": "phosphor-backspace",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-backspace.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-barricade",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -4523,6 +4536,19 @@
       "files": [
         {
           "path": "tabler-axe.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-backspace",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-backspace.tsx",
           "type": "registry:ui"
         }
       ]

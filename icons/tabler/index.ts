@@ -29,6 +29,7 @@ import { TablerArrowUpRightIcon } from './arrow-up-right';
 import { TablerAtIcon } from './at';
 import { TablerAtomIcon } from './atom';
 import { TablerAxeIcon } from './axe';
+import { TablerBackspaceIcon } from './backspace';
 import { TablerBanIcon } from './ban';
 import { TablerBananaIcon } from './banana';
 import { TablerBarrierBlockIcon } from './barrier-block';
@@ -289,6 +290,11 @@ const TABLER_ICON_LIST = [
   { name: 'at', icon: TablerAtIcon, keywords: ['at', 'at-sign', 'sign'] },
   { name: 'atom', icon: TablerAtomIcon, keywords: ['atom'] },
   { name: 'axe', icon: TablerAxeIcon, keywords: ['axe'] },
+  {
+    name: 'backspace',
+    icon: TablerBackspaceIcon,
+    keywords: ['backspace', 'delete'],
+  },
   { name: 'ban', icon: TablerBanIcon, keywords: ['ban'] },
   { name: 'banana', icon: TablerBananaIcon, keywords: ['banana'] },
   {
@@ -929,6 +935,7 @@ export {
   TablerAtIcon,
   TablerAtomIcon,
   TablerAxeIcon,
+  TablerBackspaceIcon,
   TablerBanIcon,
   TablerBananaIcon,
   TablerBarrierBlockIcon,

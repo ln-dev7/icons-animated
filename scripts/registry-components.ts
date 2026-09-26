@@ -1315,6 +1315,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'phosphor-backspace',
+    'path': path.join(__dirname, '../icons/phosphor/backspace.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'phosphor-barricade',
     'path': path.join(__dirname, '../icons/phosphor/barricade.tsx'),
     'registryDependencies': [],
@@ -2118,6 +2124,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-axe',
     'path': path.join(__dirname, '../icons/tabler/axe.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-backspace',
+    'path': path.join(__dirname, '../icons/tabler/backspace.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
