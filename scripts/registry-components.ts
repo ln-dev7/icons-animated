@@ -388,6 +388,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-book-text',
+    'path': path.join(__dirname, '../icons/hugeicons/book-text.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-calendar',
     'path': path.join(__dirname, '../icons/hugeicons/calendar.tsx'),
     'registryDependencies': [],
@@ -901,6 +907,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'phosphor-notebook',
+    'path': path.join(__dirname, '../icons/phosphor/notebook.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'phosphor-paperclip',
     'path': path.join(__dirname, '../icons/phosphor/paperclip.tsx'),
     'registryDependencies': [],
@@ -1341,6 +1353,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-bone',
     'path': path.join(__dirname, '../icons/tabler/bone.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-book-2',
+    'path': path.join(__dirname, '../icons/tabler/book-2.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

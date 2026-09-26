@@ -823,6 +823,19 @@
       ]
     },
     {
+      "name": "hugeicons-book-text",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-book-text.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-calendar",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -1928,6 +1941,19 @@
       ]
     },
     {
+      "name": "phosphor-notebook",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-notebook.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-paperclip",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2885,6 +2911,19 @@
       "files": [
         {
           "path": "tabler-bone.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-book-2",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-book-2.tsx",
           "type": "registry:ui"
         }
       ]
