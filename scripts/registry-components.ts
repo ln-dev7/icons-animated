@@ -1612,6 +1612,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-link',
+    'path': path.join(__dirname, '../icons/hugeicons/link.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-link-04',
     'path': path.join(__dirname, '../icons/hugeicons/link-04.tsx'),
     'registryDependencies': [],
@@ -2757,6 +2763,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-link',
     'path': path.join(__dirname, '../icons/phosphor/link.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-link-simple',
+    'path': path.join(__dirname, '../icons/phosphor/link-simple.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

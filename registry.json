@@ -3423,6 +3423,19 @@
       ]
     },
     {
+      "name": "hugeicons-link",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-link.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-link-04",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -5875,6 +5888,19 @@
       "files": [
         {
           "path": "phosphor-link.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-link-simple",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-link-simple.tsx",
           "type": "registry:ui"
         }
       ]
