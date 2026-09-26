@@ -277,6 +277,7 @@ import { TablerSaveIcon } from './save';
 import { TablerSchoolIcon } from './school';
 import { TablerSearchIcon } from './search';
 import { TablerSelectorIcon } from './selector';
+import { TablerSendIcon } from './send';
 import { TablerSettingsIcon } from './settings';
 import { TablerShareIcon } from './share';
 import { TablerShoppingCartIcon } from './shopping-cart';
@@ -1548,6 +1549,7 @@ const TABLER_ICON_LIST = [
     icon: TablerSelectorIcon,
     keywords: ['selector', 'chevrons-up-down', 'chevrons', 'up', 'down'],
   },
+  { name: 'send', icon: TablerSendIcon, keywords: ['send'] },
   {
     name: 'settings',
     icon: TablerSettingsIcon,
@@ -1963,6 +1965,7 @@ export {
   TablerSchoolIcon,
   TablerSearchIcon,
   TablerSelectorIcon,
+  TablerSendIcon,
   TablerSettingsIcon,
   TablerShareIcon,
   TablerShoppingCartIcon,

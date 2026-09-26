@@ -193,6 +193,7 @@ import { PhosphorMicrophoneSlashIcon } from './microphone-slash';
 import { PhosphorMoonIcon } from './moon';
 import { PhosphorNotebookIcon } from './notebook';
 import { PhosphorPaletteIcon } from './palette';
+import { PhosphorPaperPlaneTiltIcon } from './paper-plane-tilt';
 import { PhosphorPaperclipIcon } from './paperclip';
 import { PhosphorPathIcon } from './path';
 import { PhosphorPauseIcon } from './pause';
@@ -1219,6 +1220,11 @@ const PHOSPHOR_ICON_LIST = [
   },
   { name: 'palette', icon: PhosphorPaletteIcon, keywords: ['palette'] },
   {
+    name: 'paper-plane-tilt',
+    icon: PhosphorPaperPlaneTiltIcon,
+    keywords: ['paper', 'plane', 'tilt', 'send'],
+  },
+  {
     name: 'paperclip',
     icon: PhosphorPaperclipIcon,
     keywords: ['paperclip', 'attach-file', 'attach', 'file'],
@@ -1706,6 +1712,7 @@ export {
   PhosphorMoonIcon,
   PhosphorNotebookIcon,
   PhosphorPaletteIcon,
+  PhosphorPaperPlaneTiltIcon,
   PhosphorPaperclipIcon,
   PhosphorPathIcon,
   PhosphorPauseIcon,
