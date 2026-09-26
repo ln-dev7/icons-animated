@@ -1936,6 +1936,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-party-popper',
+    'path': path.join(__dirname, '../icons/hugeicons/party-popper.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-pencil',
     'path': path.join(__dirname, '../icons/hugeicons/pencil.tsx'),
     'registryDependencies': [],
@@ -2652,6 +2658,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-compass',
     'path': path.join(__dirname, '../icons/phosphor/compass.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-confetti',
+    'path': path.join(__dirname, '../icons/phosphor/confetti.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -4089,6 +4101,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-compass',
     'path': path.join(__dirname, '../icons/tabler/compass.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-confetti',
+    'path': path.join(__dirname, '../icons/tabler/confetti.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

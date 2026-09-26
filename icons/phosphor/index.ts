@@ -94,6 +94,7 @@ import { PhosphorCloudSnowIcon } from './cloud-snow';
 import { PhosphorCloudSunIcon } from './cloud-sun';
 import { PhosphorCoffeeIcon } from './coffee';
 import { PhosphorCompassIcon } from './compass';
+import { PhosphorConfettiIcon } from './confetti';
 import { PhosphorContactlessPaymentIcon } from './contactless-payment';
 import { PhosphorCookingPotIcon } from './cooking-pot';
 import { PhosphorCopyIcon } from './copy';
@@ -767,6 +768,11 @@ const PHOSPHOR_ICON_LIST = [
   },
   { name: 'coffee', icon: PhosphorCoffeeIcon, keywords: ['coffee'] },
   { name: 'compass', icon: PhosphorCompassIcon, keywords: ['compass'] },
+  {
+    name: 'confetti',
+    icon: PhosphorConfettiIcon,
+    keywords: ['confetti', 'party-popper', 'party', 'popper'],
+  },
   {
     name: 'contactless-payment',
     icon: PhosphorContactlessPaymentIcon,
@@ -1472,6 +1478,7 @@ export {
   PhosphorCloudSunIcon,
   PhosphorCoffeeIcon,
   PhosphorCompassIcon,
+  PhosphorConfettiIcon,
   PhosphorContactlessPaymentIcon,
   PhosphorCookingPotIcon,
   PhosphorCopyIcon,

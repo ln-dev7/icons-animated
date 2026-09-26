@@ -4112,6 +4112,19 @@
       ]
     },
     {
+      "name": "hugeicons-party-popper",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-party-popper.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-pencil",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -5641,6 +5654,19 @@
       "files": [
         {
           "path": "phosphor-compass.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-confetti",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-confetti.tsx",
           "type": "registry:ui"
         }
       ]
@@ -8748,6 +8774,19 @@
       "files": [
         {
           "path": "tabler-compass.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-confetti",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-confetti.tsx",
           "type": "registry:ui"
         }
       ]
