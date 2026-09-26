@@ -122,6 +122,7 @@ import { PhosphorFolderOpenIcon } from './folder-open';
 import { PhosphorFolderPlusIcon } from './folder-plus';
 import { PhosphorFoldersIcon } from './folders';
 import { PhosphorGaugeIcon } from './gauge';
+import { PhosphorGavelIcon } from './gavel';
 import { PhosphorGearIcon } from './gear';
 import { PhosphorGearFineIcon } from './gear-fine';
 import { PhosphorGlobeHemisphereWestIcon } from './globe-hemisphere-west';
@@ -788,6 +789,7 @@ const PHOSPHOR_ICON_LIST = [
   },
   { name: 'folders', icon: PhosphorFoldersIcon, keywords: ['folders'] },
   { name: 'gauge', icon: PhosphorGaugeIcon, keywords: ['gauge'] },
+  { name: 'gavel', icon: PhosphorGavelIcon, keywords: ['gavel'] },
   {
     name: 'gear',
     icon: PhosphorGearIcon,
@@ -1157,6 +1159,7 @@ export {
   PhosphorFolderPlusIcon,
   PhosphorFoldersIcon,
   PhosphorGaugeIcon,
+  PhosphorGavelIcon,
   PhosphorGearIcon,
   PhosphorGearFineIcon,
   PhosphorGlobeHemisphereWestIcon,
