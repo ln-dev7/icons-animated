@@ -327,6 +327,7 @@ import { TablerSunsetIcon } from './sunset';
 import { TablerTelescopeIcon } from './telescope';
 import { TablerTerminalIcon } from './terminal';
 import { TablerTextScan2Icon } from './text-scan-2';
+import { TablerThermometerIcon } from './thermometer';
 import { TablerThumbDownIcon } from './thumb-down';
 import { TablerTrashIcon } from './trash';
 import { TablerUploadIcon } from './upload';
@@ -1842,6 +1843,11 @@ const TABLER_ICON_LIST = [
     keywords: ['text', 'scan', '2', 'scan-text'],
   },
   {
+    name: 'thermometer',
+    icon: TablerThermometerIcon,
+    keywords: ['thermometer'],
+  },
+  {
     name: 'thumb-down',
     icon: TablerThumbDownIcon,
     keywords: ['thumb', 'down', 'downvote'],
@@ -2210,6 +2216,7 @@ export {
   TablerTelescopeIcon,
   TablerTerminalIcon,
   TablerTextScan2Icon,
+  TablerThermometerIcon,
   TablerThumbDownIcon,
   TablerTrashIcon,
   TablerUploadIcon,

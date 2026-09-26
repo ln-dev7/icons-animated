@@ -270,6 +270,7 @@ import { PhosphorTextAlignLeftIcon } from './text-align-left';
 import { PhosphorTextAlignRightIcon } from './text-align-right';
 import { PhosphorTextBIcon } from './text-b';
 import { PhosphorTextItalicIcon } from './text-italic';
+import { PhosphorThermometerIcon } from './thermometer';
 import { PhosphorThumbsDownIcon } from './thumbs-down';
 import { PhosphorTranslateIcon } from './translate';
 import { PhosphorTrashIcon } from './trash';
@@ -1599,6 +1600,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['text', 'italic'],
   },
   {
+    name: 'thermometer',
+    icon: PhosphorThermometerIcon,
+    keywords: ['thermometer'],
+  },
+  {
     name: 'thumbs-down',
     icon: PhosphorThumbsDownIcon,
     keywords: ['thumbs', 'down', 'downvote'],
@@ -1909,6 +1915,7 @@ export {
   PhosphorTextAlignRightIcon,
   PhosphorTextBIcon,
   PhosphorTextItalicIcon,
+  PhosphorThermometerIcon,
   PhosphorThumbsDownIcon,
   PhosphorTranslateIcon,
   PhosphorTrashIcon,

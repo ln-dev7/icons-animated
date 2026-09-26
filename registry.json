@@ -5477,6 +5477,19 @@
       ]
     },
     {
+      "name": "hugeicons-thermometer",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-thermometer.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-thumbs-down",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -9099,6 +9112,19 @@
       "files": [
         {
           "path": "phosphor-text-italic.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-thermometer",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-thermometer.tsx",
           "type": "registry:ui"
         }
       ]
@@ -13467,6 +13493,19 @@
       "files": [
         {
           "path": "tabler-text-scan-2.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-thermometer",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-thermometer.tsx",
           "type": "registry:ui"
         }
       ]

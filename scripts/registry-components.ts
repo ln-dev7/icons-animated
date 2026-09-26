@@ -2575,6 +2575,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-thermometer',
+    'path': path.join(__dirname, '../icons/hugeicons/thermometer.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-thumbs-down',
     'path': path.join(__dirname, '../icons/hugeicons/thumbs-down.tsx'),
     'registryDependencies': [],
@@ -4266,6 +4272,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-text-italic',
     'path': path.join(__dirname, '../icons/phosphor/text-italic.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-thermometer',
+    'path': path.join(__dirname, '../icons/phosphor/thermometer.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -6294,6 +6306,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-text-scan-2',
     'path': path.join(__dirname, '../icons/tabler/text-scan-2.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-thermometer',
+    'path': path.join(__dirname, '../icons/tabler/thermometer.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
