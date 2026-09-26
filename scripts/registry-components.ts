@@ -1846,6 +1846,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-message-square-more',
+    'path': path.join(__dirname, '../icons/hugeicons/message-square-more.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-mouse-pointer-click',
     'path': path.join(__dirname, '../icons/hugeicons/mouse-pointer-click.tsx'),
     'registryDependencies': [],
@@ -2433,6 +2439,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-chat-circle-dots',
     'path': path.join(__dirname, '../icons/phosphor/chat-circle-dots.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-chat-dots',
+    'path': path.join(__dirname, '../icons/phosphor/chat-dots.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -4593,6 +4605,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-message-circle-x',
     'path': path.join(__dirname, '../icons/tabler/message-circle-x.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-message-dots',
+    'path': path.join(__dirname, '../icons/tabler/message-dots.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

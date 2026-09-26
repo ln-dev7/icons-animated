@@ -3917,6 +3917,19 @@
       ]
     },
     {
+      "name": "hugeicons-message-square-more",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-message-square-more.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-mouse-pointer-click",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -5173,6 +5186,19 @@
       "files": [
         {
           "path": "phosphor-chat-circle-dots.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-chat-dots",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-chat-dots.tsx",
           "type": "registry:ui"
         }
       ]
@@ -9840,6 +9866,19 @@
       "files": [
         {
           "path": "tabler-message-circle-x.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-message-dots",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-message-dots.tsx",
           "type": "registry:ui"
         }
       ]
