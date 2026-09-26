@@ -136,6 +136,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-arrow-down-az',
+    'path': path.join(__dirname, '../icons/hugeicons/arrow-down-az.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-arrow-down-big',
     'path': path.join(__dirname, '../icons/hugeicons/arrow-down-big.tsx'),
     'registryDependencies': [],
@@ -1017,6 +1023,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-share',
     'path': path.join(__dirname, '../icons/tabler/share.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-sort-ascending-letters',
+    'path': path.join(__dirname, '../icons/tabler/sort-ascending-letters.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

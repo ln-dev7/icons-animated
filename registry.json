@@ -277,6 +277,19 @@
       ]
     },
     {
+      "name": "hugeicons-arrow-down-az",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-arrow-down-az.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-arrow-down-big",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2183,6 +2196,19 @@
       "files": [
         {
           "path": "tabler-share.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-sort-ascending-letters",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-sort-ascending-letters.tsx",
           "type": "registry:ui"
         }
       ]

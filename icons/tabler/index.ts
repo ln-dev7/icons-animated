@@ -49,6 +49,7 @@ import { TablerSaveIcon } from './save';
 import { TablerSearchIcon } from './search';
 import { TablerSettingsIcon } from './settings';
 import { TablerShareIcon } from './share';
+import { TablerSortAscendingLettersIcon } from './sort-ascending-letters';
 import { TablerSortAscendingNumbersIcon } from './sort-ascending-numbers';
 import { TablerSortDescendingNumbersIcon } from './sort-descending-numbers';
 import { TablerStarIcon } from './star';
@@ -354,6 +355,20 @@ const TABLER_ICON_LIST = [
     keywords: ['share', 'send', 'social', 'network', 'distribute'],
   },
   {
+    name: 'sort-ascending-letters',
+    icon: TablerSortAscendingLettersIcon,
+    keywords: [
+      'sort',
+      'ascending',
+      'letters',
+      'arrow-down-a-z',
+      'arrow',
+      'down',
+      'a',
+      'z',
+    ],
+  },
+  {
     name: 'sort-ascending-numbers',
     icon: TablerSortAscendingNumbersIcon,
     keywords: [
@@ -461,6 +476,7 @@ export {
   TablerSearchIcon,
   TablerSettingsIcon,
   TablerShareIcon,
+  TablerSortAscendingLettersIcon,
   TablerSortAscendingNumbersIcon,
   TablerSortDescendingNumbersIcon,
   TablerStarIcon,
