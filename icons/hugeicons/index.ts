@@ -249,6 +249,7 @@ import { HugeiconsIndianRupeeIcon } from './indian-rupee';
 import { HugeiconsInstagramIcon } from './instagram';
 import { HugeiconsItalicIcon } from './italic';
 import { HugeiconsJapaneseYenIcon } from './japanese-yen';
+import { HugeiconsKey01Icon } from './key-01';
 import { HugeiconsLockIcon } from './lock';
 import { HugeiconsMailIcon } from './mail';
 import { HugeiconsMenuIcon } from './menu';
@@ -1399,6 +1400,7 @@ const HUGEICONS_ICON_LIST = [
     icon: HugeiconsJapaneseYenIcon,
     keywords: ['japanese', 'yen', 'japanese-yen'],
   },
+  { name: 'key-01', icon: HugeiconsKey01Icon, keywords: ['key', '01'] },
   {
     name: 'lock',
     icon: HugeiconsLockIcon,
@@ -1805,6 +1807,7 @@ export {
   HugeiconsInstagramIcon,
   HugeiconsItalicIcon,
   HugeiconsJapaneseYenIcon,
+  HugeiconsKey01Icon,
   HugeiconsLockIcon,
   HugeiconsMailIcon,
   HugeiconsMenuIcon,

@@ -177,6 +177,7 @@ import { TablerHomeIcon } from './home';
 import { TablerHourglassIcon } from './hourglass';
 import { TablerIdIcon } from './id';
 import { TablerItalicIcon } from './italic';
+import { TablerKeyIcon } from './key';
 import { TablerLayoutAlignCenterIcon } from './layout-align-center';
 import { TablerLayoutAlignMiddleIcon } from './layout-align-middle';
 import { TablerLockIcon } from './lock';
@@ -1009,6 +1010,11 @@ const TABLER_ICON_LIST = [
   { name: 'id', icon: TablerIdIcon, keywords: ['id', 'id-card', 'card'] },
   { name: 'italic', icon: TablerItalicIcon, keywords: ['italic'] },
   {
+    name: 'key',
+    icon: TablerKeyIcon,
+    keywords: ['key', 'key-square', 'square'],
+  },
+  {
     name: 'layout-align-center',
     icon: TablerLayoutAlignCenterIcon,
     keywords: ['layout', 'align', 'center', 'align-horizontal', 'horizontal'],
@@ -1431,6 +1437,7 @@ export {
   TablerHourglassIcon,
   TablerIdIcon,
   TablerItalicIcon,
+  TablerKeyIcon,
   TablerLayoutAlignCenterIcon,
   TablerLayoutAlignMiddleIcon,
   TablerLockIcon,
