@@ -3514,6 +3514,19 @@
       ]
     },
     {
+      "name": "hugeicons-lock-keyhole",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-lock-keyhole.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-mail",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -5992,6 +6005,19 @@
       "files": [
         {
           "path": "phosphor-lock.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-lock-key",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-lock-key.tsx",
           "type": "registry:ui"
         }
       ]

@@ -1654,6 +1654,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-lock-keyhole',
+    'path': path.join(__dirname, '../icons/hugeicons/lock-keyhole.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-mail',
     'path': path.join(__dirname, '../icons/hugeicons/mail.tsx'),
     'registryDependencies': [],
@@ -2811,6 +2817,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-lock',
     'path': path.join(__dirname, '../icons/phosphor/lock.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-lock-key',
+    'path': path.join(__dirname, '../icons/phosphor/lock-key.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

@@ -268,6 +268,7 @@ import { HugeiconsLoaderIcon } from './loader';
 import { HugeiconsLoaderCircleIcon } from './loader-circle';
 import { HugeiconsLoaderPinwheelIcon } from './loader-pinwheel';
 import { HugeiconsLockIcon } from './lock';
+import { HugeiconsLockKeyholeIcon } from './lock-keyhole';
 import { HugeiconsMailIcon } from './mail';
 import { HugeiconsMenuIcon } from './menu';
 import { HugeiconsMousePointerClickIcon } from './mouse-pointer-click';
@@ -1488,6 +1489,11 @@ const HUGEICONS_ICON_LIST = [
     ],
   },
   {
+    name: 'lock-keyhole',
+    icon: HugeiconsLockKeyholeIcon,
+    keywords: ['lock', 'keyhole', 'lock-keyhole'],
+  },
+  {
     name: 'mail',
     icon: HugeiconsMailIcon,
     keywords: ['mail', 'email', 'envelope', 'message', 'letter'],
@@ -1900,6 +1906,7 @@ export {
   HugeiconsLoaderCircleIcon,
   HugeiconsLoaderPinwheelIcon,
   HugeiconsLockIcon,
+  HugeiconsLockKeyholeIcon,
   HugeiconsMailIcon,
   HugeiconsMenuIcon,
   HugeiconsMousePointerClickIcon,
