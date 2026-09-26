@@ -356,6 +356,7 @@ import { HugeiconsRefreshCcwDotIcon } from './refresh-ccw-dot';
 import { HugeiconsRefreshCwIcon } from './refresh-cw';
 import { HugeiconsRefreshCwOffIcon } from './refresh-cw-off';
 import { HugeiconsRocketIcon } from './rocket';
+import { HugeiconsRockingChairIcon } from './rocking-chair';
 import { HugeiconsSaveIcon } from './save';
 import { HugeiconsSearchIcon } from './search';
 import { HugeiconsSettingsIcon } from './settings';
@@ -1944,6 +1945,11 @@ const HUGEICONS_ICON_LIST = [
   },
   { name: 'rocket', icon: HugeiconsRocketIcon, keywords: ['rocket'] },
   {
+    name: 'rocking-chair',
+    icon: HugeiconsRockingChairIcon,
+    keywords: ['rocking', 'chair', 'rocking-chair'],
+  },
+  {
     name: 'save',
     icon: HugeiconsSaveIcon,
     keywords: ['save', 'store', 'disk', 'floppy', 'preserve'],
@@ -2404,6 +2410,7 @@ export {
   HugeiconsRefreshCwIcon,
   HugeiconsRefreshCwOffIcon,
   HugeiconsRocketIcon,
+  HugeiconsRockingChairIcon,
   HugeiconsSaveIcon,
   HugeiconsSearchIcon,
   HugeiconsSettingsIcon,
