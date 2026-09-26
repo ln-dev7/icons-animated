@@ -11,6 +11,7 @@ import { TablerAlignLeftIcon } from './align-left';
 import { TablerAlignRightIcon } from './align-right';
 import { TablerAmbulanceIcon } from './ambulance';
 import { TablerArchiveIcon } from './archive';
+import { TablerArrowBackUpIcon } from './arrow-back-up';
 import { TablerArrowBigDownIcon } from './arrow-big-down';
 import { TablerArrowBigDownLineIcon } from './arrow-big-down-line';
 import { TablerArrowBigLeftIcon } from './arrow-big-left';
@@ -404,6 +405,11 @@ const TABLER_ICON_LIST = [
   },
   { name: 'ambulance', icon: TablerAmbulanceIcon, keywords: ['ambulance'] },
   { name: 'archive', icon: TablerArchiveIcon, keywords: ['archive'] },
+  {
+    name: 'arrow-back-up',
+    icon: TablerArrowBackUpIcon,
+    keywords: ['arrow', 'back', 'up', 'undo'],
+  },
   {
     name: 'arrow-big-down',
     icon: TablerArrowBigDownIcon,
@@ -1962,6 +1968,7 @@ export {
   TablerAlignRightIcon,
   TablerAmbulanceIcon,
   TablerArchiveIcon,
+  TablerArrowBackUpIcon,
   TablerArrowBigDownIcon,
   TablerArrowBigDownLineIcon,
   TablerArrowBigLeftIcon,
