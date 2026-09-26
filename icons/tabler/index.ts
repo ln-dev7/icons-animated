@@ -264,6 +264,7 @@ import { TablerRefreshDotIcon } from './refresh-dot';
 import { TablerRobotIcon } from './robot';
 import { TablerRocketIcon } from './rocket';
 import { TablerRockingChairIcon } from './rocking-chair';
+import { TablerRollercoasterIcon } from './rollercoaster';
 import { TablerRosetteDiscountIcon } from './rosette-discount';
 import { TablerSaveIcon } from './save';
 import { TablerSchoolIcon } from './school';
@@ -1483,6 +1484,11 @@ const TABLER_ICON_LIST = [
     keywords: ['rocking', 'chair', 'rocking-chair'],
   },
   {
+    name: 'rollercoaster',
+    icon: TablerRollercoasterIcon,
+    keywords: ['rollercoaster', 'roller-coaster', 'roller', 'coaster'],
+  },
+  {
     name: 'rosette-discount',
     icon: TablerRosetteDiscountIcon,
     keywords: ['rosette', 'discount', 'badge-percent', 'badge', 'percent'],
@@ -1904,6 +1910,7 @@ export {
   TablerRobotIcon,
   TablerRocketIcon,
   TablerRockingChairIcon,
+  TablerRollercoasterIcon,
   TablerRosetteDiscountIcon,
   TablerSaveIcon,
   TablerSchoolIcon,

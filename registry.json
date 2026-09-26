@@ -4671,6 +4671,19 @@
       ]
     },
     {
+      "name": "hugeicons-roller-coaster",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-roller-coaster.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-save",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -11595,6 +11608,19 @@
       "files": [
         {
           "path": "tabler-rocking-chair.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-rollercoaster",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-rollercoaster.tsx",
           "type": "registry:ui"
         }
       ]

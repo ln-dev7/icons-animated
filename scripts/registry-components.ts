@@ -2200,6 +2200,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-roller-coaster',
+    'path': path.join(__dirname, '../icons/hugeicons/roller-coaster.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-save',
     'path': path.join(__dirname, '../icons/hugeicons/save.tsx'),
     'registryDependencies': [],
@@ -5424,6 +5430,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-rocking-chair',
     'path': path.join(__dirname, '../icons/tabler/rocking-chair.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-rollercoaster',
+    'path': path.join(__dirname, '../icons/tabler/rollercoaster.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
