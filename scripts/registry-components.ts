@@ -1918,6 +1918,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-panel-left-close',
+    'path': path.join(__dirname, '../icons/hugeicons/panel-left-close.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-panel-left-open',
     'path': path.join(__dirname, '../icons/hugeicons/panel-left-open.tsx'),
     'registryDependencies': [],
@@ -4577,6 +4583,15 @@ export const components: ComponentDefinition[] = [
     'path': path.join(
       __dirname,
       '../icons/tabler/layout-sidebar-left-collapse.tsx'
+    ),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-layout-sidebar-left-expand',
+    'path': path.join(
+      __dirname,
+      '../icons/tabler/layout-sidebar-left-expand.tsx'
     ),
     'registryDependencies': [],
     'dependencies': ['motion'],
