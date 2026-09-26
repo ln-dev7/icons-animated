@@ -46,6 +46,7 @@ import { HugeiconsBananaIcon } from './banana';
 import { HugeiconsBatteryIcon } from './battery';
 import { HugeiconsBatteryCharging02Icon } from './battery-charging-02';
 import { HugeiconsBatteryFullIcon } from './battery-full';
+import { HugeiconsBatteryLowIcon } from './battery-low';
 import { HugeiconsBellIcon } from './bell';
 import { HugeiconsCalendarIcon } from './calendar';
 import { HugeiconsCheckIcon } from './check';
@@ -314,6 +315,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['battery', 'full', 'battery-full'],
   },
   {
+    name: 'battery-low',
+    icon: HugeiconsBatteryLowIcon,
+    keywords: ['battery', 'low', 'battery-low'],
+  },
+  {
     name: 'bell',
     icon: HugeiconsBellIcon,
     keywords: ['bell', 'notification', 'alert', 'ring', 'alarm'],
@@ -578,6 +584,7 @@ export {
   HugeiconsBatteryIcon,
   HugeiconsBatteryCharging02Icon,
   HugeiconsBatteryFullIcon,
+  HugeiconsBatteryLowIcon,
   HugeiconsBellIcon,
   HugeiconsCalendarIcon,
   HugeiconsCheckIcon,

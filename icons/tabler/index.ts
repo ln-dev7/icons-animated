@@ -32,6 +32,7 @@ import { TablerAxeIcon } from './axe';
 import { TablerBanIcon } from './ban';
 import { TablerBananaIcon } from './banana';
 import { TablerBatteryIcon } from './battery';
+import { TablerBattery1Icon } from './battery-1';
 import { TablerBattery4Icon } from './battery-4';
 import { TablerBatteryChargingIcon } from './battery-charging';
 import { TablerBellIcon } from './bell';
@@ -216,6 +217,11 @@ const TABLER_ICON_LIST = [
   { name: 'ban', icon: TablerBanIcon, keywords: ['ban'] },
   { name: 'banana', icon: TablerBananaIcon, keywords: ['banana'] },
   { name: 'battery', icon: TablerBatteryIcon, keywords: ['battery'] },
+  {
+    name: 'battery-1',
+    icon: TablerBattery1Icon,
+    keywords: ['battery', '1', 'battery-low', 'low'],
+  },
   {
     name: 'battery-4',
     icon: TablerBattery4Icon,
@@ -534,6 +540,7 @@ export {
   TablerBanIcon,
   TablerBananaIcon,
   TablerBatteryIcon,
+  TablerBattery1Icon,
   TablerBattery4Icon,
   TablerBatteryChargingIcon,
   TablerBellIcon,
