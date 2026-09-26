@@ -87,6 +87,7 @@ import { TablerEyeIcon } from './eye';
 import { TablerFilterIcon } from './filter';
 import { TablerGaugeIcon } from './gauge';
 import { TablerHeartIcon } from './heart';
+import { TablerHelpCircleIcon } from './help-circle';
 import { TablerHomeIcon } from './home';
 import { TablerLayoutAlignCenterIcon } from './layout-align-center';
 import { TablerLayoutAlignMiddleIcon } from './layout-align-middle';
@@ -547,6 +548,11 @@ const TABLER_ICON_LIST = [
     keywords: ['heart', 'love', 'like', 'favorite', 'health'],
   },
   {
+    name: 'help-circle',
+    icon: TablerHelpCircleIcon,
+    keywords: ['help', 'circle', 'circle-help'],
+  },
+  {
     name: 'home',
     icon: TablerHomeIcon,
     keywords: ['home', 'house', 'building', 'main', 'dashboard'],
@@ -853,6 +859,7 @@ export {
   TablerFilterIcon,
   TablerGaugeIcon,
   TablerHeartIcon,
+  TablerHelpCircleIcon,
   TablerHomeIcon,
   TablerLayoutAlignCenterIcon,
   TablerLayoutAlignMiddleIcon,

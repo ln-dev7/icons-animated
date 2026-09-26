@@ -82,6 +82,7 @@ import { PhosphorPersonArmsSpreadIcon } from './person-arms-spread';
 import { PhosphorPlusIcon } from './plus';
 import { PhosphorProhibitIcon } from './prohibit';
 import { PhosphorPulseIcon } from './pulse';
+import { PhosphorQuestionIcon } from './question';
 import { PhosphorRefreshIcon } from './refresh';
 import { PhosphorRobotIcon } from './robot';
 import { PhosphorSaveIcon } from './save';
@@ -554,6 +555,11 @@ const PHOSPHOR_ICON_LIST = [
   },
   { name: 'pulse', icon: PhosphorPulseIcon, keywords: ['pulse', 'activity'] },
   {
+    name: 'question',
+    icon: PhosphorQuestionIcon,
+    keywords: ['question', 'circle-help', 'circle', 'help'],
+  },
+  {
     name: 'refresh',
     icon: PhosphorRefreshIcon,
     keywords: [
@@ -791,6 +797,7 @@ export {
   PhosphorPlusIcon,
   PhosphorProhibitIcon,
   PhosphorPulseIcon,
+  PhosphorQuestionIcon,
   PhosphorRefreshIcon,
   PhosphorRobotIcon,
   PhosphorSaveIcon,
