@@ -1109,6 +1109,19 @@
       ]
     },
     {
+      "name": "hugeicons-chart-column-increasing",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-chart-column-increasing.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-check",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2092,6 +2105,19 @@
       "files": [
         {
           "path": "phosphor-calendar-dots.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-chart-bar",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-chart-bar.tsx",
           "type": "registry:ui"
         }
       ]
@@ -3470,6 +3496,19 @@
       "files": [
         {
           "path": "tabler-cast.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-chart-bar-popular",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-chart-bar-popular.tsx",
           "type": "registry:ui"
         }
       ]

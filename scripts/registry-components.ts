@@ -523,6 +523,15 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-chart-column-increasing',
+    'path': path.join(
+      __dirname,
+      '../icons/hugeicons/chart-column-increasing.tsx'
+    ),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-check',
     'path': path.join(__dirname, '../icons/hugeicons/check.tsx'),
     'registryDependencies': [],
@@ -978,6 +987,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-calendar-dots',
     'path': path.join(__dirname, '../icons/phosphor/calendar-dots.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-chart-bar',
+    'path': path.join(__dirname, '../icons/phosphor/chart-bar.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -1614,6 +1629,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-cast',
     'path': path.join(__dirname, '../icons/tabler/cast.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-chart-bar-popular',
+    'path': path.join(__dirname, '../icons/tabler/chart-bar-popular.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
