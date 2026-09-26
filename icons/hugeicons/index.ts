@@ -426,6 +426,7 @@ import { HugeiconsTicket01Icon } from './ticket-01';
 import { HugeiconsTornado01Icon } from './tornado-01';
 import { HugeiconsTrainTrackIcon } from './train-track';
 import { HugeiconsTrashIcon } from './trash';
+import { HugeiconsTreeDeciduousIcon } from './tree-deciduous';
 import { HugeiconsUnfoldMoreIcon } from './unfold-more';
 import { HugeiconsUniversalAccessIcon } from './universal-access';
 import { HugeiconsUploadIcon } from './upload';
@@ -2302,6 +2303,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['trash', 'delete', 'remove', 'bin', 'garbage'],
   },
   {
+    name: 'tree-deciduous',
+    icon: HugeiconsTreeDeciduousIcon,
+    keywords: ['tree', 'deciduous', 'tree-deciduous'],
+  },
+  {
     name: 'unfold-more',
     icon: HugeiconsUnfoldMoreIcon,
     keywords: ['unfold', 'more', 'chevrons-up-down', 'chevrons', 'up', 'down'],
@@ -2758,6 +2764,7 @@ export {
   HugeiconsTornado01Icon,
   HugeiconsTrainTrackIcon,
   HugeiconsTrashIcon,
+  HugeiconsTreeDeciduousIcon,
   HugeiconsUnfoldMoreIcon,
   HugeiconsUniversalAccessIcon,
   HugeiconsUploadIcon,

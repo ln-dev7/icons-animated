@@ -5568,6 +5568,19 @@
       ]
     },
     {
+      "name": "hugeicons-tree-deciduous",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-tree-deciduous.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-unfold-more",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -9255,6 +9268,19 @@
       "files": [
         {
           "path": "phosphor-trash.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-tree",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-tree.tsx",
           "type": "registry:ui"
         }
       ]
@@ -13662,6 +13688,19 @@
       "files": [
         {
           "path": "tabler-trash.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-tree",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-tree.tsx",
           "type": "registry:ui"
         }
       ]

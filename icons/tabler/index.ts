@@ -333,6 +333,7 @@ import { TablerThumbDownIcon } from './thumb-down';
 import { TablerTicketIcon } from './ticket';
 import { TablerTornadoIcon } from './tornado';
 import { TablerTrashIcon } from './trash';
+import { TablerTreeIcon } from './tree';
 import { TablerUploadIcon } from './upload';
 import { TablerUserIcon } from './user';
 import { TablerVaccineIcon } from './vaccine';
@@ -1868,6 +1869,11 @@ const TABLER_ICON_LIST = [
     keywords: ['trash', 'delete', 'remove', 'bin', 'garbage'],
   },
   {
+    name: 'tree',
+    icon: TablerTreeIcon,
+    keywords: ['tree', 'tree-deciduous', 'deciduous'],
+  },
+  {
     name: 'upload',
     icon: TablerUploadIcon,
     keywords: ['upload', 'send', 'arrow', 'put', 'import'],
@@ -2232,6 +2238,7 @@ export {
   TablerTicketIcon,
   TablerTornadoIcon,
   TablerTrashIcon,
+  TablerTreeIcon,
   TablerUploadIcon,
   TablerUserIcon,
   TablerVaccineIcon,

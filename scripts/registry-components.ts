@@ -2617,6 +2617,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-tree-deciduous',
+    'path': path.join(__dirname, '../icons/hugeicons/tree-deciduous.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-unfold-more',
     'path': path.join(__dirname, '../icons/hugeicons/unfold-more.tsx'),
     'registryDependencies': [],
@@ -4338,6 +4344,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-trash',
     'path': path.join(__dirname, '../icons/phosphor/trash.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-tree',
+    'path': path.join(__dirname, '../icons/phosphor/tree.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -6384,6 +6396,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-trash',
     'path': path.join(__dirname, '../icons/tabler/trash.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-tree',
+    'path': path.join(__dirname, '../icons/tabler/tree.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

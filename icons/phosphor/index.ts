@@ -277,6 +277,7 @@ import { PhosphorTimerIcon } from './timer';
 import { PhosphorTornadoIcon } from './tornado';
 import { PhosphorTranslateIcon } from './translate';
 import { PhosphorTrashIcon } from './trash';
+import { PhosphorTreeIcon } from './tree';
 import { PhosphorUploadIcon } from './upload';
 import { PhosphorUserIcon } from './user';
 import { PhosphorWaveformIcon } from './waveform';
@@ -1626,6 +1627,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['trash', 'delete', 'remove', 'bin', 'garbage'],
   },
   {
+    name: 'tree',
+    icon: PhosphorTreeIcon,
+    keywords: ['tree', 'tree-deciduous', 'deciduous'],
+  },
+  {
     name: 'upload',
     icon: PhosphorUploadIcon,
     keywords: ['upload', 'send', 'arrow', 'put', 'import'],
@@ -1928,6 +1934,7 @@ export {
   PhosphorTornadoIcon,
   PhosphorTranslateIcon,
   PhosphorTrashIcon,
+  PhosphorTreeIcon,
   PhosphorUploadIcon,
   PhosphorUserIcon,
   PhosphorWaveformIcon,
