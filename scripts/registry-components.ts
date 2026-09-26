@@ -376,6 +376,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-bold',
+    'path': path.join(__dirname, '../icons/hugeicons/bold.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-calendar',
     'path': path.join(__dirname, '../icons/hugeicons/calendar.tsx'),
     'registryDependencies': [],
@@ -1003,6 +1009,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'phosphor-text-b',
+    'path': path.join(__dirname, '../icons/phosphor/text-b.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'phosphor-trash',
     'path': path.join(__dirname, '../icons/phosphor/trash.tsx'),
     'registryDependencies': [],
@@ -1305,6 +1317,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-bluetooth-off',
     'path': path.join(__dirname, '../icons/tabler/bluetooth-off.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-bold',
+    'path': path.join(__dirname, '../icons/tabler/bold.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

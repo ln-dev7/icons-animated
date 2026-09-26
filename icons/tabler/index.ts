@@ -44,6 +44,7 @@ import { TablerBlocksIcon } from './blocks';
 import { TablerBluetoothIcon } from './bluetooth';
 import { TablerBluetoothConnectedIcon } from './bluetooth-connected';
 import { TablerBluetoothOffIcon } from './bluetooth-off';
+import { TablerBoldIcon } from './bold';
 import { TablerCalendarIcon } from './calendar';
 import { TablerCheckIcon } from './check';
 import { TablerChevronDownIcon } from './chevron-down';
@@ -273,6 +274,7 @@ const TABLER_ICON_LIST = [
     icon: TablerBluetoothOffIcon,
     keywords: ['bluetooth', 'off', 'bluetooth-off'],
   },
+  { name: 'bold', icon: TablerBoldIcon, keywords: ['bold'] },
   {
     name: 'calendar',
     icon: TablerCalendarIcon,
@@ -588,6 +590,7 @@ export {
   TablerBluetoothIcon,
   TablerBluetoothConnectedIcon,
   TablerBluetoothOffIcon,
+  TablerBoldIcon,
   TablerCalendarIcon,
   TablerCheckIcon,
   TablerChevronDownIcon,

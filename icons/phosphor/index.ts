@@ -71,6 +71,7 @@ import { PhosphorStarIcon } from './star';
 import { PhosphorTextAlignCenterIcon } from './text-align-center';
 import { PhosphorTextAlignLeftIcon } from './text-align-left';
 import { PhosphorTextAlignRightIcon } from './text-align-right';
+import { PhosphorTextBIcon } from './text-b';
 import { PhosphorTrashIcon } from './trash';
 import { PhosphorUploadIcon } from './upload';
 import { PhosphorUserIcon } from './user';
@@ -517,6 +518,7 @@ const PHOSPHOR_ICON_LIST = [
     icon: PhosphorTextAlignRightIcon,
     keywords: ['text', 'align', 'right', 'align-right'],
   },
+  { name: 'text-b', icon: PhosphorTextBIcon, keywords: ['text', 'b', 'bold'] },
   {
     name: 'trash',
     icon: PhosphorTrashIcon,
@@ -619,6 +621,7 @@ export {
   PhosphorTextAlignCenterIcon,
   PhosphorTextAlignLeftIcon,
   PhosphorTextAlignRightIcon,
+  PhosphorTextBIcon,
   PhosphorTrashIcon,
   PhosphorUploadIcon,
   PhosphorUserIcon,

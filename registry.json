@@ -797,6 +797,19 @@
       ]
     },
     {
+      "name": "hugeicons-bold",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-bold.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-calendar",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2149,6 +2162,19 @@
       ]
     },
     {
+      "name": "phosphor-text-b",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-text-b.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-trash",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2807,6 +2833,19 @@
       "files": [
         {
           "path": "tabler-bluetooth-off.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-bold",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-bold.tsx",
           "type": "registry:ui"
         }
       ]
