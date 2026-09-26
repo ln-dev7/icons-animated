@@ -274,6 +274,7 @@ import { HugeiconsLockOpenIcon } from './lock-open';
 import { HugeiconsLogInIcon } from './log-in';
 import { HugeiconsLogOutIcon } from './log-out';
 import { HugeiconsMailIcon } from './mail';
+import { HugeiconsMailCheckIcon } from './mail-check';
 import { HugeiconsMenuIcon } from './menu';
 import { HugeiconsMousePointerClickIcon } from './mouse-pointer-click';
 import { HugeiconsPencilIcon } from './pencil';
@@ -1523,6 +1524,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['mail', 'email', 'envelope', 'message', 'letter'],
   },
   {
+    name: 'mail-check',
+    icon: HugeiconsMailCheckIcon,
+    keywords: ['mail', 'check', 'mail-check'],
+  },
+  {
     name: 'menu',
     icon: HugeiconsMenuIcon,
     keywords: ['menu', 'hamburger', 'list', 'navigation', 'lines', 'menu-01'],
@@ -1936,6 +1942,7 @@ export {
   HugeiconsLogInIcon,
   HugeiconsLogOutIcon,
   HugeiconsMailIcon,
+  HugeiconsMailCheckIcon,
   HugeiconsMenuIcon,
   HugeiconsMousePointerClickIcon,
   HugeiconsPencilIcon,

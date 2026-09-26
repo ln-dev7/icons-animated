@@ -3592,6 +3592,19 @@
       ]
     },
     {
+      "name": "hugeicons-mail-check",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-mail-check.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-menu",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -9203,6 +9216,19 @@
       "files": [
         {
           "path": "tabler-mail.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-mail-check",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-mail-check.tsx",
           "type": "registry:ui"
         }
       ]

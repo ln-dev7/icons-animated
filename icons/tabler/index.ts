@@ -193,6 +193,7 @@ import { TablerLockOpenIcon } from './lock-open';
 import { TablerLoginIcon } from './login';
 import { TablerLogoutIcon } from './logout';
 import { TablerMailIcon } from './mail';
+import { TablerMailCheckIcon } from './mail-check';
 import { TablerMenuIcon } from './menu';
 import { TablerMessageChatbotIcon } from './message-chatbot';
 import { TablerMoodAngryIcon } from './mood-angry';
@@ -1088,6 +1089,11 @@ const TABLER_ICON_LIST = [
     keywords: ['mail', 'email', 'envelope', 'message', 'letter'],
   },
   {
+    name: 'mail-check',
+    icon: TablerMailCheckIcon,
+    keywords: ['mail', 'check', 'mail-check'],
+  },
+  {
     name: 'menu',
     icon: TablerMenuIcon,
     keywords: ['menu', 'hamburger', 'list', 'navigation', 'lines'],
@@ -1513,6 +1519,7 @@ export {
   TablerLoginIcon,
   TablerLogoutIcon,
   TablerMailIcon,
+  TablerMailCheckIcon,
   TablerMenuIcon,
   TablerMessageChatbotIcon,
   TablerMoodAngryIcon,
