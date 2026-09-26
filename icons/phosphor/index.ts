@@ -60,6 +60,7 @@ import { PhosphorCaretCircleRightIcon } from './caret-circle-right';
 import { PhosphorCaretCircleUpIcon } from './caret-circle-up';
 import { PhosphorCaretLineLeftIcon } from './caret-line-left';
 import { PhosphorCaretUpDownIcon } from './caret-up-down';
+import { PhosphorChargingStationIcon } from './charging-station';
 import { PhosphorChartBarIcon } from './chart-bar';
 import { PhosphorChartLineIcon } from './chart-line';
 import { PhosphorChartPieIcon } from './chart-pie';
@@ -461,6 +462,11 @@ const PHOSPHOR_ICON_LIST = [
     name: 'caret-up-down',
     icon: PhosphorCaretUpDownIcon,
     keywords: ['caret', 'up', 'down', 'chevrons-up-down', 'chevrons'],
+  },
+  {
+    name: 'charging-station',
+    icon: PhosphorChargingStationIcon,
+    keywords: ['charging', 'station', 'ev-charger', 'ev', 'charger'],
   },
   {
     name: 'chart-bar',
@@ -983,6 +989,7 @@ export {
   PhosphorCaretCircleUpIcon,
   PhosphorCaretLineLeftIcon,
   PhosphorCaretUpDownIcon,
+  PhosphorChargingStationIcon,
   PhosphorChartBarIcon,
   PhosphorChartLineIcon,
   PhosphorChartPieIcon,

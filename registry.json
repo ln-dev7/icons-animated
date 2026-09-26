@@ -2071,6 +2071,19 @@
       ]
     },
     {
+      "name": "hugeicons-ev-charger",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-ev-charger.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-eye",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -3262,6 +3275,19 @@
       "files": [
         {
           "path": "phosphor-caret-up-down.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-charging-station",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-charging-station.tsx",
           "type": "registry:ui"
         }
       ]
@@ -5199,6 +5225,19 @@
       "files": [
         {
           "path": "tabler-cast.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-charging-pile",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-charging-pile.tsx",
           "type": "registry:ui"
         }
       ]

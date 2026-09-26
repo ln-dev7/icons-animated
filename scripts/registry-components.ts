@@ -976,6 +976,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-ev-charger',
+    'path': path.join(__dirname, '../icons/hugeicons/ev-charger.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-eye',
     'path': path.join(__dirname, '../icons/hugeicons/eye.tsx'),
     'registryDependencies': [],
@@ -1533,6 +1539,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-caret-up-down',
     'path': path.join(__dirname, '../icons/phosphor/caret-up-down.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-charging-station',
+    'path': path.join(__dirname, '../icons/phosphor/charging-station.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -2430,6 +2442,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-cast',
     'path': path.join(__dirname, '../icons/tabler/cast.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-charging-pile',
+    'path': path.join(__dirname, '../icons/tabler/charging-pile.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

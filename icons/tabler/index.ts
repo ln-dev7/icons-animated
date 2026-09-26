@@ -63,6 +63,7 @@ import { TablerCalendarCheckIcon } from './calendar-check';
 import { TablerCalendarCogIcon } from './calendar-cog';
 import { TablerCalendarWeekIcon } from './calendar-week';
 import { TablerCastIcon } from './cast';
+import { TablerChargingPileIcon } from './charging-pile';
 import { TablerChartBarPopularIcon } from './chart-bar-popular';
 import { TablerChartLineIcon } from './chart-line';
 import { TablerChartPieIcon } from './chart-pie';
@@ -420,6 +421,11 @@ const TABLER_ICON_LIST = [
     keywords: ['calendar', 'week', 'calendar-days', 'days'],
   },
   { name: 'cast', icon: TablerCastIcon, keywords: ['cast'] },
+  {
+    name: 'charging-pile',
+    icon: TablerChargingPileIcon,
+    keywords: ['charging', 'pile', 'ev-charger', 'ev', 'charger'],
+  },
   {
     name: 'chart-bar-popular',
     icon: TablerChartBarPopularIcon,
@@ -1005,6 +1011,7 @@ export {
   TablerCalendarCogIcon,
   TablerCalendarWeekIcon,
   TablerCastIcon,
+  TablerChargingPileIcon,
   TablerChartBarPopularIcon,
   TablerChartLineIcon,
   TablerChartPieIcon,
