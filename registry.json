@@ -1785,6 +1785,19 @@
       ]
     },
     {
+      "name": "hugeicons-copy",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-copy.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-download",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -3171,6 +3184,19 @@
       "files": [
         {
           "path": "phosphor-cooking-pot.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-copy",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-copy.tsx",
           "type": "registry:ui"
         }
       ]
@@ -5017,6 +5043,19 @@
       "files": [
         {
           "path": "tabler-contrast.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-copy",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-copy.tsx",
           "type": "registry:ui"
         }
       ]

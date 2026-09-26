@@ -135,6 +135,7 @@ import { HugeiconsConnectIcon } from './connect';
 import { HugeiconsConstructionIcon } from './construction';
 import { HugeiconsContrastIcon } from './contrast';
 import { HugeiconsCookingPotIcon } from './cooking-pot';
+import { HugeiconsCopyIcon } from './copy';
 import { HugeiconsDownloadIcon } from './download';
 import { HugeiconsEyeIcon } from './eye';
 import { HugeiconsFilterIcon } from './filter';
@@ -822,6 +823,7 @@ const HUGEICONS_ICON_LIST = [
     icon: HugeiconsCookingPotIcon,
     keywords: ['cooking', 'pot', 'cooking-pot'],
   },
+  { name: 'copy', icon: HugeiconsCopyIcon, keywords: ['copy'] },
   {
     name: 'download',
     icon: HugeiconsDownloadIcon,
@@ -1129,6 +1131,7 @@ export {
   HugeiconsConstructionIcon,
   HugeiconsContrastIcon,
   HugeiconsCookingPotIcon,
+  HugeiconsCopyIcon,
   HugeiconsDownloadIcon,
   HugeiconsEyeIcon,
   HugeiconsFilterIcon,

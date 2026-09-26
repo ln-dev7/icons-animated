@@ -93,6 +93,7 @@ import { TablerCoffeeIcon } from './coffee';
 import { TablerCoinIcon } from './coin';
 import { TablerCompassIcon } from './compass';
 import { TablerContrastIcon } from './contrast';
+import { TablerCopyIcon } from './copy';
 import { TablerDeviceCctvIcon } from './device-cctv';
 import { TablerDownloadIcon } from './download';
 import { TablerEyeIcon } from './eye';
@@ -574,6 +575,7 @@ const TABLER_ICON_LIST = [
   },
   { name: 'compass', icon: TablerCompassIcon, keywords: ['compass'] },
   { name: 'contrast', icon: TablerContrastIcon, keywords: ['contrast'] },
+  { name: 'copy', icon: TablerCopyIcon, keywords: ['copy'] },
   {
     name: 'device-cctv',
     icon: TablerDeviceCctvIcon,
@@ -927,6 +929,7 @@ export {
   TablerCoinIcon,
   TablerCompassIcon,
   TablerContrastIcon,
+  TablerCopyIcon,
   TablerDeviceCctvIcon,
   TablerDownloadIcon,
   TablerEyeIcon,
