@@ -196,6 +196,7 @@ import { TablerMailIcon } from './mail';
 import { TablerMailCheckIcon } from './mail-check';
 import { TablerMailboxIcon } from './mailbox';
 import { TablerMapPinIcon } from './map-pin';
+import { TablerMapPinCheckIcon } from './map-pin-check';
 import { TablerMenuIcon } from './menu';
 import { TablerMessageChatbotIcon } from './message-chatbot';
 import { TablerMoodAngryIcon } from './mood-angry';
@@ -1102,6 +1103,11 @@ const TABLER_ICON_LIST = [
     keywords: ['map', 'pin', 'map-pin'],
   },
   {
+    name: 'map-pin-check',
+    icon: TablerMapPinCheckIcon,
+    keywords: ['map', 'pin', 'check', 'map-pin-check'],
+  },
+  {
     name: 'menu',
     icon: TablerMenuIcon,
     keywords: ['menu', 'hamburger', 'list', 'navigation', 'lines'],
@@ -1530,6 +1536,7 @@ export {
   TablerMailCheckIcon,
   TablerMailboxIcon,
   TablerMapPinIcon,
+  TablerMapPinCheckIcon,
   TablerMenuIcon,
   TablerMessageChatbotIcon,
   TablerMoodAngryIcon,

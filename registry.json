@@ -3631,6 +3631,19 @@
       ]
     },
     {
+      "name": "hugeicons-map-pin-check",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-map-pin-check.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-menu",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -9307,6 +9320,19 @@
       "files": [
         {
           "path": "tabler-map-pin.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-map-pin-check",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-map-pin-check.tsx",
           "type": "registry:ui"
         }
       ]

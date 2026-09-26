@@ -1708,6 +1708,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-map-pin-check',
+    'path': path.join(__dirname, '../icons/hugeicons/map-pin-check.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-menu',
     'path': path.join(__dirname, '../icons/hugeicons/menu.tsx'),
     'registryDependencies': [],
@@ -4341,6 +4347,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-map-pin',
     'path': path.join(__dirname, '../icons/tabler/map-pin.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-map-pin-check',
+    'path': path.join(__dirname, '../icons/tabler/map-pin-check.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
