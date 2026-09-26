@@ -820,6 +820,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-collapse',
+    'path': path.join(__dirname, '../icons/hugeicons/collapse.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-compass',
     'path': path.join(__dirname, '../icons/hugeicons/compass.tsx'),
     'registryDependencies': [],
@@ -2610,6 +2616,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-copy',
     'path': path.join(__dirname, '../icons/phosphor/copy.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-corners-in',
+    'path': path.join(__dirname, '../icons/phosphor/corners-in.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -4671,6 +4683,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-microphone-off',
     'path': path.join(__dirname, '../icons/tabler/microphone-off.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-minimize',
+    'path': path.join(__dirname, '../icons/tabler/minimize.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

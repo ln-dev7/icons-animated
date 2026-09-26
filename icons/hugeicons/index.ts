@@ -131,6 +131,7 @@ import { HugeiconsCloudSyncIcon } from './cloud-sync';
 import { HugeiconsCloudUploadIcon } from './cloud-upload';
 import { HugeiconsCoffee03Icon } from './coffee-03';
 import { HugeiconsCogIcon } from './cog';
+import { HugeiconsCollapseIcon } from './collapse';
 import { HugeiconsCompassIcon } from './compass';
 import { HugeiconsConciergeBellIcon } from './concierge-bell';
 import { HugeiconsConnectIcon } from './connect';
@@ -977,6 +978,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['coffee', '03'],
   },
   { name: 'cog', icon: HugeiconsCogIcon, keywords: ['cog'] },
+  {
+    name: 'collapse',
+    icon: HugeiconsCollapseIcon,
+    keywords: ['collapse', 'minimize'],
+  },
   { name: 'compass', icon: HugeiconsCompassIcon, keywords: ['compass'] },
   {
     name: 'concierge-bell',
@@ -1955,6 +1961,7 @@ export {
   HugeiconsCloudUploadIcon,
   HugeiconsCoffee03Icon,
   HugeiconsCogIcon,
+  HugeiconsCollapseIcon,
   HugeiconsCompassIcon,
   HugeiconsConciergeBellIcon,
   HugeiconsConnectIcon,

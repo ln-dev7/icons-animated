@@ -1733,6 +1733,19 @@
       ]
     },
     {
+      "name": "hugeicons-collapse",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-collapse.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-compass",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -5550,6 +5563,19 @@
       "files": [
         {
           "path": "phosphor-copy.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-corners-in",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-corners-in.tsx",
           "type": "registry:ui"
         }
       ]
@@ -10009,6 +10035,19 @@
       "files": [
         {
           "path": "tabler-microphone-off.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-minimize",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-minimize.tsx",
           "type": "registry:ui"
         }
       ]
