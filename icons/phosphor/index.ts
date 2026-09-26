@@ -68,6 +68,7 @@ import { PhosphorCurrencyCircleDollarIcon } from './currency-circle-dollar';
 import { PhosphorDownloadIcon } from './download';
 import { PhosphorEnvelopeIcon } from './envelope';
 import { PhosphorEyeIcon } from './eye';
+import { PhosphorFilmSlateIcon } from './film-slate';
 import { PhosphorFilterIcon } from './filter';
 import { PhosphorGearIcon } from './gear';
 import { PhosphorGoogleChromeLogoIcon } from './google-chrome-logo';
@@ -489,6 +490,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['eye', 'view', 'see', 'visible', 'show', 'watch'],
   },
   {
+    name: 'film-slate',
+    icon: PhosphorFilmSlateIcon,
+    keywords: ['film', 'slate', 'clap'],
+  },
+  {
     name: 'filter',
     icon: PhosphorFilterIcon,
     keywords: ['filter', 'sort', 'funnel', 'refine', 'search'],
@@ -783,6 +789,7 @@ export {
   PhosphorDownloadIcon,
   PhosphorEnvelopeIcon,
   PhosphorEyeIcon,
+  PhosphorFilmSlateIcon,
   PhosphorFilterIcon,
   PhosphorGearIcon,
   PhosphorGoogleChromeLogoIcon,

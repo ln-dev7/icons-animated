@@ -724,6 +724,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-clapperboard',
+    'path': path.join(__dirname, '../icons/hugeicons/clapperboard.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-download',
     'path': path.join(__dirname, '../icons/hugeicons/download.tsx'),
     'registryDependencies': [],
@@ -1314,6 +1320,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-eye',
     'path': path.join(__dirname, '../icons/phosphor/eye.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-film-slate',
+    'path': path.join(__dirname, '../icons/phosphor/film-slate.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
