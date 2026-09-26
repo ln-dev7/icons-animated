@@ -162,6 +162,7 @@ import { TablerGitPullRequestClosedIcon } from './git-pull-request-closed';
 import { TablerGridDotsIcon } from './grid-dots';
 import { TablerGripHorizontalIcon } from './grip-horizontal';
 import { TablerGripVerticalIcon } from './grip-vertical';
+import { TablerHammerIcon } from './hammer';
 import { TablerHeartIcon } from './heart';
 import { TablerHelpCircleIcon } from './help-circle';
 import { TablerHomeIcon } from './home';
@@ -944,6 +945,7 @@ const TABLER_ICON_LIST = [
     icon: TablerGripVerticalIcon,
     keywords: ['grip', 'vertical', 'grip-vertical'],
   },
+  { name: 'hammer', icon: TablerHammerIcon, keywords: ['hammer'] },
   {
     name: 'heart',
     icon: TablerHeartIcon,
@@ -1362,6 +1364,7 @@ export {
   TablerGridDotsIcon,
   TablerGripHorizontalIcon,
   TablerGripVerticalIcon,
+  TablerHammerIcon,
   TablerHeartIcon,
   TablerHelpCircleIcon,
   TablerHomeIcon,
