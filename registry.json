@@ -810,6 +810,19 @@
       ]
     },
     {
+      "name": "hugeicons-bone-01",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-bone-01.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-calendar",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -1702,6 +1715,19 @@
       "files": [
         {
           "path": "phosphor-bluetooth-slash.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-bone",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-bone.tsx",
           "type": "registry:ui"
         }
       ]
@@ -2846,6 +2872,19 @@
       "files": [
         {
           "path": "tabler-bold.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-bone",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-bone.tsx",
           "type": "registry:ui"
         }
       ]
