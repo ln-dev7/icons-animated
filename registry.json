@@ -4320,6 +4320,19 @@
       ]
     },
     {
+      "name": "hugeicons-plug-zap",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-plug-zap.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-plus",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -7175,6 +7188,19 @@
       "files": [
         {
           "path": "phosphor-play.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-plug-charging",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-plug-charging.tsx",
           "type": "registry:ui"
         }
       ]

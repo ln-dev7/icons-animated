@@ -330,6 +330,7 @@ import { HugeiconsPieChartIcon } from './pie-chart';
 import { HugeiconsPlaneLandingIcon } from './plane-landing';
 import { HugeiconsPlaneTakeoffIcon } from './plane-takeoff';
 import { HugeiconsPlayIcon } from './play';
+import { HugeiconsPlugZapIcon } from './plug-zap';
 import { HugeiconsPlusIcon } from './plus';
 import { HugeiconsPulse01Icon } from './pulse-01';
 import { HugeiconsRefreshIcon } from './refresh';
@@ -1815,6 +1816,11 @@ const HUGEICONS_ICON_LIST = [
   },
   { name: 'play', icon: HugeiconsPlayIcon, keywords: ['play'] },
   {
+    name: 'plug-zap',
+    icon: HugeiconsPlugZapIcon,
+    keywords: ['plug', 'zap', 'plug-zap'],
+  },
+  {
     name: 'plus',
     icon: HugeiconsPlusIcon,
     keywords: ['plus', 'add', 'new', 'create', 'increase'],
@@ -2264,6 +2270,7 @@ export {
   HugeiconsPlaneLandingIcon,
   HugeiconsPlaneTakeoffIcon,
   HugeiconsPlayIcon,
+  HugeiconsPlugZapIcon,
   HugeiconsPlusIcon,
   HugeiconsPulse01Icon,
   HugeiconsRefreshIcon,
