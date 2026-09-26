@@ -207,6 +207,7 @@ import { TablerMessageChatbotIcon } from './message-chatbot';
 import { TablerMessageCircleIcon } from './message-circle';
 import { TablerMessageCircleCheckIcon } from './message-circle-check';
 import { TablerMessageCirclePlusIcon } from './message-circle-plus';
+import { TablerMessageCircleXIcon } from './message-circle-x';
 import { TablerMoodAngryIcon } from './mood-angry';
 import { TablerMoodAnnoyedIcon } from './mood-annoyed';
 import { TablerMoodHappyIcon } from './mood-happy';
@@ -1163,6 +1164,11 @@ const TABLER_ICON_LIST = [
     keywords: ['message', 'circle', 'plus', 'message-circle-plus'],
   },
   {
+    name: 'message-circle-x',
+    icon: TablerMessageCircleXIcon,
+    keywords: ['message', 'circle', 'x', 'message-circle-x'],
+  },
+  {
     name: 'mood-angry',
     icon: TablerMoodAngryIcon,
     keywords: ['mood', 'angry'],
@@ -1597,6 +1603,7 @@ export {
   TablerMessageCircleIcon,
   TablerMessageCircleCheckIcon,
   TablerMessageCirclePlusIcon,
+  TablerMessageCircleXIcon,
   TablerMoodAngryIcon,
   TablerMoodAnnoyedIcon,
   TablerMoodHappyIcon,

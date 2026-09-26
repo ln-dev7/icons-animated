@@ -1819,6 +1819,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-message-circle-x',
+    'path': path.join(__dirname, '../icons/hugeicons/message-circle-x.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-mouse-pointer-click',
     'path': path.join(__dirname, '../icons/hugeicons/mouse-pointer-click.tsx'),
     'registryDependencies': [],
@@ -4542,6 +4548,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-message-circle-plus',
     'path': path.join(__dirname, '../icons/tabler/message-circle-plus.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-message-circle-x',
+    'path': path.join(__dirname, '../icons/tabler/message-circle-x.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
