@@ -125,6 +125,7 @@ import { HugeiconsCloudLightningIcon } from './cloud-lightning';
 import { HugeiconsCloudRainIcon } from './cloud-rain';
 import { HugeiconsCloudRainWindIcon } from './cloud-rain-wind';
 import { HugeiconsCloudSnowIcon } from './cloud-snow';
+import { HugeiconsCloudSyncIcon } from './cloud-sync';
 import { HugeiconsDownloadIcon } from './download';
 import { HugeiconsEyeIcon } from './eye';
 import { HugeiconsFilterIcon } from './filter';
@@ -779,6 +780,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['cloud', 'snow', 'cloud-snow'],
   },
   {
+    name: 'cloud-sync',
+    icon: HugeiconsCloudSyncIcon,
+    keywords: ['cloud', 'sync', 'cloud-sync'],
+  },
+  {
     name: 'download',
     icon: HugeiconsDownloadIcon,
     keywords: ['download', 'save', 'arrow', 'get', 'export', 'download-01'],
@@ -1075,6 +1081,7 @@ export {
   HugeiconsCloudRainIcon,
   HugeiconsCloudRainWindIcon,
   HugeiconsCloudSnowIcon,
+  HugeiconsCloudSyncIcon,
   HugeiconsDownloadIcon,
   HugeiconsEyeIcon,
   HugeiconsFilterIcon,
