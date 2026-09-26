@@ -111,6 +111,7 @@ import { TablerPackagesIcon } from './packages';
 import { TablerPaperclipIcon } from './paperclip';
 import { TablerPencilIcon } from './pencil';
 import { TablerPlaneIcon } from './plane';
+import { TablerPlugConnectedIcon } from './plug-connected';
 import { TablerPlusIcon } from './plus';
 import { TablerRefreshIcon } from './refresh';
 import { TablerRobotIcon } from './robot';
@@ -670,6 +671,11 @@ const TABLER_ICON_LIST = [
   },
   { name: 'plane', icon: TablerPlaneIcon, keywords: ['plane', 'airplane'] },
   {
+    name: 'plug-connected',
+    icon: TablerPlugConnectedIcon,
+    keywords: ['plug', 'connected', 'connect'],
+  },
+  {
     name: 'plus',
     icon: TablerPlusIcon,
     keywords: ['plus', 'add', 'new', 'create', 'increase'],
@@ -931,6 +937,7 @@ export {
   TablerPaperclipIcon,
   TablerPencilIcon,
   TablerPlaneIcon,
+  TablerPlugConnectedIcon,
   TablerPlusIcon,
   TablerRefreshIcon,
   TablerRobotIcon,

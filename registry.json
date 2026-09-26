@@ -1733,6 +1733,19 @@
       ]
     },
     {
+      "name": "hugeicons-connect",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-connect.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-download",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -3314,6 +3327,19 @@
       "files": [
         {
           "path": "phosphor-person-arms-spread.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-plugs-connected",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-plugs-connected.tsx",
           "type": "registry:ui"
         }
       ]
@@ -5147,6 +5173,19 @@
       "files": [
         {
           "path": "tabler-plane.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-plug-connected",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-plug-connected.tsx",
           "type": "registry:ui"
         }
       ]

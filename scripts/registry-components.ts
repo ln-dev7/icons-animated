@@ -820,6 +820,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-connect',
+    'path': path.join(__dirname, '../icons/hugeicons/connect.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-download',
     'path': path.join(__dirname, '../icons/hugeicons/download.tsx'),
     'registryDependencies': [],
@@ -1554,6 +1560,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-person-arms-spread',
     'path': path.join(__dirname, '../icons/phosphor/person-arms-spread.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-plugs-connected',
+    'path': path.join(__dirname, '../icons/phosphor/plugs-connected.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -2400,6 +2412,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-plane',
     'path': path.join(__dirname, '../icons/tabler/plane.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-plug-connected',
+    'path': path.join(__dirname, '../icons/tabler/plug-connected.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
