@@ -47,6 +47,7 @@ import { PhosphorPlusIcon } from './plus';
 import { PhosphorPulseIcon } from './pulse';
 import { PhosphorRefreshIcon } from './refresh';
 import { PhosphorSaveIcon } from './save';
+import { PhosphorSealWarningIcon } from './seal-warning';
 import { PhosphorSearchIcon } from './search';
 import { PhosphorShareIcon } from './share';
 import { PhosphorSmileyAngryIcon } from './smiley-angry';
@@ -363,6 +364,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['save', 'store', 'disk', 'floppy', 'preserve'],
   },
   {
+    name: 'seal-warning',
+    icon: PhosphorSealWarningIcon,
+    keywords: ['seal', 'warning', 'badge-alert', 'badge', 'alert'],
+  },
+  {
     name: 'search',
     icon: PhosphorSearchIcon,
     keywords: [
@@ -519,6 +525,7 @@ export {
   PhosphorPulseIcon,
   PhosphorRefreshIcon,
   PhosphorSaveIcon,
+  PhosphorSealWarningIcon,
   PhosphorSearchIcon,
   PhosphorShareIcon,
   PhosphorSmileyAngryIcon,

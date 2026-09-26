@@ -537,6 +537,19 @@
       ]
     },
     {
+      "name": "hugeicons-badge-alert",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-badge-alert.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-bell",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -1585,6 +1598,19 @@
       "files": [
         {
           "path": "phosphor-save.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-seal-warning",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-seal-warning.tsx",
           "type": "registry:ui"
         }
       ]

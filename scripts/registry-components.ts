@@ -256,6 +256,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-badge-alert',
+    'path': path.join(__dirname, '../icons/hugeicons/badge-alert.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-bell',
     'path': path.join(__dirname, '../icons/hugeicons/bell.tsx'),
     'registryDependencies': [],
@@ -741,6 +747,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-save',
     'path': path.join(__dirname, '../icons/phosphor/save.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-seal-warning',
+    'path': path.join(__dirname, '../icons/phosphor/seal-warning.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
