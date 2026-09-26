@@ -452,6 +452,7 @@ import { HugeiconsUsersIcon } from './users';
 import { HugeiconsUsersRoundIcon } from './users-round';
 import { HugeiconsVibrateIcon } from './vibrate';
 import { HugeiconsVolumeIcon } from './volume';
+import { HugeiconsWallet01Icon } from './wallet-01';
 import { HugeiconsXIcon } from './x';
 
 const HUGEICONS_ICON_LIST = [
@@ -2422,6 +2423,11 @@ const HUGEICONS_ICON_LIST = [
   { name: 'vibrate', icon: HugeiconsVibrateIcon, keywords: ['vibrate'] },
   { name: 'volume', icon: HugeiconsVolumeIcon, keywords: ['volume'] },
   {
+    name: 'wallet-01',
+    icon: HugeiconsWallet01Icon,
+    keywords: ['wallet', '01'],
+  },
+  {
     name: 'x',
     icon: HugeiconsXIcon,
     keywords: ['close', 'x', 'cancel', 'dismiss', 'remove', 'delete'],
@@ -2884,5 +2890,6 @@ export {
   HugeiconsUsersRoundIcon,
   HugeiconsVibrateIcon,
   HugeiconsVolumeIcon,
+  HugeiconsWallet01Icon,
   HugeiconsXIcon,
 };

@@ -5906,6 +5906,19 @@
       ]
     },
     {
+      "name": "hugeicons-wallet-01",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-wallet-01.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-x",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -9775,6 +9788,19 @@
       "files": [
         {
           "path": "phosphor-vibrate.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-wallet",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-wallet.tsx",
           "type": "registry:ui"
         }
       ]
@@ -14429,6 +14455,19 @@
       "files": [
         {
           "path": "tabler-volume.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-wallet",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-wallet.tsx",
           "type": "registry:ui"
         }
       ]

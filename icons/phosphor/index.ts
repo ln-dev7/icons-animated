@@ -295,6 +295,7 @@ import { PhosphorUserGearIcon } from './user-gear';
 import { PhosphorUserPlusIcon } from './user-plus';
 import { PhosphorUsersIcon } from './users';
 import { PhosphorVibrateIcon } from './vibrate';
+import { PhosphorWalletIcon } from './wallet';
 import { PhosphorWaveformIcon } from './waveform';
 import { PhosphorXIcon } from './x';
 
@@ -1723,6 +1724,7 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['users', 'users-round', 'round'],
   },
   { name: 'vibrate', icon: PhosphorVibrateIcon, keywords: ['vibrate'] },
+  { name: 'wallet', icon: PhosphorWalletIcon, keywords: ['wallet'] },
   {
     name: 'waveform',
     icon: PhosphorWaveformIcon,
@@ -2034,6 +2036,7 @@ export {
   PhosphorUserPlusIcon,
   PhosphorUsersIcon,
   PhosphorVibrateIcon,
+  PhosphorWalletIcon,
   PhosphorWaveformIcon,
   PhosphorXIcon,
 };
