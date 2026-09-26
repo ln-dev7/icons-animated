@@ -12,6 +12,7 @@ import { TablerAmbulanceIcon } from './ambulance';
 import { TablerArchiveIcon } from './archive';
 import { TablerArrowBigDownIcon } from './arrow-big-down';
 import { TablerArrowBigDownLineIcon } from './arrow-big-down-line';
+import { TablerArrowBigLeftIcon } from './arrow-big-left';
 import { TablerArrowDownIcon } from './arrow-down';
 import { TablerArrowLeftIcon } from './arrow-left';
 import { TablerArrowRightIcon } from './arrow-right';
@@ -107,6 +108,11 @@ const TABLER_ICON_LIST = [
     name: 'arrow-big-down-line',
     icon: TablerArrowBigDownLineIcon,
     keywords: ['arrow', 'big', 'down', 'line', 'arrow-big-down-dash', 'dash'],
+  },
+  {
+    name: 'arrow-big-left',
+    icon: TablerArrowBigLeftIcon,
+    keywords: ['arrow', 'big', 'left', 'arrow-big-left'],
   },
   {
     name: 'arrow-down',
@@ -358,6 +364,7 @@ export {
   TablerArchiveIcon,
   TablerArrowBigDownIcon,
   TablerArrowBigDownLineIcon,
+  TablerArrowBigLeftIcon,
   TablerArrowDownIcon,
   TablerArrowLeftIcon,
   TablerArrowRightIcon,
