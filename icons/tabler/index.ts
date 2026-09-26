@@ -266,6 +266,7 @@ import { TablerRocketIcon } from './rocket';
 import { TablerRockingChairIcon } from './rocking-chair';
 import { TablerRollercoasterIcon } from './rollercoaster';
 import { TablerRosetteDiscountIcon } from './rosette-discount';
+import { TablerRotateIcon } from './rotate';
 import { TablerSaveIcon } from './save';
 import { TablerSchoolIcon } from './school';
 import { TablerSearchIcon } from './search';
@@ -1494,6 +1495,11 @@ const TABLER_ICON_LIST = [
     keywords: ['rosette', 'discount', 'badge-percent', 'badge', 'percent'],
   },
   {
+    name: 'rotate',
+    icon: TablerRotateIcon,
+    keywords: ['rotate', 'rotate-ccw', 'ccw'],
+  },
+  {
     name: 'save',
     icon: TablerSaveIcon,
     keywords: ['save', 'store', 'disk', 'floppy', 'preserve'],
@@ -1912,6 +1918,7 @@ export {
   TablerRockingChairIcon,
   TablerRollercoasterIcon,
   TablerRosetteDiscountIcon,
+  TablerRotateIcon,
   TablerSaveIcon,
   TablerSchoolIcon,
   TablerSearchIcon,

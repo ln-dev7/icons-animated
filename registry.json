@@ -4684,6 +4684,19 @@
       ]
     },
     {
+      "name": "hugeicons-rotate-ccw",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-rotate-ccw.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-save",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -5030,6 +5043,19 @@
       "files": [
         {
           "path": "phosphor-arrow-bend-up-right.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-arrow-counter-clockwise",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-arrow-counter-clockwise.tsx",
           "type": "registry:ui"
         }
       ]
@@ -11634,6 +11660,19 @@
       "files": [
         {
           "path": "tabler-rosette-discount.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-rotate",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-rotate.tsx",
           "type": "registry:ui"
         }
       ]

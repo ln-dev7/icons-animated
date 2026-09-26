@@ -8,6 +8,7 @@ import { PhosphorAlignCenterVerticalIcon } from './align-center-vertical';
 import { PhosphorAmbulanceIcon } from './ambulance';
 import { PhosphorArchiveIcon } from './archive';
 import { PhosphorArrowBendUpRightIcon } from './arrow-bend-up-right';
+import { PhosphorArrowCounterClockwiseIcon } from './arrow-counter-clockwise';
 import { PhosphorArrowDownIcon } from './arrow-down';
 import { PhosphorArrowDownLeftIcon } from './arrow-down-left';
 import { PhosphorArrowDownRightIcon } from './arrow-down-right';
@@ -283,6 +284,11 @@ const PHOSPHOR_ICON_LIST = [
     name: 'arrow-bend-up-right',
     icon: PhosphorArrowBendUpRightIcon,
     keywords: ['arrow', 'bend', 'up', 'right', 'redo'],
+  },
+  {
+    name: 'arrow-counter-clockwise',
+    icon: PhosphorArrowCounterClockwiseIcon,
+    keywords: ['arrow', 'counter', 'clockwise', 'rotate-ccw', 'rotate', 'ccw'],
   },
   {
     name: 'arrow-down',
@@ -1501,6 +1507,7 @@ export {
   PhosphorAmbulanceIcon,
   PhosphorArchiveIcon,
   PhosphorArrowBendUpRightIcon,
+  PhosphorArrowCounterClockwiseIcon,
   PhosphorArrowDownIcon,
   PhosphorArrowDownLeftIcon,
   PhosphorArrowDownRightIcon,

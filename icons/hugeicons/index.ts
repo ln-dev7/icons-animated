@@ -358,6 +358,7 @@ import { HugeiconsRefreshCwOffIcon } from './refresh-cw-off';
 import { HugeiconsRocketIcon } from './rocket';
 import { HugeiconsRockingChairIcon } from './rocking-chair';
 import { HugeiconsRollerCoasterIcon } from './roller-coaster';
+import { HugeiconsRotateCcwIcon } from './rotate-ccw';
 import { HugeiconsSaveIcon } from './save';
 import { HugeiconsSearchIcon } from './search';
 import { HugeiconsSettingsIcon } from './settings';
@@ -1956,6 +1957,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['roller', 'coaster', 'roller-coaster'],
   },
   {
+    name: 'rotate-ccw',
+    icon: HugeiconsRotateCcwIcon,
+    keywords: ['rotate', 'ccw', 'rotate-ccw'],
+  },
+  {
     name: 'save',
     icon: HugeiconsSaveIcon,
     keywords: ['save', 'store', 'disk', 'floppy', 'preserve'],
@@ -2418,6 +2424,7 @@ export {
   HugeiconsRocketIcon,
   HugeiconsRockingChairIcon,
   HugeiconsRollerCoasterIcon,
+  HugeiconsRotateCcwIcon,
   HugeiconsSaveIcon,
   HugeiconsSearchIcon,
   HugeiconsSettingsIcon,
