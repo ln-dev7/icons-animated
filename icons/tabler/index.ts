@@ -115,6 +115,7 @@ import { TablerCreditCardIcon } from './credit-card';
 import { TablerCupIcon } from './cup';
 import { TablerCurrencyDollarIcon } from './currency-dollar';
 import { TablerCurrencyEuroIcon } from './currency-euro';
+import { TablerCurrencyLariIcon } from './currency-lari';
 import { TablerDashboardIcon } from './dashboard';
 import { TablerDeviceCctvIcon } from './device-cctv';
 import { TablerDiscIcon } from './disc';
@@ -728,6 +729,11 @@ const TABLER_ICON_LIST = [
     keywords: ['currency', 'euro'],
   },
   {
+    name: 'currency-lari',
+    icon: TablerCurrencyLariIcon,
+    keywords: ['currency', 'lari', 'georgian-lari', 'georgian'],
+  },
+  {
     name: 'dashboard',
     icon: TablerDashboardIcon,
     keywords: ['dashboard', 'gauge'],
@@ -1231,6 +1237,7 @@ export {
   TablerCupIcon,
   TablerCurrencyDollarIcon,
   TablerCurrencyEuroIcon,
+  TablerCurrencyLariIcon,
   TablerDashboardIcon,
   TablerDeviceCctvIcon,
   TablerDiscIcon,
