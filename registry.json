@@ -1031,6 +1031,19 @@
       ]
     },
     {
+      "name": "hugeicons-calendar-days",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-calendar-days.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-check",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -1988,6 +2001,19 @@
       "files": [
         {
           "path": "phosphor-calendar-check.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-calendar-dots",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-calendar-dots.tsx",
           "type": "registry:ui"
         }
       ]
@@ -3301,6 +3327,19 @@
       "files": [
         {
           "path": "tabler-calendar-cog.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-calendar-week",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-calendar-week.tsx",
           "type": "registry:ui"
         }
       ]
