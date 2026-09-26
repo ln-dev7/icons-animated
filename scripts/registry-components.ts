@@ -1906,6 +1906,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-nfc',
+    'path': path.join(__dirname, '../icons/hugeicons/nfc.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-pencil',
     'path': path.join(__dirname, '../icons/hugeicons/pencil.tsx'),
     'registryDependencies': [],
@@ -2622,6 +2628,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-compass',
     'path': path.join(__dirname, '../icons/phosphor/compass.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-contactless-payment',
+    'path': path.join(__dirname, '../icons/phosphor/contactless-payment.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -4761,6 +4773,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-moon',
     'path': path.join(__dirname, '../icons/tabler/moon.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-nfc',
+    'path': path.join(__dirname, '../icons/tabler/nfc.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

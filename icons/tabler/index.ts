@@ -224,6 +224,7 @@ import { TablerMoodHappyIcon } from './mood-happy';
 import { TablerMoodNeutralIcon } from './mood-neutral';
 import { TablerMoodSadIcon } from './mood-sad';
 import { TablerMoonIcon } from './moon';
+import { TablerNfcIcon } from './nfc';
 import { TablerPackagesIcon } from './packages';
 import { TablerPaperclipIcon } from './paperclip';
 import { TablerPencilIcon } from './pencil';
@@ -1251,6 +1252,7 @@ const TABLER_ICON_LIST = [
     keywords: ['mood', 'sad', 'frown'],
   },
   { name: 'moon', icon: TablerMoonIcon, keywords: ['moon'] },
+  { name: 'nfc', icon: TablerNfcIcon, keywords: ['nfc'] },
   {
     name: 'packages',
     icon: TablerPackagesIcon,
@@ -1678,6 +1680,7 @@ export {
   TablerMoodNeutralIcon,
   TablerMoodSadIcon,
   TablerMoonIcon,
+  TablerNfcIcon,
   TablerPackagesIcon,
   TablerPaperclipIcon,
   TablerPencilIcon,

@@ -4047,6 +4047,19 @@
       ]
     },
     {
+      "name": "hugeicons-nfc",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-nfc.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-pencil",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -5576,6 +5589,19 @@
       "files": [
         {
           "path": "phosphor-compass.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-contactless-payment",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-contactless-payment.tsx",
           "type": "registry:ui"
         }
       ]
@@ -10204,6 +10230,19 @@
       "files": [
         {
           "path": "tabler-moon.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-nfc",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-nfc.tsx",
           "type": "registry:ui"
         }
       ]
