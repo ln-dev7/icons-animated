@@ -23,6 +23,7 @@ import { HugeiconsArrowDownAzIcon } from './arrow-down-az';
 import { HugeiconsArrowDownBigIcon } from './arrow-down-big';
 import { HugeiconsArrowDownLeft01Icon } from './arrow-down-left-01';
 import { HugeiconsArrowDownOneZeroIcon } from './arrow-down-one-zero';
+import { HugeiconsArrowDownRight01Icon } from './arrow-down-right-01';
 import { HugeiconsArrowDownZeroOneIcon } from './arrow-down-zero-one';
 import { HugeiconsArrowLeftIcon } from './arrow-left';
 import { HugeiconsArrowLeftBigIcon } from './arrow-left-big';
@@ -176,6 +177,11 @@ const HUGEICONS_ICON_LIST = [
     name: 'arrow-down-one-zero',
     icon: HugeiconsArrowDownOneZeroIcon,
     keywords: ['arrow', 'down', 'one', 'zero', 'arrow-down-1-0', '1', '0'],
+  },
+  {
+    name: 'arrow-down-right-01',
+    icon: HugeiconsArrowDownRight01Icon,
+    keywords: ['arrow', 'down', 'right', '01', 'arrow-down-right'],
   },
   {
     name: 'arrow-down-zero-one',
@@ -479,6 +485,7 @@ export {
   HugeiconsArrowDownBigIcon,
   HugeiconsArrowDownLeft01Icon,
   HugeiconsArrowDownOneZeroIcon,
+  HugeiconsArrowDownRight01Icon,
   HugeiconsArrowDownZeroOneIcon,
   HugeiconsArrowLeftIcon,
   HugeiconsArrowLeftBigIcon,
