@@ -5035,6 +5035,19 @@
       ]
     },
     {
+      "name": "hugeicons-smile",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-smile.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-star",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -8280,6 +8293,19 @@
       "files": [
         {
           "path": "phosphor-sliders-horizontal.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-smiley",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-smiley.tsx",
           "type": "registry:ui"
         }
       ]
@@ -11699,6 +11725,19 @@
       "files": [
         {
           "path": "tabler-mood-sad.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-mood-smile",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-mood-smile.tsx",
           "type": "registry:ui"
         }
       ]

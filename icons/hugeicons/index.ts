@@ -385,6 +385,7 @@ import { HugeiconsShrinkIcon } from './shrink';
 import { HugeiconsSlidersHorizontalIcon } from './sliders-horizontal';
 import { HugeiconsSmartphoneChargingIcon } from './smartphone-charging';
 import { HugeiconsSmartphoneNfcIcon } from './smartphone-nfc';
+import { HugeiconsSmileIcon } from './smile';
 import { HugeiconsStarIcon } from './star';
 import { HugeiconsSunCloud02Icon } from './sun-cloud-02';
 import { HugeiconsTextAlignCenterIcon } from './text-align-center';
@@ -2098,6 +2099,7 @@ const HUGEICONS_ICON_LIST = [
     icon: HugeiconsSmartphoneNfcIcon,
     keywords: ['smartphone', 'nfc', 'smartphone-nfc'],
   },
+  { name: 'smile', icon: HugeiconsSmileIcon, keywords: ['smile'] },
   {
     name: 'star',
     icon: HugeiconsStarIcon,
@@ -2549,6 +2551,7 @@ export {
   HugeiconsSlidersHorizontalIcon,
   HugeiconsSmartphoneChargingIcon,
   HugeiconsSmartphoneNfcIcon,
+  HugeiconsSmileIcon,
   HugeiconsStarIcon,
   HugeiconsSunCloud02Icon,
   HugeiconsTextAlignCenterIcon,
