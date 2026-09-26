@@ -102,6 +102,7 @@ import { TablerCornerRightDownIcon } from './corner-right-down';
 import { TablerCornerRightUpIcon } from './corner-right-up';
 import { TablerCornerUpLeftIcon } from './corner-up-left';
 import { TablerCornerUpRightIcon } from './corner-up-right';
+import { TablerCpuIcon } from './cpu';
 import { TablerDeviceCctvIcon } from './device-cctv';
 import { TablerDownloadIcon } from './download';
 import { TablerEyeIcon } from './eye';
@@ -624,6 +625,7 @@ const TABLER_ICON_LIST = [
     icon: TablerCornerUpRightIcon,
     keywords: ['corner', 'up', 'right', 'corner-up-right'],
   },
+  { name: 'cpu', icon: TablerCpuIcon, keywords: ['cpu'] },
   {
     name: 'device-cctv',
     icon: TablerDeviceCctvIcon,
@@ -986,6 +988,7 @@ export {
   TablerCornerRightUpIcon,
   TablerCornerUpLeftIcon,
   TablerCornerUpRightIcon,
+  TablerCpuIcon,
   TablerDeviceCctvIcon,
   TablerDownloadIcon,
   TablerEyeIcon,

@@ -144,6 +144,7 @@ import { HugeiconsCornerRightDownIcon } from './corner-right-down';
 import { HugeiconsCornerRightUpIcon } from './corner-right-up';
 import { HugeiconsCornerUpLeftIcon } from './corner-up-left';
 import { HugeiconsCornerUpRightIcon } from './corner-up-right';
+import { HugeiconsCpuIcon } from './cpu';
 import { HugeiconsDownloadIcon } from './download';
 import { HugeiconsEyeIcon } from './eye';
 import { HugeiconsFilterIcon } from './filter';
@@ -872,6 +873,7 @@ const HUGEICONS_ICON_LIST = [
     icon: HugeiconsCornerUpRightIcon,
     keywords: ['corner', 'up', 'right', 'corner-up-right'],
   },
+  { name: 'cpu', icon: HugeiconsCpuIcon, keywords: ['cpu'] },
   {
     name: 'download',
     icon: HugeiconsDownloadIcon,
@@ -1188,6 +1190,7 @@ export {
   HugeiconsCornerRightUpIcon,
   HugeiconsCornerUpLeftIcon,
   HugeiconsCornerUpRightIcon,
+  HugeiconsCpuIcon,
   HugeiconsDownloadIcon,
   HugeiconsEyeIcon,
   HugeiconsFilterIcon,

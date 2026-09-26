@@ -1902,6 +1902,19 @@
       ]
     },
     {
+      "name": "hugeicons-cpu",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-cpu.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-download",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -3405,6 +3418,19 @@
       "files": [
         {
           "path": "phosphor-copy.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-cpu",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-cpu.tsx",
           "type": "registry:ui"
         }
       ]
@@ -5368,6 +5394,19 @@
       "files": [
         {
           "path": "tabler-corner-up-right.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-cpu",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-cpu.tsx",
           "type": "registry:ui"
         }
       ]
