@@ -5880,6 +5880,19 @@
       ]
     },
     {
+      "name": "hugeicons-vibrate",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-vibrate.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-x",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -9728,6 +9741,19 @@
       ]
     },
     {
+      "name": "phosphor-vibrate",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-vibrate.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-waveform",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -11660,6 +11686,19 @@
       "files": [
         {
           "path": "tabler-device-mobile-charging.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-device-mobile-vibration",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-device-mobile-vibration.tsx",
           "type": "registry:ui"
         }
       ]

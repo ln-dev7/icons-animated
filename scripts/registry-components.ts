@@ -2761,6 +2761,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-vibrate',
+    'path': path.join(__dirname, '../icons/hugeicons/vibrate.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-x',
     'path': path.join(__dirname, '../icons/hugeicons/x.tsx'),
     'registryDependencies': [],
@@ -4558,6 +4564,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'phosphor-vibrate',
+    'path': path.join(__dirname, '../icons/phosphor/vibrate.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'phosphor-waveform',
     'path': path.join(__dirname, '../icons/phosphor/waveform.tsx'),
     'registryDependencies': [],
@@ -5451,6 +5463,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-device-mobile-charging',
     'path': path.join(__dirname, '../icons/tabler/device-mobile-charging.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-device-mobile-vibration',
+    'path': path.join(__dirname, '../icons/tabler/device-mobile-vibration.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

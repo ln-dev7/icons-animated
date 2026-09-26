@@ -450,6 +450,7 @@ import { HugeiconsUserRoundCogIcon } from './user-round-cog';
 import { HugeiconsUserRoundPlusIcon } from './user-round-plus';
 import { HugeiconsUsersIcon } from './users';
 import { HugeiconsUsersRoundIcon } from './users-round';
+import { HugeiconsVibrateIcon } from './vibrate';
 import { HugeiconsXIcon } from './x';
 
 const HUGEICONS_ICON_LIST = [
@@ -2417,6 +2418,7 @@ const HUGEICONS_ICON_LIST = [
     icon: HugeiconsUsersRoundIcon,
     keywords: ['users', 'round', 'users-round'],
   },
+  { name: 'vibrate', icon: HugeiconsVibrateIcon, keywords: ['vibrate'] },
   {
     name: 'x',
     icon: HugeiconsXIcon,
@@ -2878,5 +2880,6 @@ export {
   HugeiconsUserRoundPlusIcon,
   HugeiconsUsersIcon,
   HugeiconsUsersRoundIcon,
+  HugeiconsVibrateIcon,
   HugeiconsXIcon,
 };

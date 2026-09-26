@@ -145,6 +145,7 @@ import { TablerDeviceDesktopCheckIcon } from './device-desktop-check';
 import { TablerDeviceDesktopCogIcon } from './device-desktop-cog';
 import { TablerDeviceHeartMonitorIcon } from './device-heart-monitor';
 import { TablerDeviceMobileChargingIcon } from './device-mobile-charging';
+import { TablerDeviceMobileVibrationIcon } from './device-mobile-vibration';
 import { TablerDeviceProjectorIcon } from './device-projector';
 import { TablerDiscIcon } from './disc';
 import { TablerDownloadIcon } from './download';
@@ -1054,6 +1055,11 @@ const TABLER_ICON_LIST = [
       'smartphone-charging',
       'smartphone',
     ],
+  },
+  {
+    name: 'device-mobile-vibration',
+    icon: TablerDeviceMobileVibrationIcon,
+    keywords: ['device', 'mobile', 'vibration', 'vibrate'],
   },
   {
     name: 'device-projector',
@@ -2132,6 +2138,7 @@ export {
   TablerDeviceDesktopCogIcon,
   TablerDeviceHeartMonitorIcon,
   TablerDeviceMobileChargingIcon,
+  TablerDeviceMobileVibrationIcon,
   TablerDeviceProjectorIcon,
   TablerDiscIcon,
   TablerDownloadIcon,
