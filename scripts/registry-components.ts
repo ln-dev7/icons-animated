@@ -2683,6 +2683,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-undo-dot',
+    'path': path.join(__dirname, '../icons/hugeicons/undo-dot.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-unfold-more',
     'path': path.join(__dirname, '../icons/hugeicons/unfold-more.tsx'),
     'registryDependencies': [],

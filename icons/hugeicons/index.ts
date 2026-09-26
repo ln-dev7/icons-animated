@@ -437,6 +437,7 @@ import { HugeiconsTwitchIcon } from './twitch';
 import { HugeiconsTwitterIcon } from './twitter';
 import { HugeiconsUnderlineIcon } from './underline';
 import { HugeiconsUndoIcon } from './undo';
+import { HugeiconsUndoDotIcon } from './undo-dot';
 import { HugeiconsUnfoldMoreIcon } from './unfold-more';
 import { HugeiconsUniversalAccessIcon } from './universal-access';
 import { HugeiconsUploadIcon } from './upload';
@@ -2348,6 +2349,11 @@ const HUGEICONS_ICON_LIST = [
   { name: 'underline', icon: HugeiconsUnderlineIcon, keywords: ['underline'] },
   { name: 'undo', icon: HugeiconsUndoIcon, keywords: ['undo'] },
   {
+    name: 'undo-dot',
+    icon: HugeiconsUndoDotIcon,
+    keywords: ['undo', 'dot', 'undo-dot'],
+  },
+  {
     name: 'unfold-more',
     icon: HugeiconsUnfoldMoreIcon,
     keywords: ['unfold', 'more', 'chevrons-up-down', 'chevrons', 'up', 'down'],
@@ -2815,6 +2821,7 @@ export {
   HugeiconsTwitterIcon,
   HugeiconsUnderlineIcon,
   HugeiconsUndoIcon,
+  HugeiconsUndoDotIcon,
   HugeiconsUnfoldMoreIcon,
   HugeiconsUniversalAccessIcon,
   HugeiconsUploadIcon,

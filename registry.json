@@ -5711,6 +5711,19 @@
       ]
     },
     {
+      "name": "hugeicons-undo-dot",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-undo-dot.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-unfold-more",
       "type": "registry:ui",
       "registryDependencies": [],
