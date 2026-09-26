@@ -4736,6 +4736,19 @@
       ]
     },
     {
+      "name": "hugeicons-russian-ruble",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-russian-ruble.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-save",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -6486,6 +6499,19 @@
       "files": [
         {
           "path": "phosphor-currency-jpy.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-currency-rub",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-currency-rub.tsx",
           "type": "registry:ui"
         }
       ]
@@ -9892,6 +9918,19 @@
       "files": [
         {
           "path": "tabler-currency-pound.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-currency-ruble",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-currency-ruble.tsx",
           "type": "registry:ui"
         }
       ]

@@ -116,6 +116,7 @@ import { PhosphorCurrencyEurIcon } from './currency-eur';
 import { PhosphorCurrencyGbpIcon } from './currency-gbp';
 import { PhosphorCurrencyInrIcon } from './currency-inr';
 import { PhosphorCurrencyJpyIcon } from './currency-jpy';
+import { PhosphorCurrencyRubIcon } from './currency-rub';
 import { PhosphorCursorClickIcon } from './cursor-click';
 import { PhosphorDetectiveIcon } from './detective';
 import { PhosphorDiscIcon } from './disc';
@@ -897,6 +898,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['currency', 'jpy', 'japanese-yen', 'japanese', 'yen'],
   },
   {
+    name: 'currency-rub',
+    icon: PhosphorCurrencyRubIcon,
+    keywords: ['currency', 'rub', 'russian-ruble', 'russian', 'ruble'],
+  },
+  {
     name: 'cursor-click',
     icon: PhosphorCursorClickIcon,
     keywords: ['cursor', 'click', 'cursor-click'],
@@ -1617,6 +1623,7 @@ export {
   PhosphorCurrencyGbpIcon,
   PhosphorCurrencyInrIcon,
   PhosphorCurrencyJpyIcon,
+  PhosphorCurrencyRubIcon,
   PhosphorCursorClickIcon,
   PhosphorDetectiveIcon,
   PhosphorDiscIcon,

@@ -2230,6 +2230,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-russian-ruble',
+    'path': path.join(__dirname, '../icons/hugeicons/russian-ruble.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-save',
     'path': path.join(__dirname, '../icons/hugeicons/save.tsx'),
     'registryDependencies': [],
@@ -3057,6 +3063,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-currency-jpy',
     'path': path.join(__dirname, '../icons/phosphor/currency-jpy.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-currency-rub',
+    'path': path.join(__dirname, '../icons/phosphor/currency-rub.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -4632,6 +4644,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-currency-pound',
     'path': path.join(__dirname, '../icons/tabler/currency-pound.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-currency-ruble',
+    'path': path.join(__dirname, '../icons/tabler/currency-ruble.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
