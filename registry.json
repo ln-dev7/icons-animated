@@ -5828,6 +5828,19 @@
       ]
     },
     {
+      "name": "hugeicons-user-round-cog",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-user-round-cog.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-x",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -9632,6 +9645,19 @@
       "files": [
         {
           "path": "phosphor-user-check.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-user-gear",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-user-gear.tsx",
           "type": "registry:ui"
         }
       ]
@@ -14221,6 +14247,19 @@
       "files": [
         {
           "path": "tabler-user-check.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-user-cog",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-user-cog.tsx",
           "type": "registry:ui"
         }
       ]
