@@ -117,6 +117,7 @@ import { HugeiconsCircleGaugeIcon } from './circle-gauge';
 import { HugeiconsCircleQuestionMarkIcon } from './circle-question-mark';
 import { HugeiconsClapperboardIcon } from './clapperboard';
 import { HugeiconsClipboardCheckIcon } from './clipboard-check';
+import { HugeiconsClock01Icon } from './clock-01';
 import { HugeiconsDownloadIcon } from './download';
 import { HugeiconsEyeIcon } from './eye';
 import { HugeiconsFilterIcon } from './filter';
@@ -733,6 +734,7 @@ const HUGEICONS_ICON_LIST = [
     icon: HugeiconsClipboardCheckIcon,
     keywords: ['clipboard', 'check', 'clipboard-check'],
   },
+  { name: 'clock-01', icon: HugeiconsClock01Icon, keywords: ['clock', '01'] },
   {
     name: 'download',
     icon: HugeiconsDownloadIcon,
@@ -1017,6 +1019,7 @@ export {
   HugeiconsCircleQuestionMarkIcon,
   HugeiconsClapperboardIcon,
   HugeiconsClipboardCheckIcon,
+  HugeiconsClock01Icon,
   HugeiconsDownloadIcon,
   HugeiconsEyeIcon,
   HugeiconsFilterIcon,

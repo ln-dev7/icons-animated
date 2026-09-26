@@ -1551,6 +1551,19 @@
       ]
     },
     {
+      "name": "hugeicons-clock-01",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-clock-01.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-download",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2755,6 +2768,19 @@
       "files": [
         {
           "path": "phosphor-circle-dashed.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-clock",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-clock.tsx",
           "type": "registry:ui"
         }
       ]
@@ -4419,6 +4445,19 @@
       "files": [
         {
           "path": "tabler-clipboard-check.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-clock",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-clock.tsx",
           "type": "registry:ui"
         }
       ]

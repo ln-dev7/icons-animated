@@ -736,6 +736,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-clock-01',
+    'path': path.join(__dirname, '../icons/hugeicons/clock-01.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-download',
     'path': path.join(__dirname, '../icons/hugeicons/download.tsx'),
     'registryDependencies': [],
@@ -1293,6 +1299,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-circle-dashed',
     'path': path.join(__dirname, '../icons/phosphor/circle-dashed.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-clock',
+    'path': path.join(__dirname, '../icons/phosphor/clock.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -2064,6 +2076,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-clipboard-check',
     'path': path.join(__dirname, '../icons/tabler/clipboard-check.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-clock',
+    'path': path.join(__dirname, '../icons/tabler/clock.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

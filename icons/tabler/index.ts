@@ -81,6 +81,7 @@ import { TablerCircleChevronRightIcon } from './circle-chevron-right';
 import { TablerCircleChevronUpIcon } from './circle-chevron-up';
 import { TablerCircleDashedIcon } from './circle-dashed';
 import { TablerClipboardCheckIcon } from './clipboard-check';
+import { TablerClockIcon } from './clock';
 import { TablerCoinIcon } from './coin';
 import { TablerDeviceCctvIcon } from './device-cctv';
 import { TablerDownloadIcon } from './download';
@@ -518,6 +519,7 @@ const TABLER_ICON_LIST = [
     icon: TablerClipboardCheckIcon,
     keywords: ['clipboard', 'check', 'clipboard-check'],
   },
+  { name: 'clock', icon: TablerClockIcon, keywords: ['clock'] },
   {
     name: 'coin',
     icon: TablerCoinIcon,
@@ -859,6 +861,7 @@ export {
   TablerCircleChevronUpIcon,
   TablerCircleDashedIcon,
   TablerClipboardCheckIcon,
+  TablerClockIcon,
   TablerCoinIcon,
   TablerDeviceCctvIcon,
   TablerDownloadIcon,
