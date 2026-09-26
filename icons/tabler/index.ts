@@ -348,6 +348,7 @@ import { TablerUnderlineIcon } from './underline';
 import { TablerUploadIcon } from './upload';
 import { TablerUserIcon } from './user';
 import { TablerUserCheckIcon } from './user-check';
+import { TablerUserPlusIcon } from './user-plus';
 import { TablerVaccineIcon } from './vaccine';
 import { TablerWindmillIcon } from './windmill';
 import { TablerWorldIcon } from './world';
@@ -1948,6 +1949,11 @@ const TABLER_ICON_LIST = [
     keywords: ['user', 'check', 'user-check', 'user-round-check', 'round'],
   },
   {
+    name: 'user-plus',
+    icon: TablerUserPlusIcon,
+    keywords: ['user', 'plus', 'user-plus', 'user-round-plus', 'round'],
+  },
+  {
     name: 'vaccine',
     icon: TablerVaccineIcon,
     keywords: ['vaccine', 'syringe'],
@@ -2317,6 +2323,7 @@ export {
   TablerUploadIcon,
   TablerUserIcon,
   TablerUserCheckIcon,
+  TablerUserPlusIcon,
   TablerVaccineIcon,
   TablerWindmillIcon,
   TablerWorldIcon,

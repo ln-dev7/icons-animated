@@ -290,6 +290,7 @@ import { PhosphorTwitterLogoIcon } from './twitter-logo';
 import { PhosphorUploadIcon } from './upload';
 import { PhosphorUserIcon } from './user';
 import { PhosphorUserCheckIcon } from './user-check';
+import { PhosphorUserPlusIcon } from './user-plus';
 import { PhosphorWaveformIcon } from './waveform';
 import { PhosphorXIcon } from './x';
 
@@ -1698,6 +1699,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['user', 'check', 'user-check', 'user-round-check', 'round'],
   },
   {
+    name: 'user-plus',
+    icon: PhosphorUserPlusIcon,
+    keywords: ['user', 'plus', 'user-plus', 'user-round-plus', 'round'],
+  },
+  {
     name: 'waveform',
     icon: PhosphorWaveformIcon,
     keywords: ['waveform', 'audio-lines', 'audio', 'lines'],
@@ -2003,6 +2009,7 @@ export {
   PhosphorUploadIcon,
   PhosphorUserIcon,
   PhosphorUserCheckIcon,
+  PhosphorUserPlusIcon,
   PhosphorWaveformIcon,
   PhosphorXIcon,
 };
