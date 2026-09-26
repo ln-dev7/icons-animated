@@ -19,6 +19,7 @@ import { PhosphorArrowFatUpIcon } from './arrow-fat-up';
 import { PhosphorArrowLeftIcon } from './arrow-left';
 import { PhosphorArrowRightIcon } from './arrow-right';
 import { PhosphorArrowUpIcon } from './arrow-up';
+import { PhosphorArrowUpLeftIcon } from './arrow-up-left';
 import { PhosphorBellIcon } from './bell';
 import { PhosphorCalendarIcon } from './calendar';
 import { PhosphorCheckIcon } from './check';
@@ -185,6 +186,11 @@ const PHOSPHOR_ICON_LIST = [
     name: 'arrow-up',
     icon: PhosphorArrowUpIcon,
     keywords: ['arrow', 'up', 'direction', 'north', 'top', 'arrow-up'],
+  },
+  {
+    name: 'arrow-up-left',
+    icon: PhosphorArrowUpLeftIcon,
+    keywords: ['arrow', 'up', 'left', 'arrow-up-left'],
   },
   {
     name: 'bell',
@@ -461,6 +467,7 @@ export {
   PhosphorArrowLeftIcon,
   PhosphorArrowRightIcon,
   PhosphorArrowUpIcon,
+  PhosphorArrowUpLeftIcon,
   PhosphorBellIcon,
   PhosphorCalendarIcon,
   PhosphorCheckIcon,
