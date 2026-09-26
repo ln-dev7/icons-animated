@@ -1,4 +1,5 @@
 import { TablerAccessibleIcon } from './accessible';
+import { TablerActivityIcon } from './activity';
 import { TablerArrowDownIcon } from './arrow-down';
 import { TablerArrowLeftIcon } from './arrow-left';
 import { TablerArrowRightIcon } from './arrow-right';
@@ -37,6 +38,7 @@ const TABLER_ICON_LIST = [
     icon: TablerAccessibleIcon,
     keywords: ['accessible', 'accessibility'],
   },
+  { name: 'activity', icon: TablerActivityIcon, keywords: ['activity'] },
   {
     name: 'arrow-down',
     icon: TablerArrowDownIcon,
@@ -197,6 +199,7 @@ const TABLER_ICON_LIST = [
 export {
   TABLER_ICON_LIST,
   TablerAccessibleIcon,
+  TablerActivityIcon,
   TablerArrowDownIcon,
   TablerArrowLeftIcon,
   TablerArrowRightIcon,

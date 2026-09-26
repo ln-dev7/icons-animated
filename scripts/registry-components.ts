@@ -142,6 +142,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-pulse-01',
+    'path': path.join(__dirname, '../icons/hugeicons/pulse-01.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-refresh',
     'path': path.join(__dirname, '../icons/hugeicons/refresh.tsx'),
     'registryDependencies': [],
@@ -346,6 +352,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'phosphor-pulse',
+    'path': path.join(__dirname, '../icons/phosphor/pulse.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'phosphor-refresh',
     'path': path.join(__dirname, '../icons/phosphor/refresh.tsx'),
     'registryDependencies': [],
@@ -402,6 +414,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-accessible',
     'path': path.join(__dirname, '../icons/tabler/accessible.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-activity',
+    'path': path.join(__dirname, '../icons/tabler/activity.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

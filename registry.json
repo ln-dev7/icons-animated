@@ -303,6 +303,19 @@
       ]
     },
     {
+      "name": "hugeicons-pulse-01",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-pulse-01.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-refresh",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -745,6 +758,19 @@
       ]
     },
     {
+      "name": "phosphor-pulse",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-pulse.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-refresh",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -870,6 +896,19 @@
       "files": [
         {
           "path": "tabler-accessible.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-activity",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-activity.tsx",
           "type": "registry:ui"
         }
       ]

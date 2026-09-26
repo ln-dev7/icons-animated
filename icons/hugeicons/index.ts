@@ -21,6 +21,7 @@ import { HugeiconsMailIcon } from './mail';
 import { HugeiconsMenuIcon } from './menu';
 import { HugeiconsPencilIcon } from './pencil';
 import { HugeiconsPlusIcon } from './plus';
+import { HugeiconsPulse01Icon } from './pulse-01';
 import { HugeiconsRefreshIcon } from './refresh';
 import { HugeiconsSaveIcon } from './save';
 import { HugeiconsSearchIcon } from './search';
@@ -150,6 +151,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['plus', 'add', 'new', 'create', 'increase'],
   },
   {
+    name: 'pulse-01',
+    icon: HugeiconsPulse01Icon,
+    keywords: ['pulse', '01', 'activity'],
+  },
+  {
     name: 'refresh',
     icon: HugeiconsRefreshIcon,
     keywords: ['refresh', 'reload', 'reload', 'update', 'sync', 'rotate'],
@@ -231,6 +237,7 @@ export {
   HugeiconsMenuIcon,
   HugeiconsPencilIcon,
   HugeiconsPlusIcon,
+  HugeiconsPulse01Icon,
   HugeiconsRefreshIcon,
   HugeiconsSaveIcon,
   HugeiconsSearchIcon,
