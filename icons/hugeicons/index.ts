@@ -35,6 +35,7 @@ import { HugeiconsArrowUpBigIcon } from './arrow-up-big';
 import { HugeiconsArrowUpLeft01Icon } from './arrow-up-left-01';
 import { HugeiconsArrowUpRight01Icon } from './arrow-up-right-01';
 import { HugeiconsAtSignIcon } from './at-sign';
+import { HugeiconsAtom02Icon } from './atom-02';
 import { HugeiconsBellIcon } from './bell';
 import { HugeiconsCalendarIcon } from './calendar';
 import { HugeiconsCheckIcon } from './check';
@@ -267,6 +268,7 @@ const HUGEICONS_ICON_LIST = [
     icon: HugeiconsAtSignIcon,
     keywords: ['at', 'sign', 'at-sign'],
   },
+  { name: 'atom-02', icon: HugeiconsAtom02Icon, keywords: ['atom', '02'] },
   {
     name: 'bell',
     icon: HugeiconsBellIcon,
@@ -521,6 +523,7 @@ export {
   HugeiconsArrowUpLeft01Icon,
   HugeiconsArrowUpRight01Icon,
   HugeiconsAtSignIcon,
+  HugeiconsAtom02Icon,
   HugeiconsBellIcon,
   HugeiconsCalendarIcon,
   HugeiconsCheckIcon,
