@@ -1807,6 +1807,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-message-circle-more',
+    'path': path.join(__dirname, '../icons/hugeicons/message-circle-more.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-mouse-pointer-click',
     'path': path.join(__dirname, '../icons/hugeicons/mouse-pointer-click.tsx'),
     'registryDependencies': [],
@@ -2382,6 +2388,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-chat-circle',
     'path': path.join(__dirname, '../icons/phosphor/chat-circle.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-chat-circle-dots',
+    'path': path.join(__dirname, '../icons/phosphor/chat-circle-dots.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

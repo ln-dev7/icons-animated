@@ -70,6 +70,7 @@ import { PhosphorChartLineIcon } from './chart-line';
 import { PhosphorChartPieIcon } from './chart-pie';
 import { PhosphorChartScatterIcon } from './chart-scatter';
 import { PhosphorChatCircleIcon } from './chat-circle';
+import { PhosphorChatCircleDotsIcon } from './chat-circle-dots';
 import { PhosphorCheckIcon } from './check';
 import { PhosphorCheckCircleIcon } from './check-circle';
 import { PhosphorChecksIcon } from './checks';
@@ -603,6 +604,18 @@ const PHOSPHOR_ICON_LIST = [
     name: 'chat-circle',
     icon: PhosphorChatCircleIcon,
     keywords: ['chat', 'circle', 'message-circle', 'message'],
+  },
+  {
+    name: 'chat-circle-dots',
+    icon: PhosphorChatCircleDotsIcon,
+    keywords: [
+      'chat',
+      'circle',
+      'dots',
+      'message-circle-more',
+      'message',
+      'more',
+    ],
   },
   {
     name: 'check',
@@ -1388,6 +1401,7 @@ export {
   PhosphorChartPieIcon,
   PhosphorChartScatterIcon,
   PhosphorChatCircleIcon,
+  PhosphorChatCircleDotsIcon,
   PhosphorCheckIcon,
   PhosphorCheckCircleIcon,
   PhosphorChecksIcon,
