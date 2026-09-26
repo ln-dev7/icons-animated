@@ -147,6 +147,7 @@ import { HugeiconsCornerUpRightIcon } from './corner-up-right';
 import { HugeiconsCpuIcon } from './cpu';
 import { HugeiconsCreditCardIcon } from './credit-card';
 import { HugeiconsCupSodaIcon } from './cup-soda';
+import { HugeiconsDatabaseBackupIcon } from './database-backup';
 import { HugeiconsDownloadIcon } from './download';
 import { HugeiconsEyeIcon } from './eye';
 import { HugeiconsFilterIcon } from './filter';
@@ -888,6 +889,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['cup', 'soda', 'cup-soda'],
   },
   {
+    name: 'database-backup',
+    icon: HugeiconsDatabaseBackupIcon,
+    keywords: ['database', 'backup', 'database-backup'],
+  },
+  {
     name: 'download',
     icon: HugeiconsDownloadIcon,
     keywords: ['download', 'save', 'arrow', 'get', 'export', 'download-01'],
@@ -1211,6 +1217,7 @@ export {
   HugeiconsCpuIcon,
   HugeiconsCreditCardIcon,
   HugeiconsCupSodaIcon,
+  HugeiconsDatabaseBackupIcon,
   HugeiconsDownloadIcon,
   HugeiconsEyeIcon,
   HugeiconsFilterIcon,
