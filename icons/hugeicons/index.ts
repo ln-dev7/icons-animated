@@ -313,6 +313,7 @@ import { HugeiconsNfcIcon } from './nfc';
 import { HugeiconsPaletteIcon } from './palette';
 import { HugeiconsPanelLeftCloseIcon } from './panel-left-close';
 import { HugeiconsPanelLeftOpenIcon } from './panel-left-open';
+import { HugeiconsPanelRightOpenIcon } from './panel-right-open';
 import { HugeiconsPencilIcon } from './pencil';
 import { HugeiconsPieChartIcon } from './pie-chart';
 import { HugeiconsPlusIcon } from './plus';
@@ -1731,6 +1732,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['panel', 'left', 'open', 'panel-left-close', 'close'],
   },
   {
+    name: 'panel-right-open',
+    icon: HugeiconsPanelRightOpenIcon,
+    keywords: ['panel', 'right', 'open', 'panel-right-open'],
+  },
+  {
     name: 'pencil',
     icon: HugeiconsPencilIcon,
     keywords: ['pencil', 'edit', 'write', 'pen', 'modify'],
@@ -2173,6 +2179,7 @@ export {
   HugeiconsPaletteIcon,
   HugeiconsPanelLeftCloseIcon,
   HugeiconsPanelLeftOpenIcon,
+  HugeiconsPanelRightOpenIcon,
   HugeiconsPencilIcon,
   HugeiconsPieChartIcon,
   HugeiconsPlusIcon,

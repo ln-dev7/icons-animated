@@ -189,6 +189,7 @@ import { TablerLayoutAlignMiddleIcon } from './layout-align-middle';
 import { TablerLayoutGridIcon } from './layout-grid';
 import { TablerLayoutSidebarLeftCollapseIcon } from './layout-sidebar-left-collapse';
 import { TablerLayoutSidebarLeftExpandIcon } from './layout-sidebar-left-expand';
+import { TablerLayoutSidebarRightExpandIcon } from './layout-sidebar-right-expand';
 import { TablerLeafIcon } from './leaf';
 import { TablerLinkIcon } from './link';
 import { TablerLoaderIcon } from './loader';
@@ -1124,6 +1125,19 @@ const TABLER_ICON_LIST = [
       'open',
     ],
   },
+  {
+    name: 'layout-sidebar-right-expand',
+    icon: TablerLayoutSidebarRightExpandIcon,
+    keywords: [
+      'layout',
+      'sidebar',
+      'right',
+      'expand',
+      'panel-right-open',
+      'panel',
+      'open',
+    ],
+  },
   { name: 'leaf', icon: TablerLeafIcon, keywords: ['leaf'] },
   { name: 'link', icon: TablerLinkIcon, keywords: ['link', 'link-2', '2'] },
   { name: 'loader', icon: TablerLoaderIcon, keywords: ['loader'] },
@@ -1675,6 +1689,7 @@ export {
   TablerLayoutGridIcon,
   TablerLayoutSidebarLeftCollapseIcon,
   TablerLayoutSidebarLeftExpandIcon,
+  TablerLayoutSidebarRightExpandIcon,
   TablerLeafIcon,
   TablerLinkIcon,
   TablerLoaderIcon,

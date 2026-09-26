@@ -4099,6 +4099,19 @@
       ]
     },
     {
+      "name": "hugeicons-panel-right-open",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-panel-right-open.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-pencil",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -9827,6 +9840,19 @@
       "files": [
         {
           "path": "tabler-layout-sidebar-left-expand.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-layout-sidebar-right-expand",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-layout-sidebar-right-expand.tsx",
           "type": "registry:ui"
         }
       ]
