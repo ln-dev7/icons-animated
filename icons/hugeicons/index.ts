@@ -332,6 +332,7 @@ import { HugeiconsPlaneTakeoffIcon } from './plane-takeoff';
 import { HugeiconsPlayIcon } from './play';
 import { HugeiconsPlugZapIcon } from './plug-zap';
 import { HugeiconsPlusIcon } from './plus';
+import { HugeiconsPoundSterlingIcon } from './pound-sterling';
 import { HugeiconsPulse01Icon } from './pulse-01';
 import { HugeiconsRefreshIcon } from './refresh';
 import { HugeiconsSaveIcon } from './save';
@@ -1826,6 +1827,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['plus', 'add', 'new', 'create', 'increase'],
   },
   {
+    name: 'pound-sterling',
+    icon: HugeiconsPoundSterlingIcon,
+    keywords: ['pound', 'sterling', 'pound-sterling'],
+  },
+  {
     name: 'pulse-01',
     icon: HugeiconsPulse01Icon,
     keywords: ['pulse', '01', 'activity'],
@@ -2272,6 +2278,7 @@ export {
   HugeiconsPlayIcon,
   HugeiconsPlugZapIcon,
   HugeiconsPlusIcon,
+  HugeiconsPoundSterlingIcon,
   HugeiconsPulse01Icon,
   HugeiconsRefreshIcon,
   HugeiconsSaveIcon,

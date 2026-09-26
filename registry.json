@@ -4346,6 +4346,19 @@
       ]
     },
     {
+      "name": "hugeicons-pound-sterling",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-pound-sterling.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-pulse-01",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -6018,6 +6031,19 @@
       "files": [
         {
           "path": "phosphor-currency-eur.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-currency-gbp",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-currency-gbp.tsx",
           "type": "registry:ui"
         }
       ]
@@ -9346,6 +9372,19 @@
       "files": [
         {
           "path": "tabler-currency-peso.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-currency-pound",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-currency-pound.tsx",
           "type": "registry:ui"
         }
       ]

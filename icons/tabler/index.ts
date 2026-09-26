@@ -123,6 +123,7 @@ import { TablerCurrencyDollarIcon } from './currency-dollar';
 import { TablerCurrencyEuroIcon } from './currency-euro';
 import { TablerCurrencyLariIcon } from './currency-lari';
 import { TablerCurrencyPesoIcon } from './currency-peso';
+import { TablerCurrencyPoundIcon } from './currency-pound';
 import { TablerCurrencyRupeeIcon } from './currency-rupee';
 import { TablerCurrencyYenIcon } from './currency-yen';
 import { TablerDashboardIcon } from './dashboard';
@@ -851,6 +852,11 @@ const TABLER_ICON_LIST = [
     name: 'currency-peso',
     icon: TablerCurrencyPesoIcon,
     keywords: ['currency', 'peso', 'philippine-peso', 'philippine'],
+  },
+  {
+    name: 'currency-pound',
+    icon: TablerCurrencyPoundIcon,
+    keywords: ['currency', 'pound', 'pound-sterling', 'sterling'],
   },
   {
     name: 'currency-rupee',
@@ -1693,6 +1699,7 @@ export {
   TablerCurrencyEuroIcon,
   TablerCurrencyLariIcon,
   TablerCurrencyPesoIcon,
+  TablerCurrencyPoundIcon,
   TablerCurrencyRupeeIcon,
   TablerCurrencyYenIcon,
   TablerDashboardIcon,
