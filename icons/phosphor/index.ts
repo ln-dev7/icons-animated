@@ -292,6 +292,7 @@ import { PhosphorUserIcon } from './user';
 import { PhosphorUserCheckIcon } from './user-check';
 import { PhosphorUserGearIcon } from './user-gear';
 import { PhosphorUserPlusIcon } from './user-plus';
+import { PhosphorUsersIcon } from './users';
 import { PhosphorWaveformIcon } from './waveform';
 import { PhosphorXIcon } from './x';
 
@@ -1710,6 +1711,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['user', 'plus', 'user-plus', 'user-round-plus', 'round'],
   },
   {
+    name: 'users',
+    icon: PhosphorUsersIcon,
+    keywords: ['users', 'users-round', 'round'],
+  },
+  {
     name: 'waveform',
     icon: PhosphorWaveformIcon,
     keywords: ['waveform', 'audio-lines', 'audio', 'lines'],
@@ -2017,6 +2023,7 @@ export {
   PhosphorUserCheckIcon,
   PhosphorUserGearIcon,
   PhosphorUserPlusIcon,
+  PhosphorUsersIcon,
   PhosphorWaveformIcon,
   PhosphorXIcon,
 };
