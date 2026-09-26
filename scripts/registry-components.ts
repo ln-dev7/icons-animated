@@ -2671,6 +2671,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-underline',
+    'path': path.join(__dirname, '../icons/hugeicons/underline.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-unfold-more',
     'path': path.join(__dirname, '../icons/hugeicons/unfold-more.tsx'),
     'registryDependencies': [],
@@ -4350,6 +4356,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-text-italic',
     'path': path.join(__dirname, '../icons/phosphor/text-italic.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-text-underline',
+    'path': path.join(__dirname, '../icons/phosphor/text-underline.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -6534,6 +6546,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-truck',
     'path': path.join(__dirname, '../icons/tabler/truck.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-underline',
+    'path': path.join(__dirname, '../icons/tabler/underline.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

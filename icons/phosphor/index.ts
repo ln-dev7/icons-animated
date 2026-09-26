@@ -270,6 +270,7 @@ import { PhosphorTextAlignLeftIcon } from './text-align-left';
 import { PhosphorTextAlignRightIcon } from './text-align-right';
 import { PhosphorTextBIcon } from './text-b';
 import { PhosphorTextItalicIcon } from './text-italic';
+import { PhosphorTextUnderlineIcon } from './text-underline';
 import { PhosphorThermometerIcon } from './thermometer';
 import { PhosphorThumbsDownIcon } from './thumbs-down';
 import { PhosphorTicketIcon } from './ticket';
@@ -1610,6 +1611,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['text', 'italic'],
   },
   {
+    name: 'text-underline',
+    icon: PhosphorTextUnderlineIcon,
+    keywords: ['text', 'underline'],
+  },
+  {
     name: 'thermometer',
     icon: PhosphorThermometerIcon,
     keywords: ['thermometer'],
@@ -1959,6 +1965,7 @@ export {
   PhosphorTextAlignRightIcon,
   PhosphorTextBIcon,
   PhosphorTextItalicIcon,
+  PhosphorTextUnderlineIcon,
   PhosphorThermometerIcon,
   PhosphorThumbsDownIcon,
   PhosphorTicketIcon,

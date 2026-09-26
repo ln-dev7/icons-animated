@@ -342,6 +342,7 @@ import { TablerTrendingDownIcon } from './trending-down';
 import { TablerTrendingUpIcon } from './trending-up';
 import { TablerTrendingUpDownIcon } from './trending-up-down';
 import { TablerTruckIcon } from './truck';
+import { TablerUnderlineIcon } from './underline';
 import { TablerUploadIcon } from './upload';
 import { TablerUserIcon } from './user';
 import { TablerVaccineIcon } from './vaccine';
@@ -1917,6 +1918,7 @@ const TABLER_ICON_LIST = [
     keywords: ['trending', 'up', 'down', 'trending-up-down'],
   },
   { name: 'truck', icon: TablerTruckIcon, keywords: ['truck'] },
+  { name: 'underline', icon: TablerUnderlineIcon, keywords: ['underline'] },
   {
     name: 'upload',
     icon: TablerUploadIcon,
@@ -2291,6 +2293,7 @@ export {
   TablerTrendingUpIcon,
   TablerTrendingUpDownIcon,
   TablerTruckIcon,
+  TablerUnderlineIcon,
   TablerUploadIcon,
   TablerUserIcon,
   TablerVaccineIcon,

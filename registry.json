@@ -5685,6 +5685,19 @@
       ]
     },
     {
+      "name": "hugeicons-underline",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-underline.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-unfold-more",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -9281,6 +9294,19 @@
       "files": [
         {
           "path": "phosphor-text-italic.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-text-underline",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-text-underline.tsx",
           "type": "registry:ui"
         }
       ]
@@ -13987,6 +14013,19 @@
       "files": [
         {
           "path": "tabler-truck.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-underline",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-underline.tsx",
           "type": "registry:ui"
         }
       ]
