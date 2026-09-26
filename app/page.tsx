@@ -63,16 +63,16 @@ const Home = () => {
       <p className="text-secondary mt-4 w-full max-w-[642px] px-4 font-mono text-xs min-[640px]:text-sm">
         Discover{' '}
         <a
-          href="https://square.lndev.me/"
+          href="https://voxylio.lndev.me/en"
           target="_blank"
           rel="noopener noreferrer"
           tabIndex={0}
           className="hover:decoration-primary focus-visible:outline-primary text-primary transition-[decoration-color] duration-100 focus-within:outline-offset-0 hover:underline hover:underline-offset-3 focus-visible:outline-1"
         >
-          Square UI
+          Voxylio
         </a>{' '}
-        - a collection of beautifully crafted open-source layouts UI built with
-        shadcn/ui.
+        — a browser extension that translates and dubs subtitled videos into
+        your language, in sync with playback.
       </p>
       <IconsList />
     </section>
