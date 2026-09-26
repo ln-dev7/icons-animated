@@ -92,6 +92,7 @@ import { TablerCloudUploadIcon } from './cloud-upload';
 import { TablerCoffeeIcon } from './coffee';
 import { TablerCoinIcon } from './coin';
 import { TablerCompassIcon } from './compass';
+import { TablerContrastIcon } from './contrast';
 import { TablerDeviceCctvIcon } from './device-cctv';
 import { TablerDownloadIcon } from './download';
 import { TablerEyeIcon } from './eye';
@@ -572,6 +573,7 @@ const TABLER_ICON_LIST = [
     keywords: ['coin', 'circle-dollar-sign', 'circle', 'dollar', 'sign'],
   },
   { name: 'compass', icon: TablerCompassIcon, keywords: ['compass'] },
+  { name: 'contrast', icon: TablerContrastIcon, keywords: ['contrast'] },
   {
     name: 'device-cctv',
     icon: TablerDeviceCctvIcon,
@@ -924,6 +926,7 @@ export {
   TablerCoffeeIcon,
   TablerCoinIcon,
   TablerCompassIcon,
+  TablerContrastIcon,
   TablerDeviceCctvIcon,
   TablerDownloadIcon,
   TablerEyeIcon,

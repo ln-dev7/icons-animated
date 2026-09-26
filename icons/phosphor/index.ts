@@ -65,6 +65,7 @@ import { PhosphorChevronUpIcon } from './chevron-up';
 import { PhosphorCigaretteIcon } from './cigarette';
 import { PhosphorCigaretteSlashIcon } from './cigarette-slash';
 import { PhosphorCircleDashedIcon } from './circle-dashed';
+import { PhosphorCircleHalfIcon } from './circle-half';
 import { PhosphorClockIcon } from './clock';
 import { PhosphorCloudArrowDownIcon } from './cloud-arrow-down';
 import { PhosphorCloudArrowUpIcon } from './cloud-arrow-up';
@@ -491,6 +492,11 @@ const PHOSPHOR_ICON_LIST = [
     icon: PhosphorCircleDashedIcon,
     keywords: ['circle', 'dashed', 'circle-dashed'],
   },
+  {
+    name: 'circle-half',
+    icon: PhosphorCircleHalfIcon,
+    keywords: ['circle', 'half', 'contrast'],
+  },
   { name: 'clock', icon: PhosphorClockIcon, keywords: ['clock'] },
   {
     name: 'cloud-arrow-down',
@@ -852,6 +858,7 @@ export {
   PhosphorCigaretteIcon,
   PhosphorCigaretteSlashIcon,
   PhosphorCircleDashedIcon,
+  PhosphorCircleHalfIcon,
   PhosphorClockIcon,
   PhosphorCloudArrowDownIcon,
   PhosphorCloudArrowUpIcon,

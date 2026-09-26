@@ -832,6 +832,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-contrast',
+    'path': path.join(__dirname, '../icons/hugeicons/contrast.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-download',
     'path': path.join(__dirname, '../icons/hugeicons/download.tsx'),
     'registryDependencies': [],
@@ -1407,6 +1413,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-circle-dashed',
     'path': path.join(__dirname, '../icons/phosphor/circle-dashed.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-circle-half',
+    'path': path.join(__dirname, '../icons/phosphor/circle-half.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -2310,6 +2322,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-compass',
     'path': path.join(__dirname, '../icons/tabler/compass.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-contrast',
+    'path': path.join(__dirname, '../icons/tabler/contrast.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

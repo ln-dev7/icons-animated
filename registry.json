@@ -1759,6 +1759,19 @@
       ]
     },
     {
+      "name": "hugeicons-contrast",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-contrast.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-download",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -3002,6 +3015,19 @@
       "files": [
         {
           "path": "phosphor-circle-dashed.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-circle-half",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-circle-half.tsx",
           "type": "registry:ui"
         }
       ]
@@ -4952,6 +4978,19 @@
       "files": [
         {
           "path": "tabler-compass.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-contrast",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-contrast.tsx",
           "type": "registry:ui"
         }
       ]

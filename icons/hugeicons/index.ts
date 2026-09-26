@@ -133,6 +133,7 @@ import { HugeiconsCompassIcon } from './compass';
 import { HugeiconsConciergeBellIcon } from './concierge-bell';
 import { HugeiconsConnectIcon } from './connect';
 import { HugeiconsConstructionIcon } from './construction';
+import { HugeiconsContrastIcon } from './contrast';
 import { HugeiconsDownloadIcon } from './download';
 import { HugeiconsEyeIcon } from './eye';
 import { HugeiconsFilterIcon } from './filter';
@@ -814,6 +815,7 @@ const HUGEICONS_ICON_LIST = [
     icon: HugeiconsConstructionIcon,
     keywords: ['construction'],
   },
+  { name: 'contrast', icon: HugeiconsContrastIcon, keywords: ['contrast'] },
   {
     name: 'download',
     icon: HugeiconsDownloadIcon,
@@ -1119,6 +1121,7 @@ export {
   HugeiconsConciergeBellIcon,
   HugeiconsConnectIcon,
   HugeiconsConstructionIcon,
+  HugeiconsContrastIcon,
   HugeiconsDownloadIcon,
   HugeiconsEyeIcon,
   HugeiconsFilterIcon,
