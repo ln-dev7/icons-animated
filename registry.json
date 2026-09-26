@@ -5646,6 +5646,19 @@
       ]
     },
     {
+      "name": "hugeicons-turkish-lira",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-turkish-lira.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-unfold-more",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -11153,6 +11166,19 @@
       "files": [
         {
           "path": "tabler-currency-lari.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-currency-lira",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-currency-lira.tsx",
           "type": "registry:ui"
         }
       ]

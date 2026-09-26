@@ -432,6 +432,7 @@ import { HugeiconsTrendingDownIcon } from './trending-down';
 import { HugeiconsTrendingUpIcon } from './trending-up';
 import { HugeiconsTrendingUpDownIcon } from './trending-up-down';
 import { HugeiconsTruckIcon } from './truck';
+import { HugeiconsTurkishLiraIcon } from './turkish-lira';
 import { HugeiconsUnfoldMoreIcon } from './unfold-more';
 import { HugeiconsUniversalAccessIcon } from './universal-access';
 import { HugeiconsUploadIcon } from './upload';
@@ -2334,6 +2335,11 @@ const HUGEICONS_ICON_LIST = [
   },
   { name: 'truck', icon: HugeiconsTruckIcon, keywords: ['truck'] },
   {
+    name: 'turkish-lira',
+    icon: HugeiconsTurkishLiraIcon,
+    keywords: ['turkish', 'lira', 'turkish-lira'],
+  },
+  {
     name: 'unfold-more',
     icon: HugeiconsUnfoldMoreIcon,
     keywords: ['unfold', 'more', 'chevrons-up-down', 'chevrons', 'up', 'down'],
@@ -2796,6 +2802,7 @@ export {
   HugeiconsTrendingUpIcon,
   HugeiconsTrendingUpDownIcon,
   HugeiconsTruckIcon,
+  HugeiconsTurkishLiraIcon,
   HugeiconsUnfoldMoreIcon,
   HugeiconsUniversalAccessIcon,
   HugeiconsUploadIcon,

@@ -2653,6 +2653,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-turkish-lira',
+    'path': path.join(__dirname, '../icons/hugeicons/turkish-lira.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-unfold-more',
     'path': path.join(__dirname, '../icons/hugeicons/unfold-more.tsx'),
     'registryDependencies': [],
@@ -5217,6 +5223,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-currency-lari',
     'path': path.join(__dirname, '../icons/tabler/currency-lari.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-currency-lira',
+    'path': path.join(__dirname, '../icons/tabler/currency-lira.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
