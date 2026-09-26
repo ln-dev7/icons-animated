@@ -47,103 +47,18 @@ We welcome contributions to our project! Please follow these steps to contribute
 
    For example: `heart.tsx`, `arrow-right.tsx`, `user.tsx`
 
-   c. Copy and paste the following template code into your new file:
+   c. Start from a current component such as [Hugeicons arrow-down](icons/hugeicons/arrow-down.tsx), preserving its playback lifecycle. Every icon must respect reduced motion, forward mouse/focus callbacks, reset before replay, cancel on unmount, and return to its normal pose after finishing. Keep declarative `normal` / `animate` variants so the Vue/Svelte generator can preserve the animation.
 
-   ```tsx
-   'use client';
-
-   import { useAnimation, motion } from 'motion/react';
-   import type { HTMLAttributes } from 'react';
-   import { forwardRef, useCallback, useImperativeHandle, useRef } from 'react';
-   import { cn } from '@/lib/utils';
-
-   // For Huge Icons, use: Hugeicons[YourIconName]IconHandle
-   // For Tabler Icons, use: Tabler[YourIconName]IconHandle
-   // For Phosphor Icons, use: Phosphor[YourIconName]IconHandle
-   export interface [Library][YourIconName]IconHandle {
-     startAnimation: () => void;
-     stopAnimation: () => void;
-   }
-
-   interface [Library][YourIconName]IconProps extends HTMLAttributes<HTMLDivElement> {
-     size?: number;
-   }
-
-   const [Library][YourIconName]Icon = forwardRef<[Library][YourIconName]IconHandle, [Library][YourIconName]IconProps>(
-     ({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
-       const controls = useAnimation();
-       const isControlledRef = useRef(false);
-
-       useImperativeHandle(ref, () => {
-         isControlledRef.current = true;
-         return {
-           startAnimation: () => controls.start('animate'),
-           stopAnimation: () => controls.start('normal'),
-         };
-       });
-
-       const handleMouseEnter = useCallback(
-         (e: React.MouseEvent<HTMLDivElement>) => {
-           if (!isControlledRef.current) {
-             controls.start('animate');
-           } else {
-             onMouseEnter?.(e);
-           }
-         },
-         [controls, onMouseEnter]
-       );
-
-       const handleMouseLeave = useCallback(
-         (e: React.MouseEvent<HTMLDivElement>) => {
-           if (!isControlledRef.current) {
-             controls.start('normal');
-           } else {
-             onMouseLeave?.(e);
-           }
-         },
-         [controls, onMouseLeave]
-       );
-
-       return (
-         <div
-           className={cn(className)}
-           onMouseEnter={handleMouseEnter}
-           onMouseLeave={handleMouseLeave}
-           {...props}
-         >
-           <svg
-             xmlns="http://www.w3.org/2000/svg"
-             width={size}
-             height={size}
-             viewBox="0 0 24 24"
-             fill="none"
-             stroke="currentColor"
-             strokeWidth="2"
-             strokeLinecap="round"
-             strokeLinejoin="round"
-           >
-             {/* your svg code here */}
-           </svg>
-         </div>
-       );
-     }
-   );
-
-   [Library][YourIconName]Icon.displayName = '[Library][YourIconName]Icon';
-
-   export { [Library][YourIconName]Icon };
-   ```
-
-   d. Replace `[Library]` with `Hugeicons`, `Tabler`, or `Phosphor` and `[YourIconName]` with your icon name in **PascalCase** (e.g., `HugeiconsHeartIcon`, `TablerHeartIcon`, `PhosphorStarIcon`).
+   d. Rename the component and its handle to match the library (`Hugeicons`, `Tabler`, or `Phosphor`) and your icon name in **PascalCase** (e.g., `HugeiconsHeartIcon`, `TablerHeartIcon`, `PhosphorStarIcon`).
 
    e. Find your icon on the respective icon library website:
    - Huge Icons: [hugeicons.com](https://hugeicons.com/)
    - Tabler: [tabler.io/icons](https://tabler.io/icons)
    - Phosphor: [phosphoricons.com](https://phosphoricons.com/)
 
-   Copy the SVG path elements and replace the `{/* your svg code here */}` comment with the actual SVG content.
+   Replace the example SVG shapes with the exact native geometry and retain the library license notice.
 
-   f. Add your animation logic using Framer Motion's `motion` components and the `controls` object to create engaging hover animations.
+   f. Add your animation logic using Motion’s `motion` components and the `controls` object to create engaging hover animations.
 
 7. **Add your icon to the icon list:**
 
@@ -236,3 +151,9 @@ We welcome contributions to our project! Please follow these steps to contribute
 - [Original project: lucide-animated](https://lucide-animated.com/)
 
 Thank you for contributing to our project!
+
+## Vue and Svelte distribution
+
+React files under `icons/` are the canonical source. `pnpm gen-cli` also generates standalone components under `frameworks/vue/` and `frameworks/svelte/`, and publishes their registries under `public/r/vue/` and `public/r/svelte/`. Commit those generated files with the source change. Do not hand-edit generated ports.
+
+Run `pnpm check-frameworks` and `pnpm check-icon-content` along with the existing catalog checks. Test the actual animation at rest, on hover/focus, on repeated imperative calls, after cancellation, and with reduced motion enabled. A new source pattern must be supported by the generator before the icon can be published in all three formats.
