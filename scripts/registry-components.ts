@@ -2182,6 +2182,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-refresh-cw-off',
+    'path': path.join(__dirname, '../icons/hugeicons/refresh-cw-off.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-save',
     'path': path.join(__dirname, '../icons/hugeicons/save.tsx'),
     'registryDependencies': [],

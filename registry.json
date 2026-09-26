@@ -4632,6 +4632,19 @@
       ]
     },
     {
+      "name": "hugeicons-refresh-cw-off",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-refresh-cw-off.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-save",
       "type": "registry:ui",
       "registryDependencies": [],

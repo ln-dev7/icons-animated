@@ -354,6 +354,7 @@ import { HugeiconsRefreshIcon } from './refresh';
 import { HugeiconsRefreshCcwIcon } from './refresh-ccw';
 import { HugeiconsRefreshCcwDotIcon } from './refresh-ccw-dot';
 import { HugeiconsRefreshCwIcon } from './refresh-cw';
+import { HugeiconsRefreshCwOffIcon } from './refresh-cw-off';
 import { HugeiconsSaveIcon } from './save';
 import { HugeiconsSearchIcon } from './search';
 import { HugeiconsSettingsIcon } from './settings';
@@ -1936,6 +1937,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['refresh', 'cw', 'refresh-cw'],
   },
   {
+    name: 'refresh-cw-off',
+    icon: HugeiconsRefreshCwOffIcon,
+    keywords: ['refresh', 'cw', 'off', 'refresh-cw-off'],
+  },
+  {
     name: 'save',
     icon: HugeiconsSaveIcon,
     keywords: ['save', 'store', 'disk', 'floppy', 'preserve'],
@@ -2394,6 +2400,7 @@ export {
   HugeiconsRefreshCcwIcon,
   HugeiconsRefreshCcwDotIcon,
   HugeiconsRefreshCwIcon,
+  HugeiconsRefreshCwOffIcon,
   HugeiconsSaveIcon,
   HugeiconsSearchIcon,
   HugeiconsSettingsIcon,
