@@ -135,6 +135,7 @@ import { PhosphorGithubLogoIcon } from './github-logo';
 import { PhosphorGitlabLogoIcon } from './gitlab-logo';
 import { PhosphorGlobeHemisphereWestIcon } from './globe-hemisphere-west';
 import { PhosphorGoogleChromeLogoIcon } from './google-chrome-logo';
+import { PhosphorGraduationCapIcon } from './graduation-cap';
 import { PhosphorHeartIcon } from './heart';
 import { PhosphorHouseIcon } from './house';
 import { PhosphorListIcon } from './list';
@@ -866,6 +867,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['google', 'chrome', 'logo'],
   },
   {
+    name: 'graduation-cap',
+    icon: PhosphorGraduationCapIcon,
+    keywords: ['graduation', 'cap', 'graduation-cap'],
+  },
+  {
     name: 'heart',
     icon: PhosphorHeartIcon,
     keywords: ['heart', 'love', 'like', 'favorite', 'health'],
@@ -1227,6 +1233,7 @@ export {
   PhosphorGitlabLogoIcon,
   PhosphorGlobeHemisphereWestIcon,
   PhosphorGoogleChromeLogoIcon,
+  PhosphorGraduationCapIcon,
   PhosphorHeartIcon,
   PhosphorHouseIcon,
   PhosphorListIcon,

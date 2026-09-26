@@ -2929,6 +2929,19 @@
       ]
     },
     {
+      "name": "hugeicons-graduation-cap",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-graduation-cap.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-heart",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -5069,6 +5082,19 @@
       "files": [
         {
           "path": "phosphor-google-chrome-logo.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-graduation-cap",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-graduation-cap.tsx",
           "type": "registry:ui"
         }
       ]
@@ -7968,6 +7994,19 @@
       "files": [
         {
           "path": "tabler-save.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-school",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-school.tsx",
           "type": "registry:ui"
         }
       ]

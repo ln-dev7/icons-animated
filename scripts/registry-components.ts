@@ -1384,6 +1384,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-graduation-cap',
+    'path': path.join(__dirname, '../icons/hugeicons/graduation-cap.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-heart',
     'path': path.join(__dirname, '../icons/hugeicons/heart.tsx'),
     'registryDependencies': [],
@@ -2382,6 +2388,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-google-chrome-logo',
     'path': path.join(__dirname, '../icons/phosphor/google-chrome-logo.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-graduation-cap',
+    'path': path.join(__dirname, '../icons/phosphor/graduation-cap.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -3720,6 +3732,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-save',
     'path': path.join(__dirname, '../icons/tabler/save.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-school',
+    'path': path.join(__dirname, '../icons/tabler/school.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

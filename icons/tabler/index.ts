@@ -182,6 +182,7 @@ import { TablerRefreshIcon } from './refresh';
 import { TablerRobotIcon } from './robot';
 import { TablerRosetteDiscountIcon } from './rosette-discount';
 import { TablerSaveIcon } from './save';
+import { TablerSchoolIcon } from './school';
 import { TablerSearchIcon } from './search';
 import { TablerSelectorIcon } from './selector';
 import { TablerSettingsIcon } from './settings';
@@ -1049,6 +1050,11 @@ const TABLER_ICON_LIST = [
     keywords: ['save', 'store', 'disk', 'floppy', 'preserve'],
   },
   {
+    name: 'school',
+    icon: TablerSchoolIcon,
+    keywords: ['school', 'graduation-cap', 'graduation', 'cap'],
+  },
+  {
     name: 'search',
     icon: TablerSearchIcon,
     keywords: ['search', 'find', 'magnifying glass', 'lookup', 'query'],
@@ -1358,6 +1364,7 @@ export {
   TablerRobotIcon,
   TablerRosetteDiscountIcon,
   TablerSaveIcon,
+  TablerSchoolIcon,
   TablerSearchIcon,
   TablerSelectorIcon,
   TablerSettingsIcon,
