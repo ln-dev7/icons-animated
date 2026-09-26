@@ -1018,6 +1018,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-feather',
+    'path': path.join(__dirname, '../icons/hugeicons/feather.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-filter',
     'path': path.join(__dirname, '../icons/hugeicons/filter.tsx'),
     'registryDependencies': [],
@@ -1848,6 +1854,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-fan',
     'path': path.join(__dirname, '../icons/phosphor/fan.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-feather',
+    'path': path.join(__dirname, '../icons/phosphor/feather.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -2850,6 +2862,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-eye-off',
     'path': path.join(__dirname, '../icons/tabler/eye-off.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-feather',
+    'path': path.join(__dirname, '../icons/tabler/feather.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

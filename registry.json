@@ -2162,6 +2162,19 @@
       ]
     },
     {
+      "name": "hugeicons-feather",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-feather.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-filter",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -3938,6 +3951,19 @@
       "files": [
         {
           "path": "phosphor-fan.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-feather",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-feather.tsx",
           "type": "registry:ui"
         }
       ]
@@ -6109,6 +6135,19 @@
       "files": [
         {
           "path": "tabler-eye-off.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-feather",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-feather.tsx",
           "type": "registry:ui"
         }
       ]
