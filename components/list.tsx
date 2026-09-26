@@ -5,7 +5,7 @@ import type {
   IconAnimationHandle,
   IconListEntry,
 } from '@/helpers/get-icon-list';
-import { useCallback, useMemo, useRef, useState } from 'react';
+import { useMemo, useRef } from 'react';
 
 import { Card, CardActions, CardTitle } from '@/components/card';
 import { SearchBar } from '@/components/search-bar';
@@ -17,8 +17,6 @@ type Props = {
   icons?: Icon[];
 };
 
-const PAGE_SIZE = 60;
-
 const IconItem = ({ icon }: { icon: IconListEntry }) => {
   const animationRef = useRef<IconAnimationHandle>(null);
   const IconComponent = icon.icon;
@@ -27,6 +25,7 @@ const IconItem = ({ icon }: { icon: IconListEntry }) => {
     <Card
       animationRef={animationRef}
       aria-label={`${icon.name} animated icon`}
+      style={{ contentVisibility: 'auto', containIntrinsicSize: 'auto 230px' }}
       onMouseEnter={() => animationRef.current?.startAnimation()}
       onMouseLeave={() => animationRef.current?.stopAnimation()}
     >
@@ -63,7 +62,6 @@ const EmptyState = ({ query }: { query: string }) => (
 const IconsListContent = ({ icons: propIcons }: Props) => {
   const { library, iconList, isLoading, loadError, reloadIcons } =
     useIconLibrary();
-  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const icons = useMemo(() => {
     if (!propIcons) return iconList;
     const byName = new Map(iconList.map((icon) => [icon.name, icon]));
@@ -81,20 +79,11 @@ const IconsListContent = ({ icons: propIcons }: Props) => {
     totalCount,
   } = useIconSearch(icons);
 
-  const handleSearch = useCallback(
-    (value: string) => {
-      setQuery(value);
-      setVisibleCount(PAGE_SIZE);
-    },
-    [setQuery]
-  );
-  const visibleIcons = filteredIcons.slice(0, visibleCount);
-
   return (
     <div className="z-60 mt-9 mb-20 w-full">
       <SearchBar
         value={query}
-        onChange={handleSearch}
+        onChange={setQuery}
         resultCount={resultCount}
         totalCount={totalCount}
       />
@@ -125,7 +114,7 @@ const IconsListContent = ({ icons: propIcons }: Props) => {
             className="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-[3px]"
           >
             {hasResults ? (
-              visibleIcons.map((icon) => (
+              filteredIcons.map((icon) => (
                 <IconItem key={icon.name} icon={icon} />
               ))
             ) : (
@@ -135,19 +124,8 @@ const IconsListContent = ({ icons: propIcons }: Props) => {
           {hasResults && (
             <div className="mt-8 flex flex-col items-center gap-4">
               <p role="status" className="text-secondary font-mono text-sm">
-                Showing {visibleIcons.length} of {resultCount} icons
+                Showing {filteredIcons.length} of {resultCount} icons
               </p>
-              {visibleIcons.length < resultCount && (
-                <button
-                  type="button"
-                  aria-controls="icon-results"
-                  onClick={() => setVisibleCount((count) => count + PAGE_SIZE)}
-                  className="focus-visible:outline-primary cursor-pointer rounded-lg border border-neutral-200 bg-white px-5 py-2.5 font-mono text-sm transition-colors hover:bg-neutral-50 focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-800 dark:bg-[#0A0A0A] dark:hover:bg-neutral-800"
-                >
-                  Load more (
-                  {Math.min(PAGE_SIZE, resultCount - visibleIcons.length)})
-                </button>
-              )}
             </div>
           )}
         </>
