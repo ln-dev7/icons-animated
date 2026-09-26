@@ -3137,6 +3137,19 @@
       ]
     },
     {
+      "name": "hugeicons-heart-handshake",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-heart-handshake.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-home",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -8098,6 +8111,19 @@
       "files": [
         {
           "path": "tabler-heart.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-heart-handshake",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-heart-handshake.tsx",
           "type": "registry:ui"
         }
       ]

@@ -166,6 +166,7 @@ import { TablerHammerIcon } from './hammer';
 import { TablerHandGrabIcon } from './hand-grab';
 import { TablerHandStopIcon } from './hand-stop';
 import { TablerHeartIcon } from './heart';
+import { TablerHeartHandshakeIcon } from './heart-handshake';
 import { TablerHelpCircleIcon } from './help-circle';
 import { TablerHomeIcon } from './home';
 import { TablerLayoutAlignCenterIcon } from './layout-align-center';
@@ -961,6 +962,11 @@ const TABLER_ICON_LIST = [
     keywords: ['heart', 'love', 'like', 'favorite', 'health'],
   },
   {
+    name: 'heart-handshake',
+    icon: TablerHeartHandshakeIcon,
+    keywords: ['heart', 'handshake', 'heart-handshake'],
+  },
+  {
     name: 'help-circle',
     icon: TablerHelpCircleIcon,
     keywords: ['help', 'circle', 'circle-help'],
@@ -1382,6 +1388,7 @@ export {
   TablerHandGrabIcon,
   TablerHandStopIcon,
   TablerHeartIcon,
+  TablerHeartHandshakeIcon,
   TablerHelpCircleIcon,
   TablerHomeIcon,
   TablerLayoutAlignCenterIcon,
