@@ -56,6 +56,7 @@ import { TablerBoxIcon } from './box';
 import { TablerBrainIcon } from './brain';
 import { TablerBrandChromeIcon } from './brand-chrome';
 import { TablerBrandDiscordIcon } from './brand-discord';
+import { TablerBrandDribbbleIcon } from './brand-dribbble';
 import { TablerBriefcaseIcon } from './briefcase';
 import { TablerCalendarIcon } from './calendar';
 import { TablerCalendarCheckIcon } from './calendar-check';
@@ -384,6 +385,11 @@ const TABLER_ICON_LIST = [
     name: 'brand-discord',
     icon: TablerBrandDiscordIcon,
     keywords: ['brand', 'discord'],
+  },
+  {
+    name: 'brand-dribbble',
+    icon: TablerBrandDribbbleIcon,
+    keywords: ['brand', 'dribbble'],
   },
   {
     name: 'briefcase',
@@ -982,6 +988,7 @@ export {
   TablerBrainIcon,
   TablerBrandChromeIcon,
   TablerBrandDiscordIcon,
+  TablerBrandDribbbleIcon,
   TablerBriefcaseIcon,
   TablerCalendarIcon,
   TablerCalendarCheckIcon,

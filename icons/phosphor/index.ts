@@ -95,6 +95,7 @@ import { PhosphorCursorClickIcon } from './cursor-click';
 import { PhosphorDiscIcon } from './disc';
 import { PhosphorDiscordLogoIcon } from './discord-logo';
 import { PhosphorDownloadIcon } from './download';
+import { PhosphorDribbbleLogoIcon } from './dribbble-logo';
 import { PhosphorEnvelopeIcon } from './envelope';
 import { PhosphorEyeIcon } from './eye';
 import { PhosphorFilmSlateIcon } from './film-slate';
@@ -647,6 +648,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['download', 'save', 'arrow', 'get', 'export'],
   },
   {
+    name: 'dribbble-logo',
+    icon: PhosphorDribbbleLogoIcon,
+    keywords: ['dribbble', 'logo'],
+  },
+  {
     name: 'envelope',
     icon: PhosphorEnvelopeIcon,
     keywords: ['envelope', 'mail', 'email', 'message', 'letter'],
@@ -998,6 +1004,7 @@ export {
   PhosphorDiscIcon,
   PhosphorDiscordLogoIcon,
   PhosphorDownloadIcon,
+  PhosphorDribbbleLogoIcon,
   PhosphorEnvelopeIcon,
   PhosphorEyeIcon,
   PhosphorFilmSlateIcon,

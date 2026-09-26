@@ -946,6 +946,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-dribbble',
+    'path': path.join(__dirname, '../icons/hugeicons/dribbble.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-eye',
     'path': path.join(__dirname, '../icons/hugeicons/eye.tsx'),
     'registryDependencies': [],
@@ -1720,6 +1726,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'phosphor-dribbble-logo',
+    'path': path.join(__dirname, '../icons/phosphor/dribbble-logo.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'phosphor-envelope',
     'path': path.join(__dirname, '../icons/phosphor/envelope.tsx'),
     'registryDependencies': [],
@@ -2334,6 +2346,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-brand-discord',
     'path': path.join(__dirname, '../icons/tabler/brand-discord.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-brand-dribbble',
+    'path': path.join(__dirname, '../icons/tabler/brand-dribbble.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

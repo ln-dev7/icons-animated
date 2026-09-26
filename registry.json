@@ -2006,6 +2006,19 @@
       ]
     },
     {
+      "name": "hugeicons-dribbble",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-dribbble.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-eye",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -3657,6 +3670,19 @@
       ]
     },
     {
+      "name": "phosphor-dribbble-logo",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-dribbble-logo.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-envelope",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -4991,6 +5017,19 @@
       "files": [
         {
           "path": "tabler-brand-discord.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-brand-dribbble",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-brand-dribbble.tsx",
           "type": "registry:ui"
         }
       ]
