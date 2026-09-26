@@ -6,6 +6,7 @@ import { TablerAlarmMinusIcon } from './alarm-minus';
 import { TablerAlarmPlusIcon } from './alarm-plus';
 import { TablerAlarmSmokeIcon } from './alarm-smoke';
 import { TablerAlignCenterIcon } from './align-center';
+import { TablerAlignLeftIcon } from './align-left';
 import { TablerArrowDownIcon } from './arrow-down';
 import { TablerArrowLeftIcon } from './arrow-left';
 import { TablerArrowRightIcon } from './arrow-right';
@@ -76,6 +77,11 @@ const TABLER_ICON_LIST = [
     name: 'align-center',
     icon: TablerAlignCenterIcon,
     keywords: ['align', 'center', 'align-center'],
+  },
+  {
+    name: 'align-left',
+    icon: TablerAlignLeftIcon,
+    keywords: ['align', 'left', 'align-left'],
   },
   {
     name: 'arrow-down',
@@ -306,6 +312,7 @@ export {
   TablerAlarmPlusIcon,
   TablerAlarmSmokeIcon,
   TablerAlignCenterIcon,
+  TablerAlignLeftIcon,
   TablerArrowDownIcon,
   TablerArrowLeftIcon,
   TablerArrowRightIcon,

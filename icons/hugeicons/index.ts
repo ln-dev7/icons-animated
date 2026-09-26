@@ -38,6 +38,7 @@ import { HugeiconsSettingsIcon } from './settings';
 import { HugeiconsShareIcon } from './share';
 import { HugeiconsStarIcon } from './star';
 import { HugeiconsTextAlignCenterIcon } from './text-align-center';
+import { HugeiconsTextAlignLeftIcon } from './text-align-left';
 import { HugeiconsTrashIcon } from './trash';
 import { HugeiconsUniversalAccessIcon } from './universal-access';
 import { HugeiconsUploadIcon } from './upload';
@@ -328,6 +329,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['text', 'align', 'center', 'align-center'],
   },
   {
+    name: 'text-align-left',
+    icon: HugeiconsTextAlignLeftIcon,
+    keywords: ['text', 'align', 'left', 'align-left'],
+  },
+  {
     name: 'trash',
     icon: HugeiconsTrashIcon,
     keywords: ['trash', 'delete', 'remove', 'bin', 'garbage'],
@@ -396,6 +402,7 @@ export {
   HugeiconsShareIcon,
   HugeiconsStarIcon,
   HugeiconsTextAlignCenterIcon,
+  HugeiconsTextAlignLeftIcon,
   HugeiconsTrashIcon,
   HugeiconsUniversalAccessIcon,
   HugeiconsUploadIcon,

@@ -32,6 +32,7 @@ import { PhosphorSearchIcon } from './search';
 import { PhosphorShareIcon } from './share';
 import { PhosphorStarIcon } from './star';
 import { PhosphorTextAlignCenterIcon } from './text-align-center';
+import { PhosphorTextAlignLeftIcon } from './text-align-left';
 import { PhosphorTrashIcon } from './trash';
 import { PhosphorUploadIcon } from './upload';
 import { PhosphorUserIcon } from './user';
@@ -257,6 +258,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['text', 'align', 'center', 'align-center'],
   },
   {
+    name: 'text-align-left',
+    icon: PhosphorTextAlignLeftIcon,
+    keywords: ['text', 'align', 'left', 'align-left'],
+  },
+  {
     name: 'trash',
     icon: PhosphorTrashIcon,
     keywords: ['trash', 'delete', 'remove', 'bin', 'garbage'],
@@ -314,6 +320,7 @@ export {
   PhosphorShareIcon,
   PhosphorStarIcon,
   PhosphorTextAlignCenterIcon,
+  PhosphorTextAlignLeftIcon,
   PhosphorTrashIcon,
   PhosphorUploadIcon,
   PhosphorUserIcon,
