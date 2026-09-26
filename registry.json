@@ -3020,6 +3020,19 @@
       ]
     },
     {
+      "name": "hugeicons-hand-fist",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-hand-fist.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-heart",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -5238,6 +5251,19 @@
       "files": [
         {
           "path": "phosphor-hand-coins.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-hand-fist",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-hand-fist.tsx",
           "type": "registry:ui"
         }
       ]
