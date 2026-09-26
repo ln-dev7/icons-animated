@@ -1213,6 +1213,19 @@
       ]
     },
     {
+      "name": "hugeicons-chess-bishop",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-chess-bishop.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-chevron-down",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -3717,6 +3730,19 @@
       "files": [
         {
           "path": "tabler-checks.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-chess-bishop",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-chess-bishop.tsx",
           "type": "registry:ui"
         }
       ]

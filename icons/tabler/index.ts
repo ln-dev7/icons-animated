@@ -64,6 +64,7 @@ import { TablerChartPieIcon } from './chart-pie';
 import { TablerChartScatterIcon } from './chart-scatter';
 import { TablerCheckIcon } from './check';
 import { TablerChecksIcon } from './checks';
+import { TablerChessBishopIcon } from './chess-bishop';
 import { TablerChevronDownIcon } from './chevron-down';
 import { TablerChevronLeftIcon } from './chevron-left';
 import { TablerChevronRightIcon } from './chevron-right';
@@ -381,6 +382,11 @@ const TABLER_ICON_LIST = [
     name: 'checks',
     icon: TablerChecksIcon,
     keywords: ['checks', 'check-check', 'check'],
+  },
+  {
+    name: 'chess-bishop',
+    icon: TablerChessBishopIcon,
+    keywords: ['chess', 'bishop', 'chess-bishop'],
   },
   {
     name: 'chevron-down',
@@ -728,6 +734,7 @@ export {
   TablerChartScatterIcon,
   TablerCheckIcon,
   TablerChecksIcon,
+  TablerChessBishopIcon,
   TablerChevronDownIcon,
   TablerChevronLeftIcon,
   TablerChevronRightIcon,

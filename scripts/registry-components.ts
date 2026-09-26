@@ -580,6 +580,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-chess-bishop',
+    'path': path.join(__dirname, '../icons/hugeicons/chess-bishop.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-chevron-down',
     'path': path.join(__dirname, '../icons/hugeicons/chevron-down.tsx'),
     'registryDependencies': [],
@@ -1737,6 +1743,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-checks',
     'path': path.join(__dirname, '../icons/tabler/checks.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-chess-bishop',
+    'path': path.join(__dirname, '../icons/tabler/chess-bishop.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

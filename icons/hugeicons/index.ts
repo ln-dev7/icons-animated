@@ -91,6 +91,7 @@ import { HugeiconsChartScatterIcon } from './chart-scatter';
 import { HugeiconsChartSplineIcon } from './chart-spline';
 import { HugeiconsCheckIcon } from './check';
 import { HugeiconsCheckCheckIcon } from './check-check';
+import { HugeiconsChessBishopIcon } from './chess-bishop';
 import { HugeiconsChevronDownIcon } from './chevron-down';
 import { HugeiconsChevronLeftIcon } from './chevron-left';
 import { HugeiconsChevronRightIcon } from './chevron-right';
@@ -557,6 +558,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['check', 'check-check'],
   },
   {
+    name: 'chess-bishop',
+    icon: HugeiconsChessBishopIcon,
+    keywords: ['chess', 'bishop', 'chess-bishop'],
+  },
+  {
     name: 'chevron-down',
     icon: HugeiconsChevronDownIcon,
     keywords: [
@@ -861,6 +867,7 @@ export {
   HugeiconsChartSplineIcon,
   HugeiconsCheckIcon,
   HugeiconsCheckCheckIcon,
+  HugeiconsChessBishopIcon,
   HugeiconsChevronDownIcon,
   HugeiconsChevronLeftIcon,
   HugeiconsChevronRightIcon,
