@@ -56,9 +56,19 @@ const ICON_VARIANTS: Variants = {
     opacity: 1,
     transition: { duration: 0.18, ease: 'easeOut' },
   },
+  animate: { 'transition': { 'duration': 0.75, 'ease': 'easeInOut' } },
+};
+
+const DETAIL_0_VARIANTS: Variants = {
+  normal: {
+    'x': 0,
+    'y': 0,
+    'transition': { 'duration': 0.18, 'ease': 'easeOut' },
+  },
   animate: {
-    scaleY: [1, 0.78, 1.04, 1],
-    transition: { duration: 0.75, ease: 'easeInOut' },
+    'x': [0, 5, 0],
+    'y': [0, -8.66, 0],
+    'transition': { 'duration': 0.9, 'delay': 0, 'ease': 'easeInOut' },
   },
 };
 
@@ -145,7 +155,12 @@ const PhosphorChartPieIcon = forwardRef<
             variants={ICON_VARIANTS}
             style={{ transformOrigin: '128px 128px' }}
           >
-            <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm71.87,53.27L136,114.14V40.37A88,88,0,0,1,199.87,77.27ZM120,40.37v83l-71.89,41.5A88,88,0,0,1,120,40.37ZM128,216a88,88,0,0,1-71.87-37.27L207.89,91.12A88,88,0,0,1,128,216Z" />
+            <path d="M128,24A104,104,0,1,0,232,128A104.11,104.11,0,0,0,218.03183532973543,76.02009563674119L128,128ZM120,40.37v83l-71.89,41.5A88,88,0,0,1,120,40.37ZM128,216a88,88,0,0,1-71.87-37.27L207.89,91.12A88,88,0,0,1,128,216Z" />
+            <motion.path
+              d="M128,24L128,128L218.03183532973543,76.02009563674119A104.11,104.11,0,0,0,128,24ZM199.87,77.27L136,114.14V40.37A88,88,0,0,1,199.87,77.27ZM127.25,25V128H128.25V25ZM128,128l0.375,0.649519052838329L217.54080992595098,77.16961468957952L217.16580992595098,76.52009563674119Z"
+              variants={DETAIL_0_VARIANTS}
+              style={{ transformBox: 'fill-box', transformOrigin: 'center' }}
+            />
           </motion.g>
         </svg>
       </div>
