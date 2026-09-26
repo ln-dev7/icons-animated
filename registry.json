@@ -3774,6 +3774,19 @@
       ]
     },
     {
+      "name": "hugeicons-meh",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-meh.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-menu",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -9632,6 +9645,19 @@
       "files": [
         {
           "path": "tabler-mood-happy.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-mood-neutral",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-mood-neutral.tsx",
           "type": "registry:ui"
         }
       ]
