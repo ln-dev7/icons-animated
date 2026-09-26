@@ -2487,6 +2487,19 @@
       ]
     },
     {
+      "name": "hugeicons-folder-kanban",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-folder-kanban.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-heart",
       "type": "registry:ui",
       "registryDependencies": [],

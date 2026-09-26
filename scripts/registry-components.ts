@@ -1168,6 +1168,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-folder-kanban',
+    'path': path.join(__dirname, '../icons/hugeicons/folder-kanban.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-heart',
     'path': path.join(__dirname, '../icons/hugeicons/heart.tsx'),
     'registryDependencies': [],
