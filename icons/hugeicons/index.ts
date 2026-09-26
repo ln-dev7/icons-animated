@@ -455,6 +455,7 @@ import { HugeiconsVolumeIcon } from './volume';
 import { HugeiconsWallet01Icon } from './wallet-01';
 import { HugeiconsWashingMachineIcon } from './washing-machine';
 import { HugeiconsWavesIcon } from './waves';
+import { HugeiconsWavesArrowDownIcon } from './waves-arrow-down';
 import { HugeiconsXIcon } from './x';
 
 const HUGEICONS_ICON_LIST = [
@@ -2436,6 +2437,11 @@ const HUGEICONS_ICON_LIST = [
   },
   { name: 'waves', icon: HugeiconsWavesIcon, keywords: ['waves'] },
   {
+    name: 'waves-arrow-down',
+    icon: HugeiconsWavesArrowDownIcon,
+    keywords: ['waves', 'arrow', 'down', 'waves-arrow-down'],
+  },
+  {
     name: 'x',
     icon: HugeiconsXIcon,
     keywords: ['close', 'x', 'cancel', 'dismiss', 'remove', 'delete'],
@@ -2901,5 +2907,6 @@ export {
   HugeiconsWallet01Icon,
   HugeiconsWashingMachineIcon,
   HugeiconsWavesIcon,
+  HugeiconsWavesArrowDownIcon,
   HugeiconsXIcon,
 };

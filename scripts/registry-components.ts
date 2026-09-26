@@ -2791,6 +2791,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-waves-arrow-down',
+    'path': path.join(__dirname, '../icons/hugeicons/waves-arrow-down.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-x',
     'path': path.join(__dirname, '../icons/hugeicons/x.tsx'),
     'registryDependencies': [],
