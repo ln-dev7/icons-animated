@@ -10,6 +10,7 @@ import { PhosphorArrowDownLeftIcon } from './arrow-down-left';
 import { PhosphorArrowDownRightIcon } from './arrow-down-right';
 import { PhosphorArrowElbowDownLeftIcon } from './arrow-elbow-down-left';
 import { PhosphorArrowElbowDownRightIcon } from './arrow-elbow-down-right';
+import { PhosphorArrowElbowLeftDownIcon } from './arrow-elbow-left-down';
 import { PhosphorArrowFatDownIcon } from './arrow-fat-down';
 import { PhosphorArrowFatLeftIcon } from './arrow-fat-left';
 import { PhosphorArrowFatLineDownIcon } from './arrow-fat-line-down';
@@ -178,6 +179,11 @@ const PHOSPHOR_ICON_LIST = [
       'corner-down-right',
       'corner',
     ],
+  },
+  {
+    name: 'arrow-elbow-left-down',
+    icon: PhosphorArrowElbowLeftDownIcon,
+    keywords: ['arrow', 'elbow', 'left', 'down', 'corner-left-down', 'corner'],
   },
   {
     name: 'arrow-fat-down',
@@ -830,6 +836,7 @@ export {
   PhosphorArrowDownRightIcon,
   PhosphorArrowElbowDownLeftIcon,
   PhosphorArrowElbowDownRightIcon,
+  PhosphorArrowElbowLeftDownIcon,
   PhosphorArrowFatDownIcon,
   PhosphorArrowFatLeftIcon,
   PhosphorArrowFatLineDownIcon,
