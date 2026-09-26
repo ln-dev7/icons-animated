@@ -641,6 +641,19 @@
       ]
     },
     {
+      "name": "hugeicons-battery-medium-01",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-battery-medium-01.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-bell",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -1442,6 +1455,19 @@
       "files": [
         {
           "path": "phosphor-battery-low.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-battery-medium",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-battery-medium.tsx",
           "type": "registry:ui"
         }
       ]
@@ -2430,6 +2456,19 @@
       "files": [
         {
           "path": "tabler-battery-1.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-battery-2",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-battery-2.tsx",
           "type": "registry:ui"
         }
       ]

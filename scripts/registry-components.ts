@@ -304,6 +304,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-battery-medium-01',
+    'path': path.join(__dirname, '../icons/hugeicons/battery-medium-01.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-bell',
     'path': path.join(__dirname, '../icons/hugeicons/bell.tsx'),
     'registryDependencies': [],
@@ -675,6 +681,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-battery-low',
     'path': path.join(__dirname, '../icons/phosphor/battery-low.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-battery-medium',
+    'path': path.join(__dirname, '../icons/phosphor/battery-medium.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -1131,6 +1143,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-battery-1',
     'path': path.join(__dirname, '../icons/tabler/battery-1.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-battery-2',
+    'path': path.join(__dirname, '../icons/tabler/battery-2.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

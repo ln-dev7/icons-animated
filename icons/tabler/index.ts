@@ -33,6 +33,7 @@ import { TablerBanIcon } from './ban';
 import { TablerBananaIcon } from './banana';
 import { TablerBatteryIcon } from './battery';
 import { TablerBattery1Icon } from './battery-1';
+import { TablerBattery2Icon } from './battery-2';
 import { TablerBattery4Icon } from './battery-4';
 import { TablerBatteryChargingIcon } from './battery-charging';
 import { TablerBellIcon } from './bell';
@@ -221,6 +222,11 @@ const TABLER_ICON_LIST = [
     name: 'battery-1',
     icon: TablerBattery1Icon,
     keywords: ['battery', '1', 'battery-low', 'low'],
+  },
+  {
+    name: 'battery-2',
+    icon: TablerBattery2Icon,
+    keywords: ['battery', '2', 'battery-medium', 'medium'],
   },
   {
     name: 'battery-4',
@@ -541,6 +547,7 @@ export {
   TablerBananaIcon,
   TablerBatteryIcon,
   TablerBattery1Icon,
+  TablerBattery2Icon,
   TablerBattery4Icon,
   TablerBatteryChargingIcon,
   TablerBellIcon,
