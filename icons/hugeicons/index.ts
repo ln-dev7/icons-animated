@@ -53,6 +53,7 @@ import { HugeiconsBatteryWarningIcon } from './battery-warning';
 import { HugeiconsBellIcon } from './bell';
 import { HugeiconsBellElectricIcon } from './bell-electric';
 import { HugeiconsBicepsFlexedIcon } from './biceps-flexed';
+import { HugeiconsBinaryIcon } from './binary';
 import { HugeiconsCalendarIcon } from './calendar';
 import { HugeiconsCheckIcon } from './check';
 import { HugeiconsChevronDownIcon } from './chevron-down';
@@ -354,6 +355,7 @@ const HUGEICONS_ICON_LIST = [
     icon: HugeiconsBicepsFlexedIcon,
     keywords: ['biceps', 'flexed', 'biceps-flexed'],
   },
+  { name: 'binary', icon: HugeiconsBinaryIcon, keywords: ['binary'] },
   {
     name: 'calendar',
     icon: HugeiconsCalendarIcon,
@@ -621,6 +623,7 @@ export {
   HugeiconsBellIcon,
   HugeiconsBellElectricIcon,
   HugeiconsBicepsFlexedIcon,
+  HugeiconsBinaryIcon,
   HugeiconsCalendarIcon,
   HugeiconsCheckIcon,
   HugeiconsChevronDownIcon,

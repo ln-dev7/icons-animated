@@ -39,6 +39,7 @@ import { TablerBatteryChargingIcon } from './battery-charging';
 import { TablerBatteryExclamationIcon } from './battery-exclamation';
 import { TablerBellIcon } from './bell';
 import { TablerBellSchoolIcon } from './bell-school';
+import { TablerBinaryIcon } from './binary';
 import { TablerCalendarIcon } from './calendar';
 import { TablerCheckIcon } from './check';
 import { TablerChevronDownIcon } from './chevron-down';
@@ -255,6 +256,7 @@ const TABLER_ICON_LIST = [
     icon: TablerBellSchoolIcon,
     keywords: ['bell', 'school', 'bell-electric', 'electric'],
   },
+  { name: 'binary', icon: TablerBinaryIcon, keywords: ['binary'] },
   {
     name: 'calendar',
     icon: TablerCalendarIcon,
@@ -565,6 +567,7 @@ export {
   TablerBatteryExclamationIcon,
   TablerBellIcon,
   TablerBellSchoolIcon,
+  TablerBinaryIcon,
   TablerCalendarIcon,
   TablerCheckIcon,
   TablerChevronDownIcon,
