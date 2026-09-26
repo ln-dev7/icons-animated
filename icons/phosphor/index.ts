@@ -129,6 +129,7 @@ import { PhosphorGitBranchIcon } from './git-branch';
 import { PhosphorGitCommitIcon } from './git-commit';
 import { PhosphorGitDiffIcon } from './git-diff';
 import { PhosphorGitForkIcon } from './git-fork';
+import { PhosphorGitMergeIcon } from './git-merge';
 import { PhosphorGlobeHemisphereWestIcon } from './globe-hemisphere-west';
 import { PhosphorGoogleChromeLogoIcon } from './google-chrome-logo';
 import { PhosphorHeartIcon } from './heart';
@@ -832,6 +833,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['git', 'fork', 'git-fork'],
   },
   {
+    name: 'git-merge',
+    icon: PhosphorGitMergeIcon,
+    keywords: ['git', 'merge', 'git-merge'],
+  },
+  {
     name: 'globe-hemisphere-west',
     icon: PhosphorGlobeHemisphereWestIcon,
     keywords: ['globe', 'hemisphere', 'west', 'earth'],
@@ -1197,6 +1203,7 @@ export {
   PhosphorGitCommitIcon,
   PhosphorGitDiffIcon,
   PhosphorGitForkIcon,
+  PhosphorGitMergeIcon,
   PhosphorGlobeHemisphereWestIcon,
   PhosphorGoogleChromeLogoIcon,
   PhosphorHeartIcon,

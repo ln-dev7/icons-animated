@@ -217,6 +217,7 @@ import { HugeiconsGitCompareIcon } from './git-compare';
 import { HugeiconsGitCompareArrowsIcon } from './git-compare-arrows';
 import { HugeiconsGitForkIcon } from './git-fork';
 import { HugeiconsGitGraphIcon } from './git-graph';
+import { HugeiconsGitMergeIcon } from './git-merge';
 import { HugeiconsHeartIcon } from './heart';
 import { HugeiconsHomeIcon } from './home';
 import { HugeiconsLockIcon } from './lock';
@@ -1246,6 +1247,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['git', 'graph', 'git-graph'],
   },
   {
+    name: 'git-merge',
+    icon: HugeiconsGitMergeIcon,
+    keywords: ['git', 'merge', 'git-merge'],
+  },
+  {
     name: 'heart',
     icon: HugeiconsHeartIcon,
     keywords: ['heart', 'love', 'like', 'favorite', 'health'],
@@ -1629,6 +1635,7 @@ export {
   HugeiconsGitCompareArrowsIcon,
   HugeiconsGitForkIcon,
   HugeiconsGitGraphIcon,
+  HugeiconsGitMergeIcon,
   HugeiconsHeartIcon,
   HugeiconsHomeIcon,
   HugeiconsLockIcon,

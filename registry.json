@@ -2851,6 +2851,19 @@
       ]
     },
     {
+      "name": "hugeicons-git-merge",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-git-merge.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-heart",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -4913,6 +4926,19 @@
       "files": [
         {
           "path": "phosphor-git-fork.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-git-merge",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-git-merge.tsx",
           "type": "registry:ui"
         }
       ]
@@ -7474,6 +7500,19 @@
       "files": [
         {
           "path": "tabler-git-fork.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-git-merge",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-git-merge.tsx",
           "type": "registry:ui"
         }
       ]
