@@ -1432,6 +1432,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-hand-grab',
+    'path': path.join(__dirname, '../icons/hugeicons/hand-grab.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-heart',
     'path': path.join(__dirname, '../icons/hugeicons/heart.tsx'),
     'registryDependencies': [],
@@ -2472,6 +2478,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-hand-fist',
     'path': path.join(__dirname, '../icons/phosphor/hand-fist.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-hand-grabbing',
+    'path': path.join(__dirname, '../icons/phosphor/hand-grabbing.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -3702,6 +3714,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-hammer',
     'path': path.join(__dirname, '../icons/tabler/hammer.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-hand-grab',
+    'path': path.join(__dirname, '../icons/tabler/hand-grab.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

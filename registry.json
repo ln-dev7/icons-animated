@@ -3033,6 +3033,19 @@
       ]
     },
     {
+      "name": "hugeicons-hand-grab",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-hand-grab.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-heart",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -5264,6 +5277,19 @@
       "files": [
         {
           "path": "phosphor-hand-fist.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-hand-grabbing",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-hand-grabbing.tsx",
           "type": "registry:ui"
         }
       ]
@@ -7929,6 +7955,19 @@
       "files": [
         {
           "path": "tabler-hammer.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-hand-grab",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-hand-grab.tsx",
           "type": "registry:ui"
         }
       ]
