@@ -69,6 +69,7 @@ import { TablerBrandGitlabIcon } from './brand-gitlab';
 import { TablerBrandInstagramIcon } from './brand-instagram';
 import { TablerBrandLinkedinIcon } from './brand-linkedin';
 import { TablerBrandTwitchIcon } from './brand-twitch';
+import { TablerBrandTwitterIcon } from './brand-twitter';
 import { TablerBriefcaseIcon } from './briefcase';
 import { TablerBuildingBroadcastTowerIcon } from './building-broadcast-tower';
 import { TablerCalendarIcon } from './calendar';
@@ -643,6 +644,11 @@ const TABLER_ICON_LIST = [
     name: 'brand-twitch',
     icon: TablerBrandTwitchIcon,
     keywords: ['brand', 'twitch'],
+  },
+  {
+    name: 'brand-twitter',
+    icon: TablerBrandTwitterIcon,
+    keywords: ['brand', 'twitter'],
   },
   {
     name: 'briefcase',
@@ -2012,6 +2018,7 @@ export {
   TablerBrandInstagramIcon,
   TablerBrandLinkedinIcon,
   TablerBrandTwitchIcon,
+  TablerBrandTwitterIcon,
   TablerBriefcaseIcon,
   TablerBuildingBroadcastTowerIcon,
   TablerCalendarIcon,

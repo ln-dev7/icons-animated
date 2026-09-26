@@ -434,6 +434,7 @@ import { HugeiconsTrendingUpDownIcon } from './trending-up-down';
 import { HugeiconsTruckIcon } from './truck';
 import { HugeiconsTurkishLiraIcon } from './turkish-lira';
 import { HugeiconsTwitchIcon } from './twitch';
+import { HugeiconsTwitterIcon } from './twitter';
 import { HugeiconsUnfoldMoreIcon } from './unfold-more';
 import { HugeiconsUniversalAccessIcon } from './universal-access';
 import { HugeiconsUploadIcon } from './upload';
@@ -2341,6 +2342,7 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['turkish', 'lira', 'turkish-lira'],
   },
   { name: 'twitch', icon: HugeiconsTwitchIcon, keywords: ['twitch'] },
+  { name: 'twitter', icon: HugeiconsTwitterIcon, keywords: ['twitter'] },
   {
     name: 'unfold-more',
     icon: HugeiconsUnfoldMoreIcon,
@@ -2806,6 +2808,7 @@ export {
   HugeiconsTruckIcon,
   HugeiconsTurkishLiraIcon,
   HugeiconsTwitchIcon,
+  HugeiconsTwitterIcon,
   HugeiconsUnfoldMoreIcon,
   HugeiconsUniversalAccessIcon,
   HugeiconsUploadIcon,

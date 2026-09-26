@@ -283,6 +283,7 @@ import { PhosphorTrendDownIcon } from './trend-down';
 import { PhosphorTrendUpIcon } from './trend-up';
 import { PhosphorTruckIcon } from './truck';
 import { PhosphorTwitchLogoIcon } from './twitch-logo';
+import { PhosphorTwitterLogoIcon } from './twitter-logo';
 import { PhosphorUploadIcon } from './upload';
 import { PhosphorUserIcon } from './user';
 import { PhosphorWaveformIcon } from './waveform';
@@ -1658,6 +1659,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['twitch', 'logo'],
   },
   {
+    name: 'twitter-logo',
+    icon: PhosphorTwitterLogoIcon,
+    keywords: ['twitter', 'logo'],
+  },
+  {
     name: 'upload',
     icon: PhosphorUploadIcon,
     keywords: ['upload', 'send', 'arrow', 'put', 'import'],
@@ -1966,6 +1972,7 @@ export {
   PhosphorTrendUpIcon,
   PhosphorTruckIcon,
   PhosphorTwitchLogoIcon,
+  PhosphorTwitterLogoIcon,
   PhosphorUploadIcon,
   PhosphorUserIcon,
   PhosphorWaveformIcon,

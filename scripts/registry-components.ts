@@ -2665,6 +2665,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-twitter',
+    'path': path.join(__dirname, '../icons/hugeicons/twitter.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-unfold-more',
     'path': path.join(__dirname, '../icons/hugeicons/unfold-more.tsx'),
     'registryDependencies': [],
@@ -4426,6 +4432,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'phosphor-twitter-logo',
+    'path': path.join(__dirname, '../icons/phosphor/twitter-logo.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'phosphor-upload',
     'path': path.join(__dirname, '../icons/phosphor/upload.tsx'),
     'registryDependencies': [],
@@ -4872,6 +4884,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-brand-twitch',
     'path': path.join(__dirname, '../icons/tabler/brand-twitch.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-brand-twitter',
+    'path': path.join(__dirname, '../icons/tabler/brand-twitter.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

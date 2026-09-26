@@ -5672,6 +5672,19 @@
       ]
     },
     {
+      "name": "hugeicons-twitter",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-twitter.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-unfold-more",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -9442,6 +9455,19 @@
       ]
     },
     {
+      "name": "phosphor-twitter-logo",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-twitter-logo.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-upload",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -10412,6 +10438,19 @@
       "files": [
         {
           "path": "tabler-brand-twitch.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-brand-twitter",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-brand-twitter.tsx",
           "type": "registry:ui"
         }
       ]
