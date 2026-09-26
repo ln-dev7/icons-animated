@@ -3,6 +3,7 @@ import { promises as fs } from 'node:fs';
 import path from 'node:path';
 import { test } from 'node:test';
 import type { IconLibrary } from '@/constants';
+import type { IconFramework } from '@/constants/frameworks';
 
 import { getIconContent } from '@/actions/get-icon-content';
 
@@ -132,5 +133,56 @@ test('refuses registry entries with mismatched names or missing source', async (
     await assert.rejects(getIconContent('hugeicons', 'arrow-down'), {
       message: 'Icon source is unavailable.',
     });
+  }
+});
+
+test('rejects unknown framework paths before reading a file', async (t) => {
+  const reader = t.mock.method(fs, 'readFile', async () => {
+    throw new Error('Unexpected file read');
+  });
+  for (const framework of [
+    '../vue',
+    'vue/..',
+    '__proto__',
+    'constructor',
+    'Vue',
+    '',
+    null,
+    {},
+    ['vue'],
+    1,
+  ]) {
+    await assert.rejects(
+      getIconContent('hugeicons', 'arrow-down', framework as IconFramework),
+      { message: 'Unknown icon.' }
+    );
+  }
+  assert.equal(reader.mock.callCount(), 0);
+});
+
+test('each framework reads only its matching published component', async () => {
+  for (const framework of ['react', 'vue', 'svelte'] as const) {
+    for (const library of ['hugeicons', 'tabler', 'phosphor'] as const) {
+      const registryName = `${library}-arrow-down`;
+      const folder = framework === 'react' ? [] : [framework];
+      const expected = JSON.parse(
+        await fs.readFile(
+          path.join(
+            process.cwd(),
+            'public',
+            'r',
+            ...folder,
+            `${registryName}.json`
+          ),
+          'utf8'
+        )
+      );
+      const source = await getIconContent(library, 'arrow-down', framework);
+      assert.equal(source, expected.files[0].content);
+      if (framework === 'svelte') {
+        assert.equal(expected.files[0].target, `${registryName}.svelte`);
+      }
+      assert.match(source, framework === 'react' ? /'use client';/ : /<script/);
+    }
   }
 });

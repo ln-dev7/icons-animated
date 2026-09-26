@@ -3,23 +3,29 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 import type { IconLibrary } from '@/constants';
+import type { IconFramework } from '@/constants/frameworks';
 
+import { FRAMEWORK_INFO, FRAMEWORKS } from '@/constants/frameworks';
 import registry from '@/registry.json';
 
 const ALLOWED_LIBRARIES = new Set(['hugeicons', 'tabler', 'phosphor']);
 const ALLOWED_ICONS = new Set(registry.items.map((item) => item.name));
+const ALLOWED_FRAMEWORKS = new Set<string>(FRAMEWORKS);
 const ICON_NAME_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 export async function getIconContent(
   library: IconLibrary,
-  name: string
+  name: string,
+  framework: IconFramework = 'react'
 ): Promise<string> {
   if (
     typeof library !== 'string' ||
     !ALLOWED_LIBRARIES.has(library) ||
     typeof name !== 'string' ||
     name.length > 128 ||
-    !ICON_NAME_PATTERN.test(name)
+    !ICON_NAME_PATTERN.test(name) ||
+    typeof framework !== 'string' ||
+    !ALLOWED_FRAMEWORKS.has(framework)
   ) {
     throw new Error('Unknown icon.');
   }
@@ -30,7 +36,13 @@ export async function getIconContent(
   }
 
   const content = await fs.readFile(
-    path.join(process.cwd(), 'public', 'r', `${registryName}.json`),
+    path.join(
+      process.cwd(),
+      'public',
+      'r',
+      ...(framework === 'react' ? [] : [framework]),
+      `${registryName}.json`
+    ),
     'utf-8'
   );
   const item: unknown = JSON.parse(content);
@@ -50,7 +62,7 @@ export async function getIconContent(
       !!file &&
       typeof file === 'object' &&
       'path' in file &&
-      file.path === `${registryName}.tsx` &&
+      file.path === `${registryName}.${FRAMEWORK_INFO[framework].extension}` &&
       'content' in file &&
       typeof file.content === 'string'
   );

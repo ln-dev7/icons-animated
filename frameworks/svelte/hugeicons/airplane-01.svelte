@@ -1,0 +1,172 @@
+<script lang="ts">
+/**
+ * @license
+ * MIT License
+ *
+ * Copyright (c) 2025 Hugeicons
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+import { animate } from 'motion';
+import type { AnimationOptions, AnimationPlaybackControlsWithThen, DOMKeyframesDefinition } from 'motion';
+import { onMount } from 'svelte';
+import type { HTMLAttributes } from 'svelte/elements';
+
+type Props = HTMLAttributes<HTMLDivElement> & { size?: number; controlled?: boolean };
+let { size = 28, controlled = false, ...rest }: Props = $props();
+let root: HTMLDivElement;
+
+type State = 'normal' | 'animate';
+type Part = {
+  normal: DOMKeyframesDefinition & { transition?: AnimationOptions };
+  animate: DOMKeyframesDefinition & { transition?: AnimationOptions };
+  transition: AnimationOptions;
+};
+
+const parts = [
+  {
+    "normal": {
+      "x": 0,
+      "y": 0,
+      "rotate": 0,
+      "scale": 1,
+      "scaleX": 1,
+      "scaleY": 1,
+      "opacity": 1,
+      "transition": {
+        "duration": 0.18,
+        "ease": "easeOut"
+      }
+    },
+    "animate": {
+      "x": [
+        0,
+        -0.5,
+        2.4,
+        0
+      ],
+      "y": [
+        0,
+        0.5,
+        -2.4,
+        0
+      ],
+      "rotate": [
+        0,
+        -5,
+        0,
+        0
+      ],
+      "transition": {
+        "duration": 0.85,
+        "ease": "easeInOut"
+      }
+    },
+    "transition": {}
+  }
+] as unknown as Part[];
+let animations: AnimationPlaybackControlsWithThen[] = [];
+let sequence = 0;
+let media: MediaQueryList | undefined;
+let initialized = false;
+
+function cancelAnimations() {
+  animations.forEach((animation) => animation.stop());
+  animations = [];
+}
+
+function run(state: State, instant = false) {
+  const container = root;
+  if (!container) return [];
+  return parts.flatMap((part, index) => {
+    const element = container.querySelector<SVGElement>(`[data-icon-part="${index}"]`);
+    if (!element) return [];
+    const { transition, ...keyframes } = part[state];
+    if (!Object.keys(keyframes).length) return [];
+    const options: AnimationOptions = instant
+      ? { duration: 0, delay: 0, type: 'tween' }
+      : { ...part.transition, ...transition };
+    const animation = animate(element, keyframes, options);
+    if (instant) animation.complete();
+    return [animation];
+  });
+}
+
+export function startAnimation() {
+  if (!media || media.matches) return;
+  const current = ++sequence;
+  cancelAnimations();
+  initialized = true;
+  run('normal', true);
+  animations = run('animate');
+  void Promise.all(animations).then(() => {
+    if (sequence === current) {
+      animations = [];
+      run('normal', true);
+    }
+  });
+}
+
+export function stopAnimation() {
+  sequence += 1;
+  cancelAnimations();
+  if (!initialized) return;
+  animations = run('normal', Boolean(media?.matches));
+}
+
+function mountAnimation() {
+  const container = root;
+  if (!container) return () => {};
+  media = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const start = () => { if (!controlled) startAnimation(); };
+  const stop = () => { if (!controlled) stopAnimation(); };
+  const preferenceChanged = () => {
+    if (media?.matches) stopAnimation();
+  };
+  container.addEventListener('mouseenter', start);
+  container.addEventListener('mouseleave', stop);
+  container.addEventListener('focusin', start);
+  container.addEventListener('focusout', stop);
+  media.addEventListener('change', preferenceChanged);
+  if (!media.matches) {
+    initialized = true;
+    run('normal', true);
+  }
+  return () => {
+    sequence += 1;
+    cancelAnimations();
+    container.removeEventListener('mouseenter', start);
+    container.removeEventListener('mouseleave', stop);
+    container.removeEventListener('focusin', start);
+    container.removeEventListener('focusout', stop);
+    media?.removeEventListener('change', preferenceChanged);
+    media = undefined;
+  };
+}
+
+onMount(mountAnimation);
+</script>
+
+<div bind:this={root} {...rest}>
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" overflow="visible" aria-hidden="true" focusable="false">
+    <g style="transform-origin: 12px 12px" data-icon-part="0">
+      <path d="M15.8667 3.7804C16.7931 3.03188 17.8307 2.98644 18.9644 3.00233C19.5508 3.01055 19.844 3.01467 20.0792 3.10588C20.4524 3.2506 20.7494 3.54764 20.8941 3.92081C20.9853 4.15601 20.9894 4.4492 20.9977 5.03557C21.0136 6.16926 20.9681 7.20686 20.2196 8.13326C19.5893 8.91337 18.5059 9.32101 17.9846 10.1821C17.5866 10.8395 17.772 11.5203 17.943 12.2209L19.2228 17.4662C19.4779 18.5115 19.2838 19.1815 18.5529 19.9124C18.164 20.3013 17.8405 20.2816 17.5251 19.779L13.6627 13.6249L11.8181 15.0911C11.1493 15.6228 10.8149 15.8886 10.6392 16.2627C10.2276 17.1388 10.4889 18.4547 10.5022 19.4046C10.5096 19.9296 10.0559 20.9644 9.41391 20.9993C9.01756 21.0209 8.88283 20.5468 8.75481 20.2558L7.52234 17.4544C7.2276 16.7845 7.21552 16.7724 6.54556 16.4777L3.74415 15.2452C3.45318 15.1172 2.97914 14.9824 3.00071 14.5861C3.03565 13.9441 4.07036 13.4904 4.59536 13.4978C5.54532 13.5111 6.86122 13.7724 7.73734 13.3608C8.11142 13.1851 8.37724 12.8507 8.90888 12.1819L10.3751 10.3373L4.22103 6.47489C3.71845 6.15946 3.69872 5.83597 4.08755 5.44715C4.8185 4.7162 5.48851 4.52214 6.53377 4.77718L11.7791 6.05703C12.4797 6.22798 13.1605 6.41343 13.8179 6.0154C14.679 5.49411 15.0866 4.41074 15.8667 3.7804Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+    </g>
+  </svg>
+</div>

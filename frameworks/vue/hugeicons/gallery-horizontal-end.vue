@@ -1,0 +1,254 @@
+<script setup lang="ts">
+/**
+ * @license
+ * MIT License
+ *
+ * Copyright (c) 2025 Hugeicons
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+import { animate } from 'motion';
+import type { AnimationOptions, AnimationPlaybackControlsWithThen, DOMKeyframesDefinition } from 'motion';
+import { onMounted, onBeforeUnmount, shallowRef } from 'vue';
+
+const props = withDefaults(defineProps<{ size?: number; controlled?: boolean }>(), {
+  size: 28,
+  controlled: false,
+});
+const root = shallowRef<HTMLDivElement>();
+
+type State = 'normal' | 'animate';
+type Part = {
+  normal: DOMKeyframesDefinition & { transition?: AnimationOptions };
+  animate: DOMKeyframesDefinition & { transition?: AnimationOptions };
+  transition: AnimationOptions;
+};
+
+const parts = [
+  {
+    "normal": {
+      "x": 0,
+      "y": 0,
+      "rotate": 0,
+      "scale": 1,
+      "scaleX": 1,
+      "scaleY": 1,
+      "opacity": 1,
+      "transition": {
+        "duration": 0.18,
+        "ease": "easeOut"
+      }
+    },
+    "animate": {
+      "y": [
+        0,
+        -0.7,
+        0
+      ],
+      "scale": [
+        1,
+        0.96,
+        1.04,
+        1
+      ],
+      "transition": {
+        "duration": 0.7,
+        "ease": "easeInOut"
+      }
+    },
+    "transition": {}
+  },
+  {
+    "normal": {
+      "pathLength": 1,
+      "opacity": 1,
+      "scaleY": 1,
+      "y": 0,
+      "transition": {
+        "duration": 0.18
+      }
+    },
+    "animate": {
+      "pathLength": [
+        0.3,
+        1
+      ],
+      "opacity": [
+        0.45,
+        1
+      ],
+      "transition": {
+        "duration": 0.5499999999999999,
+        "delay": 0,
+        "ease": "easeInOut"
+      }
+    },
+    "transition": {}
+  },
+  {
+    "normal": {
+      "pathLength": 1,
+      "opacity": 1,
+      "scaleY": 1,
+      "y": 0,
+      "transition": {
+        "duration": 0.18
+      }
+    },
+    "animate": {
+      "pathLength": [
+        0.3,
+        1
+      ],
+      "opacity": [
+        0.45,
+        1
+      ],
+      "transition": {
+        "duration": 0.5499999999999999,
+        "delay": 0.055,
+        "ease": "easeInOut"
+      }
+    },
+    "transition": {}
+  },
+  {
+    "normal": {
+      "pathLength": 1,
+      "opacity": 1,
+      "scaleY": 1,
+      "y": 0,
+      "transition": {
+        "duration": 0.18
+      }
+    },
+    "animate": {
+      "pathLength": [
+        0.3,
+        1
+      ],
+      "opacity": [
+        0.45,
+        1
+      ],
+      "transition": {
+        "duration": 0.5499999999999999,
+        "delay": 0.11,
+        "ease": "easeInOut"
+      }
+    },
+    "transition": {}
+  }
+] as unknown as Part[];
+let animations: AnimationPlaybackControlsWithThen[] = [];
+let sequence = 0;
+let media: MediaQueryList | undefined;
+let initialized = false;
+
+function cancelAnimations() {
+  animations.forEach((animation) => animation.stop());
+  animations = [];
+}
+
+function run(state: State, instant = false) {
+  const container = root.value;
+  if (!container) return [];
+  return parts.flatMap((part, index) => {
+    const element = container.querySelector<SVGElement>(`[data-icon-part="${index}"]`);
+    if (!element) return [];
+    const { transition, ...keyframes } = part[state];
+    if (!Object.keys(keyframes).length) return [];
+    const options: AnimationOptions = instant
+      ? { duration: 0, delay: 0, type: 'tween' }
+      : { ...part.transition, ...transition };
+    const animation = animate(element, keyframes, options);
+    if (instant) animation.complete();
+    return [animation];
+  });
+}
+
+function startAnimation() {
+  if (!media || media.matches) return;
+  const current = ++sequence;
+  cancelAnimations();
+  initialized = true;
+  run('normal', true);
+  animations = run('animate');
+  void Promise.all(animations).then(() => {
+    if (sequence === current) {
+      animations = [];
+      run('normal', true);
+    }
+  });
+}
+
+function stopAnimation() {
+  sequence += 1;
+  cancelAnimations();
+  if (!initialized) return;
+  animations = run('normal', Boolean(media?.matches));
+}
+
+function mountAnimation() {
+  const container = root.value;
+  if (!container) return () => {};
+  media = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const start = () => { if (!props.controlled) startAnimation(); };
+  const stop = () => { if (!props.controlled) stopAnimation(); };
+  const preferenceChanged = () => {
+    if (media?.matches) stopAnimation();
+  };
+  container.addEventListener('mouseenter', start);
+  container.addEventListener('mouseleave', stop);
+  container.addEventListener('focusin', start);
+  container.addEventListener('focusout', stop);
+  media.addEventListener('change', preferenceChanged);
+  if (!media.matches) {
+    initialized = true;
+    run('normal', true);
+  }
+  return () => {
+    sequence += 1;
+    cancelAnimations();
+    container.removeEventListener('mouseenter', start);
+    container.removeEventListener('mouseleave', stop);
+    container.removeEventListener('focusin', start);
+    container.removeEventListener('focusout', stop);
+    media?.removeEventListener('change', preferenceChanged);
+    media = undefined;
+  };
+}
+
+let cleanup = () => {};
+onMounted(() => { cleanup = mountAnimation(); });
+onBeforeUnmount(() => cleanup());
+defineExpose({ startAnimation, stopAnimation });
+</script>
+
+<template>
+  <div ref="root">
+    <svg xmlns="http://www.w3.org/2000/svg" :width="size" :height="size" viewBox="0 0 24 24" fill="none" overflow="visible" aria-hidden="true" focusable="false">
+      <g style="transform-origin: 12px 12px" data-icon-part="0">
+        <path d="M11 15V9C11 7.13077 11 6.19615 11.4019 5.5C11.6652 5.04394 12.0439 4.66523 12.5 4.40192C13.1962 4 14.1308 4 16 4C17.8692 4 18.8038 4 19.5 4.40192C19.9561 4.66523 20.3348 5.04394 20.5981 5.5C21 6.19615 21 7.13077 21 9V15C21 16.8692 21 17.8038 20.5981 18.5C20.3348 18.9561 19.9561 19.3348 19.5 19.5981C18.8038 20 17.8692 20 16 20C14.1308 20 13.1962 20 12.5 19.5981C12.0439 19.3348 11.6652 18.9561 11.4019 18.5C11 17.8038 11 16.8692 11 15Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" data-icon-part="1" />
+        <path d="M7 6V18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" data-icon-part="2" />
+        <path d="M3 8V16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" data-icon-part="3" />
+      </g>
+    </svg>
+  </div>
+</template>

@@ -2,6 +2,8 @@ import fs from 'fs';
 import path from 'path';
 import { format, resolveConfig } from 'prettier';
 
+import { generateFrameworkSources } from './framework-generator';
+import { createFrameworkRegistryItems } from './framework-registry';
 import { getFiles, PROJECT_ROOT } from './icon-catalog';
 import { components } from './registry-components';
 import { createRegistryIndex, createRegistryItem } from './registry-utils';
@@ -15,8 +17,12 @@ const expectedPaths = new Set(
 );
 
 async function buildRegistry() {
+  await generateFrameworkSources();
+  const frameworkItems = createFrameworkRegistryItems();
+  for (const entry of frameworkItems) expectedPaths.add(entry.outputPath);
   const config = await resolveConfig(path.join(PROJECT_ROOT, 'registry.json'));
   async function writeJson(file: string, value: unknown) {
+    fs.mkdirSync(path.dirname(file), { recursive: true });
     const previous = fs.existsSync(file) ? fs.readFileSync(file, 'utf8') : null;
     if (
       previous &&
@@ -38,6 +44,9 @@ async function buildRegistry() {
       writeJson(path.join(outputDirectory, `${item.name}.json`), item)
     )
   );
+  await Promise.all(
+    frameworkItems.map(({ outputPath, item }) => writeJson(outputPath, item))
+  );
   for (const file of getFiles(outputDirectory)) {
     if (file.endsWith('.json') && !expectedPaths.has(file)) fs.unlinkSync(file);
   }
@@ -46,7 +55,7 @@ async function buildRegistry() {
     createRegistryIndex(items)
   );
   console.log(
-    `✅ Built ${items.length} registry components and updated registry.json`
+    `✅ Built ${items.length} React and ${frameworkItems.length} Vue/Svelte registry components`
   );
 }
 

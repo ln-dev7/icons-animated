@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { isDeepStrictEqual } from 'util';
 
+import { createFrameworkRegistryItems } from './framework-registry';
 import {
   checkIconIndexes,
   discoverIcons,
@@ -70,6 +71,11 @@ function checkRegistry() {
     expectedPaths.add(outputPath);
     checkJson(outputPath, item);
   }
+  const frameworkItems = createFrameworkRegistryItems();
+  for (const { outputPath, item } of frameworkItems) {
+    expectedPaths.add(outputPath);
+    checkJson(outputPath, item);
+  }
   if (fs.existsSync(outputDirectory)) {
     for (const file of getFiles(outputDirectory)) {
       if (file.endsWith('.json') && !expectedPaths.has(file)) {
@@ -88,7 +94,7 @@ function checkRegistry() {
     process.exitCode = 1;
   } else {
     console.log(
-      `✅ ${sources.length} icons agree across sources, library indexes, manifest, registry.json and public/r`
+      `✅ ${sources.length} icons agree across sources, library indexes, manifest, registry.json and public/r (${frameworkItems.length} Vue/Svelte ports)`
     );
   }
 }
