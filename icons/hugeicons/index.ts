@@ -144,6 +144,7 @@ import { HugeiconsSettingsIcon } from './settings';
 import { HugeiconsShareIcon } from './share';
 import { HugeiconsShoppingCart01Icon } from './shopping-cart-01';
 import { HugeiconsStarIcon } from './star';
+import { HugeiconsSunCloud02Icon } from './sun-cloud-02';
 import { HugeiconsTextAlignCenterIcon } from './text-align-center';
 import { HugeiconsTextAlignLeftIcon } from './text-align-left';
 import { HugeiconsTextAlignRightIcon } from './text-align-right';
@@ -894,6 +895,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['star', 'favorite', 'bookmark', 'rate', 'rating'],
   },
   {
+    name: 'sun-cloud-02',
+    icon: HugeiconsSunCloud02Icon,
+    keywords: ['sun', 'cloud', '02', 'cloud-sun'],
+  },
+  {
     name: 'text-align-center',
     icon: HugeiconsTextAlignCenterIcon,
     keywords: ['text', 'align', 'center', 'align-center'],
@@ -1088,6 +1094,7 @@ export {
   HugeiconsShareIcon,
   HugeiconsShoppingCart01Icon,
   HugeiconsStarIcon,
+  HugeiconsSunCloud02Icon,
   HugeiconsTextAlignCenterIcon,
   HugeiconsTextAlignLeftIcon,
   HugeiconsTextAlignRightIcon,

@@ -898,6 +898,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-sun-cloud-02',
+    'path': path.join(__dirname, '../icons/hugeicons/sun-cloud-02.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-text-align-center',
     'path': path.join(__dirname, '../icons/hugeicons/text-align-center.tsx'),
     'registryDependencies': [],
@@ -1371,6 +1377,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-cloud-snow',
     'path': path.join(__dirname, '../icons/phosphor/cloud-snow.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-cloud-sun',
+    'path': path.join(__dirname, '../icons/phosphor/cloud-sun.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
