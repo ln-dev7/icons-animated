@@ -38,6 +38,10 @@ pnpm dlx shadcn add @icons-animated/phosphor-heart
 pnpm dlx shadcn add @icons-animated/phosphor-star
 ```
 
+For direct copy, use React 18.2+ and install `motion`. Keep `@/lib/utils` pointing to a `cn` helper: reuse your shadcn setup, or copy [our helper](lib/utils.ts) and install `clsx` and `tailwind-merge`. Preserve the license notice included in each copied component.
+
+Icons retain their native library style. Phosphor regular icons use filled SVG paths: customize their `size` and CSS color; stroke width does not control their thickness.
+
 ## Contributing
 
 We welcome contributions to `icons-animated`! Please read our [contributing guidelines](CONTRIBUTING.md) on how to submit improvements and new icons.
