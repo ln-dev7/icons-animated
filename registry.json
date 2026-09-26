@@ -1070,6 +1070,19 @@
       ]
     },
     {
+      "name": "hugeicons-chart-bar-decreasing",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-chart-bar-decreasing.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-check",
       "type": "registry:ui",
       "registryDependencies": [],
