@@ -3969,6 +3969,19 @@
       ]
     },
     {
+      "name": "hugeicons-mic-off-01",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-mic-off-01.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-mouse-pointer-click",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -6590,6 +6603,19 @@
       "files": [
         {
           "path": "phosphor-microphone.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-microphone-slash",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-microphone-slash.tsx",
           "type": "registry:ui"
         }
       ]
@@ -9970,6 +9996,19 @@
       "files": [
         {
           "path": "tabler-microphone.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-microphone-off",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-microphone-off.tsx",
           "type": "registry:ui"
         }
       ]

@@ -177,6 +177,7 @@ import { PhosphorMailboxIcon } from './mailbox';
 import { PhosphorMapPinIcon } from './map-pin';
 import { PhosphorMapPinPlusIcon } from './map-pin-plus';
 import { PhosphorMicrophoneIcon } from './microphone';
+import { PhosphorMicrophoneSlashIcon } from './microphone-slash';
 import { PhosphorNotebookIcon } from './notebook';
 import { PhosphorPaperclipIcon } from './paperclip';
 import { PhosphorPencilIcon } from './pencil';
@@ -1109,6 +1110,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['microphone', 'mic'],
   },
   {
+    name: 'microphone-slash',
+    icon: PhosphorMicrophoneSlashIcon,
+    keywords: ['microphone', 'slash', 'mic-off', 'mic', 'off'],
+  },
+  {
     name: 'notebook',
     icon: PhosphorNotebookIcon,
     keywords: ['notebook', 'book-text', 'book', 'text'],
@@ -1533,6 +1539,7 @@ export {
   PhosphorMapPinIcon,
   PhosphorMapPinPlusIcon,
   PhosphorMicrophoneIcon,
+  PhosphorMicrophoneSlashIcon,
   PhosphorNotebookIcon,
   PhosphorPaperclipIcon,
   PhosphorPencilIcon,
