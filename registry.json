@@ -5659,6 +5659,19 @@
       ]
     },
     {
+      "name": "hugeicons-twitch",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-twitch.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-unfold-more",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -9416,6 +9429,19 @@
       ]
     },
     {
+      "name": "phosphor-twitch-logo",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-twitch-logo.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-upload",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -10373,6 +10399,19 @@
       "files": [
         {
           "path": "tabler-brand-linkedin.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-brand-twitch",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-brand-twitch.tsx",
           "type": "registry:ui"
         }
       ]

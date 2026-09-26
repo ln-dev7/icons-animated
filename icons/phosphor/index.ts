@@ -282,6 +282,7 @@ import { PhosphorTreeEvergreenIcon } from './tree-evergreen';
 import { PhosphorTrendDownIcon } from './trend-down';
 import { PhosphorTrendUpIcon } from './trend-up';
 import { PhosphorTruckIcon } from './truck';
+import { PhosphorTwitchLogoIcon } from './twitch-logo';
 import { PhosphorUploadIcon } from './upload';
 import { PhosphorUserIcon } from './user';
 import { PhosphorWaveformIcon } from './waveform';
@@ -1652,6 +1653,11 @@ const PHOSPHOR_ICON_LIST = [
   },
   { name: 'truck', icon: PhosphorTruckIcon, keywords: ['truck'] },
   {
+    name: 'twitch-logo',
+    icon: PhosphorTwitchLogoIcon,
+    keywords: ['twitch', 'logo'],
+  },
+  {
     name: 'upload',
     icon: PhosphorUploadIcon,
     keywords: ['upload', 'send', 'arrow', 'put', 'import'],
@@ -1959,6 +1965,7 @@ export {
   PhosphorTrendDownIcon,
   PhosphorTrendUpIcon,
   PhosphorTruckIcon,
+  PhosphorTwitchLogoIcon,
   PhosphorUploadIcon,
   PhosphorUserIcon,
   PhosphorWaveformIcon,
