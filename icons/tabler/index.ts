@@ -205,6 +205,7 @@ import { TablerMaximizeIcon } from './maximize';
 import { TablerMenuIcon } from './menu';
 import { TablerMessageIcon } from './message';
 import { TablerMessageChatbotIcon } from './message-chatbot';
+import { TablerMessageCheckIcon } from './message-check';
 import { TablerMessageCircleIcon } from './message-circle';
 import { TablerMessageCircleCheckIcon } from './message-circle-check';
 import { TablerMessageCirclePlusIcon } from './message-circle-plus';
@@ -1155,6 +1156,11 @@ const TABLER_ICON_LIST = [
     keywords: ['message', 'chatbot', 'bot-message-square', 'bot', 'square'],
   },
   {
+    name: 'message-check',
+    icon: TablerMessageCheckIcon,
+    keywords: ['message', 'check', 'message-square-check', 'square'],
+  },
+  {
     name: 'message-circle',
     icon: TablerMessageCircleIcon,
     keywords: ['message', 'circle', 'message-circle'],
@@ -1607,6 +1613,7 @@ export {
   TablerMenuIcon,
   TablerMessageIcon,
   TablerMessageChatbotIcon,
+  TablerMessageCheckIcon,
   TablerMessageCircleIcon,
   TablerMessageCircleCheckIcon,
   TablerMessageCirclePlusIcon,
