@@ -2068,6 +2068,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-radio',
+    'path': path.join(__dirname, '../icons/hugeicons/radio.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-refresh',
     'path': path.join(__dirname, '../icons/hugeicons/refresh.tsx'),
     'registryDependencies': [],
@@ -3435,6 +3441,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-rabbit',
     'path': path.join(__dirname, '../icons/phosphor/rabbit.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-radio',
+    'path': path.join(__dirname, '../icons/phosphor/radio.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -5172,6 +5184,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-propeller',
     'path': path.join(__dirname, '../icons/tabler/propeller.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-radio',
+    'path': path.join(__dirname, '../icons/tabler/radio.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

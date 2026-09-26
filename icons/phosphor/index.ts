@@ -206,6 +206,7 @@ import { PhosphorProhibitIcon } from './prohibit';
 import { PhosphorPulseIcon } from './pulse';
 import { PhosphorQuestionIcon } from './question';
 import { PhosphorRabbitIcon } from './rabbit';
+import { PhosphorRadioIcon } from './radio';
 import { PhosphorRefreshIcon } from './refresh';
 import { PhosphorRobotIcon } from './robot';
 import { PhosphorSaveIcon } from './save';
@@ -1245,6 +1246,7 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['question', 'circle-help', 'circle', 'help'],
   },
   { name: 'rabbit', icon: PhosphorRabbitIcon, keywords: ['rabbit'] },
+  { name: 'radio', icon: PhosphorRadioIcon, keywords: ['radio'] },
   {
     name: 'refresh',
     icon: PhosphorRefreshIcon,
@@ -1658,6 +1660,7 @@ export {
   PhosphorPulseIcon,
   PhosphorQuestionIcon,
   PhosphorRabbitIcon,
+  PhosphorRadioIcon,
   PhosphorRefreshIcon,
   PhosphorRobotIcon,
   PhosphorSaveIcon,

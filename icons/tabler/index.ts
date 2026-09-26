@@ -251,6 +251,7 @@ import { TablerPlayerPlayIcon } from './player-play';
 import { TablerPlugConnectedIcon } from './plug-connected';
 import { TablerPlusIcon } from './plus';
 import { TablerPropellerIcon } from './propeller';
+import { TablerRadioIcon } from './radio';
 import { TablerRefreshIcon } from './refresh';
 import { TablerRobotIcon } from './robot';
 import { TablerRosetteDiscountIcon } from './rosette-discount';
@@ -1410,6 +1411,7 @@ const TABLER_ICON_LIST = [
     icon: TablerPropellerIcon,
     keywords: ['propeller', 'fan'],
   },
+  { name: 'radio', icon: TablerRadioIcon, keywords: ['radio'] },
   {
     name: 'refresh',
     icon: TablerRefreshIcon,
@@ -1833,6 +1835,7 @@ export {
   TablerPlugConnectedIcon,
   TablerPlusIcon,
   TablerPropellerIcon,
+  TablerRadioIcon,
   TablerRefreshIcon,
   TablerRobotIcon,
   TablerRosetteDiscountIcon,

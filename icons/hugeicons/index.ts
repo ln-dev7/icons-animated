@@ -336,6 +336,7 @@ import { HugeiconsPoundSterlingIcon } from './pound-sterling';
 import { HugeiconsProjectorIcon } from './projector';
 import { HugeiconsPulse01Icon } from './pulse-01';
 import { HugeiconsRabbitIcon } from './rabbit';
+import { HugeiconsRadioIcon } from './radio';
 import { HugeiconsRefreshIcon } from './refresh';
 import { HugeiconsSaveIcon } from './save';
 import { HugeiconsSearchIcon } from './search';
@@ -1840,6 +1841,7 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['pulse', '01', 'activity'],
   },
   { name: 'rabbit', icon: HugeiconsRabbitIcon, keywords: ['rabbit'] },
+  { name: 'radio', icon: HugeiconsRadioIcon, keywords: ['radio'] },
   {
     name: 'refresh',
     icon: HugeiconsRefreshIcon,
@@ -2286,6 +2288,7 @@ export {
   HugeiconsProjectorIcon,
   HugeiconsPulse01Icon,
   HugeiconsRabbitIcon,
+  HugeiconsRadioIcon,
   HugeiconsRefreshIcon,
   HugeiconsSaveIcon,
   HugeiconsSearchIcon,
