@@ -5529,6 +5529,19 @@
       ]
     },
     {
+      "name": "hugeicons-tornado-01",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-tornado-01.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-trash",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -9190,6 +9203,19 @@
       "files": [
         {
           "path": "phosphor-timer.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-tornado",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-tornado.tsx",
           "type": "registry:ui"
         }
       ]
@@ -13597,6 +13623,19 @@
       "files": [
         {
           "path": "tabler-ticket.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-tornado",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-tornado.tsx",
           "type": "registry:ui"
         }
       ]

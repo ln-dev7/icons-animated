@@ -274,6 +274,7 @@ import { PhosphorThermometerIcon } from './thermometer';
 import { PhosphorThumbsDownIcon } from './thumbs-down';
 import { PhosphorTicketIcon } from './ticket';
 import { PhosphorTimerIcon } from './timer';
+import { PhosphorTornadoIcon } from './tornado';
 import { PhosphorTranslateIcon } from './translate';
 import { PhosphorTrashIcon } from './trash';
 import { PhosphorUploadIcon } from './upload';
@@ -1613,6 +1614,7 @@ const PHOSPHOR_ICON_LIST = [
   },
   { name: 'ticket', icon: PhosphorTicketIcon, keywords: ['ticket'] },
   { name: 'timer', icon: PhosphorTimerIcon, keywords: ['timer'] },
+  { name: 'tornado', icon: PhosphorTornadoIcon, keywords: ['tornado'] },
   {
     name: 'translate',
     icon: PhosphorTranslateIcon,
@@ -1923,6 +1925,7 @@ export {
   PhosphorThumbsDownIcon,
   PhosphorTicketIcon,
   PhosphorTimerIcon,
+  PhosphorTornadoIcon,
   PhosphorTranslateIcon,
   PhosphorTrashIcon,
   PhosphorUploadIcon,
