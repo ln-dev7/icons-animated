@@ -1408,6 +1408,19 @@
       ]
     },
     {
+      "name": "hugeicons-circle-check",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-circle-check.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-download",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2443,6 +2456,19 @@
       "files": [
         {
           "path": "phosphor-check.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-check-circle",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-check-circle.tsx",
           "type": "registry:ui"
         }
       ]
@@ -4068,6 +4094,19 @@
       "files": [
         {
           "path": "tabler-chevron-up.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-circle-check",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-circle-check.tsx",
           "type": "registry:ui"
         }
       ]

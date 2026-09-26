@@ -50,6 +50,7 @@ import { PhosphorChartLineIcon } from './chart-line';
 import { PhosphorChartPieIcon } from './chart-pie';
 import { PhosphorChartScatterIcon } from './chart-scatter';
 import { PhosphorCheckIcon } from './check';
+import { PhosphorCheckCircleIcon } from './check-circle';
 import { PhosphorChecksIcon } from './checks';
 import { PhosphorChevronDownIcon } from './chevron-down';
 import { PhosphorChevronLeftIcon } from './chevron-left';
@@ -361,6 +362,11 @@ const PHOSPHOR_ICON_LIST = [
     name: 'check',
     icon: PhosphorCheckIcon,
     keywords: ['check', 'done', 'success', 'complete', 'validate', 'tick'],
+  },
+  {
+    name: 'check-circle',
+    icon: PhosphorCheckCircleIcon,
+    keywords: ['check', 'circle', 'circle-check'],
   },
   {
     name: 'checks',
@@ -717,6 +723,7 @@ export {
   PhosphorChartPieIcon,
   PhosphorChartScatterIcon,
   PhosphorCheckIcon,
+  PhosphorCheckCircleIcon,
   PhosphorChecksIcon,
   PhosphorChevronDownIcon,
   PhosphorChevronLeftIcon,
