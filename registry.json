@@ -1382,6 +1382,19 @@
       ]
     },
     {
+      "name": "hugeicons-cigarette",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-cigarette.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-download",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2482,6 +2495,19 @@
       "files": [
         {
           "path": "phosphor-chevron-up.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-cigarette",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-cigarette.tsx",
           "type": "registry:ui"
         }
       ]
@@ -4380,6 +4406,19 @@
       "files": [
         {
           "path": "tabler-shopping-cart.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-smoking",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-smoking.tsx",
           "type": "registry:ui"
         }
       ]

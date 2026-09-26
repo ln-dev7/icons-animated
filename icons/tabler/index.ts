@@ -102,6 +102,7 @@ import { TablerSelectorIcon } from './selector';
 import { TablerSettingsIcon } from './settings';
 import { TablerShareIcon } from './share';
 import { TablerShoppingCartIcon } from './shopping-cart';
+import { TablerSmokingIcon } from './smoking';
 import { TablerSortAscendingLettersIcon } from './sort-ascending-letters';
 import { TablerSortAscendingNumbersIcon } from './sort-ascending-numbers';
 import { TablerSortDescendingLettersIcon } from './sort-descending-letters';
@@ -620,6 +621,11 @@ const TABLER_ICON_LIST = [
     keywords: ['shopping', 'cart'],
   },
   {
+    name: 'smoking',
+    icon: TablerSmokingIcon,
+    keywords: ['smoking', 'cigarette'],
+  },
+  {
     name: 'sort-ascending-letters',
     icon: TablerSortAscendingLettersIcon,
     keywords: [
@@ -808,6 +814,7 @@ export {
   TablerSettingsIcon,
   TablerShareIcon,
   TablerShoppingCartIcon,
+  TablerSmokingIcon,
   TablerSortAscendingLettersIcon,
   TablerSortAscendingNumbersIcon,
   TablerSortDescendingLettersIcon,

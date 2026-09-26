@@ -104,6 +104,7 @@ import { HugeiconsChevronsDownUpIcon } from './chevrons-down-up';
 import { HugeiconsChevronsLeftRightIcon } from './chevrons-left-right';
 import { HugeiconsChevronsRightLeftIcon } from './chevrons-right-left';
 import { HugeiconsChromeIcon } from './chrome';
+import { HugeiconsCigaretteIcon } from './cigarette';
 import { HugeiconsDownloadIcon } from './download';
 import { HugeiconsEyeIcon } from './eye';
 import { HugeiconsFilterIcon } from './filter';
@@ -659,6 +660,7 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['chevrons', 'right', 'left', 'chevrons-right-left'],
   },
   { name: 'chrome', icon: HugeiconsChromeIcon, keywords: ['chrome'] },
+  { name: 'cigarette', icon: HugeiconsCigaretteIcon, keywords: ['cigarette'] },
   {
     name: 'download',
     icon: HugeiconsDownloadIcon,
@@ -930,6 +932,7 @@ export {
   HugeiconsChevronsLeftRightIcon,
   HugeiconsChevronsRightLeftIcon,
   HugeiconsChromeIcon,
+  HugeiconsCigaretteIcon,
   HugeiconsDownloadIcon,
   HugeiconsEyeIcon,
   HugeiconsFilterIcon,
