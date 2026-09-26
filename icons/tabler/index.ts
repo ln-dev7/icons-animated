@@ -318,6 +318,7 @@ import { TablerStack2Icon } from './stack-2';
 import { TablerStarIcon } from './star';
 import { TablerStethoscopeIcon } from './stethoscope';
 import { TablerSunIcon } from './sun';
+import { TablerSunHighIcon } from './sun-high';
 import { TablerSunLowIcon } from './sun-low';
 import { TablerTextScan2Icon } from './text-scan-2';
 import { TablerThumbDownIcon } from './thumb-down';
@@ -1801,6 +1802,11 @@ const TABLER_ICON_LIST = [
   },
   { name: 'sun', icon: TablerSunIcon, keywords: ['sun'] },
   {
+    name: 'sun-high',
+    icon: TablerSunHighIcon,
+    keywords: ['sun', 'high', 'sun-medium', 'medium'],
+  },
+  {
     name: 'sun-low',
     icon: TablerSunLowIcon,
     keywords: ['sun', 'low', 'sun-dim', 'dim'],
@@ -2165,6 +2171,7 @@ export {
   TablerStarIcon,
   TablerStethoscopeIcon,
   TablerSunIcon,
+  TablerSunHighIcon,
   TablerSunLowIcon,
   TablerTextScan2Icon,
   TablerThumbDownIcon,
