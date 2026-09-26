@@ -5607,6 +5607,19 @@
       ]
     },
     {
+      "name": "hugeicons-trending-up",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-trending-up.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-unfold-more",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -9333,6 +9346,19 @@
       "files": [
         {
           "path": "phosphor-trend-down.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-trend-up",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-trend-up.tsx",
           "type": "registry:ui"
         }
       ]
@@ -13779,6 +13805,19 @@
       "files": [
         {
           "path": "tabler-trending-down.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-trending-up",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-trending-up.tsx",
           "type": "registry:ui"
         }
       ]

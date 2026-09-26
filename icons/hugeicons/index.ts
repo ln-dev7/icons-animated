@@ -429,6 +429,7 @@ import { HugeiconsTrainTrackIcon } from './train-track';
 import { HugeiconsTrashIcon } from './trash';
 import { HugeiconsTreeDeciduousIcon } from './tree-deciduous';
 import { HugeiconsTrendingDownIcon } from './trending-down';
+import { HugeiconsTrendingUpIcon } from './trending-up';
 import { HugeiconsUnfoldMoreIcon } from './unfold-more';
 import { HugeiconsUniversalAccessIcon } from './universal-access';
 import { HugeiconsUploadIcon } from './upload';
@@ -2320,6 +2321,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['trending', 'down', 'trending-down'],
   },
   {
+    name: 'trending-up',
+    icon: HugeiconsTrendingUpIcon,
+    keywords: ['trending', 'up', 'trending-up'],
+  },
+  {
     name: 'unfold-more',
     icon: HugeiconsUnfoldMoreIcon,
     keywords: ['unfold', 'more', 'chevrons-up-down', 'chevrons', 'up', 'down'],
@@ -2779,6 +2785,7 @@ export {
   HugeiconsTrashIcon,
   HugeiconsTreeDeciduousIcon,
   HugeiconsTrendingDownIcon,
+  HugeiconsTrendingUpIcon,
   HugeiconsUnfoldMoreIcon,
   HugeiconsUniversalAccessIcon,
   HugeiconsUploadIcon,
