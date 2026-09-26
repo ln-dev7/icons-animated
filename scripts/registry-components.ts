@@ -2014,6 +2014,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-pine-tree',
+    'path': path.join(__dirname, '../icons/hugeicons/pine-tree.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-plane-landing',
     'path': path.join(__dirname, '../icons/hugeicons/plane-landing.tsx'),
     'registryDependencies': [],
@@ -4354,6 +4360,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'phosphor-tree-evergreen',
+    'path': path.join(__dirname, '../icons/phosphor/tree-evergreen.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'phosphor-upload',
     'path': path.join(__dirname, '../icons/phosphor/upload.tsx'),
     'registryDependencies': [],
@@ -4941,6 +4953,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-chevron-up',
     'path': path.join(__dirname, '../icons/tabler/chevron-up.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-christmas-tree',
+    'path': path.join(__dirname, '../icons/tabler/christmas-tree.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

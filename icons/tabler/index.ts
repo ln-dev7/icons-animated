@@ -92,6 +92,7 @@ import { TablerChevronLeftIcon } from './chevron-left';
 import { TablerChevronLeftPipeIcon } from './chevron-left-pipe';
 import { TablerChevronRightIcon } from './chevron-right';
 import { TablerChevronUpIcon } from './chevron-up';
+import { TablerChristmasTreeIcon } from './christmas-tree';
 import { TablerCircleCheckIcon } from './circle-check';
 import { TablerCircleChevronDownIcon } from './circle-chevron-down';
 import { TablerCircleChevronLeftIcon } from './circle-chevron-left';
@@ -789,6 +790,11 @@ const TABLER_ICON_LIST = [
       'expand',
       'chevron-up',
     ],
+  },
+  {
+    name: 'christmas-tree',
+    icon: TablerChristmasTreeIcon,
+    keywords: ['christmas', 'tree', 'tree-pine', 'pine'],
   },
   {
     name: 'circle-check',
@@ -1997,6 +2003,7 @@ export {
   TablerChevronLeftPipeIcon,
   TablerChevronRightIcon,
   TablerChevronUpIcon,
+  TablerChristmasTreeIcon,
   TablerCircleCheckIcon,
   TablerCircleChevronDownIcon,
   TablerCircleChevronLeftIcon,

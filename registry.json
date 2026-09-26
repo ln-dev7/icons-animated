@@ -4281,6 +4281,19 @@
       ]
     },
     {
+      "name": "hugeicons-pine-tree",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-pine-tree.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-plane-landing",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -9286,6 +9299,19 @@
       ]
     },
     {
+      "name": "phosphor-tree-evergreen",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-tree-evergreen.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-upload",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -10555,6 +10581,19 @@
       "files": [
         {
           "path": "tabler-chevron-up.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-christmas-tree",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-christmas-tree.tsx",
           "type": "registry:ui"
         }
       ]
