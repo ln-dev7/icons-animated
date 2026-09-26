@@ -187,6 +187,7 @@ import { TablerLanguageIcon } from './language';
 import { TablerLayoutAlignCenterIcon } from './layout-align-center';
 import { TablerLayoutAlignMiddleIcon } from './layout-align-middle';
 import { TablerLayoutGridIcon } from './layout-grid';
+import { TablerLayoutSidebarLeftCollapseIcon } from './layout-sidebar-left-collapse';
 import { TablerLeafIcon } from './leaf';
 import { TablerLinkIcon } from './link';
 import { TablerLoaderIcon } from './loader';
@@ -1096,6 +1097,19 @@ const TABLER_ICON_LIST = [
     icon: TablerLayoutGridIcon,
     keywords: ['layout', 'grid', 'layout-grid'],
   },
+  {
+    name: 'layout-sidebar-left-collapse',
+    icon: TablerLayoutSidebarLeftCollapseIcon,
+    keywords: [
+      'layout',
+      'sidebar',
+      'left',
+      'collapse',
+      'panel-left-close',
+      'panel',
+      'close',
+    ],
+  },
   { name: 'leaf', icon: TablerLeafIcon, keywords: ['leaf'] },
   { name: 'link', icon: TablerLinkIcon, keywords: ['link', 'link-2', '2'] },
   { name: 'loader', icon: TablerLoaderIcon, keywords: ['loader'] },
@@ -1645,6 +1659,7 @@ export {
   TablerLayoutAlignCenterIcon,
   TablerLayoutAlignMiddleIcon,
   TablerLayoutGridIcon,
+  TablerLayoutSidebarLeftCollapseIcon,
   TablerLeafIcon,
   TablerLinkIcon,
   TablerLoaderIcon,

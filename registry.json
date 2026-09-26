@@ -4073,6 +4073,19 @@
       ]
     },
     {
+      "name": "hugeicons-panel-left-open",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-panel-left-open.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-pencil",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -9775,6 +9788,19 @@
       "files": [
         {
           "path": "tabler-layout-grid.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-layout-sidebar-left-collapse",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-layout-sidebar-left-collapse.tsx",
           "type": "registry:ui"
         }
       ]
