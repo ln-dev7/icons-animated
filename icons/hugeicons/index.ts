@@ -280,6 +280,7 @@ import { HugeiconsMailboxIcon } from './mailbox';
 import { HugeiconsMapPinCheckIcon } from './map-pin-check';
 import { HugeiconsMapPinCheckInsideIcon } from './map-pin-check-inside';
 import { HugeiconsMapPinHouseIcon } from './map-pin-house';
+import { HugeiconsMapPinMinusIcon } from './map-pin-minus';
 import { HugeiconsMenuIcon } from './menu';
 import { HugeiconsMousePointerClickIcon } from './mouse-pointer-click';
 import { HugeiconsPencilIcon } from './pencil';
@@ -1555,6 +1556,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['map', 'pin', 'house', 'map-pin-house'],
   },
   {
+    name: 'map-pin-minus',
+    icon: HugeiconsMapPinMinusIcon,
+    keywords: ['map', 'pin', 'minus', 'map-pin-minus'],
+  },
+  {
     name: 'menu',
     icon: HugeiconsMenuIcon,
     keywords: ['menu', 'hamburger', 'list', 'navigation', 'lines', 'menu-01'],
@@ -1974,6 +1980,7 @@ export {
   HugeiconsMapPinCheckIcon,
   HugeiconsMapPinCheckInsideIcon,
   HugeiconsMapPinHouseIcon,
+  HugeiconsMapPinMinusIcon,
   HugeiconsMenuIcon,
   HugeiconsMousePointerClickIcon,
   HugeiconsPencilIcon,
