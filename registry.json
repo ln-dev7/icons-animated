@@ -5893,6 +5893,19 @@
       ]
     },
     {
+      "name": "hugeicons-volume",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-volume.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-x",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -9203,6 +9216,19 @@
       "files": [
         {
           "path": "phosphor-sparkle.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-speaker-x",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-speaker-x.tsx",
           "type": "registry:ui"
         }
       ]
@@ -14390,6 +14416,19 @@
       "files": [
         {
           "path": "tabler-vaccine.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-volume",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-volume.tsx",
           "type": "registry:ui"
         }
       ]
