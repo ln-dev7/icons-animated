@@ -260,6 +260,7 @@ import { TablerReceiptPoundIcon } from './receipt-pound';
 import { TablerReceiptRupeeIcon } from './receipt-rupee';
 import { TablerReceiptYenIcon } from './receipt-yen';
 import { TablerRefreshIcon } from './refresh';
+import { TablerRefreshDotIcon } from './refresh-dot';
 import { TablerRobotIcon } from './robot';
 import { TablerRosetteDiscountIcon } from './rosette-discount';
 import { TablerSaveIcon } from './save';
@@ -1467,6 +1468,11 @@ const TABLER_ICON_LIST = [
       'ccw',
     ],
   },
+  {
+    name: 'refresh-dot',
+    icon: TablerRefreshDotIcon,
+    keywords: ['refresh', 'dot', 'refresh-ccw-dot', 'ccw'],
+  },
   { name: 'robot', icon: TablerRobotIcon, keywords: ['robot', 'bot'] },
   {
     name: 'rosette-discount',
@@ -1886,6 +1892,7 @@ export {
   TablerReceiptRupeeIcon,
   TablerReceiptYenIcon,
   TablerRefreshIcon,
+  TablerRefreshDotIcon,
   TablerRobotIcon,
   TablerRosetteDiscountIcon,
   TablerSaveIcon,

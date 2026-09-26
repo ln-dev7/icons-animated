@@ -2170,6 +2170,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-refresh-ccw-dot',
+    'path': path.join(__dirname, '../icons/hugeicons/refresh-ccw-dot.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-save',
     'path': path.join(__dirname, '../icons/hugeicons/save.tsx'),
     'registryDependencies': [],
@@ -5358,6 +5364,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-refresh',
     'path': path.join(__dirname, '../icons/tabler/refresh.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-refresh-dot',
+    'path': path.join(__dirname, '../icons/tabler/refresh-dot.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

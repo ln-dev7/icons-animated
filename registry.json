@@ -4606,6 +4606,19 @@
       ]
     },
     {
+      "name": "hugeicons-refresh-ccw-dot",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-refresh-ccw-dot.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-save",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -11452,6 +11465,19 @@
       "files": [
         {
           "path": "tabler-refresh.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-refresh-dot",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-refresh-dot.tsx",
           "type": "registry:ui"
         }
       ]
