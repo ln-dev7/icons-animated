@@ -386,6 +386,7 @@ import { HugeiconsSlidersHorizontalIcon } from './sliders-horizontal';
 import { HugeiconsSmartphoneChargingIcon } from './smartphone-charging';
 import { HugeiconsSmartphoneNfcIcon } from './smartphone-nfc';
 import { HugeiconsSmileIcon } from './smile';
+import { HugeiconsSmilePlusIcon } from './smile-plus';
 import { HugeiconsStarIcon } from './star';
 import { HugeiconsSunCloud02Icon } from './sun-cloud-02';
 import { HugeiconsTextAlignCenterIcon } from './text-align-center';
@@ -2101,6 +2102,11 @@ const HUGEICONS_ICON_LIST = [
   },
   { name: 'smile', icon: HugeiconsSmileIcon, keywords: ['smile'] },
   {
+    name: 'smile-plus',
+    icon: HugeiconsSmilePlusIcon,
+    keywords: ['smile', 'plus', 'smile-plus'],
+  },
+  {
     name: 'star',
     icon: HugeiconsStarIcon,
     keywords: ['star', 'favorite', 'bookmark', 'rate', 'rating'],
@@ -2552,6 +2558,7 @@ export {
   HugeiconsSmartphoneChargingIcon,
   HugeiconsSmartphoneNfcIcon,
   HugeiconsSmileIcon,
+  HugeiconsSmilePlusIcon,
   HugeiconsStarIcon,
   HugeiconsSunCloud02Icon,
   HugeiconsTextAlignCenterIcon,

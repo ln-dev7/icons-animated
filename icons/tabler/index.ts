@@ -237,6 +237,7 @@ import { TablerMoodAngryIcon } from './mood-angry';
 import { TablerMoodAnnoyedIcon } from './mood-annoyed';
 import { TablerMoodHappyIcon } from './mood-happy';
 import { TablerMoodNeutralIcon } from './mood-neutral';
+import { TablerMoodPlusIcon } from './mood-plus';
 import { TablerMoodSadIcon } from './mood-sad';
 import { TablerMoodSmileIcon } from './mood-smile';
 import { TablerMoonIcon } from './moon';
@@ -1401,6 +1402,11 @@ const TABLER_ICON_LIST = [
     keywords: ['mood', 'neutral', 'meh'],
   },
   {
+    name: 'mood-plus',
+    icon: TablerMoodPlusIcon,
+    keywords: ['mood', 'plus', 'smile-plus', 'smile'],
+  },
+  {
     name: 'mood-sad',
     icon: TablerMoodSadIcon,
     keywords: ['mood', 'sad', 'frown'],
@@ -1973,6 +1979,7 @@ export {
   TablerMoodAnnoyedIcon,
   TablerMoodHappyIcon,
   TablerMoodNeutralIcon,
+  TablerMoodPlusIcon,
   TablerMoodSadIcon,
   TablerMoodSmileIcon,
   TablerMoonIcon,
