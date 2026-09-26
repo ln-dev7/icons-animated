@@ -1239,6 +1239,19 @@
       ]
     },
     {
+      "name": "hugeicons-chess-knight",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-chess-knight.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-chevron-down",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -3769,6 +3782,19 @@
       "files": [
         {
           "path": "tabler-chess-king.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-chess-knight",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-chess-knight.tsx",
           "type": "registry:ui"
         }
       ]
