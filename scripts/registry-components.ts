@@ -2290,6 +2290,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-server-crash',
+    'path': path.join(__dirname, '../icons/hugeicons/server-crash.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-settings',
     'path': path.join(__dirname, '../icons/hugeicons/settings.tsx'),
     'registryDependencies': [],

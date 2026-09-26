@@ -4866,6 +4866,19 @@
       ]
     },
     {
+      "name": "hugeicons-server-crash",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-server-crash.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-settings",
       "type": "registry:ui",
       "registryDependencies": [],
