@@ -3943,6 +3943,19 @@
       ]
     },
     {
+      "name": "hugeicons-message-square-x",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-message-square-x.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-mouse-pointer-click",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -9905,6 +9918,19 @@
       "files": [
         {
           "path": "tabler-message-plus.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-message-x",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-message-x.tsx",
           "type": "registry:ui"
         }
       ]
