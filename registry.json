@@ -5074,6 +5074,19 @@
       ]
     },
     {
+      "name": "hugeicons-soup",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-soup.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-star",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -6018,6 +6031,19 @@
       "files": [
         {
           "path": "phosphor-bookmark.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-bowl-steam",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-bowl-steam.tsx",
           "type": "registry:ui"
         }
       ]
@@ -12544,6 +12570,19 @@
       "files": [
         {
           "path": "tabler-sort-descending-numbers.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-soup",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-soup.tsx",
           "type": "registry:ui"
         }
       ]

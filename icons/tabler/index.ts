@@ -298,6 +298,7 @@ import { TablerSortAscendingLettersIcon } from './sort-ascending-letters';
 import { TablerSortAscendingNumbersIcon } from './sort-ascending-numbers';
 import { TablerSortDescendingLettersIcon } from './sort-descending-letters';
 import { TablerSortDescendingNumbersIcon } from './sort-descending-numbers';
+import { TablerSoupIcon } from './soup';
 import { TablerSpyIcon } from './spy';
 import { TablerStack2Icon } from './stack-2';
 import { TablerStarIcon } from './star';
@@ -1687,6 +1688,7 @@ const TABLER_ICON_LIST = [
       '0',
     ],
   },
+  { name: 'soup', icon: TablerSoupIcon, keywords: ['soup'] },
   {
     name: 'spy',
     icon: TablerSpyIcon,
@@ -2042,6 +2044,7 @@ export {
   TablerSortAscendingNumbersIcon,
   TablerSortDescendingLettersIcon,
   TablerSortDescendingNumbersIcon,
+  TablerSoupIcon,
   TablerSpyIcon,
   TablerStack2Icon,
   TablerStarIcon,
