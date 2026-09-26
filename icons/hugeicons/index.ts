@@ -212,6 +212,7 @@ import { HugeiconsGavelIcon } from './gavel';
 import { HugeiconsGeorgianLariIcon } from './georgian-lari';
 import { HugeiconsGitBranchIcon } from './git-branch';
 import { HugeiconsGitCommitHorizontalIcon } from './git-commit-horizontal';
+import { HugeiconsGitCommitVerticalIcon } from './git-commit-vertical';
 import { HugeiconsHeartIcon } from './heart';
 import { HugeiconsHomeIcon } from './home';
 import { HugeiconsLockIcon } from './lock';
@@ -1216,6 +1217,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['git', 'commit', 'horizontal', 'git-commit-horizontal'],
   },
   {
+    name: 'git-commit-vertical',
+    icon: HugeiconsGitCommitVerticalIcon,
+    keywords: ['git', 'commit', 'vertical', 'git-commit-vertical'],
+  },
+  {
     name: 'heart',
     icon: HugeiconsHeartIcon,
     keywords: ['heart', 'love', 'like', 'favorite', 'health'],
@@ -1594,6 +1600,7 @@ export {
   HugeiconsGeorgianLariIcon,
   HugeiconsGitBranchIcon,
   HugeiconsGitCommitHorizontalIcon,
+  HugeiconsGitCommitVerticalIcon,
   HugeiconsHeartIcon,
   HugeiconsHomeIcon,
   HugeiconsLockIcon,

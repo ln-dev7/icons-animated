@@ -1312,6 +1312,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-git-commit-vertical',
+    'path': path.join(__dirname, '../icons/hugeicons/git-commit-vertical.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-heart',
     'path': path.join(__dirname, '../icons/hugeicons/heart.tsx'),
     'registryDependencies': [],
@@ -3426,6 +3432,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-git-branch',
     'path': path.join(__dirname, '../icons/tabler/git-branch.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-git-commit',
+    'path': path.join(__dirname, '../icons/tabler/git-commit.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

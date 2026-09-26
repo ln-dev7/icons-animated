@@ -2786,6 +2786,19 @@
       ]
     },
     {
+      "name": "hugeicons-git-commit-vertical",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-git-commit-vertical.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-heart",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -7344,6 +7357,19 @@
       "files": [
         {
           "path": "tabler-git-branch.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-git-commit",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-git-commit.tsx",
           "type": "registry:ui"
         }
       ]
