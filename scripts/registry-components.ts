@@ -2629,6 +2629,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-trending-down',
+    'path': path.join(__dirname, '../icons/hugeicons/trending-down.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-unfold-more',
     'path': path.join(__dirname, '../icons/hugeicons/unfold-more.tsx'),
     'registryDependencies': [],
@@ -4362,6 +4368,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-tree-evergreen',
     'path': path.join(__dirname, '../icons/phosphor/tree-evergreen.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-trend-down',
+    'path': path.join(__dirname, '../icons/phosphor/trend-down.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -6420,6 +6432,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-tree',
     'path': path.join(__dirname, '../icons/tabler/tree.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-trending-down',
+    'path': path.join(__dirname, '../icons/tabler/trending-down.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

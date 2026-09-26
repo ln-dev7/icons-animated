@@ -279,6 +279,7 @@ import { PhosphorTranslateIcon } from './translate';
 import { PhosphorTrashIcon } from './trash';
 import { PhosphorTreeIcon } from './tree';
 import { PhosphorTreeEvergreenIcon } from './tree-evergreen';
+import { PhosphorTrendDownIcon } from './trend-down';
 import { PhosphorUploadIcon } from './upload';
 import { PhosphorUserIcon } from './user';
 import { PhosphorWaveformIcon } from './waveform';
@@ -1638,6 +1639,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['tree', 'evergreen', 'tree-pine', 'pine'],
   },
   {
+    name: 'trend-down',
+    icon: PhosphorTrendDownIcon,
+    keywords: ['trend', 'down', 'trending-down', 'trending'],
+  },
+  {
     name: 'upload',
     icon: PhosphorUploadIcon,
     keywords: ['upload', 'send', 'arrow', 'put', 'import'],
@@ -1942,6 +1948,7 @@ export {
   PhosphorTrashIcon,
   PhosphorTreeIcon,
   PhosphorTreeEvergreenIcon,
+  PhosphorTrendDownIcon,
   PhosphorUploadIcon,
   PhosphorUserIcon,
   PhosphorWaveformIcon,
