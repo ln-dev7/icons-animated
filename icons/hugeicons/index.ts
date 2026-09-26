@@ -121,6 +121,7 @@ import { HugeiconsClock01Icon } from './clock-01';
 import { HugeiconsCloudBackupIcon } from './cloud-backup';
 import { HugeiconsCloudCogIcon } from './cloud-cog';
 import { HugeiconsCloudDownloadIcon } from './cloud-download';
+import { HugeiconsCloudLightningIcon } from './cloud-lightning';
 import { HugeiconsDownloadIcon } from './download';
 import { HugeiconsEyeIcon } from './eye';
 import { HugeiconsFilterIcon } from './filter';
@@ -754,6 +755,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['cloud', 'download', 'cloud-download'],
   },
   {
+    name: 'cloud-lightning',
+    icon: HugeiconsCloudLightningIcon,
+    keywords: ['cloud', 'lightning', 'cloud-lightning'],
+  },
+  {
     name: 'download',
     icon: HugeiconsDownloadIcon,
     keywords: ['download', 'save', 'arrow', 'get', 'export', 'download-01'],
@@ -1041,6 +1047,7 @@ export {
   HugeiconsCloudBackupIcon,
   HugeiconsCloudCogIcon,
   HugeiconsCloudDownloadIcon,
+  HugeiconsCloudLightningIcon,
   HugeiconsDownloadIcon,
   HugeiconsEyeIcon,
   HugeiconsFilterIcon,

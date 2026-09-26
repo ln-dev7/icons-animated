@@ -65,6 +65,7 @@ import { PhosphorCigaretteSlashIcon } from './cigarette-slash';
 import { PhosphorCircleDashedIcon } from './circle-dashed';
 import { PhosphorClockIcon } from './clock';
 import { PhosphorCloudArrowDownIcon } from './cloud-arrow-down';
+import { PhosphorCloudLightningIcon } from './cloud-lightning';
 import { PhosphorCubeIcon } from './cube';
 import { PhosphorCurrencyCircleDollarIcon } from './currency-circle-dollar';
 import { PhosphorDownloadIcon } from './download';
@@ -476,6 +477,11 @@ const PHOSPHOR_ICON_LIST = [
     icon: PhosphorCloudArrowDownIcon,
     keywords: ['cloud', 'arrow', 'down', 'cloud-download', 'download'],
   },
+  {
+    name: 'cloud-lightning',
+    icon: PhosphorCloudLightningIcon,
+    keywords: ['cloud', 'lightning', 'cloud-lightning'],
+  },
   { name: 'cube', icon: PhosphorCubeIcon, keywords: ['cube', 'box'] },
   {
     name: 'currency-circle-dollar',
@@ -794,6 +800,7 @@ export {
   PhosphorCircleDashedIcon,
   PhosphorClockIcon,
   PhosphorCloudArrowDownIcon,
+  PhosphorCloudLightningIcon,
   PhosphorCubeIcon,
   PhosphorCurrencyCircleDollarIcon,
   PhosphorDownloadIcon,
