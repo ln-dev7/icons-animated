@@ -225,6 +225,7 @@ import { HugeiconsGithubIcon } from './github';
 import { HugeiconsGitlabIcon } from './gitlab';
 import { HugeiconsGraduationCapIcon } from './graduation-cap';
 import { HugeiconsGripIcon } from './grip';
+import { HugeiconsGripHorizontalIcon } from './grip-horizontal';
 import { HugeiconsHeartIcon } from './heart';
 import { HugeiconsHomeIcon } from './home';
 import { HugeiconsLockIcon } from './lock';
@@ -1282,6 +1283,11 @@ const HUGEICONS_ICON_LIST = [
   },
   { name: 'grip', icon: HugeiconsGripIcon, keywords: ['grip'] },
   {
+    name: 'grip-horizontal',
+    icon: HugeiconsGripHorizontalIcon,
+    keywords: ['grip', 'horizontal', 'grip-horizontal'],
+  },
+  {
     name: 'heart',
     icon: HugeiconsHeartIcon,
     keywords: ['heart', 'love', 'like', 'favorite', 'health'],
@@ -1673,6 +1679,7 @@ export {
   HugeiconsGitlabIcon,
   HugeiconsGraduationCapIcon,
   HugeiconsGripIcon,
+  HugeiconsGripHorizontalIcon,
   HugeiconsHeartIcon,
   HugeiconsHomeIcon,
   HugeiconsLockIcon,

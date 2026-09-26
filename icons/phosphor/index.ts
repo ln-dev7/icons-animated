@@ -100,6 +100,7 @@ import { PhosphorCursorClickIcon } from './cursor-click';
 import { PhosphorDiscIcon } from './disc';
 import { PhosphorDiscordLogoIcon } from './discord-logo';
 import { PhosphorDotsNineIcon } from './dots-nine';
+import { PhosphorDotsSixIcon } from './dots-six';
 import { PhosphorDownloadIcon } from './download';
 import { PhosphorDribbbleLogoIcon } from './dribbble-logo';
 import { PhosphorDropIcon } from './drop';
@@ -718,6 +719,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['dots', 'nine', 'grip'],
   },
   {
+    name: 'dots-six',
+    icon: PhosphorDotsSixIcon,
+    keywords: ['dots', 'six', 'grip-horizontal', 'grip', 'horizontal'],
+  },
+  {
     name: 'download',
     icon: PhosphorDownloadIcon,
     keywords: ['download', 'save', 'arrow', 'get', 'export'],
@@ -1204,6 +1210,7 @@ export {
   PhosphorDiscIcon,
   PhosphorDiscordLogoIcon,
   PhosphorDotsNineIcon,
+  PhosphorDotsSixIcon,
   PhosphorDownloadIcon,
   PhosphorDribbbleLogoIcon,
   PhosphorDropIcon,

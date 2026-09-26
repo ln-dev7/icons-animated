@@ -2955,6 +2955,19 @@
       ]
     },
     {
+      "name": "hugeicons-grip-horizontal",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-grip-horizontal.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-heart",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -4640,6 +4653,19 @@
       "files": [
         {
           "path": "phosphor-dots-nine.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-dots-six",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-dots-six.tsx",
           "type": "registry:ui"
         }
       ]
@@ -7734,6 +7760,19 @@
       "files": [
         {
           "path": "tabler-grid-dots.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-grip-horizontal",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-grip-horizontal.tsx",
           "type": "registry:ui"
         }
       ]

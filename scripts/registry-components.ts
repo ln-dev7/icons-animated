@@ -1396,6 +1396,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-grip-horizontal',
+    'path': path.join(__dirname, '../icons/hugeicons/grip-horizontal.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-heart',
     'path': path.join(__dirname, '../icons/hugeicons/heart.tsx'),
     'registryDependencies': [],
@@ -2184,6 +2190,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-dots-nine',
     'path': path.join(__dirname, '../icons/phosphor/dots-nine.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-dots-six',
+    'path': path.join(__dirname, '../icons/phosphor/dots-six.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -3612,6 +3624,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-grid-dots',
     'path': path.join(__dirname, '../icons/tabler/grid-dots.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-grip-horizontal',
+    'path': path.join(__dirname, '../icons/tabler/grip-horizontal.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
