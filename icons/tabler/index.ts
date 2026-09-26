@@ -73,6 +73,7 @@ import { TablerPencilIcon } from './pencil';
 import { TablerPlaneIcon } from './plane';
 import { TablerPlusIcon } from './plus';
 import { TablerRefreshIcon } from './refresh';
+import { TablerRobotIcon } from './robot';
 import { TablerRosetteDiscountIcon } from './rosette-discount';
 import { TablerSaveIcon } from './save';
 import { TablerSearchIcon } from './search';
@@ -456,6 +457,7 @@ const TABLER_ICON_LIST = [
       'ccw',
     ],
   },
+  { name: 'robot', icon: TablerRobotIcon, keywords: ['robot', 'bot'] },
   {
     name: 'rosette-discount',
     icon: TablerRosetteDiscountIcon,
@@ -641,6 +643,7 @@ export {
   TablerPlaneIcon,
   TablerPlusIcon,
   TablerRefreshIcon,
+  TablerRobotIcon,
   TablerRosetteDiscountIcon,
   TablerSaveIcon,
   TablerSearchIcon,

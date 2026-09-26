@@ -424,6 +424,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-bot',
+    'path': path.join(__dirname, '../icons/hugeicons/bot.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-calendar',
     'path': path.join(__dirname, '../icons/hugeicons/calendar.tsx'),
     'registryDependencies': [],
@@ -991,6 +997,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'phosphor-robot',
+    'path': path.join(__dirname, '../icons/phosphor/robot.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'phosphor-save',
     'path': path.join(__dirname, '../icons/phosphor/save.tsx'),
     'registryDependencies': [],
@@ -1551,6 +1563,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-refresh',
     'path': path.join(__dirname, '../icons/tabler/refresh.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-robot',
+    'path': path.join(__dirname, '../icons/tabler/robot.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

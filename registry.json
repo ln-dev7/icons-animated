@@ -901,6 +901,19 @@
       ]
     },
     {
+      "name": "hugeicons-bot",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-bot.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-calendar",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2123,6 +2136,19 @@
       ]
     },
     {
+      "name": "phosphor-robot",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-robot.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-save",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -3340,6 +3366,19 @@
       "files": [
         {
           "path": "tabler-refresh.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-robot",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-robot.tsx",
           "type": "registry:ui"
         }
       ]

@@ -61,6 +61,7 @@ import { PhosphorPlusIcon } from './plus';
 import { PhosphorProhibitIcon } from './prohibit';
 import { PhosphorPulseIcon } from './pulse';
 import { PhosphorRefreshIcon } from './refresh';
+import { PhosphorRobotIcon } from './robot';
 import { PhosphorSaveIcon } from './save';
 import { PhosphorSealPercentIcon } from './seal-percent';
 import { PhosphorSealWarningIcon } from './seal-warning';
@@ -434,6 +435,7 @@ const PHOSPHOR_ICON_LIST = [
       'cw',
     ],
   },
+  { name: 'robot', icon: PhosphorRobotIcon, keywords: ['robot', 'bot'] },
   {
     name: 'save',
     icon: PhosphorSaveIcon,
@@ -621,6 +623,7 @@ export {
   PhosphorProhibitIcon,
   PhosphorPulseIcon,
   PhosphorRefreshIcon,
+  PhosphorRobotIcon,
   PhosphorSaveIcon,
   PhosphorSealPercentIcon,
   PhosphorSealWarningIcon,
