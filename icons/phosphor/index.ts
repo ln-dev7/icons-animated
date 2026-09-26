@@ -208,6 +208,7 @@ import { PhosphorPulseIcon } from './pulse';
 import { PhosphorQuestionIcon } from './question';
 import { PhosphorRabbitIcon } from './rabbit';
 import { PhosphorRadioIcon } from './radio';
+import { PhosphorReceiptIcon } from './receipt';
 import { PhosphorRefreshIcon } from './refresh';
 import { PhosphorRobotIcon } from './robot';
 import { PhosphorSaveIcon } from './save';
@@ -1254,6 +1255,11 @@ const PHOSPHOR_ICON_LIST = [
   { name: 'rabbit', icon: PhosphorRabbitIcon, keywords: ['rabbit'] },
   { name: 'radio', icon: PhosphorRadioIcon, keywords: ['radio'] },
   {
+    name: 'receipt',
+    icon: PhosphorReceiptIcon,
+    keywords: ['receipt', 'receipt-text', 'text'],
+  },
+  {
     name: 'refresh',
     icon: PhosphorRefreshIcon,
     keywords: [
@@ -1668,6 +1674,7 @@ export {
   PhosphorQuestionIcon,
   PhosphorRabbitIcon,
   PhosphorRadioIcon,
+  PhosphorReceiptIcon,
   PhosphorRefreshIcon,
   PhosphorRobotIcon,
   PhosphorSaveIcon,

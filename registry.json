@@ -4424,6 +4424,19 @@
       ]
     },
     {
+      "name": "hugeicons-receipt",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-receipt.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-refresh",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -7383,6 +7396,19 @@
       "files": [
         {
           "path": "phosphor-radio.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-receipt",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-receipt.tsx",
           "type": "registry:ui"
         }
       ]
@@ -11153,6 +11179,19 @@
       "files": [
         {
           "path": "tabler-radio.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-receipt",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-receipt.tsx",
           "type": "registry:ui"
         }
       ]
