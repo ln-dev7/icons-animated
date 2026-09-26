@@ -307,6 +307,7 @@ import { HugeiconsMic01Icon } from './mic-01';
 import { HugeiconsMicOff01Icon } from './mic-off-01';
 import { HugeiconsMonitorCheckIcon } from './monitor-check';
 import { HugeiconsMonitorCogIcon } from './monitor-cog';
+import { HugeiconsMoon02Icon } from './moon-02';
 import { HugeiconsMousePointerClickIcon } from './mouse-pointer-click';
 import { HugeiconsPencilIcon } from './pencil';
 import { HugeiconsPieChartIcon } from './pie-chart';
@@ -1707,6 +1708,7 @@ const HUGEICONS_ICON_LIST = [
     icon: HugeiconsMonitorCogIcon,
     keywords: ['monitor', 'cog', 'monitor-cog'],
   },
+  { name: 'moon-02', icon: HugeiconsMoon02Icon, keywords: ['moon', '02'] },
   {
     name: 'mouse-pointer-click',
     icon: HugeiconsMousePointerClickIcon,
@@ -2149,6 +2151,7 @@ export {
   HugeiconsMicOff01Icon,
   HugeiconsMonitorCheckIcon,
   HugeiconsMonitorCogIcon,
+  HugeiconsMoon02Icon,
   HugeiconsMousePointerClickIcon,
   HugeiconsPencilIcon,
   HugeiconsPieChartIcon,

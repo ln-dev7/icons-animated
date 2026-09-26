@@ -4021,6 +4021,19 @@
       ]
     },
     {
+      "name": "hugeicons-moon-02",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-moon-02.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-mouse-pointer-click",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -6668,6 +6681,19 @@
       "files": [
         {
           "path": "phosphor-microphone-slash.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-moon",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-moon.tsx",
           "type": "registry:ui"
         }
       ]
@@ -10165,6 +10191,19 @@
       "files": [
         {
           "path": "tabler-mood-sad.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-moon",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-moon.tsx",
           "type": "registry:ui"
         }
       ]
