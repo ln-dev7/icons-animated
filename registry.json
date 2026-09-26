@@ -4359,6 +4359,19 @@
       ]
     },
     {
+      "name": "hugeicons-projector",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-projector.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-pulse-01",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -9463,6 +9476,19 @@
       "files": [
         {
           "path": "tabler-device-desktop-cog.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-device-projector",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-device-projector.tsx",
           "type": "registry:ui"
         }
       ]

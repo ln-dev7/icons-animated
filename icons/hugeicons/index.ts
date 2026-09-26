@@ -333,6 +333,7 @@ import { HugeiconsPlayIcon } from './play';
 import { HugeiconsPlugZapIcon } from './plug-zap';
 import { HugeiconsPlusIcon } from './plus';
 import { HugeiconsPoundSterlingIcon } from './pound-sterling';
+import { HugeiconsProjectorIcon } from './projector';
 import { HugeiconsPulse01Icon } from './pulse-01';
 import { HugeiconsRefreshIcon } from './refresh';
 import { HugeiconsSaveIcon } from './save';
@@ -1831,6 +1832,7 @@ const HUGEICONS_ICON_LIST = [
     icon: HugeiconsPoundSterlingIcon,
     keywords: ['pound', 'sterling', 'pound-sterling'],
   },
+  { name: 'projector', icon: HugeiconsProjectorIcon, keywords: ['projector'] },
   {
     name: 'pulse-01',
     icon: HugeiconsPulse01Icon,
@@ -2279,6 +2281,7 @@ export {
   HugeiconsPlugZapIcon,
   HugeiconsPlusIcon,
   HugeiconsPoundSterlingIcon,
+  HugeiconsProjectorIcon,
   HugeiconsPulse01Icon,
   HugeiconsRefreshIcon,
   HugeiconsSaveIcon,

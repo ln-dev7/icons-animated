@@ -2050,6 +2050,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-projector',
+    'path': path.join(__dirname, '../icons/hugeicons/projector.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-pulse-01',
     'path': path.join(__dirname, '../icons/hugeicons/pulse-01.tsx'),
     'registryDependencies': [],
@@ -4419,6 +4425,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-device-desktop-cog',
     'path': path.join(__dirname, '../icons/tabler/device-desktop-cog.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-device-projector',
+    'path': path.join(__dirname, '../icons/tabler/device-projector.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
