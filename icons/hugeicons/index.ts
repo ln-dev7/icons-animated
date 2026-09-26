@@ -363,6 +363,7 @@ import { HugeiconsRotateCwIcon } from './rotate-cw';
 import { HugeiconsRoute01Icon } from './route-01';
 import { HugeiconsRouterIcon } from './router';
 import { HugeiconsRussianRubleIcon } from './russian-ruble';
+import { HugeiconsSatelliteDishIcon } from './satellite-dish';
 import { HugeiconsSaveIcon } from './save';
 import { HugeiconsSearchIcon } from './search';
 import { HugeiconsSettingsIcon } from './settings';
@@ -1978,6 +1979,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['russian', 'ruble', 'russian-ruble'],
   },
   {
+    name: 'satellite-dish',
+    icon: HugeiconsSatelliteDishIcon,
+    keywords: ['satellite', 'dish', 'satellite-dish'],
+  },
+  {
     name: 'save',
     icon: HugeiconsSaveIcon,
     keywords: ['save', 'store', 'disk', 'floppy', 'preserve'],
@@ -2445,6 +2451,7 @@ export {
   HugeiconsRoute01Icon,
   HugeiconsRouterIcon,
   HugeiconsRussianRubleIcon,
+  HugeiconsSatelliteDishIcon,
   HugeiconsSaveIcon,
   HugeiconsSearchIcon,
   HugeiconsSettingsIcon,
