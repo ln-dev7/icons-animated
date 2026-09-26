@@ -122,6 +122,7 @@ import { TablerCupIcon } from './cup';
 import { TablerCurrencyDollarIcon } from './currency-dollar';
 import { TablerCurrencyEuroIcon } from './currency-euro';
 import { TablerCurrencyLariIcon } from './currency-lari';
+import { TablerCurrencyPesoIcon } from './currency-peso';
 import { TablerCurrencyRupeeIcon } from './currency-rupee';
 import { TablerCurrencyYenIcon } from './currency-yen';
 import { TablerDashboardIcon } from './dashboard';
@@ -835,6 +836,11 @@ const TABLER_ICON_LIST = [
     name: 'currency-lari',
     icon: TablerCurrencyLariIcon,
     keywords: ['currency', 'lari', 'georgian-lari', 'georgian'],
+  },
+  {
+    name: 'currency-peso',
+    icon: TablerCurrencyPesoIcon,
+    keywords: ['currency', 'peso', 'philippine-peso', 'philippine'],
   },
   {
     name: 'currency-rupee',
@@ -1634,6 +1640,7 @@ export {
   TablerCurrencyDollarIcon,
   TablerCurrencyEuroIcon,
   TablerCurrencyLariIcon,
+  TablerCurrencyPesoIcon,
   TablerCurrencyRupeeIcon,
   TablerCurrencyYenIcon,
   TablerDashboardIcon,

@@ -318,6 +318,7 @@ import { HugeiconsPartyPopperIcon } from './party-popper';
 import { HugeiconsPauseIcon } from './pause';
 import { HugeiconsPenTool03Icon } from './pen-tool-03';
 import { HugeiconsPencilIcon } from './pencil';
+import { HugeiconsPhilippinePesoIcon } from './philippine-peso';
 import { HugeiconsPieChartIcon } from './pie-chart';
 import { HugeiconsPlusIcon } from './plus';
 import { HugeiconsPulse01Icon } from './pulse-01';
@@ -1756,6 +1757,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['pencil', 'edit', 'write', 'pen', 'modify'],
   },
   {
+    name: 'philippine-peso',
+    icon: HugeiconsPhilippinePesoIcon,
+    keywords: ['philippine', 'peso', 'philippine-peso'],
+  },
+  {
     name: 'pie-chart',
     icon: HugeiconsPieChartIcon,
     keywords: ['pie', 'chart', 'chart-pie'],
@@ -2198,6 +2204,7 @@ export {
   HugeiconsPauseIcon,
   HugeiconsPenTool03Icon,
   HugeiconsPencilIcon,
+  HugeiconsPhilippinePesoIcon,
   HugeiconsPieChartIcon,
   HugeiconsPlusIcon,
   HugeiconsPulse01Icon,

@@ -1960,6 +1960,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-philippine-peso',
+    'path': path.join(__dirname, '../icons/hugeicons/philippine-peso.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-pie-chart',
     'path': path.join(__dirname, '../icons/hugeicons/pie-chart.tsx'),
     'registryDependencies': [],
@@ -4227,6 +4233,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-currency-lari',
     'path': path.join(__dirname, '../icons/tabler/currency-lari.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-currency-peso',
+    'path': path.join(__dirname, '../icons/tabler/currency-peso.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
