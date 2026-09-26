@@ -940,6 +940,19 @@
       ]
     },
     {
+      "name": "hugeicons-boxes",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-boxes.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-calendar",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -3366,6 +3379,19 @@
       "files": [
         {
           "path": "tabler-mood-annoyed.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-packages",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-packages.tsx",
           "type": "registry:ui"
         }
       ]

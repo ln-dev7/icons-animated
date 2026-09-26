@@ -70,6 +70,7 @@ import { HugeiconsBookmarkXIcon } from './bookmark-x';
 import { HugeiconsBotIcon } from './bot';
 import { HugeiconsBotMessageSquareIcon } from './bot-message-square';
 import { HugeiconsBoxIcon } from './box';
+import { HugeiconsBoxesIcon } from './boxes';
 import { HugeiconsCalendarIcon } from './calendar';
 import { HugeiconsCheckIcon } from './check';
 import { HugeiconsChevronDownIcon } from './chevron-down';
@@ -428,6 +429,7 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['bot', 'message', 'square', 'bot-message-square'],
   },
   { name: 'box', icon: HugeiconsBoxIcon, keywords: ['box'] },
+  { name: 'boxes', icon: HugeiconsBoxesIcon, keywords: ['boxes'] },
   {
     name: 'calendar',
     icon: HugeiconsCalendarIcon,
@@ -712,6 +714,7 @@ export {
   HugeiconsBotIcon,
   HugeiconsBotMessageSquareIcon,
   HugeiconsBoxIcon,
+  HugeiconsBoxesIcon,
   HugeiconsCalendarIcon,
   HugeiconsCheckIcon,
   HugeiconsChevronDownIcon,
