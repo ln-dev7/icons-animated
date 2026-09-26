@@ -100,6 +100,7 @@ import { HugeiconsChevronFirstIcon } from './chevron-first';
 import { HugeiconsChevronLeftIcon } from './chevron-left';
 import { HugeiconsChevronRightIcon } from './chevron-right';
 import { HugeiconsChevronUpIcon } from './chevron-up';
+import { HugeiconsChevronsDownUpIcon } from './chevrons-down-up';
 import { HugeiconsDownloadIcon } from './download';
 import { HugeiconsEyeIcon } from './eye';
 import { HugeiconsFilterIcon } from './filter';
@@ -639,6 +640,11 @@ const HUGEICONS_ICON_LIST = [
     ],
   },
   {
+    name: 'chevrons-down-up',
+    icon: HugeiconsChevronsDownUpIcon,
+    keywords: ['chevrons', 'down', 'up', 'chevrons-down-up'],
+  },
+  {
     name: 'download',
     icon: HugeiconsDownloadIcon,
     keywords: ['download', 'save', 'arrow', 'get', 'export', 'download-01'],
@@ -900,6 +906,7 @@ export {
   HugeiconsChevronLeftIcon,
   HugeiconsChevronRightIcon,
   HugeiconsChevronUpIcon,
+  HugeiconsChevronsDownUpIcon,
   HugeiconsDownloadIcon,
   HugeiconsEyeIcon,
   HugeiconsFilterIcon,
