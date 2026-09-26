@@ -310,6 +310,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-battery-plus',
+    'path': path.join(__dirname, '../icons/hugeicons/battery-plus.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-bell',
     'path': path.join(__dirname, '../icons/hugeicons/bell.tsx'),
     'registryDependencies': [],
@@ -687,6 +693,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-battery-medium',
     'path': path.join(__dirname, '../icons/phosphor/battery-medium.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-battery-plus',
+    'path': path.join(__dirname, '../icons/phosphor/battery-plus.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
