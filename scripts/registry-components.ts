@@ -1066,6 +1066,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-file-text',
+    'path': path.join(__dirname, '../icons/hugeicons/file-text.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-filter',
     'path': path.join(__dirname, '../icons/hugeicons/filter.tsx'),
     'registryDependencies': [],
@@ -1908,6 +1914,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-figma-logo',
     'path': path.join(__dirname, '../icons/phosphor/figma-logo.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-file-text',
+    'path': path.join(__dirname, '../icons/phosphor/file-text.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -2952,6 +2964,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-file-stack',
     'path': path.join(__dirname, '../icons/tabler/file-stack.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-file-text',
+    'path': path.join(__dirname, '../icons/tabler/file-text.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

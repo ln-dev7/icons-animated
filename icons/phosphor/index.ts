@@ -108,6 +108,7 @@ import { PhosphorFacebookLogoIcon } from './facebook-logo';
 import { PhosphorFanIcon } from './fan';
 import { PhosphorFeatherIcon } from './feather';
 import { PhosphorFigmaLogoIcon } from './figma-logo';
+import { PhosphorFileTextIcon } from './file-text';
 import { PhosphorFilesIcon } from './files';
 import { PhosphorFilmSlateIcon } from './film-slate';
 import { PhosphorFilterIcon } from './filter';
@@ -713,6 +714,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['figma', 'logo'],
   },
   {
+    name: 'file-text',
+    icon: PhosphorFileTextIcon,
+    keywords: ['file', 'text', 'file-text'],
+  },
+  {
     name: 'files',
     icon: PhosphorFilesIcon,
     keywords: ['files', 'file-stack', 'file', 'stack'],
@@ -1077,6 +1083,7 @@ export {
   PhosphorFanIcon,
   PhosphorFeatherIcon,
   PhosphorFigmaLogoIcon,
+  PhosphorFileTextIcon,
   PhosphorFilesIcon,
   PhosphorFilmSlateIcon,
   PhosphorFilterIcon,
