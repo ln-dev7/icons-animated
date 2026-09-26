@@ -33,6 +33,7 @@ import { PhosphorBatteryPlusIcon } from './battery-plus';
 import { PhosphorBatteryWarningIcon } from './battery-warning';
 import { PhosphorBellIcon } from './bell';
 import { PhosphorBinaryIcon } from './binary';
+import { PhosphorBluetoothIcon } from './bluetooth';
 import { PhosphorCalendarIcon } from './calendar';
 import { PhosphorCheckIcon } from './check';
 import { PhosphorChevronDownIcon } from './chevron-down';
@@ -258,6 +259,7 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['bell', 'notification', 'alert', 'ring', 'alarm'],
   },
   { name: 'binary', icon: PhosphorBinaryIcon, keywords: ['binary'] },
+  { name: 'bluetooth', icon: PhosphorBluetoothIcon, keywords: ['bluetooth'] },
   {
     name: 'calendar',
     icon: PhosphorCalendarIcon,
@@ -567,6 +569,7 @@ export {
   PhosphorBatteryWarningIcon,
   PhosphorBellIcon,
   PhosphorBinaryIcon,
+  PhosphorBluetoothIcon,
   PhosphorCalendarIcon,
   PhosphorCheckIcon,
   PhosphorChevronDownIcon,
