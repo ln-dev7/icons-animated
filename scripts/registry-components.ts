@@ -1594,6 +1594,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-layout-panel-top',
+    'path': path.join(__dirname, '../icons/hugeicons/layout-panel-top.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-lock',
     'path': path.join(__dirname, '../icons/hugeicons/lock.tsx'),
     'registryDependencies': [],
@@ -2715,6 +2721,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-keyboard',
     'path': path.join(__dirname, '../icons/phosphor/keyboard.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-layout',
+    'path': path.join(__dirname, '../icons/phosphor/layout.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

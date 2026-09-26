@@ -157,6 +157,7 @@ import { PhosphorIdentificationCardIcon } from './identification-card';
 import { PhosphorInstagramLogoIcon } from './instagram-logo';
 import { PhosphorKeyIcon } from './key';
 import { PhosphorKeyboardIcon } from './keyboard';
+import { PhosphorLayoutIcon } from './layout';
 import { PhosphorListIcon } from './list';
 import { PhosphorLockIcon } from './lock';
 import { PhosphorNotebookIcon } from './notebook';
@@ -984,6 +985,11 @@ const PHOSPHOR_ICON_LIST = [
   },
   { name: 'keyboard', icon: PhosphorKeyboardIcon, keywords: ['keyboard'] },
   {
+    name: 'layout',
+    icon: PhosphorLayoutIcon,
+    keywords: ['layout', 'layout-panel-top', 'panel', 'top'],
+  },
+  {
     name: 'list',
     icon: PhosphorListIcon,
     keywords: ['menu', 'hamburger', 'list', 'navigation', 'lines'],
@@ -1373,6 +1379,7 @@ export {
   PhosphorInstagramLogoIcon,
   PhosphorKeyIcon,
   PhosphorKeyboardIcon,
+  PhosphorLayoutIcon,
   PhosphorListIcon,
   PhosphorLockIcon,
   PhosphorNotebookIcon,

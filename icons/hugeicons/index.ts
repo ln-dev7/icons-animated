@@ -258,6 +258,7 @@ import { HugeiconsLaptopMinimalCheckIcon } from './laptop-minimal-check';
 import { HugeiconsLaughIcon } from './laugh';
 import { HugeiconsLayers01Icon } from './layers-01';
 import { HugeiconsLayoutGridIcon } from './layout-grid';
+import { HugeiconsLayoutPanelTopIcon } from './layout-panel-top';
 import { HugeiconsLockIcon } from './lock';
 import { HugeiconsMailIcon } from './mail';
 import { HugeiconsMenuIcon } from './menu';
@@ -1438,6 +1439,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['layout', 'grid', 'layout-grid'],
   },
   {
+    name: 'layout-panel-top',
+    icon: HugeiconsLayoutPanelTopIcon,
+    keywords: ['layout', 'panel', 'top', 'layout-panel-top'],
+  },
+  {
     name: 'lock',
     icon: HugeiconsLockIcon,
     keywords: [
@@ -1852,6 +1858,7 @@ export {
   HugeiconsLaughIcon,
   HugeiconsLayers01Icon,
   HugeiconsLayoutGridIcon,
+  HugeiconsLayoutPanelTopIcon,
   HugeiconsLockIcon,
   HugeiconsMailIcon,
   HugeiconsMenuIcon,

@@ -3384,6 +3384,19 @@
       ]
     },
     {
+      "name": "hugeicons-layout-panel-top",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-layout-panel-top.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-lock",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -5784,6 +5797,19 @@
       "files": [
         {
           "path": "phosphor-keyboard.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-layout",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-layout.tsx",
           "type": "registry:ui"
         }
       ]
