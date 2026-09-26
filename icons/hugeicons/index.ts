@@ -319,6 +319,7 @@ import { HugeiconsPauseIcon } from './pause';
 import { HugeiconsPenTool03Icon } from './pen-tool-03';
 import { HugeiconsPencilIcon } from './pencil';
 import { HugeiconsPhilippinePesoIcon } from './philippine-peso';
+import { HugeiconsPhoneIcon } from './phone';
 import { HugeiconsPieChartIcon } from './pie-chart';
 import { HugeiconsPlusIcon } from './plus';
 import { HugeiconsPulse01Icon } from './pulse-01';
@@ -1761,6 +1762,7 @@ const HUGEICONS_ICON_LIST = [
     icon: HugeiconsPhilippinePesoIcon,
     keywords: ['philippine', 'peso', 'philippine-peso'],
   },
+  { name: 'phone', icon: HugeiconsPhoneIcon, keywords: ['phone'] },
   {
     name: 'pie-chart',
     icon: HugeiconsPieChartIcon,
@@ -2205,6 +2207,7 @@ export {
   HugeiconsPenTool03Icon,
   HugeiconsPencilIcon,
   HugeiconsPhilippinePesoIcon,
+  HugeiconsPhoneIcon,
   HugeiconsPieChartIcon,
   HugeiconsPlusIcon,
   HugeiconsPulse01Icon,

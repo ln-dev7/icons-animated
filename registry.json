@@ -4177,6 +4177,19 @@
       ]
     },
     {
+      "name": "hugeicons-phone",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-phone.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-pie-chart",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -6928,6 +6941,19 @@
       "files": [
         {
           "path": "phosphor-person-arms-spread.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-phone",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-phone.tsx",
           "type": "registry:ui"
         }
       ]
@@ -10516,6 +10542,19 @@
       "files": [
         {
           "path": "tabler-pencil.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-phone",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-phone.tsx",
           "type": "registry:ui"
         }
       ]

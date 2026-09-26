@@ -189,6 +189,7 @@ import { PhosphorPauseIcon } from './pause';
 import { PhosphorPenNibIcon } from './pen-nib';
 import { PhosphorPencilIcon } from './pencil';
 import { PhosphorPersonArmsSpreadIcon } from './person-arms-spread';
+import { PhosphorPhoneIcon } from './phone';
 import { PhosphorPlugsConnectedIcon } from './plugs-connected';
 import { PhosphorPlusIcon } from './plus';
 import { PhosphorProhibitIcon } from './prohibit';
@@ -1164,6 +1165,7 @@ const PHOSPHOR_ICON_LIST = [
     icon: PhosphorPersonArmsSpreadIcon,
     keywords: ['person', 'arms', 'spread', 'accessibility'],
   },
+  { name: 'phone', icon: PhosphorPhoneIcon, keywords: ['phone'] },
   {
     name: 'plugs-connected',
     icon: PhosphorPlugsConnectedIcon,
@@ -1581,6 +1583,7 @@ export {
   PhosphorPenNibIcon,
   PhosphorPencilIcon,
   PhosphorPersonArmsSpreadIcon,
+  PhosphorPhoneIcon,
   PhosphorPlugsConnectedIcon,
   PhosphorPlusIcon,
   PhosphorProhibitIcon,

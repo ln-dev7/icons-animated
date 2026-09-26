@@ -234,6 +234,7 @@ import { TablerPackagesIcon } from './packages';
 import { TablerPaletteIcon } from './palette';
 import { TablerPaperclipIcon } from './paperclip';
 import { TablerPencilIcon } from './pencil';
+import { TablerPhoneIcon } from './phone';
 import { TablerPlaneIcon } from './plane';
 import { TablerPlayerPauseIcon } from './player-pause';
 import { TablerPlugConnectedIcon } from './plug-connected';
@@ -1325,6 +1326,7 @@ const TABLER_ICON_LIST = [
     icon: TablerPencilIcon,
     keywords: ['pencil', 'edit', 'write', 'pen', 'modify'],
   },
+  { name: 'phone', icon: TablerPhoneIcon, keywords: ['phone'] },
   { name: 'plane', icon: TablerPlaneIcon, keywords: ['plane', 'airplane'] },
   {
     name: 'player-pause',
@@ -1752,6 +1754,7 @@ export {
   TablerPaletteIcon,
   TablerPaperclipIcon,
   TablerPencilIcon,
+  TablerPhoneIcon,
   TablerPlaneIcon,
   TablerPlayerPauseIcon,
   TablerPlugConnectedIcon,
