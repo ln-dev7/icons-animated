@@ -199,6 +199,7 @@ import { HugeiconsFolderPlusIcon } from './folder-plus';
 import { HugeiconsFolderRootIcon } from './folder-root';
 import { HugeiconsFolderSyncIcon } from './folder-sync';
 import { HugeiconsFolderTreeIcon } from './folder-tree';
+import { HugeiconsFolderUpIcon } from './folder-up';
 import { HugeiconsHeartIcon } from './heart';
 import { HugeiconsHomeIcon } from './home';
 import { HugeiconsLockIcon } from './lock';
@@ -1158,6 +1159,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['folder', 'tree', 'folder-tree'],
   },
   {
+    name: 'folder-up',
+    icon: HugeiconsFolderUpIcon,
+    keywords: ['folder', 'up', 'folder-up'],
+  },
+  {
     name: 'heart',
     icon: HugeiconsHeartIcon,
     keywords: ['heart', 'love', 'like', 'favorite', 'health'],
@@ -1523,6 +1529,7 @@ export {
   HugeiconsFolderRootIcon,
   HugeiconsFolderSyncIcon,
   HugeiconsFolderTreeIcon,
+  HugeiconsFolderUpIcon,
   HugeiconsHeartIcon,
   HugeiconsHomeIcon,
   HugeiconsLockIcon,
