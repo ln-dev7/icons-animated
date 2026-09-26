@@ -58,6 +58,7 @@ import { HugeiconsBlocksIcon } from './blocks';
 import { HugeiconsBluetoothIcon } from './bluetooth';
 import { HugeiconsBluetoothConnectedIcon } from './bluetooth-connected';
 import { HugeiconsBluetoothOffIcon } from './bluetooth-off';
+import { HugeiconsBluetoothSearchingIcon } from './bluetooth-searching';
 import { HugeiconsCalendarIcon } from './calendar';
 import { HugeiconsCheckIcon } from './check';
 import { HugeiconsChevronDownIcon } from './chevron-down';
@@ -373,6 +374,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['bluetooth', 'off', 'bluetooth-off'],
   },
   {
+    name: 'bluetooth-searching',
+    icon: HugeiconsBluetoothSearchingIcon,
+    keywords: ['bluetooth', 'searching', 'bluetooth-searching'],
+  },
+  {
     name: 'calendar',
     icon: HugeiconsCalendarIcon,
     keywords: ['calendar', 'date', 'schedule', 'event', 'day'],
@@ -644,6 +650,7 @@ export {
   HugeiconsBluetoothIcon,
   HugeiconsBluetoothConnectedIcon,
   HugeiconsBluetoothOffIcon,
+  HugeiconsBluetoothSearchingIcon,
   HugeiconsCalendarIcon,
   HugeiconsCheckIcon,
   HugeiconsChevronDownIcon,
