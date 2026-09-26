@@ -84,6 +84,7 @@ import { HugeiconsChartBarDecreasingIcon } from './chart-bar-decreasing';
 import { HugeiconsChartBarIncreasingIcon } from './chart-bar-increasing';
 import { HugeiconsChartColumnDecreasingIcon } from './chart-column-decreasing';
 import { HugeiconsChartColumnIncreasingIcon } from './chart-column-increasing';
+import { HugeiconsChartLineIcon } from './chart-line';
 import { HugeiconsCheckIcon } from './check';
 import { HugeiconsChevronDownIcon } from './chevron-down';
 import { HugeiconsChevronLeftIcon } from './chevron-left';
@@ -501,6 +502,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['chart', 'column', 'increasing', 'chart-column-increasing'],
   },
   {
+    name: 'chart-line',
+    icon: HugeiconsChartLineIcon,
+    keywords: ['chart', 'line', 'chart-line'],
+  },
+  {
     name: 'check',
     icon: HugeiconsCheckIcon,
     keywords: ['check', 'done', 'success', 'complete', 'validate', 'tick'],
@@ -798,6 +804,7 @@ export {
   HugeiconsChartBarIncreasingIcon,
   HugeiconsChartColumnDecreasingIcon,
   HugeiconsChartColumnIncreasingIcon,
+  HugeiconsChartLineIcon,
   HugeiconsCheckIcon,
   HugeiconsChevronDownIcon,
   HugeiconsChevronLeftIcon,

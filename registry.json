@@ -1122,6 +1122,19 @@
       ]
     },
     {
+      "name": "hugeicons-chart-line",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-chart-line.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-check",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2118,6 +2131,19 @@
       "files": [
         {
           "path": "phosphor-chart-bar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-chart-line",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-chart-line.tsx",
           "type": "registry:ui"
         }
       ]
@@ -3509,6 +3535,19 @@
       "files": [
         {
           "path": "tabler-chart-bar-popular.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-chart-line",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-chart-line.tsx",
           "type": "registry:ui"
         }
       ]

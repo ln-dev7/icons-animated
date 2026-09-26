@@ -59,6 +59,7 @@ import { TablerCalendarCogIcon } from './calendar-cog';
 import { TablerCalendarWeekIcon } from './calendar-week';
 import { TablerCastIcon } from './cast';
 import { TablerChartBarPopularIcon } from './chart-bar-popular';
+import { TablerChartLineIcon } from './chart-line';
 import { TablerCheckIcon } from './check';
 import { TablerChevronDownIcon } from './chevron-down';
 import { TablerChevronLeftIcon } from './chevron-left';
@@ -352,6 +353,11 @@ const TABLER_ICON_LIST = [
       'no',
       'axes',
     ],
+  },
+  {
+    name: 'chart-line',
+    icon: TablerChartLineIcon,
+    keywords: ['chart', 'line', 'chart-line'],
   },
   {
     name: 'check',
@@ -699,6 +705,7 @@ export {
   TablerCalendarWeekIcon,
   TablerCastIcon,
   TablerChartBarPopularIcon,
+  TablerChartLineIcon,
   TablerCheckIcon,
   TablerChevronDownIcon,
   TablerChevronLeftIcon,

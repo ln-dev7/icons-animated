@@ -44,6 +44,7 @@ import { PhosphorCalendarIcon } from './calendar';
 import { PhosphorCalendarCheckIcon } from './calendar-check';
 import { PhosphorCalendarDotsIcon } from './calendar-dots';
 import { PhosphorChartBarIcon } from './chart-bar';
+import { PhosphorChartLineIcon } from './chart-line';
 import { PhosphorCheckIcon } from './check';
 import { PhosphorChevronDownIcon } from './chevron-down';
 import { PhosphorChevronLeftIcon } from './chevron-left';
@@ -322,6 +323,11 @@ const PHOSPHOR_ICON_LIST = [
       'no',
       'axes',
     ],
+  },
+  {
+    name: 'chart-line',
+    icon: PhosphorChartLineIcon,
+    keywords: ['chart', 'line', 'chart-line'],
   },
   {
     name: 'check',
@@ -661,6 +667,7 @@ export {
   PhosphorCalendarCheckIcon,
   PhosphorCalendarDotsIcon,
   PhosphorChartBarIcon,
+  PhosphorChartLineIcon,
   PhosphorCheckIcon,
   PhosphorChevronDownIcon,
   PhosphorChevronLeftIcon,
