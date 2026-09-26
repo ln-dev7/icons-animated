@@ -5386,6 +5386,19 @@
       ]
     },
     {
+      "name": "hugeicons-switch-camera",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-switch-camera.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-text-align-center",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -6447,6 +6460,19 @@
       "files": [
         {
           "path": "phosphor-call-bell.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-camera-rotate",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-camera-rotate.tsx",
           "type": "registry:ui"
         }
       ]
@@ -10087,6 +10113,19 @@
       "files": [
         {
           "path": "tabler-calendar-week.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-camera-rotate",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-camera-rotate.tsx",
           "type": "registry:ui"
         }
       ]

@@ -74,6 +74,7 @@ import { TablerCalendarIcon } from './calendar';
 import { TablerCalendarCheckIcon } from './calendar-check';
 import { TablerCalendarCogIcon } from './calendar-cog';
 import { TablerCalendarWeekIcon } from './calendar-week';
+import { TablerCameraRotateIcon } from './camera-rotate';
 import { TablerCastIcon } from './cast';
 import { TablerChargingPileIcon } from './charging-pile';
 import { TablerChartBarPopularIcon } from './chart-bar-popular';
@@ -652,6 +653,11 @@ const TABLER_ICON_LIST = [
     name: 'calendar-week',
     icon: TablerCalendarWeekIcon,
     keywords: ['calendar', 'week', 'calendar-days', 'days'],
+  },
+  {
+    name: 'camera-rotate',
+    icon: TablerCameraRotateIcon,
+    keywords: ['camera', 'rotate', 'switch-camera', 'switch'],
   },
   { name: 'cast', icon: TablerCastIcon, keywords: ['cast'] },
   {
@@ -1941,6 +1947,7 @@ export {
   TablerCalendarCheckIcon,
   TablerCalendarCogIcon,
   TablerCalendarWeekIcon,
+  TablerCameraRotateIcon,
   TablerCastIcon,
   TablerChargingPileIcon,
   TablerChartBarPopularIcon,

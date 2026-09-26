@@ -70,6 +70,7 @@ import { PhosphorCalendarIcon } from './calendar';
 import { PhosphorCalendarCheckIcon } from './calendar-check';
 import { PhosphorCalendarDotsIcon } from './calendar-dots';
 import { PhosphorCallBellIcon } from './call-bell';
+import { PhosphorCameraRotateIcon } from './camera-rotate';
 import { PhosphorCardsThreeIcon } from './cards-three';
 import { PhosphorCaretCircleDownIcon } from './caret-circle-down';
 import { PhosphorCaretCircleLeftIcon } from './caret-circle-left';
@@ -644,6 +645,11 @@ const PHOSPHOR_ICON_LIST = [
     name: 'call-bell',
     icon: PhosphorCallBellIcon,
     keywords: ['call', 'bell', 'concierge-bell', 'concierge'],
+  },
+  {
+    name: 'camera-rotate',
+    icon: PhosphorCameraRotateIcon,
+    keywords: ['camera', 'rotate', 'switch-camera', 'switch'],
   },
   {
     name: 'cards-three',
@@ -1699,6 +1705,7 @@ export {
   PhosphorCalendarCheckIcon,
   PhosphorCalendarDotsIcon,
   PhosphorCallBellIcon,
+  PhosphorCameraRotateIcon,
   PhosphorCardsThreeIcon,
   PhosphorCaretCircleDownIcon,
   PhosphorCaretCircleLeftIcon,

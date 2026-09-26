@@ -2533,6 +2533,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-switch-camera',
+    'path': path.join(__dirname, '../icons/hugeicons/switch-camera.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-text-align-center',
     'path': path.join(__dirname, '../icons/hugeicons/text-align-center.tsx'),
     'registryDependencies': [],
@@ -3036,6 +3042,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-call-bell',
     'path': path.join(__dirname, '../icons/phosphor/call-bell.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-camera-rotate',
+    'path': path.join(__dirname, '../icons/phosphor/camera-rotate.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -4725,6 +4737,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-calendar-week',
     'path': path.join(__dirname, '../icons/tabler/calendar-week.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-camera-rotate',
+    'path': path.join(__dirname, '../icons/tabler/camera-rotate.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
