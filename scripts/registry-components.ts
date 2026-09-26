@@ -700,6 +700,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-circle-dashed',
+    'path': path.join(__dirname, '../icons/hugeicons/circle-dashed.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-download',
     'path': path.join(__dirname, '../icons/hugeicons/download.tsx'),
     'registryDependencies': [],
@@ -1251,6 +1257,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-cigarette-slash',
     'path': path.join(__dirname, '../icons/phosphor/cigarette-slash.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-circle-dashed',
+    'path': path.join(__dirname, '../icons/phosphor/circle-dashed.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -1989,6 +2001,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-circle-chevron-up',
     'path': path.join(__dirname, '../icons/tabler/circle-chevron-up.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-circle-dashed',
+    'path': path.join(__dirname, '../icons/tabler/circle-dashed.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

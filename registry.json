@@ -1473,6 +1473,19 @@
       ]
     },
     {
+      "name": "hugeicons-circle-dashed",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-circle-dashed.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-download",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2664,6 +2677,19 @@
       "files": [
         {
           "path": "phosphor-cigarette-slash.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-circle-dashed",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-circle-dashed.tsx",
           "type": "registry:ui"
         }
       ]
@@ -4263,6 +4289,19 @@
       "files": [
         {
           "path": "tabler-circle-chevron-up.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-circle-dashed",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-circle-dashed.tsx",
           "type": "registry:ui"
         }
       ]
