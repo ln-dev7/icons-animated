@@ -85,6 +85,7 @@ import { TablerClockIcon } from './clock';
 import { TablerCloudCogIcon } from './cloud-cog';
 import { TablerCloudDownloadIcon } from './cloud-download';
 import { TablerCloudRainIcon } from './cloud-rain';
+import { TablerCloudSnowIcon } from './cloud-snow';
 import { TablerCloudStormIcon } from './cloud-storm';
 import { TablerCoinIcon } from './coin';
 import { TablerDeviceCctvIcon } from './device-cctv';
@@ -540,6 +541,11 @@ const TABLER_ICON_LIST = [
     keywords: ['cloud', 'rain', 'cloud-rain'],
   },
   {
+    name: 'cloud-snow',
+    icon: TablerCloudSnowIcon,
+    keywords: ['cloud', 'snow', 'cloud-snow'],
+  },
+  {
     name: 'cloud-storm',
     icon: TablerCloudStormIcon,
     keywords: ['cloud', 'storm', 'cloud-lightning', 'lightning'],
@@ -889,6 +895,7 @@ export {
   TablerCloudCogIcon,
   TablerCloudDownloadIcon,
   TablerCloudRainIcon,
+  TablerCloudSnowIcon,
   TablerCloudStormIcon,
   TablerCoinIcon,
   TablerDeviceCctvIcon,

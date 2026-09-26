@@ -1642,6 +1642,19 @@
       ]
     },
     {
+      "name": "hugeicons-cloud-snow",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-cloud-snow.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-download",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2898,6 +2911,19 @@
       "files": [
         {
           "path": "phosphor-cloud-rain.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-cloud-snow",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-cloud-snow.tsx",
           "type": "registry:ui"
         }
       ]
@@ -4614,6 +4640,19 @@
       "files": [
         {
           "path": "tabler-cloud-rain.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-cloud-snow",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-cloud-snow.tsx",
           "type": "registry:ui"
         }
       ]
