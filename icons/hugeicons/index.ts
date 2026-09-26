@@ -379,6 +379,7 @@ import { HugeiconsShieldCheckIcon } from './shield-check';
 import { HugeiconsShipIcon } from './ship';
 import { HugeiconsShipWheelIcon } from './ship-wheel';
 import { HugeiconsShoppingCart01Icon } from './shopping-cart-01';
+import { HugeiconsShowerHeadIcon } from './shower-head';
 import { HugeiconsStarIcon } from './star';
 import { HugeiconsSunCloud02Icon } from './sun-cloud-02';
 import { HugeiconsTextAlignCenterIcon } from './text-align-center';
@@ -2071,6 +2072,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['shopping', 'cart', '01'],
   },
   {
+    name: 'shower-head',
+    icon: HugeiconsShowerHeadIcon,
+    keywords: ['shower', 'head', 'shower-head'],
+  },
+  {
     name: 'star',
     icon: HugeiconsStarIcon,
     keywords: ['star', 'favorite', 'bookmark', 'rate', 'rating'],
@@ -2515,6 +2521,7 @@ export {
   HugeiconsShipIcon,
   HugeiconsShipWheelIcon,
   HugeiconsShoppingCart01Icon,
+  HugeiconsShowerHeadIcon,
   HugeiconsStarIcon,
   HugeiconsSunCloud02Icon,
   HugeiconsTextAlignCenterIcon,
