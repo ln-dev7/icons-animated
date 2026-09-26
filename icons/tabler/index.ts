@@ -60,6 +60,7 @@ import { TablerCalendarWeekIcon } from './calendar-week';
 import { TablerCastIcon } from './cast';
 import { TablerChartBarPopularIcon } from './chart-bar-popular';
 import { TablerChartLineIcon } from './chart-line';
+import { TablerChartPieIcon } from './chart-pie';
 import { TablerCheckIcon } from './check';
 import { TablerChevronDownIcon } from './chevron-down';
 import { TablerChevronLeftIcon } from './chevron-left';
@@ -358,6 +359,11 @@ const TABLER_ICON_LIST = [
     name: 'chart-line',
     icon: TablerChartLineIcon,
     keywords: ['chart', 'line', 'chart-line'],
+  },
+  {
+    name: 'chart-pie',
+    icon: TablerChartPieIcon,
+    keywords: ['chart', 'pie', 'chart-pie'],
   },
   {
     name: 'check',
@@ -706,6 +712,7 @@ export {
   TablerCastIcon,
   TablerChartBarPopularIcon,
   TablerChartLineIcon,
+  TablerChartPieIcon,
   TablerCheckIcon,
   TablerChevronDownIcon,
   TablerChevronLeftIcon,

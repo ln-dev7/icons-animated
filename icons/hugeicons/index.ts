@@ -101,6 +101,7 @@ import { HugeiconsLockIcon } from './lock';
 import { HugeiconsMailIcon } from './mail';
 import { HugeiconsMenuIcon } from './menu';
 import { HugeiconsPencilIcon } from './pencil';
+import { HugeiconsPieChartIcon } from './pie-chart';
 import { HugeiconsPlusIcon } from './plus';
 import { HugeiconsPulse01Icon } from './pulse-01';
 import { HugeiconsRefreshIcon } from './refresh';
@@ -642,6 +643,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['pencil', 'edit', 'write', 'pen', 'modify'],
   },
   {
+    name: 'pie-chart',
+    icon: HugeiconsPieChartIcon,
+    keywords: ['pie', 'chart', 'chart-pie'],
+  },
+  {
     name: 'plus',
     icon: HugeiconsPlusIcon,
     keywords: ['plus', 'add', 'new', 'create', 'increase'],
@@ -847,6 +853,7 @@ export {
   HugeiconsMailIcon,
   HugeiconsMenuIcon,
   HugeiconsPencilIcon,
+  HugeiconsPieChartIcon,
   HugeiconsPlusIcon,
   HugeiconsPulse01Icon,
   HugeiconsRefreshIcon,
