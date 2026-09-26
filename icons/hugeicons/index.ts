@@ -409,6 +409,7 @@ import { HugeiconsSun03Icon } from './sun-03';
 import { HugeiconsSunCloud02Icon } from './sun-cloud-02';
 import { HugeiconsSunDimIcon } from './sun-dim';
 import { HugeiconsSunMediumIcon } from './sun-medium';
+import { HugeiconsSunMoonIcon } from './sun-moon';
 import { HugeiconsTextAlignCenterIcon } from './text-align-center';
 import { HugeiconsTextAlignLeftIcon } from './text-align-left';
 import { HugeiconsTextAlignRightIcon } from './text-align-right';
@@ -2217,6 +2218,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['sun', 'medium', 'sun-medium'],
   },
   {
+    name: 'sun-moon',
+    icon: HugeiconsSunMoonIcon,
+    keywords: ['sun', 'moon', 'sun-moon'],
+  },
+  {
     name: 'text-align-center',
     icon: HugeiconsTextAlignCenterIcon,
     keywords: ['text', 'align', 'center', 'align-center'],
@@ -2681,6 +2687,7 @@ export {
   HugeiconsSunCloud02Icon,
   HugeiconsSunDimIcon,
   HugeiconsSunMediumIcon,
+  HugeiconsSunMoonIcon,
   HugeiconsTextAlignCenterIcon,
   HugeiconsTextAlignLeftIcon,
   HugeiconsTextAlignRightIcon,

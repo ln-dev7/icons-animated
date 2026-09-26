@@ -5347,6 +5347,19 @@
       ]
     },
     {
+      "name": "hugeicons-sun-moon",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-sun-moon.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-text-align-center",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -13233,6 +13246,19 @@
       "files": [
         {
           "path": "tabler-sun-low.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-sun-moon",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-sun-moon.tsx",
           "type": "registry:ui"
         }
       ]

@@ -320,6 +320,7 @@ import { TablerStethoscopeIcon } from './stethoscope';
 import { TablerSunIcon } from './sun';
 import { TablerSunHighIcon } from './sun-high';
 import { TablerSunLowIcon } from './sun-low';
+import { TablerSunMoonIcon } from './sun-moon';
 import { TablerTextScan2Icon } from './text-scan-2';
 import { TablerThumbDownIcon } from './thumb-down';
 import { TablerTrashIcon } from './trash';
@@ -1812,6 +1813,11 @@ const TABLER_ICON_LIST = [
     keywords: ['sun', 'low', 'sun-dim', 'dim'],
   },
   {
+    name: 'sun-moon',
+    icon: TablerSunMoonIcon,
+    keywords: ['sun', 'moon', 'sun-moon'],
+  },
+  {
     name: 'text-scan-2',
     icon: TablerTextScan2Icon,
     keywords: ['text', 'scan', '2', 'scan-text'],
@@ -2173,6 +2179,7 @@ export {
   TablerSunIcon,
   TablerSunHighIcon,
   TablerSunLowIcon,
+  TablerSunMoonIcon,
   TablerTextScan2Icon,
   TablerThumbDownIcon,
   TablerTrashIcon,
