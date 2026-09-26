@@ -5633,6 +5633,19 @@
       ]
     },
     {
+      "name": "hugeicons-truck",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-truck.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-unfold-more",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -9372,6 +9385,19 @@
       "files": [
         {
           "path": "phosphor-trend-up.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-truck",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-truck.tsx",
           "type": "registry:ui"
         }
       ]
@@ -13844,6 +13870,19 @@
       "files": [
         {
           "path": "tabler-trending-up-down.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-truck",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-truck.tsx",
           "type": "registry:ui"
         }
       ]
