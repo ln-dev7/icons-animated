@@ -180,6 +180,7 @@ import { HugeiconsFlameIcon } from './flame';
 import { HugeiconsFlaskConicalIcon } from './flask-conical';
 import { HugeiconsFolderArchiveIcon } from './folder-archive';
 import { HugeiconsFolderCheckIcon } from './folder-check';
+import { HugeiconsFolderClockIcon } from './folder-clock';
 import { HugeiconsHeartIcon } from './heart';
 import { HugeiconsHomeIcon } from './home';
 import { HugeiconsLockIcon } from './lock';
@@ -1044,6 +1045,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['folder', 'check', 'folder-check'],
   },
   {
+    name: 'folder-clock',
+    icon: HugeiconsFolderClockIcon,
+    keywords: ['folder', 'clock', 'folder-clock'],
+  },
+  {
     name: 'heart',
     icon: HugeiconsHeartIcon,
     keywords: ['heart', 'love', 'like', 'favorite', 'health'],
@@ -1390,6 +1396,7 @@ export {
   HugeiconsFlaskConicalIcon,
   HugeiconsFolderArchiveIcon,
   HugeiconsFolderCheckIcon,
+  HugeiconsFolderClockIcon,
   HugeiconsHeartIcon,
   HugeiconsHomeIcon,
   HugeiconsLockIcon,
