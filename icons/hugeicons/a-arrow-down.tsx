@@ -56,9 +56,14 @@ const ICON_VARIANTS: Variants = {
     opacity: 1,
     transition: { duration: 0.18, ease: 'easeOut' },
   },
+  animate: { transition: { duration: 0.55, ease: 'easeInOut' } },
+};
+
+const DETAIL_0_VARIANTS: Variants = {
+  normal: { y: 0, transition: { duration: 0.18, ease: 'easeOut' } },
   animate: {
-    'y': [0, 2.4, -0.35, 0],
-    'transition': { 'duration': 0.55, 'ease': 'easeInOut' },
+    y: [0, 1.2, 0],
+    transition: { duration: 0.7, delay: 0, ease: 'easeInOut' },
   },
 };
 
@@ -159,19 +164,23 @@ const HugeiconsAArrowDownIcon = forwardRef<
               strokeLinejoin="round"
               strokeWidth="1.5"
             />
-            <path
+            <motion.path
               d="M18 16V7"
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="1.5"
+              variants={DETAIL_0_VARIANTS}
+              style={{ transformBox: 'fill-box', transformOrigin: 'center' }}
             />
-            <path
+            <motion.path
               d="M14 13C14 13 16.946 17 18 17C19.0541 17 22 13 22 13"
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="1.5"
+              variants={DETAIL_0_VARIANTS}
+              style={{ transformBox: 'fill-box', transformOrigin: 'center' }}
             />
           </motion.g>
         </svg>
