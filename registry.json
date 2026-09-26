@@ -2864,6 +2864,19 @@
       ]
     },
     {
+      "name": "hugeicons-git-pull-request",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-git-pull-request.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-heart",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -4939,6 +4952,19 @@
       "files": [
         {
           "path": "phosphor-git-merge.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-git-pull-request",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-git-pull-request.tsx",
           "type": "registry:ui"
         }
       ]
@@ -7513,6 +7539,19 @@
       "files": [
         {
           "path": "tabler-git-merge.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-git-pull-request",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-git-pull-request.tsx",
           "type": "registry:ui"
         }
       ]

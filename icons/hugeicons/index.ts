@@ -218,6 +218,7 @@ import { HugeiconsGitCompareArrowsIcon } from './git-compare-arrows';
 import { HugeiconsGitForkIcon } from './git-fork';
 import { HugeiconsGitGraphIcon } from './git-graph';
 import { HugeiconsGitMergeIcon } from './git-merge';
+import { HugeiconsGitPullRequestIcon } from './git-pull-request';
 import { HugeiconsHeartIcon } from './heart';
 import { HugeiconsHomeIcon } from './home';
 import { HugeiconsLockIcon } from './lock';
@@ -1252,6 +1253,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['git', 'merge', 'git-merge'],
   },
   {
+    name: 'git-pull-request',
+    icon: HugeiconsGitPullRequestIcon,
+    keywords: ['git', 'pull', 'request', 'git-pull-request'],
+  },
+  {
     name: 'heart',
     icon: HugeiconsHeartIcon,
     keywords: ['heart', 'love', 'like', 'favorite', 'health'],
@@ -1636,6 +1642,7 @@ export {
   HugeiconsGitForkIcon,
   HugeiconsGitGraphIcon,
   HugeiconsGitMergeIcon,
+  HugeiconsGitPullRequestIcon,
   HugeiconsHeartIcon,
   HugeiconsHomeIcon,
   HugeiconsLockIcon,

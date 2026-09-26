@@ -155,6 +155,7 @@ import { TablerGitCommitIcon } from './git-commit';
 import { TablerGitCompareIcon } from './git-compare';
 import { TablerGitForkIcon } from './git-fork';
 import { TablerGitMergeIcon } from './git-merge';
+import { TablerGitPullRequestIcon } from './git-pull-request';
 import { TablerHeartIcon } from './heart';
 import { TablerHelpCircleIcon } from './help-circle';
 import { TablerHomeIcon } from './home';
@@ -902,6 +903,11 @@ const TABLER_ICON_LIST = [
     keywords: ['git', 'merge', 'git-merge'],
   },
   {
+    name: 'git-pull-request',
+    icon: TablerGitPullRequestIcon,
+    keywords: ['git', 'pull', 'request', 'git-pull-request'],
+  },
+  {
     name: 'heart',
     icon: TablerHeartIcon,
     keywords: ['heart', 'love', 'like', 'favorite', 'health'],
@@ -1307,6 +1313,7 @@ export {
   TablerGitCompareIcon,
   TablerGitForkIcon,
   TablerGitMergeIcon,
+  TablerGitPullRequestIcon,
   TablerHeartIcon,
   TablerHelpCircleIcon,
   TablerHomeIcon,

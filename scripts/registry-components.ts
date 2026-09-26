@@ -1348,6 +1348,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-git-pull-request',
+    'path': path.join(__dirname, '../icons/hugeicons/git-pull-request.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-heart',
     'path': path.join(__dirname, '../icons/hugeicons/heart.tsx'),
     'registryDependencies': [],
@@ -2316,6 +2322,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-git-merge',
     'path': path.join(__dirname, '../icons/phosphor/git-merge.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-git-pull-request',
+    'path': path.join(__dirname, '../icons/phosphor/git-pull-request.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -3504,6 +3516,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-git-merge',
     'path': path.join(__dirname, '../icons/tabler/git-merge.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-git-pull-request',
+    'path': path.join(__dirname, '../icons/tabler/git-pull-request.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
