@@ -5230,6 +5230,19 @@
       ]
     },
     {
+      "name": "hugeicons-square-pen",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-square-pen.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-star",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -7999,6 +8012,19 @@
       ]
     },
     {
+      "name": "phosphor-note-pencil",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-note-pencil.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-notebook",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -10763,6 +10789,19 @@
       "files": [
         {
           "path": "tabler-droplet.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-edit",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-edit.tsx",
           "type": "registry:ui"
         }
       ]

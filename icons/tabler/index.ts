@@ -142,6 +142,7 @@ import { TablerDeviceProjectorIcon } from './device-projector';
 import { TablerDiscIcon } from './disc';
 import { TablerDownloadIcon } from './download';
 import { TablerDropletIcon } from './droplet';
+import { TablerEditIcon } from './edit';
 import { TablerExternalLinkIcon } from './external-link';
 import { TablerEyeIcon } from './eye';
 import { TablerEyeOffIcon } from './eye-off';
@@ -998,6 +999,11 @@ const TABLER_ICON_LIST = [
     keywords: ['download', 'save', 'arrow', 'get', 'export'],
   },
   { name: 'droplet', icon: TablerDropletIcon, keywords: ['droplet'] },
+  {
+    name: 'edit',
+    icon: TablerEditIcon,
+    keywords: ['edit', 'square-pen', 'square', 'pen'],
+  },
   {
     name: 'external-link',
     icon: TablerExternalLinkIcon,
@@ -1957,6 +1963,7 @@ export {
   TablerDiscIcon,
   TablerDownloadIcon,
   TablerDropletIcon,
+  TablerEditIcon,
   TablerExternalLinkIcon,
   TablerEyeIcon,
   TablerEyeOffIcon,

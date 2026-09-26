@@ -199,6 +199,7 @@ import { PhosphorMapPinPlusIcon } from './map-pin-plus';
 import { PhosphorMicrophoneIcon } from './microphone';
 import { PhosphorMicrophoneSlashIcon } from './microphone-slash';
 import { PhosphorMoonIcon } from './moon';
+import { PhosphorNotePencilIcon } from './note-pencil';
 import { PhosphorNotebookIcon } from './notebook';
 import { PhosphorPaletteIcon } from './palette';
 import { PhosphorPaperPlaneTiltIcon } from './paper-plane-tilt';
@@ -1265,6 +1266,11 @@ const PHOSPHOR_ICON_LIST = [
   },
   { name: 'moon', icon: PhosphorMoonIcon, keywords: ['moon'] },
   {
+    name: 'note-pencil',
+    icon: PhosphorNotePencilIcon,
+    keywords: ['note', 'pencil', 'square-pen', 'square', 'pen'],
+  },
+  {
     name: 'notebook',
     icon: PhosphorNotebookIcon,
     keywords: ['notebook', 'book-text', 'book', 'text'],
@@ -1796,6 +1802,7 @@ export {
   PhosphorMicrophoneIcon,
   PhosphorMicrophoneSlashIcon,
   PhosphorMoonIcon,
+  PhosphorNotePencilIcon,
   PhosphorNotebookIcon,
   PhosphorPaletteIcon,
   PhosphorPaperPlaneTiltIcon,
