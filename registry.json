@@ -3605,6 +3605,19 @@
       ]
     },
     {
+      "name": "hugeicons-mailbox",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-mailbox.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-menu",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -6109,6 +6122,19 @@
       "files": [
         {
           "path": "phosphor-lock-open.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-mailbox",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-mailbox.tsx",
           "type": "registry:ui"
         }
       ]
@@ -9229,6 +9255,19 @@
       "files": [
         {
           "path": "tabler-mail-check.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-mailbox",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-mailbox.tsx",
           "type": "registry:ui"
         }
       ]

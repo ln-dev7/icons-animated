@@ -194,6 +194,7 @@ import { TablerLoginIcon } from './login';
 import { TablerLogoutIcon } from './logout';
 import { TablerMailIcon } from './mail';
 import { TablerMailCheckIcon } from './mail-check';
+import { TablerMailboxIcon } from './mailbox';
 import { TablerMenuIcon } from './menu';
 import { TablerMessageChatbotIcon } from './message-chatbot';
 import { TablerMoodAngryIcon } from './mood-angry';
@@ -1093,6 +1094,7 @@ const TABLER_ICON_LIST = [
     icon: TablerMailCheckIcon,
     keywords: ['mail', 'check', 'mail-check'],
   },
+  { name: 'mailbox', icon: TablerMailboxIcon, keywords: ['mailbox'] },
   {
     name: 'menu',
     icon: TablerMenuIcon,
@@ -1520,6 +1522,7 @@ export {
   TablerLogoutIcon,
   TablerMailIcon,
   TablerMailCheckIcon,
+  TablerMailboxIcon,
   TablerMenuIcon,
   TablerMessageChatbotIcon,
   TablerMoodAngryIcon,
