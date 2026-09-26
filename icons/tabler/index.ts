@@ -126,6 +126,7 @@ import { TablerCurrencyYenIcon } from './currency-yen';
 import { TablerDashboardIcon } from './dashboard';
 import { TablerDeviceCctvIcon } from './device-cctv';
 import { TablerDeviceDesktopCheckIcon } from './device-desktop-check';
+import { TablerDeviceDesktopCogIcon } from './device-desktop-cog';
 import { TablerDiscIcon } from './disc';
 import { TablerDownloadIcon } from './download';
 import { TablerDropletIcon } from './droplet';
@@ -846,6 +847,11 @@ const TABLER_ICON_LIST = [
     name: 'device-desktop-check',
     icon: TablerDeviceDesktopCheckIcon,
     keywords: ['device', 'desktop', 'check', 'monitor-check', 'monitor'],
+  },
+  {
+    name: 'device-desktop-cog',
+    icon: TablerDeviceDesktopCogIcon,
+    keywords: ['device', 'desktop', 'cog', 'monitor-cog', 'monitor'],
   },
   { name: 'disc', icon: TablerDiscIcon, keywords: ['disc', 'disc-3', '3'] },
   {
@@ -1572,6 +1578,7 @@ export {
   TablerDashboardIcon,
   TablerDeviceCctvIcon,
   TablerDeviceDesktopCheckIcon,
+  TablerDeviceDesktopCogIcon,
   TablerDiscIcon,
   TablerDownloadIcon,
   TablerDropletIcon,

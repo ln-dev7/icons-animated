@@ -1888,6 +1888,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-monitor-cog',
+    'path': path.join(__dirname, '../icons/hugeicons/monitor-cog.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-mouse-pointer-click',
     'path': path.join(__dirname, '../icons/hugeicons/mouse-pointer-click.tsx'),
     'registryDependencies': [],
@@ -4155,6 +4161,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-device-desktop-check',
     'path': path.join(__dirname, '../icons/tabler/device-desktop-check.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-device-desktop-cog',
+    'path': path.join(__dirname, '../icons/tabler/device-desktop-cog.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
