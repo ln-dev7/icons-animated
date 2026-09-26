@@ -3475,6 +3475,19 @@
       ]
     },
     {
+      "name": "hugeicons-loader-circle",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-loader-circle.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-lock",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -6296,6 +6309,19 @@
       ]
     },
     {
+      "name": "phosphor-spinner-gap",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-spinner-gap.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-squares-four",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -8943,6 +8969,19 @@
       "files": [
         {
           "path": "tabler-loader.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-loader-2",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-loader-2.tsx",
           "type": "registry:ui"
         }
       ]

@@ -1636,6 +1636,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-loader-circle',
+    'path': path.join(__dirname, '../icons/hugeicons/loader-circle.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-lock',
     'path': path.join(__dirname, '../icons/hugeicons/lock.tsx'),
     'registryDependencies': [],
@@ -2953,6 +2959,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'phosphor-spinner-gap',
+    'path': path.join(__dirname, '../icons/phosphor/spinner-gap.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'phosphor-squares-four',
     'path': path.join(__dirname, '../icons/phosphor/squares-four.tsx'),
     'registryDependencies': [],
@@ -4173,6 +4185,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-loader',
     'path': path.join(__dirname, '../icons/tabler/loader.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-loader-2',
+    'path': path.join(__dirname, '../icons/tabler/loader-2.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

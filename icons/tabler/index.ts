@@ -187,6 +187,7 @@ import { TablerLayoutGridIcon } from './layout-grid';
 import { TablerLeafIcon } from './leaf';
 import { TablerLinkIcon } from './link';
 import { TablerLoaderIcon } from './loader';
+import { TablerLoader2Icon } from './loader-2';
 import { TablerLockIcon } from './lock';
 import { TablerMailIcon } from './mail';
 import { TablerMenuIcon } from './menu';
@@ -1053,6 +1054,11 @@ const TABLER_ICON_LIST = [
   { name: 'link', icon: TablerLinkIcon, keywords: ['link', 'link-2', '2'] },
   { name: 'loader', icon: TablerLoaderIcon, keywords: ['loader'] },
   {
+    name: 'loader-2',
+    icon: TablerLoader2Icon,
+    keywords: ['loader', '2', 'loader-circle', 'circle'],
+  },
+  {
     name: 'lock',
     icon: TablerLockIcon,
     keywords: [
@@ -1485,6 +1491,7 @@ export {
   TablerLeafIcon,
   TablerLinkIcon,
   TablerLoaderIcon,
+  TablerLoader2Icon,
   TablerLockIcon,
   TablerMailIcon,
   TablerMenuIcon,
