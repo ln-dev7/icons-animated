@@ -186,6 +186,7 @@ import { TablerLayoutAlignMiddleIcon } from './layout-align-middle';
 import { TablerLayoutGridIcon } from './layout-grid';
 import { TablerLeafIcon } from './leaf';
 import { TablerLinkIcon } from './link';
+import { TablerLoaderIcon } from './loader';
 import { TablerLockIcon } from './lock';
 import { TablerMailIcon } from './mail';
 import { TablerMenuIcon } from './menu';
@@ -1050,6 +1051,7 @@ const TABLER_ICON_LIST = [
   },
   { name: 'leaf', icon: TablerLeafIcon, keywords: ['leaf'] },
   { name: 'link', icon: TablerLinkIcon, keywords: ['link', 'link-2', '2'] },
+  { name: 'loader', icon: TablerLoaderIcon, keywords: ['loader'] },
   {
     name: 'lock',
     icon: TablerLockIcon,
@@ -1482,6 +1484,7 @@ export {
   TablerLayoutGridIcon,
   TablerLeafIcon,
   TablerLinkIcon,
+  TablerLoaderIcon,
   TablerLockIcon,
   TablerMailIcon,
   TablerMenuIcon,

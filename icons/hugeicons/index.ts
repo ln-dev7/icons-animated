@@ -264,6 +264,7 @@ import { HugeiconsLeafyGreenIcon } from './leafy-green';
 import { HugeiconsLinkIcon } from './link';
 import { HugeiconsLink04Icon } from './link-04';
 import { HugeiconsLinkedin02Icon } from './linkedin-02';
+import { HugeiconsLoaderIcon } from './loader';
 import { HugeiconsLockIcon } from './lock';
 import { HugeiconsMailIcon } from './mail';
 import { HugeiconsMenuIcon } from './menu';
@@ -1461,6 +1462,7 @@ const HUGEICONS_ICON_LIST = [
     icon: HugeiconsLinkedin02Icon,
     keywords: ['linkedin', '02'],
   },
+  { name: 'loader', icon: HugeiconsLoaderIcon, keywords: ['loader'] },
   {
     name: 'lock',
     icon: HugeiconsLockIcon,
@@ -1882,6 +1884,7 @@ export {
   HugeiconsLinkIcon,
   HugeiconsLink04Icon,
   HugeiconsLinkedin02Icon,
+  HugeiconsLoaderIcon,
   HugeiconsLockIcon,
   HugeiconsMailIcon,
   HugeiconsMenuIcon,

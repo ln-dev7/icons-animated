@@ -188,6 +188,7 @@ import { PhosphorSmileyMehIcon } from './smiley-meh';
 import { PhosphorSmileySadIcon } from './smiley-sad';
 import { PhosphorSortAscendingIcon } from './sort-ascending';
 import { PhosphorSortDescendingIcon } from './sort-descending';
+import { PhosphorSpinnerIcon } from './spinner';
 import { PhosphorSquaresFourIcon } from './squares-four';
 import { PhosphorStackIcon } from './stack';
 import { PhosphorStarIcon } from './star';
@@ -1166,6 +1167,11 @@ const PHOSPHOR_ICON_LIST = [
     ],
   },
   {
+    name: 'spinner',
+    icon: PhosphorSpinnerIcon,
+    keywords: ['spinner', 'loader'],
+  },
+  {
     name: 'squares-four',
     icon: PhosphorSquaresFourIcon,
     keywords: ['squares', 'four', 'layout-grid', 'layout', 'grid'],
@@ -1426,6 +1432,7 @@ export {
   PhosphorSmileySadIcon,
   PhosphorSortAscendingIcon,
   PhosphorSortDescendingIcon,
+  PhosphorSpinnerIcon,
   PhosphorSquaresFourIcon,
   PhosphorStackIcon,
   PhosphorStarIcon,
