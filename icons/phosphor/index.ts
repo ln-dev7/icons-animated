@@ -103,6 +103,7 @@ import { PhosphorFilmSlateIcon } from './film-slate';
 import { PhosphorFilterIcon } from './filter';
 import { PhosphorGearIcon } from './gear';
 import { PhosphorGearFineIcon } from './gear-fine';
+import { PhosphorGlobeHemisphereWestIcon } from './globe-hemisphere-west';
 import { PhosphorGoogleChromeLogoIcon } from './google-chrome-logo';
 import { PhosphorHeartIcon } from './heart';
 import { PhosphorHouseIcon } from './house';
@@ -685,6 +686,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['gear', 'fine', 'cog'],
   },
   {
+    name: 'globe-hemisphere-west',
+    icon: PhosphorGlobeHemisphereWestIcon,
+    keywords: ['globe', 'hemisphere', 'west', 'earth'],
+  },
+  {
     name: 'google-chrome-logo',
     icon: PhosphorGoogleChromeLogoIcon,
     keywords: ['google', 'chrome', 'logo'],
@@ -1014,6 +1020,7 @@ export {
   PhosphorFilterIcon,
   PhosphorGearIcon,
   PhosphorGearFineIcon,
+  PhosphorGlobeHemisphereWestIcon,
   PhosphorGoogleChromeLogoIcon,
   PhosphorHeartIcon,
   PhosphorHouseIcon,

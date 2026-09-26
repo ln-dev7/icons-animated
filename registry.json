@@ -2045,6 +2045,19 @@
       ]
     },
     {
+      "name": "hugeicons-earth",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-earth.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-eye",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -3795,6 +3808,19 @@
       "files": [
         {
           "path": "phosphor-gear-fine.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-globe-hemisphere-west",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-globe-hemisphere-west.tsx",
           "type": "registry:ui"
         }
       ]
@@ -6330,6 +6356,19 @@
       "files": [
         {
           "path": "tabler-user.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-world",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-world.tsx",
           "type": "registry:ui"
         }
       ]

@@ -964,6 +964,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-earth',
+    'path': path.join(__dirname, '../icons/hugeicons/earth.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-eye',
     'path': path.join(__dirname, '../icons/hugeicons/eye.tsx'),
     'registryDependencies': [],
@@ -1782,6 +1788,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-gear-fine',
     'path': path.join(__dirname, '../icons/phosphor/gear-fine.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-globe-hemisphere-west',
+    'path': path.join(__dirname, '../icons/phosphor/globe-hemisphere-west.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -2952,6 +2964,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-user',
     'path': path.join(__dirname, '../icons/tabler/user.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-world',
+    'path': path.join(__dirname, '../icons/tabler/world.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

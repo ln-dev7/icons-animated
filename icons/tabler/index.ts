@@ -154,6 +154,7 @@ import { TablerThumbDownIcon } from './thumb-down';
 import { TablerTrashIcon } from './trash';
 import { TablerUploadIcon } from './upload';
 import { TablerUserIcon } from './user';
+import { TablerWorldIcon } from './world';
 import { TablerXIcon } from './x';
 
 const TABLER_ICON_LIST = [
@@ -923,6 +924,7 @@ const TABLER_ICON_LIST = [
     icon: TablerUserIcon,
     keywords: ['user', 'person', 'profile', 'account', 'avatar'],
   },
+  { name: 'world', icon: TablerWorldIcon, keywords: ['world', 'earth'] },
   {
     name: 'x',
     icon: TablerXIcon,
@@ -1088,5 +1090,6 @@ export {
   TablerTrashIcon,
   TablerUploadIcon,
   TablerUserIcon,
+  TablerWorldIcon,
   TablerXIcon,
 };
