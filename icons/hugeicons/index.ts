@@ -321,6 +321,7 @@ import { HugeiconsPencilIcon } from './pencil';
 import { HugeiconsPhilippinePesoIcon } from './philippine-peso';
 import { HugeiconsPhoneIcon } from './phone';
 import { HugeiconsPhoneCallIcon } from './phone-call';
+import { HugeiconsPhoneForwardedIcon } from './phone-forwarded';
 import { HugeiconsPieChartIcon } from './pie-chart';
 import { HugeiconsPlusIcon } from './plus';
 import { HugeiconsPulse01Icon } from './pulse-01';
@@ -1770,6 +1771,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['phone', 'call', 'phone-call'],
   },
   {
+    name: 'phone-forwarded',
+    icon: HugeiconsPhoneForwardedIcon,
+    keywords: ['phone', 'forwarded', 'phone-forwarded'],
+  },
+  {
     name: 'pie-chart',
     icon: HugeiconsPieChartIcon,
     keywords: ['pie', 'chart', 'chart-pie'],
@@ -2215,6 +2221,7 @@ export {
   HugeiconsPhilippinePesoIcon,
   HugeiconsPhoneIcon,
   HugeiconsPhoneCallIcon,
+  HugeiconsPhoneForwardedIcon,
   HugeiconsPieChartIcon,
   HugeiconsPlusIcon,
   HugeiconsPulse01Icon,

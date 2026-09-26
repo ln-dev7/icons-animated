@@ -236,6 +236,7 @@ import { TablerPaperclipIcon } from './paperclip';
 import { TablerPencilIcon } from './pencil';
 import { TablerPhoneIcon } from './phone';
 import { TablerPhoneCallIcon } from './phone-call';
+import { TablerPhoneOutgoingIcon } from './phone-outgoing';
 import { TablerPlaneIcon } from './plane';
 import { TablerPlayerPauseIcon } from './player-pause';
 import { TablerPlugConnectedIcon } from './plug-connected';
@@ -1333,6 +1334,11 @@ const TABLER_ICON_LIST = [
     icon: TablerPhoneCallIcon,
     keywords: ['phone', 'call', 'phone-call'],
   },
+  {
+    name: 'phone-outgoing',
+    icon: TablerPhoneOutgoingIcon,
+    keywords: ['phone', 'outgoing', 'phone-forwarded', 'forwarded'],
+  },
   { name: 'plane', icon: TablerPlaneIcon, keywords: ['plane', 'airplane'] },
   {
     name: 'player-pause',
@@ -1762,6 +1768,7 @@ export {
   TablerPencilIcon,
   TablerPhoneIcon,
   TablerPhoneCallIcon,
+  TablerPhoneOutgoingIcon,
   TablerPlaneIcon,
   TablerPlayerPauseIcon,
   TablerPlugConnectedIcon,
