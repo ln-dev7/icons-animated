@@ -119,6 +119,7 @@ import { TablerDownloadIcon } from './download';
 import { TablerDropletIcon } from './droplet';
 import { TablerExternalLinkIcon } from './external-link';
 import { TablerEyeIcon } from './eye';
+import { TablerEyeOffIcon } from './eye-off';
 import { TablerFilterIcon } from './filter';
 import { TablerGaugeIcon } from './gauge';
 import { TablerHeartIcon } from './heart';
@@ -710,6 +711,11 @@ const TABLER_ICON_LIST = [
     keywords: ['eye', 'view', 'see', 'visible', 'show', 'watch'],
   },
   {
+    name: 'eye-off',
+    icon: TablerEyeOffIcon,
+    keywords: ['eye', 'off', 'eye-off'],
+  },
+  {
     name: 'filter',
     icon: TablerFilterIcon,
     keywords: ['filter', 'sort', 'funnel', 'refine', 'search'],
@@ -1079,6 +1085,7 @@ export {
   TablerDropletIcon,
   TablerExternalLinkIcon,
   TablerEyeIcon,
+  TablerEyeOffIcon,
   TablerFilterIcon,
   TablerGaugeIcon,
   TablerHeartIcon,

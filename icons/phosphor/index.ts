@@ -103,6 +103,7 @@ import { PhosphorDribbbleLogoIcon } from './dribbble-logo';
 import { PhosphorDropIcon } from './drop';
 import { PhosphorEnvelopeIcon } from './envelope';
 import { PhosphorEyeIcon } from './eye';
+import { PhosphorEyeSlashIcon } from './eye-slash';
 import { PhosphorFilmSlateIcon } from './film-slate';
 import { PhosphorFilterIcon } from './filter';
 import { PhosphorGearIcon } from './gear';
@@ -690,6 +691,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['eye', 'view', 'see', 'visible', 'show', 'watch'],
   },
   {
+    name: 'eye-slash',
+    icon: PhosphorEyeSlashIcon,
+    keywords: ['eye', 'slash', 'eye-off', 'off'],
+  },
+  {
     name: 'film-slate',
     icon: PhosphorFilmSlateIcon,
     keywords: ['film', 'slate', 'clap'],
@@ -1044,6 +1050,7 @@ export {
   PhosphorDropIcon,
   PhosphorEnvelopeIcon,
   PhosphorEyeIcon,
+  PhosphorEyeSlashIcon,
   PhosphorFilmSlateIcon,
   PhosphorFilterIcon,
   PhosphorGearIcon,
