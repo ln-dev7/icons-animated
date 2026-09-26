@@ -228,6 +228,7 @@ import { HugeiconsGripIcon } from './grip';
 import { HugeiconsGripHorizontalIcon } from './grip-horizontal';
 import { HugeiconsGripVerticalIcon } from './grip-vertical';
 import { HugeiconsHammerIcon } from './hammer';
+import { HugeiconsHandIcon } from './hand';
 import { HugeiconsHeartIcon } from './heart';
 import { HugeiconsHomeIcon } from './home';
 import { HugeiconsLockIcon } from './lock';
@@ -1295,6 +1296,7 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['grip', 'vertical', 'grip-vertical'],
   },
   { name: 'hammer', icon: HugeiconsHammerIcon, keywords: ['hammer'] },
+  { name: 'hand', icon: HugeiconsHandIcon, keywords: ['hand'] },
   {
     name: 'heart',
     icon: HugeiconsHeartIcon,
@@ -1690,6 +1692,7 @@ export {
   HugeiconsGripHorizontalIcon,
   HugeiconsGripVerticalIcon,
   HugeiconsHammerIcon,
+  HugeiconsHandIcon,
   HugeiconsHeartIcon,
   HugeiconsHomeIcon,
   HugeiconsLockIcon,

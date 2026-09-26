@@ -140,6 +140,7 @@ import { PhosphorGlobeHemisphereWestIcon } from './globe-hemisphere-west';
 import { PhosphorGoogleChromeLogoIcon } from './google-chrome-logo';
 import { PhosphorGraduationCapIcon } from './graduation-cap';
 import { PhosphorHammerIcon } from './hammer';
+import { PhosphorHandPalmIcon } from './hand-palm';
 import { PhosphorHeartIcon } from './heart';
 import { PhosphorHouseIcon } from './house';
 import { PhosphorListIcon } from './list';
@@ -891,6 +892,7 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['graduation', 'cap', 'graduation-cap'],
   },
   { name: 'hammer', icon: PhosphorHammerIcon, keywords: ['hammer'] },
+  { name: 'hand-palm', icon: PhosphorHandPalmIcon, keywords: ['hand', 'palm'] },
   {
     name: 'heart',
     icon: PhosphorHeartIcon,
@@ -1258,6 +1260,7 @@ export {
   PhosphorGoogleChromeLogoIcon,
   PhosphorGraduationCapIcon,
   PhosphorHammerIcon,
+  PhosphorHandPalmIcon,
   PhosphorHeartIcon,
   PhosphorHouseIcon,
   PhosphorListIcon,
