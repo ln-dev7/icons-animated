@@ -2284,6 +2284,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-server-cog',
+    'path': path.join(__dirname, '../icons/hugeicons/server-cog.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-settings',
     'path': path.join(__dirname, '../icons/hugeicons/settings.tsx'),
     'registryDependencies': [],
@@ -5625,6 +5631,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-server',
     'path': path.join(__dirname, '../icons/tabler/server.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-server-cog',
+    'path': path.join(__dirname, '../icons/tabler/server-cog.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

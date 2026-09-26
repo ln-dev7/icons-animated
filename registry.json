@@ -4853,6 +4853,19 @@
       ]
     },
     {
+      "name": "hugeicons-server-cog",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-server-cog.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-settings",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -12024,6 +12037,19 @@
       "files": [
         {
           "path": "tabler-server.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-server-cog",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-server-cog.tsx",
           "type": "registry:ui"
         }
       ]

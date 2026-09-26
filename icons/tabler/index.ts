@@ -279,6 +279,7 @@ import { TablerSearchIcon } from './search';
 import { TablerSelectorIcon } from './selector';
 import { TablerSendIcon } from './send';
 import { TablerServerIcon } from './server';
+import { TablerServerCogIcon } from './server-cog';
 import { TablerSettingsIcon } from './settings';
 import { TablerShareIcon } from './share';
 import { TablerShoppingCartIcon } from './shopping-cart';
@@ -1553,6 +1554,11 @@ const TABLER_ICON_LIST = [
   { name: 'send', icon: TablerSendIcon, keywords: ['send'] },
   { name: 'server', icon: TablerServerIcon, keywords: ['server'] },
   {
+    name: 'server-cog',
+    icon: TablerServerCogIcon,
+    keywords: ['server', 'cog', 'server-cog'],
+  },
+  {
     name: 'settings',
     icon: TablerSettingsIcon,
     keywords: ['settings', 'gear', 'cog', 'preferences', 'config'],
@@ -1969,6 +1975,7 @@ export {
   TablerSelectorIcon,
   TablerSendIcon,
   TablerServerIcon,
+  TablerServerCogIcon,
   TablerSettingsIcon,
   TablerShareIcon,
   TablerShoppingCartIcon,
