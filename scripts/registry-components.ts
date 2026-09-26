@@ -232,6 +232,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-text-align-center',
+    'path': path.join(__dirname, '../icons/hugeicons/text-align-center.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-trash',
     'path': path.join(__dirname, '../icons/hugeicons/trash.tsx'),
     'registryDependencies': [],
@@ -454,6 +460,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'phosphor-text-align-center',
+    'path': path.join(__dirname, '../icons/phosphor/text-align-center.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'phosphor-trash',
     'path': path.join(__dirname, '../icons/phosphor/trash.tsx'),
     'registryDependencies': [],
@@ -516,6 +528,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-alarm-smoke',
     'path': path.join(__dirname, '../icons/tabler/alarm-smoke.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-align-center',
+    'path': path.join(__dirname, '../icons/tabler/align-center.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },

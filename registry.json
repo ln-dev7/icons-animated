@@ -498,6 +498,19 @@
       ]
     },
     {
+      "name": "hugeicons-text-align-center",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-text-align-center.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-trash",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -979,6 +992,19 @@
       ]
     },
     {
+      "name": "phosphor-text-align-center",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-text-align-center.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-trash",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -1117,6 +1143,19 @@
       "files": [
         {
           "path": "tabler-alarm-smoke.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-align-center",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-align-center.tsx",
           "type": "registry:ui"
         }
       ]
