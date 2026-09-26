@@ -81,6 +81,7 @@ import { HugeiconsCalendarDaysIcon } from './calendar-days';
 import { HugeiconsCastIcon } from './cast';
 import { HugeiconsCctvCameraIcon } from './cctv-camera';
 import { HugeiconsChartBarDecreasingIcon } from './chart-bar-decreasing';
+import { HugeiconsChartBarIncreasingIcon } from './chart-bar-increasing';
 import { HugeiconsCheckIcon } from './check';
 import { HugeiconsChevronDownIcon } from './chevron-down';
 import { HugeiconsChevronLeftIcon } from './chevron-left';
@@ -483,6 +484,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['chart', 'bar', 'decreasing', 'chart-bar-decreasing'],
   },
   {
+    name: 'chart-bar-increasing',
+    icon: HugeiconsChartBarIncreasingIcon,
+    keywords: ['chart', 'bar', 'increasing', 'chart-bar-increasing'],
+  },
+  {
     name: 'check',
     icon: HugeiconsCheckIcon,
     keywords: ['check', 'done', 'success', 'complete', 'validate', 'tick'],
@@ -777,6 +783,7 @@ export {
   HugeiconsCastIcon,
   HugeiconsCctvCameraIcon,
   HugeiconsChartBarDecreasingIcon,
+  HugeiconsChartBarIncreasingIcon,
   HugeiconsCheckIcon,
   HugeiconsChevronDownIcon,
   HugeiconsChevronLeftIcon,
