@@ -4905,6 +4905,19 @@
       ]
     },
     {
+      "name": "hugeicons-shield-check",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-shield-check.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-shopping-cart-01",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -8059,6 +8072,19 @@
       "files": [
         {
           "path": "phosphor-share.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-shield-check",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-shield-check.tsx",
           "type": "registry:ui"
         }
       ]
@@ -12089,6 +12115,19 @@
       "files": [
         {
           "path": "tabler-share.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-shield-check",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-shield-check.tsx",
           "type": "registry:ui"
         }
       ]

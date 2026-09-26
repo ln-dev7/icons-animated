@@ -228,6 +228,7 @@ import { PhosphorSealWarningIcon } from './seal-warning';
 import { PhosphorSearchIcon } from './search';
 import { PhosphorSecurityCameraIcon } from './security-camera';
 import { PhosphorShareIcon } from './share';
+import { PhosphorShieldCheckIcon } from './shield-check';
 import { PhosphorShoppingCartIcon } from './shopping-cart';
 import { PhosphorSignInIcon } from './sign-in';
 import { PhosphorSignOutIcon } from './sign-out';
@@ -1376,6 +1377,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['share', 'send', 'social', 'network', 'distribute'],
   },
   {
+    name: 'shield-check',
+    icon: PhosphorShieldCheckIcon,
+    keywords: ['shield', 'check', 'shield-check'],
+  },
+  {
     name: 'shopping-cart',
     icon: PhosphorShoppingCartIcon,
     keywords: ['shopping', 'cart'],
@@ -1753,6 +1759,7 @@ export {
   PhosphorSearchIcon,
   PhosphorSecurityCameraIcon,
   PhosphorShareIcon,
+  PhosphorShieldCheckIcon,
   PhosphorShoppingCartIcon,
   PhosphorSignInIcon,
   PhosphorSignOutIcon,

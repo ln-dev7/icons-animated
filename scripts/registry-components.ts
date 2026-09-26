@@ -2308,6 +2308,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-shield-check',
+    'path': path.join(__dirname, '../icons/hugeicons/shield-check.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-shopping-cart-01',
     'path': path.join(__dirname, '../icons/hugeicons/shopping-cart-01.tsx'),
     'registryDependencies': [],
@@ -3783,6 +3789,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-share',
     'path': path.join(__dirname, '../icons/phosphor/share.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-shield-check',
+    'path': path.join(__dirname, '../icons/phosphor/shield-check.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -5655,6 +5667,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-share',
     'path': path.join(__dirname, '../icons/tabler/share.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-shield-check',
+    'path': path.join(__dirname, '../icons/tabler/shield-check.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
