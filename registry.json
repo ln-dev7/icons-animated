@@ -1707,6 +1707,19 @@
       ]
     },
     {
+      "name": "hugeicons-compass",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-compass.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-download",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -3028,6 +3041,19 @@
       "files": [
         {
           "path": "phosphor-coffee.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-compass",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-compass.tsx",
           "type": "registry:ui"
         }
       ]
@@ -4822,6 +4848,19 @@
       "files": [
         {
           "path": "tabler-coin.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-compass",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-compass.tsx",
           "type": "registry:ui"
         }
       ]
