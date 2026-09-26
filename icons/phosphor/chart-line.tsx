@@ -56,9 +56,19 @@ const ICON_VARIANTS: Variants = {
     opacity: 1,
     transition: { duration: 0.18, ease: 'easeOut' },
   },
+  animate: { 'transition': { 'duration': 0.75, 'ease': 'easeInOut' } },
+};
+
+const DETAIL_0_VARIANTS: Variants = {
+  normal: {
+    'scaleY': 1,
+    'opacity': 1,
+    'transition': { 'duration': 0.18, 'ease': 'easeOut' },
+  },
   animate: {
-    scaleY: [1, 0.78, 1.04, 1],
-    transition: { duration: 0.75, ease: 'easeInOut' },
+    'scaleY': [1, 0.72, 1],
+    'opacity': [1, 0.6, 1],
+    'transition': { 'duration': 0.9, 'delay': 0, 'ease': 'easeInOut' },
   },
 };
 
@@ -145,7 +155,12 @@ const PhosphorChartLineIcon = forwardRef<
             variants={ICON_VARIANTS}
             style={{ transformOrigin: '128px 128px' }}
           >
-            <path d="M232,208a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V48a8,8,0,0,1,16,0v94.37L90.73,98a8,8,0,0,1,10.07-.38l58.81,44.11L218.73,90a8,8,0,1,1,10.54,12l-64,56a8,8,0,0,1-10.07.38L96.39,114.29,40,163.63V200H224A8,8,0,0,1,232,208Z" />
+            <path d="M232,208a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V48a8,8,0,0,1,16,0V200H224A8,8,0,0,1,232,208Z" />
+            <motion.path
+              d="M39.5,142.37H40L90.73,98a8,8,0,0,1,10.07-.38l58.81,44.11L218.73,90a8,8,0,1,1,10.54,12l-64,56a8,8,0,0,1-10.07.38L96.39,114.29,40,163.63H39.5Z"
+              variants={DETAIL_0_VARIANTS}
+              style={{ transformOrigin: '40px 200px' }}
+            />
           </motion.g>
         </svg>
       </div>
