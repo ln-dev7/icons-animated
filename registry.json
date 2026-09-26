@@ -1798,6 +1798,19 @@
       ]
     },
     {
+      "name": "hugeicons-corner-down-left",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-corner-down-left.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-download",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2300,6 +2313,19 @@
       "files": [
         {
           "path": "phosphor-arrow-down-right.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-arrow-elbow-down-left",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-arrow-elbow-down-left.tsx",
           "type": "registry:ui"
         }
       ]
@@ -5056,6 +5082,19 @@
       "files": [
         {
           "path": "tabler-copy.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-corner-down-left",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-corner-down-left.tsx",
           "type": "registry:ui"
         }
       ]
