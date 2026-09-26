@@ -2630,6 +2630,19 @@
       ]
     },
     {
+      "name": "hugeicons-folder-x",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-folder-x.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-heart",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -6993,6 +7006,19 @@
       "files": [
         {
           "path": "tabler-folder-up.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-folder-x",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-folder-x.tsx",
           "type": "registry:ui"
         }
       ]
