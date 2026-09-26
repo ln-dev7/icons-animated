@@ -4,6 +4,7 @@ import { TablerAirConditioningIcon } from './air-conditioning';
 import { TablerAlarmIcon } from './alarm';
 import { TablerAlarmMinusIcon } from './alarm-minus';
 import { TablerAlarmPlusIcon } from './alarm-plus';
+import { TablerAlarmSmokeIcon } from './alarm-smoke';
 import { TablerArrowDownIcon } from './arrow-down';
 import { TablerArrowLeftIcon } from './arrow-left';
 import { TablerArrowRightIcon } from './arrow-right';
@@ -63,6 +64,11 @@ const TABLER_ICON_LIST = [
     name: 'alarm-plus',
     icon: TablerAlarmPlusIcon,
     keywords: ['alarm', 'plus', 'alarm-clock-plus', 'clock'],
+  },
+  {
+    name: 'alarm-smoke',
+    icon: TablerAlarmSmokeIcon,
+    keywords: ['alarm', 'smoke', 'alarm-smoke'],
   },
   {
     name: 'arrow-down',
@@ -286,6 +292,7 @@ export {
   TablerAlarmIcon,
   TablerAlarmMinusIcon,
   TablerAlarmPlusIcon,
+  TablerAlarmSmokeIcon,
   TablerArrowDownIcon,
   TablerArrowLeftIcon,
   TablerArrowRightIcon,
