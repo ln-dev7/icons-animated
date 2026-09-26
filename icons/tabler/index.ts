@@ -1,5 +1,6 @@
 import { TablerAccessibleIcon } from './accessible';
 import { TablerActivityIcon } from './activity';
+import { TablerAdjustmentsHorizontalIcon } from './adjustments-horizontal';
 import { TablerAirConditioningIcon } from './air-conditioning';
 import { TablerAlarmIcon } from './alarm';
 import { TablerAlarmMinusIcon } from './alarm-minus';
@@ -312,6 +313,11 @@ const TABLER_ICON_LIST = [
     keywords: ['accessible', 'accessibility'],
   },
   { name: 'activity', icon: TablerActivityIcon, keywords: ['activity'] },
+  {
+    name: 'adjustments-horizontal',
+    icon: TablerAdjustmentsHorizontalIcon,
+    keywords: ['adjustments', 'horizontal', 'sliders-horizontal', 'sliders'],
+  },
   {
     name: 'air-conditioning',
     icon: TablerAirConditioningIcon,
@@ -1712,6 +1718,7 @@ export {
   TABLER_ICON_LIST,
   TablerAccessibleIcon,
   TablerActivityIcon,
+  TablerAdjustmentsHorizontalIcon,
   TablerAirConditioningIcon,
   TablerAlarmIcon,
   TablerAlarmMinusIcon,

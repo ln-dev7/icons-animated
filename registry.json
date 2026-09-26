@@ -4996,6 +4996,19 @@
       ]
     },
     {
+      "name": "hugeicons-sliders-horizontal",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-sliders-horizontal.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-star",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -8233,6 +8246,19 @@
       ]
     },
     {
+      "name": "phosphor-sliders-horizontal",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-sliders-horizontal.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "phosphor-smiley-angry",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -8553,6 +8579,19 @@
       "files": [
         {
           "path": "tabler-activity.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-adjustments-horizontal",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-adjustments-horizontal.tsx",
           "type": "registry:ui"
         }
       ]

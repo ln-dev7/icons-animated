@@ -382,6 +382,7 @@ import { HugeiconsShoppingCart01Icon } from './shopping-cart-01';
 import { HugeiconsShowerHeadIcon } from './shower-head';
 import { HugeiconsShredderIcon } from './shredder';
 import { HugeiconsShrinkIcon } from './shrink';
+import { HugeiconsSlidersHorizontalIcon } from './sliders-horizontal';
 import { HugeiconsStarIcon } from './star';
 import { HugeiconsSunCloud02Icon } from './sun-cloud-02';
 import { HugeiconsTextAlignCenterIcon } from './text-align-center';
@@ -2081,6 +2082,11 @@ const HUGEICONS_ICON_LIST = [
   { name: 'shredder', icon: HugeiconsShredderIcon, keywords: ['shredder'] },
   { name: 'shrink', icon: HugeiconsShrinkIcon, keywords: ['shrink'] },
   {
+    name: 'sliders-horizontal',
+    icon: HugeiconsSlidersHorizontalIcon,
+    keywords: ['sliders', 'horizontal', 'sliders-horizontal'],
+  },
+  {
     name: 'star',
     icon: HugeiconsStarIcon,
     keywords: ['star', 'favorite', 'bookmark', 'rate', 'rating'],
@@ -2528,6 +2534,7 @@ export {
   HugeiconsShowerHeadIcon,
   HugeiconsShredderIcon,
   HugeiconsShrinkIcon,
+  HugeiconsSlidersHorizontalIcon,
   HugeiconsStarIcon,
   HugeiconsSunCloud02Icon,
   HugeiconsTextAlignCenterIcon,
