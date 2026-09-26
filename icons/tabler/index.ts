@@ -63,6 +63,7 @@ import { TablerChartLineIcon } from './chart-line';
 import { TablerChartPieIcon } from './chart-pie';
 import { TablerChartScatterIcon } from './chart-scatter';
 import { TablerCheckIcon } from './check';
+import { TablerChecksIcon } from './checks';
 import { TablerChevronDownIcon } from './chevron-down';
 import { TablerChevronLeftIcon } from './chevron-left';
 import { TablerChevronRightIcon } from './chevron-right';
@@ -375,6 +376,11 @@ const TABLER_ICON_LIST = [
     name: 'check',
     icon: TablerCheckIcon,
     keywords: ['check', 'done', 'success', 'complete', 'validate', 'tick'],
+  },
+  {
+    name: 'checks',
+    icon: TablerChecksIcon,
+    keywords: ['checks', 'check-check', 'check'],
   },
   {
     name: 'chevron-down',
@@ -721,6 +727,7 @@ export {
   TablerChartPieIcon,
   TablerChartScatterIcon,
   TablerCheckIcon,
+  TablerChecksIcon,
   TablerChevronDownIcon,
   TablerChevronLeftIcon,
   TablerChevronRightIcon,

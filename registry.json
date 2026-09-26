@@ -1200,6 +1200,19 @@
       ]
     },
     {
+      "name": "hugeicons-check-check",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-check-check.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-chevron-down",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -2248,6 +2261,19 @@
       "files": [
         {
           "path": "phosphor-check.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-checks",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-checks.tsx",
           "type": "registry:ui"
         }
       ]
@@ -3678,6 +3704,19 @@
       "files": [
         {
           "path": "tabler-check.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-checks",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-checks.tsx",
           "type": "registry:ui"
         }
       ]
