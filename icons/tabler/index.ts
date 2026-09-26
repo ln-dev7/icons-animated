@@ -140,6 +140,7 @@ import { TablerPencilIcon } from './pencil';
 import { TablerPlaneIcon } from './plane';
 import { TablerPlugConnectedIcon } from './plug-connected';
 import { TablerPlusIcon } from './plus';
+import { TablerPropellerIcon } from './propeller';
 import { TablerRefreshIcon } from './refresh';
 import { TablerRobotIcon } from './robot';
 import { TablerRosetteDiscountIcon } from './rosette-discount';
@@ -821,6 +822,11 @@ const TABLER_ICON_LIST = [
     keywords: ['plus', 'add', 'new', 'create', 'increase'],
   },
   {
+    name: 'propeller',
+    icon: TablerPropellerIcon,
+    keywords: ['propeller', 'fan'],
+  },
+  {
     name: 'refresh',
     icon: TablerRefreshIcon,
     keywords: [
@@ -1112,6 +1118,7 @@ export {
   TablerPlaneIcon,
   TablerPlugConnectedIcon,
   TablerPlusIcon,
+  TablerPropellerIcon,
   TablerRefreshIcon,
   TablerRobotIcon,
   TablerRosetteDiscountIcon,

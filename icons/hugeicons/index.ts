@@ -163,6 +163,7 @@ import { HugeiconsExternalLinkIcon } from './external-link';
 import { HugeiconsEyeIcon } from './eye';
 import { HugeiconsEyeOffIcon } from './eye-off';
 import { HugeiconsFacebook02Icon } from './facebook-02';
+import { HugeiconsFan01Icon } from './fan-01';
 import { HugeiconsFilterIcon } from './filter';
 import { HugeiconsHeartIcon } from './heart';
 import { HugeiconsHomeIcon } from './home';
@@ -958,6 +959,7 @@ const HUGEICONS_ICON_LIST = [
     icon: HugeiconsFacebook02Icon,
     keywords: ['facebook', '02'],
   },
+  { name: 'fan-01', icon: HugeiconsFan01Icon, keywords: ['fan', '01'] },
   {
     name: 'filter',
     icon: HugeiconsFilterIcon,
@@ -1293,6 +1295,7 @@ export {
   HugeiconsEyeIcon,
   HugeiconsEyeOffIcon,
   HugeiconsFacebook02Icon,
+  HugeiconsFan01Icon,
   HugeiconsFilterIcon,
   HugeiconsHeartIcon,
   HugeiconsHomeIcon,

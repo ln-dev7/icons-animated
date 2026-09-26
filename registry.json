@@ -2149,6 +2149,19 @@
       ]
     },
     {
+      "name": "hugeicons-fan-01",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-fan-01.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-filter",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -3912,6 +3925,19 @@
       "files": [
         {
           "path": "phosphor-facebook-logo.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-fan",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-fan.tsx",
           "type": "registry:ui"
         }
       ]
@@ -6330,6 +6356,19 @@
       "files": [
         {
           "path": "tabler-plus.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-propeller",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-propeller.tsx",
           "type": "registry:ui"
         }
       ]
