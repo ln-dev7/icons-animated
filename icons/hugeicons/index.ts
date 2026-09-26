@@ -205,6 +205,7 @@ import { HugeiconsFoldersIcon } from './folders';
 import { HugeiconsFrameIcon } from './frame';
 import { HugeiconsFrownIcon } from './frown';
 import { HugeiconsGalleryHorizontalEndIcon } from './gallery-horizontal-end';
+import { HugeiconsGalleryThumbnailsIcon } from './gallery-thumbnails';
 import { HugeiconsHeartIcon } from './heart';
 import { HugeiconsHomeIcon } from './home';
 import { HugeiconsLockIcon } from './lock';
@@ -1182,6 +1183,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['gallery', 'horizontal', 'end', 'gallery-horizontal-end'],
   },
   {
+    name: 'gallery-thumbnails',
+    icon: HugeiconsGalleryThumbnailsIcon,
+    keywords: ['gallery', 'thumbnails', 'gallery-thumbnails'],
+  },
+  {
     name: 'heart',
     icon: HugeiconsHeartIcon,
     keywords: ['heart', 'love', 'like', 'favorite', 'health'],
@@ -1553,6 +1559,7 @@ export {
   HugeiconsFrameIcon,
   HugeiconsFrownIcon,
   HugeiconsGalleryHorizontalEndIcon,
+  HugeiconsGalleryThumbnailsIcon,
   HugeiconsHeartIcon,
   HugeiconsHomeIcon,
   HugeiconsLockIcon,
