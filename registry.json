@@ -3306,6 +3306,19 @@
       ]
     },
     {
+      "name": "hugeicons-keyboard",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-keyboard.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-lock",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -5693,6 +5706,19 @@
       "files": [
         {
           "path": "phosphor-key.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-keyboard",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-keyboard.tsx",
           "type": "registry:ui"
         }
       ]
@@ -8527,6 +8553,19 @@
       "files": [
         {
           "path": "tabler-key.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-keyboard",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-keyboard.tsx",
           "type": "registry:ui"
         }
       ]

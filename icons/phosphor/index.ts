@@ -156,6 +156,7 @@ import { PhosphorHouseIcon } from './house';
 import { PhosphorIdentificationCardIcon } from './identification-card';
 import { PhosphorInstagramLogoIcon } from './instagram-logo';
 import { PhosphorKeyIcon } from './key';
+import { PhosphorKeyboardIcon } from './keyboard';
 import { PhosphorListIcon } from './list';
 import { PhosphorLockIcon } from './lock';
 import { PhosphorNotebookIcon } from './notebook';
@@ -978,6 +979,7 @@ const PHOSPHOR_ICON_LIST = [
     icon: PhosphorKeyIcon,
     keywords: ['key', 'key-circle', 'circle'],
   },
+  { name: 'keyboard', icon: PhosphorKeyboardIcon, keywords: ['keyboard'] },
   {
     name: 'list',
     icon: PhosphorListIcon,
@@ -1356,6 +1358,7 @@ export {
   PhosphorIdentificationCardIcon,
   PhosphorInstagramLogoIcon,
   PhosphorKeyIcon,
+  PhosphorKeyboardIcon,
   PhosphorListIcon,
   PhosphorLockIcon,
   PhosphorNotebookIcon,

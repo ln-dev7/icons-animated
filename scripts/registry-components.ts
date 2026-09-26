@@ -1558,6 +1558,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-keyboard',
+    'path': path.join(__dirname, '../icons/hugeicons/keyboard.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-lock',
     'path': path.join(__dirname, '../icons/hugeicons/lock.tsx'),
     'registryDependencies': [],
@@ -2673,6 +2679,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-key',
     'path': path.join(__dirname, '../icons/phosphor/key.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-keyboard',
+    'path': path.join(__dirname, '../icons/phosphor/keyboard.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -3981,6 +3993,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-key',
     'path': path.join(__dirname, '../icons/tabler/key.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-keyboard',
+    'path': path.join(__dirname, '../icons/tabler/keyboard.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
