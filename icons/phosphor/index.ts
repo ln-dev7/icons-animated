@@ -1,5 +1,6 @@
 import { PhosphorAirplaneIcon } from './airplane';
 import { PhosphorAirplayIcon } from './airplay';
+import { PhosphorAlarmIcon } from './alarm';
 import { PhosphorArrowDownIcon } from './arrow-down';
 import { PhosphorArrowLeftIcon } from './arrow-left';
 import { PhosphorArrowRightIcon } from './arrow-right';
@@ -37,6 +38,11 @@ import { PhosphorXIcon } from './x';
 const PHOSPHOR_ICON_LIST = [
   { name: 'airplane', icon: PhosphorAirplaneIcon, keywords: ['airplane'] },
   { name: 'airplay', icon: PhosphorAirplayIcon, keywords: ['airplay'] },
+  {
+    name: 'alarm',
+    icon: PhosphorAlarmIcon,
+    keywords: ['alarm', 'alarm-clock', 'clock'],
+  },
   {
     name: 'arrow-down',
     icon: PhosphorArrowDownIcon,
@@ -204,6 +210,7 @@ export {
   PHOSPHOR_ICON_LIST,
   PhosphorAirplaneIcon,
   PhosphorAirplayIcon,
+  PhosphorAlarmIcon,
   PhosphorArrowDownIcon,
   PhosphorArrowLeftIcon,
   PhosphorArrowRightIcon,

@@ -69,6 +69,19 @@
       ]
     },
     {
+      "name": "hugeicons-alarm-clock",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-alarm-clock.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-arrow-down",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -519,6 +532,19 @@
       "files": [
         {
           "path": "phosphor-airplay.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-alarm",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-alarm.tsx",
           "type": "registry:ui"
         }
       ]
@@ -987,6 +1013,19 @@
       "files": [
         {
           "path": "tabler-air-conditioning.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-alarm",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-alarm.tsx",
           "type": "registry:ui"
         }
       ]

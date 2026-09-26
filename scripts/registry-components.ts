@@ -34,6 +34,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'hugeicons-alarm-clock',
+    'path': path.join(__dirname, '../icons/hugeicons/alarm-clock.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-arrow-down',
     'path': path.join(__dirname, '../icons/hugeicons/arrow-down.tsx'),
     'registryDependencies': [],
@@ -240,6 +246,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'phosphor-airplay',
     'path': path.join(__dirname, '../icons/phosphor/airplay.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'phosphor-alarm',
+    'path': path.join(__dirname, '../icons/phosphor/alarm.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
@@ -456,6 +468,12 @@ export const components: ComponentDefinition[] = [
   {
     'name': 'tabler-air-conditioning',
     'path': path.join(__dirname, '../icons/tabler/air-conditioning.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'tabler-alarm',
+    'path': path.join(__dirname, '../icons/tabler/alarm.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
