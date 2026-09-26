@@ -4,6 +4,12 @@ import type { ComponentDefinition } from './registry-utils';
 
 export const components: ComponentDefinition[] = [
   {
+    'name': 'hugeicons-a-arrow-down',
+    'path': path.join(__dirname, '../icons/hugeicons/a-arrow-down.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'hugeicons-arrow-down',
     'path': path.join(__dirname, '../icons/hugeicons/arrow-down.tsx'),
     'registryDependencies': [],

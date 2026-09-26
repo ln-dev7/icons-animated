@@ -1,3 +1,4 @@
+import { HugeiconsAArrowDownIcon } from './a-arrow-down';
 import { HugeiconsArrowDownIcon } from './arrow-down';
 import { HugeiconsArrowLeftIcon } from './arrow-left';
 import { HugeiconsArrowRightIcon } from './arrow-right';
@@ -32,6 +33,11 @@ import { HugeiconsXIcon } from './x';
 
 const HUGEICONS_ICON_LIST = [
   {
+    name: 'a-arrow-down',
+    icon: HugeiconsAArrowDownIcon,
+    keywords: ['a', 'arrow', 'down', 'a-arrow-down'],
+  },
+  {
     name: 'arrow-down',
     icon: HugeiconsArrowDownIcon,
     keywords: ['arrow', 'down', 'direction', 'south', 'bottom'],
@@ -57,6 +63,16 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['bell', 'notification', 'alert', 'ring', 'alarm'],
   },
   {
+    name: 'calendar',
+    icon: HugeiconsCalendarIcon,
+    keywords: ['calendar', 'date', 'schedule', 'event', 'day'],
+  },
+  {
+    name: 'check',
+    icon: HugeiconsCheckIcon,
+    keywords: ['check', 'done', 'success', 'complete', 'validate', 'tick'],
+  },
+  {
     name: 'chevron-down',
     icon: HugeiconsChevronDownIcon,
     keywords: ['chevron', 'down', 'direction', 'south', 'bottom', 'collapse'],
@@ -75,16 +91,6 @@ const HUGEICONS_ICON_LIST = [
     name: 'chevron-up',
     icon: HugeiconsChevronUpIcon,
     keywords: ['chevron', 'up', 'direction', 'north', 'top', 'expand'],
-  },
-  {
-    name: 'calendar',
-    icon: HugeiconsCalendarIcon,
-    keywords: ['calendar', 'date', 'schedule', 'event', 'day'],
-  },
-  {
-    name: 'check',
-    icon: HugeiconsCheckIcon,
-    keywords: ['check', 'done', 'success', 'complete', 'validate', 'tick'],
   },
   {
     name: 'download',
@@ -190,6 +196,7 @@ const HUGEICONS_ICON_LIST = [
 
 export {
   HUGEICONS_ICON_LIST,
+  HugeiconsAArrowDownIcon,
   HugeiconsArrowDownIcon,
   HugeiconsArrowLeftIcon,
   HugeiconsArrowRightIcon,
