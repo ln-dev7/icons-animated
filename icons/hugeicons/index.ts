@@ -272,6 +272,7 @@ import { HugeiconsLockKeyholeIcon } from './lock-keyhole';
 import { HugeiconsLockKeyholeOpenIcon } from './lock-keyhole-open';
 import { HugeiconsLockOpenIcon } from './lock-open';
 import { HugeiconsLogInIcon } from './log-in';
+import { HugeiconsLogOutIcon } from './log-out';
 import { HugeiconsMailIcon } from './mail';
 import { HugeiconsMenuIcon } from './menu';
 import { HugeiconsMousePointerClickIcon } from './mouse-pointer-click';
@@ -1512,6 +1513,11 @@ const HUGEICONS_ICON_LIST = [
     keywords: ['log', 'in', 'login'],
   },
   {
+    name: 'log-out',
+    icon: HugeiconsLogOutIcon,
+    keywords: ['log', 'out', 'logout'],
+  },
+  {
     name: 'mail',
     icon: HugeiconsMailIcon,
     keywords: ['mail', 'email', 'envelope', 'message', 'letter'],
@@ -1928,6 +1934,7 @@ export {
   HugeiconsLockKeyholeOpenIcon,
   HugeiconsLockOpenIcon,
   HugeiconsLogInIcon,
+  HugeiconsLogOutIcon,
   HugeiconsMailIcon,
   HugeiconsMenuIcon,
   HugeiconsMousePointerClickIcon,

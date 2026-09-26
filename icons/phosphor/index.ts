@@ -187,6 +187,7 @@ import { PhosphorSecurityCameraIcon } from './security-camera';
 import { PhosphorShareIcon } from './share';
 import { PhosphorShoppingCartIcon } from './shopping-cart';
 import { PhosphorSignInIcon } from './sign-in';
+import { PhosphorSignOutIcon } from './sign-out';
 import { PhosphorSmileyAngryIcon } from './smiley-angry';
 import { PhosphorSmileyMehIcon } from './smiley-meh';
 import { PhosphorSmileySadIcon } from './smiley-sad';
@@ -1146,6 +1147,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['sign', 'in', 'login'],
   },
   {
+    name: 'sign-out',
+    icon: PhosphorSignOutIcon,
+    keywords: ['sign', 'out', 'logout'],
+  },
+  {
     name: 'smiley-angry',
     icon: PhosphorSmileyAngryIcon,
     keywords: ['smiley', 'angry'],
@@ -1467,6 +1473,7 @@ export {
   PhosphorShareIcon,
   PhosphorShoppingCartIcon,
   PhosphorSignInIcon,
+  PhosphorSignOutIcon,
   PhosphorSmileyAngryIcon,
   PhosphorSmileyMehIcon,
   PhosphorSmileySadIcon,

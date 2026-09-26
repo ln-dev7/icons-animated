@@ -3566,6 +3566,19 @@
       ]
     },
     {
+      "name": "hugeicons-log-out",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "hugeicons-log-out.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-mail",
       "type": "registry:ui",
       "registryDependencies": [],
@@ -6343,6 +6356,19 @@
       "files": [
         {
           "path": "phosphor-sign-in.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "phosphor-sign-out",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "phosphor-sign-out.tsx",
           "type": "registry:ui"
         }
       ]
@@ -9151,6 +9177,19 @@
       "files": [
         {
           "path": "tabler-login.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabler-logout",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": ["motion"],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "tabler-logout.tsx",
           "type": "registry:ui"
         }
       ]
