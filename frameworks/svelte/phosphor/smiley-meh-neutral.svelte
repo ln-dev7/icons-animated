@@ -1,12 +1,12 @@
-<script setup lang="ts">
+<script lang="ts">
 // @ts-nocheck
 /**
  * @license
  * MIT License
  * Choreography copyright (c) 2024-2026 pqoqubbw
- * Reference: https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca
+ * Reference: meh @ 072c38b1b04ea738d90a084485ccaad4b890ddca
  *
- * Copyright (c) 2020-2026 Paweł Kuna
+ * Copyright (c) 2023 Phosphor Icons
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -27,13 +27,13 @@
  * SOFTWARE.
  */
 import { SVGVisualElement, animateVisualElement, setTarget, scrapeSVGMotionValuesFromProps, resolveMotionValue, resolveVariantFromProps, isControllingVariants, isVariantNode, getDefaultValueType, visualElementStore, camelCaseAttributes, cubicBezier, easeInOut, easeOut, easeIn } from 'motion';
-import { onMounted, onBeforeUnmount, shallowRef, useId, watch } from 'vue';
-const props = defineProps({ size: { type: Number, default: 28 }, controlled: { type: Boolean, default: false } });
-const root = shallowRef();
-const instanceId = useId();
+import { onMount } from 'svelte';
+let { size = 28, controlled = false, ...rest } = $props();
+let root;
+const instanceId = $props.id();
 function createIconProgram(api) {
   const { Fragment, cn, forwardRef, getDefaultValueType, iconNode, motion, setTarget, useAnimation, useCallback, useEffect, useImperativeHandle, useMemo, useRef, useState, visualElementStore } = api;
-const TablerMoodNeutralIcon = forwardRef(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
+const PhosphorSmileyMehNeutralIcon = forwardRef(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
     const controls = useAnimation();
     const isControlledRef = useRef(false);
     const { rootRef: iconRootRef, reduceDefinition, ...iconAccessibility } = useIconAccessibility(ref, () => {
@@ -139,13 +139,20 @@ const TablerMoodNeutralIcon = forwardRef(({ onMouseEnter, onMouseLeave, classNam
             }
             props.onBlur?.(event);
         } },
-        iconNode(motion.svg, { xmlns: "http://www.w3.org/2000/svg", width: size, height: size, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": "true", focusable: "false", animate: reduceDefinition(controls), initial: "normal", variants: faceVariants },
-            iconNode("path", { d: "M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" }),
-            iconNode(motion.path, { d: "", display: "none", animate: reduceDefinition(controls), initial: "normal", variants: mouthVariants }),
-            iconNode(motion.path, { d: "M9 10l.01 0", animate: reduceDefinition(controls), initial: "normal", variants: leftEyeVariants }),
-            iconNode(motion.path, { d: "M15 10l.01 0", animate: reduceDefinition(controls), initial: "normal", variants: rightEyeVariants }))));
+        iconNode(motion.svg, { xmlns: "http://www.w3.org/2000/svg", width: size, height: size, viewBox: "0 0 24 24", fill: "currentColor", "aria-hidden": "true", focusable: "false", animate: reduceDefinition(controls), initial: "normal", variants: faceVariants },
+            iconNode("g", { transform: "scale(0.09375)" },
+                iconNode("path", { d: "M 128 24 A 104 104 0 1 0 232 128 A 104.11 104.11 0 0 0 128 24 Z M 128 216 a 88 88 0 1 1 88 -88 A 88.1 88.1 0 0 1 128 216 Z", fill: "currentColor" })),
+            iconNode(motion.g, { animate: reduceDefinition(controls), initial: "normal", variants: mouthVariants },
+                iconNode("g", { transform: "scale(0.09375)" },
+                    iconNode("path", { d: "M 176 160 a 8 8 0 0 1 -8 8 H 88 a 8 8 0 0 1 0 -16 h 80 A 8 8 0 0 1 176 160 Z", fill: "currentColor" }))),
+            iconNode(motion.g, { animate: reduceDefinition(controls), initial: "normal", variants: leftEyeVariants },
+                iconNode("g", { transform: "scale(0.09375)" },
+                    iconNode("path", { d: "M 80 108 a 12 12 0 1 1 12 12 A 12 12 0 0 1 80 108 Z", fill: "currentColor" }))),
+            iconNode(motion.g, { animate: reduceDefinition(controls), initial: "normal", variants: rightEyeVariants },
+                iconNode("g", { transform: "scale(0.09375)" },
+                    iconNode("path", { d: "M 176 108 a 12 12 0 1 1 -12 -12 A 12 12 0 0 1 176 108 Z", fill: "currentColor" }))))));
 });
-TablerMoodNeutralIcon.displayName = 'TablerMoodNeutralIcon';
+PhosphorSmileyMehNeutralIcon.displayName = 'PhosphorSmileyMehNeutralIcon';
 function useIconAccessibility(ref, createHandle, controllers) {
     const rawHandle = createHandle();
     const raw = useRef(rawHandle);
@@ -272,7 +279,7 @@ function useIconAccessibility(ref, createHandle, controllers) {
     };
 }
 
-  return TablerMoodNeutralIcon;
+  return PhosphorSmileyMehNeutralIcon;
 }
 
 function mountIconProgram(createProgram, container, getSize, isControlled, instanceId) {
@@ -569,21 +576,34 @@ function mountIconProgram(createProgram, container, getSize, isControlled, insta
 }
 
 let controller;
-function startAnimation() { return controller?.startAnimation(); }
-function stopAnimation() { return controller?.stopAnimation(); }
-onMounted(() => { controller = mountIconProgram(createIconProgram, root.value, () => props.size, () => props.controlled, instanceId); });
-watch(() => [props.size, props.controlled], () => controller?.update());
-onBeforeUnmount(() => controller?.destroy());
-defineExpose({ startAnimation, stopAnimation });
+export function startAnimation() { return controller?.startAnimation(); }
+export function stopAnimation() { return controller?.stopAnimation(); }
+$effect(() => { size; controlled; controller?.update(); });
+onMount(() => {
+  controller = mountIconProgram(createIconProgram, root, () => size, () => controlled, instanceId);
+  return () => controller?.destroy();
+});
 </script>
 
-<template>
-  <div ref="root" class="">
-    <svg data-icon-node="0" xmlns="http://www.w3.org/2000/svg" :width="size" :height="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" style="transform: none">
-      <path data-icon-node="0.0" d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-      <path data-icon-node="0.1" d="" display="none" style="transform: none; transform-origin: 50% 50%; transform-box: fill-box" />
-      <path data-icon-node="0.2" d="M9 10l.01 0" style="transform: none; transform-origin: 50% 50%; transform-box: fill-box" />
-      <path data-icon-node="0.3" d="M15 10l.01 0" style="transform: none; transform-origin: 50% 50%; transform-box: fill-box" />
-    </svg>
-  </div>
-</template>
+<div  bind:this={root} {...rest} class={["", rest.class].filter(Boolean).join(' ')}>
+  <svg data-icon-node="0" xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" style="transform: none">
+    <g data-icon-node="0.0" transform="scale(0.09375)">
+      <path data-icon-node="0.0.0" d="M 128 24 A 104 104 0 1 0 232 128 A 104.11 104.11 0 0 0 128 24 Z M 128 216 a 88 88 0 1 1 88 -88 A 88.1 88.1 0 0 1 128 216 Z" fill="currentColor" />
+    </g>
+    <g data-icon-node="0.1" style="transform: none; transform-origin: 50% 50%; transform-box: fill-box">
+      <g data-icon-node="0.1.0" transform="scale(0.09375)">
+        <path data-icon-node="0.1.0.0" d="M 176 160 a 8 8 0 0 1 -8 8 H 88 a 8 8 0 0 1 0 -16 h 80 A 8 8 0 0 1 176 160 Z" fill="currentColor" />
+      </g>
+    </g>
+    <g data-icon-node="0.2" style="transform: none; transform-origin: 50% 50%; transform-box: fill-box">
+      <g data-icon-node="0.2.0" transform="scale(0.09375)">
+        <path data-icon-node="0.2.0.0" d="M 80 108 a 12 12 0 1 1 12 12 A 12 12 0 0 1 80 108 Z" fill="currentColor" />
+      </g>
+    </g>
+    <g data-icon-node="0.3" style="transform: none; transform-origin: 50% 50%; transform-box: fill-box">
+      <g data-icon-node="0.3.0" transform="scale(0.09375)">
+        <path data-icon-node="0.3.0.0" d="M 176 108 a 12 12 0 1 1 -12 -12 A 12 12 0 0 1 176 108 Z" fill="currentColor" />
+      </g>
+    </g>
+  </svg>
+</div>

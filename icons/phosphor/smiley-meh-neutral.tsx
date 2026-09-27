@@ -2,9 +2,9 @@
  * @license
  * MIT License
  * Choreography copyright (c) 2024-2026 pqoqubbw
- * Reference: https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca
+ * Reference: meh @ 072c38b1b04ea738d90a084485ccaad4b890ddca
  *
- * Copyright (c) 2025 Hugeicons
+ * Copyright (c) 2023 Phosphor Icons
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -47,16 +47,16 @@ import { motion, useAnimation } from 'motion/react';
 
 import { cn } from '@/lib/utils';
 
-export interface HugeiconsMehIconHandle {
+export interface PhosphorSmileyMehNeutralIconHandle {
   startAnimation: () => void;
   stopAnimation: () => void;
 }
-interface HugeiconsMehIconProps extends HTMLAttributes<HTMLDivElement> {
+interface PhosphorSmileyMehNeutralIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
-const HugeiconsMehIcon = forwardRef<
-  HugeiconsMehIconHandle,
-  HugeiconsMehIconProps
+const PhosphorSmileyMehNeutralIcon = forwardRef<
+  PhosphorSmileyMehNeutralIconHandle,
+  PhosphorSmileyMehNeutralIconProps
 >(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
   const controls = useAnimation();
   const isControlledRef = useRef(false);
@@ -185,58 +185,61 @@ const HugeiconsMehIcon = forwardRef<
         width={size}
         height={size}
         viewBox="0 0 24 24"
-        fill="none"
+        fill="currentColor"
         aria-hidden="true"
         focusable="false"
         animate={reduceDefinition(controls)}
         initial="normal"
         variants={faceVariants}
       >
-        <circle
-          cx="12"
-          cy="12"
-          r="10"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-        />
-        <motion.path
-          d="M9 16H15"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
+        <g transform="scale(0.09375)">
+          <path
+            d="M 128 24 A 104 104 0 1 0 232 128 A 104.11 104.11 0 0 0 128 24 Z M 128 216 a 88 88 0 1 1 88 -88 A 88.1 88.1 0 0 1 128 216 Z"
+            fill="currentColor"
+          />
+        </g>
+        <motion.g
           animate={reduceDefinition(controls)}
           initial="normal"
           variants={mouthVariants}
-        />
-        <motion.path
-          d="M7 9H9"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
+        >
+          <g transform="scale(0.09375)">
+            <path
+              d="M 176 160 a 8 8 0 0 1 -8 8 H 88 a 8 8 0 0 1 0 -16 h 80 A 8 8 0 0 1 176 160 Z"
+              fill="currentColor"
+            />
+          </g>
+        </motion.g>
+        <motion.g
           animate={reduceDefinition(controls)}
           initial="normal"
           variants={leftEyeVariants}
-        />
-        <motion.path
-          d="M15 9H17"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
+        >
+          <g transform="scale(0.09375)">
+            <path
+              d="M 80 108 a 12 12 0 1 1 12 12 A 12 12 0 0 1 80 108 Z"
+              fill="currentColor"
+            />
+          </g>
+        </motion.g>
+        <motion.g
           animate={reduceDefinition(controls)}
           initial="normal"
           variants={rightEyeVariants}
-        />
+        >
+          <g transform="scale(0.09375)">
+            <path
+              d="M 176 108 a 12 12 0 1 1 -12 -12 A 12 12 0 0 1 176 108 Z"
+              fill="currentColor"
+            />
+          </g>
+        </motion.g>
       </motion.svg>
     </div>
   );
 });
-HugeiconsMehIcon.displayName = 'HugeiconsMehIcon';
-export { HugeiconsMehIcon };
+PhosphorSmileyMehNeutralIcon.displayName = 'PhosphorSmileyMehNeutralIcon';
+export { PhosphorSmileyMehNeutralIcon };
 
 type IconAccessibilityHandle = {
   startAnimation: () => unknown;
