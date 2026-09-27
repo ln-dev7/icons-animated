@@ -92,7 +92,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun pictogramme Phosphor regular d’augmentation/réduction de taille de texte avec flèche ; text-aa ne représente pas cette opération."
+          "note": "No Phosphor regular pictogram for increasing/decreasing text size with an arrow; text-aa does not represent this operation."
         }
       }
     },
@@ -130,7 +130,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun pictogramme Phosphor regular d’augmentation/réduction de taille de texte avec flèche ; text-aa ne représente pas cette opération."
+          "note": "No Phosphor regular pictogram for increasing/decreasing text size with an arrow; text-aa does not represent this operation."
         }
       }
     },
@@ -207,7 +207,7 @@
           "nativeSource": "assets/regular/pulse.svg",
           "componentPath": "icons/phosphor/pulse.tsx",
           "retainedBaselineComponent": false,
-          "note": "Tracé de pouls/activité."
+          "note": "Pulse/activity trace."
         }
       }
     },
@@ -245,7 +245,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun climatiseur mural / bouche d’air correspondant ; fan et wind représentent d’autres objets."
+          "note": "No matching wall air conditioner or air vent; fan and wind represent other objects."
         }
       }
     },
@@ -283,7 +283,7 @@
           "nativeSource": "assets/regular/airplane.svg",
           "componentPath": "icons/phosphor/airplane.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -321,7 +321,7 @@
           "nativeSource": "assets/regular/airplay.svg",
           "componentPath": "icons/phosphor/airplay.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -359,7 +359,7 @@
           "nativeSource": "assets/regular/alarm.svg",
           "componentPath": "icons/phosphor/alarm.tsx",
           "retainedBaselineComponent": false,
-          "note": "Réveil avec cloches."
+          "note": "Alarm clock with bells."
         }
       }
     },
@@ -397,7 +397,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Le catalogue contient alarm mais aucune variante de réveil avec coche, moins ou plus."
+          "note": "The catalog has alarm but no alarm clock variant with a check, minus or plus."
         }
       }
     },
@@ -435,7 +435,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Le catalogue contient alarm mais aucune variante de réveil avec coche, moins ou plus."
+          "note": "The catalog has alarm but no alarm clock variant with a check, minus or plus."
         }
       }
     },
@@ -473,7 +473,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Le catalogue contient alarm mais aucune variante de réveil avec coche, moins ou plus."
+          "note": "The catalog has alarm but no alarm clock variant with a check, minus or plus."
         }
       }
     },
@@ -511,7 +511,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun détecteur de fumée ; siren et fire-extinguisher ne sont pas ce dispositif."
+          "note": "No smoke detector; siren and fire-extinguisher are not this device."
         }
       }
     },
@@ -549,7 +549,7 @@
           "nativeSource": "assets/regular/text-align-center.svg",
           "componentPath": "icons/phosphor/text-align-center.tsx",
           "retainedBaselineComponent": false,
-          "note": "La référence représente l'alignement de texte, pas de blocs."
+          "note": "The reference represents text alignment, not blocks."
         }
       }
     },
@@ -587,7 +587,7 @@
           "nativeSource": "assets/regular/align-center-horizontal.svg",
           "componentPath": "icons/phosphor/align-center-horizontal.tsx",
           "retainedBaselineComponent": false,
-          "note": "Centrage horizontal de blocs ; géométrie officielle avec axe central."
+          "note": "Horizontal centering of blocks; official geometry with a central axis."
         }
       }
     },
@@ -625,7 +625,7 @@
           "nativeSource": "assets/regular/text-align-left.svg",
           "componentPath": "icons/phosphor/text-align-left.tsx",
           "retainedBaselineComponent": false,
-          "note": "La référence représente l'alignement de texte, pas align-left de Phosphor."
+          "note": "The reference represents text alignment, not Phosphor align-left."
         }
       }
     },
@@ -663,7 +663,7 @@
           "nativeSource": "assets/regular/text-align-right.svg",
           "componentPath": "icons/phosphor/text-align-right.tsx",
           "retainedBaselineComponent": false,
-          "note": "La référence représente l'alignement de texte, pas align-right de Phosphor."
+          "note": "The reference represents text alignment, not Phosphor align-right."
         }
       }
     },
@@ -701,7 +701,7 @@
           "nativeSource": "assets/regular/align-center-vertical.svg",
           "componentPath": "icons/phosphor/align-center-vertical.tsx",
           "retainedBaselineComponent": false,
-          "note": "Centrage vertical de blocs ; géométrie officielle avec axe central."
+          "note": "Vertical centering of blocks; official geometry with a central axis."
         }
       }
     },
@@ -739,7 +739,7 @@
           "nativeSource": "assets/regular/ambulance.svg",
           "componentPath": "icons/phosphor/ambulance.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -777,7 +777,7 @@
           "nativeSource": "assets/regular/smiley-angry.svg",
           "componentPath": "icons/phosphor/smiley-angry.tsx",
           "retainedBaselineComponent": false,
-          "note": "Visage en colère."
+          "note": "Angry face."
         }
       }
     },
@@ -815,7 +815,7 @@
           "nativeSource": "assets/regular/smiley-meh.svg",
           "componentPath": "icons/phosphor/smiley-meh.tsx",
           "retainedBaselineComponent": false,
-          "note": "Même famille de visage contrarié à bouche horizontale ; yeux stylisés différemment."
+          "note": "Same annoyed-face family with a flat mouth; eyes are styled differently."
         }
       }
     },
@@ -853,7 +853,7 @@
           "nativeSource": "assets/regular/archive.svg",
           "componentPath": "icons/phosphor/archive.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -891,7 +891,7 @@
           "nativeSource": "assets/regular/arrow-fat-down.svg",
           "componentPath": "icons/phosphor/arrow-fat-down.tsx",
           "retainedBaselineComponent": false,
-          "note": "Flèche épaisse vers le bas."
+          "note": "Thick arrow pointing down."
         }
       }
     },
@@ -929,7 +929,7 @@
           "nativeSource": "assets/regular/arrow-fat-line-down.svg",
           "componentPath": "icons/phosphor/arrow-fat-line-down.tsx",
           "retainedBaselineComponent": false,
-          "note": "Flèche épaisse avec trait détaché."
+          "note": "Thick arrow with a detached bar."
         }
       }
     },
@@ -967,7 +967,7 @@
           "nativeSource": "assets/regular/arrow-fat-left.svg",
           "componentPath": "icons/phosphor/arrow-fat-left.tsx",
           "retainedBaselineComponent": false,
-          "note": "Flèche épaisse vers la gauche."
+          "note": "Thick arrow pointing left."
         }
       }
     },
@@ -1005,7 +1005,7 @@
           "nativeSource": "assets/regular/arrow-fat-line-left.svg",
           "componentPath": "icons/phosphor/arrow-fat-line-left.tsx",
           "retainedBaselineComponent": false,
-          "note": "Flèche épaisse avec trait détaché."
+          "note": "Thick arrow with a detached bar."
         }
       }
     },
@@ -1043,7 +1043,7 @@
           "nativeSource": "assets/regular/arrow-fat-right.svg",
           "componentPath": "icons/phosphor/arrow-fat-right.tsx",
           "retainedBaselineComponent": false,
-          "note": "Flèche épaisse vers la droite."
+          "note": "Thick arrow pointing right."
         }
       }
     },
@@ -1081,7 +1081,7 @@
           "nativeSource": "assets/regular/arrow-fat-line-right.svg",
           "componentPath": "icons/phosphor/arrow-fat-line-right.tsx",
           "retainedBaselineComponent": false,
-          "note": "Flèche épaisse avec trait détaché."
+          "note": "Thick arrow with a detached bar."
         }
       }
     },
@@ -1119,7 +1119,7 @@
           "nativeSource": "assets/regular/arrow-fat-up.svg",
           "componentPath": "icons/phosphor/arrow-fat-up.tsx",
           "retainedBaselineComponent": false,
-          "note": "Flèche épaisse vers le haut."
+          "note": "Thick arrow pointing up."
         }
       }
     },
@@ -1157,7 +1157,7 @@
           "nativeSource": "assets/regular/arrow-fat-line-up.svg",
           "componentPath": "icons/phosphor/arrow-fat-line-up.tsx",
           "retainedBaselineComponent": false,
-          "note": "Flèche épaisse avec trait détaché."
+          "note": "Thick arrow with a detached bar."
         }
       }
     },
@@ -1195,7 +1195,7 @@
           "nativeSource": "assets/regular/arrow-down.svg",
           "componentPath": "icons/phosphor/arrow-down.tsx",
           "retainedBaselineComponent": true,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -1233,7 +1233,7 @@
           "nativeSource": "assets/regular/sort-ascending.svg",
           "componentPath": "icons/phosphor/sort-ascending.tsx",
           "retainedBaselineComponent": false,
-          "note": "Tri croissant officiel ; barres plutôt que chiffres."
+          "note": "Official ascending sort; bars rather than digits."
         }
       }
     },
@@ -1271,7 +1271,7 @@
           "nativeSource": "assets/regular/sort-descending.svg",
           "componentPath": "icons/phosphor/sort-descending.tsx",
           "retainedBaselineComponent": false,
-          "note": "Tri décroissant officiel ; barres plutôt que chiffres."
+          "note": "Official descending sort; bars rather than digits."
         }
       }
     },
@@ -1347,7 +1347,7 @@
           "nativeSource": "assets/regular/arrow-down-left.svg",
           "componentPath": "icons/phosphor/arrow-down-left.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -1385,7 +1385,7 @@
           "nativeSource": "assets/regular/arrow-down-right.svg",
           "componentPath": "icons/phosphor/arrow-down-right.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -1461,7 +1461,7 @@
           "nativeSource": "assets/regular/arrow-left.svg",
           "componentPath": "icons/phosphor/arrow-left.tsx",
           "retainedBaselineComponent": true,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -1499,7 +1499,7 @@
           "nativeSource": "assets/regular/arrow-right.svg",
           "componentPath": "icons/phosphor/arrow-right.tsx",
           "retainedBaselineComponent": true,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -1537,7 +1537,7 @@
           "nativeSource": "assets/regular/arrow-up.svg",
           "componentPath": "icons/phosphor/arrow-up.tsx",
           "retainedBaselineComponent": true,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -1575,7 +1575,7 @@
           "nativeSource": "assets/regular/arrow-up-left.svg",
           "componentPath": "icons/phosphor/arrow-up-left.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -1613,7 +1613,7 @@
           "nativeSource": "assets/regular/arrow-up-right.svg",
           "componentPath": "icons/phosphor/arrow-up-right.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -1651,7 +1651,7 @@
           "nativeSource": "assets/regular/at.svg",
           "componentPath": "icons/phosphor/at.tsx",
           "retainedBaselineComponent": false,
-          "note": "Arobase."
+          "note": "At sign."
         }
       }
     },
@@ -1689,7 +1689,7 @@
           "nativeSource": "assets/regular/atom.svg",
           "componentPath": "icons/phosphor/atom.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -1727,7 +1727,7 @@
           "nativeSource": "assets/regular/paperclip.svg",
           "componentPath": "icons/phosphor/paperclip.tsx",
           "retainedBaselineComponent": false,
-          "note": "Trombone de pièce jointe."
+          "note": "Attachment paper clip."
         }
       }
     },
@@ -1765,7 +1765,7 @@
           "nativeSource": "assets/regular/waveform.svg",
           "componentPath": "icons/phosphor/waveform.tsx",
           "retainedBaselineComponent": false,
-          "note": "Forme d'onde audio à barres verticales."
+          "note": "Audio waveform with vertical bars."
         }
       }
     },
@@ -1803,7 +1803,7 @@
           "nativeSource": "assets/regular/axe.svg",
           "componentPath": "icons/phosphor/axe.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -1841,7 +1841,7 @@
           "nativeSource": "assets/regular/seal-warning.svg",
           "componentPath": "icons/phosphor/seal-warning.tsx",
           "retainedBaselineComponent": false,
-          "note": "Sceau dentelé avec point d'exclamation."
+          "note": "Scalloped badge with an exclamation mark."
         }
       }
     },
@@ -1879,7 +1879,7 @@
           "nativeSource": "assets/regular/seal-percent.svg",
           "componentPath": "icons/phosphor/seal-percent.tsx",
           "retainedBaselineComponent": false,
-          "note": "Sceau dentelé avec pourcentage."
+          "note": "Scalloped badge with a percent sign."
         }
       }
     },
@@ -1917,7 +1917,7 @@
           "nativeSource": "assets/regular/prohibit.svg",
           "componentPath": "icons/phosphor/prohibit.tsx",
           "retainedBaselineComponent": false,
-          "note": "Cercle barré d'interdiction."
+          "note": "Circle with a prohibition slash."
         }
       }
     },
@@ -1955,7 +1955,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune banane dans le catalogue regular 2.1.1."
+          "note": "No banana in the regular 2.1.1 catalog."
         }
       }
     },
@@ -1993,7 +1993,7 @@
           "nativeSource": "assets/regular/battery-empty.svg",
           "componentPath": "icons/phosphor/battery-empty.tsx",
           "retainedBaselineComponent": false,
-          "note": "Batterie vide sans niveau ni autre modificateur."
+          "note": "Empty battery with no level or other modifier."
         }
       }
     },
@@ -2031,7 +2031,7 @@
           "nativeSource": "assets/regular/battery-charging.svg",
           "componentPath": "icons/phosphor/battery-charging.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -2069,7 +2069,7 @@
           "nativeSource": "assets/regular/battery-full.svg",
           "componentPath": "icons/phosphor/battery-full.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -2107,7 +2107,7 @@
           "nativeSource": "assets/regular/battery-low.svg",
           "componentPath": "icons/phosphor/battery-low.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -2145,7 +2145,7 @@
           "nativeSource": "assets/regular/battery-medium.svg",
           "componentPath": "icons/phosphor/battery-medium.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -2183,7 +2183,7 @@
           "nativeSource": "assets/regular/battery-plus.svg",
           "componentPath": "icons/phosphor/battery-plus.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -2221,7 +2221,7 @@
           "nativeSource": "assets/regular/battery-warning.svg",
           "componentPath": "icons/phosphor/battery-warning.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -2259,7 +2259,7 @@
           "nativeSource": "assets/regular/bell.svg",
           "componentPath": "icons/phosphor/bell.tsx",
           "retainedBaselineComponent": true,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -2297,7 +2297,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune sonnerie électrique murale ; bell et call-bell désignent d’autres formes de cloche."
+          "note": "No wall-mounted electric bell; bell and call-bell are other kinds of bell."
         }
       }
     },
@@ -2335,7 +2335,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun bras/biceps fléchi ; barbell symbolise la musculation mais ne représente pas le même objet."
+          "note": "No flexed arm/biceps; barbell symbolizes weight training but is not the same object."
         }
       }
     },
@@ -2373,7 +2373,7 @@
           "nativeSource": "assets/regular/binary.svg",
           "componentPath": "icons/phosphor/binary.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -2411,7 +2411,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun assemblage de blocs carrés avec un bloc détaché incliné ; shapes et lego ne correspondent pas à cette composition."
+          "note": "No arrangement of square blocks with one tilted detached block; shapes and lego do not match this composition."
         }
       }
     },
@@ -2449,7 +2449,7 @@
           "nativeSource": "assets/regular/bluetooth.svg",
           "componentPath": "icons/phosphor/bluetooth.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -2487,7 +2487,7 @@
           "nativeSource": "assets/regular/bluetooth-connected.svg",
           "componentPath": "icons/phosphor/bluetooth-connected.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -2525,7 +2525,7 @@
           "nativeSource": "assets/regular/bluetooth-slash.svg",
           "componentPath": "icons/phosphor/bluetooth-slash.tsx",
           "retainedBaselineComponent": false,
-          "note": "Bluetooth barré."
+          "note": "Bluetooth with a slash."
         }
       }
     },
@@ -2563,7 +2563,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Le catalogue Bluetooth contient connected/slash/x mais aucune recherche avec ondes."
+          "note": "The Bluetooth catalog has connected/slash/x but no searching variant with waves."
         }
       }
     },
@@ -2601,7 +2601,7 @@
           "nativeSource": "assets/regular/text-b.svg",
           "componentPath": "icons/phosphor/text-b.tsx",
           "retainedBaselineComponent": false,
-          "note": "Lettre B de mise en gras."
+          "note": "Letter B for bold."
         }
       }
     },
@@ -2639,7 +2639,7 @@
           "nativeSource": "assets/regular/bone.svg",
           "componentPath": "icons/phosphor/bone.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -2677,7 +2677,7 @@
           "nativeSource": "assets/regular/notebook.svg",
           "componentPath": "icons/phosphor/notebook.tsx",
           "retainedBaselineComponent": false,
-          "note": "Livre/carnet fermé avec lignes de texte en couverture."
+          "note": "Closed book/notebook with lines of text on the cover."
         }
       }
     },
@@ -2715,7 +2715,7 @@
           "nativeSource": "assets/regular/bookmark.svg",
           "componentPath": "icons/phosphor/bookmark.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -2753,7 +2753,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les bookmark natifs n’ont aucune variante avec ce modificateur d’état/action."
+          "note": "Native bookmarks have no variant with this state/action modifier."
         }
       }
     },
@@ -2791,7 +2791,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les bookmark natifs n’ont aucune variante avec ce modificateur d’état/action."
+          "note": "Native bookmarks have no variant with this state/action modifier."
         }
       }
     },
@@ -2829,7 +2829,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les bookmark natifs n’ont aucune variante avec ce modificateur d’état/action."
+          "note": "Native bookmarks have no variant with this state/action modifier."
         }
       }
     },
@@ -2867,7 +2867,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les bookmark natifs n’ont aucune variante avec ce modificateur d’état/action."
+          "note": "Native bookmarks have no variant with this state/action modifier."
         }
       }
     },
@@ -2905,7 +2905,7 @@
           "nativeSource": "assets/regular/robot.svg",
           "componentPath": "icons/phosphor/robot.tsx",
           "retainedBaselineComponent": false,
-          "note": "Tête de robot."
+          "note": "Robot head."
         }
       }
     },
@@ -2943,7 +2943,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune bulle carrée contenant un robot ; robot et chat existent séparément."
+          "note": "No square bubble containing a robot; robot and chat exist separately."
         }
       }
     },
@@ -2981,7 +2981,7 @@
           "nativeSource": "assets/regular/cube.svg",
           "componentPath": "icons/phosphor/cube.tsx",
           "retainedBaselineComponent": false,
-          "note": "Boîte cubique en perspective, sans emballage ajouté."
+          "note": "Cube-shaped box in perspective, with no added packaging."
         }
       }
     },
@@ -3019,7 +3019,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune pile de plusieurs cubes/boîtes ; cube et package représentent un objet unique."
+          "note": "No stack of several cubes/boxes; cube and package represent a single object."
         }
       }
     },
@@ -3057,7 +3057,7 @@
           "nativeSource": "assets/regular/brain.svg",
           "componentPath": "icons/phosphor/brain.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -3095,7 +3095,7 @@
           "nativeSource": "assets/regular/briefcase.svg",
           "componentPath": "icons/phosphor/briefcase.tsx",
           "retainedBaselineComponent": false,
-          "note": "Mallette professionnelle."
+          "note": "Business briefcase."
         }
       }
     },
@@ -3133,7 +3133,7 @@
           "nativeSource": "assets/regular/calendar-check.svg",
           "componentPath": "icons/phosphor/calendar-check.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -3171,7 +3171,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "La coche calendar-check native est intérieure ; aucune variante avec coche extérieure comme calendar-check-2."
+          "note": "The native calendar-check has its check inside; no variant with an outside check like calendar-check-2."
         }
       }
     },
@@ -3209,7 +3209,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun calendrier combiné à un engrenage."
+          "note": "No calendar combined with a gear."
         }
       }
     },
@@ -3247,7 +3247,7 @@
           "nativeSource": "assets/regular/calendar-dots.svg",
           "componentPath": "icons/phosphor/calendar-dots.tsx",
           "retainedBaselineComponent": false,
-          "note": "Calendrier dont les jours sont représentés par une grille de points."
+          "note": "Calendar whose days are shown as a grid of dots."
         }
       }
     },
@@ -3285,7 +3285,7 @@
           "nativeSource": "assets/regular/shopping-cart.svg",
           "componentPath": "icons/phosphor/shopping-cart.tsx",
           "retainedBaselineComponent": false,
-          "note": "Chariot de courses."
+          "note": "Shopping cart."
         }
       }
     },
@@ -3323,7 +3323,7 @@
           "nativeSource": "assets/regular/screencast.svg",
           "componentPath": "icons/phosphor/screencast.tsx",
           "retainedBaselineComponent": false,
-          "note": "Écran avec ondes de diffusion."
+          "note": "Screen with broadcast waves."
         }
       }
     },
@@ -3361,7 +3361,7 @@
           "nativeSource": "assets/regular/security-camera.svg",
           "componentPath": "icons/phosphor/security-camera.tsx",
           "retainedBaselineComponent": false,
-          "note": "Caméra de surveillance orientable."
+          "note": "Adjustable security camera."
         }
       }
     },
@@ -3399,7 +3399,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "chart-bar-horizontal existe mais ses barres ne sont ni toutes croissantes ni toutes décroissantes ; le sens demandé serait perdu."
+          "note": "chart-bar-horizontal exists but its bars are neither all increasing nor all decreasing; the requested direction would be lost."
         }
       }
     },
@@ -3437,7 +3437,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "chart-bar-horizontal existe mais ses barres ne sont ni toutes croissantes ni toutes décroissantes ; le sens demandé serait perdu."
+          "note": "chart-bar-horizontal exists but its bars are neither all increasing nor all decreasing; the requested direction would be lost."
         }
       }
     },
@@ -3475,7 +3475,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Le seul chart-bar vertical natif est croissant ; aucun histogramme décroissant sans altérer le SVG officiel."
+          "note": "The only native vertical chart-bar is increasing; no decreasing bar chart without altering the official SVG."
         }
       }
     },
@@ -3513,7 +3513,7 @@
           "nativeSource": "assets/regular/chart-bar.svg",
           "componentPath": "icons/phosphor/chart-bar.tsx",
           "retainedBaselineComponent": false,
-          "note": "Barres verticales croissantes vérifiées dans le SVG officiel."
+          "note": "Increasing vertical bars, verified in the official SVG."
         }
       }
     },
@@ -3551,7 +3551,7 @@
           "nativeSource": "assets/regular/chart-line.svg",
           "componentPath": "icons/phosphor/chart-line.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -3589,7 +3589,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Le seul chart-bar vertical natif est croissant ; aucun histogramme décroissant sans altérer le SVG officiel."
+          "note": "The only native vertical chart-bar is increasing; no decreasing bar chart without altering the official SVG."
         }
       }
     },
@@ -3665,7 +3665,7 @@
           "nativeSource": "assets/regular/chart-pie.svg",
           "componentPath": "icons/phosphor/chart-pie.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -3703,7 +3703,7 @@
           "nativeSource": "assets/regular/chart-scatter.svg",
           "componentPath": "icons/phosphor/chart-scatter.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -3741,7 +3741,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun graphique à courbe spline ; chart-line représente une ligne brisée, pas la famille de courbe lissée demandée."
+          "note": "No spline curve chart; chart-line is a polyline, not the requested smoothed-curve family."
         }
       }
     },
@@ -3779,7 +3779,7 @@
           "nativeSource": "assets/regular/check.svg",
           "componentPath": "icons/phosphor/check.tsx",
           "retainedBaselineComponent": true,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -3817,7 +3817,7 @@
           "nativeSource": "assets/regular/checks.svg",
           "componentPath": "icons/phosphor/checks.tsx",
           "retainedBaselineComponent": false,
-          "note": "Deux coches."
+          "note": "Double check mark."
         }
       }
     },
@@ -3855,7 +3855,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune pièce d’échecs dans le catalogue 2.1.1 ; horse/crown-cross ne représentent pas des pièces sur socle."
+          "note": "No chess pieces in the 2.1.1 catalog; horse/crown-cross do not represent pieces on a base."
         }
       }
     },
@@ -3893,7 +3893,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune pièce d’échecs dans le catalogue 2.1.1 ; horse/crown-cross ne représentent pas des pièces sur socle."
+          "note": "No chess pieces in the 2.1.1 catalog; horse/crown-cross do not represent pieces on a base."
         }
       }
     },
@@ -3931,7 +3931,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune pièce d’échecs dans le catalogue 2.1.1 ; horse/crown-cross ne représentent pas des pièces sur socle."
+          "note": "No chess pieces in the 2.1.1 catalog; horse/crown-cross do not represent pieces on a base."
         }
       }
     },
@@ -3969,7 +3969,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune pièce d’échecs dans le catalogue 2.1.1 ; horse/crown-cross ne représentent pas des pièces sur socle."
+          "note": "No chess pieces in the 2.1.1 catalog; horse/crown-cross do not represent pieces on a base."
         }
       }
     },
@@ -4007,7 +4007,7 @@
           "nativeSource": "assets/regular/caret-down.svg",
           "componentPath": "icons/phosphor/chevron-down.tsx",
           "retainedBaselineComponent": true,
-          "note": "Chevron vers le bas."
+          "note": "Chevron pointing down."
         }
       }
     },
@@ -4045,7 +4045,7 @@
           "nativeSource": "assets/regular/caret-line-left.svg",
           "componentPath": "icons/phosphor/caret-line-left.tsx",
           "retainedBaselineComponent": false,
-          "note": "Chevron gauche avec butée verticale."
+          "note": "Left chevron with a vertical stop bar."
         }
       }
     },
@@ -4083,7 +4083,7 @@
           "nativeSource": "assets/regular/caret-left.svg",
           "componentPath": "icons/phosphor/chevron-left.tsx",
           "retainedBaselineComponent": true,
-          "note": "Chevron vers la gauche."
+          "note": "Chevron pointing left."
         }
       }
     },
@@ -4121,7 +4121,7 @@
           "nativeSource": "assets/regular/caret-right.svg",
           "componentPath": "icons/phosphor/chevron-right.tsx",
           "retainedBaselineComponent": true,
-          "note": "Chevron vers la droite."
+          "note": "Chevron pointing right."
         }
       }
     },
@@ -4159,7 +4159,7 @@
           "nativeSource": "assets/regular/caret-up.svg",
           "componentPath": "icons/phosphor/chevron-up.tsx",
           "retainedBaselineComponent": true,
-          "note": "Chevron vers le haut."
+          "note": "Chevron pointing up."
         }
       }
     },
@@ -4197,7 +4197,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune paire de chevrons verticaux pointant vers le centre ; caret-up-down pointe vers l’extérieur."
+          "note": "No pair of vertical chevrons pointing toward the center; caret-up-down points outward."
         }
       }
     },
@@ -4235,7 +4235,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune paire horizontale de chevrons opposés ; les icônes arrows-* ajoutent des hampes et brackets-angle représente le code."
+          "note": "No horizontal pair of opposed chevrons; the arrows-* icons add shafts and brackets-angle represents code."
         }
       }
     },
@@ -4273,7 +4273,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune paire horizontale de chevrons opposés ; les icônes arrows-* ajoutent des hampes et brackets-angle représente le code."
+          "note": "No horizontal pair of opposed chevrons; the arrows-* icons add shafts and brackets-angle represents code."
         }
       }
     },
@@ -4311,7 +4311,7 @@
           "nativeSource": "assets/regular/caret-up-down.svg",
           "componentPath": "icons/phosphor/caret-up-down.tsx",
           "retainedBaselineComponent": false,
-          "note": "Deux chevrons opposés pointant vers l'extérieur verticalement."
+          "note": "Two opposed chevrons pointing outward vertically."
         }
       }
     },
@@ -4349,7 +4349,7 @@
           "nativeSource": "assets/regular/google-chrome-logo.svg",
           "componentPath": "icons/phosphor/google-chrome-logo.tsx",
           "retainedBaselineComponent": false,
-          "note": "Logo officiel Google Chrome."
+          "note": "Official Google Chrome logo."
         }
       }
     },
@@ -4387,7 +4387,7 @@
           "nativeSource": "assets/regular/cigarette.svg",
           "componentPath": "icons/phosphor/cigarette.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -4425,7 +4425,7 @@
           "nativeSource": "assets/regular/cigarette-slash.svg",
           "componentPath": "icons/phosphor/cigarette-slash.tsx",
           "retainedBaselineComponent": false,
-          "note": "Cigarette barrée."
+          "note": "Cigarette with a slash."
         }
       }
     },
@@ -4463,7 +4463,7 @@
           "nativeSource": "assets/regular/check-circle.svg",
           "componentPath": "icons/phosphor/check-circle.tsx",
           "retainedBaselineComponent": false,
-          "note": "Coche dans un cercle."
+          "note": "Check mark in a circle."
         }
       }
     },
@@ -4501,7 +4501,7 @@
           "nativeSource": "assets/regular/caret-circle-down.svg",
           "componentPath": "icons/phosphor/caret-circle-down.tsx",
           "retainedBaselineComponent": false,
-          "note": "Chevron dans un cercle."
+          "note": "Chevron in a circle."
         }
       }
     },
@@ -4539,7 +4539,7 @@
           "nativeSource": "assets/regular/caret-circle-left.svg",
           "componentPath": "icons/phosphor/caret-circle-left.tsx",
           "retainedBaselineComponent": false,
-          "note": "Chevron dans un cercle."
+          "note": "Chevron in a circle."
         }
       }
     },
@@ -4577,7 +4577,7 @@
           "nativeSource": "assets/regular/caret-circle-right.svg",
           "componentPath": "icons/phosphor/caret-circle-right.tsx",
           "retainedBaselineComponent": false,
-          "note": "Chevron dans un cercle."
+          "note": "Chevron in a circle."
         }
       }
     },
@@ -4615,7 +4615,7 @@
           "nativeSource": "assets/regular/caret-circle-up.svg",
           "componentPath": "icons/phosphor/caret-circle-up.tsx",
           "retainedBaselineComponent": false,
-          "note": "Chevron dans un cercle."
+          "note": "Chevron in a circle."
         }
       }
     },
@@ -4653,7 +4653,7 @@
           "nativeSource": "assets/regular/circle-dashed.svg",
           "componentPath": "icons/phosphor/circle-dashed.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -4691,7 +4691,7 @@
           "nativeSource": "assets/regular/currency-circle-dollar.svg",
           "componentPath": "icons/phosphor/currency-circle-dollar.tsx",
           "retainedBaselineComponent": false,
-          "note": "Dollar dans un cercle."
+          "note": "Dollar in a circle."
         }
       }
     },
@@ -4729,7 +4729,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun cadran entièrement circulaire avec aiguille ; gauge/speedometer sont des cadrans ouverts."
+          "note": "No fully circular dial with a needle; gauge/speedometer are open dials."
         }
       }
     },
@@ -4767,7 +4767,7 @@
           "nativeSource": "assets/regular/question.svg",
           "componentPath": "icons/phosphor/question.tsx",
           "retainedBaselineComponent": false,
-          "note": "Point d'interrogation dans un cercle."
+          "note": "Question mark in a circle."
         }
       }
     },
@@ -4805,7 +4805,7 @@
           "nativeSource": "assets/regular/film-slate.svg",
           "componentPath": "icons/phosphor/film-slate.tsx",
           "retainedBaselineComponent": false,
-          "note": "Clap de cinéma à volet articulé ; la référence clap représente un clapperboard, pas des mains qui applaudissent."
+          "note": "Movie clapperboard with a hinged clapper; the clap reference represents a clapperboard, not clapping hands."
         }
       }
     },
@@ -4843,7 +4843,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun clipboard avec coche ; clipboard-text ne préserve pas l’état validé."
+          "note": "No clipboard with a check; clipboard-text does not preserve the validated state."
         }
       }
     },
@@ -4881,7 +4881,7 @@
           "nativeSource": "assets/regular/clock.svg",
           "componentPath": "icons/phosphor/clock.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -4919,7 +4919,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun cloud combiné à la flèche circulaire de restauration/synchronisation."
+          "note": "No cloud combined with the circular restore/sync arrow."
         }
       }
     },
@@ -4957,7 +4957,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun cloud avec engrenage."
+          "note": "No cloud with a gear."
         }
       }
     },
@@ -4995,7 +4995,7 @@
           "nativeSource": "assets/regular/cloud-arrow-down.svg",
           "componentPath": "icons/phosphor/cloud-arrow-down.tsx",
           "retainedBaselineComponent": false,
-          "note": "Nuage avec flèche descendante."
+          "note": "Cloud with a downward arrow."
         }
       }
     },
@@ -5033,7 +5033,7 @@
           "nativeSource": "assets/regular/cloud-lightning.svg",
           "componentPath": "icons/phosphor/cloud-lightning.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -5071,7 +5071,7 @@
           "nativeSource": "assets/regular/cloud-rain.svg",
           "componentPath": "icons/phosphor/cloud-rain.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -5109,7 +5109,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun cloud combinant pluie et vent ; cloud-rain omet le vent."
+          "note": "No cloud combining rain and wind; cloud-rain omits the wind."
         }
       }
     },
@@ -5147,7 +5147,7 @@
           "nativeSource": "assets/regular/cloud-snow.svg",
           "componentPath": "icons/phosphor/cloud-snow.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -5185,7 +5185,7 @@
           "nativeSource": "assets/regular/cloud-sun.svg",
           "componentPath": "icons/phosphor/cloud-sun.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -5223,7 +5223,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun cloud combiné à la flèche circulaire de restauration/synchronisation."
+          "note": "No cloud combined with the circular restore/sync arrow."
         }
       }
     },
@@ -5261,7 +5261,7 @@
           "nativeSource": "assets/regular/cloud-arrow-up.svg",
           "componentPath": "icons/phosphor/cloud-arrow-up.tsx",
           "retainedBaselineComponent": false,
-          "note": "Nuage avec flèche ascendante."
+          "note": "Cloud with an upward arrow."
         }
       }
     },
@@ -5299,7 +5299,7 @@
           "nativeSource": "assets/regular/coffee.svg",
           "componentPath": "icons/phosphor/coffee.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -5337,7 +5337,7 @@
           "nativeSource": "assets/regular/gear-fine.svg",
           "componentPath": "icons/phosphor/gear-fine.tsx",
           "retainedBaselineComponent": false,
-          "note": "Roue dentée fine, distincte du gear standard employé pour settings."
+          "note": "Thin cogwheel, distinct from the standard gear used for settings."
         }
       }
     },
@@ -5375,7 +5375,7 @@
           "nativeSource": "assets/regular/compass.svg",
           "componentPath": "icons/phosphor/compass.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -5413,7 +5413,7 @@
           "nativeSource": "assets/regular/call-bell.svg",
           "componentPath": "icons/phosphor/call-bell.tsx",
           "retainedBaselineComponent": false,
-          "note": "Sonnette de comptoir."
+          "note": "Counter service bell."
         }
       }
     },
@@ -5451,7 +5451,7 @@
           "nativeSource": "assets/regular/plugs-connected.svg",
           "componentPath": "icons/phosphor/plugs-connected.tsx",
           "retainedBaselineComponent": false,
-          "note": "Deux connecteurs électriques branchés ; animation de connexion à adapter."
+          "note": "Two connected electrical plugs; the connection animation must be adapted."
         }
       }
     },
@@ -5489,7 +5489,7 @@
           "nativeSource": "assets/regular/barricade.svg",
           "componentPath": "icons/phosphor/barricade.tsx",
           "retainedBaselineComponent": false,
-          "note": "Barrière de chantier."
+          "note": "Construction barrier."
         }
       }
     },
@@ -5527,7 +5527,7 @@
           "nativeSource": "assets/regular/circle-half.svg",
           "componentPath": "icons/phosphor/circle-half.tsx",
           "retainedBaselineComponent": false,
-          "note": "Disque partagé clair/sombre."
+          "note": "Disc split into light and dark halves."
         }
       }
     },
@@ -5565,7 +5565,7 @@
           "nativeSource": "assets/regular/cooking-pot.svg",
           "componentPath": "icons/phosphor/cooking-pot.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -5603,7 +5603,7 @@
           "nativeSource": "assets/regular/copy.svg",
           "componentPath": "icons/phosphor/copy.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -5641,7 +5641,7 @@
           "nativeSource": "assets/regular/arrow-elbow-down-left.svg",
           "componentPath": "icons/phosphor/arrow-elbow-down-left.tsx",
           "retainedBaselineComponent": false,
-          "note": "Flèche à angle droit suivant la même direction."
+          "note": "Right-angle arrow following the same direction."
         }
       }
     },
@@ -5679,7 +5679,7 @@
           "nativeSource": "assets/regular/arrow-elbow-down-right.svg",
           "componentPath": "icons/phosphor/arrow-elbow-down-right.tsx",
           "retainedBaselineComponent": false,
-          "note": "Flèche à angle droit suivant la même direction."
+          "note": "Right-angle arrow following the same direction."
         }
       }
     },
@@ -5717,7 +5717,7 @@
           "nativeSource": "assets/regular/arrow-elbow-left-down.svg",
           "componentPath": "icons/phosphor/arrow-elbow-left-down.tsx",
           "retainedBaselineComponent": false,
-          "note": "Flèche à angle droit suivant la même direction."
+          "note": "Right-angle arrow following the same direction."
         }
       }
     },
@@ -5755,7 +5755,7 @@
           "nativeSource": "assets/regular/arrow-elbow-left-up.svg",
           "componentPath": "icons/phosphor/arrow-elbow-left-up.tsx",
           "retainedBaselineComponent": false,
-          "note": "Flèche à angle droit suivant la même direction."
+          "note": "Right-angle arrow following the same direction."
         }
       }
     },
@@ -5793,7 +5793,7 @@
           "nativeSource": "assets/regular/arrow-elbow-right-down.svg",
           "componentPath": "icons/phosphor/arrow-elbow-right-down.tsx",
           "retainedBaselineComponent": false,
-          "note": "Flèche à angle droit suivant la même direction."
+          "note": "Right-angle arrow following the same direction."
         }
       }
     },
@@ -5831,7 +5831,7 @@
           "nativeSource": "assets/regular/arrow-elbow-right-up.svg",
           "componentPath": "icons/phosphor/arrow-elbow-right-up.tsx",
           "retainedBaselineComponent": false,
-          "note": "Flèche à angle droit suivant la même direction."
+          "note": "Right-angle arrow following the same direction."
         }
       }
     },
@@ -5869,7 +5869,7 @@
           "nativeSource": "assets/regular/arrow-elbow-up-left.svg",
           "componentPath": "icons/phosphor/arrow-elbow-up-left.tsx",
           "retainedBaselineComponent": false,
-          "note": "Flèche à angle droit suivant la même direction."
+          "note": "Right-angle arrow following the same direction."
         }
       }
     },
@@ -5907,7 +5907,7 @@
           "nativeSource": "assets/regular/arrow-elbow-up-right.svg",
           "componentPath": "icons/phosphor/arrow-elbow-up-right.tsx",
           "retainedBaselineComponent": false,
-          "note": "Flèche à angle droit suivant la même direction."
+          "note": "Right-angle arrow following the same direction."
         }
       }
     },
@@ -5945,7 +5945,7 @@
           "nativeSource": "assets/regular/cpu.svg",
           "componentPath": "icons/phosphor/cpu.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -5983,7 +5983,7 @@
           "nativeSource": "assets/regular/credit-card.svg",
           "componentPath": "icons/phosphor/credit-card.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -6021,7 +6021,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun gobelet à boisson avec couvercle et paille ; pint-glass et coffee changent le récipient."
+          "note": "No drink cup with a lid and straw; pint-glass and coffee change the container."
         }
       }
     },
@@ -6059,7 +6059,7 @@
           "nativeSource": "assets/regular/cursor-click.svg",
           "componentPath": "icons/phosphor/cursor-click.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -6097,7 +6097,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune base de données combinée à une flèche de sauvegarde/restauration."
+          "note": "No database combined with a backup/restore arrow."
         }
       }
     },
@@ -6174,7 +6174,7 @@
           "nativeSource": "assets/regular/disc.svg",
           "componentPath": "icons/phosphor/disc.tsx",
           "retainedBaselineComponent": false,
-          "note": "Disque compact."
+          "note": "Compact disc."
         }
       }
     },
@@ -6212,7 +6212,7 @@
           "nativeSource": "assets/regular/discord-logo.svg",
           "componentPath": "icons/phosphor/discord-logo.tsx",
           "retainedBaselineComponent": false,
-          "note": "Logo officiel Discord."
+          "note": "Official Discord logo."
         }
       }
     },
@@ -6250,7 +6250,7 @@
           "nativeSource": "assets/regular/currency-dollar.svg",
           "componentPath": "icons/phosphor/currency-dollar.tsx",
           "retainedBaselineComponent": false,
-          "note": "Symbole dollar."
+          "note": "Dollar symbol."
         }
       }
     },
@@ -6288,7 +6288,7 @@
           "nativeSource": "assets/regular/download.svg",
           "componentPath": "icons/phosphor/download.tsx",
           "retainedBaselineComponent": true,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -6326,7 +6326,7 @@
           "nativeSource": "assets/regular/thumbs-down.svg",
           "componentPath": "icons/phosphor/thumbs-down.tsx",
           "retainedBaselineComponent": false,
-          "note": "La source référence représente un pouce vers le bas, pas une flèche de vote."
+          "note": "The reference source represents a thumbs-down, not a vote arrow."
         }
       }
     },
@@ -6364,7 +6364,7 @@
           "nativeSource": "assets/regular/dribbble-logo.svg",
           "componentPath": "icons/phosphor/dribbble-logo.tsx",
           "retainedBaselineComponent": false,
-          "note": "Logo officiel Dribbble."
+          "note": "Official Dribbble logo."
         }
       }
     },
@@ -6402,7 +6402,7 @@
           "nativeSource": "assets/regular/drop.svg",
           "componentPath": "icons/phosphor/drop.tsx",
           "retainedBaselineComponent": false,
-          "note": "Goutte."
+          "note": "Droplet."
         }
       }
     },
@@ -6440,7 +6440,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun tambour ; les instruments disponibles ne correspondent pas."
+          "note": "No drum; the available instruments do not match."
         }
       }
     },
@@ -6478,7 +6478,7 @@
           "nativeSource": "assets/regular/globe-hemisphere-west.svg",
           "componentPath": "icons/phosphor/globe-hemisphere-west.tsx",
           "retainedBaselineComponent": false,
-          "note": "Globe avec continents, plutôt qu'une simple grille géographique."
+          "note": "Globe with continents rather than a plain geographic grid."
         }
       }
     },
@@ -6516,7 +6516,7 @@
           "nativeSource": "assets/regular/currency-eur.svg",
           "componentPath": "icons/phosphor/currency-eur.tsx",
           "retainedBaselineComponent": false,
-          "note": "Symbole euro."
+          "note": "Euro symbol."
         }
       }
     },
@@ -6554,7 +6554,7 @@
           "nativeSource": "assets/regular/charging-station.svg",
           "componentPath": "icons/phosphor/charging-station.tsx",
           "retainedBaselineComponent": false,
-          "note": "Borne de recharge électrique."
+          "note": "Electric vehicle charging station."
         }
       }
     },
@@ -6592,7 +6592,7 @@
           "nativeSource": "assets/regular/arrows-out.svg",
           "componentPath": "icons/phosphor/arrows-out.tsx",
           "retainedBaselineComponent": false,
-          "note": "Quatre flèches diagonales vers l'extérieur."
+          "note": "Four diagonal arrows pointing outward."
         }
       }
     },
@@ -6630,7 +6630,7 @@
           "nativeSource": "assets/regular/arrow-square-out.svg",
           "componentPath": "icons/phosphor/arrow-square-out.tsx",
           "retainedBaselineComponent": false,
-          "note": "Flèche sortant d'un carré."
+          "note": "Arrow leaving a square."
         }
       }
     },
@@ -6668,7 +6668,7 @@
           "nativeSource": "assets/regular/eye.svg",
           "componentPath": "icons/phosphor/eye.tsx",
           "retainedBaselineComponent": true,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -6706,7 +6706,7 @@
           "nativeSource": "assets/regular/eye-slash.svg",
           "componentPath": "icons/phosphor/eye-slash.tsx",
           "retainedBaselineComponent": false,
-          "note": "Œil barré."
+          "note": "Eye with a slash."
         }
       }
     },
@@ -6744,7 +6744,7 @@
           "nativeSource": "assets/regular/facebook-logo.svg",
           "componentPath": "icons/phosphor/facebook-logo.tsx",
           "retainedBaselineComponent": false,
-          "note": "Logo officiel Facebook."
+          "note": "Official Facebook logo."
         }
       }
     },
@@ -6782,7 +6782,7 @@
           "nativeSource": "assets/regular/fan.svg",
           "componentPath": "icons/phosphor/fan.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -6820,7 +6820,7 @@
           "nativeSource": "assets/regular/feather.svg",
           "componentPath": "icons/phosphor/feather.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -6858,7 +6858,7 @@
           "nativeSource": "assets/regular/figma-logo.svg",
           "componentPath": "icons/phosphor/figma-logo.tsx",
           "retainedBaselineComponent": false,
-          "note": "Logo officiel Figma."
+          "note": "Official Figma logo."
         }
       }
     },
@@ -6896,7 +6896,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun fichier contenant un graphique en ligne."
+          "note": "No file containing a line chart."
         }
       }
     },
@@ -6934,7 +6934,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun fichier avec coche de validation ; file-x est l’état inverse."
+          "note": "No file with a validation check; file-x is the opposite state."
         }
       }
     },
@@ -6972,7 +6972,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun fichier avec coche de validation ; file-x est l’état inverse."
+          "note": "No file with a validation check; file-x is the opposite state."
         }
       }
     },
@@ -7010,7 +7010,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun fichier avec engrenage."
+          "note": "No file with a gear."
         }
       }
     },
@@ -7048,7 +7048,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun fichier combiné à un crayon ; note-pencil est une note carrée et ne conserve pas la forme de fichier."
+          "note": "No file combined with a pencil; note-pencil is a square note and does not keep the file shape."
         }
       }
     },
@@ -7086,7 +7086,7 @@
           "nativeSource": "assets/regular/files.svg",
           "componentPath": "icons/phosphor/files.tsx",
           "retainedBaselineComponent": false,
-          "note": "Pile de fichiers."
+          "note": "Stack of files."
         }
       }
     },
@@ -7124,7 +7124,7 @@
           "nativeSource": "assets/regular/file-text.svg",
           "componentPath": "icons/phosphor/file-text.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -7162,7 +7162,7 @@
           "nativeSource": "assets/regular/fingerprint.svg",
           "componentPath": "icons/phosphor/fingerprint.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -7200,7 +7200,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun symbole Ichthys ; fish-simple représente un animal diagonal avec œil et tête, pas les deux courbes entrecroisées de la référence."
+          "note": "No Ichthys symbol; fish-simple is a diagonal animal with an eye and a head, not the two crossing curves of the reference."
         }
       }
     },
@@ -7238,7 +7238,7 @@
           "nativeSource": "assets/regular/flame.svg",
           "componentPath": "icons/phosphor/flame.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -7276,7 +7276,7 @@
           "nativeSource": "assets/regular/flask.svg",
           "componentPath": "icons/phosphor/flask.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -7314,7 +7314,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les variantes folder natives se limitent notamment à lock/minus/plus/star/user/dashed ; aucun dossier avec ce modificateur."
+          "note": "Native folder variants are limited to lock/minus/plus/star/user/dashed, among others; no folder with this modifier."
         }
       }
     },
@@ -7352,7 +7352,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les variantes folder natives se limitent notamment à lock/minus/plus/star/user/dashed ; aucun dossier avec ce modificateur."
+          "note": "Native folder variants are limited to lock/minus/plus/star/user/dashed, among others; no folder with this modifier."
         }
       }
     },
@@ -7390,7 +7390,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les variantes folder natives se limitent notamment à lock/minus/plus/star/user/dashed ; aucun dossier avec ce modificateur."
+          "note": "Native folder variants are limited to lock/minus/plus/star/user/dashed, among others; no folder with this modifier."
         }
       }
     },
@@ -7428,7 +7428,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les variantes folder natives se limitent notamment à lock/minus/plus/star/user/dashed ; aucun dossier avec ce modificateur."
+          "note": "Native folder variants are limited to lock/minus/plus/star/user/dashed, among others; no folder with this modifier."
         }
       }
     },
@@ -7466,7 +7466,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les variantes folder natives se limitent notamment à lock/minus/plus/star/user/dashed ; aucun dossier avec ce modificateur."
+          "note": "Native folder variants are limited to lock/minus/plus/star/user/dashed, among others; no folder with this modifier."
         }
       }
     },
@@ -7504,7 +7504,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les variantes folder natives se limitent notamment à lock/minus/plus/star/user/dashed ; aucun dossier avec ce modificateur."
+          "note": "Native folder variants are limited to lock/minus/plus/star/user/dashed, among others; no folder with this modifier."
         }
       }
     },
@@ -7542,7 +7542,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les variantes folder natives se limitent notamment à lock/minus/plus/star/user/dashed ; aucun dossier avec ce modificateur."
+          "note": "Native folder variants are limited to lock/minus/plus/star/user/dashed, among others; no folder with this modifier."
         }
       }
     },
@@ -7580,7 +7580,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les variantes folder natives se limitent notamment à lock/minus/plus/star/user/dashed ; aucun dossier avec ce modificateur."
+          "note": "Native folder variants are limited to lock/minus/plus/star/user/dashed, among others; no folder with this modifier."
         }
       }
     },
@@ -7618,7 +7618,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les variantes folder natives se limitent notamment à lock/minus/plus/star/user/dashed ; aucun dossier avec ce modificateur."
+          "note": "Native folder variants are limited to lock/minus/plus/star/user/dashed, among others; no folder with this modifier."
         }
       }
     },
@@ -7656,7 +7656,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les variantes folder natives se limitent notamment à lock/minus/plus/star/user/dashed ; aucun dossier avec ce modificateur."
+          "note": "Native folder variants are limited to lock/minus/plus/star/user/dashed, among others; no folder with this modifier."
         }
       }
     },
@@ -7694,7 +7694,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les variantes folder natives se limitent notamment à lock/minus/plus/star/user/dashed ; aucun dossier avec ce modificateur."
+          "note": "Native folder variants are limited to lock/minus/plus/star/user/dashed, among others; no folder with this modifier."
         }
       }
     },
@@ -7732,7 +7732,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les variantes folder natives se limitent notamment à lock/minus/plus/star/user/dashed ; aucun dossier avec ce modificateur."
+          "note": "Native folder variants are limited to lock/minus/plus/star/user/dashed, among others; no folder with this modifier."
         }
       }
     },
@@ -7770,7 +7770,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les variantes folder natives se limitent notamment à lock/minus/plus/star/user/dashed ; aucun dossier avec ce modificateur."
+          "note": "Native folder variants are limited to lock/minus/plus/star/user/dashed, among others; no folder with this modifier."
         }
       }
     },
@@ -7808,7 +7808,7 @@
           "nativeSource": "assets/regular/folder-lock.svg",
           "componentPath": "icons/phosphor/folder-lock.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -7846,7 +7846,7 @@
           "nativeSource": "assets/regular/folder-minus.svg",
           "componentPath": "icons/phosphor/folder-minus.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -7884,7 +7884,7 @@
           "nativeSource": "assets/regular/folder-open.svg",
           "componentPath": "icons/phosphor/folder-open.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -7922,7 +7922,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les variantes folder natives se limitent notamment à lock/minus/plus/star/user/dashed ; aucun dossier avec ce modificateur."
+          "note": "Native folder variants are limited to lock/minus/plus/star/user/dashed, among others; no folder with this modifier."
         }
       }
     },
@@ -7960,7 +7960,7 @@
           "nativeSource": "assets/regular/folder-plus.svg",
           "componentPath": "icons/phosphor/folder-plus.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -7998,7 +7998,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les variantes folder natives se limitent notamment à lock/minus/plus/star/user/dashed ; aucun dossier avec ce modificateur."
+          "note": "Native folder variants are limited to lock/minus/plus/star/user/dashed, among others; no folder with this modifier."
         }
       }
     },
@@ -8036,7 +8036,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les variantes folder natives se limitent notamment à lock/minus/plus/star/user/dashed ; aucun dossier avec ce modificateur."
+          "note": "Native folder variants are limited to lock/minus/plus/star/user/dashed, among others; no folder with this modifier."
         }
       }
     },
@@ -8074,7 +8074,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune arborescence de dossiers ; tree-view/tree-structure décrivent une arborescence sans les dossiers de la référence."
+          "note": "No folder tree; tree-view/tree-structure describe a tree without the reference's folders."
         }
       }
     },
@@ -8112,7 +8112,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les variantes folder natives se limitent notamment à lock/minus/plus/star/user/dashed ; aucun dossier avec ce modificateur."
+          "note": "Native folder variants are limited to lock/minus/plus/star/user/dashed, among others; no folder with this modifier."
         }
       }
     },
@@ -8150,7 +8150,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les variantes folder natives se limitent notamment à lock/minus/plus/star/user/dashed ; aucun dossier avec ce modificateur."
+          "note": "Native folder variants are limited to lock/minus/plus/star/user/dashed, among others; no folder with this modifier."
         }
       }
     },
@@ -8188,7 +8188,7 @@
           "nativeSource": "assets/regular/folders.svg",
           "componentPath": "icons/phosphor/folders.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -8226,7 +8226,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun cadre de composition à quatre lignes traversantes ; hash-straight a une forme proche mais signifie dièse, pas cadre."
+          "note": "No composition frame with four crossing lines; hash-straight has a similar shape but means a hash sign, not a frame."
         }
       }
     },
@@ -8264,7 +8264,7 @@
           "nativeSource": "assets/regular/smiley-sad.svg",
           "componentPath": "icons/phosphor/smiley-sad.tsx",
           "retainedBaselineComponent": false,
-          "note": "Visage triste."
+          "note": "Sad face."
         }
       }
     },
@@ -8302,7 +8302,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun empilement de cartes placé horizontalement à une extrémité ; cards-three est vertical et slideshow est centré."
+          "note": "No stack of cards placed horizontally at one end; cards-three is vertical and slideshow is centered."
         }
       }
     },
@@ -8340,7 +8340,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune galerie avec grand aperçu et bande de miniatures ; slideshow n’a pas ces miniatures."
+          "note": "No gallery with a large preview and a thumbnail strip; slideshow does not have these thumbnails."
         }
       }
     },
@@ -8378,7 +8378,7 @@
           "nativeSource": "assets/regular/cards-three.svg",
           "componentPath": "icons/phosphor/cards-three.tsx",
           "retainedBaselineComponent": false,
-          "note": "Trois cartes empilées verticalement ; même famille visuelle de galerie."
+          "note": "Three cards stacked vertically; same visual gallery family."
         }
       }
     },
@@ -8416,7 +8416,7 @@
           "nativeSource": "assets/regular/gauge.svg",
           "componentPath": "icons/phosphor/gauge.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -8454,7 +8454,7 @@
           "nativeSource": "assets/regular/gavel.svg",
           "componentPath": "icons/phosphor/gavel.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -8492,7 +8492,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Symbole monétaire absent du catalogue Phosphor 2.1.1 ; aucun remplacement par une autre devise."
+          "note": "Currency symbol absent from the Phosphor 2.1.1 catalog; not replaced by another currency."
         }
       }
     },
@@ -8530,7 +8530,7 @@
           "nativeSource": "assets/regular/git-branch.svg",
           "componentPath": "icons/phosphor/git-branch.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -8568,7 +8568,7 @@
           "nativeSource": "assets/regular/git-commit.svg",
           "componentPath": "icons/phosphor/git-commit.tsx",
           "retainedBaselineComponent": false,
-          "note": "Nœud commit traversé d'une ligne horizontale."
+          "note": "Commit node crossed by a horizontal line."
         }
       }
     },
@@ -8606,7 +8606,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Le seul git-commit natif est horizontal ; aucun commit vertical sans tourner la géométrie officielle."
+          "note": "The only native git-commit is horizontal; no vertical commit without rotating the official geometry."
         }
       }
     },
@@ -8644,7 +8644,7 @@
           "nativeSource": "assets/regular/git-diff.svg",
           "componentPath": "icons/phosphor/git-diff.tsx",
           "retainedBaselineComponent": false,
-          "note": "Deux branches opposées de comparaison Git."
+          "note": "Two opposed Git comparison branches."
         }
       }
     },
@@ -8720,7 +8720,7 @@
           "nativeSource": "assets/regular/git-fork.svg",
           "componentPath": "icons/phosphor/git-fork.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -8758,7 +8758,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune vue de graphe de commits Git ; graph est un graphe générique non Git."
+          "note": "No Git commit graph view; graph is a generic, non-Git graph."
         }
       }
     },
@@ -8796,7 +8796,7 @@
           "nativeSource": "assets/regular/git-merge.svg",
           "componentPath": "icons/phosphor/git-merge.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -8834,7 +8834,7 @@
           "nativeSource": "assets/regular/git-pull-request.svg",
           "componentPath": "icons/phosphor/git-pull-request.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -8872,7 +8872,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune pull request fermée/créée avec croix ou plus ; git-pull-request seul ne préserve pas l’état."
+          "note": "No closed/created pull request with a cross or plus; git-pull-request alone does not preserve the state."
         }
       }
     },
@@ -8910,7 +8910,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune pull request fermée/créée avec croix ou plus ; git-pull-request seul ne préserve pas l’état."
+          "note": "No closed/created pull request with a cross or plus; git-pull-request alone does not preserve the state."
         }
       }
     },
@@ -8948,7 +8948,7 @@
           "nativeSource": "assets/regular/github-logo.svg",
           "componentPath": "icons/phosphor/github-logo.tsx",
           "retainedBaselineComponent": false,
-          "note": "Logo officiel GitHub."
+          "note": "Official GitHub logo."
         }
       }
     },
@@ -8986,7 +8986,7 @@
           "nativeSource": "assets/regular/gitlab-logo.svg",
           "componentPath": "icons/phosphor/gitlab-logo.tsx",
           "retainedBaselineComponent": false,
-          "note": "Logo officiel GitLab."
+          "note": "Official GitLab logo."
         }
       }
     },
@@ -9024,7 +9024,7 @@
           "nativeSource": "assets/regular/graduation-cap.svg",
           "componentPath": "icons/phosphor/graduation-cap.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -9062,7 +9062,7 @@
           "nativeSource": "assets/regular/dots-nine.svg",
           "componentPath": "icons/phosphor/dots-nine.tsx",
           "retainedBaselineComponent": false,
-          "note": "Poignée de neuf points."
+          "note": "Nine-dot grip."
         }
       }
     },
@@ -9100,7 +9100,7 @@
           "nativeSource": "assets/regular/dots-six.svg",
           "componentPath": "icons/phosphor/dots-six.tsx",
           "retainedBaselineComponent": false,
-          "note": "Poignée de six points en orientation horizontale."
+          "note": "Six-dot grip in horizontal orientation."
         }
       }
     },
@@ -9138,7 +9138,7 @@
           "nativeSource": "assets/regular/dots-six-vertical.svg",
           "componentPath": "icons/phosphor/dots-six-vertical.tsx",
           "retainedBaselineComponent": false,
-          "note": "Poignée de six points en orientation verticale."
+          "note": "Six-dot grip in vertical orientation."
         }
       }
     },
@@ -9176,7 +9176,7 @@
           "nativeSource": "assets/regular/hammer.svg",
           "componentPath": "icons/phosphor/hammer.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -9214,7 +9214,7 @@
           "nativeSource": "assets/regular/hand-palm.svg",
           "componentPath": "icons/phosphor/hand-palm.tsx",
           "retainedBaselineComponent": false,
-          "note": "Main ouverte complète ; hand natif représente moins de doigts levés."
+          "note": "Full open hand; the native hand shows fewer raised fingers."
         }
       }
     },
@@ -9252,7 +9252,7 @@
           "nativeSource": "assets/regular/hand-coins.svg",
           "componentPath": "icons/phosphor/hand-coins.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -9290,7 +9290,7 @@
           "nativeSource": "assets/regular/hand-fist.svg",
           "componentPath": "icons/phosphor/hand-fist.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -9328,7 +9328,7 @@
           "nativeSource": "assets/regular/hand-grabbing.svg",
           "componentPath": "icons/phosphor/hand-grabbing.tsx",
           "retainedBaselineComponent": false,
-          "note": "Main qui saisit."
+          "note": "Grabbing hand."
         }
       }
     },
@@ -9366,7 +9366,7 @@
           "nativeSource": "assets/regular/hand-heart.svg",
           "componentPath": "icons/phosphor/hand-heart.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -9404,7 +9404,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune main ouverte en position de soutien sans objet ; hand-heart ajoute un cœur et handshake change le geste."
+          "note": "No open hand in a supporting position without an object; hand-heart adds a heart and handshake changes the gesture."
         }
       }
     },
@@ -9442,7 +9442,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun geste des cornes du rock ; hand-peace a une disposition de doigts différente."
+          "note": "No rock horns gesture; hand-peace has a different finger arrangement."
         }
       }
     },
@@ -9480,7 +9480,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun disque dur combiné à une flèche de transfert ; hard-drive seul ne préserve pas l’action."
+          "note": "No hard drive combined with a transfer arrow; hard-drive alone does not preserve the action."
         }
       }
     },
@@ -9518,7 +9518,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun disque dur combiné à une flèche de transfert ; hard-drive seul ne préserve pas l’action."
+          "note": "No hard drive combined with a transfer arrow; hard-drive alone does not preserve the action."
         }
       }
     },
@@ -9556,7 +9556,7 @@
           "nativeSource": "assets/regular/detective.svg",
           "componentPath": "icons/phosphor/detective.tsx",
           "retainedBaselineComponent": false,
-          "note": "Chapeau et lunettes du détective/incognito."
+          "note": "Detective/incognito hat and glasses."
         }
       }
     },
@@ -9594,7 +9594,7 @@
           "nativeSource": "assets/regular/heart.svg",
           "componentPath": "icons/phosphor/heart.tsx",
           "retainedBaselineComponent": true,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -9632,7 +9632,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune poignée de main formant un cœur ; handshake et hand-heart sont deux symboles différents."
+          "note": "No handshake forming a heart; handshake and hand-heart are two different symbols."
         }
       }
     },
@@ -9670,7 +9670,7 @@
           "nativeSource": "assets/regular/heartbeat.svg",
           "componentPath": "icons/phosphor/heartbeat.tsx",
           "retainedBaselineComponent": false,
-          "note": "Cœur avec électrocardiogramme."
+          "note": "Heart with an electrocardiogram."
         }
       }
     },
@@ -9708,7 +9708,7 @@
           "nativeSource": "assets/regular/clock-counter-clockwise.svg",
           "componentPath": "icons/phosphor/clock-counter-clockwise.tsx",
           "retainedBaselineComponent": false,
-          "note": "Horloge entourée d'une flèche de retour historique."
+          "note": "Clock surrounded by a history (back) arrow."
         }
       }
     },
@@ -9746,7 +9746,7 @@
           "nativeSource": "assets/regular/house.svg",
           "componentPath": "icons/phosphor/house.tsx",
           "retainedBaselineComponent": true,
-          "note": "Maison."
+          "note": "House."
         }
       }
     },
@@ -9784,7 +9784,7 @@
           "nativeSource": "assets/regular/hourglass.svg",
           "componentPath": "icons/phosphor/hourglass.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -9822,7 +9822,7 @@
           "nativeSource": "assets/regular/identification-card.svg",
           "componentPath": "icons/phosphor/identification-card.tsx",
           "retainedBaselineComponent": false,
-          "note": "Carte d'identification avec portrait."
+          "note": "Identification card with a portrait."
         }
       }
     },
@@ -9860,7 +9860,7 @@
           "nativeSource": "assets/regular/currency-inr.svg",
           "componentPath": "icons/phosphor/currency-inr.tsx",
           "retainedBaselineComponent": false,
-          "note": "Symbole roupie indienne."
+          "note": "Indian rupee symbol."
         }
       }
     },
@@ -9898,7 +9898,7 @@
           "nativeSource": "assets/regular/instagram-logo.svg",
           "componentPath": "icons/phosphor/instagram-logo.tsx",
           "retainedBaselineComponent": false,
-          "note": "Logo officiel Instagram."
+          "note": "Official Instagram logo."
         }
       }
     },
@@ -9936,7 +9936,7 @@
           "nativeSource": "assets/regular/text-italic.svg",
           "componentPath": "icons/phosphor/text-italic.tsx",
           "retainedBaselineComponent": false,
-          "note": "Lettre I italique."
+          "note": "Italic letter I."
         }
       }
     },
@@ -9974,7 +9974,7 @@
           "nativeSource": "assets/regular/currency-jpy.svg",
           "componentPath": "icons/phosphor/currency-jpy.tsx",
           "retainedBaselineComponent": false,
-          "note": "Symbole yen japonais."
+          "note": "Japanese yen symbol."
         }
       }
     },
@@ -10012,7 +10012,7 @@
           "nativeSource": "assets/regular/key.svg",
           "componentPath": "icons/phosphor/key.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -10088,7 +10088,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune clé à tête carrée ; key a une tête ronde."
+          "note": "No square-headed key; key has a round head."
         }
       }
     },
@@ -10126,7 +10126,7 @@
           "nativeSource": "assets/regular/keyboard.svg",
           "componentPath": "icons/phosphor/keyboard.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -10164,7 +10164,7 @@
           "nativeSource": "assets/regular/translate.svg",
           "componentPath": "icons/phosphor/translate.tsx",
           "retainedBaselineComponent": false,
-          "note": "Symbole de traduction multilingue."
+          "note": "Multilingual translation symbol."
         }
       }
     },
@@ -10202,7 +10202,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun ordinateur portable avec coche de validation."
+          "note": "No laptop with a validation check."
         }
       }
     },
@@ -10240,7 +10240,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun visage riant bouche ouverte ; smiley représente un sourire fermé."
+          "note": "No laughing face with an open mouth; smiley represents a closed smile."
         }
       }
     },
@@ -10278,7 +10278,7 @@
           "nativeSource": "assets/regular/stack.svg",
           "componentPath": "icons/phosphor/stack.tsx",
           "retainedBaselineComponent": false,
-          "note": "Pile de trois plans en perspective."
+          "note": "Stack of three planes in perspective."
         }
       }
     },
@@ -10317,7 +10317,7 @@
           "nativeSource": "assets/regular/squares-four.svg",
           "componentPath": "icons/phosphor/squares-four.tsx",
           "retainedBaselineComponent": false,
-          "note": "Grille de quatre carrés séparés."
+          "note": "Grid of four separate squares."
         }
       }
     },
@@ -10355,7 +10355,7 @@
           "nativeSource": "assets/regular/layout.svg",
           "componentPath": "icons/phosphor/layout.tsx",
           "retainedBaselineComponent": false,
-          "note": "Bandeau supérieur et deux panneaux inférieurs."
+          "note": "Top banner and two lower panels."
         }
       }
     },
@@ -10393,7 +10393,7 @@
           "nativeSource": "assets/regular/leaf.svg",
           "componentPath": "icons/phosphor/leaf.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -10431,7 +10431,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun légume-feuille type salade ; leaf est une feuille générique et carrot/pepper sont d’autres légumes."
+          "note": "No leafy green vegetable such as lettuce; leaf is a generic leaf and carrot/pepper are other vegetables."
         }
       }
     },
@@ -10469,7 +10469,7 @@
           "nativeSource": "assets/regular/link.svg",
           "componentPath": "icons/phosphor/link.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -10507,7 +10507,7 @@
           "nativeSource": "assets/regular/link-simple.svg",
           "componentPath": "icons/phosphor/link-simple.tsx",
           "retainedBaselineComponent": false,
-          "note": "Deux maillons de chaîne simplifiés."
+          "note": "Two simplified chain links."
         }
       }
     },
@@ -10545,7 +10545,7 @@
           "nativeSource": "assets/regular/linkedin-logo.svg",
           "componentPath": "icons/phosphor/linkedin-logo.tsx",
           "retainedBaselineComponent": false,
-          "note": "Logo officiel LinkedIn."
+          "note": "Official LinkedIn logo."
         }
       }
     },
@@ -10583,7 +10583,7 @@
           "nativeSource": "assets/regular/spinner.svg",
           "componentPath": "icons/phosphor/spinner.tsx",
           "retainedBaselineComponent": false,
-          "note": "Indicateur de chargement radial."
+          "note": "Radial loading indicator."
         }
       }
     },
@@ -10621,7 +10621,7 @@
           "nativeSource": "assets/regular/spinner-gap.svg",
           "componentPath": "icons/phosphor/spinner-gap.tsx",
           "retainedBaselineComponent": false,
-          "note": "Cercle de chargement incomplet."
+          "note": "Incomplete loading circle."
         }
       }
     },
@@ -10659,7 +10659,7 @@
           "nativeSource": "assets/regular/spinner-ball.svg",
           "componentPath": "icons/phosphor/spinner-ball.tsx",
           "retainedBaselineComponent": false,
-          "note": "Sphère de chargement à pales internes courbes ; pas le moulin à vent sur tige."
+          "note": "Loading sphere with curved inner blades; not the windmill on a stick."
         }
       }
     },
@@ -10697,7 +10697,7 @@
           "nativeSource": "assets/regular/lock.svg",
           "componentPath": "icons/phosphor/lock.tsx",
           "retainedBaselineComponent": true,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -10735,7 +10735,7 @@
           "nativeSource": "assets/regular/lock-key.svg",
           "componentPath": "icons/phosphor/lock-key.tsx",
           "retainedBaselineComponent": false,
-          "note": "Cadenas à trou de serrure."
+          "note": "Padlock with a keyhole."
         }
       }
     },
@@ -10773,7 +10773,7 @@
           "nativeSource": "assets/regular/lock-key-open.svg",
           "componentPath": "icons/phosphor/lock-key-open.tsx",
           "retainedBaselineComponent": false,
-          "note": "Cadenas ouvert à trou de serrure."
+          "note": "Open padlock with a keyhole."
         }
       }
     },
@@ -10811,7 +10811,7 @@
           "nativeSource": "assets/regular/lock-open.svg",
           "componentPath": "icons/phosphor/lock-open.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -10849,7 +10849,7 @@
           "nativeSource": "assets/regular/sign-in.svg",
           "componentPath": "icons/phosphor/sign-in.tsx",
           "retainedBaselineComponent": false,
-          "note": "Flèche d'entrée dans un cadre/porte."
+          "note": "Arrow entering a frame/door."
         }
       }
     },
@@ -10887,7 +10887,7 @@
           "nativeSource": "assets/regular/sign-out.svg",
           "componentPath": "icons/phosphor/sign-out.tsx",
           "retainedBaselineComponent": false,
-          "note": "Flèche de sortie d'un cadre/porte."
+          "note": "Arrow leaving a frame/door."
         }
       }
     },
@@ -10925,7 +10925,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune enveloppe avec coche de validation."
+          "note": "No envelope with a validation check."
         }
       }
     },
@@ -10964,7 +10964,7 @@
           "nativeSource": "assets/regular/mailbox.svg",
           "componentPath": "icons/phosphor/mailbox.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -11002,7 +11002,7 @@
           "nativeSource": "assets/regular/map-pin.svg",
           "componentPath": "icons/phosphor/map-pin.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -11040,7 +11040,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Le seul map-pin modifié disponible porte un plus ; aucun repère avec cette coche/maison/moins/croix/barre."
+          "note": "The only modified map pin available carries a plus; no pin with this check/house/minus/cross/slash."
         }
       }
     },
@@ -11078,7 +11078,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Le seul map-pin modifié disponible porte un plus ; aucun repère avec cette coche/maison/moins/croix/barre."
+          "note": "The only modified map pin available carries a plus; no pin with this check/house/minus/cross/slash."
         }
       }
     },
@@ -11116,7 +11116,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Le seul map-pin modifié disponible porte un plus ; aucun repère avec cette coche/maison/moins/croix/barre."
+          "note": "The only modified map pin available carries a plus; no pin with this check/house/minus/cross/slash."
         }
       }
     },
@@ -11154,7 +11154,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Le seul map-pin modifié disponible porte un plus ; aucun repère avec cette coche/maison/moins/croix/barre."
+          "note": "The only modified map pin available carries a plus; no pin with this check/house/minus/cross/slash."
         }
       }
     },
@@ -11192,7 +11192,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Le seul map-pin modifié disponible porte un plus ; aucun repère avec cette coche/maison/moins/croix/barre."
+          "note": "The only modified map pin available carries a plus; no pin with this check/house/minus/cross/slash."
         }
       }
     },
@@ -11230,7 +11230,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Le seul map-pin modifié disponible porte un plus ; aucun repère avec cette coche/maison/moins/croix/barre."
+          "note": "The only modified map pin available carries a plus; no pin with this check/house/minus/cross/slash."
         }
       }
     },
@@ -11268,7 +11268,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Le plus du map-pin-plus natif est à l’intérieur du repère ; la référence exige un plus extérieur. Seule map-pin-plus-inside utilise ce natif."
+          "note": "The plus of the native map-pin-plus is inside the pin; the reference requires an outside plus. Only map-pin-plus-inside uses this native icon."
         }
       }
     },
@@ -11306,7 +11306,7 @@
           "nativeSource": "assets/regular/map-pin-plus.svg",
           "componentPath": "icons/phosphor/map-pin-plus.tsx",
           "retainedBaselineComponent": false,
-          "note": "Repère de carte avec plus intégré."
+          "note": "Map pin with a built-in plus."
         }
       }
     },
@@ -11344,7 +11344,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Le seul map-pin modifié disponible porte un plus ; aucun repère avec cette coche/maison/moins/croix/barre."
+          "note": "The only modified map pin available carries a plus; no pin with this check/house/minus/cross/slash."
         }
       }
     },
@@ -11382,7 +11382,7 @@
           "nativeSource": "assets/regular/corners-out.svg",
           "componentPath": "icons/phosphor/corners-out.tsx",
           "retainedBaselineComponent": false,
-          "note": "Quatre coins d'agrandissement sans flèches."
+          "note": "Four expand corners without arrows."
         }
       }
     },
@@ -11420,7 +11420,7 @@
           "nativeSource": "assets/regular/arrows-out-simple.svg",
           "componentPath": "icons/phosphor/arrows-out-simple.tsx",
           "retainedBaselineComponent": false,
-          "note": "Deux flèches diagonales d'agrandissement."
+          "note": "Two diagonal expand arrows."
         }
       }
     },
@@ -11496,7 +11496,7 @@
           "nativeSource": "assets/regular/list.svg",
           "componentPath": "icons/phosphor/list.tsx",
           "retainedBaselineComponent": true,
-          "note": "Menu à trois lignes."
+          "note": "Three-line menu."
         }
       }
     },
@@ -11534,7 +11534,7 @@
           "nativeSource": "assets/regular/chat-circle.svg",
           "componentPath": "icons/phosphor/chat-circle.tsx",
           "retainedBaselineComponent": false,
-          "note": "Bulle ronde de conversation."
+          "note": "Round chat bubble."
         }
       }
     },
@@ -11572,7 +11572,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les bulles chat natives ont dots/text/slash mais aucune variante avec coche, plus, croix ou contour pointillé."
+          "note": "Native chat bubbles have dots/text/slash but no variant with a check, plus, cross or dashed outline."
         }
       }
     },
@@ -11610,7 +11610,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les bulles chat natives ont dots/text/slash mais aucune variante avec coche, plus, croix ou contour pointillé."
+          "note": "Native chat bubbles have dots/text/slash but no variant with a check, plus, cross or dashed outline."
         }
       }
     },
@@ -11648,7 +11648,7 @@
           "nativeSource": "assets/regular/chat-circle-dots.svg",
           "componentPath": "icons/phosphor/chat-circle-dots.tsx",
           "retainedBaselineComponent": false,
-          "note": "Bulle ronde avec trois points."
+          "note": "Round bubble with three dots."
         }
       }
     },
@@ -11686,7 +11686,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les bulles chat natives ont dots/text/slash mais aucune variante avec coche, plus, croix ou contour pointillé."
+          "note": "Native chat bubbles have dots/text/slash but no variant with a check, plus, cross or dashed outline."
         }
       }
     },
@@ -11724,7 +11724,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les bulles chat natives ont dots/text/slash mais aucune variante avec coche, plus, croix ou contour pointillé."
+          "note": "Native chat bubbles have dots/text/slash but no variant with a check, plus, cross or dashed outline."
         }
       }
     },
@@ -11762,7 +11762,7 @@
           "nativeSource": "assets/regular/chat.svg",
           "componentPath": "icons/phosphor/chat.tsx",
           "retainedBaselineComponent": false,
-          "note": "Bulle rectangulaire de conversation."
+          "note": "Rectangular chat bubble."
         }
       }
     },
@@ -11800,7 +11800,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les bulles chat natives ont dots/text/slash mais aucune variante avec coche, plus, croix ou contour pointillé."
+          "note": "Native chat bubbles have dots/text/slash but no variant with a check, plus, cross or dashed outline."
         }
       }
     },
@@ -11838,7 +11838,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les bulles chat natives ont dots/text/slash mais aucune variante avec coche, plus, croix ou contour pointillé."
+          "note": "Native chat bubbles have dots/text/slash but no variant with a check, plus, cross or dashed outline."
         }
       }
     },
@@ -11876,7 +11876,7 @@
           "nativeSource": "assets/regular/chat-dots.svg",
           "componentPath": "icons/phosphor/chat-dots.tsx",
           "retainedBaselineComponent": false,
-          "note": "Bulle rectangulaire avec trois points."
+          "note": "Rectangular bubble with three dots."
         }
       }
     },
@@ -11914,7 +11914,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les bulles chat natives ont dots/text/slash mais aucune variante avec coche, plus, croix ou contour pointillé."
+          "note": "Native chat bubbles have dots/text/slash but no variant with a check, plus, cross or dashed outline."
         }
       }
     },
@@ -11952,7 +11952,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les bulles chat natives ont dots/text/slash mais aucune variante avec coche, plus, croix ou contour pointillé."
+          "note": "Native chat bubbles have dots/text/slash but no variant with a check, plus, cross or dashed outline."
         }
       }
     },
@@ -11990,7 +11990,7 @@
           "nativeSource": "assets/regular/microphone.svg",
           "componentPath": "icons/phosphor/microphone.tsx",
           "retainedBaselineComponent": false,
-          "note": "Microphone sur pied."
+          "note": "Microphone on a stand."
         }
       }
     },
@@ -12028,7 +12028,7 @@
           "nativeSource": "assets/regular/microphone-slash.svg",
           "componentPath": "icons/phosphor/microphone-slash.tsx",
           "retainedBaselineComponent": false,
-          "note": "Microphone barré."
+          "note": "Microphone with a slash."
         }
       }
     },
@@ -12066,7 +12066,7 @@
           "nativeSource": "assets/regular/corners-in.svg",
           "componentPath": "icons/phosphor/corners-in.tsx",
           "retainedBaselineComponent": false,
-          "note": "Quatre coins orientés vers le centre."
+          "note": "Four corners pointing toward the center."
         }
       }
     },
@@ -12104,7 +12104,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun moniteur combiné à une coche ou à un engrenage."
+          "note": "No monitor combined with a check or a gear."
         }
       }
     },
@@ -12142,7 +12142,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun moniteur combiné à une coche ou à un engrenage."
+          "note": "No monitor combined with a check or a gear."
         }
       }
     },
@@ -12180,7 +12180,7 @@
           "nativeSource": "assets/regular/moon.svg",
           "componentPath": "icons/phosphor/moon.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -12218,7 +12218,7 @@
           "nativeSource": "assets/regular/contactless-payment.svg",
           "componentPath": "icons/phosphor/contactless-payment.tsx",
           "retainedBaselineComponent": false,
-          "note": "Ondes de communication sans contact, même symbole NFC."
+          "note": "Contactless communication waves, same NFC symbol."
         }
       }
     },
@@ -12256,7 +12256,7 @@
           "nativeSource": "assets/regular/palette.svg",
           "componentPath": "icons/phosphor/palette.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -12294,7 +12294,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun panneau latéral avec flèche d’ouverture/fermeture ; sidebar ne préserve pas le sens de l’action."
+          "note": "No side panel with an open/close arrow; sidebar does not preserve the direction of the action."
         }
       }
     },
@@ -12332,7 +12332,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun panneau latéral avec flèche d’ouverture/fermeture ; sidebar ne préserve pas le sens de l’action."
+          "note": "No side panel with an open/close arrow; sidebar does not preserve the direction of the action."
         }
       }
     },
@@ -12370,7 +12370,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun panneau latéral avec flèche d’ouverture/fermeture ; sidebar ne préserve pas le sens de l’action."
+          "note": "No side panel with an open/close arrow; sidebar does not preserve the direction of the action."
         }
       }
     },
@@ -12408,7 +12408,7 @@
           "nativeSource": "assets/regular/confetti.svg",
           "componentPath": "icons/phosphor/confetti.tsx",
           "retainedBaselineComponent": false,
-          "note": "Cône projetant des confettis."
+          "note": "Cone shooting confetti."
         }
       }
     },
@@ -12446,7 +12446,7 @@
           "nativeSource": "assets/regular/pause.svg",
           "componentPath": "icons/phosphor/pause.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -12484,7 +12484,7 @@
           "nativeSource": "assets/regular/pen-nib.svg",
           "componentPath": "icons/phosphor/pen-nib.tsx",
           "retainedBaselineComponent": false,
-          "note": "Plume d'outil vectoriel."
+          "note": "Vector tool pen nib."
         }
       }
     },
@@ -12522,7 +12522,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Symbole monétaire absent du catalogue Phosphor 2.1.1 ; aucun remplacement par une autre devise."
+          "note": "Currency symbol absent from the Phosphor 2.1.1 catalog; not replaced by another currency."
         }
       }
     },
@@ -12560,7 +12560,7 @@
           "nativeSource": "assets/regular/phone.svg",
           "componentPath": "icons/phosphor/phone.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -12598,7 +12598,7 @@
           "nativeSource": "assets/regular/phone-call.svg",
           "componentPath": "icons/phosphor/phone-call.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -12636,7 +12636,7 @@
           "nativeSource": "assets/regular/phone-transfer.svg",
           "componentPath": "icons/phosphor/phone-transfer.tsx",
           "retainedBaselineComponent": false,
-          "note": "Combiné avec indication de transfert d'appel."
+          "note": "Handset with a call-forwarding indicator."
         }
       }
     },
@@ -12674,7 +12674,7 @@
           "nativeSource": "assets/regular/phone-incoming.svg",
           "componentPath": "icons/phosphor/phone-incoming.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -12712,7 +12712,7 @@
           "nativeSource": "assets/regular/phone-x.svg",
           "componentPath": "icons/phosphor/phone-x.tsx",
           "retainedBaselineComponent": false,
-          "note": "Combiné avec croix d'appel manqué ; Phosphor emploie une croix plutôt qu'une flèche brisée."
+          "note": "Handset with a missed-call cross; Phosphor uses a cross rather than a broken arrow."
         }
       }
     },
@@ -12750,7 +12750,7 @@
           "nativeSource": "assets/regular/phone-slash.svg",
           "componentPath": "icons/phosphor/phone-slash.tsx",
           "retainedBaselineComponent": false,
-          "note": "Combiné barré."
+          "note": "Handset with a slash."
         }
       }
     },
@@ -12788,7 +12788,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune pioche ; axe/hammer/shovel sont d’autres outils."
+          "note": "No pickaxe; axe/hammer/shovel are other tools."
         }
       }
     },
@@ -12826,7 +12826,7 @@
           "nativeSource": "assets/regular/airplane-landing.svg",
           "componentPath": "icons/phosphor/airplane-landing.tsx",
           "retainedBaselineComponent": false,
-          "note": "Avion à l'atterrissage."
+          "note": "Airplane landing."
         }
       }
     },
@@ -12864,7 +12864,7 @@
           "nativeSource": "assets/regular/airplane-takeoff.svg",
           "componentPath": "icons/phosphor/airplane-takeoff.tsx",
           "retainedBaselineComponent": false,
-          "note": "Avion au décollage."
+          "note": "Airplane taking off."
         }
       }
     },
@@ -12902,7 +12902,7 @@
           "nativeSource": "assets/regular/play.svg",
           "componentPath": "icons/phosphor/play.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -12940,7 +12940,7 @@
           "nativeSource": "assets/regular/plug-charging.svg",
           "componentPath": "icons/phosphor/plug-charging.tsx",
           "retainedBaselineComponent": false,
-          "note": "Prise électrique avec éclair."
+          "note": "Electrical plug with a lightning bolt."
         }
       }
     },
@@ -12978,7 +12978,7 @@
           "nativeSource": "assets/regular/plus.svg",
           "componentPath": "icons/phosphor/plus.tsx",
           "retainedBaselineComponent": true,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -13016,7 +13016,7 @@
           "nativeSource": "assets/regular/currency-gbp.svg",
           "componentPath": "icons/phosphor/currency-gbp.tsx",
           "retainedBaselineComponent": false,
-          "note": "Symbole livre sterling."
+          "note": "Pound sterling symbol."
         }
       }
     },
@@ -13054,7 +13054,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun projecteur physique ; projector-screen représente uniquement l’écran de projection."
+          "note": "No physical projector; projector-screen represents only the projection screen."
         }
       }
     },
@@ -13092,7 +13092,7 @@
           "nativeSource": "assets/regular/rabbit.svg",
           "componentPath": "icons/phosphor/rabbit.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -13169,7 +13169,7 @@
           "nativeSource": "assets/regular/cell-tower.svg",
           "componentPath": "icons/phosphor/cell-tower.tsx",
           "retainedBaselineComponent": false,
-          "note": "Tour émettrice avec ondes."
+          "note": "Transmission tower with waves."
         }
       }
     },
@@ -13207,7 +13207,7 @@
           "nativeSource": "assets/regular/receipt.svg",
           "componentPath": "icons/phosphor/receipt.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -13245,7 +13245,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun ticket contenant le symbole de cette devise ; receipt/invoice n’incluent pas de symbole monétaire spécifique."
+          "note": "No receipt containing this currency symbol; receipt/invoice do not include a specific currency symbol."
         }
       }
     },
@@ -13283,7 +13283,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun ticket contenant le symbole de cette devise ; receipt/invoice n’incluent pas de symbole monétaire spécifique."
+          "note": "No receipt containing this currency symbol; receipt/invoice do not include a specific currency symbol."
         }
       }
     },
@@ -13321,7 +13321,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun ticket contenant le symbole de cette devise ; receipt/invoice n’incluent pas de symbole monétaire spécifique."
+          "note": "No receipt containing this currency symbol; receipt/invoice do not include a specific currency symbol."
         }
       }
     },
@@ -13359,7 +13359,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun ticket contenant le symbole de cette devise ; receipt/invoice n’incluent pas de symbole monétaire spécifique."
+          "note": "No receipt containing this currency symbol; receipt/invoice do not include a specific currency symbol."
         }
       }
     },
@@ -13397,7 +13397,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun ticket contenant le symbole de cette devise ; receipt/invoice n’incluent pas de symbole monétaire spécifique."
+          "note": "No receipt containing this currency symbol; receipt/invoice do not include a specific currency symbol."
         }
       }
     },
@@ -13435,7 +13435,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun ticket contenant le symbole de cette devise ; receipt/invoice n’incluent pas de symbole monétaire spécifique."
+          "note": "No receipt containing this currency symbol; receipt/invoice do not include a specific currency symbol."
         }
       }
     },
@@ -13473,7 +13473,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun ticket contenant le symbole de cette devise ; receipt/invoice n’incluent pas de symbole monétaire spécifique."
+          "note": "No receipt containing this currency symbol; receipt/invoice do not include a specific currency symbol."
         }
       }
     },
@@ -13549,7 +13549,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun ticket contenant le symbole de cette devise ; receipt/invoice n’incluent pas de symbole monétaire spécifique."
+          "note": "No receipt containing this currency symbol; receipt/invoice do not include a specific currency symbol."
         }
       }
     },
@@ -13587,7 +13587,7 @@
           "nativeSource": "assets/regular/arrow-bend-up-right.svg",
           "componentPath": "icons/phosphor/arrow-bend-up-right.tsx",
           "retainedBaselineComponent": false,
-          "note": "Flèche coudée vers la droite pour rétablir."
+          "note": "Right-bent arrow for redo."
         }
       }
     },
@@ -13625,7 +13625,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune flèche undo/redo avec point-repère ; la variante simple ferait disparaître ce marqueur."
+          "note": "No undo/redo arrow with a marker dot; the plain variant would drop this marker."
         }
       }
     },
@@ -13663,7 +13663,7 @@
           "nativeSource": "assets/regular/arrows-counter-clockwise.svg",
           "componentPath": "icons/phosphor/arrows-counter-clockwise.tsx",
           "retainedBaselineComponent": false,
-          "note": "Deux flèches circulaires antihoraires."
+          "note": "Two counterclockwise circular arrows."
         }
       }
     },
@@ -13701,7 +13701,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune paire de flèches circulaires avec point central."
+          "note": "No pair of circular arrows with a center dot."
         }
       }
     },
@@ -13739,7 +13739,7 @@
           "nativeSource": "assets/regular/arrows-clockwise.svg",
           "componentPath": "icons/phosphor/arrows-clockwise.tsx",
           "retainedBaselineComponent": false,
-          "note": "Deux flèches circulaires horaires."
+          "note": "Two clockwise circular arrows."
         }
       }
     },
@@ -13777,7 +13777,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune actualisation circulaire barrée."
+          "note": "No circular refresh with a slash."
         }
       }
     },
@@ -13815,7 +13815,7 @@
           "nativeSource": "assets/regular/rocket.svg",
           "componentPath": "icons/phosphor/rocket.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -13853,7 +13853,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun fauteuil à bascule ; chair/armchair n’ont pas de patins courbes."
+          "note": "No rocking chair; chair/armchair do not have curved rockers."
         }
       }
     },
@@ -13891,7 +13891,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune montagne russe ; pas de rail et véhicule correspondants."
+          "note": "No roller coaster; no matching track and car."
         }
       }
     },
@@ -13929,7 +13929,7 @@
           "nativeSource": "assets/regular/arrow-counter-clockwise.svg",
           "componentPath": "icons/phosphor/arrow-counter-clockwise.tsx",
           "retainedBaselineComponent": false,
-          "note": "Une flèche circulaire antihoraire."
+          "note": "One counterclockwise circular arrow."
         }
       }
     },
@@ -13967,7 +13967,7 @@
           "nativeSource": "assets/regular/arrow-clockwise.svg",
           "componentPath": "icons/phosphor/refresh.tsx",
           "retainedBaselineComponent": true,
-          "note": "Une flèche circulaire horaire."
+          "note": "One clockwise circular arrow."
         }
       }
     },
@@ -14005,7 +14005,7 @@
           "nativeSource": "assets/regular/path.svg",
           "componentPath": "icons/phosphor/path.tsx",
           "retainedBaselineComponent": false,
-          "note": "Trajet sinueux avec point d'arrivée."
+          "note": "Winding route with an end point."
         }
       }
     },
@@ -14043,7 +14043,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun routeur réseau avec antennes ; network et wifi décrivent le réseau, pas le dispositif."
+          "note": "No network router with antennas; network and wifi describe the network, not the device."
         }
       }
     },
@@ -14081,7 +14081,7 @@
           "nativeSource": "assets/regular/currency-rub.svg",
           "componentPath": "icons/phosphor/currency-rub.tsx",
           "retainedBaselineComponent": false,
-          "note": "Symbole rouble russe."
+          "note": "Russian ruble symbol."
         }
       }
     },
@@ -14119,7 +14119,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune antenne parabolique ; broadcast/cell-tower ne représentent pas le même équipement."
+          "note": "No satellite dish; broadcast/cell-tower do not represent the same equipment."
         }
       }
     },
@@ -14157,7 +14157,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Symbole monétaire absent du catalogue Phosphor 2.1.1 ; aucun remplacement par une autre devise."
+          "note": "Currency symbol absent from the Phosphor 2.1.1 catalog; not replaced by another currency."
         }
       }
     },
@@ -14195,7 +14195,7 @@
           "nativeSource": "assets/regular/scan-smiley.svg",
           "componentPath": "icons/phosphor/scan-smiley.tsx",
           "retainedBaselineComponent": false,
-          "note": "Cadre de scan avec visage."
+          "note": "Scan frame with a face."
         }
       }
     },
@@ -14233,7 +14233,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun cadre de scan avec lignes de texte ; scan natif contient un carré vide."
+          "note": "No scan frame with lines of text; the native scan contains an empty square."
         }
       }
     },
@@ -14271,7 +14271,7 @@
           "nativeSource": "assets/regular/magnifying-glass.svg",
           "componentPath": "icons/phosphor/search.tsx",
           "retainedBaselineComponent": true,
-          "note": "Loupe de recherche."
+          "note": "Search magnifying glass."
         }
       }
     },
@@ -14309,7 +14309,7 @@
           "nativeSource": "assets/regular/paper-plane-tilt.svg",
           "componentPath": "icons/phosphor/paper-plane-tilt.tsx",
           "retainedBaselineComponent": false,
-          "note": "Avion en papier en diagonale."
+          "note": "Diagonal paper airplane."
         }
       }
     },
@@ -14347,7 +14347,7 @@
           "nativeSource": "assets/regular/hard-drives.svg",
           "componentPath": "icons/phosphor/hard-drives.tsx",
           "retainedBaselineComponent": false,
-          "note": "Deux unités rectangulaires empilées avec voyants ; correspondance de la forme rack/serveur."
+          "note": "Two stacked rectangular units with indicator lights; matches the rack/server shape."
         }
       }
     },
@@ -14385,7 +14385,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun serveur/rack avec engrenage ou état de panne ; hard-drives ne préserve pas ce modificateur."
+          "note": "No server/rack with a gear or a failure state; hard-drives does not preserve this modifier."
         }
       }
     },
@@ -14423,7 +14423,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun serveur/rack avec engrenage ou état de panne ; hard-drives ne préserve pas ce modificateur."
+          "note": "No server/rack with a gear or a failure state; hard-drives does not preserve this modifier."
         }
       }
     },
@@ -14461,7 +14461,7 @@
           "nativeSource": "assets/regular/gear.svg",
           "componentPath": "icons/phosphor/gear.tsx",
           "retainedBaselineComponent": true,
-          "note": "Engrenage de réglages standard."
+          "note": "Standard settings gear."
         }
       }
     },
@@ -14499,7 +14499,7 @@
           "nativeSource": "assets/regular/shield-check.svg",
           "componentPath": "icons/phosphor/shield-check.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -14537,7 +14537,7 @@
           "nativeSource": "assets/regular/boat.svg",
           "componentPath": "icons/phosphor/boat.tsx",
           "retainedBaselineComponent": false,
-          "note": "Bateau vu de face sur l'eau."
+          "note": "Ship seen from the front on the water."
         }
       }
     },
@@ -14575,7 +14575,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune barre à roue de navire ; steering-wheel est un volant automobile sans poignées radiales."
+          "note": "No ship's wheel; steering-wheel is a car steering wheel without radial handles."
         }
       }
     },
@@ -14613,7 +14613,7 @@
           "nativeSource": "assets/regular/shower.svg",
           "componentPath": "icons/phosphor/shower.tsx",
           "retainedBaselineComponent": false,
-          "note": "Pommeau de douche avec jets."
+          "note": "Shower head with jets."
         }
       }
     },
@@ -14651,7 +14651,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun destructeur de documents ; file ou scissors ne représentent pas le mécanisme."
+          "note": "No paper shredder; file or scissors do not represent the mechanism."
         }
       }
     },
@@ -14689,7 +14689,7 @@
           "nativeSource": "assets/regular/arrows-in.svg",
           "componentPath": "icons/phosphor/arrows-in.tsx",
           "retainedBaselineComponent": false,
-          "note": "Quatre flèches diagonales vers l'intérieur."
+          "note": "Four diagonal arrows pointing inward."
         }
       }
     },
@@ -14727,7 +14727,7 @@
           "nativeSource": "assets/regular/sliders-horizontal.svg",
           "componentPath": "icons/phosphor/sliders-horizontal.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -14765,7 +14765,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun téléphone combiné au symbole de charge ou NFC ; device-mobile ne préserve pas la fonction."
+          "note": "No phone combined with a charging or NFC symbol; device-mobile does not preserve the function."
         }
       }
     },
@@ -14803,7 +14803,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun téléphone combiné au symbole de charge ou NFC ; device-mobile ne préserve pas la fonction."
+          "note": "No phone combined with a charging or NFC symbol; device-mobile does not preserve the function."
         }
       }
     },
@@ -14841,7 +14841,7 @@
           "nativeSource": "assets/regular/smiley.svg",
           "componentPath": "icons/phosphor/smiley.tsx",
           "retainedBaselineComponent": false,
-          "note": "Visage souriant."
+          "note": "Smiling face."
         }
       }
     },
@@ -14879,7 +14879,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun visage souriant avec plus."
+          "note": "No smiling face with a plus."
         }
       }
     },
@@ -14917,7 +14917,7 @@
           "nativeSource": "assets/regular/snowflake.svg",
           "componentPath": "icons/phosphor/snowflake.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -14955,7 +14955,7 @@
           "nativeSource": "assets/regular/bowl-steam.svg",
           "componentPath": "icons/phosphor/bowl-steam.tsx",
           "retainedBaselineComponent": false,
-          "note": "Bol de nourriture chaud avec vapeur."
+          "note": "Hot bowl of food with steam."
         }
       }
     },
@@ -14993,7 +14993,7 @@
           "nativeSource": "assets/regular/sparkle.svg",
           "componentPath": "icons/phosphor/sparkle.tsx",
           "retainedBaselineComponent": false,
-          "note": "Étincelle à quatre pointes avec petites étincelles."
+          "note": "Four-pointed sparkle with small sparkles."
         }
       }
     },
@@ -15031,7 +15031,7 @@
           "nativeSource": "assets/regular/spray-bottle.svg",
           "componentPath": "icons/phosphor/spray-bottle.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalence fonctionnelle de pulvérisation : bouteille à gâchette native, pas la bombe aérosol de la référence. Conserver le nom spray-bottle et sa géométrie."
+          "note": "Functional spraying equivalent: native trigger spray bottle, not the reference's aerosol can. Keep the spray-bottle name and its geometry."
         }
       }
     },
@@ -15069,7 +15069,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun tracé de pouls enfermé dans un carré ; pulse seul perd le cadre et heartbeat ajoute un cœur."
+          "note": "No pulse trace enclosed in a square; pulse alone loses the frame and heartbeat adds a heart."
         }
       }
     },
@@ -15107,7 +15107,7 @@
           "nativeSource": "assets/regular/arrow-square-down.svg",
           "componentPath": "icons/phosphor/arrow-square-down.tsx",
           "retainedBaselineComponent": false,
-          "note": "Flèche dans un carré."
+          "note": "Arrow in a square."
         }
       }
     },
@@ -15145,7 +15145,7 @@
           "nativeSource": "assets/regular/arrow-square-left.svg",
           "componentPath": "icons/phosphor/arrow-square-left.tsx",
           "retainedBaselineComponent": false,
-          "note": "Flèche dans un carré."
+          "note": "Arrow in a square."
         }
       }
     },
@@ -15183,7 +15183,7 @@
           "nativeSource": "assets/regular/arrow-square-right.svg",
           "componentPath": "icons/phosphor/arrow-square-right.tsx",
           "retainedBaselineComponent": false,
-          "note": "Flèche dans un carré."
+          "note": "Arrow in a square."
         }
       }
     },
@@ -15221,7 +15221,7 @@
           "nativeSource": "assets/regular/arrow-square-up.svg",
           "componentPath": "icons/phosphor/arrow-square-up.tsx",
           "retainedBaselineComponent": false,
-          "note": "Flèche dans un carré."
+          "note": "Arrow in a square."
         }
       }
     },
@@ -15259,7 +15259,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun caret dans un carré ; caret-circle existe mais change la famille de contenant."
+          "note": "No caret in a square; caret-circle exists but changes the container family."
         }
       }
     },
@@ -15297,7 +15297,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun caret dans un carré ; caret-circle existe mais change la famille de contenant."
+          "note": "No caret in a square; caret-circle exists but changes the container family."
         }
       }
     },
@@ -15335,7 +15335,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun caret dans un carré ; caret-circle existe mais change la famille de contenant."
+          "note": "No caret in a square; caret-circle exists but changes the container family."
         }
       }
     },
@@ -15373,7 +15373,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun caret dans un carré ; caret-circle existe mais change la famille de contenant."
+          "note": "No caret in a square; caret-circle exists but changes the container family."
         }
       }
     },
@@ -15411,7 +15411,7 @@
           "nativeSource": "assets/regular/note-pencil.svg",
           "componentPath": "icons/phosphor/note-pencil.tsx",
           "retainedBaselineComponent": false,
-          "note": "Carré de note avec crayon."
+          "note": "Square note with a pencil."
         }
       }
     },
@@ -15487,7 +15487,7 @@
           "nativeSource": "assets/regular/stamp.svg",
           "componentPath": "icons/phosphor/stamp.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -15525,7 +15525,7 @@
           "nativeSource": "assets/regular/stethoscope.svg",
           "componentPath": "icons/phosphor/stethoscope.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -15563,7 +15563,7 @@
           "nativeSource": "assets/regular/sun.svg",
           "componentPath": "icons/phosphor/sun.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -15601,7 +15601,7 @@
           "nativeSource": "assets/regular/sun-dim.svg",
           "componentPath": "icons/phosphor/sun-dim.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -15677,7 +15677,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune composition soleil + lune ; moon-stars remplace le soleil par des étoiles."
+          "note": "No sun + moon composition; moon-stars replaces the sun with stars."
         }
       }
     },
@@ -15715,7 +15715,7 @@
           "nativeSource": "assets/regular/sun-horizon.svg",
           "componentPath": "icons/phosphor/sun-horizon.tsx",
           "retainedBaselineComponent": false,
-          "note": "Soleil sur l'horizon."
+          "note": "Sun on the horizon."
         }
       }
     },
@@ -15753,7 +15753,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Symbole monétaire absent du catalogue Phosphor 2.1.1 ; aucun remplacement par une autre devise."
+          "note": "Currency symbol absent from the Phosphor 2.1.1 catalog; not replaced by another currency."
         }
       }
     },
@@ -15791,7 +15791,7 @@
           "nativeSource": "assets/regular/camera-rotate.svg",
           "componentPath": "icons/phosphor/camera-rotate.tsx",
           "retainedBaselineComponent": false,
-          "note": "Appareil photo avec rotation/changement de caméra."
+          "note": "Camera with a rotate/switch-camera indicator."
         }
       }
     },
@@ -15829,7 +15829,7 @@
           "nativeSource": "assets/regular/syringe.svg",
           "componentPath": "icons/phosphor/syringe.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -15867,7 +15867,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucun télescope sur trépied ; binoculars/microscope sont d’autres instruments."
+          "note": "No telescope on a tripod; binoculars/microscope are other instruments."
         }
       }
     },
@@ -15905,7 +15905,7 @@
           "nativeSource": "assets/regular/terminal.svg",
           "componentPath": "icons/phosphor/terminal.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -15943,7 +15943,7 @@
           "nativeSource": "assets/regular/thermometer.svg",
           "componentPath": "icons/phosphor/thermometer.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -15981,7 +15981,7 @@
           "nativeSource": "assets/regular/ticket.svg",
           "componentPath": "icons/phosphor/ticket.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -16019,7 +16019,7 @@
           "nativeSource": "assets/regular/timer.svg",
           "componentPath": "icons/phosphor/timer.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -16057,7 +16057,7 @@
           "nativeSource": "assets/regular/tornado.svg",
           "componentPath": "icons/phosphor/tornado.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -16095,7 +16095,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune voie ferrée sans train ; train/train-simple représentent le véhicule."
+          "note": "No railway track without a train; train/train-simple represent the vehicle."
         }
       }
     },
@@ -16133,7 +16133,7 @@
           "nativeSource": "assets/regular/tree.svg",
           "componentPath": "icons/phosphor/tree.tsx",
           "retainedBaselineComponent": false,
-          "note": "Arbre à feuillage arrondi."
+          "note": "Tree with rounded foliage."
         }
       }
     },
@@ -16171,7 +16171,7 @@
           "nativeSource": "assets/regular/tree-evergreen.svg",
           "componentPath": "icons/phosphor/tree-evergreen.tsx",
           "retainedBaselineComponent": false,
-          "note": "Arbre conifère."
+          "note": "Conifer tree."
         }
       }
     },
@@ -16209,7 +16209,7 @@
           "nativeSource": "assets/regular/trend-down.svg",
           "componentPath": "icons/phosphor/trend-down.tsx",
           "retainedBaselineComponent": false,
-          "note": "Flèche de tendance descendante."
+          "note": "Downward trend arrow."
         }
       }
     },
@@ -16247,7 +16247,7 @@
           "nativeSource": "assets/regular/trend-up.svg",
           "componentPath": "icons/phosphor/trend-up.tsx",
           "retainedBaselineComponent": false,
-          "note": "Flèche de tendance montante."
+          "note": "Upward trend arrow."
         }
       }
     },
@@ -16285,7 +16285,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune flèche de tendance combinant montée et descente ; trend-up/down sont distinctes."
+          "note": "No trend arrow combining up and down; trend-up/down are separate."
         }
       }
     },
@@ -16323,7 +16323,7 @@
           "nativeSource": "assets/regular/truck.svg",
           "componentPath": "icons/phosphor/truck.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -16361,7 +16361,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Symbole monétaire absent du catalogue Phosphor 2.1.1 ; aucun remplacement par une autre devise."
+          "note": "Currency symbol absent from the Phosphor 2.1.1 catalog; not replaced by another currency."
         }
       }
     },
@@ -16399,7 +16399,7 @@
           "nativeSource": "assets/regular/twitch-logo.svg",
           "componentPath": "icons/phosphor/twitch-logo.tsx",
           "retainedBaselineComponent": false,
-          "note": "Logo officiel Twitch."
+          "note": "Official Twitch logo."
         }
       }
     },
@@ -16437,7 +16437,7 @@
           "nativeSource": "assets/regular/twitter-logo.svg",
           "componentPath": "icons/phosphor/twitter-logo.tsx",
           "retainedBaselineComponent": false,
-          "note": "Logo officiel Twitter à l'oiseau."
+          "note": "Official Twitter bird logo."
         }
       }
     },
@@ -16475,7 +16475,7 @@
           "nativeSource": "assets/regular/text-underline.svg",
           "componentPath": "icons/phosphor/text-underline.tsx",
           "retainedBaselineComponent": false,
-          "note": "Lettre U soulignée."
+          "note": "Underlined letter U."
         }
       }
     },
@@ -16513,7 +16513,7 @@
           "nativeSource": "assets/regular/arrow-bend-up-left.svg",
           "componentPath": "icons/phosphor/arrow-bend-up-left.tsx",
           "retainedBaselineComponent": false,
-          "note": "Flèche coudée vers la gauche pour annuler."
+          "note": "Left-bent arrow for undo."
         }
       }
     },
@@ -16551,7 +16551,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune flèche undo/redo avec point-repère ; la variante simple ferait disparaître ce marqueur."
+          "note": "No undo/redo arrow with a marker dot; the plain variant would drop this marker."
         }
       }
     },
@@ -16589,7 +16589,7 @@
           "nativeSource": "assets/regular/upload.svg",
           "componentPath": "icons/phosphor/upload.tsx",
           "retainedBaselineComponent": true,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -16627,7 +16627,7 @@
           "nativeSource": "assets/regular/thumbs-up.svg",
           "componentPath": "icons/phosphor/thumbs-up.tsx",
           "retainedBaselineComponent": false,
-          "note": "La source référence représente un pouce levé, pas une flèche de vote."
+          "note": "The reference source represents a thumbs-up, not a vote arrow."
         }
       }
     },
@@ -16665,7 +16665,7 @@
           "nativeSource": "assets/regular/user.svg",
           "componentPath": "icons/phosphor/user.tsx",
           "retainedBaselineComponent": true,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -16703,7 +16703,7 @@
           "nativeSource": "assets/regular/user-check.svg",
           "componentPath": "icons/phosphor/user-check.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -16741,7 +16741,7 @@
           "nativeSource": "assets/regular/user-plus.svg",
           "componentPath": "icons/phosphor/user-plus.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -16817,7 +16817,7 @@
           "nativeSource": "assets/regular/user-gear.svg",
           "componentPath": "icons/phosphor/user-gear.tsx",
           "retainedBaselineComponent": false,
-          "note": "Utilisateur et engrenage."
+          "note": "User and gear."
         }
       }
     },
@@ -16893,7 +16893,7 @@
           "nativeSource": "assets/regular/users.svg",
           "componentPath": "icons/phosphor/users.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -16969,7 +16969,7 @@
           "nativeSource": "assets/regular/vibrate.svg",
           "componentPath": "icons/phosphor/vibrate.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -17007,7 +17007,7 @@
           "nativeSource": "assets/regular/speaker-x.svg",
           "componentPath": "icons/phosphor/speaker-x.tsx",
           "retainedBaselineComponent": false,
-          "note": "État au repos de la référence : haut-parleur avec croix. Animation spécifique vers speaker-high pour reproduire activation."
+          "note": "Reference rest state: speaker with a cross. Dedicated animation toward speaker-high to reproduce the activation."
         }
       }
     },
@@ -17045,7 +17045,7 @@
           "nativeSource": "assets/regular/wallet.svg",
           "componentPath": "icons/phosphor/wallet.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -17083,7 +17083,7 @@
           "nativeSource": "assets/regular/washing-machine.svg",
           "componentPath": "icons/phosphor/washing-machine.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -17121,7 +17121,7 @@
           "nativeSource": "assets/regular/waves.svg",
           "componentPath": "icons/phosphor/waves.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -17159,7 +17159,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune vague avec flèche verticale ; waves seule ne préserve pas le sens."
+          "note": "No waves with a vertical arrow; waves alone does not preserve the direction."
         }
       }
     },
@@ -17197,7 +17197,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune vague avec flèche verticale ; waves seule ne préserve pas le sens."
+          "note": "No waves with a vertical arrow; waves alone does not preserve the direction."
         }
       }
     },
@@ -17235,7 +17235,7 @@
           "nativeSource": "assets/regular/swimming-pool.svg",
           "componentPath": "icons/phosphor/swimming-pool.tsx",
           "retainedBaselineComponent": false,
-          "note": "Échelle de piscine et vagues."
+          "note": "Pool ladder and waves."
         }
       }
     },
@@ -17273,7 +17273,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "graph est un réseau en étoile à cinq nœuds ; aucun tracé natif de quatre points de passage successifs comme la référence."
+          "note": "graph is a five-node star network; no native trace of four successive waypoints like the reference."
         }
       }
     },
@@ -17311,7 +17311,7 @@
           "nativeSource": "assets/regular/webhooks-logo.svg",
           "componentPath": "icons/phosphor/webhooks-logo.tsx",
           "retainedBaselineComponent": false,
-          "note": "Symbole officiel Webhooks."
+          "note": "Official Webhooks symbol."
         }
       }
     },
@@ -17349,7 +17349,7 @@
           "nativeSource": "assets/regular/wifi-high.svg",
           "componentPath": "icons/phosphor/wifi-high.tsx",
           "retainedBaselineComponent": false,
-          "note": "Trois niveaux d'ondes Wi-Fi."
+          "note": "Three levels of Wi-Fi waves."
         }
       }
     },
@@ -17387,7 +17387,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les Wi-Fi modifiés natifs ont slash/x ; aucun engrenage, crayon ou symbole de synchronisation."
+          "note": "Native modified Wi-Fi icons have slash/x; no gear, pencil or sync symbol."
         }
       }
     },
@@ -17425,7 +17425,7 @@
           "nativeSource": "assets/regular/wifi-low.svg",
           "componentPath": "icons/phosphor/wifi-low.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -17463,7 +17463,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les Wi-Fi modifiés natifs ont slash/x ; aucun engrenage, crayon ou symbole de synchronisation."
+          "note": "Native modified Wi-Fi icons have slash/x; no gear, pencil or sync symbol."
         }
       }
     },
@@ -17501,7 +17501,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Les Wi-Fi modifiés natifs ont slash/x ; aucun engrenage, crayon ou symbole de synchronisation."
+          "note": "Native modified Wi-Fi icons have slash/x; no gear, pencil or sync symbol."
         }
       }
     },
@@ -17539,7 +17539,7 @@
           "nativeSource": "assets/regular/wind.svg",
           "componentPath": "icons/phosphor/wind.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -17577,7 +17577,7 @@
           "nativeSource": null,
           "componentPath": null,
           "retainedBaselineComponent": false,
-          "note": "Aucune icône de vent avec flèche vers le bas."
+          "note": "No wind icon with a downward arrow."
         }
       }
     },
@@ -17615,7 +17615,7 @@
           "nativeSource": "assets/regular/tree-structure.svg",
           "componentPath": "icons/phosphor/tree-structure.tsx",
           "retainedBaselineComponent": false,
-          "note": "Blocs reliés en organigramme ; disposition native ramifiée."
+          "note": "Blocks connected in a flowchart; native branching layout."
         }
       }
     },
@@ -17653,7 +17653,7 @@
           "nativeSource": "assets/regular/wrench.svg",
           "componentPath": "icons/phosphor/wrench.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -17691,7 +17691,7 @@
           "nativeSource": "assets/regular/x.svg",
           "componentPath": "icons/phosphor/x.tsx",
           "retainedBaselineComponent": true,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Direct equivalent from the official Phosphor regular catalog."
         }
       }
     },
@@ -17729,7 +17729,7 @@
           "nativeSource": "assets/regular/youtube-logo.svg",
           "componentPath": "icons/phosphor/youtube-logo.tsx",
           "retainedBaselineComponent": false,
-          "note": "Logo officiel YouTube."
+          "note": "Official YouTube logo."
         }
       }
     },
@@ -17767,7 +17767,7 @@
           "nativeSource": "assets/regular/lightning.svg",
           "componentPath": "icons/phosphor/lightning.tsx",
           "retainedBaselineComponent": false,
-          "note": "Éclair."
+          "note": "Lightning bolt."
         }
       }
     },
@@ -17805,7 +17805,7 @@
           "nativeSource": "assets/regular/lightning-slash.svg",
           "componentPath": "icons/phosphor/lightning-slash.tsx",
           "retainedBaselineComponent": false,
-          "note": "Éclair barré."
+          "note": "Lightning bolt with a slash."
         }
       }
     }
