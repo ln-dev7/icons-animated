@@ -2,9 +2,9 @@
  * @license
  * MIT License
  * Choreography copyright (c) 2024-2026 pqoqubbw
- * Reference: https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca
+ * Reference: receipt-text @ 072c38b1b04ea738d90a084485ccaad4b890ddca
  *
- * Copyright (c) 2020-2026 Paweł Kuna
+ * Copyright (c) 2023 Phosphor Icons
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -31,12 +31,17 @@ import type {
   ResolvedValues,
   VisualElement,
 } from 'motion';
-import type { Variants } from 'motion/react';
+import type {
+  TargetAndTransition as NativeMotionTarget,
+  Variants as NativeMotionVariants,
+  Variants,
+} from 'motion/react';
 import type { ForwardedRef, HTMLAttributes } from 'react';
 import {
   forwardRef,
   useCallback,
   useEffect,
+  useId,
   useImperativeHandle,
   useMemo,
   useRef,
@@ -47,11 +52,45 @@ import { motion, useAnimation } from 'motion/react';
 
 import { cn } from '@/lib/utils';
 
-export interface TablerReceiptIconHandle {
+function nativePartTarget(
+  target: Record<string, unknown>,
+  draw: boolean | 'geometry'
+): NativeMotionTarget {
+  const drawKeys = new Set([
+    'pathLength',
+    'pathOffset',
+    'pathSpacing',
+    'strokeDasharray',
+    'strokeDashoffset',
+  ]);
+  return Object.fromEntries(
+    Object.entries(target).filter(
+      ([key]) =>
+        key === 'transition' ||
+        (draw === 'geometry'
+          ? key === 'd'
+          : key !== 'd' && (draw ? drawKeys.has(key) : !drawKeys.has(key)))
+    )
+  ) as NativeMotionTarget;
+}
+function nativePartVariants(
+  variants: Record<string, unknown>,
+  draw: boolean | 'geometry'
+): NativeMotionVariants {
+  return Object.fromEntries(
+    Object.entries(variants).map(([name, target]) => [
+      name,
+      typeof target === 'function'
+        ? (...args: unknown[]) => nativePartTarget(target(...args), draw)
+        : nativePartTarget(target as Record<string, unknown>, draw),
+    ])
+  ) as NativeMotionVariants;
+}
+export interface PhosphorReceiptTextIconHandle {
   startAnimation: () => void;
   stopAnimation: () => void;
 }
-interface TablerReceiptIconProps extends HTMLAttributes<HTMLDivElement> {
+interface PhosphorReceiptTextIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
 const LINES_CONTAINER_VARIANTS: Variants = {
@@ -74,10 +113,11 @@ const LINE_VARIANTS: Variants = {
     transition: { duration: 0.2, ease: 'linear' },
   },
 };
-const TablerReceiptIcon = forwardRef<
-  TablerReceiptIconHandle,
-  TablerReceiptIconProps
+const PhosphorReceiptTextIcon = forwardRef<
+  PhosphorReceiptTextIconHandle,
+  PhosphorReceiptTextIconProps
 >(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
+  const nativeMaskId = useId();
   const controls = useAnimation();
   const isControlledRef = useRef(false);
   const replayLines = useCallback(async () => {
@@ -150,30 +190,89 @@ const TablerReceiptIcon = forwardRef<
         width={size}
         height={size}
         viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        fill="currentColor"
         aria-hidden="true"
         focusable="false"
       >
-        <path d="M 5 21 v -16 a 2 2 0 0 1 2 -2 h 10 a 2 2 0 0 1 2 2 v 16 l -3 -2 l -2 2 l -2 -2 l -2 2 l -2 -2 l -3 2" />
+        <g transform="scale(0.09375)">
+          <path
+            d="M 232 56 V 208 a 8 8 0 0 1 -11.58 7.15 L 192 200.94 l -28.42 14.21 a 8 8 0 0 1 -7.16 0 L 128 200.94 L 99.58 215.15 a 8 8 0 0 1 -7.16 0 L 64 200.94 L 35.58 215.15 A 8 8 0 0 1 24 208 V 56 A 16 16 0 0 1 40 40 H 216 A 16 16 0 0 1 232 56 Z M 216 56 H 40 V 195.06 l 20.42 -10.22 a 8 8 0 0 1 7.16 0 L 96 199.06 l 28.42 -14.22 a 8 8 0 0 1 7.16 0 L 160 199.06 l 28.42 -14.22 a 8 8 0 0 1 7.16 0 L 216 195.06 Z"
+            fill="currentColor"
+          />
+        </g>
         <motion.g
           animate={reduceDefinition(controls)}
           initial="visible"
           variants={LINES_CONTAINER_VARIANTS}
         >
-          <motion.path d="M 9 7 h 6" variants={LINE_VARIANTS} />
-          <motion.path d="M 9 11 h 6" variants={LINE_VARIANTS} />
-          <motion.path d="M 13 15 h 2" variants={LINE_VARIANTS} />
+          <motion.g variants={nativePartVariants(LINE_VARIANTS, false)}>
+            <defs>
+              <mask
+                id={nativeMaskId + '-1'}
+                maskUnits="userSpaceOnUse"
+                x="-24"
+                y="-24"
+                width="72"
+                height="72"
+              >
+                <motion.path
+                  d="M6.75 9.75H17.25"
+                  fill="none"
+                  stroke="white"
+                  strokeWidth={3.6}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  variants={nativePartVariants(LINE_VARIANTS, true)}
+                />
+              </mask>
+            </defs>
+            <g mask={'url(#' + nativeMaskId + '-1' + ')'}>
+              <g transform="scale(0.09375)">
+                <path
+                  d="M 72 104 a 8 8 0 0 1 8 -8 h 96 a 8 8 0 0 1 0 16 H 80 A 8 8 0 0 1 72 104 Z"
+                  fill="currentColor"
+                />
+              </g>
+            </g>
+          </motion.g>
+          <motion.g variants={nativePartVariants(LINE_VARIANTS, false)}>
+            <defs>
+              <mask
+                id={nativeMaskId + '-2'}
+                maskUnits="userSpaceOnUse"
+                x="-24"
+                y="-24"
+                width="72"
+                height="72"
+              >
+                <motion.path
+                  d="M6.751184150351213 12.75H17.248815849648786"
+                  fill="none"
+                  stroke="white"
+                  strokeWidth={3.6}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  variants={nativePartVariants(LINE_VARIANTS, true)}
+                />
+              </mask>
+            </defs>
+            <g mask={'url(#' + nativeMaskId + '-2' + ')'}>
+              <g transform="scale(0.09375)">
+                <path
+                  d="M 80 144 h 96 a 8 8 0 0 0 0 -16 H 80 a 8 8 0 0 0 0 16 Z"
+                  fill="currentColor"
+                />
+              </g>
+            </g>
+          </motion.g>
+          <motion.g display="none" variants={LINE_VARIANTS} />
         </motion.g>
       </motion.svg>
     </div>
   );
 });
-TablerReceiptIcon.displayName = 'TablerReceiptIcon';
-export { TablerReceiptIcon };
+PhosphorReceiptTextIcon.displayName = 'PhosphorReceiptTextIcon';
+export { PhosphorReceiptTextIcon };
 
 type IconAccessibilityHandle = {
   startAnimation: () => unknown;

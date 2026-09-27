@@ -1,12 +1,12 @@
-<script setup lang="ts">
+<script lang="ts">
 // @ts-nocheck
 /**
  * @license
  * MIT License
  * Choreography copyright (c) 2024-2026 pqoqubbw
- * Reference: https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca
+ * Reference: receipt-text @ 072c38b1b04ea738d90a084485ccaad4b890ddca
  *
- * Copyright (c) 2020-2026 Paweł Kuna
+ * Copyright (c) 2023 Phosphor Icons
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -27,12 +27,33 @@
  * SOFTWARE.
  */
 import { SVGVisualElement, animateVisualElement, setTarget, scrapeSVGMotionValuesFromProps, resolveMotionValue, resolveVariantFromProps, isControllingVariants, isVariantNode, getDefaultValueType, visualElementStore, camelCaseAttributes, cubicBezier, easeInOut, easeOut, easeIn } from 'motion';
-import { onMounted, onBeforeUnmount, shallowRef, useId, watch } from 'vue';
-const props = defineProps({ size: { type: Number, default: 28 }, controlled: { type: Boolean, default: false } });
-const root = shallowRef();
-const instanceId = useId();
+import { onMount } from 'svelte';
+let { size = 28, controlled = false, ...rest } = $props();
+let root;
+const instanceId = $props.id();
 function createIconProgram(api) {
-  const { Fragment, cn, forwardRef, getDefaultValueType, iconNode, motion, setTarget, useAnimation, useCallback, useEffect, useImperativeHandle, useMemo, useRef, useState, visualElementStore } = api;
+  const { Fragment, cn, forwardRef, getDefaultValueType, iconNode, motion, setTarget, useAnimation, useCallback, useEffect, useId, useImperativeHandle, useMemo, useRef, useState, visualElementStore } = api;
+function nativePartTarget(target, draw) {
+    const drawKeys = new Set([
+        'pathLength',
+        'pathOffset',
+        'pathSpacing',
+        'strokeDasharray',
+        'strokeDashoffset',
+    ]);
+    return Object.fromEntries(Object.entries(target).filter(([key]) => key === 'transition' ||
+        (draw === 'geometry'
+            ? key === 'd'
+            : key !== 'd' && (draw ? drawKeys.has(key) : !drawKeys.has(key)))));
+}
+function nativePartVariants(variants, draw) {
+    return Object.fromEntries(Object.entries(variants).map(([name, target]) => [
+        name,
+        typeof target === 'function'
+            ? (...args) => nativePartTarget(target(...args), draw)
+            : nativePartTarget(target, draw),
+    ]));
+}
 const LINES_CONTAINER_VARIANTS = {
     visible: {
         transition: { staggerChildren: 0.1, delayChildren: 0 },
@@ -53,7 +74,8 @@ const LINE_VARIANTS = {
         transition: { duration: 0.2, ease: 'linear' },
     },
 };
-const TablerReceiptIcon = forwardRef(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
+const PhosphorReceiptTextIcon = forwardRef(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
+    const nativeMaskId = useId();
     const controls = useAnimation();
     const isControlledRef = useRef(false);
     const replayLines = useCallback(async () => {
@@ -104,14 +126,27 @@ const TablerReceiptIcon = forwardRef(({ onMouseEnter, onMouseLeave, className, s
             }
             props.onBlur?.(event);
         } },
-        iconNode(motion.svg, { xmlns: "http://www.w3.org/2000/svg", width: size, height: size, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": "true", focusable: "false" },
-            iconNode("path", { d: "M 5 21 v -16 a 2 2 0 0 1 2 -2 h 10 a 2 2 0 0 1 2 2 v 16 l -3 -2 l -2 2 l -2 -2 l -2 2 l -2 -2 l -3 2" }),
+        iconNode(motion.svg, { xmlns: "http://www.w3.org/2000/svg", width: size, height: size, viewBox: "0 0 24 24", fill: "currentColor", "aria-hidden": "true", focusable: "false" },
+            iconNode("g", { transform: "scale(0.09375)" },
+                iconNode("path", { d: "M 232 56 V 208 a 8 8 0 0 1 -11.58 7.15 L 192 200.94 l -28.42 14.21 a 8 8 0 0 1 -7.16 0 L 128 200.94 L 99.58 215.15 a 8 8 0 0 1 -7.16 0 L 64 200.94 L 35.58 215.15 A 8 8 0 0 1 24 208 V 56 A 16 16 0 0 1 40 40 H 216 A 16 16 0 0 1 232 56 Z M 216 56 H 40 V 195.06 l 20.42 -10.22 a 8 8 0 0 1 7.16 0 L 96 199.06 l 28.42 -14.22 a 8 8 0 0 1 7.16 0 L 160 199.06 l 28.42 -14.22 a 8 8 0 0 1 7.16 0 L 216 195.06 Z", fill: "currentColor" })),
             iconNode(motion.g, { animate: reduceDefinition(controls), initial: "visible", variants: LINES_CONTAINER_VARIANTS },
-                iconNode(motion.path, { d: "M 9 7 h 6", variants: LINE_VARIANTS }),
-                iconNode(motion.path, { d: "M 9 11 h 6", variants: LINE_VARIANTS }),
-                iconNode(motion.path, { d: "M 13 15 h 2", variants: LINE_VARIANTS })))));
+                iconNode(motion.g, { variants: nativePartVariants(LINE_VARIANTS, false) },
+                    iconNode("defs", null,
+                        iconNode("mask", { id: nativeMaskId + '-1', maskUnits: "userSpaceOnUse", x: "-24", y: "-24", width: "72", height: "72" },
+                            iconNode(motion.path, { d: "M6.75 9.75H17.25", fill: "none", stroke: "white", strokeWidth: 3.6, strokeLinecap: "round", strokeLinejoin: "round", variants: nativePartVariants(LINE_VARIANTS, true) }))),
+                    iconNode("g", { mask: 'url(#' + nativeMaskId + '-1' + ')' },
+                        iconNode("g", { transform: "scale(0.09375)" },
+                            iconNode("path", { d: "M 72 104 a 8 8 0 0 1 8 -8 h 96 a 8 8 0 0 1 0 16 H 80 A 8 8 0 0 1 72 104 Z", fill: "currentColor" })))),
+                iconNode(motion.g, { variants: nativePartVariants(LINE_VARIANTS, false) },
+                    iconNode("defs", null,
+                        iconNode("mask", { id: nativeMaskId + '-2', maskUnits: "userSpaceOnUse", x: "-24", y: "-24", width: "72", height: "72" },
+                            iconNode(motion.path, { d: "M6.751184150351213 12.75H17.248815849648786", fill: "none", stroke: "white", strokeWidth: 3.6, strokeLinecap: "round", strokeLinejoin: "round", variants: nativePartVariants(LINE_VARIANTS, true) }))),
+                    iconNode("g", { mask: 'url(#' + nativeMaskId + '-2' + ')' },
+                        iconNode("g", { transform: "scale(0.09375)" },
+                            iconNode("path", { d: "M 80 144 h 96 a 8 8 0 0 0 0 -16 H 80 a 8 8 0 0 0 0 16 Z", fill: "currentColor" })))),
+                iconNode(motion.g, { display: "none", variants: LINE_VARIANTS })))));
 });
-TablerReceiptIcon.displayName = 'TablerReceiptIcon';
+PhosphorReceiptTextIcon.displayName = 'PhosphorReceiptTextIcon';
 function useIconAccessibility(ref, createHandle, controllers) {
     const rawHandle = createHandle();
     const raw = useRef(rawHandle);
@@ -238,7 +273,7 @@ function useIconAccessibility(ref, createHandle, controllers) {
     };
 }
 
-  return TablerReceiptIcon;
+  return PhosphorReceiptTextIcon;
 }
 
 function mountIconProgram(createProgram, container, getSize, isControlled, instanceId) {
@@ -535,23 +570,46 @@ function mountIconProgram(createProgram, container, getSize, isControlled, insta
 }
 
 let controller;
-function startAnimation() { return controller?.startAnimation(); }
-function stopAnimation() { return controller?.stopAnimation(); }
-onMounted(() => { controller = mountIconProgram(createIconProgram, root.value, () => props.size, () => props.controlled, instanceId); });
-watch(() => [props.size, props.controlled], () => controller?.update());
-onBeforeUnmount(() => controller?.destroy());
-defineExpose({ startAnimation, stopAnimation });
+export function startAnimation() { return controller?.startAnimation(); }
+export function stopAnimation() { return controller?.stopAnimation(); }
+$effect(() => { size; controlled; controller?.update(); });
+onMount(() => {
+  controller = mountIconProgram(createIconProgram, root, () => size, () => controlled, instanceId);
+  return () => controller?.destroy();
+});
 </script>
 
-<template>
-  <div ref="root" class="">
-    <svg data-icon-node="0" xmlns="http://www.w3.org/2000/svg" :width="size" :height="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-      <path data-icon-node="0.0" d="M 5 21 v -16 a 2 2 0 0 1 2 -2 h 10 a 2 2 0 0 1 2 2 v 16 l -3 -2 l -2 2 l -2 -2 l -2 2 l -2 -2 l -3 2" />
-      <g data-icon-node="0.1" >
-        <path data-icon-node="0.1.0" d="M 9 7 h 6" pathLength="1" stroke-dashoffset="0" stroke-dasharray="1 1" style="opacity: 1" />
-        <path data-icon-node="0.1.1" d="M 9 11 h 6" pathLength="1" stroke-dashoffset="0" stroke-dasharray="1 1" style="opacity: 1" />
-        <path data-icon-node="0.1.2" d="M 13 15 h 2" pathLength="1" stroke-dashoffset="0" stroke-dasharray="1 1" style="opacity: 1" />
+<div  bind:this={root} {...rest} class={["", rest.class].filter(Boolean).join(' ')}>
+  <svg data-icon-node="0" xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    <g data-icon-node="0.0" transform="scale(0.09375)">
+      <path data-icon-node="0.0.0" d="M 232 56 V 208 a 8 8 0 0 1 -11.58 7.15 L 192 200.94 l -28.42 14.21 a 8 8 0 0 1 -7.16 0 L 128 200.94 L 99.58 215.15 a 8 8 0 0 1 -7.16 0 L 64 200.94 L 35.58 215.15 A 8 8 0 0 1 24 208 V 56 A 16 16 0 0 1 40 40 H 216 A 16 16 0 0 1 232 56 Z M 216 56 H 40 V 195.06 l 20.42 -10.22 a 8 8 0 0 1 7.16 0 L 96 199.06 l 28.42 -14.22 a 8 8 0 0 1 7.16 0 L 160 199.06 l 28.42 -14.22 a 8 8 0 0 1 7.16 0 L 216 195.06 Z" fill="currentColor" />
+    </g>
+    <g data-icon-node="0.1" >
+      <g data-icon-node="0.1.0" style="opacity: 1">
+        <defs data-icon-node="0.1.0.0" >
+          <mask data-icon-node="0.1.0.0.0" id={instanceId + '-0' + "-1"} maskUnits="userSpaceOnUse" x="-24" y="-24" width="72" height="72">
+            <path data-icon-node="0.1.0.0.0.0" d="M6.75 9.75H17.25" fill="none" stroke="white" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dashoffset="0" stroke-dasharray="1 1" />
+          </mask>
+        </defs>
+        <g data-icon-node="0.1.0.1" mask={"url(#" + instanceId + '-0' + "-1)"}>
+          <g data-icon-node="0.1.0.1.0" transform="scale(0.09375)">
+            <path data-icon-node="0.1.0.1.0.0" d="M 72 104 a 8 8 0 0 1 8 -8 h 96 a 8 8 0 0 1 0 16 H 80 A 8 8 0 0 1 72 104 Z" fill="currentColor" />
+          </g>
+        </g>
       </g>
-    </svg>
-  </div>
-</template>
+      <g data-icon-node="0.1.1" style="opacity: 1">
+        <defs data-icon-node="0.1.1.0" >
+          <mask data-icon-node="0.1.1.0.0" id={instanceId + '-0' + "-2"} maskUnits="userSpaceOnUse" x="-24" y="-24" width="72" height="72">
+            <path data-icon-node="0.1.1.0.0.0" d="M6.751184150351213 12.75H17.248815849648786" fill="none" stroke="white" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dashoffset="0" stroke-dasharray="1 1" />
+          </mask>
+        </defs>
+        <g data-icon-node="0.1.1.1" mask={"url(#" + instanceId + '-0' + "-2)"}>
+          <g data-icon-node="0.1.1.1.0" transform="scale(0.09375)">
+            <path data-icon-node="0.1.1.1.0.0" d="M 80 144 h 96 a 8 8 0 0 0 0 -16 H 80 a 8 8 0 0 0 0 16 Z" fill="currentColor" />
+          </g>
+        </g>
+      </g>
+      <g data-icon-node="0.1.2" display="none" pathLength="1" stroke-dashoffset="0" stroke-dasharray="1 1" style="opacity: 1" />
+    </g>
+  </svg>
+</div>
