@@ -4,7 +4,7 @@
  * Choreography copyright (c) 2024-2026 pqoqubbw
  * Reference: https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca
  *
- * Copyright (c) 2025 Hugeicons
+ * Copyright (c) 2020-2026 Paweł Kuna
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -46,11 +46,11 @@ import { motion, useAnimation } from 'motion/react';
 
 import { cn } from '@/lib/utils';
 
-export interface HugeiconsGitCompareArrowsIconHandle {
+export interface TablerGitCompareArrowsIconHandle {
   startAnimation: () => void;
   stopAnimation: () => void;
 }
-interface HugeiconsGitCompareArrowsIconProps extends HTMLAttributes<HTMLDivElement> {
+interface TablerGitCompareArrowsIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
 const DURATION = 0.3;
@@ -58,9 +58,9 @@ const CALCULATE_DELAY = (i: number) => {
   if (i === 0) return 0.1;
   return i * DURATION + 0.1;
 };
-const HugeiconsGitCompareArrowsIcon = forwardRef<
-  HugeiconsGitCompareArrowsIconHandle,
-  HugeiconsGitCompareArrowsIconProps
+const TablerGitCompareArrowsIcon = forwardRef<
+  TablerGitCompareArrowsIconHandle,
+  TablerGitCompareArrowsIconProps
 >(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
   const controls = useAnimation();
   const isControlledRef = useRef(false);
@@ -131,15 +131,15 @@ const HugeiconsGitCompareArrowsIcon = forwardRef<
         height={size}
         viewBox="0 0 24 24"
         fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         aria-hidden="true"
         focusable="false"
       >
         <motion.path
-          d="M5 9.00098C6.65685 9.00098 8 7.65783 8 6.00098C8 4.34412 6.65685 3.00098 5 3.00098C3.34315 3.00098 2 4.34412 2 6.00098C2 7.65783 3.34315 9.00098 5 9.00098Z"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
+          d="M4 6a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"
           animate={reduceDefinition(controls)}
           transition={{
             duration: DURATION,
@@ -156,11 +156,7 @@ const HugeiconsGitCompareArrowsIcon = forwardRef<
         />
 
         <motion.path
-          d="M12 6.00146H14C15.8692 6.00146 16.8038 6.00146 17.5 6.40339C17.9561 6.66669 18.3348 7.04541 18.5981 7.50146C19 8.19762 19 9.13223 19 11.0015"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
+          d="M11 6h5a2 2 0 0 1 2 2v8"
           animate={reduceDefinition(controls)}
           transition={{
             duration: DURATION,
@@ -183,11 +179,7 @@ const HugeiconsGitCompareArrowsIcon = forwardRef<
         />
 
         <motion.path
-          d="M15 9.00195C15 9.00195 12 6.79249 12 6.00193C12 5.21137 15 3.00195 15 3.00195"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
+          d="M14 9l-3 -3l3 -3"
           animate={reduceDefinition(controls)}
           transition={{
             duration: DURATION,
@@ -201,11 +193,7 @@ const HugeiconsGitCompareArrowsIcon = forwardRef<
         />
 
         <motion.path
-          d="M19 21.001C20.6569 21.001 22 19.6578 22 18.001C22 16.3441 20.6569 15.001 19 15.001C17.3431 15.001 16 16.3441 16 18.001C16 19.6578 17.3431 21.001 19 21.001Z"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
+          d="M16 18a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"
           animate={reduceDefinition(controls)}
           transition={{
             duration: DURATION,
@@ -222,11 +210,7 @@ const HugeiconsGitCompareArrowsIcon = forwardRef<
         />
 
         <motion.path
-          d="M12 18.002H10C8.13077 18.002 7.19615 18.002 6.5 17.6C6.04394 17.3367 5.66523 16.958 5.40192 16.502C5 15.8058 5 14.8712 5 13.002"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
+          d="M13 18h-5a2 2 0 0 1 -2 -2v-8"
           animate={reduceDefinition(controls)}
           transition={{
             duration: DURATION,
@@ -249,11 +233,7 @@ const HugeiconsGitCompareArrowsIcon = forwardRef<
         />
 
         <motion.path
-          d="M9.00002 15.001C9.00002 15.001 12 17.2104 12 18.001C12 18.7916 9 21.001 9 21.001"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
+          d="M10 15l3 3l-3 3"
           animate={reduceDefinition(controls)}
           transition={{
             duration: DURATION,
@@ -269,8 +249,8 @@ const HugeiconsGitCompareArrowsIcon = forwardRef<
     </div>
   );
 });
-HugeiconsGitCompareArrowsIcon.displayName = 'HugeiconsGitCompareArrowsIcon';
-export { HugeiconsGitCompareArrowsIcon };
+TablerGitCompareArrowsIcon.displayName = 'TablerGitCompareArrowsIcon';
+export { TablerGitCompareArrowsIcon };
 
 type IconAccessibilityHandle = {
   startAnimation: () => unknown;
