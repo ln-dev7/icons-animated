@@ -2,9 +2,9 @@
  * @license
  * MIT License
  * Choreography copyright (c) 2024-2026 pqoqubbw
- * Reference: https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca
+ * Reference: user-round-plus @ 072c38b1b04ea738d90a084485ccaad4b890ddca
  *
- * Copyright (c) 2025 Hugeicons
+ * Copyright (c) 2023 Phosphor Icons
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -31,12 +31,17 @@ import type {
   ResolvedValues,
   VisualElement,
 } from 'motion';
-import type { Variants } from 'motion/react';
+import type {
+  TargetAndTransition as NativeMotionTarget,
+  Variants as NativeMotionVariants,
+  Variants,
+} from 'motion/react';
 import type { ForwardedRef, HTMLAttributes } from 'react';
 import {
   forwardRef,
   useCallback,
   useEffect,
+  useId,
   useImperativeHandle,
   useMemo,
   useRef,
@@ -47,11 +52,45 @@ import { motion, useAnimation } from 'motion/react';
 
 import { cn } from '@/lib/utils';
 
-export interface HugeiconsUserRoundPlusIconHandle {
+function nativePartTarget(
+  target: Record<string, unknown>,
+  draw: boolean | 'geometry'
+): NativeMotionTarget {
+  const drawKeys = new Set([
+    'pathLength',
+    'pathOffset',
+    'pathSpacing',
+    'strokeDasharray',
+    'strokeDashoffset',
+  ]);
+  return Object.fromEntries(
+    Object.entries(target).filter(
+      ([key]) =>
+        key === 'transition' ||
+        (draw === 'geometry'
+          ? key === 'd'
+          : key !== 'd' && (draw ? drawKeys.has(key) : !drawKeys.has(key)))
+    )
+  ) as NativeMotionTarget;
+}
+function nativePartVariants(
+  variants: Record<string, unknown>,
+  draw: boolean | 'geometry'
+): NativeMotionVariants {
+  return Object.fromEntries(
+    Object.entries(variants).map(([name, target]) => [
+      name,
+      typeof target === 'function'
+        ? (...args: unknown[]) => nativePartTarget(target(...args), draw)
+        : nativePartTarget(target as Record<string, unknown>, draw),
+    ])
+  ) as NativeMotionVariants;
+}
+export interface PhosphorUserRoundPlusIconHandle {
   startAnimation: () => void;
   stopAnimation: () => void;
 }
-interface HugeiconsUserRoundPlusIconProps extends HTMLAttributes<HTMLDivElement> {
+interface PhosphorUserRoundPlusIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
 const VERTICAL_BAR_VARIANTS: Variants = {
@@ -82,10 +121,11 @@ const HORIZONTAL_BAR_VARIANTS: Variants = {
     },
   },
 };
-const HugeiconsUserRoundPlusIcon = forwardRef<
-  HugeiconsUserRoundPlusIconHandle,
-  HugeiconsUserRoundPlusIconProps
+const PhosphorUserRoundPlusIcon = forwardRef<
+  PhosphorUserRoundPlusIconHandle,
+  PhosphorUserRoundPlusIconProps
 >(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
+  const nativeMaskId = useId();
   const controls = useAnimation();
   const isControlledRef = useRef(false);
   const {
@@ -154,51 +194,121 @@ const HugeiconsUserRoundPlusIcon = forwardRef<
         width={size}
         height={size}
         viewBox="0 0 24 24"
-        fill="none"
+        fill="currentColor"
         aria-hidden="true"
         focusable="false"
         initial="normal"
       >
-        <path
-          d="M3 20C3 16.134 6.13401 13 10 13C11.4872 13 12.8662 13.4638 14 14.2547"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-        />
-        <path
-          d="M15 8C15 5.23858 12.7614 3 10 3C7.23858 3 5 5.23858 5 8C5 10.7614 7.23858 13 10 13C12.7614 13 15 10.7614 15 8Z"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-        />
-        <motion.path
-          d="M17.5 14L17.5 21"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
+        <g transform="scale(0.09375)">
+          <path
+            d="M 198.13 194.85 a 8 8 0 0 1 -12.26 10.3 C 165.75 181.19 138.09 168 108 168 s -57.75 13.19 -77.87 37.15 a 8 8 0 0 1 -12.25 -10.3 c 14.94 -17.78 33.52 -30.41 54.17 -37.17 a 68 68 0 1 1 71.9 0 C 164.6 164.44 183.18 177.07 198.13 194.85 Z M 108 152 a 52 52 0 1 0 -52 -52 A 52.06 52.06 0 0 0 108 152 Z"
+            fill="currentColor"
+          />
+        </g>
+
+        <motion.g
           animate={reduceDefinition(controls)}
           initial="normal"
-          variants={VERTICAL_BAR_VARIANTS}
-        />
-        <motion.path
-          d="M21 17.5L14 17.5"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
+          variants={nativePartVariants(VERTICAL_BAR_VARIANTS, false)}
+        >
+          <defs>
+            <mask
+              id={nativeMaskId + '-2'}
+              maskUnits="userSpaceOnUse"
+              x="-24"
+              y="-24"
+              width="72"
+              height="72"
+            >
+              <motion.path
+                d="M21 9.75V15.75"
+                fill="none"
+                stroke="white"
+                strokeWidth={3.6}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                animate={reduceDefinition(controls)}
+                initial="normal"
+                variants={nativePartVariants(VERTICAL_BAR_VARIANTS, true)}
+              />
+            </mask>
+          </defs>
+          <g mask={'url(#' + nativeMaskId + '-2' + ')'}>
+            <g transform="scale(0.09375)">
+              <g>
+                <defs>
+                  <clipPath
+                    id={nativeMaskId + '-clip-0'}
+                    clipPathUnits="userSpaceOnUse"
+                  >
+                    <rect x={216} y={-256} width={16} height={768} />
+                  </clipPath>
+                </defs>
+                <g clipPath={'url(#' + nativeMaskId + '-clip-0)'}>
+                  <path
+                    d="M 256 136 a 8 8 0 0 1 -8 8 H 232 v 16 a 8 8 0 0 1 -16 0 V 144 H 200 a 8 8 0 0 1 0 -16 h 16 V 112 a 8 8 0 0 1 16 0 v 16 h 16 A 8 8 0 0 1 256 136 Z"
+                    fill="currentColor"
+                  />
+                </g>
+              </g>
+            </g>
+          </g>
+        </motion.g>
+        <motion.g
           animate={reduceDefinition(controls)}
           initial="normal"
-          variants={HORIZONTAL_BAR_VARIANTS}
-        />
+          variants={nativePartVariants(HORIZONTAL_BAR_VARIANTS, false)}
+        >
+          <defs>
+            <mask
+              id={nativeMaskId + '-3'}
+              maskUnits="userSpaceOnUse"
+              x="-24"
+              y="-24"
+              width="72"
+              height="72"
+            >
+              <motion.path
+                d="M18 12.75H24"
+                fill="none"
+                stroke="white"
+                strokeWidth={3.6}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                animate={reduceDefinition(controls)}
+                initial="normal"
+                variants={nativePartVariants(HORIZONTAL_BAR_VARIANTS, true)}
+              />
+            </mask>
+          </defs>
+          <g mask={'url(#' + nativeMaskId + '-3' + ')'}>
+            <g transform="scale(0.09375)">
+              <g>
+                <defs>
+                  <clipPath
+                    id={nativeMaskId + '-clip-2'}
+                    clipPathUnits="userSpaceOnUse"
+                  >
+                    <rect x={-256} y={-256} width={472} height={768} />
+                    <rect x={232} y={-256} width={512} height={768} />
+                  </clipPath>
+                </defs>
+                <g clipPath={'url(#' + nativeMaskId + '-clip-2)'}>
+                  <path
+                    d="M 256 136 a 8 8 0 0 1 -8 8 H 232 v 16 a 8 8 0 0 1 -16 0 V 144 H 200 a 8 8 0 0 1 0 -16 h 16 V 112 a 8 8 0 0 1 16 0 v 16 h 16 A 8 8 0 0 1 256 136 Z"
+                    fill="currentColor"
+                  />
+                </g>
+              </g>
+            </g>
+          </g>
+        </motion.g>
       </motion.svg>
     </div>
   );
 });
-HugeiconsUserRoundPlusIcon.displayName = 'HugeiconsUserRoundPlusIcon';
-export { HugeiconsUserRoundPlusIcon };
+PhosphorUserRoundPlusIcon.displayName = 'PhosphorUserRoundPlusIcon';
+export { PhosphorUserRoundPlusIcon };
 
 type IconAccessibilityHandle = {
   startAnimation: () => unknown;

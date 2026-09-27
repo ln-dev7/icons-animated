@@ -4,9 +4,9 @@
  * @license
  * MIT License
  * Choreography copyright (c) 2024-2026 pqoqubbw
- * Reference: https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca
+ * Reference: user-round-plus @ 072c38b1b04ea738d90a084485ccaad4b890ddca
  *
- * Copyright (c) 2025 Hugeicons
+ * Copyright (c) 2023 Phosphor Icons
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -32,7 +32,28 @@ let { size = 28, controlled = false, ...rest } = $props();
 let root;
 const instanceId = $props.id();
 function createIconProgram(api) {
-  const { Fragment, cn, forwardRef, getDefaultValueType, iconNode, motion, setTarget, useAnimation, useCallback, useEffect, useImperativeHandle, useMemo, useRef, useState, visualElementStore } = api;
+  const { Fragment, cn, forwardRef, getDefaultValueType, iconNode, motion, setTarget, useAnimation, useCallback, useEffect, useId, useImperativeHandle, useMemo, useRef, useState, visualElementStore } = api;
+function nativePartTarget(target, draw) {
+    const drawKeys = new Set([
+        'pathLength',
+        'pathOffset',
+        'pathSpacing',
+        'strokeDasharray',
+        'strokeDashoffset',
+    ]);
+    return Object.fromEntries(Object.entries(target).filter(([key]) => key === 'transition' ||
+        (draw === 'geometry'
+            ? key === 'd'
+            : key !== 'd' && (draw ? drawKeys.has(key) : !drawKeys.has(key)))));
+}
+function nativePartVariants(variants, draw) {
+    return Object.fromEntries(Object.entries(variants).map(([name, target]) => [
+        name,
+        typeof target === 'function'
+            ? (...args) => nativePartTarget(target(...args), draw)
+            : nativePartTarget(target, draw),
+    ]));
+}
 const VERTICAL_BAR_VARIANTS = {
     normal: {
         opacity: 1,
@@ -61,7 +82,8 @@ const HORIZONTAL_BAR_VARIANTS = {
         },
     },
 };
-const HugeiconsUserRoundPlusIcon = forwardRef(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
+const PhosphorUserRoundPlusIcon = forwardRef(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
+    const nativeMaskId = useId();
     const controls = useAnimation();
     const isControlledRef = useRef(false);
     const { rootRef: iconRootRef, reduceDefinition, ...iconAccessibility } = useIconAccessibility(ref, () => {
@@ -108,13 +130,36 @@ const HugeiconsUserRoundPlusIcon = forwardRef(({ onMouseEnter, onMouseLeave, cla
             }
             props.onBlur?.(event);
         } },
-        iconNode(motion.svg, { xmlns: "http://www.w3.org/2000/svg", width: size, height: size, viewBox: "0 0 24 24", fill: "none", "aria-hidden": "true", focusable: "false", initial: "normal" },
-            iconNode("path", { d: "M3 20C3 16.134 6.13401 13 10 13C11.4872 13 12.8662 13.4638 14 14.2547", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5" }),
-            iconNode("path", { d: "M15 8C15 5.23858 12.7614 3 10 3C7.23858 3 5 5.23858 5 8C5 10.7614 7.23858 13 10 13C12.7614 13 15 10.7614 15 8Z", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5" }),
-            iconNode(motion.path, { d: "M17.5 14L17.5 21", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5", animate: reduceDefinition(controls), initial: "normal", variants: VERTICAL_BAR_VARIANTS }),
-            iconNode(motion.path, { d: "M21 17.5L14 17.5", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5", animate: reduceDefinition(controls), initial: "normal", variants: HORIZONTAL_BAR_VARIANTS }))));
+        iconNode(motion.svg, { xmlns: "http://www.w3.org/2000/svg", width: size, height: size, viewBox: "0 0 24 24", fill: "currentColor", "aria-hidden": "true", focusable: "false", initial: "normal" },
+            iconNode("g", { transform: "scale(0.09375)" },
+                iconNode("path", { d: "M 198.13 194.85 a 8 8 0 0 1 -12.26 10.3 C 165.75 181.19 138.09 168 108 168 s -57.75 13.19 -77.87 37.15 a 8 8 0 0 1 -12.25 -10.3 c 14.94 -17.78 33.52 -30.41 54.17 -37.17 a 68 68 0 1 1 71.9 0 C 164.6 164.44 183.18 177.07 198.13 194.85 Z M 108 152 a 52 52 0 1 0 -52 -52 A 52.06 52.06 0 0 0 108 152 Z", fill: "currentColor" })),
+            iconNode(motion.g, { animate: reduceDefinition(controls), initial: "normal", variants: nativePartVariants(VERTICAL_BAR_VARIANTS, false) },
+                iconNode("defs", null,
+                    iconNode("mask", { id: nativeMaskId + '-2', maskUnits: "userSpaceOnUse", x: "-24", y: "-24", width: "72", height: "72" },
+                        iconNode(motion.path, { d: "M21 9.75V15.75", fill: "none", stroke: "white", strokeWidth: 3.6, strokeLinecap: "round", strokeLinejoin: "round", animate: reduceDefinition(controls), initial: "normal", variants: nativePartVariants(VERTICAL_BAR_VARIANTS, true) }))),
+                iconNode("g", { mask: 'url(#' + nativeMaskId + '-2' + ')' },
+                    iconNode("g", { transform: "scale(0.09375)" },
+                        iconNode("g", null,
+                            iconNode("defs", null,
+                                iconNode("clipPath", { id: nativeMaskId + '-clip-0', clipPathUnits: "userSpaceOnUse" },
+                                    iconNode("rect", { x: 216, y: -256, width: 16, height: 768 }))),
+                            iconNode("g", { clipPath: 'url(#' + nativeMaskId + '-clip-0)' },
+                                iconNode("path", { d: "M 256 136 a 8 8 0 0 1 -8 8 H 232 v 16 a 8 8 0 0 1 -16 0 V 144 H 200 a 8 8 0 0 1 0 -16 h 16 V 112 a 8 8 0 0 1 16 0 v 16 h 16 A 8 8 0 0 1 256 136 Z", fill: "currentColor" })))))),
+            iconNode(motion.g, { animate: reduceDefinition(controls), initial: "normal", variants: nativePartVariants(HORIZONTAL_BAR_VARIANTS, false) },
+                iconNode("defs", null,
+                    iconNode("mask", { id: nativeMaskId + '-3', maskUnits: "userSpaceOnUse", x: "-24", y: "-24", width: "72", height: "72" },
+                        iconNode(motion.path, { d: "M18 12.75H24", fill: "none", stroke: "white", strokeWidth: 3.6, strokeLinecap: "round", strokeLinejoin: "round", animate: reduceDefinition(controls), initial: "normal", variants: nativePartVariants(HORIZONTAL_BAR_VARIANTS, true) }))),
+                iconNode("g", { mask: 'url(#' + nativeMaskId + '-3' + ')' },
+                    iconNode("g", { transform: "scale(0.09375)" },
+                        iconNode("g", null,
+                            iconNode("defs", null,
+                                iconNode("clipPath", { id: nativeMaskId + '-clip-2', clipPathUnits: "userSpaceOnUse" },
+                                    iconNode("rect", { x: -256, y: -256, width: 472, height: 768 }),
+                                    iconNode("rect", { x: 232, y: -256, width: 512, height: 768 }))),
+                            iconNode("g", { clipPath: 'url(#' + nativeMaskId + '-clip-2)' },
+                                iconNode("path", { d: "M 256 136 a 8 8 0 0 1 -8 8 H 232 v 16 a 8 8 0 0 1 -16 0 V 144 H 200 a 8 8 0 0 1 0 -16 h 16 V 112 a 8 8 0 0 1 16 0 v 16 h 16 A 8 8 0 0 1 256 136 Z", fill: "currentColor" })))))))));
 });
-HugeiconsUserRoundPlusIcon.displayName = 'HugeiconsUserRoundPlusIcon';
+PhosphorUserRoundPlusIcon.displayName = 'PhosphorUserRoundPlusIcon';
 function useIconAccessibility(ref, createHandle, controllers) {
     const rawHandle = createHandle();
     const raw = useRef(rawHandle);
@@ -241,7 +286,7 @@ function useIconAccessibility(ref, createHandle, controllers) {
     };
 }
 
-  return HugeiconsUserRoundPlusIcon;
+  return PhosphorUserRoundPlusIcon;
 }
 
 function mountIconProgram(createProgram, container, getSize, isControlled, instanceId) {
@@ -548,10 +593,52 @@ onMount(() => {
 </script>
 
 <div  bind:this={root} {...rest} class={["", rest.class].filter(Boolean).join(' ')}>
-  <svg data-icon-node="0" xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
-    <path data-icon-node="0.0" d="M3 20C3 16.134 6.13401 13 10 13C11.4872 13 12.8662 13.4638 14 14.2547" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-    <path data-icon-node="0.1" d="M15 8C15 5.23858 12.7614 3 10 3C7.23858 3 5 5.23858 5 8C5 10.7614 7.23858 13 10 13C12.7614 13 15 10.7614 15 8Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-    <path data-icon-node="0.2" d="M17.5 14L17.5 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" style="opacity: 1" />
-    <path data-icon-node="0.3" d="M21 17.5L14 17.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" style="opacity: 1" />
+  <svg data-icon-node="0" xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    <g data-icon-node="0.0" transform="scale(0.09375)">
+      <path data-icon-node="0.0.0" d="M 198.13 194.85 a 8 8 0 0 1 -12.26 10.3 C 165.75 181.19 138.09 168 108 168 s -57.75 13.19 -77.87 37.15 a 8 8 0 0 1 -12.25 -10.3 c 14.94 -17.78 33.52 -30.41 54.17 -37.17 a 68 68 0 1 1 71.9 0 C 164.6 164.44 183.18 177.07 198.13 194.85 Z M 108 152 a 52 52 0 1 0 -52 -52 A 52.06 52.06 0 0 0 108 152 Z" fill="currentColor" />
+    </g>
+    <g data-icon-node="0.1" style="opacity: 1">
+      <defs data-icon-node="0.1.0" >
+        <mask data-icon-node="0.1.0.0" id={instanceId + '-0' + "-2"} maskUnits="userSpaceOnUse" x="-24" y="-24" width="72" height="72">
+          <path data-icon-node="0.1.0.0.0" d="M21 9.75V15.75" fill="none" stroke="white" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" />
+        </mask>
+      </defs>
+      <g data-icon-node="0.1.1" mask={"url(#" + instanceId + '-0' + "-2)"}>
+        <g data-icon-node="0.1.1.0" transform="scale(0.09375)">
+          <g data-icon-node="0.1.1.0.0" >
+            <defs data-icon-node="0.1.1.0.0.0" >
+              <clipPath data-icon-node="0.1.1.0.0.0.0" id={instanceId + '-0' + "-clip-0"} clipPathUnits="userSpaceOnUse">
+                <rect data-icon-node="0.1.1.0.0.0.0.0" x="216" y="-256" width="16" height="768" />
+              </clipPath>
+            </defs>
+            <g data-icon-node="0.1.1.0.0.1" clip-path={"url(#" + instanceId + '-0' + "-clip-0)"}>
+              <path data-icon-node="0.1.1.0.0.1.0" d="M 256 136 a 8 8 0 0 1 -8 8 H 232 v 16 a 8 8 0 0 1 -16 0 V 144 H 200 a 8 8 0 0 1 0 -16 h 16 V 112 a 8 8 0 0 1 16 0 v 16 h 16 A 8 8 0 0 1 256 136 Z" fill="currentColor" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g data-icon-node="0.2" style="opacity: 1">
+      <defs data-icon-node="0.2.0" >
+        <mask data-icon-node="0.2.0.0" id={instanceId + '-0' + "-3"} maskUnits="userSpaceOnUse" x="-24" y="-24" width="72" height="72">
+          <path data-icon-node="0.2.0.0.0" d="M18 12.75H24" fill="none" stroke="white" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" />
+        </mask>
+      </defs>
+      <g data-icon-node="0.2.1" mask={"url(#" + instanceId + '-0' + "-3)"}>
+        <g data-icon-node="0.2.1.0" transform="scale(0.09375)">
+          <g data-icon-node="0.2.1.0.0" >
+            <defs data-icon-node="0.2.1.0.0.0" >
+              <clipPath data-icon-node="0.2.1.0.0.0.0" id={instanceId + '-0' + "-clip-2"} clipPathUnits="userSpaceOnUse">
+                <rect data-icon-node="0.2.1.0.0.0.0.0" x="-256" y="-256" width="472" height="768" />
+                <rect data-icon-node="0.2.1.0.0.0.0.1" x="232" y="-256" width="512" height="768" />
+              </clipPath>
+            </defs>
+            <g data-icon-node="0.2.1.0.0.1" clip-path={"url(#" + instanceId + '-0' + "-clip-2)"}>
+              <path data-icon-node="0.2.1.0.0.1.0" d="M 256 136 a 8 8 0 0 1 -8 8 H 232 v 16 a 8 8 0 0 1 -16 0 V 144 H 200 a 8 8 0 0 1 0 -16 h 16 V 112 a 8 8 0 0 1 16 0 v 16 h 16 A 8 8 0 0 1 256 136 Z" fill="currentColor" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
   </svg>
 </div>

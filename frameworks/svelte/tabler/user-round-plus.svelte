@@ -6,7 +6,7 @@
  * Choreography copyright (c) 2024-2026 pqoqubbw
  * Reference: https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca
  *
- * Copyright (c) 2025 Hugeicons
+ * Copyright (c) 2020-2026 Paweł Kuna
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -61,7 +61,7 @@ const HORIZONTAL_BAR_VARIANTS = {
         },
     },
 };
-const HugeiconsUserRoundPlusIcon = forwardRef(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
+const TablerUserRoundPlusIcon = forwardRef(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
     const controls = useAnimation();
     const isControlledRef = useRef(false);
     const { rootRef: iconRootRef, reduceDefinition, ...iconAccessibility } = useIconAccessibility(ref, () => {
@@ -108,13 +108,13 @@ const HugeiconsUserRoundPlusIcon = forwardRef(({ onMouseEnter, onMouseLeave, cla
             }
             props.onBlur?.(event);
         } },
-        iconNode(motion.svg, { xmlns: "http://www.w3.org/2000/svg", width: size, height: size, viewBox: "0 0 24 24", fill: "none", "aria-hidden": "true", focusable: "false", initial: "normal" },
-            iconNode("path", { d: "M3 20C3 16.134 6.13401 13 10 13C11.4872 13 12.8662 13.4638 14 14.2547", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5" }),
-            iconNode("path", { d: "M15 8C15 5.23858 12.7614 3 10 3C7.23858 3 5 5.23858 5 8C5 10.7614 7.23858 13 10 13C12.7614 13 15 10.7614 15 8Z", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5" }),
-            iconNode(motion.path, { d: "M17.5 14L17.5 21", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5", animate: reduceDefinition(controls), initial: "normal", variants: VERTICAL_BAR_VARIANTS }),
-            iconNode(motion.path, { d: "M21 17.5L14 17.5", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5", animate: reduceDefinition(controls), initial: "normal", variants: HORIZONTAL_BAR_VARIANTS }))));
+        iconNode(motion.svg, { xmlns: "http://www.w3.org/2000/svg", width: size, height: size, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": "true", focusable: "false", initial: "normal" },
+            iconNode("path", { d: "M6 21v-2a4 4 0 0 1 4 -4h4" }),
+            iconNode("path", { d: "M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" }),
+            iconNode(motion.path, { d: "M19 16v6", animate: reduceDefinition(controls), initial: "normal", variants: VERTICAL_BAR_VARIANTS }),
+            iconNode(motion.path, { d: "M22 19L16 19", animate: reduceDefinition(controls), initial: "normal", variants: HORIZONTAL_BAR_VARIANTS }))));
 });
-HugeiconsUserRoundPlusIcon.displayName = 'HugeiconsUserRoundPlusIcon';
+TablerUserRoundPlusIcon.displayName = 'TablerUserRoundPlusIcon';
 function useIconAccessibility(ref, createHandle, controllers) {
     const rawHandle = createHandle();
     const raw = useRef(rawHandle);
@@ -241,7 +241,7 @@ function useIconAccessibility(ref, createHandle, controllers) {
     };
 }
 
-  return HugeiconsUserRoundPlusIcon;
+  return TablerUserRoundPlusIcon;
 }
 
 function mountIconProgram(createProgram, container, getSize, isControlled, instanceId) {
@@ -548,10 +548,10 @@ onMount(() => {
 </script>
 
 <div  bind:this={root} {...rest} class={["", rest.class].filter(Boolean).join(' ')}>
-  <svg data-icon-node="0" xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
-    <path data-icon-node="0.0" d="M3 20C3 16.134 6.13401 13 10 13C11.4872 13 12.8662 13.4638 14 14.2547" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-    <path data-icon-node="0.1" d="M15 8C15 5.23858 12.7614 3 10 3C7.23858 3 5 5.23858 5 8C5 10.7614 7.23858 13 10 13C12.7614 13 15 10.7614 15 8Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-    <path data-icon-node="0.2" d="M17.5 14L17.5 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" style="opacity: 1" />
-    <path data-icon-node="0.3" d="M21 17.5L14 17.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" style="opacity: 1" />
+  <svg data-icon-node="0" xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+    <path data-icon-node="0.0" d="M6 21v-2a4 4 0 0 1 4 -4h4" />
+    <path data-icon-node="0.1" d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+    <path data-icon-node="0.2" d="M19 16v6" style="opacity: 1" />
+    <path data-icon-node="0.3" d="M22 19L16 19" style="opacity: 1" />
   </svg>
 </div>
