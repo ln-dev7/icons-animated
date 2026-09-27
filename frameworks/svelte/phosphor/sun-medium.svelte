@@ -4,9 +4,9 @@
  * @license
  * MIT License
  * Choreography copyright (c) 2024-2026 pqoqubbw
- * Reference: https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca
+ * Reference: sun-medium @ 072c38b1b04ea738d90a084485ccaad4b890ddca
  *
- * Copyright (c) 2025 Hugeicons
+ * Copyright (c) 2023 Phosphor Icons
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -40,7 +40,7 @@ const PATH_VARIANTS = {
         transition: { delay: i * 0.1, duration: 0.3 },
     }),
 };
-const HugeiconsSunMediumIcon = forwardRef(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
+const PhosphorSunMediumIcon = forwardRef(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
     const controls = useAnimation();
     const isControlledRef = useRef(false);
     const { rootRef: iconRootRef, reduceDefinition, ...iconAccessibility } = useIconAccessibility(ref, () => {
@@ -87,18 +87,37 @@ const HugeiconsSunMediumIcon = forwardRef(({ onMouseEnter, onMouseLeave, classNa
             }
             props.onBlur?.(event);
         } },
-        iconNode("svg", { xmlns: "http://www.w3.org/2000/svg", width: size, height: size, viewBox: "0 0 24 24", fill: "none", "aria-hidden": "true", focusable: "false" },
-            iconNode("path", { d: "M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5" }),
-            iconNode(motion.path, { d: "M 11.9982 2 V 4", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5", animate: reduceDefinition(controls), variants: PATH_VARIANTS, key: "native-1-0", custom: 1 }),
-            iconNode(motion.path, { d: "M 11.9982 20 V 22", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5", animate: reduceDefinition(controls), variants: PATH_VARIANTS, key: "native-1-1", custom: 2 }),
-            iconNode(motion.path, { d: "M 4 12 H 2", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5", animate: reduceDefinition(controls), variants: PATH_VARIANTS, key: "native-1-2", custom: 3 }),
-            iconNode(motion.path, { d: "M 22 12 H 20", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5", animate: reduceDefinition(controls), variants: PATH_VARIANTS, key: "native-1-3", custom: 4 }),
-            iconNode(motion.path, { d: "M 18.9981 5.00098 L 17.499 6.5", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5", animate: reduceDefinition(controls), variants: PATH_VARIANTS, key: "native-1-4", custom: 5 }),
-            iconNode(motion.path, { d: "M 6.5 17.5 L 5 19", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5", animate: reduceDefinition(controls), variants: PATH_VARIANTS, key: "native-1-5", custom: 6 }),
-            iconNode(motion.path, { d: "M 6.49902 6.5 L 5 5.00098", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5", animate: reduceDefinition(controls), variants: PATH_VARIANTS, key: "native-1-6", custom: 7 }),
-            iconNode(motion.path, { d: "M 19 19.001 L 17.5 17.501", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5", animate: reduceDefinition(controls), variants: PATH_VARIANTS, key: "native-1-7", custom: 8 }))));
+        iconNode("svg", { xmlns: "http://www.w3.org/2000/svg", width: size, height: size, viewBox: "0 0 24 24", fill: "currentColor", "aria-hidden": "true", focusable: "false" },
+            iconNode("g", { transform: "scale(0.09375)" },
+                iconNode("path", { d: "M 192 128 a 64 64 0 1 1 -64 -64 A 64.07 64.07 0 0 1 192 128 Z M 176 128 a 48 48 0 1 0 -48 48 A 48.05 48.05 0 0 0 176 128 Z", fill: "currentColor" })),
+            [
+                'M12 3v1',
+                'M12 20v1',
+                'M3 12h1',
+                'M20 12h1',
+                'm18.364 5.636-.707.707',
+                'm6.343 17.657-.707.707',
+                'm5.636 5.636.707.707',
+                'm17.657 17.657.707.707',
+            ].map((d, index) => (iconNode(motion.g, { animate: reduceDefinition(controls), custom: index + 1, key: d, variants: PATH_VARIANTS },
+                index === 0 && (iconNode("g", { transform: "scale(0.09375)" },
+                    iconNode("path", { d: "M 120 40 V 16 a 8 8 0 0 1 16 0 V 40 a 8 8 0 0 1 -16 0 Z", fill: "currentColor" }))),
+                index === 1 && (iconNode("g", { transform: "scale(0.09375)" },
+                    iconNode("path", { d: "M 240 120 H 216 a 8 8 0 0 0 0 16 h 24 a 8 8 0 0 0 0 -16 Z", fill: "currentColor" }))),
+                index === 2 && (iconNode("g", { transform: "scale(0.09375)" },
+                    iconNode("path", { d: "M 128 208 a 8 8 0 0 0 -8 8 v 24 a 8 8 0 0 0 16 0 V 216 A 8 8 0 0 0 128 208 Z", fill: "currentColor" }))),
+                index === 3 && (iconNode("g", { transform: "scale(0.09375)" },
+                    iconNode("path", { d: "M 48 128 a 8 8 0 0 0 -8 -8 H 16 a 8 8 0 0 0 0 16 H 40 A 8 8 0 0 0 48 128 Z", fill: "currentColor" }))),
+                index === 4 && (iconNode("g", { transform: "scale(0.09375)" },
+                    iconNode("path", { d: "M 192 72 a 8 8 0 0 0 5.66 -2.34 l 16 -16 a 8 8 0 0 0 -11.32 -11.32 l -16 16 A 8 8 0 0 0 192 72 Z", fill: "currentColor" }))),
+                index === 5 && (iconNode("g", { transform: "scale(0.09375)" },
+                    iconNode("path", { d: "M 197.66 186.34 a 8 8 0 0 0 -11.32 11.32 l 16 16 a 8 8 0 0 0 11.32 -11.32 Z", fill: "currentColor" }))),
+                index === 6 && (iconNode("g", { transform: "scale(0.09375)" },
+                    iconNode("path", { d: "M 58.34 186.34 l -16 16 a 8 8 0 0 0 11.32 11.32 l 16 -16 a 8 8 0 0 0 -11.32 -11.32 Z", fill: "currentColor" }))),
+                index === 7 && (iconNode("g", { transform: "scale(0.09375)" },
+                    iconNode("path", { d: "M 58.34 69.66 A 8 8 0 0 0 69.66 58.34 l -16 -16 A 8 8 0 0 0 42.34 53.66 Z", fill: "currentColor" })))))))));
 });
-HugeiconsSunMediumIcon.displayName = 'HugeiconsSunMediumIcon';
+PhosphorSunMediumIcon.displayName = 'PhosphorSunMediumIcon';
 function useIconAccessibility(ref, createHandle, controllers) {
     const rawHandle = createHandle();
     const raw = useRef(rawHandle);
@@ -225,7 +244,7 @@ function useIconAccessibility(ref, createHandle, controllers) {
     };
 }
 
-  return HugeiconsSunMediumIcon;
+  return PhosphorSunMediumIcon;
 }
 
 function mountIconProgram(createProgram, container, getSize, isControlled, instanceId) {
@@ -532,15 +551,49 @@ onMount(() => {
 </script>
 
 <div  bind:this={root} {...rest} class={["", rest.class].filter(Boolean).join(' ')}>
-  <svg data-icon-node="0" xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
-    <path data-icon-node="0.0" d="M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-    <path data-icon-node="0.1" d="M 11.9982 2 V 4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-    <path data-icon-node="0.2" d="M 11.9982 20 V 22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-    <path data-icon-node="0.3" d="M 4 12 H 2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-    <path data-icon-node="0.4" d="M 22 12 H 20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-    <path data-icon-node="0.5" d="M 18.9981 5.00098 L 17.499 6.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-    <path data-icon-node="0.6" d="M 6.5 17.5 L 5 19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-    <path data-icon-node="0.7" d="M 6.49902 6.5 L 5 5.00098" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-    <path data-icon-node="0.8" d="M 19 19.001 L 17.5 17.501" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+  <svg data-icon-node="0" xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    <g data-icon-node="0.0" transform="scale(0.09375)">
+      <path data-icon-node="0.0.0" d="M 192 128 a 64 64 0 1 1 -64 -64 A 64.07 64.07 0 0 1 192 128 Z M 176 128 a 48 48 0 1 0 -48 48 A 48.05 48.05 0 0 0 176 128 Z" fill="currentColor" />
+    </g>
+    <g data-icon-node="0.1" >
+      <g data-icon-node="0.1.0" transform="scale(0.09375)">
+        <path data-icon-node="0.1.0.0" d="M 120 40 V 16 a 8 8 0 0 1 16 0 V 40 a 8 8 0 0 1 -16 0 Z" fill="currentColor" />
+      </g>
+    </g>
+    <g data-icon-node="0.2" >
+      <g data-icon-node="0.2.0" transform="scale(0.09375)">
+        <path data-icon-node="0.2.0.0" d="M 240 120 H 216 a 8 8 0 0 0 0 16 h 24 a 8 8 0 0 0 0 -16 Z" fill="currentColor" />
+      </g>
+    </g>
+    <g data-icon-node="0.3" >
+      <g data-icon-node="0.3.0" transform="scale(0.09375)">
+        <path data-icon-node="0.3.0.0" d="M 128 208 a 8 8 0 0 0 -8 8 v 24 a 8 8 0 0 0 16 0 V 216 A 8 8 0 0 0 128 208 Z" fill="currentColor" />
+      </g>
+    </g>
+    <g data-icon-node="0.4" >
+      <g data-icon-node="0.4.0" transform="scale(0.09375)">
+        <path data-icon-node="0.4.0.0" d="M 48 128 a 8 8 0 0 0 -8 -8 H 16 a 8 8 0 0 0 0 16 H 40 A 8 8 0 0 0 48 128 Z" fill="currentColor" />
+      </g>
+    </g>
+    <g data-icon-node="0.5" >
+      <g data-icon-node="0.5.0" transform="scale(0.09375)">
+        <path data-icon-node="0.5.0.0" d="M 192 72 a 8 8 0 0 0 5.66 -2.34 l 16 -16 a 8 8 0 0 0 -11.32 -11.32 l -16 16 A 8 8 0 0 0 192 72 Z" fill="currentColor" />
+      </g>
+    </g>
+    <g data-icon-node="0.6" >
+      <g data-icon-node="0.6.0" transform="scale(0.09375)">
+        <path data-icon-node="0.6.0.0" d="M 197.66 186.34 a 8 8 0 0 0 -11.32 11.32 l 16 16 a 8 8 0 0 0 11.32 -11.32 Z" fill="currentColor" />
+      </g>
+    </g>
+    <g data-icon-node="0.7" >
+      <g data-icon-node="0.7.0" transform="scale(0.09375)">
+        <path data-icon-node="0.7.0.0" d="M 58.34 186.34 l -16 16 a 8 8 0 0 0 11.32 11.32 l 16 -16 a 8 8 0 0 0 -11.32 -11.32 Z" fill="currentColor" />
+      </g>
+    </g>
+    <g data-icon-node="0.8" >
+      <g data-icon-node="0.8.0" transform="scale(0.09375)">
+        <path data-icon-node="0.8.0.0" d="M 58.34 69.66 A 8 8 0 0 0 69.66 58.34 l -16 -16 A 8 8 0 0 0 42.34 53.66 Z" fill="currentColor" />
+      </g>
+    </g>
   </svg>
 </div>

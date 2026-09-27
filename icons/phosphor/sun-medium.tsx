@@ -2,9 +2,9 @@
  * @license
  * MIT License
  * Choreography copyright (c) 2024-2026 pqoqubbw
- * Reference: https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca
+ * Reference: sun-medium @ 072c38b1b04ea738d90a084485ccaad4b890ddca
  *
- * Copyright (c) 2020-2026 Paweł Kuna
+ * Copyright (c) 2023 Phosphor Icons
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -47,11 +47,11 @@ import { motion, useAnimation } from 'motion/react';
 
 import { cn } from '@/lib/utils';
 
-export interface TablerSunHighIconHandle {
+export interface PhosphorSunMediumIconHandle {
   startAnimation: () => void;
   stopAnimation: () => void;
 }
-interface TablerSunHighIconProps extends HTMLAttributes<HTMLDivElement> {
+interface PhosphorSunMediumIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
 const PATH_VARIANTS: Variants = {
@@ -61,9 +61,9 @@ const PATH_VARIANTS: Variants = {
     transition: { delay: i * 0.1, duration: 0.3 },
   }),
 };
-const TablerSunHighIcon = forwardRef<
-  TablerSunHighIconHandle,
-  TablerSunHighIconProps
+const PhosphorSunMediumIcon = forwardRef<
+  PhosphorSunMediumIconHandle,
+  PhosphorSunMediumIconProps
 >(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
   const controls = useAnimation();
   const isControlledRef = useRef(false);
@@ -133,77 +133,104 @@ const TablerSunHighIcon = forwardRef<
         width={size}
         height={size}
         viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        fill="currentColor"
         aria-hidden="true"
         focusable="false"
       >
-        <path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656" />
-        <motion.path
-          d="M12 4v-2"
-          animate={reduceDefinition(controls)}
-          variants={PATH_VARIANTS}
-          custom={1}
-          key={'1-0'}
-        />
-        <motion.path
-          d="M12 20v2"
-          animate={reduceDefinition(controls)}
-          variants={PATH_VARIANTS}
-          custom={2}
-          key={'1-1'}
-        />
-        <motion.path
-          d="M4 12h-2"
-          animate={reduceDefinition(controls)}
-          variants={PATH_VARIANTS}
-          custom={3}
-          key={'1-2'}
-        />
-        <motion.path
-          d="M20 12h2"
-          animate={reduceDefinition(controls)}
-          variants={PATH_VARIANTS}
-          custom={4}
-          key={'1-3'}
-        />
-        <motion.path
-          d="M17.657 6.343l1.414 -1.414"
-          animate={reduceDefinition(controls)}
-          variants={PATH_VARIANTS}
-          custom={5}
-          key={'1-4'}
-        />
-        <motion.path
-          d="M6.343 17.657l-1.414 1.414"
-          animate={reduceDefinition(controls)}
-          variants={PATH_VARIANTS}
-          custom={6}
-          key={'1-5'}
-        />
-        <motion.path
-          d="M6.343 6.343l-1.414 -1.414"
-          animate={reduceDefinition(controls)}
-          variants={PATH_VARIANTS}
-          custom={7}
-          key={'1-6'}
-        />
-        <motion.path
-          d="M17.657 17.657l1.414 1.414"
-          animate={reduceDefinition(controls)}
-          variants={PATH_VARIANTS}
-          custom={8}
-          key={'1-7'}
-        />
+        <g transform="scale(0.09375)">
+          <path
+            d="M 192 128 a 64 64 0 1 1 -64 -64 A 64.07 64.07 0 0 1 192 128 Z M 176 128 a 48 48 0 1 0 -48 48 A 48.05 48.05 0 0 0 176 128 Z"
+            fill="currentColor"
+          />
+        </g>
+        {[
+          'M12 3v1',
+          'M12 20v1',
+          'M3 12h1',
+          'M20 12h1',
+          'm18.364 5.636-.707.707',
+          'm6.343 17.657-.707.707',
+          'm5.636 5.636.707.707',
+          'm17.657 17.657.707.707',
+        ].map((d, index) => (
+          <motion.g
+            animate={reduceDefinition(controls)}
+            custom={index + 1}
+            key={d}
+            variants={PATH_VARIANTS}
+          >
+            {index === 0 && (
+              <g transform="scale(0.09375)">
+                <path
+                  d="M 120 40 V 16 a 8 8 0 0 1 16 0 V 40 a 8 8 0 0 1 -16 0 Z"
+                  fill="currentColor"
+                />
+              </g>
+            )}
+            {index === 1 && (
+              <g transform="scale(0.09375)">
+                <path
+                  d="M 240 120 H 216 a 8 8 0 0 0 0 16 h 24 a 8 8 0 0 0 0 -16 Z"
+                  fill="currentColor"
+                />
+              </g>
+            )}
+            {index === 2 && (
+              <g transform="scale(0.09375)">
+                <path
+                  d="M 128 208 a 8 8 0 0 0 -8 8 v 24 a 8 8 0 0 0 16 0 V 216 A 8 8 0 0 0 128 208 Z"
+                  fill="currentColor"
+                />
+              </g>
+            )}
+            {index === 3 && (
+              <g transform="scale(0.09375)">
+                <path
+                  d="M 48 128 a 8 8 0 0 0 -8 -8 H 16 a 8 8 0 0 0 0 16 H 40 A 8 8 0 0 0 48 128 Z"
+                  fill="currentColor"
+                />
+              </g>
+            )}
+            {index === 4 && (
+              <g transform="scale(0.09375)">
+                <path
+                  d="M 192 72 a 8 8 0 0 0 5.66 -2.34 l 16 -16 a 8 8 0 0 0 -11.32 -11.32 l -16 16 A 8 8 0 0 0 192 72 Z"
+                  fill="currentColor"
+                />
+              </g>
+            )}
+            {index === 5 && (
+              <g transform="scale(0.09375)">
+                <path
+                  d="M 197.66 186.34 a 8 8 0 0 0 -11.32 11.32 l 16 16 a 8 8 0 0 0 11.32 -11.32 Z"
+                  fill="currentColor"
+                />
+              </g>
+            )}
+            {index === 6 && (
+              <g transform="scale(0.09375)">
+                <path
+                  d="M 58.34 186.34 l -16 16 a 8 8 0 0 0 11.32 11.32 l 16 -16 a 8 8 0 0 0 -11.32 -11.32 Z"
+                  fill="currentColor"
+                />
+              </g>
+            )}
+            {index === 7 && (
+              <g transform="scale(0.09375)">
+                <path
+                  d="M 58.34 69.66 A 8 8 0 0 0 69.66 58.34 l -16 -16 A 8 8 0 0 0 42.34 53.66 Z"
+                  fill="currentColor"
+                />
+              </g>
+            )}
+          </motion.g>
+        ))}
       </svg>
     </div>
   );
 });
-TablerSunHighIcon.displayName = 'TablerSunHighIcon';
-export { TablerSunHighIcon };
+PhosphorSunMediumIcon.displayName = 'PhosphorSunMediumIcon';
+export { PhosphorSunMediumIcon };
 
 type IconAccessibilityHandle = {
   startAnimation: () => unknown;
