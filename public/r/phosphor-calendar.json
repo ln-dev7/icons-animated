@@ -3,7 +3,12 @@
   "name": "phosphor-calendar",
   "type": "registry:ui",
   "registryDependencies": [],
-  "dependencies": ["motion"],
+  "dependencies": [
+    "motion@13.1.1",
+    "framer-motion@13.1.1",
+    "motion-dom@13.1.1",
+    "motion-utils@13.0.0"
+  ],
   "devDependencies": [],
   "files": [
     {
