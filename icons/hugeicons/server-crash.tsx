@@ -1,6 +1,8 @@
 /**
  * @license
  * MIT License
+ * Choreography copyright (c) 2024-2026 pqoqubbw
+ * Reference: https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca
  *
  * Copyright (c) 2025 Hugeicons
  *
@@ -24,16 +26,24 @@
  */
 'use client';
 
+import type {
+  LegacyAnimationControls,
+  ResolvedValues,
+  VisualElement,
+} from 'motion';
 import type { Variants } from 'motion/react';
-import type { HTMLAttributes } from 'react';
+import type { ForwardedRef, HTMLAttributes } from 'react';
 import {
   forwardRef,
   useCallback,
   useEffect,
   useImperativeHandle,
+  useMemo,
   useRef,
+  useState,
 } from 'react';
-import { motion, useAnimation, useReducedMotion } from 'motion/react';
+import { getDefaultValueType, setTarget, visualElementStore } from 'motion';
+import { motion, useAnimation } from 'motion/react';
 
 import { cn } from '@/lib/utils';
 
@@ -44,154 +54,288 @@ export interface HugeiconsServerCrashIconHandle {
 interface HugeiconsServerCrashIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
-
-const ICON_VARIANTS: Variants = {
-  normal: {
-    x: 0,
-    y: 0,
-    rotate: 0,
-    scale: 1,
-    scaleX: 1,
-    scaleY: 1,
-    opacity: 1,
-    transition: { duration: 0.18, ease: 'easeOut' },
-  },
-  animate: { transition: { duration: 0.75, ease: 'easeInOut' } },
-};
-
-const DETAIL_0_VARIANTS: Variants = {
-  normal: { opacity: 1, transition: { duration: 0.18, ease: 'easeOut' } },
+const PATH_VARIANTS: Variants = {
+  normal: { pathLength: 1 },
   animate: {
-    opacity: [1, 0.2, 1, 0.45, 1],
-    transition: { duration: 0.75, delay: 0, ease: 'easeInOut' },
+    pathLength: [0, 1],
+    transition: { duration: 0.4, ease: 'linear' },
   },
 };
-
 const HugeiconsServerCrashIcon = forwardRef<
   HugeiconsServerCrashIconHandle,
   HugeiconsServerCrashIconProps
->(
-  (
-    {
-      onMouseEnter,
-      onMouseLeave,
-      onFocus,
-      onBlur,
-      className,
-      size = 28,
-      ...props
-    },
-    ref
-  ) => {
-    const controls = useAnimation();
-    const reducedMotion = useReducedMotion();
-    const sequence = useRef(0);
-    const startAnimation = useCallback(() => {
-      const current = ++sequence.current;
-      controls.stop();
-      controls.set('normal');
-      if (reducedMotion) return;
-      void controls.start('animate').then(() => {
-        if (sequence.current === current) controls.set('normal');
-      });
-    }, [controls, reducedMotion]);
-    const stopAnimation = useCallback(() => {
-      sequence.current += 1;
-      void controls.start('normal');
-    }, [controls]);
-    useImperativeHandle(ref, () => ({ startAnimation, stopAnimation }), [
-      startAnimation,
-      stopAnimation,
-    ]);
-    useEffect(() => {
-      if (reducedMotion) {
-        sequence.current += 1;
-        controls.set('normal');
+>(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
+  const controls = useAnimation();
+  const isControlledRef = useRef(false);
+  const {
+    rootRef: iconRootRef,
+    reduceDefinition,
+    ...iconAccessibility
+  } = useIconAccessibility(ref, () => {
+    isControlledRef.current = ref != null;
+    return {
+      startAnimation: () => controls.start('animate'),
+      stopAnimation: () => controls.start('normal'),
+    };
+  }, [controls]);
+  const handleMouseEnter = useCallback(
+    (e: React.MouseEvent<HTMLDivElement>) => {
+      if (isControlledRef.current) {
+        void e;
+      } else {
+        controls.start('animate');
       }
-      return () => {
-        sequence.current += 1;
-        controls.stop();
-      };
-    }, [controls, reducedMotion]);
-    return (
-      <div
-        {...props}
-        className={cn(className)}
-        onMouseEnter={(event) => {
-          if (!ref) startAnimation();
-          onMouseEnter?.(event);
-        }}
-        onMouseLeave={(event) => {
-          if (!ref) stopAnimation();
-          onMouseLeave?.(event);
-        }}
-        onFocus={(event) => {
-          if (!ref) startAnimation();
-          onFocus?.(event);
-        }}
-        onBlur={(event) => {
-          if (!ref) stopAnimation();
-          onBlur?.(event);
-        }}
+    },
+    [controls]
+  );
+  const handleMouseLeave = useCallback(
+    (e: React.MouseEvent<HTMLDivElement>) => {
+      if (isControlledRef.current) {
+        void e;
+      } else {
+        controls.start('normal');
+      }
+    },
+    [controls]
+  );
+  return (
+    <div
+      className={cn(className)}
+      {...props}
+      ref={iconRootRef}
+      onMouseEnter={(event) => {
+        if (!iconAccessibility.controlled && !iconAccessibility.reduced) {
+          handleMouseEnter(event);
+        }
+        onMouseEnter?.(event);
+      }}
+      onMouseLeave={(event) => {
+        if (!iconAccessibility.controlled) {
+          handleMouseLeave(event);
+        }
+        onMouseLeave?.(event);
+      }}
+      onFocus={(event) => {
+        if (!iconAccessibility.controlled && !iconAccessibility.reduced) {
+          iconAccessibility.startAnimation();
+        }
+        props.onFocus?.(event);
+      }}
+      onBlur={(event) => {
+        if (!iconAccessibility.controlled) {
+          iconAccessibility.stopAnimation();
+        }
+        props.onBlur?.(event);
+      }}
+    >
+      <motion.svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        fill="none"
+        aria-hidden="true"
+        focusable="false"
+        animate={reduceDefinition(controls)}
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width={size}
-          height={size}
-          viewBox="0 0 24 24"
-          fill="none"
-          overflow="visible"
-          aria-hidden="true"
-          focusable="false"
-        >
-          <motion.g
-            initial="normal"
-            animate={controls}
-            variants={ICON_VARIANTS}
-            style={{ transformOrigin: '12px 12px' }}
-          >
-            <motion.path
-              d="M12.5709 8.5L10.4922 12H13.4925L11.4141 15.5"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="1.5"
-              variants={DETAIL_0_VARIANTS}
-              style={{ transformBox: 'fill-box', transformOrigin: 'center' }}
-            />
-            <path
-              d="M4.99218 11.9957C3.7524 11.9777 3.04952 11.8858 2.57797 11.4142C1.99219 10.8284 1.99219 9.88562 1.99219 8C1.99219 6.11438 1.99219 5.17157 2.57797 4.58579C3.16376 4 4.10657 4 5.99219 4H17.9922C19.8778 4 20.8206 4 21.4064 4.58579C21.9922 5.17157 21.9922 6.11438 21.9922 8C21.9922 9.88562 21.9922 10.8284 21.4064 11.4142C20.9349 11.8858 20.232 11.9777 18.9922 11.9957"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="1.5"
-            />
-            <path
-              d="M18.9922 12.0049C20.232 12.0228 20.9349 12.1148 21.4064 12.5863C21.9922 13.1721 21.9922 14.1149 21.9922 16.0006C21.9922 17.8862 21.9922 18.829 21.4064 19.4148C20.8206 20.0006 19.8778 20.0006 17.9922 20.0006H5.99219C4.10657 20.0006 3.16376 20.0006 2.57797 19.4148C1.99219 18.829 1.99219 17.8862 1.99219 16.0005C1.99219 14.1148 1.99219 13.1719 2.57798 12.5862C3.04821 12.1159 3.74849 12.0232 4.98181 12.0049"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="1.5"
-            />
-            <path
-              d="M6.11719 8H5.99219M6.24219 8C6.24219 8.13807 6.13026 8.25 5.99219 8.25C5.85412 8.25 5.74219 8.13807 5.74219 8C5.74219 7.86193 5.85412 7.75 5.99219 7.75C6.13026 7.75 6.24219 7.86193 6.24219 8Z"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="1.5"
-            />
-            <path
-              d="M6.11719 16H5.99219M6.24219 16C6.24219 16.1381 6.13026 16.25 5.99219 16.25C5.85412 16.25 5.74219 16.1381 5.74219 16C5.74219 15.8619 5.85412 15.75 5.99219 15.75C6.13026 15.75 6.24219 15.8619 6.24219 16Z"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="1.5"
-            />
-          </motion.g>
-        </svg>
-      </div>
-    );
-  }
-);
+        <path
+          d="M4.99218 11.9957C3.7524 11.9777 3.04952 11.8858 2.57797 11.4142C1.99219 10.8284 1.99219 9.88562 1.99219 8C1.99219 6.11438 1.99219 5.17157 2.57797 4.58579C3.16376 4 4.10657 4 5.99219 4H17.9922C19.8778 4 20.8206 4 21.4064 4.58579C21.9922 5.17157 21.9922 6.11438 21.9922 8C21.9922 9.88562 21.9922 10.8284 21.4064 11.4142C20.9349 11.8858 20.232 11.9777 18.9922 11.9957"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="1.5"
+        />
+        <path
+          d="M4.98181 12.0049C3.74849 12.0232 3.04821 12.1159 2.57798 12.5862C1.99219 13.1719 1.99219 14.1148 1.99219 16.0005C1.99219 17.8862 1.99219 18.829 2.57797 19.4148C3.16376 20.0006 4.10657 20.0006 5.99219 20.0006L17.9922 20.0006C19.8778 20.0006 20.8206 20.0006 21.4064 19.4148C21.9922 18.829 21.9922 17.8862 21.9922 16.0006C21.9922 14.1149 21.9922 13.1721 21.4064 12.5863C20.9349 12.1148 20.232 12.0228 18.9922 12.0049"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="1.5"
+        />
+        <path
+          d="M6.11719 8H5.99219M6.24219 8C6.24219 8.13807 6.13026 8.25 5.99219 8.25C5.85412 8.25 5.74219 8.13807 5.74219 8C5.74219 7.86193 5.85412 7.75 5.99219 7.75C6.13026 7.75 6.24219 7.86193 6.24219 8Z"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="1.5"
+        />
+        <path
+          d="M6.11719 16H5.99219M6.24219 16C6.24219 16.1381 6.13026 16.25 5.99219 16.25C5.85412 16.25 5.74219 16.1381 5.74219 16C5.74219 15.8619 5.85412 15.75 5.99219 15.75C6.13026 15.75 6.24219 15.8619 6.24219 16Z"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="1.5"
+        />
+        <motion.path
+          d="M12.5709 8.5L10.4922 12H13.4925L11.4141 15.5"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="1.5"
+          animate={reduceDefinition(controls)}
+          initial="normal"
+          variants={PATH_VARIANTS}
+        />
+      </motion.svg>
+    </div>
+  );
+});
 HugeiconsServerCrashIcon.displayName = 'HugeiconsServerCrashIcon';
 export { HugeiconsServerCrashIcon };
+
+type IconAccessibilityHandle = {
+  startAnimation: () => unknown;
+  stopAnimation: () => unknown;
+};
+
+type IconAccessibilitySnapshot = {
+  visual: VisualElement;
+  values: ResolvedValues;
+  attributes: Record<string, string>;
+};
+
+function useIconAccessibility(
+  ref: ForwardedRef<IconAccessibilityHandle>,
+  createHandle: () => IconAccessibilityHandle,
+  controllers: LegacyAnimationControls[]
+) {
+  const rawHandle = createHandle();
+  const raw = useRef(rawHandle);
+  useEffect(() => {
+    raw.current = rawHandle;
+  }, [rawHandle]);
+  const controls = useRef(controllers);
+  const rootRef = useRef<HTMLDivElement | null>(null);
+  const preference = useRef(false);
+  const mounted = useRef(true);
+  const [reduced, setReduced] = useState(false);
+  const api = useMemo(
+    () => ({
+      startAnimation() {
+        if (
+          mounted.current &&
+          !preference.current &&
+          !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        ) {
+          void raw.current.startAnimation();
+        }
+      },
+      stopAnimation() {
+        if (mounted.current) void raw.current.stopAnimation();
+      },
+    }),
+    []
+  );
+  useImperativeHandle(ref, () => api, [api]);
+
+  useEffect(() => {
+    mounted.current = true;
+    const media = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const snapshots: IconAccessibilitySnapshot[] = [];
+    rootRef.current
+      ?.querySelectorAll<SVGElement>('svg, svg *')
+      .forEach((element) => {
+        const visual = visualElementStore.get(element);
+        if (visual)
+          snapshots.push({
+            visual,
+            values: { ...visual.latestValues },
+            attributes: Object.fromEntries(
+              [...element.attributes].map((attribute) => [
+                attribute.name,
+                attribute.value,
+              ])
+            ),
+          });
+      });
+    const restore = () => {
+      for (const snapshot of snapshots) {
+        const { visual, values, attributes } = snapshot;
+        visual.values.forEach((value) => value.stop());
+        const props = visual.getProps() as unknown as {
+          [key: string]: unknown;
+          style?: Record<string, unknown>;
+        };
+        const reset: Record<string, string | number> = {};
+        visual.values.forEach((_motionValue, key) => {
+          const attribute = key.replace(
+            /[A-Z]/g,
+            (letter) => '-' + letter.toLowerCase()
+          );
+          const defaults: Record<string, number> = {
+            opacity: 1,
+            pathLength: 1,
+            pathSpacing: 1,
+            pathOffset: 0,
+            strokeDashoffset: 0,
+          };
+          const value =
+            values[key] ??
+            props.style?.[key] ??
+            props[key] ??
+            getDefaultValueType(key)?.default ??
+            defaults[key] ??
+            attributes[attribute];
+          if (typeof value === 'number' || typeof value === 'string')
+            reset[key] = value;
+        });
+        setTarget(visual, reset);
+        visual.render();
+      }
+    };
+    const activeControls = controls.current;
+    const originals = activeControls.map((control) => {
+      const original = control.start;
+      control.start = (definition, transition) => {
+        if (!mounted.current) return new Promise<never>(() => {});
+        if (preference.current) {
+          control.set(definition);
+          return Promise.resolve();
+        }
+        return original(definition, transition);
+      };
+      return original;
+    });
+    const change = () => {
+      preference.current = media.matches;
+      setReduced(media.matches);
+      if (media.matches) {
+        void raw.current.stopAnimation();
+        activeControls.forEach((control) => control.stop());
+        restore();
+      }
+    };
+    change();
+    media.addEventListener('change', change);
+    return () => {
+      mounted.current = false;
+      media.removeEventListener('change', change);
+      activeControls.forEach((control, index) => {
+        control.stop();
+        control.start = originals[index];
+      });
+    };
+  }, []);
+
+  return {
+    ...api,
+    rootRef,
+    controlled: ref != null,
+    reduced,
+    reduceDefinition<T>(definition: T): T {
+      if (
+        reduced &&
+        definition &&
+        typeof definition === 'object' &&
+        !Array.isArray(definition) &&
+        !('start' in definition)
+      ) {
+        return {
+          ...definition,
+          transition: { type: false, duration: 0, delay: 0, repeat: 0 },
+        } as T;
+      }
+      return definition;
+    },
+  };
+}
