@@ -4,9 +4,9 @@
  * @license
  * MIT License
  * Choreography copyright (c) 2024-2026 pqoqubbw
- * Reference: mailbox @ 072c38b1b04ea738d90a084485ccaad4b890ddca
+ * Reference: https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca
  *
- * Copyright (c) 2023 Phosphor Icons
+ * Copyright (c) 2025 Hugeicons
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -32,7 +32,7 @@ let { size = 28, controlled = false, ...rest } = $props();
 let root;
 const instanceId = $props.id();
 function createIconProgram(api) {
-  const { Fragment, cn, forwardRef, getDefaultValueType, iconNode, motion, setTarget, useAnimation, useCallback, useEffect, useId, useImperativeHandle, useMemo, useRef, useState, visualElementStore } = api;
+  const { Fragment, cn, forwardRef, getDefaultValueType, iconNode, motion, setTarget, useAnimation, useCallback, useEffect, useImperativeHandle, useMemo, useRef, useState, visualElementStore } = api;
 const FLAG_VARIANTS = {
     normal: {
         rotate: 0,
@@ -52,8 +52,7 @@ const FLAG_VARIANTS = {
         },
     },
 };
-const PhosphorMailboxIcon = forwardRef(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
-    const nativeMaskId = useId();
+const HugeiconsMailbox01Icon = forwardRef(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
     const controls = useAnimation();
     const isControlledRef = useRef(false);
     const { rootRef: iconRootRef, reduceDefinition, ...iconAccessibility } = useIconAccessibility(ref, () => {
@@ -100,26 +99,14 @@ const PhosphorMailboxIcon = forwardRef(({ onMouseEnter, onMouseLeave, className,
             }
             props.onBlur?.(event);
         } },
-        iconNode("svg", { xmlns: "http://www.w3.org/2000/svg", width: size, height: size, viewBox: "0 0 24 24", fill: "currentColor", "aria-hidden": "true", focusable: "false", className: "overflow-visible" },
-            iconNode("g", { transform: "scale(0.09375)" },
-                iconNode("g", null,
-                    iconNode("defs", null,
-                        iconNode("clipPath", { id: nativeMaskId + '-clip-1', clipPathUnits: "userSpaceOnUse" },
-                            iconNode("path", { d: "M-24-24H48V48H-24Z M14.25 0H24V3H15.75V5.25H24V6.75H15.75V14.25H14.25Z", transform: "scale(10.666666666666666)", clipRule: "evenodd", shapeRendering: "crispEdges" }))),
-                    iconNode("g", { clipPath: 'url(#' + nativeMaskId + '-clip-1)' },
-                        iconNode("path", { d: "M 240 116 v 60 a 16 16 0 0 1 -16 16 H 136 v 32 a 8 8 0 0 1 -16 0 V 192 H 32 a 16 16 0 0 1 -16 -16 V 116 A 60.07 60.07 0 0 1 76 56 h 76 V 24 a 8 8 0 0 1 8 -8 h 32 a 8 8 0 0 1 0 16 H 168 V 56 h 12 A 60.07 60.07 0 0 1 240 116 Z M 120 176 V 116 a 44 44 0 0 0 -88 0 v 60 Z M 224 116 a 44.05 44.05 0 0 0 -44 -44 H 168 v 72 a 8 8 0 0 1 -16 0 V 72 H 116.75 A 59.86 59.86 0 0 1 136 116 v 60 h 88 Z", fill: "currentColor" })))),
-            iconNode(motion.g, { animate: reduceDefinition(controls), initial: "normal", style: { transformOrigin: '15px 13.5px' }, variants: FLAG_VARIANTS },
-                iconNode("g", { transform: "scale(0.09375)" },
-                    iconNode("g", null,
-                        iconNode("defs", null,
-                            iconNode("clipPath", { id: nativeMaskId + '-clip-2', clipPathUnits: "userSpaceOnUse" },
-                                iconNode("path", { d: "M14.25 0H24V3H15.75V5.25H24V6.75H15.75V14.25H14.25Z", transform: "scale(10.666666666666666)", clipRule: "evenodd", shapeRendering: "crispEdges" }))),
-                        iconNode("g", { clipPath: 'url(#' + nativeMaskId + '-clip-2)' },
-                            iconNode("path", { d: "M 240 116 v 60 a 16 16 0 0 1 -16 16 H 136 v 32 a 8 8 0 0 1 -16 0 V 192 H 32 a 16 16 0 0 1 -16 -16 V 116 A 60.07 60.07 0 0 1 76 56 h 76 V 24 a 8 8 0 0 1 8 -8 h 32 a 8 8 0 0 1 0 16 H 168 V 56 h 12 A 60.07 60.07 0 0 1 240 116 Z M 120 176 V 116 a 44 44 0 0 0 -88 0 v 60 Z M 224 116 a 44.05 44.05 0 0 0 -44 -44 H 168 v 72 a 8 8 0 0 1 -16 0 V 72 H 116.75 A 59.86 59.86 0 0 1 136 116 v 60 h 88 Z", fill: "currentColor" }))))),
-            iconNode("g", { transform: "scale(0.09375)" },
-                iconNode("path", { d: "M 104 152 a 8 8 0 0 1 -8 8 H 56 a 8 8 0 0 1 0 -16 H 96 A 8 8 0 0 1 104 152 Z", fill: "currentColor" })))));
+        iconNode("svg", { xmlns: "http://www.w3.org/2000/svg", width: size, height: size, viewBox: "0 0 24 24", fill: "none", "aria-hidden": "true", focusable: "false", className: "overflow-visible" },
+            iconNode("path", { d: "M17.5 5.15889C16.5351 5 15.2591 5 13.375 5H10.625C7.70671 5 6.24757 5 5.14302 5.59039C4.27088 6.05656 3.55656 6.77088 3.09039 7.64302C2.5 8.74757 2.5 10.2067 2.5 13.125C2.5 14.876 2.5 15.7515 2.85424 16.4142C3.13394 16.9375 3.56253 17.3661 4.08581 17.6458C4.74854 18 5.62403 18 7.375 18H16.625C18.376 18 19.2515 18 19.9142 17.6458C20.4375 17.3661 20.8661 16.9375 21.1458 16.4142C21.5 15.7515 21.5 14.876 21.5 13.125C21.5 10.2067 21.5 8.74757 20.9096 7.64302C20.7356 7.31755 20.5271 7.01406 20.2887 6.73725", stroke: "currentColor", strokeLinecap: "round", strokeWidth: "1.5" }),
+            iconNode("path", { d: "M12.5 18L12.5 22", stroke: "currentColor", strokeLinecap: "round", strokeWidth: "1.5" }),
+            iconNode(motion.path, { d: "M17.5 8V4C17.5 2.89543 18.3954 2 19.5 2", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5", animate: reduceDefinition(controls), initial: "normal", style: { transformOrigin: '17.5px 8px' }, variants: FLAG_VARIANTS }),
+            iconNode("path", { d: "M12.5006 18V11C12.5006 10.071 12.5006 9.60649 12.439 9.21782C12.1002 7.07836 10.4222 5.40041 8.28276 5.06155C8.2009 5.04859 8.11566 5.03835 8.02344 5.03027", stroke: "currentColor", strokeLinecap: "round", strokeWidth: "1.5" }),
+            iconNode("path", { d: "M6.5 9H8.5", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5" }))));
 });
-PhosphorMailboxIcon.displayName = 'PhosphorMailboxIcon';
+HugeiconsMailbox01Icon.displayName = 'HugeiconsMailbox01Icon';
 function useIconAccessibility(ref, createHandle, controllers) {
     const rawHandle = createHandle();
     const raw = useRef(rawHandle);
@@ -246,7 +233,7 @@ function useIconAccessibility(ref, createHandle, controllers) {
     };
 }
 
-  return PhosphorMailboxIcon;
+  return HugeiconsMailbox01Icon;
 }
 
 function mountIconProgram(createProgram, container, getSize, isControlled, instanceId) {
@@ -553,35 +540,11 @@ onMount(() => {
 </script>
 
 <div  bind:this={root} {...rest} class={["", rest.class].filter(Boolean).join(' ')}>
-  <svg data-icon-node="0" xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" class="overflow-visible">
-    <g data-icon-node="0.0" transform="scale(0.09375)">
-      <g data-icon-node="0.0.0" >
-        <defs data-icon-node="0.0.0.0" >
-          <clipPath data-icon-node="0.0.0.0.0" id={instanceId + '-0' + "-clip-1"} clipPathUnits="userSpaceOnUse">
-            <path data-icon-node="0.0.0.0.0.0" d="M-24-24H48V48H-24Z M14.25 0H24V3H15.75V5.25H24V6.75H15.75V14.25H14.25Z" transform="scale(10.666666666666666)" clip-rule="evenodd" shape-rendering="crispEdges" />
-          </clipPath>
-        </defs>
-        <g data-icon-node="0.0.0.1" clip-path={"url(#" + instanceId + '-0' + "-clip-1)"}>
-          <path data-icon-node="0.0.0.1.0" d="M 240 116 v 60 a 16 16 0 0 1 -16 16 H 136 v 32 a 8 8 0 0 1 -16 0 V 192 H 32 a 16 16 0 0 1 -16 -16 V 116 A 60.07 60.07 0 0 1 76 56 h 76 V 24 a 8 8 0 0 1 8 -8 h 32 a 8 8 0 0 1 0 16 H 168 V 56 h 12 A 60.07 60.07 0 0 1 240 116 Z M 120 176 V 116 a 44 44 0 0 0 -88 0 v 60 Z M 224 116 a 44.05 44.05 0 0 0 -44 -44 H 168 v 72 a 8 8 0 0 1 -16 0 V 72 H 116.75 A 59.86 59.86 0 0 1 136 116 v 60 h 88 Z" fill="currentColor" />
-        </g>
-      </g>
-    </g>
-    <g data-icon-node="0.1" style="transform-origin: 50% 50%; transform: none; transform-box: fill-box">
-      <g data-icon-node="0.1.0" transform="scale(0.09375)">
-        <g data-icon-node="0.1.0.0" >
-          <defs data-icon-node="0.1.0.0.0" >
-            <clipPath data-icon-node="0.1.0.0.0.0" id={instanceId + '-0' + "-clip-2"} clipPathUnits="userSpaceOnUse">
-              <path data-icon-node="0.1.0.0.0.0.0" d="M14.25 0H24V3H15.75V5.25H24V6.75H15.75V14.25H14.25Z" transform="scale(10.666666666666666)" clip-rule="evenodd" shape-rendering="crispEdges" />
-            </clipPath>
-          </defs>
-          <g data-icon-node="0.1.0.0.1" clip-path={"url(#" + instanceId + '-0' + "-clip-2)"}>
-            <path data-icon-node="0.1.0.0.1.0" d="M 240 116 v 60 a 16 16 0 0 1 -16 16 H 136 v 32 a 8 8 0 0 1 -16 0 V 192 H 32 a 16 16 0 0 1 -16 -16 V 116 A 60.07 60.07 0 0 1 76 56 h 76 V 24 a 8 8 0 0 1 8 -8 h 32 a 8 8 0 0 1 0 16 H 168 V 56 h 12 A 60.07 60.07 0 0 1 240 116 Z M 120 176 V 116 a 44 44 0 0 0 -88 0 v 60 Z M 224 116 a 44.05 44.05 0 0 0 -44 -44 H 168 v 72 a 8 8 0 0 1 -16 0 V 72 H 116.75 A 59.86 59.86 0 0 1 136 116 v 60 h 88 Z" fill="currentColor" />
-          </g>
-        </g>
-      </g>
-    </g>
-    <g data-icon-node="0.2" transform="scale(0.09375)">
-      <path data-icon-node="0.2.0" d="M 104 152 a 8 8 0 0 1 -8 8 H 56 a 8 8 0 0 1 0 -16 H 96 A 8 8 0 0 1 104 152 Z" fill="currentColor" />
-    </g>
+  <svg data-icon-node="0" xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false" class="overflow-visible">
+    <path data-icon-node="0.0" d="M17.5 5.15889C16.5351 5 15.2591 5 13.375 5H10.625C7.70671 5 6.24757 5 5.14302 5.59039C4.27088 6.05656 3.55656 6.77088 3.09039 7.64302C2.5 8.74757 2.5 10.2067 2.5 13.125C2.5 14.876 2.5 15.7515 2.85424 16.4142C3.13394 16.9375 3.56253 17.3661 4.08581 17.6458C4.74854 18 5.62403 18 7.375 18H16.625C18.376 18 19.2515 18 19.9142 17.6458C20.4375 17.3661 20.8661 16.9375 21.1458 16.4142C21.5 15.7515 21.5 14.876 21.5 13.125C21.5 10.2067 21.5 8.74757 20.9096 7.64302C20.7356 7.31755 20.5271 7.01406 20.2887 6.73725" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" />
+    <path data-icon-node="0.1" d="M12.5 18L12.5 22" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" />
+    <path data-icon-node="0.2" d="M17.5 8V4C17.5 2.89543 18.3954 2 19.5 2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" style="transform-origin: 50% 50%; transform: none; transform-box: fill-box" />
+    <path data-icon-node="0.3" d="M12.5006 18V11C12.5006 10.071 12.5006 9.60649 12.439 9.21782C12.1002 7.07836 10.4222 5.40041 8.28276 5.06155C8.2009 5.04859 8.11566 5.03835 8.02344 5.03027" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" />
+    <path data-icon-node="0.4" d="M6.5 9H8.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
   </svg>
 </div>
