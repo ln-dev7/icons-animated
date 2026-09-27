@@ -1,10 +1,12 @@
-<script setup lang="ts">
+<script lang="ts">
 // @ts-nocheck
 /**
  * @license
  * MIT License
+ * Choreography copyright (c) 2024-2026 pqoqubbw
+ * Reference: https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca
  *
- * Copyright (c) 2025 Hugeicons
+ * Copyright (c) 2020-2026 Paweł Kuna
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -25,61 +27,38 @@
  * SOFTWARE.
  */
 import { SVGVisualElement, animateVisualElement, setTarget, scrapeSVGMotionValuesFromProps, resolveMotionValue, resolveVariantFromProps, isControllingVariants, isVariantNode, getDefaultValueType, visualElementStore, camelCaseAttributes, cubicBezier, easeInOut, easeOut, easeIn } from 'motion';
-import { onMounted, onBeforeUnmount, shallowRef, useId, watch } from 'vue';
-const props = defineProps({ size: { type: Number, default: 28 }, controlled: { type: Boolean, default: false } });
-const root = shallowRef();
-const instanceId = useId();
+import { onMount } from 'svelte';
+let { size = 28, controlled = false, ...rest } = $props();
+let root;
+const instanceId = $props.id();
 function createIconProgram(api) {
   const { Fragment, cn, forwardRef, getDefaultValueType, iconNode, motion, setTarget, useAnimation, useCallback, useEffect, useImperativeHandle, useMemo, useRef, useState, visualElementStore } = api;
-const HugeiconsKeySquareIcon = forwardRef(({ onMouseEnter, onMouseLeave, onFocus, onBlur, className, size = 28, ...props }, ref) => {
+const TablerKeySquareIcon = forwardRef(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
     const controls = useAnimation();
-    const motionPreference = useRef(false);
-    const startAnimation = useCallback(() => {
-        if (!motionPreference.current)
-            return controls.start('animate');
-    }, [controls]);
-    const stopAnimation = useCallback(() => {
-        if (motionPreference.current) {
-            controls.stop();
-            controls.set('normal');
-            return;
-        }
-        return controls.start('normal');
-    }, [controls]);
-    useEffect(() => {
-        const media = window.matchMedia('(prefers-reduced-motion: reduce)');
-        const updatePreference = () => {
-            motionPreference.current = media.matches;
-            if (media.matches) {
-                controls.stop();
-                controls.set('normal');
-            }
-        };
-        updatePreference();
-        media.addEventListener('change', updatePreference);
-        return () => {
-            media.removeEventListener('change', updatePreference);
-            controls.stop();
-        };
-    }, [controls]);
     const isControlledRef = useRef(false);
     const { rootRef: iconRootRef, reduceDefinition, ...iconAccessibility } = useIconAccessibility(ref, () => {
         isControlledRef.current = ref != null;
         return {
-            startAnimation: () => startAnimation(),
-            stopAnimation: () => stopAnimation(),
+            startAnimation: () => controls.start('animate'),
+            stopAnimation: () => controls.start('normal'),
         };
     }, [controls]);
     const handleMouseEnter = useCallback((e) => {
-        if (!isControlledRef.current)
-            startAnimation();
-        void e;
-    }, [startAnimation]);
+        if (isControlledRef.current) {
+            void e;
+        }
+        else {
+            controls.start('animate');
+        }
+    }, [controls]);
     const handleMouseLeave = useCallback((e) => {
-        if (!isControlledRef.current)
-            stopAnimation();
-        void e;
-    }, [stopAnimation]);
+        if (isControlledRef.current) {
+            void e;
+        }
+        else {
+            controls.start('normal');
+        }
+    }, [controls]);
     return (iconNode("div", { className: cn(className), ...props, ref: iconRootRef, onMouseEnter: (event) => {
             if (!iconAccessibility.controlled && !iconAccessibility.reduced) {
                 handleMouseEnter(event);
@@ -92,24 +71,16 @@ const HugeiconsKeySquareIcon = forwardRef(({ onMouseEnter, onMouseLeave, onFocus
             onMouseLeave?.(event);
         }, onFocus: (event) => {
             if (!iconAccessibility.controlled && !iconAccessibility.reduced) {
-                ((event) => {
-                    if (!isControlledRef.current)
-                        startAnimation();
-                    void event;
-                })(event);
+                iconAccessibility.startAnimation();
             }
-            onFocus?.(event);
+            props.onFocus?.(event);
         }, onBlur: (event) => {
             if (!iconAccessibility.controlled) {
-                ((event) => {
-                    if (!isControlledRef.current)
-                        stopAnimation();
-                    void event;
-                })(event);
+                iconAccessibility.stopAnimation();
             }
-            onBlur?.(event);
+            props.onBlur?.(event);
         } },
-        iconNode(motion.svg, { xmlns: "http://www.w3.org/2000/svg", width: size, height: size, viewBox: "0 0 24 24", fill: "none", "aria-hidden": "true", focusable: "false", animate: reduceDefinition(controls), transition: {
+        iconNode(motion.svg, { xmlns: "http://www.w3.org/2000/svg", width: size, height: size, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": "true", focusable: "false", animate: reduceDefinition(controls), transition: {
                 duration: 0.6,
                 bounce: 0.4,
             }, variants: {
@@ -119,11 +90,10 @@ const HugeiconsKeySquareIcon = forwardRef(({ onMouseEnter, onMouseLeave, onFocus
                     scale: [1, 1.05, 1, 1],
                 },
             } },
-            iconNode("path", { d: "M13.2124 14.2847L9.80113 17.7174H7.77746V19.7538H5.75379V21.7901H2.21237V19.9071C2.21237 19.0782 2.21237 18.6637 2.36852 18.2921C2.52467 17.9204 2.82077 17.6303 3.41297 17.05L9.21237 11.3671", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5" }),
-            iconNode("path", { d: "M18.9972 5.26071C18.7789 5.04288 18.5606 4.82505 18.3435 4.60847C16.916 3.18405 16.2022 2.47184 15.3534 2.28211C14.924 2.18613 14.4792 2.18575 14.0496 2.28097C13.2004 2.46923 12.4856 3.18005 11.0559 4.60168C9.61818 6.03125 8.89934 6.74603 8.70747 7.59848C8.61047 8.02944 8.60984 8.47651 8.70562 8.90775C8.89509 9.76074 9.61191 10.4775 11.0456 11.9112L12.0815 12.9471C13.5177 14.3833 14.2359 15.1014 15.0904 15.2904C15.5208 15.3856 15.9668 15.3848 16.3967 15.288C17.2506 15.0959 17.9661 14.3752 19.3971 12.9338C20.8195 11.501 21.5308 10.7846 21.7178 9.93331C21.812 9.50466 21.8109 9.06025 21.7147 8.63205C21.5237 7.78161 20.8092 7.06873 19.3803 5.64298C19.2528 5.51573 19.125 5.38822 18.9972 5.26071Z", stroke: "currentColor", fillRule: "evenodd", clipRule: "evenodd", strokeWidth: "1.5" }),
-            iconNode("path", { d: "M15.2124 5.79016L18.2124 8.79016", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5" }))));
+            iconNode("path", { d: "M16.555 3.843l3.602 3.602a2.877 2.877 0 0 1 0 4.069l-2.643 2.643a2.877 2.877 0 0 1 -4.069 0l-.301 -.301l-6.558 6.558a2 2 0 0 1 -1.239 .578l-.175 .008h-1.172a1 1 0 0 1 -.993 -.883l-.007 -.117v-1.172a2 2 0 0 1 .467 -1.284l.119 -.13l.414 -.414h2v-2h2v-2l2.144 -2.144l-.301 -.301a2.877 2.877 0 0 1 0 -4.069l2.643 -2.643a2.877 2.877 0 0 1 4.069 0" }),
+            iconNode("path", { d: "M15 9h.01" }))));
 });
-HugeiconsKeySquareIcon.displayName = 'HugeiconsKeySquareIcon';
+TablerKeySquareIcon.displayName = 'TablerKeySquareIcon';
 function useIconAccessibility(ref, createHandle, controllers) {
     const rawHandle = createHandle();
     const raw = useRef(rawHandle);
@@ -250,7 +220,7 @@ function useIconAccessibility(ref, createHandle, controllers) {
     };
 }
 
-  return HugeiconsKeySquareIcon;
+  return TablerKeySquareIcon;
 }
 
 function mountIconProgram(createProgram, container, getSize, isControlled, instanceId) {
@@ -547,20 +517,18 @@ function mountIconProgram(createProgram, container, getSize, isControlled, insta
 }
 
 let controller;
-function startAnimation() { return controller?.startAnimation(); }
-function stopAnimation() { return controller?.stopAnimation(); }
-onMounted(() => { controller = mountIconProgram(createIconProgram, root.value, () => props.size, () => props.controlled, instanceId); });
-watch(() => [props.size, props.controlled], () => controller?.update());
-onBeforeUnmount(() => controller?.destroy());
-defineExpose({ startAnimation, stopAnimation });
+export function startAnimation() { return controller?.startAnimation(); }
+export function stopAnimation() { return controller?.stopAnimation(); }
+$effect(() => { size; controlled; controller?.update(); });
+onMount(() => {
+  controller = mountIconProgram(createIconProgram, root, () => size, () => controlled, instanceId);
+  return () => controller?.destroy();
+});
 </script>
 
-<template>
-  <div ref="root" class="">
-    <svg data-icon-node="0" xmlns="http://www.w3.org/2000/svg" :width="size" :height="size" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
-      <path data-icon-node="0.0" d="M13.2124 14.2847L9.80113 17.7174H7.77746V19.7538H5.75379V21.7901H2.21237V19.9071C2.21237 19.0782 2.21237 18.6637 2.36852 18.2921C2.52467 17.9204 2.82077 17.6303 3.41297 17.05L9.21237 11.3671" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-      <path data-icon-node="0.1" d="M18.9972 5.26071C18.7789 5.04288 18.5606 4.82505 18.3435 4.60847C16.916 3.18405 16.2022 2.47184 15.3534 2.28211C14.924 2.18613 14.4792 2.18575 14.0496 2.28097C13.2004 2.46923 12.4856 3.18005 11.0559 4.60168C9.61818 6.03125 8.89934 6.74603 8.70747 7.59848C8.61047 8.02944 8.60984 8.47651 8.70562 8.90775C8.89509 9.76074 9.61191 10.4775 11.0456 11.9112L12.0815 12.9471C13.5177 14.3833 14.2359 15.1014 15.0904 15.2904C15.5208 15.3856 15.9668 15.3848 16.3967 15.288C17.2506 15.0959 17.9661 14.3752 19.3971 12.9338C20.8195 11.501 21.5308 10.7846 21.7178 9.93331C21.812 9.50466 21.8109 9.06025 21.7147 8.63205C21.5237 7.78161 20.8092 7.06873 19.3803 5.64298C19.2528 5.51573 19.125 5.38822 18.9972 5.26071Z" stroke="currentColor" fill-rule="evenodd" clip-rule="evenodd" stroke-width="1.5" />
-      <path data-icon-node="0.2" d="M15.2124 5.79016L18.2124 8.79016" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-    </svg>
-  </div>
-</template>
+<div  bind:this={root} {...rest} class={["", rest.class].filter(Boolean).join(' ')}>
+  <svg data-icon-node="0" xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+    <path data-icon-node="0.0" d="M16.555 3.843l3.602 3.602a2.877 2.877 0 0 1 0 4.069l-2.643 2.643a2.877 2.877 0 0 1 -4.069 0l-.301 -.301l-6.558 6.558a2 2 0 0 1 -1.239 .578l-.175 .008h-1.172a1 1 0 0 1 -.993 -.883l-.007 -.117v-1.172a2 2 0 0 1 .467 -1.284l.119 -.13l.414 -.414h2v-2h2v-2l2.144 -2.144l-.301 -.301a2.877 2.877 0 0 1 0 -4.069l2.643 -2.643a2.877 2.877 0 0 1 4.069 0" />
+    <path data-icon-node="0.1" d="M15 9h.01" />
+  </svg>
+</div>
