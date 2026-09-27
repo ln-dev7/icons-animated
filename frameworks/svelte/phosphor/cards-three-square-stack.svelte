@@ -1,12 +1,12 @@
-<script setup lang="ts">
+<script lang="ts">
 // @ts-nocheck
 /**
  * @license
  * MIT License
  * Choreography copyright (c) 2024-2026 pqoqubbw
- * Reference: https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca
+ * Reference: square-stack @ 072c38b1b04ea738d90a084485ccaad4b890ddca
  *
- * Copyright (c) 2025 Hugeicons
+ * Copyright (c) 2023 Phosphor Icons
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -27,10 +27,10 @@
  * SOFTWARE.
  */
 import { SVGVisualElement, animateVisualElement, setTarget, scrapeSVGMotionValuesFromProps, resolveMotionValue, resolveVariantFromProps, isControllingVariants, isVariantNode, getDefaultValueType, visualElementStore, camelCaseAttributes, cubicBezier, easeInOut, easeOut, easeIn } from 'motion';
-import { onMounted, onBeforeUnmount, shallowRef, useId, watch } from 'vue';
-const props = defineProps({ size: { type: Number, default: 28 }, controlled: { type: Boolean, default: false } });
-const root = shallowRef();
-const instanceId = useId();
+import { onMount } from 'svelte';
+let { size = 28, controlled = false, ...rest } = $props();
+let root;
+const instanceId = $props.id();
 function createIconProgram(api) {
   const { Fragment, cn, forwardRef, getDefaultValueType, iconNode, motion, setTarget, useAnimation, useCallback, useEffect, useImperativeHandle, useMemo, useRef, useState, visualElementStore } = api;
 const RECT_VARIANTS = {
@@ -46,7 +46,7 @@ const PATH_VARIANTS = {
         scale: [1, 0.9, 1],
     },
 };
-const HugeiconsSquareStackIcon = forwardRef(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
+const PhosphorCardsThreeSquareStackIcon = forwardRef(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
     const controls = useAnimation();
     const isControlledRef = useRef(false);
     const { rootRef: iconRootRef, reduceDefinition, ...iconAccessibility } = useIconAccessibility(ref, () => {
@@ -93,18 +93,25 @@ const HugeiconsSquareStackIcon = forwardRef(({ onMouseEnter, onMouseLeave, class
             }
             props.onBlur?.(event);
         } },
-        iconNode("svg", { xmlns: "http://www.w3.org/2000/svg", width: size, height: size, viewBox: "0 0 24 24", fill: "none", "aria-hidden": "true", focusable: "false" },
-            iconNode(motion.path, { d: "M10.9235 5C10.8832 4.75397 10.8216 4.54965 10.7275 4.36502C10.4878 3.89462 10.1054 3.51217 9.63498 3.27248C9.1002 3 8.40013 3 7 3C5.59987 3 4.8998 3 4.36502 3.27248C3.89462 3.51217 3.51217 3.89462 3.27248 4.36502C3 4.8998 3 5.59987 3 7C3 8.40013 3 9.1002 3.27248 9.63498C3.51217 10.1054 3.89462 10.4878 4.36502 10.7275C4.54965 10.8216 4.75397 10.8832 5 10.9235", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5", animate: reduceDefinition(controls), transition: {
+        iconNode("svg", { xmlns: "http://www.w3.org/2000/svg", width: size, height: size, viewBox: "0 0 24 24", fill: "currentColor", "aria-hidden": "true", focusable: "false" },
+            iconNode(motion.g, { animate: reduceDefinition(controls), transition: {
                     delay: 0.3,
                     duration: 0.4,
-                }, variants: PATH_VARIANTS }),
-            iconNode(motion.path, { d: "M15.9235 10C15.8832 9.75397 15.8216 9.54965 15.7275 9.36502C15.4878 8.89462 15.1054 8.51217 14.635 8.27248C14.1002 8 13.4001 8 12 8C10.5999 8 9.8998 8 9.36502 8.27248C8.89462 8.51217 8.51217 8.89462 8.27248 9.36502C8 9.8998 8 10.5999 8 12C8 13.4001 8 14.1002 8.27248 14.635C8.51217 15.1054 8.89462 15.4878 9.36502 15.7275C9.54965 15.8216 9.75397 15.8832 10 15.9235", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5", animate: reduceDefinition(controls), transition: {
+                }, variants: PATH_VARIANTS },
+                iconNode("g", { transform: "scale(0.09375)" },
+                    iconNode("path", { d: "M 64 32 a 8 8 0 0 1 8 -8 H 184 a 8 8 0 0 1 0 16 H 72 A 8 8 0 0 1 64 32 Z", fill: "currentColor" }))),
+            iconNode(motion.g, { animate: reduceDefinition(controls), transition: {
                     delay: 0.2,
                     duration: 0.2,
-                }, variants: PATH_VARIANTS }),
-            iconNode(motion.path, { d: "M20.7275 14.365C21 14.8998 21 15.5999 21 17C21 18.4001 21 19.1002 20.7275 19.635C20.4878 20.1054 20.1054 20.4878 19.635 20.7275C19.1002 21 18.4001 21 17 21C15.5999 21 14.8998 21 14.365 20.7275C13.8946 20.4878 13.5122 20.1054 13.2725 19.635C13 19.1002 13 18.4001 13 17C13 15.5999 13 14.8998 13.2725 14.365C13.5122 13.8946 13.8946 13.5122 14.365 13.2725C14.8998 13 15.5999 13 17 13C18.4001 13 19.1002 13 19.635 13.2725C20.1054 13.5122 20.4878 13.8946 20.7275 14.365Z", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5", animate: reduceDefinition(controls), variants: RECT_VARIANTS }))));
+                }, variants: PATH_VARIANTS },
+                iconNode("g", { transform: "scale(0.09375)" },
+                    iconNode("path", { d: "M 48 64 a 8 8 0 0 1 8 -8 H 200 a 8 8 0 0 1 0 16 H 56 A 8 8 0 0 1 48 64 Z", fill: "currentColor" }))),
+            iconNode(motion.g, { animate: reduceDefinition(controls), variants: RECT_VARIANTS },
+                iconNode("g", { transform: "scale(0.09375)" },
+                    iconNode("path", { d: "M 208 88 H 48 a 16 16 0 0 0 -16 16 v 96 a 16 16 0 0 0 16 16 H 208 a 16 16 0 0 0 16 -16 V 104 A 16 16 0 0 0 208 88 Z M 208 200 H 48 V 104 H 208 v 96 Z", fill: "currentColor" }))))));
 });
-HugeiconsSquareStackIcon.displayName = 'HugeiconsSquareStackIcon';
+PhosphorCardsThreeSquareStackIcon.displayName =
+    'PhosphorCardsThreeSquareStackIcon';
 function useIconAccessibility(ref, createHandle, controllers) {
     const rawHandle = createHandle();
     const raw = useRef(rawHandle);
@@ -231,7 +238,7 @@ function useIconAccessibility(ref, createHandle, controllers) {
     };
 }
 
-  return HugeiconsSquareStackIcon;
+  return PhosphorCardsThreeSquareStackIcon;
 }
 
 function mountIconProgram(createProgram, container, getSize, isControlled, instanceId) {
@@ -528,20 +535,31 @@ function mountIconProgram(createProgram, container, getSize, isControlled, insta
 }
 
 let controller;
-function startAnimation() { return controller?.startAnimation(); }
-function stopAnimation() { return controller?.stopAnimation(); }
-onMounted(() => { controller = mountIconProgram(createIconProgram, root.value, () => props.size, () => props.controlled, instanceId); });
-watch(() => [props.size, props.controlled], () => controller?.update());
-onBeforeUnmount(() => controller?.destroy());
-defineExpose({ startAnimation, stopAnimation });
+export function startAnimation() { return controller?.startAnimation(); }
+export function stopAnimation() { return controller?.stopAnimation(); }
+$effect(() => { size; controlled; controller?.update(); });
+onMount(() => {
+  controller = mountIconProgram(createIconProgram, root, () => size, () => controlled, instanceId);
+  return () => controller?.destroy();
+});
 </script>
 
-<template>
-  <div ref="root" class="">
-    <svg data-icon-node="0" xmlns="http://www.w3.org/2000/svg" :width="size" :height="size" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
-      <path data-icon-node="0.0" d="M10.9235 5C10.8832 4.75397 10.8216 4.54965 10.7275 4.36502C10.4878 3.89462 10.1054 3.51217 9.63498 3.27248C9.1002 3 8.40013 3 7 3C5.59987 3 4.8998 3 4.36502 3.27248C3.89462 3.51217 3.51217 3.89462 3.27248 4.36502C3 4.8998 3 5.59987 3 7C3 8.40013 3 9.1002 3.27248 9.63498C3.51217 10.1054 3.89462 10.4878 4.36502 10.7275C4.54965 10.8216 4.75397 10.8832 5 10.9235" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-      <path data-icon-node="0.1" d="M15.9235 10C15.8832 9.75397 15.8216 9.54965 15.7275 9.36502C15.4878 8.89462 15.1054 8.51217 14.635 8.27248C14.1002 8 13.4001 8 12 8C10.5999 8 9.8998 8 9.36502 8.27248C8.89462 8.51217 8.51217 8.89462 8.27248 9.36502C8 9.8998 8 10.5999 8 12C8 13.4001 8 14.1002 8.27248 14.635C8.51217 15.1054 8.89462 15.4878 9.36502 15.7275C9.54965 15.8216 9.75397 15.8832 10 15.9235" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-      <path data-icon-node="0.2" d="M20.7275 14.365C21 14.8998 21 15.5999 21 17C21 18.4001 21 19.1002 20.7275 19.635C20.4878 20.1054 20.1054 20.4878 19.635 20.7275C19.1002 21 18.4001 21 17 21C15.5999 21 14.8998 21 14.365 20.7275C13.8946 20.4878 13.5122 20.1054 13.2725 19.635C13 19.1002 13 18.4001 13 17C13 15.5999 13 14.8998 13.2725 14.365C13.5122 13.8946 13.8946 13.5122 14.365 13.2725C14.8998 13 15.5999 13 17 13C18.4001 13 19.1002 13 19.635 13.2725C20.1054 13.5122 20.4878 13.8946 20.7275 14.365Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-    </svg>
-  </div>
-</template>
+<div  bind:this={root} {...rest} class={["", rest.class].filter(Boolean).join(' ')}>
+  <svg data-icon-node="0" xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    <g data-icon-node="0.0" >
+      <g data-icon-node="0.0.0" transform="scale(0.09375)">
+        <path data-icon-node="0.0.0.0" d="M 64 32 a 8 8 0 0 1 8 -8 H 184 a 8 8 0 0 1 0 16 H 72 A 8 8 0 0 1 64 32 Z" fill="currentColor" />
+      </g>
+    </g>
+    <g data-icon-node="0.1" >
+      <g data-icon-node="0.1.0" transform="scale(0.09375)">
+        <path data-icon-node="0.1.0.0" d="M 48 64 a 8 8 0 0 1 8 -8 H 200 a 8 8 0 0 1 0 16 H 56 A 8 8 0 0 1 48 64 Z" fill="currentColor" />
+      </g>
+    </g>
+    <g data-icon-node="0.2" >
+      <g data-icon-node="0.2.0" transform="scale(0.09375)">
+        <path data-icon-node="0.2.0.0" d="M 208 88 H 48 a 16 16 0 0 0 -16 16 v 96 a 16 16 0 0 0 16 16 H 208 a 16 16 0 0 0 16 -16 V 104 A 16 16 0 0 0 208 88 Z M 208 200 H 48 V 104 H 208 v 96 Z" fill="currentColor" />
+      </g>
+    </g>
+  </svg>
+</div>

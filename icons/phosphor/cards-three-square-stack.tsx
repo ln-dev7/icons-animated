@@ -2,9 +2,9 @@
  * @license
  * MIT License
  * Choreography copyright (c) 2024-2026 pqoqubbw
- * Reference: https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca
+ * Reference: square-stack @ 072c38b1b04ea738d90a084485ccaad4b890ddca
  *
- * Copyright (c) 2025 Hugeicons
+ * Copyright (c) 2023 Phosphor Icons
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -47,11 +47,11 @@ import { motion, useAnimation } from 'motion/react';
 
 import { cn } from '@/lib/utils';
 
-export interface HugeiconsSquareStackIconHandle {
+export interface PhosphorCardsThreeSquareStackIconHandle {
   startAnimation: () => void;
   stopAnimation: () => void;
 }
-interface HugeiconsSquareStackIconProps extends HTMLAttributes<HTMLDivElement> {
+interface PhosphorCardsThreeSquareStackIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
 const RECT_VARIANTS: Variants = {
@@ -67,9 +67,9 @@ const PATH_VARIANTS: Variants = {
     scale: [1, 0.9, 1],
   },
 };
-const HugeiconsSquareStackIcon = forwardRef<
-  HugeiconsSquareStackIconHandle,
-  HugeiconsSquareStackIconProps
+const PhosphorCardsThreeSquareStackIcon = forwardRef<
+  PhosphorCardsThreeSquareStackIconHandle,
+  PhosphorCardsThreeSquareStackIconProps
 >(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
   const controls = useAnimation();
   const isControlledRef = useRef(false);
@@ -139,51 +139,55 @@ const HugeiconsSquareStackIcon = forwardRef<
         width={size}
         height={size}
         viewBox="0 0 24 24"
-        fill="none"
+        fill="currentColor"
         aria-hidden="true"
         focusable="false"
       >
-        <motion.path
-          d="M10.9235 5C10.8832 4.75397 10.8216 4.54965 10.7275 4.36502C10.4878 3.89462 10.1054 3.51217 9.63498 3.27248C9.1002 3 8.40013 3 7 3C5.59987 3 4.8998 3 4.36502 3.27248C3.89462 3.51217 3.51217 3.89462 3.27248 4.36502C3 4.8998 3 5.59987 3 7C3 8.40013 3 9.1002 3.27248 9.63498C3.51217 10.1054 3.89462 10.4878 4.36502 10.7275C4.54965 10.8216 4.75397 10.8832 5 10.9235"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
+        <motion.g
           animate={reduceDefinition(controls)}
           transition={{
             delay: 0.3,
             duration: 0.4,
           }}
           variants={PATH_VARIANTS}
-        />
-        <motion.path
-          d="M15.9235 10C15.8832 9.75397 15.8216 9.54965 15.7275 9.36502C15.4878 8.89462 15.1054 8.51217 14.635 8.27248C14.1002 8 13.4001 8 12 8C10.5999 8 9.8998 8 9.36502 8.27248C8.89462 8.51217 8.51217 8.89462 8.27248 9.36502C8 9.8998 8 10.5999 8 12C8 13.4001 8 14.1002 8.27248 14.635C8.51217 15.1054 8.89462 15.4878 9.36502 15.7275C9.54965 15.8216 9.75397 15.8832 10 15.9235"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
+        >
+          <g transform="scale(0.09375)">
+            <path
+              d="M 64 32 a 8 8 0 0 1 8 -8 H 184 a 8 8 0 0 1 0 16 H 72 A 8 8 0 0 1 64 32 Z"
+              fill="currentColor"
+            />
+          </g>
+        </motion.g>
+        <motion.g
           animate={reduceDefinition(controls)}
           transition={{
             delay: 0.2,
             duration: 0.2,
           }}
           variants={PATH_VARIANTS}
-        />
-        <motion.path
-          d="M20.7275 14.365C21 14.8998 21 15.5999 21 17C21 18.4001 21 19.1002 20.7275 19.635C20.4878 20.1054 20.1054 20.4878 19.635 20.7275C19.1002 21 18.4001 21 17 21C15.5999 21 14.8998 21 14.365 20.7275C13.8946 20.4878 13.5122 20.1054 13.2725 19.635C13 19.1002 13 18.4001 13 17C13 15.5999 13 14.8998 13.2725 14.365C13.5122 13.8946 13.8946 13.5122 14.365 13.2725C14.8998 13 15.5999 13 17 13C18.4001 13 19.1002 13 19.635 13.2725C20.1054 13.5122 20.4878 13.8946 20.7275 14.365Z"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          animate={reduceDefinition(controls)}
-          variants={RECT_VARIANTS}
-        />
+        >
+          <g transform="scale(0.09375)">
+            <path
+              d="M 48 64 a 8 8 0 0 1 8 -8 H 200 a 8 8 0 0 1 0 16 H 56 A 8 8 0 0 1 48 64 Z"
+              fill="currentColor"
+            />
+          </g>
+        </motion.g>
+        <motion.g animate={reduceDefinition(controls)} variants={RECT_VARIANTS}>
+          <g transform="scale(0.09375)">
+            <path
+              d="M 208 88 H 48 a 16 16 0 0 0 -16 16 v 96 a 16 16 0 0 0 16 16 H 208 a 16 16 0 0 0 16 -16 V 104 A 16 16 0 0 0 208 88 Z M 208 200 H 48 V 104 H 208 v 96 Z"
+              fill="currentColor"
+            />
+          </g>
+        </motion.g>
       </svg>
     </div>
   );
 });
-HugeiconsSquareStackIcon.displayName = 'HugeiconsSquareStackIcon';
-export { HugeiconsSquareStackIcon };
+PhosphorCardsThreeSquareStackIcon.displayName =
+  'PhosphorCardsThreeSquareStackIcon';
+export { PhosphorCardsThreeSquareStackIcon };
 
 type IconAccessibilityHandle = {
   startAnimation: () => unknown;
