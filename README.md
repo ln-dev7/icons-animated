@@ -22,7 +22,7 @@ This project provides animated icons for:
 
 ## Installation
 
-Install icons using the shadcn CLI:
+Install React icons with the shadcn CLI (for Vue and Svelte, see [below](#vue-and-svelte)):
 
 ```bash
 # Huge Icons
@@ -95,9 +95,9 @@ Run `pnpm check-frameworks` to compile every Vue and Svelte component. `pnpm che
 
 We welcome contributions to `icons-animated`! Please read our [contributing guidelines](CONTRIBUTING.md) on how to submit improvements and new icons.
 
-## Terms of Use
+## License
 
-Feel free to use these components in personal and commercial projects. However, while the tutorials and demos are available for your use as-is, they cannot be redistributed or resold. Let's keep things fair and respect each other's work.
+icons-animated is released under the [MIT License](LICENSE): you can use, modify and redistribute it in personal and commercial projects. The icon geometry comes from Hugeicons, Tabler and Phosphor, all MIT-licensed. Keep the license notice included in each component; see [third-party notices](THIRD_PARTY_NOTICES.md).
 
 If you have any questions or just want to say hi, feel free to reach out to me on X 👉 [@ln_dev7](https://x.com/ln_dev7).
 
