@@ -1,6 +1,6 @@
 # Animation reference and native geometry
 
-The animation reference is the 467-icon [Lucide Animated](https://lucide-animated.com/) catalog, verified against [pqoqubbw/icons revision 072c38b1](https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca). All 467 published registry sources matched that snapshot. Its MIT notice is included in [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md) and in each adapted component.
+The animation reference is the 467-icon [Lucide Animated](https://lucide-animated.com/) catalog, verified against [pqoqubbw/icons revision 072c38b1](https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca). All 467 published registry sources matched that snapshot. Its MIT notice is centralized in [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md). Include that file and [LICENSE](../LICENSE) when redistributing the components.
 
 Native Hugeicons, Tabler and Phosphor geometry takes priority when the designs differ. The integration transfers the reference animation program: controllers, keyframes, durations, delays, easing, spring parameters, sequences, repeats, state changes and start/stop behavior. Paths are assigned by their meaning (hand, wheel, knob, flap, etc.). Compound native paths are partitioned where necessary so those parts can move independently.
 

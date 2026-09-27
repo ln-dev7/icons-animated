@@ -1,6 +1,6 @@
 # Third-party icon geometry and animation
 
-Animated components retain the resting SVG geometry of the following upstream packages. Paths may be split into independently animated parts, filled contours may be clipped or masked, and transient effects may be fitted to the native shape. Their license notices are also included in each newly distributed component.
+Animated components retain the resting SVG geometry of the following upstream packages. Paths may be split into independently animated parts, filled contours may be clipped or masked, and transient effects may be fitted to the native shape. Their complete license notices are centralized below instead of being repeated in individual components. Include this file and LICENSE when redistributing the components.
 
 ## @hugeicons/core-free-icons 4.3.5
 

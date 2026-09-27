@@ -56,7 +56,7 @@ We welcome contributions to our project! Please follow these steps to contribute
    - Tabler: [tabler.io/icons](https://tabler.io/icons)
    - Phosphor: [phosphoricons.com](https://phosphoricons.com/)
 
-   Replace the example SVG shapes with the exact native geometry and retain the library license notice.
+   Replace the example SVG shapes with the exact native geometry and preserve the upstream attribution and license in THIRD_PARTY_NOTICES.md. Keep license texts centralized instead of adding them to each component.
 
    f. Add your animation logic using Motion’s `motion` components and the `controls` object to create engaging hover animations.
 

@@ -38,7 +38,7 @@ pnpm dlx shadcn add @icons-animated/phosphor-heart
 pnpm dlx shadcn add @icons-animated/phosphor-star
 ```
 
-For direct copy, use React 18.2+ and install the animation engine versions below. Keep `@/lib/utils` pointing to a `cn` helper: reuse your shadcn setup, or copy [our helper](lib/utils.ts) and install `clsx` and `tailwind-merge`. Preserve the license notice included in each copied component.
+For direct copy, use React 18.2+ and install the animation engine versions below. Keep `@/lib/utils` pointing to a `cn` helper: reuse your shadcn setup, or copy [our helper](lib/utils.ts) and install `clsx` and `tailwind-merge`.
 
 Icons retain their native library style. Phosphor regular icons use filled SVG paths: customize their `size` and CSS color; stroke width does not control their thickness.
 
@@ -87,7 +87,7 @@ See [animation parity and native-geometry limits](docs/ANIMATION_PARITY.md) for 
 
 ## Maintaining the three formats
 
-Edit the canonical React source under `icons/`. Run `pnpm gen-cli` before committing: it regenerates Vue/Svelte components and all three public registries. Do not edit generated files under `frameworks/` or `public/r/` manually. The generator rejects unsupported source patterns instead of silently producing a static icon.
+Edit the canonical React source under `icons/`. Run `pnpm gen-cli` before committing: it regenerates Vue/Svelte components and all three public registries. Do not edit generated files under `frameworks/` or `public/r/` manually. Keep license texts and upstream attributions in `LICENSE` and `THIRD_PARTY_NOTICES.md` instead of component headers. The generator rejects unsupported source patterns instead of silently producing a static icon.
 
 Run `pnpm check-frameworks` to compile every Vue and Svelte component. `pnpm check-registry` checks that each published component matches its generated source, and `pnpm check-icon-content` verifies source-copy isolation and framework-specific commands.
 
@@ -97,7 +97,7 @@ We welcome contributions to `icons-animated`! Please read our [contributing guid
 
 ## License
 
-icons-animated is released under the [MIT License](LICENSE): you can use, modify and redistribute it in personal and commercial projects. The icon geometry comes from Hugeicons, Tabler and Phosphor, all MIT-licensed. Keep the license notice included in each component; see [third-party notices](THIRD_PARTY_NOTICES.md).
+icons-animated is released under the [MIT License](LICENSE): you can use, modify and redistribute it in personal and commercial projects. The icon geometry comes from Hugeicons, Tabler and Phosphor, all MIT-licensed. License texts and attributions are centralized in [LICENSE](LICENSE) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md), rather than repeated in each component. Include these notices when redistributing the components.
 
 If you have any questions or just want to say hi, feel free to reach out to me on X 👉 [@ln_dev7](https://x.com/ln_dev7).
 

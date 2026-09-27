@@ -28,7 +28,7 @@ The full table below shows every omission explicitly. Review notes in the JSON e
 
 ## Licenses and animation behavior
 
-Native geometries come from the three MIT-licensed packages listed above. Their exact notices are preserved in [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md) and at the top of every newly distributed TSX component. Copying code or installing a registry item retains that component notice. The animation programs are adapted from the MIT-licensed Lucide Animated source snapshot. Native SVG geometry is retained. See [animation parity and declared limitations](ANIMATION_PARITY.md) for the exact source revision, engine version, adaptations and verification.
+Native geometries come from the three MIT-licensed packages listed above. Their exact notices are centralized in [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md) instead of being repeated in copied or installed components. Include that file and [LICENSE](../LICENSE) when redistributing the components. The animation programs are adapted from the MIT-licensed Lucide Animated source snapshot. Native SVG geometry is retained. See [animation parity and declared limitations](ANIMATION_PARITY.md) for the exact source revision, engine version, adaptations and verification.
 
 Components support pointer and keyboard previews, imperative `startAnimation` / `stopAnimation`, and reduced motion. Playback follows the reference: finite animations may hold their final pose, loops continue until stopped, and reset transitions follow the source program.
 
