@@ -1,12 +1,12 @@
-<script setup lang="ts">
+<script lang="ts">
 // @ts-nocheck
 /**
  * @license
  * MIT License
  * Choreography copyright (c) 2024-2026 pqoqubbw
- * Reference: link-2 @ 072c38b1b04ea738d90a084485ccaad4b890ddca
+ * Reference: https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca
  *
- * Copyright (c) 2023 Phosphor Icons
+ * Copyright (c) 2020-2026 Paweł Kuna
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -27,10 +27,10 @@
  * SOFTWARE.
  */
 import { SVGVisualElement, animateVisualElement, setTarget, scrapeSVGMotionValuesFromProps, resolveMotionValue, resolveVariantFromProps, isControllingVariants, isVariantNode, getDefaultValueType, visualElementStore, camelCaseAttributes, cubicBezier, easeInOut, easeOut, easeIn } from 'motion';
-import { onMounted, onBeforeUnmount, shallowRef, useId, watch } from 'vue';
-const props = defineProps({ size: { type: Number, default: 28 }, controlled: { type: Boolean, default: false } });
-const root = shallowRef();
-const instanceId = useId();
+import { onMount } from 'svelte';
+let { size = 28, controlled = false, ...rest } = $props();
+let root;
+const instanceId = $props.id();
 function createIconProgram(api) {
   const { Fragment, cn, forwardRef, getDefaultValueType, iconNode, motion, setTarget, useAnimation, useCallback, useEffect, useImperativeHandle, useMemo, useRef, useState, visualElementStore } = api;
 const LEFT_VARIANTS = {
@@ -55,7 +55,7 @@ const RIGHT_VARIANTS = {
         },
     },
 };
-const PhosphorLinkSimpleIcon = forwardRef(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
+const TablerLink2Icon = forwardRef(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
     const controls = useAnimation();
     const isControlledRef = useRef(false);
     const { rootRef: iconRootRef, reduceDefinition, ...iconAccessibility } = useIconAccessibility(ref, () => {
@@ -102,17 +102,14 @@ const PhosphorLinkSimpleIcon = forwardRef(({ onMouseEnter, onMouseLeave, classNa
             }
             props.onBlur?.(event);
         } },
-        iconNode("svg", { xmlns: "http://www.w3.org/2000/svg", width: size, height: size, viewBox: "0 0 24 24", fill: "currentColor", "aria-hidden": "true", focusable: "false" },
+        iconNode("svg", { xmlns: "http://www.w3.org/2000/svg", width: size, height: size, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": "true", focusable: "false" },
             iconNode(motion.g, { animate: reduceDefinition(controls), variants: LEFT_VARIANTS },
-                iconNode("g", { transform: "scale(0.09375)" },
-                    iconNode("path", { d: "M 138.34 174.22 l -30.06 30.06 a 40 40 0 1 1 -56.56 -56.57 l 30.05 -30.05 a 8 8 0 0 0 -11.32 -11.32 L 40.4 136.4 a 56 56 0 0 0 79.2 79.2 l 30.06 -30.07 a 8 8 0 0 0 -11.32 -11.31 Z", fill: "currentColor" })),
-                iconNode("g", { transform: "scale(0.09375)" },
-                    iconNode("path", { d: "M 165.66 90.34 a 8 8 0 0 1 0 11.32 l -64 64 a 8 8 0 0 1 -11.32 -11.32 l 64 -64 A 8 8 0 0 1 165.66 90.34 Z", fill: "currentColor" }))),
+                iconNode("path", { d: "M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" }),
+                iconNode("path", { d: "M 9 15 l 6 -6" })),
             iconNode(motion.g, { animate: reduceDefinition(controls), variants: RIGHT_VARIANTS },
-                iconNode("g", { transform: "scale(0.09375)" },
-                    iconNode("path", { d: "M 215.6 40.4 a 56 56 0 0 0 -79.2 0 L 106.34 70.45 a 8 8 0 0 0 11.32 11.32 l 30.06 -30 a 40 40 0 0 1 56.57 56.56 l -30.07 30.06 a 8 8 0 0 0 11.31 11.32 L 215.6 119.6 a 56 56 0 0 0 0 -79.2 Z", fill: "currentColor" }))))));
+                iconNode("path", { d: "M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" })))));
 });
-PhosphorLinkSimpleIcon.displayName = 'PhosphorLinkSimpleIcon';
+TablerLink2Icon.displayName = 'TablerLink2Icon';
 function useIconAccessibility(ref, createHandle, controllers) {
     const rawHandle = createHandle();
     const raw = useRef(rawHandle);
@@ -239,7 +236,7 @@ function useIconAccessibility(ref, createHandle, controllers) {
     };
 }
 
-  return PhosphorLinkSimpleIcon;
+  return TablerLink2Icon;
 }
 
 function mountIconProgram(createProgram, container, getSize, isControlled, instanceId) {
@@ -536,30 +533,23 @@ function mountIconProgram(createProgram, container, getSize, isControlled, insta
 }
 
 let controller;
-function startAnimation() { return controller?.startAnimation(); }
-function stopAnimation() { return controller?.stopAnimation(); }
-onMounted(() => { controller = mountIconProgram(createIconProgram, root.value, () => props.size, () => props.controlled, instanceId); });
-watch(() => [props.size, props.controlled], () => controller?.update());
-onBeforeUnmount(() => controller?.destroy());
-defineExpose({ startAnimation, stopAnimation });
+export function startAnimation() { return controller?.startAnimation(); }
+export function stopAnimation() { return controller?.stopAnimation(); }
+$effect(() => { size; controlled; controller?.update(); });
+onMount(() => {
+  controller = mountIconProgram(createIconProgram, root, () => size, () => controlled, instanceId);
+  return () => controller?.destroy();
+});
 </script>
 
-<template>
-  <div ref="root" class="">
-    <svg data-icon-node="0" xmlns="http://www.w3.org/2000/svg" :width="size" :height="size" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
-      <g data-icon-node="0.0" >
-        <g data-icon-node="0.0.0" transform="scale(0.09375)">
-          <path data-icon-node="0.0.0.0" d="M 138.34 174.22 l -30.06 30.06 a 40 40 0 1 1 -56.56 -56.57 l 30.05 -30.05 a 8 8 0 0 0 -11.32 -11.32 L 40.4 136.4 a 56 56 0 0 0 79.2 79.2 l 30.06 -30.07 a 8 8 0 0 0 -11.32 -11.31 Z" fill="currentColor" />
-        </g>
-        <g data-icon-node="0.0.1" transform="scale(0.09375)">
-          <path data-icon-node="0.0.1.0" d="M 165.66 90.34 a 8 8 0 0 1 0 11.32 l -64 64 a 8 8 0 0 1 -11.32 -11.32 l 64 -64 A 8 8 0 0 1 165.66 90.34 Z" fill="currentColor" />
-        </g>
-      </g>
-      <g data-icon-node="0.1" >
-        <g data-icon-node="0.1.0" transform="scale(0.09375)">
-          <path data-icon-node="0.1.0.0" d="M 215.6 40.4 a 56 56 0 0 0 -79.2 0 L 106.34 70.45 a 8 8 0 0 0 11.32 11.32 l 30.06 -30 a 40 40 0 0 1 56.57 56.56 l -30.07 30.06 a 8 8 0 0 0 11.31 11.32 L 215.6 119.6 a 56 56 0 0 0 0 -79.2 Z" fill="currentColor" />
-        </g>
-      </g>
-    </svg>
-  </div>
-</template>
+<div  bind:this={root} {...rest} class={["", rest.class].filter(Boolean).join(' ')}>
+  <svg data-icon-node="0" xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+    <g data-icon-node="0.0" >
+      <path data-icon-node="0.0.0" d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" />
+      <path data-icon-node="0.0.1" d="M 9 15 l 6 -6" />
+    </g>
+    <g data-icon-node="0.1" >
+      <path data-icon-node="0.1.0" d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" />
+    </g>
+  </svg>
+</div>

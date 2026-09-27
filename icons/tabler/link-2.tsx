@@ -2,9 +2,9 @@
  * @license
  * MIT License
  * Choreography copyright (c) 2024-2026 pqoqubbw
- * Reference: link-2 @ 072c38b1b04ea738d90a084485ccaad4b890ddca
+ * Reference: https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca
  *
- * Copyright (c) 2023 Phosphor Icons
+ * Copyright (c) 2020-2026 Paweł Kuna
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -47,11 +47,11 @@ import { motion, useAnimation } from 'motion/react';
 
 import { cn } from '@/lib/utils';
 
-export interface PhosphorLinkSimpleIconHandle {
+export interface TablerLink2IconHandle {
   startAnimation: () => void;
   stopAnimation: () => void;
 }
-interface PhosphorLinkSimpleIconProps extends HTMLAttributes<HTMLDivElement> {
+interface TablerLink2IconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
 const LEFT_VARIANTS: Variants = {
@@ -76,113 +76,104 @@ const RIGHT_VARIANTS: Variants = {
     },
   },
 };
-const PhosphorLinkSimpleIcon = forwardRef<
-  PhosphorLinkSimpleIconHandle,
-  PhosphorLinkSimpleIconProps
->(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
-  const controls = useAnimation();
-  const isControlledRef = useRef(false);
-  const {
-    rootRef: iconRootRef,
-    reduceDefinition,
-    ...iconAccessibility
-  } = useIconAccessibility(ref, () => {
-    isControlledRef.current = ref != null;
-    return {
-      startAnimation: () => controls.start('animate'),
-      stopAnimation: () => controls.start('normal'),
-    };
-  }, [controls]);
-  const handleMouseEnter = useCallback(
-    (e: React.MouseEvent<HTMLDivElement>) => {
-      if (isControlledRef.current) {
-        void e;
-      } else {
-        controls.start('animate');
-      }
-    },
-    [controls]
-  );
-  const handleMouseLeave = useCallback(
-    (e: React.MouseEvent<HTMLDivElement>) => {
-      if (isControlledRef.current) {
-        void e;
-      } else {
-        controls.start('normal');
-      }
-    },
-    [controls]
-  );
-  return (
-    <div
-      className={cn(className)}
-      {...props}
-      ref={iconRootRef}
-      onMouseEnter={(event) => {
-        if (!iconAccessibility.controlled && !iconAccessibility.reduced) {
-          handleMouseEnter(event);
+const TablerLink2Icon = forwardRef<TablerLink2IconHandle, TablerLink2IconProps>(
+  ({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
+    const controls = useAnimation();
+    const isControlledRef = useRef(false);
+    const {
+      rootRef: iconRootRef,
+      reduceDefinition,
+      ...iconAccessibility
+    } = useIconAccessibility(ref, () => {
+      isControlledRef.current = ref != null;
+      return {
+        startAnimation: () => controls.start('animate'),
+        stopAnimation: () => controls.start('normal'),
+      };
+    }, [controls]);
+    const handleMouseEnter = useCallback(
+      (e: React.MouseEvent<HTMLDivElement>) => {
+        if (isControlledRef.current) {
+          void e;
+        } else {
+          controls.start('animate');
         }
-        onMouseEnter?.(event);
-      }}
-      onMouseLeave={(event) => {
-        if (!iconAccessibility.controlled) {
-          handleMouseLeave(event);
+      },
+      [controls]
+    );
+    const handleMouseLeave = useCallback(
+      (e: React.MouseEvent<HTMLDivElement>) => {
+        if (isControlledRef.current) {
+          void e;
+        } else {
+          controls.start('normal');
         }
-        onMouseLeave?.(event);
-      }}
-      onFocus={(event) => {
-        if (!iconAccessibility.controlled && !iconAccessibility.reduced) {
-          iconAccessibility.startAnimation();
-        }
-        props.onFocus?.(event);
-      }}
-      onBlur={(event) => {
-        if (!iconAccessibility.controlled) {
-          iconAccessibility.stopAnimation();
-        }
-        props.onBlur?.(event);
-      }}
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width={size}
-        height={size}
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        aria-hidden="true"
-        focusable="false"
+      },
+      [controls]
+    );
+    return (
+      <div
+        className={cn(className)}
+        {...props}
+        ref={iconRootRef}
+        onMouseEnter={(event) => {
+          if (!iconAccessibility.controlled && !iconAccessibility.reduced) {
+            handleMouseEnter(event);
+          }
+          onMouseEnter?.(event);
+        }}
+        onMouseLeave={(event) => {
+          if (!iconAccessibility.controlled) {
+            handleMouseLeave(event);
+          }
+          onMouseLeave?.(event);
+        }}
+        onFocus={(event) => {
+          if (!iconAccessibility.controlled && !iconAccessibility.reduced) {
+            iconAccessibility.startAnimation();
+          }
+          props.onFocus?.(event);
+        }}
+        onBlur={(event) => {
+          if (!iconAccessibility.controlled) {
+            iconAccessibility.stopAnimation();
+          }
+          props.onBlur?.(event);
+        }}
       >
-        <motion.g animate={reduceDefinition(controls)} variants={LEFT_VARIANTS}>
-          <g transform="scale(0.09375)">
-            <path
-              d="M 138.34 174.22 l -30.06 30.06 a 40 40 0 1 1 -56.56 -56.57 l 30.05 -30.05 a 8 8 0 0 0 -11.32 -11.32 L 40.4 136.4 a 56 56 0 0 0 79.2 79.2 l 30.06 -30.07 a 8 8 0 0 0 -11.32 -11.31 Z"
-              fill="currentColor"
-            />
-          </g>
-          <g transform="scale(0.09375)">
-            <path
-              d="M 165.66 90.34 a 8 8 0 0 1 0 11.32 l -64 64 a 8 8 0 0 1 -11.32 -11.32 l 64 -64 A 8 8 0 0 1 165.66 90.34 Z"
-              fill="currentColor"
-            />
-          </g>
-        </motion.g>
-        <motion.g
-          animate={reduceDefinition(controls)}
-          variants={RIGHT_VARIANTS}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width={size}
+          height={size}
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-hidden="true"
+          focusable="false"
         >
-          <g transform="scale(0.09375)">
-            <path
-              d="M 215.6 40.4 a 56 56 0 0 0 -79.2 0 L 106.34 70.45 a 8 8 0 0 0 11.32 11.32 l 30.06 -30 a 40 40 0 0 1 56.57 56.56 l -30.07 30.06 a 8 8 0 0 0 11.31 11.32 L 215.6 119.6 a 56 56 0 0 0 0 -79.2 Z"
-              fill="currentColor"
-            />
-          </g>
-        </motion.g>
-      </svg>
-    </div>
-  );
-});
-PhosphorLinkSimpleIcon.displayName = 'PhosphorLinkSimpleIcon';
-export { PhosphorLinkSimpleIcon };
+          <motion.g
+            animate={reduceDefinition(controls)}
+            variants={LEFT_VARIANTS}
+          >
+            <path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" />
+            <path d="M 9 15 l 6 -6" />
+          </motion.g>
+          <motion.g
+            animate={reduceDefinition(controls)}
+            variants={RIGHT_VARIANTS}
+          >
+            <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" />
+          </motion.g>
+        </svg>
+      </div>
+    );
+  }
+);
+TablerLink2Icon.displayName = 'TablerLink2Icon';
+export { TablerLink2Icon };
 
 type IconAccessibilityHandle = {
   startAnimation: () => unknown;
