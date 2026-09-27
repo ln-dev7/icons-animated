@@ -1,6 +1,8 @@
 /**
  * @license
  * MIT License
+ * Choreography copyright (c) 2024-2026 pqoqubbw
+ * Reference: https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca
  *
  * Copyright (c) 2020-2026 Paweł Kuna
  *
@@ -24,16 +26,24 @@
  */
 'use client';
 
+import type {
+  LegacyAnimationControls,
+  ResolvedValues,
+  VisualElement,
+} from 'motion';
 import type { Variants } from 'motion/react';
-import type { HTMLAttributes } from 'react';
+import type { ForwardedRef, HTMLAttributes } from 'react';
 import {
   forwardRef,
   useCallback,
   useEffect,
   useImperativeHandle,
+  useMemo,
   useRef,
+  useState,
 } from 'react';
-import { motion, useAnimation, useReducedMotion } from 'motion/react';
+import { getDefaultValueType, setTarget, visualElementStore } from 'motion';
+import { motion, useAnimation } from 'motion/react';
 
 import { cn } from '@/lib/utils';
 
@@ -44,140 +54,296 @@ export interface TablerRubberStampIconHandle {
 interface TablerRubberStampIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
-
-const ICON_VARIANTS: Variants = {
+const STAMP_VARIANTS: Variants = {
   normal: {
-    x: 0,
-    y: 0,
-    rotate: 0,
-    scale: 1,
-    scaleX: 1,
-    scaleY: 1,
-    opacity: 1,
-    transition: { duration: 0.18, ease: 'easeOut' },
+    translateY: 0,
+    transition: { duration: 0.4, ease: [0.34, 1.56, 0.64, 1] },
   },
   animate: {
-    scale: [1, 0.96, 1],
-    transition: { duration: 0.75, ease: 'easeInOut' },
-  },
-};
-
-const ELEMENT_VARIANTS: Variants = {
-  normal: {
-    pathLength: 1,
-    opacity: 1,
-    scaleY: 1,
-    y: 0,
-    transition: { duration: 0.18 },
-  },
-  animate: (index: number) => ({
-    ...{ pathLength: [0.3, 1], opacity: [0.45, 1] },
+    translateY: [0, 4, 4, -1, 0],
     transition: {
-      duration: 0.6,
-      delay: Math.min(index * 0.055, 0.22),
+      duration: 0.8,
       ease: 'easeInOut',
+      times: [0, 0.35, 0.65, 0.82, 1],
     },
-  }),
+  },
 };
-
+const INK_VARIANTS: Variants = {
+  normal: {
+    opacity: 1,
+    scaleX: 1,
+    transition: { duration: 0.4 },
+  },
+  animate: {
+    opacity: [1, 0.4, 1.4, 1],
+    scaleX: [1, 0.85, 0.85, 1],
+    transition: {
+      duration: 0.8,
+      ease: 'easeInOut',
+      times: [0, 0.35, 0.65, 1],
+    },
+  },
+};
 const TablerRubberStampIcon = forwardRef<
   TablerRubberStampIconHandle,
   TablerRubberStampIconProps
->(
-  (
-    {
-      onMouseEnter,
-      onMouseLeave,
-      onFocus,
-      onBlur,
-      className,
-      size = 28,
-      ...props
-    },
-    ref
-  ) => {
-    const controls = useAnimation();
-    const reducedMotion = useReducedMotion();
-    const sequence = useRef(0);
-    const startAnimation = useCallback(() => {
-      const current = ++sequence.current;
-      controls.stop();
-      controls.set('normal');
-      if (reducedMotion) return;
-      void controls.start('animate').then(() => {
-        if (sequence.current === current) controls.set('normal');
-      });
-    }, [controls, reducedMotion]);
-    const stopAnimation = useCallback(() => {
-      sequence.current += 1;
-      void controls.start('normal');
-    }, [controls]);
-    useImperativeHandle(ref, () => ({ startAnimation, stopAnimation }), [
-      startAnimation,
-      stopAnimation,
-    ]);
-    useEffect(() => {
-      if (reducedMotion) {
-        sequence.current += 1;
-        controls.set('normal');
+>(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
+  const controls = useAnimation();
+  const isControlledRef = useRef(false);
+  const {
+    rootRef: iconRootRef,
+    reduceDefinition,
+    ...iconAccessibility
+  } = useIconAccessibility(ref, () => {
+    isControlledRef.current = ref != null;
+    return {
+      startAnimation: () => controls.start('animate'),
+      stopAnimation: () => controls.start('normal'),
+    };
+  }, [controls]);
+  const handleMouseEnter = useCallback(
+    (e: React.MouseEvent<HTMLDivElement>) => {
+      if (isControlledRef.current) {
+        void e;
+      } else {
+        controls.start('animate');
       }
-      return () => {
-        sequence.current += 1;
-        controls.stop();
-      };
-    }, [controls, reducedMotion]);
-    return (
-      <div
-        {...props}
-        className={cn(className)}
-        onMouseEnter={(event) => {
-          if (!ref) startAnimation();
-          onMouseEnter?.(event);
-        }}
-        onMouseLeave={(event) => {
-          if (!ref) stopAnimation();
-          onMouseLeave?.(event);
-        }}
-        onFocus={(event) => {
-          if (!ref) startAnimation();
-          onFocus?.(event);
-        }}
-        onBlur={(event) => {
-          if (!ref) stopAnimation();
-          onBlur?.(event);
-        }}
+    },
+    [controls]
+  );
+  const handleMouseLeave = useCallback(
+    (e: React.MouseEvent<HTMLDivElement>) => {
+      if (isControlledRef.current) {
+        void e;
+      } else {
+        controls.start('normal');
+      }
+    },
+    [controls]
+  );
+  return (
+    <div
+      className={cn(className)}
+      {...props}
+      ref={iconRootRef}
+      onMouseEnter={(event) => {
+        if (!iconAccessibility.controlled && !iconAccessibility.reduced) {
+          handleMouseEnter(event);
+        }
+        onMouseEnter?.(event);
+      }}
+      onMouseLeave={(event) => {
+        if (!iconAccessibility.controlled) {
+          handleMouseLeave(event);
+        }
+        onMouseLeave?.(event);
+      }}
+      onFocus={(event) => {
+        if (!iconAccessibility.controlled && !iconAccessibility.reduced) {
+          iconAccessibility.startAnimation();
+        }
+        props.onFocus?.(event);
+      }}
+      onBlur={(event) => {
+        if (!iconAccessibility.controlled) {
+          iconAccessibility.stopAnimation();
+        }
+        props.onBlur?.(event);
+      }}
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        aria-hidden="true"
+        focusable="false"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width={size}
-          height={size}
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          overflow="visible"
-          aria-hidden="true"
-          focusable="false"
-        >
-          <motion.g
-            initial="normal"
-            animate={controls}
-            variants={ICON_VARIANTS}
-            style={{ transformOrigin: '12px 12px' }}
-          >
-            <motion.path
-              d="M21 17.85h-18c0 -4.05 1.421 -4.05 3.79 -4.05c5.21 0 1.21 -4.59 1.21 -6.8a4 4 0 1 1 8 0c0 2.21 -4 6.8 1.21 6.8c2.369 0 3.79 0 3.79 4.05"
-              variants={ELEMENT_VARIANTS}
-              custom={0}
-            />
-            <motion.path d="M5 21h14" variants={ELEMENT_VARIANTS} custom={1} />
-          </motion.g>
-        </svg>
-      </div>
-    );
-  }
-);
+        <motion.path
+          d=""
+          display="none"
+          animate={reduceDefinition(controls)}
+          initial="normal"
+          variants={STAMP_VARIANTS}
+        />
+        <motion.path
+          d="M21 17.85h-18c0 -4.05 1.421 -4.05 3.79 -4.05c5.21 0 1.21 -4.59 1.21 -6.8a4 4 0 1 1 8 0c0 2.21 -4 6.8 1.21 6.8c2.369 0 3.79 0 3.79 4.05"
+          animate={reduceDefinition(controls)}
+          initial="normal"
+          variants={STAMP_VARIANTS}
+        />
+        <motion.path
+          d="M5 21h14"
+          animate={reduceDefinition(controls)}
+          initial="normal"
+          style={{ transformOrigin: '12px 22px' }}
+          variants={INK_VARIANTS}
+        />
+      </svg>
+    </div>
+  );
+});
 TablerRubberStampIcon.displayName = 'TablerRubberStampIcon';
 export { TablerRubberStampIcon };
+
+type IconAccessibilityHandle = {
+  startAnimation: () => unknown;
+  stopAnimation: () => unknown;
+};
+
+type IconAccessibilitySnapshot = {
+  visual: VisualElement;
+  values: ResolvedValues;
+  attributes: Record<string, string>;
+};
+
+function useIconAccessibility(
+  ref: ForwardedRef<IconAccessibilityHandle>,
+  createHandle: () => IconAccessibilityHandle,
+  controllers: LegacyAnimationControls[]
+) {
+  const rawHandle = createHandle();
+  const raw = useRef(rawHandle);
+  useEffect(() => {
+    raw.current = rawHandle;
+  }, [rawHandle]);
+  const controls = useRef(controllers);
+  const rootRef = useRef<HTMLDivElement | null>(null);
+  const preference = useRef(false);
+  const mounted = useRef(true);
+  const [reduced, setReduced] = useState(false);
+  const api = useMemo(
+    () => ({
+      startAnimation() {
+        if (
+          mounted.current &&
+          !preference.current &&
+          !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        ) {
+          void raw.current.startAnimation();
+        }
+      },
+      stopAnimation() {
+        if (mounted.current) void raw.current.stopAnimation();
+      },
+    }),
+    []
+  );
+  useImperativeHandle(ref, () => api, [api]);
+
+  useEffect(() => {
+    mounted.current = true;
+    const media = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const snapshots: IconAccessibilitySnapshot[] = [];
+    rootRef.current
+      ?.querySelectorAll<SVGElement>('svg, svg *')
+      .forEach((element) => {
+        const visual = visualElementStore.get(element);
+        if (visual)
+          snapshots.push({
+            visual,
+            values: { ...visual.latestValues },
+            attributes: Object.fromEntries(
+              [...element.attributes].map((attribute) => [
+                attribute.name,
+                attribute.value,
+              ])
+            ),
+          });
+      });
+    const restore = () => {
+      for (const snapshot of snapshots) {
+        const { visual, values, attributes } = snapshot;
+        visual.values.forEach((value) => value.stop());
+        const props = visual.getProps() as unknown as {
+          [key: string]: unknown;
+          style?: Record<string, unknown>;
+        };
+        const reset: Record<string, string | number> = {};
+        visual.values.forEach((_motionValue, key) => {
+          const attribute = key.replace(
+            /[A-Z]/g,
+            (letter) => '-' + letter.toLowerCase()
+          );
+          const defaults: Record<string, number> = {
+            opacity: 1,
+            pathLength: 1,
+            pathSpacing: 1,
+            pathOffset: 0,
+            strokeDashoffset: 0,
+          };
+          const value =
+            values[key] ??
+            props.style?.[key] ??
+            props[key] ??
+            getDefaultValueType(key)?.default ??
+            defaults[key] ??
+            attributes[attribute];
+          if (typeof value === 'number' || typeof value === 'string')
+            reset[key] = value;
+        });
+        setTarget(visual, reset);
+        visual.render();
+      }
+    };
+    const activeControls = controls.current;
+    const originals = activeControls.map((control) => {
+      const original = control.start;
+      control.start = (definition, transition) => {
+        if (!mounted.current) return new Promise<never>(() => {});
+        if (preference.current) {
+          control.set(definition);
+          return Promise.resolve();
+        }
+        return original(definition, transition);
+      };
+      return original;
+    });
+    const change = () => {
+      preference.current = media.matches;
+      setReduced(media.matches);
+      if (media.matches) {
+        void raw.current.stopAnimation();
+        activeControls.forEach((control) => control.stop());
+        restore();
+      }
+    };
+    change();
+    media.addEventListener('change', change);
+    return () => {
+      mounted.current = false;
+      media.removeEventListener('change', change);
+      activeControls.forEach((control, index) => {
+        control.stop();
+        control.start = originals[index];
+      });
+    };
+  }, []);
+
+  return {
+    ...api,
+    rootRef,
+    controlled: ref != null,
+    reduced,
+    reduceDefinition<T>(definition: T): T {
+      if (
+        reduced &&
+        definition &&
+        typeof definition === 'object' &&
+        !Array.isArray(definition) &&
+        !('start' in definition)
+      ) {
+        return {
+          ...definition,
+          transition: { type: false, duration: 0, delay: 0, repeat: 0 },
+        } as T;
+      }
+      return definition;
+    },
+  };
+}
