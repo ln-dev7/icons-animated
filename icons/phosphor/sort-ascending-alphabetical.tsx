@@ -2,9 +2,9 @@
  * @license
  * MIT License
  * Choreography copyright (c) 2024-2026 pqoqubbw
- * Reference: https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca
+ * Reference: arrow-down-a-z @ 072c38b1b04ea738d90a084485ccaad4b890ddca
  *
- * Copyright (c) 2025 Hugeicons
+ * Copyright (c) 2023 Phosphor Icons
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -47,11 +47,11 @@ import { motion, useAnimation } from 'motion/react';
 
 import { cn } from '@/lib/utils';
 
-export interface HugeiconsArrowDownAzIconHandle {
+export interface PhosphorSortAscendingAlphabeticalIconHandle {
   startAnimation: () => void;
   stopAnimation: () => void;
 }
-interface HugeiconsArrowDownAzIconProps extends HTMLAttributes<HTMLDivElement> {
+interface PhosphorSortAscendingAlphabeticalIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
 const SWAP_TRANSITION: Transition = {
@@ -67,9 +67,9 @@ const SWAP_VARIANTS: Variants = {
     translateY: custom * 10,
   }),
 };
-const HugeiconsArrowDownAzIcon = forwardRef<
-  HugeiconsArrowDownAzIconHandle,
-  HugeiconsArrowDownAzIconProps
+const PhosphorSortAscendingAlphabeticalIcon = forwardRef<
+  PhosphorSortAscendingAlphabeticalIconHandle,
+  PhosphorSortAscendingAlphabeticalIconProps
 >(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
   const controls = useAnimation();
   const isControlledRef = useRef(false);
@@ -139,24 +139,17 @@ const HugeiconsArrowDownAzIcon = forwardRef<
         width={size}
         height={size}
         viewBox="0 0 24 24"
-        fill="none"
+        fill="currentColor"
         aria-hidden="true"
         focusable="false"
       >
-        <path
-          d="M4 16C4 16 6.94596 20 8.00003 20C9.05411 20 12 16 12 16"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-        />
-        <path
-          d="M8 19V4"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-        />
+        <g transform="scale(0.09375)">
+          <path
+            d="M 229.66 162.34 a 8 8 0 0 0 -11.32 0 L 192 188.69 V 112 a 8 8 0 0 0 -16 0 v 76.69 l -26.34 -26.35 a 8 8 0 0 0 -11.32 11.32 l 40 40 a 8 8 0 0 0 11.32 0 l 40 -40 A 8 8 0 0 0 229.66 162.34 Z"
+            fill="currentColor"
+          />
+        </g>
+
         <motion.g
           animate={reduceDefinition(controls)}
           custom={1}
@@ -164,39 +157,38 @@ const HugeiconsArrowDownAzIcon = forwardRef<
           transition={SWAP_TRANSITION}
           variants={SWAP_VARIANTS}
         >
-          <path
-            d="M16 8H20"
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="1.5"
-          />
-          <path
-            d="M20 10V6C20 4.89543 19.1046 4 18 4C16.8954 4 16 4.89543 16 6V10"
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="1.5"
-          />
+          <g transform="scale(0.09375)">
+            <path
+              d="M 48 72 H 184 a 8 8 0 0 0 0 -16 H 48 a 8 8 0 0 0 0 16 Z"
+              fill="currentColor"
+            />
+          </g>
         </motion.g>
-        <motion.path
-          d="M16 14H18.365C19.2886 14 19.7504 14 19.8853 14.2879C20.0201 14.5758 19.7245 14.9306 19.1332 15.6402L16.8668 18.3598C16.2755 19.0694 15.9799 19.4242 16.1147 19.7121C16.2496 20 16.7114 20 17.635 20H20"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
+        <motion.g
           animate={reduceDefinition(controls)}
           custom={-1}
           initial="normal"
           transition={SWAP_TRANSITION}
           variants={SWAP_VARIANTS}
-        />
+        >
+          <g transform="scale(0.09375)">
+            <path
+              d="M 128 128 a 8 8 0 0 1 -8 8 H 48 a 8 8 0 0 1 0 -16 h 72 A 8 8 0 0 1 128 128 Z"
+              fill="currentColor"
+            />
+            <path
+              d="M 104 184 H 48 a 8 8 0 0 0 0 16 h 56 a 8 8 0 0 0 0 -16 Z"
+              fill="currentColor"
+            />
+          </g>
+        </motion.g>
       </svg>
     </div>
   );
 });
-HugeiconsArrowDownAzIcon.displayName = 'HugeiconsArrowDownAzIcon';
-export { HugeiconsArrowDownAzIcon };
+PhosphorSortAscendingAlphabeticalIcon.displayName =
+  'PhosphorSortAscendingAlphabeticalIcon';
+export { PhosphorSortAscendingAlphabeticalIcon };
 
 type IconAccessibilityHandle = {
   startAnimation: () => unknown;
