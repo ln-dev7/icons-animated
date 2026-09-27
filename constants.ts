@@ -6,6 +6,7 @@ const LINK = {
   PHOSPHOR: 'https://phosphoricons.com',
   TABLER: 'https://tabler.io/icons',
   HUGEICONS: 'https://hugeicons.com',
+  HEROICONS: 'https://heroicons.com',
   MOTION: 'https://motion.dev',
 };
 
@@ -21,6 +22,7 @@ const ICON_LIBRARY = {
   TABLER: 'tabler',
   PHOSPHOR: 'phosphor',
   HUGEICONS: 'hugeicons',
+  HEROICONS: 'heroicons',
 } as const;
 
 type IconLibrary = (typeof ICON_LIBRARY)[keyof typeof ICON_LIBRARY];
@@ -37,6 +39,10 @@ const LIBRARY_INFO = {
   [ICON_LIBRARY.PHOSPHOR]: {
     name: 'Phosphor',
     link: LINK.PHOSPHOR,
+  },
+  [ICON_LIBRARY.HEROICONS]: {
+    name: 'Heroicons',
+    link: LINK.HEROICONS,
   },
   [ICON_LIBRARY.LUCIDE]: {
     name: 'Lucide',

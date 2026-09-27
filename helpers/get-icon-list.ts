@@ -24,6 +24,8 @@ const loaders: Record<SelectableLibrary, () => Promise<IconList>> = {
     import('@/icons/tabler').then((module) => module.TABLER_ICON_LIST),
   phosphor: () =>
     import('@/icons/phosphor').then((module) => module.PHOSPHOR_ICON_LIST),
+  heroicons: () =>
+    import('@/icons/heroicons').then((module) => module.HEROICONS_ICON_LIST),
 };
 
 const catalogs = new Map<SelectableLibrary, IconList>();
