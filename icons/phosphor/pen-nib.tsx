@@ -1,6 +1,8 @@
 /**
  * @license
  * MIT License
+ * Choreography copyright (c) 2024-2026 pqoqubbw
+ * Reference: pen-tool @ 072c38b1b04ea738d90a084485ccaad4b890ddca
  *
  * Copyright (c) 2023 Phosphor Icons
  *
@@ -24,16 +26,24 @@
  */
 'use client';
 
+import type {
+  LegacyAnimationControls,
+  ResolvedValues,
+  VisualElement,
+} from 'motion';
 import type { Variants } from 'motion/react';
-import type { HTMLAttributes } from 'react';
+import type { ForwardedRef, HTMLAttributes } from 'react';
 import {
   forwardRef,
   useCallback,
   useEffect,
   useImperativeHandle,
+  useMemo,
   useRef,
+  useState,
 } from 'react';
-import { motion, useAnimation, useReducedMotion } from 'motion/react';
+import { getDefaultValueType, setTarget, visualElementStore } from 'motion';
+import { motion, useAnimation } from 'motion/react';
 
 import { cn } from '@/lib/utils';
 
@@ -44,114 +54,276 @@ export interface PhosphorPenNibIconHandle {
 interface PhosphorPenNibIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
-
-const ICON_VARIANTS: Variants = {
-  normal: {
-    x: 0,
-    y: 0,
-    rotate: 0,
-    scale: 1,
-    scaleX: 1,
-    scaleY: 1,
-    opacity: 1,
-    transition: { duration: 0.18, ease: 'easeOut' },
-  },
+const SVG_VARIANTS: Variants = {
+  normal: { rotate: 0, translateX: 0, translateY: 0 },
   animate: {
-    x: [0, 7.4667, -7.4667, 6.4, 0],
-    rotate: [0, -5, -5, 0, 0],
-    transition: { duration: 0.7, ease: 'easeInOut' },
+    rotate: [0, 0, 8, -3, 8, 0],
+    translateY: [0, 2, 0, -1, 0],
   },
 };
-
+const PATH_VARIANTS: Variants = {
+  normal: { pathLength: 1, opacity: 1, pathOffset: 0 },
+  animate: {
+    pathLength: [0, 0, 1],
+    opacity: [0, 1],
+    pathOffset: [0, 1, 0],
+  },
+};
 const PhosphorPenNibIcon = forwardRef<
   PhosphorPenNibIconHandle,
   PhosphorPenNibIconProps
->(
-  (
-    {
-      onMouseEnter,
-      onMouseLeave,
-      onFocus,
-      onBlur,
-      className,
-      size = 28,
-      ...props
-    },
-    ref
-  ) => {
-    const controls = useAnimation();
-    const reducedMotion = useReducedMotion();
-    const sequence = useRef(0);
-    const startAnimation = useCallback(() => {
-      const current = ++sequence.current;
-      controls.stop();
-      controls.set('normal');
-      if (reducedMotion) return;
-      void controls.start('animate').then(() => {
-        if (sequence.current === current) controls.set('normal');
-      });
-    }, [controls, reducedMotion]);
-    const stopAnimation = useCallback(() => {
-      sequence.current += 1;
-      void controls.start('normal');
-    }, [controls]);
-    useImperativeHandle(ref, () => ({ startAnimation, stopAnimation }), [
-      startAnimation,
-      stopAnimation,
-    ]);
-    useEffect(() => {
-      if (reducedMotion) {
-        sequence.current += 1;
-        controls.set('normal');
+>(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
+  const controls = useAnimation();
+  const isControlledRef = useRef(false);
+  const {
+    rootRef: iconRootRef,
+    reduceDefinition,
+    ...iconAccessibility
+  } = useIconAccessibility(ref, () => {
+    isControlledRef.current = ref != null;
+    return {
+      startAnimation: () => controls.start('animate'),
+      stopAnimation: () => controls.start('normal'),
+    };
+  }, [controls]);
+  const handleMouseEnter = useCallback(
+    (e: React.MouseEvent<HTMLDivElement>) => {
+      if (isControlledRef.current) {
+        void e;
+      } else {
+        controls.start('animate');
       }
-      return () => {
-        sequence.current += 1;
-        controls.stop();
-      };
-    }, [controls, reducedMotion]);
-    return (
-      <div
-        {...props}
-        className={cn(className)}
-        onMouseEnter={(event) => {
-          if (!ref) startAnimation();
-          onMouseEnter?.(event);
+    },
+    [controls]
+  );
+  const handleMouseLeave = useCallback(
+    (e: React.MouseEvent<HTMLDivElement>) => {
+      if (isControlledRef.current) {
+        void e;
+      } else {
+        controls.start('normal');
+      }
+    },
+    [controls]
+  );
+  return (
+    <div
+      className={cn(className)}
+      {...props}
+      ref={iconRootRef}
+      onMouseEnter={(event) => {
+        if (!iconAccessibility.controlled && !iconAccessibility.reduced) {
+          handleMouseEnter(event);
+        }
+        onMouseEnter?.(event);
+      }}
+      onMouseLeave={(event) => {
+        if (!iconAccessibility.controlled) {
+          handleMouseLeave(event);
+        }
+        onMouseLeave?.(event);
+      }}
+      onFocus={(event) => {
+        if (!iconAccessibility.controlled && !iconAccessibility.reduced) {
+          iconAccessibility.startAnimation();
+        }
+        props.onFocus?.(event);
+      }}
+      onBlur={(event) => {
+        if (!iconAccessibility.controlled) {
+          iconAccessibility.stopAnimation();
+        }
+        props.onBlur?.(event);
+      }}
+    >
+      <motion.svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        aria-hidden="true"
+        focusable="false"
+        animate={reduceDefinition(controls)}
+        transition={{
+          duration: 1,
         }}
-        onMouseLeave={(event) => {
-          if (!ref) stopAnimation();
-          onMouseLeave?.(event);
-        }}
-        onFocus={(event) => {
-          if (!ref) startAnimation();
-          onFocus?.(event);
-        }}
-        onBlur={(event) => {
-          if (!ref) stopAnimation();
-          onBlur?.(event);
-        }}
+        variants={SVG_VARIANTS}
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width={size}
-          height={size}
-          viewBox="0 0 256 256"
-          fill="currentColor"
-          overflow="visible"
-          aria-hidden="true"
-          focusable="false"
-        >
-          <motion.g
-            initial="normal"
-            animate={controls}
-            variants={ICON_VARIANTS}
-            style={{ transformOrigin: '128px 128px' }}
-          >
-            <path d="M248,92.68a15.86,15.86,0,0,0-4.69-11.31L174.63,12.68a16,16,0,0,0-22.63,0L123.57,41.11l-58,21.77A16.06,16.06,0,0,0,55.35,75.23L32.11,214.68A8,8,0,0,0,40,224a8.4,8.4,0,0,0,1.32-.11l139.44-23.24a16,16,0,0,0,12.35-10.17l21.77-58L243.31,104A15.87,15.87,0,0,0,248,92.68Zm-69.87,92.19L63.32,204l47.37-47.37a28,28,0,1,0-11.32-11.32L52,192.7,71.13,77.86,126,57.29,198.7,130ZM112,132a12,12,0,1,1,12,12A12,12,0,0,1,112,132Zm96-15.32L139.31,48l24-24L232,92.68Z" />
-          </motion.g>
-        </svg>
-      </div>
-    );
-  }
-);
+        <g transform="scale(0.09375)">
+          <path
+            d="M 248 92.68 a 15.86 15.86 0 0 0 -4.69 -11.31 L 174.63 12.68 a 16 16 0 0 0 -22.63 0 L 123.57 41.11 l -58 21.77 A 16.06 16.06 0 0 0 55.35 75.23 L 32.11 214.68 A 8 8 0 0 0 40 224 a 8.4 8.4 0 0 0 1.32 -0.11 l 139.44 -23.24 a 16 16 0 0 0 12.35 -10.17 l 21.77 -58 L 243.31 104 A 15.87 15.87 0 0 0 248 92.68 Z M 178.13 184.87 L 63.32 204 l 47.37 -47.37 a 28 28 0 1 0 -11.32 -11.32 L 52 192.7 L 71.13 77.86 L 126 57.29 L 198.7 130 Z M 112 132 a 12 12 0 1 1 12 12 A 12 12 0 0 1 112 132 Z M 208 116.68 L 139.31 48 l 24 -24 L 232 92.68 Z"
+            fill="currentColor"
+          />
+        </g>
+        <motion.g
+          display="none"
+          animate={reduceDefinition(controls)}
+          transition={{
+            duration: 0.8,
+          }}
+          variants={PATH_VARIANTS}
+        />
+      </motion.svg>
+    </div>
+  );
+});
 PhosphorPenNibIcon.displayName = 'PhosphorPenNibIcon';
 export { PhosphorPenNibIcon };
+
+type IconAccessibilityHandle = {
+  startAnimation: () => unknown;
+  stopAnimation: () => unknown;
+};
+
+type IconAccessibilitySnapshot = {
+  visual: VisualElement;
+  values: ResolvedValues;
+  attributes: Record<string, string>;
+};
+
+function useIconAccessibility(
+  ref: ForwardedRef<IconAccessibilityHandle>,
+  createHandle: () => IconAccessibilityHandle,
+  controllers: LegacyAnimationControls[]
+) {
+  const rawHandle = createHandle();
+  const raw = useRef(rawHandle);
+  useEffect(() => {
+    raw.current = rawHandle;
+  }, [rawHandle]);
+  const controls = useRef(controllers);
+  const rootRef = useRef<HTMLDivElement | null>(null);
+  const preference = useRef(false);
+  const mounted = useRef(true);
+  const [reduced, setReduced] = useState(false);
+  const api = useMemo(
+    () => ({
+      startAnimation() {
+        if (
+          mounted.current &&
+          !preference.current &&
+          !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        ) {
+          void raw.current.startAnimation();
+        }
+      },
+      stopAnimation() {
+        if (mounted.current) void raw.current.stopAnimation();
+      },
+    }),
+    []
+  );
+  useImperativeHandle(ref, () => api, [api]);
+
+  useEffect(() => {
+    mounted.current = true;
+    const media = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const snapshots: IconAccessibilitySnapshot[] = [];
+    rootRef.current
+      ?.querySelectorAll<SVGElement>('svg, svg *')
+      .forEach((element) => {
+        const visual = visualElementStore.get(element);
+        if (visual)
+          snapshots.push({
+            visual,
+            values: { ...visual.latestValues },
+            attributes: Object.fromEntries(
+              [...element.attributes].map((attribute) => [
+                attribute.name,
+                attribute.value,
+              ])
+            ),
+          });
+      });
+    const restore = () => {
+      for (const snapshot of snapshots) {
+        const { visual, values, attributes } = snapshot;
+        visual.values.forEach((value) => value.stop());
+        const props = visual.getProps() as unknown as {
+          [key: string]: unknown;
+          style?: Record<string, unknown>;
+        };
+        const reset: Record<string, string | number> = {};
+        visual.values.forEach((_motionValue, key) => {
+          const attribute = key.replace(
+            /[A-Z]/g,
+            (letter) => '-' + letter.toLowerCase()
+          );
+          const defaults: Record<string, number> = {
+            opacity: 1,
+            pathLength: 1,
+            pathSpacing: 1,
+            pathOffset: 0,
+            strokeDashoffset: 0,
+          };
+          const value =
+            values[key] ??
+            props.style?.[key] ??
+            props[key] ??
+            getDefaultValueType(key)?.default ??
+            defaults[key] ??
+            attributes[attribute];
+          if (typeof value === 'number' || typeof value === 'string')
+            reset[key] = value;
+        });
+        setTarget(visual, reset);
+        visual.render();
+      }
+    };
+    const activeControls = controls.current;
+    const originals = activeControls.map((control) => {
+      const original = control.start;
+      control.start = (definition, transition) => {
+        if (!mounted.current) return new Promise<never>(() => {});
+        if (preference.current) {
+          control.set(definition);
+          return Promise.resolve();
+        }
+        return original(definition, transition);
+      };
+      return original;
+    });
+    const change = () => {
+      preference.current = media.matches;
+      setReduced(media.matches);
+      if (media.matches) {
+        void raw.current.stopAnimation();
+        activeControls.forEach((control) => control.stop());
+        restore();
+      }
+    };
+    change();
+    media.addEventListener('change', change);
+    return () => {
+      mounted.current = false;
+      media.removeEventListener('change', change);
+      activeControls.forEach((control, index) => {
+        control.stop();
+        control.start = originals[index];
+      });
+    };
+  }, []);
+
+  return {
+    ...api,
+    rootRef,
+    controlled: ref != null,
+    reduced,
+    reduceDefinition<T>(definition: T): T {
+      if (
+        reduced &&
+        definition &&
+        typeof definition === 'object' &&
+        !Array.isArray(definition) &&
+        !('start' in definition)
+      ) {
+        return {
+          ...definition,
+          transition: { type: false, duration: 0, delay: 0, repeat: 0 },
+        } as T;
+      }
+      return definition;
+    },
+  };
+}
