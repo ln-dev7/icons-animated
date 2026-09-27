@@ -1,4 +1,4 @@
-<script lang="ts">
+<script setup lang="ts">
 // @ts-nocheck
 /**
  * @license
@@ -6,7 +6,7 @@
  * Choreography copyright (c) 2024-2026 pqoqubbw
  * Reference: https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca
  *
- * Copyright (c) 2025 Hugeicons
+ * Copyright (c) 2020-2026 Paweł Kuna
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -27,13 +27,13 @@
  * SOFTWARE.
  */
 import { SVGVisualElement, animateVisualElement, setTarget, scrapeSVGMotionValuesFromProps, resolveMotionValue, resolveVariantFromProps, isControllingVariants, isVariantNode, getDefaultValueType, visualElementStore, camelCaseAttributes, cubicBezier, easeInOut, easeOut, easeIn } from 'motion';
-import { onMount } from 'svelte';
-let { size = 28, controlled = false, ...rest } = $props();
-let root;
-const instanceId = $props.id();
+import { onMounted, onBeforeUnmount, shallowRef, useId, watch } from 'vue';
+const props = defineProps({ size: { type: Number, default: 28 }, controlled: { type: Boolean, default: false } });
+const root = shallowRef();
+const instanceId = useId();
 function createIconProgram(api) {
   const { Fragment, cn, forwardRef, getDefaultValueType, iconNode, motion, setTarget, useAnimation, useCallback, useEffect, useImperativeHandle, useMemo, useRef, useState, visualElementStore } = api;
-const HugeiconsLockKeyholeOpenIcon = forwardRef(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
+const TablerLockKeyholeOpenIcon = forwardRef(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
     const controls = useAnimation();
     const isControlledRef = useRef(false);
     const { rootRef: iconRootRef, reduceDefinition, ...iconAccessibility } = useIconAccessibility(ref, () => {
@@ -80,7 +80,7 @@ const HugeiconsLockKeyholeOpenIcon = forwardRef(({ onMouseEnter, onMouseLeave, c
             }
             props.onBlur?.(event);
         } },
-        iconNode(motion.svg, { xmlns: "http://www.w3.org/2000/svg", width: size, height: size, viewBox: "0 0 24 24", fill: "none", "aria-hidden": "true", focusable: "false", animate: reduceDefinition(controls), initial: "normal", transition: {
+        iconNode(motion.svg, { xmlns: "http://www.w3.org/2000/svg", width: size, height: size, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": "true", focusable: "false", animate: reduceDefinition(controls), initial: "normal", transition: {
                 duration: 1,
                 ease: [0.4, 0, 0.2, 1],
             }, variants: {
@@ -93,21 +93,21 @@ const HugeiconsLockKeyholeOpenIcon = forwardRef(({ onMouseEnter, onMouseLeave, c
                     scale: [1.05, 0.95, 1.02, 1],
                 },
             } },
-            iconNode("circle", { cx: "11.9961", cy: "15.5", r: "2", stroke: "currentColor", strokeWidth: "1.5" }),
-            iconNode("path", { d: "M13.4955 9H10.4961C8.16128 9 6.99386 9 6.11018 9.47237C5.41244 9.84535 4.84098 10.4169 4.46807 11.1146C3.99578 11.9984 3.99589 13.1658 3.9961 15.5006C3.99632 17.835 3.99643 19.0023 4.46877 19.8858C4.84172 20.5835 5.41317 21.1548 6.11085 21.5277C6.99445 22 8.16166 22 10.4961 22H13.4955C15.8301 22 16.9974 22 17.8811 21.5277C18.5788 21.1548 19.1503 20.5833 19.5232 19.8856C19.9955 19.0019 19.9955 17.8346 19.9955 15.5C19.9955 13.1654 19.9955 11.9981 19.5232 11.1144C19.1503 10.4167 18.5788 9.84525 17.8811 9.47231C16.9974 9 15.8301 9 13.4955 9Z", stroke: "currentColor", strokeLinecap: "round", strokeWidth: "1.5" }),
-            iconNode(motion.path, { d: "M7.49609 9V6.5C7.49609 4.01472 9.51081 2 11.9961 2C13.9554 2 15.3783 3.25221 15.9961 5C16.314 5.8 16.4961 6.3 16.4961 6.5V9", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5", animate: reduceDefinition(controls), initial: "normal", transition: {
+            iconNode("path", { d: "M11 16a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" }),
+            iconNode("path", { d: "M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2l0 -6" }),
+            iconNode(motion.path, { d: "M8 11v-5a4 4 0 0 1 8 0", animate: reduceDefinition(controls), initial: "normal", transition: {
                     duration: 0.3,
                     ease: [0.4, 0, 0.2, 1],
                 }, variants: {
                     normal: {
-                        pathLength: 0.7850547537450483,
+                        pathLength: 0.8,
                     },
                     animate: {
                         pathLength: 1,
                     },
                 } }))));
 });
-HugeiconsLockKeyholeOpenIcon.displayName = 'HugeiconsLockKeyholeOpenIcon';
+TablerLockKeyholeOpenIcon.displayName = 'TablerLockKeyholeOpenIcon';
 function useIconAccessibility(ref, createHandle, controllers) {
     const rawHandle = createHandle();
     const raw = useRef(rawHandle);
@@ -234,7 +234,7 @@ function useIconAccessibility(ref, createHandle, controllers) {
     };
 }
 
-  return HugeiconsLockKeyholeOpenIcon;
+  return TablerLockKeyholeOpenIcon;
 }
 
 function mountIconProgram(createProgram, container, getSize, isControlled, instanceId) {
@@ -531,19 +531,20 @@ function mountIconProgram(createProgram, container, getSize, isControlled, insta
 }
 
 let controller;
-export function startAnimation() { return controller?.startAnimation(); }
-export function stopAnimation() { return controller?.stopAnimation(); }
-$effect(() => { size; controlled; controller?.update(); });
-onMount(() => {
-  controller = mountIconProgram(createIconProgram, root, () => size, () => controlled, instanceId);
-  return () => controller?.destroy();
-});
+function startAnimation() { return controller?.startAnimation(); }
+function stopAnimation() { return controller?.stopAnimation(); }
+onMounted(() => { controller = mountIconProgram(createIconProgram, root.value, () => props.size, () => props.controlled, instanceId); });
+watch(() => [props.size, props.controlled], () => controller?.update());
+onBeforeUnmount(() => controller?.destroy());
+defineExpose({ startAnimation, stopAnimation });
 </script>
 
-<div  bind:this={root} {...rest} class={["", rest.class].filter(Boolean).join(' ')}>
-  <svg data-icon-node="0" xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false" style="transform: none">
-    <circle data-icon-node="0.0" cx="11.9961" cy="15.5" r="2" stroke="currentColor" stroke-width="1.5" />
-    <path data-icon-node="0.1" d="M13.4955 9H10.4961C8.16128 9 6.99386 9 6.11018 9.47237C5.41244 9.84535 4.84098 10.4169 4.46807 11.1146C3.99578 11.9984 3.99589 13.1658 3.9961 15.5006C3.99632 17.835 3.99643 19.0023 4.46877 19.8858C4.84172 20.5835 5.41317 21.1548 6.11085 21.5277C6.99445 22 8.16166 22 10.4961 22H13.4955C15.8301 22 16.9974 22 17.8811 21.5277C18.5788 21.1548 19.1503 20.5833 19.5232 19.8856C19.9955 19.0019 19.9955 17.8346 19.9955 15.5C19.9955 13.1654 19.9955 11.9981 19.5232 11.1144C19.1503 10.4167 18.5788 9.84525 17.8811 9.47231C16.9974 9 15.8301 9 13.4955 9Z" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" />
-    <path data-icon-node="0.2" d="M7.49609 9V6.5C7.49609 4.01472 9.51081 2 11.9961 2C13.9554 2 15.3783 3.25221 15.9961 5C16.314 5.8 16.4961 6.3 16.4961 6.5V9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" pathLength="1" stroke-dashoffset="0" stroke-dasharray="0.7850547537450483 1" />
-  </svg>
-</div>
+<template>
+  <div ref="root" class="">
+    <svg data-icon-node="0" xmlns="http://www.w3.org/2000/svg" :width="size" :height="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" style="transform: none">
+      <path data-icon-node="0.0" d="M11 16a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+      <path data-icon-node="0.1" d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2l0 -6" />
+      <path data-icon-node="0.2" d="M8 11v-5a4 4 0 0 1 8 0" pathLength="1" stroke-dashoffset="0" stroke-dasharray="0.8 1" />
+    </svg>
+  </div>
+</template>

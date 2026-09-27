@@ -2,9 +2,9 @@
  * @license
  * MIT License
  * Choreography copyright (c) 2024-2026 pqoqubbw
- * Reference: lock-keyhole-open @ 072c38b1b04ea738d90a084485ccaad4b890ddca
+ * Reference: https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca
  *
- * Copyright (c) 2023 Phosphor Icons
+ * Copyright (c) 2020-2026 Paweł Kuna
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -31,16 +31,11 @@ import type {
   ResolvedValues,
   VisualElement,
 } from 'motion';
-import type {
-  TargetAndTransition as NativeMotionTarget,
-  Variants as NativeMotionVariants,
-} from 'motion/react';
 import type { ForwardedRef, HTMLAttributes } from 'react';
 import {
   forwardRef,
   useCallback,
   useEffect,
-  useId,
   useImperativeHandle,
   useMemo,
   useRef,
@@ -51,52 +46,17 @@ import { motion, useAnimation } from 'motion/react';
 
 import { cn } from '@/lib/utils';
 
-function nativePartTarget(
-  target: Record<string, unknown>,
-  draw: boolean | 'geometry'
-): NativeMotionTarget {
-  const drawKeys = new Set([
-    'pathLength',
-    'pathOffset',
-    'pathSpacing',
-    'strokeDasharray',
-    'strokeDashoffset',
-  ]);
-  return Object.fromEntries(
-    Object.entries(target).filter(
-      ([key]) =>
-        key === 'transition' ||
-        (draw === 'geometry'
-          ? key === 'd'
-          : key !== 'd' && (draw ? drawKeys.has(key) : !drawKeys.has(key)))
-    )
-  ) as NativeMotionTarget;
-}
-function nativePartVariants(
-  variants: Record<string, unknown>,
-  draw: boolean | 'geometry'
-): NativeMotionVariants {
-  return Object.fromEntries(
-    Object.entries(variants).map(([name, target]) => [
-      name,
-      typeof target === 'function'
-        ? (...args: unknown[]) => nativePartTarget(target(...args), draw)
-        : nativePartTarget(target as Record<string, unknown>, draw),
-    ])
-  ) as NativeMotionVariants;
-}
-export interface PhosphorLockKeyOpenIconHandle {
+export interface TablerLockKeyholeOpenIconHandle {
   startAnimation: () => void;
   stopAnimation: () => void;
 }
-interface PhosphorLockKeyOpenIconProps extends HTMLAttributes<HTMLDivElement> {
+interface TablerLockKeyholeOpenIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
-const PhosphorLockKeyOpenIcon = forwardRef<
-  PhosphorLockKeyOpenIconHandle,
-  PhosphorLockKeyOpenIconProps
+const TablerLockKeyholeOpenIcon = forwardRef<
+  TablerLockKeyholeOpenIconHandle,
+  TablerLockKeyholeOpenIconProps
 >(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
-  const nativeMaskId = useId();
   const controls = useAnimation();
   const isControlledRef = useRef(false);
   const {
@@ -165,7 +125,11 @@ const PhosphorLockKeyOpenIcon = forwardRef<
         width={size}
         height={size}
         viewBox="0 0 24 24"
-        fill="currentColor"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         aria-hidden="true"
         focusable="false"
         animate={reduceDefinition(controls)}
@@ -185,112 +149,31 @@ const PhosphorLockKeyOpenIcon = forwardRef<
           },
         }}
       >
-        <g transform="scale(0.09375)">
-          <path
-            d="M 128 112 a 28 28 0 0 0 -8 54.83 V 184 a 8 8 0 0 0 16 0 V 166.83 A 28 28 0 0 0 128 112 Z M 128 152 a 12 12 0 1 1 12 -12 A 12 12 0 0 1 128 152 Z"
-            fill="currentColor"
-          />
-        </g>
-        <g transform="scale(0.09375)">
-          <g>
-            <defs>
-              <clipPath
-                id={nativeMaskId + '-clip-0'}
-                clipPathUnits="userSpaceOnUse"
-              >
-                <rect x={-256} y={80} width={768} height={432} />
-              </clipPath>
-            </defs>
-            <g clipPath={'url(#' + nativeMaskId + '-clip-0)'}>
-              <path
-                d="M 208 80 H 96 V 56 a 32 32 0 0 1 32 -32 c 15.37 0 29.2 11 32.16 25.59 a 8 8 0 0 0 15.68 -3.18 C 171.32 24.15 151.2 8 128 8 A 48.05 48.05 0 0 0 80 56 V 80 H 48 A 16 16 0 0 0 32 96 V 208 a 16 16 0 0 0 16 16 H 208 a 16 16 0 0 0 16 -16 V 96 A 16 16 0 0 0 208 80 Z M 208 208 H 48 V 96 H 208 V 208 Z"
-                fill="currentColor"
-              />
-            </g>
-          </g>
-        </g>
-        <motion.g
+        <path d="M11 16a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+        <path d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2l0 -6" />
+        <motion.path
+          d="M8 11v-5a4 4 0 0 1 8 0"
           animate={reduceDefinition(controls)}
           initial="normal"
           transition={{
             duration: 0.3,
             ease: [0.4, 0, 0.2, 1],
           }}
-          variants={nativePartVariants(
-            {
-              normal: {
-                pathLength: 0.8,
-              },
-              animate: {
-                pathLength: 1,
-              },
+          variants={{
+            normal: {
+              pathLength: 0.8,
             },
-            false
-          )}
-        >
-          <defs>
-            <mask
-              id={nativeMaskId + '-2'}
-              maskUnits="userSpaceOnUse"
-              x="-24"
-              y="-24"
-              width="72"
-              height="72"
-            >
-              <motion.path
-                d="M8.25 7.5V5.25a3.75 3.75 0 0 1 7.5-.8V9"
-                fill="none"
-                stroke="white"
-                strokeWidth={5}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                animate={reduceDefinition(controls)}
-                initial="normal"
-                transition={{
-                  duration: 0.3,
-                  ease: [0.4, 0, 0.2, 1],
-                }}
-                variants={nativePartVariants(
-                  {
-                    normal: {
-                      pathLength: 0.8,
-                    },
-                    animate: {
-                      pathLength: 1,
-                    },
-                  },
-                  true
-                )}
-              />
-            </mask>
-          </defs>
-          <g mask={'url(#' + nativeMaskId + '-2' + ')'}>
-            <g transform="scale(0.09375)">
-              <g>
-                <defs>
-                  <clipPath
-                    id={nativeMaskId + '-clip-2'}
-                    clipPathUnits="userSpaceOnUse"
-                  >
-                    <rect x={-256} y={-256} width={768} height={336} />
-                  </clipPath>
-                </defs>
-                <g clipPath={'url(#' + nativeMaskId + '-clip-2)'}>
-                  <path
-                    d="M 208 80 H 96 V 56 a 32 32 0 0 1 32 -32 c 15.37 0 29.2 11 32.16 25.59 a 8 8 0 0 0 15.68 -3.18 C 171.32 24.15 151.2 8 128 8 A 48.05 48.05 0 0 0 80 56 V 80 H 48 A 16 16 0 0 0 32 96 V 208 a 16 16 0 0 0 16 16 H 208 a 16 16 0 0 0 16 -16 V 96 A 16 16 0 0 0 208 80 Z M 208 208 H 48 V 96 H 208 V 208 Z"
-                    fill="currentColor"
-                  />
-                </g>
-              </g>
-            </g>
-          </g>
-        </motion.g>
+            animate: {
+              pathLength: 1,
+            },
+          }}
+        />
       </motion.svg>
     </div>
   );
 });
-PhosphorLockKeyOpenIcon.displayName = 'PhosphorLockKeyOpenIcon';
-export { PhosphorLockKeyOpenIcon };
+TablerLockKeyholeOpenIcon.displayName = 'TablerLockKeyholeOpenIcon';
+export { TablerLockKeyholeOpenIcon };
 
 type IconAccessibilityHandle = {
   startAnimation: () => unknown;
