@@ -1,6 +1,8 @@
 /**
  * @license
  * MIT License
+ * Choreography copyright (c) 2024-2026 pqoqubbw
+ * Reference: arrow-down-left @ 072c38b1b04ea738d90a084485ccaad4b890ddca
  *
  * Copyright (c) 2023 Phosphor Icons
  *
@@ -24,16 +26,25 @@
  */
 'use client';
 
+import type {
+  LegacyAnimationControls,
+  ResolvedValues,
+  VisualElement,
+} from 'motion';
 import type { Variants } from 'motion/react';
-import type { HTMLAttributes } from 'react';
+import type { ForwardedRef, HTMLAttributes } from 'react';
 import {
   forwardRef,
   useCallback,
   useEffect,
+  useId,
   useImperativeHandle,
+  useMemo,
   useRef,
+  useState,
 } from 'react';
-import { motion, useAnimation, useReducedMotion } from 'motion/react';
+import { getDefaultValueType, setTarget, visualElementStore } from 'motion';
+import { motion, useAnimation } from 'motion/react';
 
 import { cn } from '@/lib/utils';
 
@@ -44,114 +55,324 @@ export interface PhosphorArrowDownLeftIconHandle {
 interface PhosphorArrowDownLeftIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
-
-const ICON_VARIANTS: Variants = {
-  normal: {
-    x: 0,
-    y: 0,
-    rotate: 0,
-    scale: 1,
-    scaleX: 1,
-    scaleY: 1,
-    opacity: 1,
-    transition: { duration: 0.18, ease: 'easeOut' },
-  },
+const HEAD_VARIANTS: Variants = {
+  normal: { translateX: 0, translateY: 0 },
   animate: {
-    x: [0, -19.2, 0],
-    y: [0, 19.2, 0],
-    transition: { duration: 0.55, ease: 'easeInOut' },
+    translateX: [0, 3, 0],
+    translateY: [0, -3, 0],
+    transition: {
+      duration: 0.5,
+      ease: 'easeInOut',
+    },
   },
 };
-
+const SHAFT_VARIANTS: Variants = {
+  normal: { translateX: 0, translateY: 0, scale: 1 },
+  animate: {
+    translateX: [0, 3, 0],
+    translateY: [0, -3, 0],
+    scale: [1, 0.85, 1],
+    originX: 0.5,
+    originY: 8 / 9,
+    transition: {
+      duration: 0.5,
+      ease: 'easeInOut',
+    },
+  },
+};
 const PhosphorArrowDownLeftIcon = forwardRef<
   PhosphorArrowDownLeftIconHandle,
   PhosphorArrowDownLeftIconProps
->(
-  (
-    {
-      onMouseEnter,
-      onMouseLeave,
-      onFocus,
-      onBlur,
-      className,
-      size = 28,
-      ...props
+>(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
+  const nativeMaskId = useId();
+  const controls = useAnimation();
+  const isControlledRef = useRef(false);
+  const {
+    rootRef: iconRootRef,
+    reduceDefinition,
+    ...iconAccessibility
+  } = useIconAccessibility(ref, () => {
+    isControlledRef.current = ref != null;
+    return {
+      startAnimation: () => controls.start('animate'),
+      stopAnimation: () => controls.start('normal'),
+    };
+  }, [controls]);
+  const handleMouseEnter = useCallback(
+    (e: React.MouseEvent<HTMLDivElement>) => {
+      if (!isControlledRef.current) controls.start('animate');
+      void e;
     },
-    ref
-  ) => {
-    const controls = useAnimation();
-    const reducedMotion = useReducedMotion();
-    const sequence = useRef(0);
-    const startAnimation = useCallback(() => {
-      const current = ++sequence.current;
-      controls.stop();
-      controls.set('normal');
-      if (reducedMotion) return;
-      void controls.start('animate').then(() => {
-        if (sequence.current === current) controls.set('normal');
-      });
-    }, [controls, reducedMotion]);
-    const stopAnimation = useCallback(() => {
-      sequence.current += 1;
-      void controls.start('normal');
-    }, [controls]);
-    useImperativeHandle(ref, () => ({ startAnimation, stopAnimation }), [
-      startAnimation,
-      stopAnimation,
-    ]);
-    useEffect(() => {
-      if (reducedMotion) {
-        sequence.current += 1;
-        controls.set('normal');
-      }
-      return () => {
-        sequence.current += 1;
-        controls.stop();
-      };
-    }, [controls, reducedMotion]);
-    return (
-      <div
-        {...props}
-        className={cn(className)}
-        onMouseEnter={(event) => {
-          if (!ref) startAnimation();
-          onMouseEnter?.(event);
-        }}
-        onMouseLeave={(event) => {
-          if (!ref) stopAnimation();
-          onMouseLeave?.(event);
-        }}
-        onFocus={(event) => {
-          if (!ref) startAnimation();
-          onFocus?.(event);
-        }}
-        onBlur={(event) => {
-          if (!ref) stopAnimation();
-          onBlur?.(event);
-        }}
+    [controls]
+  );
+  const handleMouseLeave = useCallback(
+    (e: React.MouseEvent<HTMLDivElement>) => {
+      if (!isControlledRef.current) controls.start('normal');
+      void e;
+    },
+    [controls]
+  );
+  return (
+    <div
+      className={cn(className)}
+      {...props}
+      ref={iconRootRef}
+      onMouseEnter={(event) => {
+        if (!iconAccessibility.controlled && !iconAccessibility.reduced) {
+          handleMouseEnter(event);
+        }
+        onMouseEnter?.(event);
+      }}
+      onMouseLeave={(event) => {
+        if (!iconAccessibility.controlled) {
+          handleMouseLeave(event);
+        }
+        onMouseLeave?.(event);
+      }}
+      onFocus={(event) => {
+        if (!iconAccessibility.controlled && !iconAccessibility.reduced) {
+          iconAccessibility.startAnimation();
+        }
+        props.onFocus?.(event);
+      }}
+      onBlur={(event) => {
+        if (!iconAccessibility.controlled) {
+          iconAccessibility.stopAnimation();
+        }
+        props.onBlur?.(event);
+      }}
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        aria-hidden="true"
+        focusable="false"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width={size}
-          height={size}
-          viewBox="0 0 256 256"
-          fill="currentColor"
-          overflow="visible"
-          aria-hidden="true"
-          focusable="false"
+        <motion.g animate={reduceDefinition(controls)} variants={HEAD_VARIANTS}>
+          <g transform="scale(0.09375)">
+            <g>
+              <defs>
+                <clipPath
+                  id={nativeMaskId + '-clip-0'}
+                  clipPathUnits="userSpaceOnUse"
+                >
+                  <rect x={0} y={0} width={72} height={256} />
+                  <rect x={72} y={184} width={184} height={72} />
+                </clipPath>
+              </defs>
+              <g clipPath={'url(#' + nativeMaskId + '-clip-0)'}>
+                <path
+                  d="M 197.66 69.66 L 83.31 184 H 168 a 8 8 0 0 1 0 16 H 64 a 8 8 0 0 1 -8 -8 V 88 a 8 8 0 0 1 16 0 v 84.69 L 186.34 58.34 a 8 8 0 0 1 11.32 11.32 Z"
+                  fill="currentColor"
+                />
+              </g>
+            </g>
+          </g>
+        </motion.g>
+        <motion.g
+          animate={reduceDefinition(controls)}
+          variants={SHAFT_VARIANTS}
         >
-          <motion.g
-            initial="normal"
-            animate={controls}
-            variants={ICON_VARIANTS}
-            style={{ transformOrigin: '128px 128px' }}
-          >
-            <path d="M197.66,69.66,83.31,184H168a8,8,0,0,1,0,16H64a8,8,0,0,1-8-8V88a8,8,0,0,1,16,0v84.69L186.34,58.34a8,8,0,0,1,11.32,11.32Z" />
-          </motion.g>
-        </svg>
-      </div>
-    );
-  }
-);
+          <g transform="scale(0.09375)">
+            <g>
+              <defs>
+                <clipPath
+                  id={nativeMaskId + '-clip-1'}
+                  clipPathUnits="userSpaceOnUse"
+                >
+                  <rect x={72} y={0} width={56} height={184} />
+                </clipPath>
+              </defs>
+              <g clipPath={'url(#' + nativeMaskId + '-clip-1)'}>
+                <path
+                  d="M 197.66 69.66 L 83.31 184 H 168 a 8 8 0 0 1 0 16 H 64 a 8 8 0 0 1 -8 -8 V 88 a 8 8 0 0 1 16 0 v 84.69 L 186.34 58.34 a 8 8 0 0 1 11.32 11.32 Z"
+                  fill="currentColor"
+                />
+              </g>
+            </g>
+          </g>
+        </motion.g>
+        <g transform="scale(0.09375)">
+          <g>
+            <defs>
+              <clipPath
+                id={nativeMaskId + '-clip-2'}
+                clipPathUnits="userSpaceOnUse"
+              >
+                <rect x={128} y={0} width={128} height={184} />
+              </clipPath>
+            </defs>
+            <g clipPath={'url(#' + nativeMaskId + '-clip-2)'}>
+              <path
+                d="M 197.66 69.66 L 83.31 184 H 168 a 8 8 0 0 1 0 16 H 64 a 8 8 0 0 1 -8 -8 V 88 a 8 8 0 0 1 16 0 v 84.69 L 186.34 58.34 a 8 8 0 0 1 11.32 11.32 Z"
+                fill="currentColor"
+              />
+            </g>
+          </g>
+        </g>
+      </svg>
+    </div>
+  );
+});
 PhosphorArrowDownLeftIcon.displayName = 'PhosphorArrowDownLeftIcon';
 export { PhosphorArrowDownLeftIcon };
+
+type IconAccessibilityHandle = {
+  startAnimation: () => unknown;
+  stopAnimation: () => unknown;
+};
+
+type IconAccessibilitySnapshot = {
+  visual: VisualElement;
+  values: ResolvedValues;
+  attributes: Record<string, string>;
+};
+
+function useIconAccessibility(
+  ref: ForwardedRef<IconAccessibilityHandle>,
+  createHandle: () => IconAccessibilityHandle,
+  controllers: LegacyAnimationControls[]
+) {
+  const rawHandle = createHandle();
+  const raw = useRef(rawHandle);
+  useEffect(() => {
+    raw.current = rawHandle;
+  }, [rawHandle]);
+  const controls = useRef(controllers);
+  const rootRef = useRef<HTMLDivElement | null>(null);
+  const preference = useRef(false);
+  const mounted = useRef(true);
+  const [reduced, setReduced] = useState(false);
+  const api = useMemo(
+    () => ({
+      startAnimation() {
+        if (
+          mounted.current &&
+          !preference.current &&
+          !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        ) {
+          void raw.current.startAnimation();
+        }
+      },
+      stopAnimation() {
+        if (mounted.current) void raw.current.stopAnimation();
+      },
+    }),
+    []
+  );
+  useImperativeHandle(ref, () => api, [api]);
+
+  useEffect(() => {
+    mounted.current = true;
+    const media = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const snapshots: IconAccessibilitySnapshot[] = [];
+    rootRef.current
+      ?.querySelectorAll<SVGElement>('svg, svg *')
+      .forEach((element) => {
+        const visual = visualElementStore.get(element);
+        if (visual)
+          snapshots.push({
+            visual,
+            values: { ...visual.latestValues },
+            attributes: Object.fromEntries(
+              [...element.attributes].map((attribute) => [
+                attribute.name,
+                attribute.value,
+              ])
+            ),
+          });
+      });
+    const restore = () => {
+      for (const snapshot of snapshots) {
+        const { visual, values, attributes } = snapshot;
+        visual.values.forEach((value) => value.stop());
+        const props = visual.getProps() as unknown as {
+          [key: string]: unknown;
+          style?: Record<string, unknown>;
+        };
+        const reset: Record<string, string | number> = {};
+        visual.values.forEach((_motionValue, key) => {
+          const attribute = key.replace(
+            /[A-Z]/g,
+            (letter) => '-' + letter.toLowerCase()
+          );
+          const defaults: Record<string, number> = {
+            opacity: 1,
+            pathLength: 1,
+            pathSpacing: 1,
+            pathOffset: 0,
+            strokeDashoffset: 0,
+          };
+          const value =
+            values[key] ??
+            props.style?.[key] ??
+            props[key] ??
+            getDefaultValueType(key)?.default ??
+            defaults[key] ??
+            attributes[attribute];
+          if (typeof value === 'number' || typeof value === 'string')
+            reset[key] = value;
+        });
+        setTarget(visual, reset);
+        visual.render();
+      }
+    };
+    const activeControls = controls.current;
+    const originals = activeControls.map((control) => {
+      const original = control.start;
+      control.start = (definition, transition) => {
+        if (!mounted.current) return new Promise<never>(() => {});
+        if (preference.current) {
+          control.set(definition);
+          return Promise.resolve();
+        }
+        return original(definition, transition);
+      };
+      return original;
+    });
+    const change = () => {
+      preference.current = media.matches;
+      setReduced(media.matches);
+      if (media.matches) {
+        void raw.current.stopAnimation();
+        activeControls.forEach((control) => control.stop());
+        restore();
+      }
+    };
+    change();
+    media.addEventListener('change', change);
+    return () => {
+      mounted.current = false;
+      media.removeEventListener('change', change);
+      activeControls.forEach((control, index) => {
+        control.stop();
+        control.start = originals[index];
+      });
+    };
+  }, []);
+
+  return {
+    ...api,
+    rootRef,
+    controlled: ref != null,
+    reduced,
+    reduceDefinition<T>(definition: T): T {
+      if (
+        reduced &&
+        definition &&
+        typeof definition === 'object' &&
+        !Array.isArray(definition) &&
+        !('start' in definition)
+      ) {
+        return {
+          ...definition,
+          transition: { type: false, duration: 0, delay: 0, repeat: 0 },
+        } as T;
+      }
+      return definition;
+    },
+  };
+}
