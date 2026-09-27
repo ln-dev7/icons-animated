@@ -1,6 +1,8 @@
 /**
  * @license
  * MIT License
+ * Choreography copyright (c) 2024-2026 pqoqubbw
+ * Reference: cursor-click @ 072c38b1b04ea738d90a084485ccaad4b890ddca
  *
  * Copyright (c) 2023 Phosphor Icons
  *
@@ -24,16 +26,24 @@
  */
 'use client';
 
+import type {
+  LegacyAnimationControls,
+  ResolvedValues,
+  VisualElement,
+} from 'motion';
 import type { Variants } from 'motion/react';
-import type { HTMLAttributes } from 'react';
+import type { ForwardedRef, HTMLAttributes } from 'react';
 import {
   forwardRef,
   useCallback,
   useEffect,
   useImperativeHandle,
+  useMemo,
   useRef,
+  useState,
 } from 'react';
-import { motion, useAnimation, useReducedMotion } from 'motion/react';
+import { getDefaultValueType, setTarget, visualElementStore } from 'motion';
+import { motion, useAnimation } from 'motion/react';
 
 import { cn } from '@/lib/utils';
 
@@ -44,150 +54,335 @@ export interface PhosphorCursorClickIconHandle {
 interface PhosphorCursorClickIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
-
-const ICON_VARIANTS: Variants = {
-  normal: {
-    x: 0,
-    y: 0,
-    rotate: 0,
-    scale: 1,
-    scaleX: 1,
-    scaleY: 1,
-    opacity: 1,
-    transition: { duration: 0.18, ease: 'easeOut' },
-  },
-  animate: { transition: { duration: 0.75, ease: 'easeInOut' } },
-};
-
-const DETAIL_0_VARIANTS: Variants = {
-  normal: { scale: 1, transition: { duration: 0.18, ease: 'easeOut' } },
-  animate: {
-    scale: [1, 0.94, 1],
-    transition: { duration: 0.5, delay: 0, ease: 'easeInOut' },
+const CURSOR_VARIANTS: Variants = {
+  initial: { x: 0, y: 0 },
+  hover: {
+    x: [0, 0, -3, 0],
+    y: [0, -4, 0, 0],
+    transition: {
+      duration: 1,
+      bounce: 0.3,
+    },
   },
 };
-
-const DETAIL_1_VARIANTS: Variants = {
-  normal: { opacity: 1, transition: { duration: 0.18, ease: 'easeOut' } },
-  animate: {
-    opacity: [1, 0.15, 1],
-    transition: { duration: 0.55, delay: 0.1, ease: 'easeInOut' },
-  },
+const LINE_VARIANTS: Variants = {
+  initial: { opacity: 1, x: 0, y: 0 },
+  spread: (custom: { x: number; y: number }) => ({
+    opacity: [0, 1, 0, 0, 0, 0, 1],
+    x: [0, custom.x, 0, 0],
+    y: [0, custom.y, 0, 0],
+    transition: {
+      type: 'spring',
+      stiffness: 70,
+      damping: 10,
+      mass: 0.4,
+    },
+  }),
 };
-
 const PhosphorCursorClickIcon = forwardRef<
   PhosphorCursorClickIconHandle,
   PhosphorCursorClickIconProps
->(
-  (
-    {
-      onMouseEnter,
-      onMouseLeave,
-      onFocus,
-      onBlur,
-      className,
-      size = 28,
-      ...props
-    },
-    ref
-  ) => {
-    const controls = useAnimation();
-    const reducedMotion = useReducedMotion();
-    const sequence = useRef(0);
-    const startAnimation = useCallback(() => {
-      const current = ++sequence.current;
-      controls.stop();
-      controls.set('normal');
-      if (reducedMotion) return;
-      void controls.start('animate').then(() => {
-        if (sequence.current === current) controls.set('normal');
-      });
-    }, [controls, reducedMotion]);
-    const stopAnimation = useCallback(() => {
-      sequence.current += 1;
-      void controls.start('normal');
-    }, [controls]);
-    useImperativeHandle(ref, () => ({ startAnimation, stopAnimation }), [
-      startAnimation,
-      stopAnimation,
-    ]);
-    useEffect(() => {
-      if (reducedMotion) {
-        sequence.current += 1;
-        controls.set('normal');
+>(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
+  const clickControls = useAnimation();
+  const cursorControls = useAnimation();
+  const isControlledRef = useRef(false);
+  const {
+    rootRef: iconRootRef,
+    reduceDefinition,
+    ...iconAccessibility
+  } = useIconAccessibility(ref, () => {
+    isControlledRef.current = ref != null;
+    return {
+      startAnimation: () => {
+        cursorControls.start('hover');
+        clickControls.start('spread', { delay: 1.3 });
+      },
+      stopAnimation: () => {
+        cursorControls.start('initial');
+        clickControls.start('initial');
+      },
+    };
+  }, [clickControls, cursorControls]);
+  const handleMouseEnter = useCallback(
+    (e: React.MouseEvent<HTMLDivElement>) => {
+      if (isControlledRef.current) {
+        void e;
+      } else {
+        cursorControls.start('hover');
+        clickControls.start('spread', { delay: 1.3 });
       }
-      return () => {
-        sequence.current += 1;
-        controls.stop();
-      };
-    }, [controls, reducedMotion]);
-    return (
-      <div
-        {...props}
-        className={cn(className)}
-        onMouseEnter={(event) => {
-          if (!ref) startAnimation();
-          onMouseEnter?.(event);
-        }}
-        onMouseLeave={(event) => {
-          if (!ref) stopAnimation();
-          onMouseLeave?.(event);
-        }}
-        onFocus={(event) => {
-          if (!ref) startAnimation();
-          onFocus?.(event);
-        }}
-        onBlur={(event) => {
-          if (!ref) stopAnimation();
-          onBlur?.(event);
-        }}
+    },
+    [clickControls, cursorControls]
+  );
+  const handleMouseLeave = useCallback(
+    (e: React.MouseEvent<HTMLDivElement>) => {
+      if (isControlledRef.current) {
+        void e;
+      } else {
+        cursorControls.start('initial');
+        clickControls.start('initial');
+      }
+    },
+    [cursorControls, clickControls]
+  );
+  return (
+    <div
+      className={cn(className)}
+      {...props}
+      ref={iconRootRef}
+      onMouseEnter={(event) => {
+        if (!iconAccessibility.controlled && !iconAccessibility.reduced) {
+          handleMouseEnter(event);
+        }
+        onMouseEnter?.(event);
+      }}
+      onMouseLeave={(event) => {
+        if (!iconAccessibility.controlled) {
+          handleMouseLeave(event);
+        }
+        onMouseLeave?.(event);
+      }}
+      onFocus={(event) => {
+        if (!iconAccessibility.controlled && !iconAccessibility.reduced) {
+          iconAccessibility.startAnimation();
+        }
+        props.onFocus?.(event);
+      }}
+      onBlur={(event) => {
+        if (!iconAccessibility.controlled) {
+          iconAccessibility.stopAnimation();
+        }
+        props.onBlur?.(event);
+      }}
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        aria-hidden="true"
+        focusable="false"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width={size}
-          height={size}
-          viewBox="0 0 256 256"
-          fill="currentColor"
-          overflow="visible"
-          aria-hidden="true"
-          focusable="false"
+        <motion.g
+          animate={reduceDefinition(cursorControls)}
+          variants={CURSOR_VARIANTS}
         >
-          <motion.g
-            initial="normal"
-            animate={controls}
-            variants={ICON_VARIANTS}
-            style={{ transformOrigin: '128px 128px' }}
-          >
-            <motion.path
-              d="M219.31,184a16,16,0,0,1,0,22.63l-12.68,12.68a16,16,0,0,1-22.63,0L132.7,168,115,214.09c0,.1-.08.21-.13.32a15.83,15.83,0,0,1-14.6,9.59l-.79,0a15.83,15.83,0,0,1-14.41-11L32.8,52.92A16,16,0,0,1,52.92,32.8L213,85.07a16,16,0,0,1,1.41,29.8l-.32.13L168,132.69ZM208,195.31,156.69,144h0a16,16,0,0,1,4.93-26l.32-.14,45.95-17.64L48,48l52.2,159.86,17.65-46c0-.11.08-.22.13-.33a16,16,0,0,1,11.69-9.34,16.72,16.72,0,0,1,3-.28,16,16,0,0,1,11.3,4.69L195.31,208Z"
-              variants={DETAIL_0_VARIANTS}
-              style={{ transformOrigin: '48px 48px' }}
+          <g transform="scale(0.09375)">
+            <path
+              d="M 219.31 184 a 16 16 0 0 1 0 22.63 l -12.68 12.68 a 16 16 0 0 1 -22.63 0 L 132.7 168 L 115 214.09 c 0 0.1 -0.08 0.21 -0.13 0.32 a 15.83 15.83 0 0 1 -14.6 9.59 l -0.79 0 a 15.83 15.83 0 0 1 -14.41 -11 L 32.8 52.92 A 16 16 0 0 1 52.92 32.8 L 213 85.07 a 16 16 0 0 1 1.41 29.8 l -0.32 0.13 L 168 132.69 Z M 208 195.31 L 156.69 144 h 0 a 16 16 0 0 1 4.93 -26 l 0.32 -0.14 l 45.95 -17.64 L 48 48 l 52.2 159.86 l 17.65 -46 c 0 -0.11 0.08 -0.22 0.13 -0.33 a 16 16 0 0 1 11.69 -9.34 a 16.72 16.72 0 0 1 3 -0.28 a 16 16 0 0 1 11.3 4.69 L 195.31 208 Z"
+              fill="currentColor"
             />
-            <motion.path
-              d="M88,24V16a8,8,0,0,1,16,0v8a8,8,0,0,1-16,0Z"
-              variants={DETAIL_1_VARIANTS}
-              style={{ transformBox: 'fill-box', transformOrigin: 'center' }}
+          </g>
+        </motion.g>
+        <motion.g
+          animate={reduceDefinition(clickControls)}
+          custom={{ x: 1, y: -1 }}
+          variants={LINE_VARIANTS}
+        >
+          <g transform="scale(0.09375)">
+            <path
+              d="M 124.42 39.16 a 8 8 0 0 0 10.74 -3.58 l 8 -16 a 8 8 0 0 0 -14.31 -7.16 l -8 16 A 8 8 0 0 0 124.42 39.16 Z"
+              fill="currentColor"
             />
-            <motion.path
-              d="M16,104h8a8,8,0,0,0,0-16H16a8,8,0,0,0,0,16Z"
-              variants={DETAIL_1_VARIANTS}
-              style={{ transformBox: 'fill-box', transformOrigin: 'center' }}
+          </g>
+        </motion.g>
+        <motion.g
+          animate={reduceDefinition(clickControls)}
+          custom={{ x: -1, y: 0 }}
+          variants={LINE_VARIANTS}
+        >
+          <g transform="scale(0.09375)">
+            <path
+              d="M 16 104 h 8 a 8 8 0 0 0 0 -16 H 16 a 8 8 0 0 0 0 16 Z"
+              fill="currentColor"
             />
-            <motion.path
-              d="M124.42,39.16a8,8,0,0,0,10.74-3.58l8-16a8,8,0,0,0-14.31-7.16l-8,16A8,8,0,0,0,124.42,39.16Z"
-              variants={DETAIL_1_VARIANTS}
-              style={{ transformBox: 'fill-box', transformOrigin: 'center' }}
+          </g>
+        </motion.g>
+        <motion.g
+          animate={reduceDefinition(clickControls)}
+          custom={{ x: -1, y: 1 }}
+          variants={LINE_VARIANTS}
+        >
+          <g transform="scale(0.09375)">
+            <path
+              d="M 28.42 120.85 l -16 8 a 8 8 0 0 0 7.16 14.31 l 16 -8 a 8 8 0 1 0 -7.16 -14.31 Z"
+              fill="currentColor"
             />
-            <motion.path
-              d="M28.42,120.85l-16,8a8,8,0,0,0,7.16,14.31l16-8a8,8,0,1,0-7.16-14.31Z"
-              variants={DETAIL_1_VARIANTS}
-              style={{ transformBox: 'fill-box', transformOrigin: 'center' }}
+          </g>
+        </motion.g>
+        <motion.g
+          animate={reduceDefinition(clickControls)}
+          custom={{ x: 0, y: -1 }}
+          variants={LINE_VARIANTS}
+        >
+          <g transform="scale(0.09375)">
+            <path
+              d="M 88 24 V 16 a 8 8 0 0 1 16 0 v 8 a 8 8 0 0 1 -16 0 Z"
+              fill="currentColor"
             />
-          </motion.g>
-        </svg>
-      </div>
-    );
-  }
-);
+          </g>
+        </motion.g>
+      </svg>
+    </div>
+  );
+});
 PhosphorCursorClickIcon.displayName = 'PhosphorCursorClickIcon';
 export { PhosphorCursorClickIcon };
+
+type IconAccessibilityHandle = {
+  startAnimation: () => unknown;
+  stopAnimation: () => unknown;
+};
+
+type IconAccessibilitySnapshot = {
+  visual: VisualElement;
+  values: ResolvedValues;
+  attributes: Record<string, string>;
+};
+
+function useIconAccessibility(
+  ref: ForwardedRef<IconAccessibilityHandle>,
+  createHandle: () => IconAccessibilityHandle,
+  controllers: LegacyAnimationControls[]
+) {
+  const rawHandle = createHandle();
+  const raw = useRef(rawHandle);
+  useEffect(() => {
+    raw.current = rawHandle;
+  }, [rawHandle]);
+  const controls = useRef(controllers);
+  const rootRef = useRef<HTMLDivElement | null>(null);
+  const preference = useRef(false);
+  const mounted = useRef(true);
+  const [reduced, setReduced] = useState(false);
+  const api = useMemo(
+    () => ({
+      startAnimation() {
+        if (
+          mounted.current &&
+          !preference.current &&
+          !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        ) {
+          void raw.current.startAnimation();
+        }
+      },
+      stopAnimation() {
+        if (mounted.current) void raw.current.stopAnimation();
+      },
+    }),
+    []
+  );
+  useImperativeHandle(ref, () => api, [api]);
+
+  useEffect(() => {
+    mounted.current = true;
+    const media = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const snapshots: IconAccessibilitySnapshot[] = [];
+    rootRef.current
+      ?.querySelectorAll<SVGElement>('svg, svg *')
+      .forEach((element) => {
+        const visual = visualElementStore.get(element);
+        if (visual)
+          snapshots.push({
+            visual,
+            values: { ...visual.latestValues },
+            attributes: Object.fromEntries(
+              [...element.attributes].map((attribute) => [
+                attribute.name,
+                attribute.value,
+              ])
+            ),
+          });
+      });
+    const restore = () => {
+      for (const snapshot of snapshots) {
+        const { visual, values, attributes } = snapshot;
+        visual.values.forEach((value) => value.stop());
+        const props = visual.getProps() as unknown as {
+          [key: string]: unknown;
+          style?: Record<string, unknown>;
+        };
+        const reset: Record<string, string | number> = {};
+        visual.values.forEach((_motionValue, key) => {
+          const attribute = key.replace(
+            /[A-Z]/g,
+            (letter) => '-' + letter.toLowerCase()
+          );
+          const defaults: Record<string, number> = {
+            opacity: 1,
+            pathLength: 1,
+            pathSpacing: 1,
+            pathOffset: 0,
+            strokeDashoffset: 0,
+          };
+          const value =
+            values[key] ??
+            props.style?.[key] ??
+            props[key] ??
+            getDefaultValueType(key)?.default ??
+            defaults[key] ??
+            attributes[attribute];
+          if (typeof value === 'number' || typeof value === 'string')
+            reset[key] = value;
+        });
+        setTarget(visual, reset);
+        visual.render();
+      }
+    };
+    const activeControls = controls.current;
+    const originals = activeControls.map((control) => {
+      const original = control.start;
+      control.start = (definition, transition) => {
+        if (!mounted.current) return new Promise<never>(() => {});
+        if (preference.current) {
+          control.set(definition);
+          return Promise.resolve();
+        }
+        return original(definition, transition);
+      };
+      return original;
+    });
+    const change = () => {
+      preference.current = media.matches;
+      setReduced(media.matches);
+      if (media.matches) {
+        void raw.current.stopAnimation();
+        activeControls.forEach((control) => control.stop());
+        restore();
+      }
+    };
+    change();
+    media.addEventListener('change', change);
+    return () => {
+      mounted.current = false;
+      media.removeEventListener('change', change);
+      activeControls.forEach((control, index) => {
+        control.stop();
+        control.start = originals[index];
+      });
+    };
+  }, []);
+
+  return {
+    ...api,
+    rootRef,
+    controlled: ref != null,
+    reduced,
+    reduceDefinition<T>(definition: T): T {
+      if (
+        reduced &&
+        definition &&
+        typeof definition === 'object' &&
+        !Array.isArray(definition) &&
+        !('start' in definition)
+      ) {
+        return {
+          ...definition,
+          transition: { type: false, duration: 0, delay: 0, repeat: 0 },
+        } as T;
+      }
+      return definition;
+    },
+  };
+}
