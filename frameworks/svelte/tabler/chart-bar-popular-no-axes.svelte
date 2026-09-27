@@ -6,7 +6,7 @@
  * Choreography copyright (c) 2024-2026 pqoqubbw
  * Reference: https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca
  *
- * Copyright (c) 2025 Hugeicons
+ * Copyright (c) 2020-2026 Paweł Kuna
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -37,7 +37,7 @@ const LINE_VARIANTS = {
     visible: { pathLength: 1, opacity: 1 },
     hidden: { pathLength: 0, opacity: 0 },
 };
-const HugeiconsChartNoAxesColumnIncreasingIcon = forwardRef(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
+const TablerChartBarPopularNoAxesIcon = forwardRef(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
     const controls = useAnimation();
     const isControlledRef = useRef(false);
     const { rootRef: iconRootRef, reduceDefinition, ...iconAccessibility } = useIconAccessibility(ref, () => {
@@ -104,14 +104,13 @@ const HugeiconsChartNoAxesColumnIncreasingIcon = forwardRef(({ onMouseEnter, onM
             }
             props.onBlur?.(event);
         } },
-        iconNode("svg", { xmlns: "http://www.w3.org/2000/svg", width: size, height: size, viewBox: "0 0 24 24", fill: "none", "aria-hidden": "true", focusable: "false" },
-            iconNode(motion.path, { d: "M3 21V15", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5", animate: reduceDefinition(controls), custom: 0, initial: "visible", variants: LINE_VARIANTS }),
-            iconNode(motion.path, { d: "M9 21V11", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5", animate: reduceDefinition(controls), custom: 1, initial: "visible", variants: LINE_VARIANTS }),
-            iconNode(motion.path, { d: "M15 21V7", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5", animate: reduceDefinition(controls), custom: 1, initial: "visible", variants: LINE_VARIANTS }),
-            iconNode(motion.path, { d: "M21 21V3", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5", animate: reduceDefinition(controls), custom: 2, initial: "visible", variants: LINE_VARIANTS }))));
+        iconNode("svg", { xmlns: "http://www.w3.org/2000/svg", width: size, height: size, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": "true", focusable: "false" },
+            iconNode(motion.path, { d: "M3 13a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -6", animate: reduceDefinition(controls), custom: 0, initial: "visible", variants: LINE_VARIANTS }),
+            iconNode(motion.path, { d: "M9 9a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -10", animate: reduceDefinition(controls), custom: 1, initial: "visible", variants: LINE_VARIANTS }),
+            iconNode(motion.path, { d: "M15 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -14", animate: reduceDefinition(controls), custom: 2, initial: "visible", variants: LINE_VARIANTS }),
+            iconNode("path", { d: "M18 20L4 20" }))));
 });
-HugeiconsChartNoAxesColumnIncreasingIcon.displayName =
-    'HugeiconsChartNoAxesColumnIncreasingIcon';
+TablerChartBarPopularNoAxesIcon.displayName = 'TablerChartBarPopularNoAxesIcon';
 function useIconAccessibility(ref, createHandle, controllers) {
     const rawHandle = createHandle();
     const raw = useRef(rawHandle);
@@ -238,7 +237,7 @@ function useIconAccessibility(ref, createHandle, controllers) {
     };
 }
 
-  return HugeiconsChartNoAxesColumnIncreasingIcon;
+  return TablerChartBarPopularNoAxesIcon;
 }
 
 function mountIconProgram(createProgram, container, getSize, isControlled, instanceId) {
@@ -545,10 +544,10 @@ onMount(() => {
 </script>
 
 <div  bind:this={root} {...rest} class={["", rest.class].filter(Boolean).join(' ')}>
-  <svg data-icon-node="0" xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
-    <path data-icon-node="0.0" d="M3 21V15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" pathLength="1" stroke-dashoffset="0" stroke-dasharray="1 1" style="opacity: 1" />
-    <path data-icon-node="0.1" d="M9 21V11" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" pathLength="1" stroke-dashoffset="0" stroke-dasharray="1 1" style="opacity: 1" />
-    <path data-icon-node="0.2" d="M15 21V7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" pathLength="1" stroke-dashoffset="0" stroke-dasharray="1 1" style="opacity: 1" />
-    <path data-icon-node="0.3" d="M21 21V3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" pathLength="1" stroke-dashoffset="0" stroke-dasharray="1 1" style="opacity: 1" />
+  <svg data-icon-node="0" xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+    <path data-icon-node="0.0" d="M3 13a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -6" pathLength="1" stroke-dashoffset="0" stroke-dasharray="1 1" style="opacity: 1" />
+    <path data-icon-node="0.1" d="M9 9a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -10" pathLength="1" stroke-dashoffset="0" stroke-dasharray="1 1" style="opacity: 1" />
+    <path data-icon-node="0.2" d="M15 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -14" pathLength="1" stroke-dashoffset="0" stroke-dasharray="1 1" style="opacity: 1" />
+    <path data-icon-node="0.3" d="M18 20L4 20" />
   </svg>
 </div>

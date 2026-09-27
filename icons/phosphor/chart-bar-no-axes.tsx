@@ -2,9 +2,9 @@
  * @license
  * MIT License
  * Choreography copyright (c) 2024-2026 pqoqubbw
- * Reference: https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca
+ * Reference: chart-no-axes-column-increasing @ 072c38b1b04ea738d90a084485ccaad4b890ddca
  *
- * Copyright (c) 2025 Hugeicons
+ * Copyright (c) 2023 Phosphor Icons
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -31,12 +31,17 @@ import type {
   ResolvedValues,
   VisualElement,
 } from 'motion';
-import type { Variants } from 'motion/react';
+import type {
+  TargetAndTransition as NativeMotionTarget,
+  Variants as NativeMotionVariants,
+  Variants,
+} from 'motion/react';
 import type { ForwardedRef, HTMLAttributes } from 'react';
 import {
   forwardRef,
   useCallback,
   useEffect,
+  useId,
   useImperativeHandle,
   useMemo,
   useRef,
@@ -47,21 +52,56 @@ import { motion, useAnimation } from 'motion/react';
 
 import { cn } from '@/lib/utils';
 
-export interface HugeiconsChartNoAxesColumnIncreasingIconHandle {
+function nativePartTarget(
+  target: Record<string, unknown>,
+  draw: boolean | 'geometry'
+): NativeMotionTarget {
+  const drawKeys = new Set([
+    'pathLength',
+    'pathOffset',
+    'pathSpacing',
+    'strokeDasharray',
+    'strokeDashoffset',
+  ]);
+  return Object.fromEntries(
+    Object.entries(target).filter(
+      ([key]) =>
+        key === 'transition' ||
+        (draw === 'geometry'
+          ? key === 'd'
+          : key !== 'd' && (draw ? drawKeys.has(key) : !drawKeys.has(key)))
+    )
+  ) as NativeMotionTarget;
+}
+function nativePartVariants(
+  variants: Record<string, unknown>,
+  draw: boolean | 'geometry'
+): NativeMotionVariants {
+  return Object.fromEntries(
+    Object.entries(variants).map(([name, target]) => [
+      name,
+      typeof target === 'function'
+        ? (...args: unknown[]) => nativePartTarget(target(...args), draw)
+        : nativePartTarget(target as Record<string, unknown>, draw),
+    ])
+  ) as NativeMotionVariants;
+}
+export interface PhosphorChartBarNoAxesIconHandle {
   startAnimation: () => void;
   stopAnimation: () => void;
 }
-interface HugeiconsChartNoAxesColumnIncreasingIconProps extends HTMLAttributes<HTMLDivElement> {
+interface PhosphorChartBarNoAxesIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
 const LINE_VARIANTS: Variants = {
   visible: { pathLength: 1, opacity: 1 },
   hidden: { pathLength: 0, opacity: 0 },
 };
-const HugeiconsChartNoAxesColumnIncreasingIcon = forwardRef<
-  HugeiconsChartNoAxesColumnIncreasingIconHandle,
-  HugeiconsChartNoAxesColumnIncreasingIconProps
+const PhosphorChartBarNoAxesIcon = forwardRef<
+  PhosphorChartBarNoAxesIconHandle,
+  PhosphorChartBarNoAxesIconProps
 >(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
+  const nativeMaskId = useId();
   const controls = useAnimation();
   const isControlledRef = useRef(false);
   const {
@@ -150,61 +190,136 @@ const HugeiconsChartNoAxesColumnIncreasingIcon = forwardRef<
         width={size}
         height={size}
         viewBox="0 0 24 24"
-        fill="none"
+        fill="currentColor"
         aria-hidden="true"
         focusable="false"
       >
-        <motion.path
-          d="M3 21V15"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
+        <motion.g
           animate={reduceDefinition(controls)}
           custom={0}
           initial="visible"
-          variants={LINE_VARIANTS}
-        />
-        <motion.path
-          d="M9 21V11"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
+          variants={nativePartVariants(LINE_VARIANTS, false)}
+        >
+          <defs>
+            <mask
+              id={nativeMaskId + '-0'}
+              maskUnits="userSpaceOnUse"
+              x="-24"
+              y="-24"
+              width="72"
+              height="72"
+            >
+              <motion.path
+                d="M6.75 19.5v-7.5"
+                fill="none"
+                stroke="white"
+                strokeWidth={8.000137331943934}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                animate={reduceDefinition(controls)}
+                custom={0}
+                initial="visible"
+                variants={nativePartVariants(LINE_VARIANTS, true)}
+              />
+            </mask>
+          </defs>
+          <g mask={'url(#' + nativeMaskId + '-0' + ')'}>
+            <g transform="scale(0.09375)">
+              <path
+                d="M 48 128 H 96 a 8 8 0 0 1 8 8 V 208 H 40 V 136 a 8 8 0 0 1 8 -8 Z M 56 144 V 200 H 88 V 144 Z"
+                fill="currentColor"
+              />
+            </g>
+          </g>
+        </motion.g>
+        <motion.g
           animate={reduceDefinition(controls)}
           custom={1}
           initial="visible"
-          variants={LINE_VARIANTS}
-        />
-        <motion.path
-          d="M15 21V7"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          animate={reduceDefinition(controls)}
-          custom={1}
-          initial="visible"
-          variants={LINE_VARIANTS}
-        />
-        <motion.path
-          d="M21 21V3"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
+          variants={nativePartVariants(LINE_VARIANTS, false)}
+        >
+          <defs>
+            <mask
+              id={nativeMaskId + '-1'}
+              maskUnits="userSpaceOnUse"
+              x="-24"
+              y="-24"
+              width="72"
+              height="72"
+            >
+              <motion.path
+                d="M11.625 19.5v-12"
+                fill="none"
+                stroke="white"
+                strokeWidth={8.75041545344995}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                animate={reduceDefinition(controls)}
+                custom={1}
+                initial="visible"
+                variants={nativePartVariants(LINE_VARIANTS, true)}
+              />
+            </mask>
+          </defs>
+          <g mask={'url(#' + nativeMaskId + '-1' + ')'}>
+            <g transform="scale(0.09375)">
+              <path
+                d="M 96 80 H 152 a 8 8 0 0 1 8 8 V 208 H 88 V 88 a 8 8 0 0 1 8 -8 Z M 104 96 V 200 H 144 V 96 Z"
+                fill="currentColor"
+              />
+            </g>
+          </g>
+        </motion.g>
+        <motion.g
           animate={reduceDefinition(controls)}
           custom={2}
           initial="visible"
-          variants={LINE_VARIANTS}
-        />
+          variants={nativePartVariants(LINE_VARIANTS, false)}
+        >
+          <defs>
+            <mask
+              id={nativeMaskId + '-2'}
+              maskUnits="userSpaceOnUse"
+              x="-24"
+              y="-24"
+              width="72"
+              height="72"
+            >
+              <motion.path
+                d="M16.875 19.5v-16.5"
+                fill="none"
+                stroke="white"
+                strokeWidth={8.750772403396379}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                animate={reduceDefinition(controls)}
+                custom={2}
+                initial="visible"
+                variants={nativePartVariants(LINE_VARIANTS, true)}
+              />
+            </mask>
+          </defs>
+          <g mask={'url(#' + nativeMaskId + '-2' + ')'}>
+            <g transform="scale(0.09375)">
+              <path
+                d="M 152 32 H 208 a 8 8 0 0 1 8 8 V 208 H 144 V 40 a 8 8 0 0 1 8 -8 Z M 160 48 V 200 H 200 V 48 Z"
+                fill="currentColor"
+              />
+            </g>
+          </g>
+        </motion.g>
+        <g transform="scale(0.09375)">
+          <path
+            d="M 32 200 a 8 8 0 0 0 0 16 H 224 a 8 8 0 0 0 0 -16 Z"
+            fill="currentColor"
+          />
+        </g>
       </svg>
     </div>
   );
 });
-HugeiconsChartNoAxesColumnIncreasingIcon.displayName =
-  'HugeiconsChartNoAxesColumnIncreasingIcon';
-export { HugeiconsChartNoAxesColumnIncreasingIcon };
+PhosphorChartBarNoAxesIcon.displayName = 'PhosphorChartBarNoAxesIcon';
+export { PhosphorChartBarNoAxesIcon };
 
 type IconAccessibilityHandle = {
   startAnimation: () => unknown;

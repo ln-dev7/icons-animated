@@ -4,9 +4,9 @@
  * @license
  * MIT License
  * Choreography copyright (c) 2024-2026 pqoqubbw
- * Reference: https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca
+ * Reference: chart-no-axes-column-increasing @ 072c38b1b04ea738d90a084485ccaad4b890ddca
  *
- * Copyright (c) 2025 Hugeicons
+ * Copyright (c) 2023 Phosphor Icons
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -32,12 +32,34 @@ let { size = 28, controlled = false, ...rest } = $props();
 let root;
 const instanceId = $props.id();
 function createIconProgram(api) {
-  const { Fragment, cn, forwardRef, getDefaultValueType, iconNode, motion, setTarget, useAnimation, useCallback, useEffect, useImperativeHandle, useMemo, useRef, useState, visualElementStore } = api;
+  const { Fragment, cn, forwardRef, getDefaultValueType, iconNode, motion, setTarget, useAnimation, useCallback, useEffect, useId, useImperativeHandle, useMemo, useRef, useState, visualElementStore } = api;
+function nativePartTarget(target, draw) {
+    const drawKeys = new Set([
+        'pathLength',
+        'pathOffset',
+        'pathSpacing',
+        'strokeDasharray',
+        'strokeDashoffset',
+    ]);
+    return Object.fromEntries(Object.entries(target).filter(([key]) => key === 'transition' ||
+        (draw === 'geometry'
+            ? key === 'd'
+            : key !== 'd' && (draw ? drawKeys.has(key) : !drawKeys.has(key)))));
+}
+function nativePartVariants(variants, draw) {
+    return Object.fromEntries(Object.entries(variants).map(([name, target]) => [
+        name,
+        typeof target === 'function'
+            ? (...args) => nativePartTarget(target(...args), draw)
+            : nativePartTarget(target, draw),
+    ]));
+}
 const LINE_VARIANTS = {
     visible: { pathLength: 1, opacity: 1 },
     hidden: { pathLength: 0, opacity: 0 },
 };
-const HugeiconsChartNoAxesColumnIncreasingIcon = forwardRef(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
+const PhosphorChartBarNoAxesIcon = forwardRef(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
+    const nativeMaskId = useId();
     const controls = useAnimation();
     const isControlledRef = useRef(false);
     const { rootRef: iconRootRef, reduceDefinition, ...iconAccessibility } = useIconAccessibility(ref, () => {
@@ -104,14 +126,32 @@ const HugeiconsChartNoAxesColumnIncreasingIcon = forwardRef(({ onMouseEnter, onM
             }
             props.onBlur?.(event);
         } },
-        iconNode("svg", { xmlns: "http://www.w3.org/2000/svg", width: size, height: size, viewBox: "0 0 24 24", fill: "none", "aria-hidden": "true", focusable: "false" },
-            iconNode(motion.path, { d: "M3 21V15", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5", animate: reduceDefinition(controls), custom: 0, initial: "visible", variants: LINE_VARIANTS }),
-            iconNode(motion.path, { d: "M9 21V11", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5", animate: reduceDefinition(controls), custom: 1, initial: "visible", variants: LINE_VARIANTS }),
-            iconNode(motion.path, { d: "M15 21V7", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5", animate: reduceDefinition(controls), custom: 1, initial: "visible", variants: LINE_VARIANTS }),
-            iconNode(motion.path, { d: "M21 21V3", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5", animate: reduceDefinition(controls), custom: 2, initial: "visible", variants: LINE_VARIANTS }))));
+        iconNode("svg", { xmlns: "http://www.w3.org/2000/svg", width: size, height: size, viewBox: "0 0 24 24", fill: "currentColor", "aria-hidden": "true", focusable: "false" },
+            iconNode(motion.g, { animate: reduceDefinition(controls), custom: 0, initial: "visible", variants: nativePartVariants(LINE_VARIANTS, false) },
+                iconNode("defs", null,
+                    iconNode("mask", { id: nativeMaskId + '-0', maskUnits: "userSpaceOnUse", x: "-24", y: "-24", width: "72", height: "72" },
+                        iconNode(motion.path, { d: "M6.75 19.5v-7.5", fill: "none", stroke: "white", strokeWidth: 8.000137331943934, strokeLinecap: "round", strokeLinejoin: "round", animate: reduceDefinition(controls), custom: 0, initial: "visible", variants: nativePartVariants(LINE_VARIANTS, true) }))),
+                iconNode("g", { mask: 'url(#' + nativeMaskId + '-0' + ')' },
+                    iconNode("g", { transform: "scale(0.09375)" },
+                        iconNode("path", { d: "M 48 128 H 96 a 8 8 0 0 1 8 8 V 208 H 40 V 136 a 8 8 0 0 1 8 -8 Z M 56 144 V 200 H 88 V 144 Z", fill: "currentColor" })))),
+            iconNode(motion.g, { animate: reduceDefinition(controls), custom: 1, initial: "visible", variants: nativePartVariants(LINE_VARIANTS, false) },
+                iconNode("defs", null,
+                    iconNode("mask", { id: nativeMaskId + '-1', maskUnits: "userSpaceOnUse", x: "-24", y: "-24", width: "72", height: "72" },
+                        iconNode(motion.path, { d: "M11.625 19.5v-12", fill: "none", stroke: "white", strokeWidth: 8.75041545344995, strokeLinecap: "round", strokeLinejoin: "round", animate: reduceDefinition(controls), custom: 1, initial: "visible", variants: nativePartVariants(LINE_VARIANTS, true) }))),
+                iconNode("g", { mask: 'url(#' + nativeMaskId + '-1' + ')' },
+                    iconNode("g", { transform: "scale(0.09375)" },
+                        iconNode("path", { d: "M 96 80 H 152 a 8 8 0 0 1 8 8 V 208 H 88 V 88 a 8 8 0 0 1 8 -8 Z M 104 96 V 200 H 144 V 96 Z", fill: "currentColor" })))),
+            iconNode(motion.g, { animate: reduceDefinition(controls), custom: 2, initial: "visible", variants: nativePartVariants(LINE_VARIANTS, false) },
+                iconNode("defs", null,
+                    iconNode("mask", { id: nativeMaskId + '-2', maskUnits: "userSpaceOnUse", x: "-24", y: "-24", width: "72", height: "72" },
+                        iconNode(motion.path, { d: "M16.875 19.5v-16.5", fill: "none", stroke: "white", strokeWidth: 8.750772403396379, strokeLinecap: "round", strokeLinejoin: "round", animate: reduceDefinition(controls), custom: 2, initial: "visible", variants: nativePartVariants(LINE_VARIANTS, true) }))),
+                iconNode("g", { mask: 'url(#' + nativeMaskId + '-2' + ')' },
+                    iconNode("g", { transform: "scale(0.09375)" },
+                        iconNode("path", { d: "M 152 32 H 208 a 8 8 0 0 1 8 8 V 208 H 144 V 40 a 8 8 0 0 1 8 -8 Z M 160 48 V 200 H 200 V 48 Z", fill: "currentColor" })))),
+            iconNode("g", { transform: "scale(0.09375)" },
+                iconNode("path", { d: "M 32 200 a 8 8 0 0 0 0 16 H 224 a 8 8 0 0 0 0 -16 Z", fill: "currentColor" })))));
 });
-HugeiconsChartNoAxesColumnIncreasingIcon.displayName =
-    'HugeiconsChartNoAxesColumnIncreasingIcon';
+PhosphorChartBarNoAxesIcon.displayName = 'PhosphorChartBarNoAxesIcon';
 function useIconAccessibility(ref, createHandle, controllers) {
     const rawHandle = createHandle();
     const raw = useRef(rawHandle);
@@ -238,7 +278,7 @@ function useIconAccessibility(ref, createHandle, controllers) {
     };
 }
 
-  return HugeiconsChartNoAxesColumnIncreasingIcon;
+  return PhosphorChartBarNoAxesIcon;
 }
 
 function mountIconProgram(createProgram, container, getSize, isControlled, instanceId) {
@@ -545,10 +585,45 @@ onMount(() => {
 </script>
 
 <div  bind:this={root} {...rest} class={["", rest.class].filter(Boolean).join(' ')}>
-  <svg data-icon-node="0" xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
-    <path data-icon-node="0.0" d="M3 21V15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" pathLength="1" stroke-dashoffset="0" stroke-dasharray="1 1" style="opacity: 1" />
-    <path data-icon-node="0.1" d="M9 21V11" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" pathLength="1" stroke-dashoffset="0" stroke-dasharray="1 1" style="opacity: 1" />
-    <path data-icon-node="0.2" d="M15 21V7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" pathLength="1" stroke-dashoffset="0" stroke-dasharray="1 1" style="opacity: 1" />
-    <path data-icon-node="0.3" d="M21 21V3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" pathLength="1" stroke-dashoffset="0" stroke-dasharray="1 1" style="opacity: 1" />
+  <svg data-icon-node="0" xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    <g data-icon-node="0.0" style="opacity: 1">
+      <defs data-icon-node="0.0.0" >
+        <mask data-icon-node="0.0.0.0" id={instanceId + '-0' + "-0"} maskUnits="userSpaceOnUse" x="-24" y="-24" width="72" height="72">
+          <path data-icon-node="0.0.0.0.0" d="M6.75 19.5v-7.5" fill="none" stroke="white" stroke-width="8.000137331943934" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dashoffset="0" stroke-dasharray="1 1" />
+        </mask>
+      </defs>
+      <g data-icon-node="0.0.1" mask={"url(#" + instanceId + '-0' + "-0)"}>
+        <g data-icon-node="0.0.1.0" transform="scale(0.09375)">
+          <path data-icon-node="0.0.1.0.0" d="M 48 128 H 96 a 8 8 0 0 1 8 8 V 208 H 40 V 136 a 8 8 0 0 1 8 -8 Z M 56 144 V 200 H 88 V 144 Z" fill="currentColor" />
+        </g>
+      </g>
+    </g>
+    <g data-icon-node="0.1" style="opacity: 1">
+      <defs data-icon-node="0.1.0" >
+        <mask data-icon-node="0.1.0.0" id={instanceId + '-0' + "-1"} maskUnits="userSpaceOnUse" x="-24" y="-24" width="72" height="72">
+          <path data-icon-node="0.1.0.0.0" d="M11.625 19.5v-12" fill="none" stroke="white" stroke-width="8.75041545344995" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dashoffset="0" stroke-dasharray="1 1" />
+        </mask>
+      </defs>
+      <g data-icon-node="0.1.1" mask={"url(#" + instanceId + '-0' + "-1)"}>
+        <g data-icon-node="0.1.1.0" transform="scale(0.09375)">
+          <path data-icon-node="0.1.1.0.0" d="M 96 80 H 152 a 8 8 0 0 1 8 8 V 208 H 88 V 88 a 8 8 0 0 1 8 -8 Z M 104 96 V 200 H 144 V 96 Z" fill="currentColor" />
+        </g>
+      </g>
+    </g>
+    <g data-icon-node="0.2" style="opacity: 1">
+      <defs data-icon-node="0.2.0" >
+        <mask data-icon-node="0.2.0.0" id={instanceId + '-0' + "-2"} maskUnits="userSpaceOnUse" x="-24" y="-24" width="72" height="72">
+          <path data-icon-node="0.2.0.0.0" d="M16.875 19.5v-16.5" fill="none" stroke="white" stroke-width="8.750772403396379" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dashoffset="0" stroke-dasharray="1 1" />
+        </mask>
+      </defs>
+      <g data-icon-node="0.2.1" mask={"url(#" + instanceId + '-0' + "-2)"}>
+        <g data-icon-node="0.2.1.0" transform="scale(0.09375)">
+          <path data-icon-node="0.2.1.0.0" d="M 152 32 H 208 a 8 8 0 0 1 8 8 V 208 H 144 V 40 a 8 8 0 0 1 8 -8 Z M 160 48 V 200 H 200 V 48 Z" fill="currentColor" />
+        </g>
+      </g>
+    </g>
+    <g data-icon-node="0.3" transform="scale(0.09375)">
+      <path data-icon-node="0.3.0" d="M 32 200 a 8 8 0 0 0 0 16 H 224 a 8 8 0 0 0 0 -16 Z" fill="currentColor" />
+    </g>
   </svg>
 </div>
