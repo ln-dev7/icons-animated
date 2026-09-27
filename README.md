@@ -19,6 +19,7 @@ This project provides animated icons for:
 - **[Huge Icons](https://hugeicons.com/)** - A beautifully crafted icon library with 4000+ free icons
 - **[Tabler Icons](https://tabler.io/icons)** - A set of free MIT-licensed high-quality SVG icons
 - **[Phosphor Icons](https://phosphoricons.com/)** - A flexible icon family for interfaces, diagrams, presentations
+- **[Heroicons](https://heroicons.com/)** - Hand-crafted SVG icons by the makers of Tailwind CSS
 
 ## Installation
 
@@ -36,6 +37,10 @@ pnpm dlx shadcn add @icons-animated/tabler-search
 # Phosphor Icons
 pnpm dlx shadcn add @icons-animated/phosphor-heart
 pnpm dlx shadcn add @icons-animated/phosphor-star
+
+# Heroicons
+pnpm dlx shadcn add @icons-animated/heroicons-heart
+pnpm dlx shadcn add @icons-animated/heroicons-magnifying-glass
 ```
 
 For direct copy, use React 18.2+ and install the animation engine versions below. Keep `@/lib/utils` pointing to a `cn` helper: reuse your shadcn setup, or copy [our helper](lib/utils.ts) and install `clsx` and `tailwind-merge`.
@@ -97,7 +102,7 @@ We welcome contributions to `icons-animated`! Please read our [contributing guid
 
 ## License
 
-icons-animated is released under the [MIT License](LICENSE): you can use, modify and redistribute it in personal and commercial projects. The icon geometry comes from Hugeicons, Tabler and Phosphor, all MIT-licensed. License texts and attributions are centralized in [LICENSE](LICENSE) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md), rather than repeated in each component. Include these notices when redistributing the components.
+icons-animated is released under the [MIT License](LICENSE): you can use, modify and redistribute it in personal and commercial projects. The icon geometry comes from Hugeicons, Tabler, Phosphor and Heroicons, all MIT-licensed. License texts and attributions are centralized in [LICENSE](LICENSE) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md), rather than repeated in each component. Include these notices when redistributing the components.
 
 If you have any questions or just want to say hi, feel free to reach out to me on X 👉 [@ln_dev7](https://x.com/ln_dev7).
 
@@ -107,6 +112,7 @@ If you have any questions or just want to say hi, feel free to reach out to me o
 - Huge Icons: [hugeicons.com](https://hugeicons.com/)
 - Tabler Icons: [tabler.io/icons](https://tabler.io/icons)
 - Phosphor Icons: [phosphoricons.com](https://phosphoricons.com/)
+- Heroicons: [heroicons.com](https://heroicons.com/)
 
 ## Notes
 
