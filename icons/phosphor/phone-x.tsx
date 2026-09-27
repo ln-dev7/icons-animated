@@ -1,6 +1,8 @@
 /**
  * @license
  * MIT License
+ * Choreography copyright (c) 2024-2026 pqoqubbw
+ * Reference: phone-missed @ 072c38b1b04ea738d90a084485ccaad4b890ddca
  *
  * Copyright (c) 2023 Phosphor Icons
  *
@@ -24,16 +26,24 @@
  */
 'use client';
 
+import type {
+  LegacyAnimationControls,
+  ResolvedValues,
+  VisualElement,
+} from 'motion';
 import type { Variants } from 'motion/react';
-import type { HTMLAttributes } from 'react';
+import type { ForwardedRef, HTMLAttributes } from 'react';
 import {
   forwardRef,
   useCallback,
   useEffect,
   useImperativeHandle,
+  useMemo,
   useRef,
+  useState,
 } from 'react';
-import { motion, useAnimation, useReducedMotion } from 'motion/react';
+import { getDefaultValueType, setTarget, visualElementStore } from 'motion';
+import { motion, useAnimation } from 'motion/react';
 
 import { cn } from '@/lib/utils';
 
@@ -44,113 +54,293 @@ export interface PhosphorPhoneXIconHandle {
 interface PhosphorPhoneXIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
-
-const ICON_VARIANTS: Variants = {
-  normal: {
-    x: 0,
-    y: 0,
-    rotate: 0,
-    scale: 1,
-    scaleX: 1,
-    scaleY: 1,
-    opacity: 1,
-    transition: { duration: 0.18, ease: 'easeOut' },
-  },
+export interface PhosphorPhoneXIconHandle {
+  startAnimation: () => void;
+  stopAnimation: () => void;
+}
+const PHONE_MISSED_VARIANTS: Variants = {
+  initial: { scale: 1 },
   animate: {
-    rotate: [0, -13, 11, -7, 4, 0],
-    transition: { duration: 0.75, ease: 'easeInOut' },
+    scale: [1, 1.05, 1],
+    transition: {
+      duration: 0.9,
+      ease: 'easeInOut',
+    },
   },
 };
-
+const ARROW_VARIANTS: Variants = {
+  normal: {
+    scale: 1,
+  },
+  animate: {
+    scale: [1, 1.2, 1],
+    transition: {
+      duration: 0.8,
+      ease: 'easeInOut',
+    },
+  },
+};
 const PhosphorPhoneXIcon = forwardRef<
   PhosphorPhoneXIconHandle,
   PhosphorPhoneXIconProps
->(
-  (
-    {
-      onMouseEnter,
-      onMouseLeave,
-      onFocus,
-      onBlur,
-      className,
-      size = 28,
-      ...props
-    },
-    ref
-  ) => {
-    const controls = useAnimation();
-    const reducedMotion = useReducedMotion();
-    const sequence = useRef(0);
-    const startAnimation = useCallback(() => {
-      const current = ++sequence.current;
-      controls.stop();
-      controls.set('normal');
-      if (reducedMotion) return;
-      void controls.start('animate').then(() => {
-        if (sequence.current === current) controls.set('normal');
-      });
-    }, [controls, reducedMotion]);
-    const stopAnimation = useCallback(() => {
-      sequence.current += 1;
-      void controls.start('normal');
-    }, [controls]);
-    useImperativeHandle(ref, () => ({ startAnimation, stopAnimation }), [
-      startAnimation,
-      stopAnimation,
-    ]);
-    useEffect(() => {
-      if (reducedMotion) {
-        sequence.current += 1;
-        controls.set('normal');
+>(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
+  const controls = useAnimation();
+  const isControlledRef = useRef(false);
+  const {
+    rootRef: iconRootRef,
+    reduceDefinition,
+    ...iconAccessibility
+  } = useIconAccessibility(ref, () => {
+    isControlledRef.current = ref != null;
+    return {
+      startAnimation: () => controls.start('animate'),
+      stopAnimation: () => controls.start('normal'),
+    };
+  }, [controls]);
+  const handleMouseEnter = useCallback(
+    (e: React.MouseEvent<HTMLDivElement>) => {
+      if (isControlledRef.current) {
+        void e;
+      } else {
+        controls.start('animate');
       }
-      return () => {
-        sequence.current += 1;
-        controls.stop();
-      };
-    }, [controls, reducedMotion]);
-    return (
-      <div
-        {...props}
-        className={cn(className)}
-        onMouseEnter={(event) => {
-          if (!ref) startAnimation();
-          onMouseEnter?.(event);
-        }}
-        onMouseLeave={(event) => {
-          if (!ref) stopAnimation();
-          onMouseLeave?.(event);
-        }}
-        onFocus={(event) => {
-          if (!ref) startAnimation();
-          onFocus?.(event);
-        }}
-        onBlur={(event) => {
-          if (!ref) stopAnimation();
-          onBlur?.(event);
-        }}
+    },
+    [controls]
+  );
+  const handleMouseLeave = useCallback(
+    (e: React.MouseEvent<HTMLDivElement>) => {
+      if (isControlledRef.current) {
+        void e;
+      } else {
+        controls.start('normal');
+      }
+    },
+    [controls]
+  );
+  return (
+    <div
+      className={cn(className)}
+      {...props}
+      ref={iconRootRef}
+      onMouseEnter={(event) => {
+        if (!iconAccessibility.controlled && !iconAccessibility.reduced) {
+          handleMouseEnter(event);
+        }
+        onMouseEnter?.(event);
+      }}
+      onMouseLeave={(event) => {
+        if (!iconAccessibility.controlled) {
+          handleMouseLeave(event);
+        }
+        onMouseLeave?.(event);
+      }}
+      onFocus={(event) => {
+        if (!iconAccessibility.controlled && !iconAccessibility.reduced) {
+          iconAccessibility.startAnimation();
+        }
+        props.onFocus?.(event);
+      }}
+      onBlur={(event) => {
+        if (!iconAccessibility.controlled) {
+          iconAccessibility.stopAnimation();
+        }
+        props.onBlur?.(event);
+      }}
+    >
+      <motion.svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        aria-hidden="true"
+        focusable="false"
+        style={{ overflow: 'visible' }}
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width={size}
-          height={size}
-          viewBox="0 0 256 256"
-          fill="currentColor"
-          overflow="visible"
-          aria-hidden="true"
-          focusable="false"
+        <motion.g
+          animate={reduceDefinition(controls)}
+          initial={{ y: 0, opacity: 1 }}
+          variants={ARROW_VARIANTS}
         >
-          <motion.g
-            initial="normal"
-            animate={controls}
-            variants={ICON_VARIANTS}
-            style={{ transformOrigin: '128px 128px' }}
-          >
-            <path d="M146.34,98.34,164.69,80,146.34,61.66a8,8,0,0,1,11.32-11.32L176,68.69l18.34-18.35a8,8,0,0,1,11.32,11.32L187.32,80l18.34,18.34a8,8,0,0,1-11.32,11.32L176,91.31l-18.34,18.35a8,8,0,0,1-11.32-11.32Zm77.54,84.74A56.26,56.26,0,0,1,168,232C88.6,232,24,167.4,24,88A56.26,56.26,0,0,1,72.92,32.12a16,16,0,0,1,16.62,9.52l21.12,47.15,0,.12A16,16,0,0,1,109.39,104c-.18.27-.37.52-.57.77L88,129.45c7.49,15.22,23.41,31,38.83,38.51l24.34-20.71a8.12,8.12,0,0,1,.75-.56,16,16,0,0,1,15.17-1.4l.13.06,47.11,21.11A16,16,0,0,1,223.88,183.08Zm-15.88-2s-.07,0-.11,0h0l-47-21.05-24.35,20.71a8.44,8.44,0,0,1-.74.56,16,16,0,0,1-15.75,1.14c-18.73-9.05-37.4-27.58-46.46-46.11a16,16,0,0,1,1-15.7,6.13,6.13,0,0,1,.57-.77L96,95.15l-21-47a.61.61,0,0,1,0-.12A40.2,40.2,0,0,0,40,88,128.14,128.14,0,0,0,168,216,40.21,40.21,0,0,0,208,181.07Z" />
-          </motion.g>
-        </svg>
-      </div>
-    );
-  }
-);
+          <g transform="scale(0.09375)">
+            <path
+              d="M 146.34 98.34 L 164.69 80 L 146.34 61.66 a 8 8 0 0 1 11.32 -11.32 L 176 68.69 l 18.34 -18.35 a 8 8 0 0 1 11.32 11.32 L 187.32 80 l 18.34 18.34 a 8 8 0 0 1 -11.32 11.32 L 176 91.31 l -18.34 18.35 a 8 8 0 0 1 -11.32 -11.32 Z"
+              fill="currentColor"
+            />
+          </g>
+        </motion.g>
+        <motion.g
+          animate={reduceDefinition(controls)}
+          initial="initial"
+          variants={PHONE_MISSED_VARIANTS}
+        >
+          <g transform="scale(0.09375)">
+            <path
+              d="M 223.88 183.07999999999998 A 56.26 56.26 0 0 1 168 232 C 88.6 232 24 167.4 24 88 A 56.26 56.26 0 0 1 72.92 32.12 a 16 16 0 0 1 16.62 9.52 l 21.12 47.15 l 0 0.12 A 16 16 0 0 1 109.39 104 c -0.18 0.27 -0.37 0.52 -0.57 0.77 L 88 129.45 c 7.49 15.22 23.41 31 38.83 38.51 l 24.34 -20.71 a 8.12 8.12 0 0 1 0.75 -0.56 a 16 16 0 0 1 15.17 -1.4 l 0.13 0.06 l 47.11 21.11 A 16 16 0 0 1 223.88 183.08 Z M 208 181.07999999999998 s -0.07 0 -0.11 0 h 0 l -47 -21.05 l -24.35 20.71 a 8.44 8.44 0 0 1 -0.74 0.56 a 16 16 0 0 1 -15.75 1.14 c -18.73 -9.05 -37.4 -27.58 -46.46 -46.11 a 16 16 0 0 1 1 -15.7 a 6.13 6.13 0 0 1 0.57 -0.77 L 96 95.15 l -21 -47 a 0.61 0.61 0 0 1 0 -0.12 A 40.2 40.2 0 0 0 40 88 A 128.14 128.14 0 0 0 168 216 A 40.21 40.21 0 0 0 208 181.07 Z"
+              fill="currentColor"
+            />
+          </g>
+        </motion.g>
+      </motion.svg>
+    </div>
+  );
+});
 PhosphorPhoneXIcon.displayName = 'PhosphorPhoneXIcon';
 export { PhosphorPhoneXIcon };
+
+type IconAccessibilityHandle = {
+  startAnimation: () => unknown;
+  stopAnimation: () => unknown;
+};
+
+type IconAccessibilitySnapshot = {
+  visual: VisualElement;
+  values: ResolvedValues;
+  attributes: Record<string, string>;
+};
+
+function useIconAccessibility(
+  ref: ForwardedRef<IconAccessibilityHandle>,
+  createHandle: () => IconAccessibilityHandle,
+  controllers: LegacyAnimationControls[]
+) {
+  const rawHandle = createHandle();
+  const raw = useRef(rawHandle);
+  useEffect(() => {
+    raw.current = rawHandle;
+  }, [rawHandle]);
+  const controls = useRef(controllers);
+  const rootRef = useRef<HTMLDivElement | null>(null);
+  const preference = useRef(false);
+  const mounted = useRef(true);
+  const [reduced, setReduced] = useState(false);
+  const api = useMemo(
+    () => ({
+      startAnimation() {
+        if (
+          mounted.current &&
+          !preference.current &&
+          !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        ) {
+          void raw.current.startAnimation();
+        }
+      },
+      stopAnimation() {
+        if (mounted.current) void raw.current.stopAnimation();
+      },
+    }),
+    []
+  );
+  useImperativeHandle(ref, () => api, [api]);
+
+  useEffect(() => {
+    mounted.current = true;
+    const media = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const snapshots: IconAccessibilitySnapshot[] = [];
+    rootRef.current
+      ?.querySelectorAll<SVGElement>('svg, svg *')
+      .forEach((element) => {
+        const visual = visualElementStore.get(element);
+        if (visual)
+          snapshots.push({
+            visual,
+            values: { ...visual.latestValues },
+            attributes: Object.fromEntries(
+              [...element.attributes].map((attribute) => [
+                attribute.name,
+                attribute.value,
+              ])
+            ),
+          });
+      });
+    const restore = () => {
+      for (const snapshot of snapshots) {
+        const { visual, values, attributes } = snapshot;
+        visual.values.forEach((value) => value.stop());
+        const props = visual.getProps() as unknown as {
+          [key: string]: unknown;
+          style?: Record<string, unknown>;
+        };
+        const reset: Record<string, string | number> = {};
+        visual.values.forEach((_motionValue, key) => {
+          const attribute = key.replace(
+            /[A-Z]/g,
+            (letter) => '-' + letter.toLowerCase()
+          );
+          const defaults: Record<string, number> = {
+            opacity: 1,
+            pathLength: 1,
+            pathSpacing: 1,
+            pathOffset: 0,
+            strokeDashoffset: 0,
+          };
+          const value =
+            values[key] ??
+            props.style?.[key] ??
+            props[key] ??
+            getDefaultValueType(key)?.default ??
+            defaults[key] ??
+            attributes[attribute];
+          if (typeof value === 'number' || typeof value === 'string')
+            reset[key] = value;
+        });
+        setTarget(visual, reset);
+        visual.render();
+      }
+    };
+    const activeControls = controls.current;
+    const originals = activeControls.map((control) => {
+      const original = control.start;
+      control.start = (definition, transition) => {
+        if (!mounted.current) return new Promise<never>(() => {});
+        if (preference.current) {
+          control.set(definition);
+          return Promise.resolve();
+        }
+        return original(definition, transition);
+      };
+      return original;
+    });
+    const change = () => {
+      preference.current = media.matches;
+      setReduced(media.matches);
+      if (media.matches) {
+        void raw.current.stopAnimation();
+        activeControls.forEach((control) => control.stop());
+        restore();
+      }
+    };
+    change();
+    media.addEventListener('change', change);
+    return () => {
+      mounted.current = false;
+      media.removeEventListener('change', change);
+      activeControls.forEach((control, index) => {
+        control.stop();
+        control.start = originals[index];
+      });
+    };
+  }, []);
+
+  return {
+    ...api,
+    rootRef,
+    controlled: ref != null,
+    reduced,
+    reduceDefinition<T>(definition: T): T {
+      if (
+        reduced &&
+        definition &&
+        typeof definition === 'object' &&
+        !Array.isArray(definition) &&
+        !('start' in definition)
+      ) {
+        return {
+          ...definition,
+          transition: { type: false, duration: 0, delay: 0, repeat: 0 },
+        } as T;
+      }
+      return definition;
+    },
+  };
+}
