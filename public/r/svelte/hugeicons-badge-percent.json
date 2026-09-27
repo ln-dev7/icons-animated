@@ -3,7 +3,7 @@
   "name": "hugeicons-badge-percent",
   "type": "registry:ui",
   "title": "badge-percent (Svelte)",
-  "description": "Animated hugeicons icon for Svelte 5.",
+  "description": "Animated hugeicons icon for Svelte 5.20+.",
   "dependencies": [
     "motion@13.1.1",
     "framer-motion@13.1.1",
@@ -19,5 +19,5 @@
       "target": "hugeicons-badge-percent.svelte"
     }
   ],
-  "docs": "Requires Svelte 5. Animates on hover and keyboard focus. Exposes startAnimation() and stopAnimation(); set controlled to true for imperative-only playback. Respects prefers-reduced-motion."
+  "docs": "Requires Svelte 5.20+. Animates on hover and keyboard focus. Exposes startAnimation() and stopAnimation(); set controlled to true for imperative-only playback. Respects prefers-reduced-motion."
 }

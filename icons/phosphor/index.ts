@@ -67,12 +67,14 @@ import { PhosphorBookmarkIcon } from './bookmark';
 import { PhosphorBowlSteamIcon } from './bowl-steam';
 import { PhosphorBrainIcon } from './brain';
 import { PhosphorBriefcaseIcon } from './briefcase';
+import { PhosphorBroadcastIcon } from './broadcast';
 import { PhosphorCalendarIcon } from './calendar';
 import { PhosphorCalendarCheckIcon } from './calendar-check';
 import { PhosphorCalendarDotsIcon } from './calendar-dots';
 import { PhosphorCallBellIcon } from './call-bell';
 import { PhosphorCameraRotateIcon } from './camera-rotate';
 import { PhosphorCardsThreeIcon } from './cards-three';
+import { PhosphorCardsThreeSquareStackIcon } from './cards-three-square-stack';
 import { PhosphorCaretCircleDownIcon } from './caret-circle-down';
 import { PhosphorCaretCircleLeftIcon } from './caret-circle-left';
 import { PhosphorCaretCircleRightIcon } from './caret-circle-right';
@@ -82,6 +84,7 @@ import { PhosphorCaretUpDownIcon } from './caret-up-down';
 import { PhosphorCellTowerIcon } from './cell-tower';
 import { PhosphorChargingStationIcon } from './charging-station';
 import { PhosphorChartBarIcon } from './chart-bar';
+import { PhosphorChartBarNoAxesIcon } from './chart-bar-no-axes';
 import { PhosphorChartLineIcon } from './chart-line';
 import { PhosphorChartPieIcon } from './chart-pie';
 import { PhosphorChartScatterIcon } from './chart-scatter';
@@ -162,6 +165,7 @@ import { PhosphorGearFineIcon } from './gear-fine';
 import { PhosphorGitBranchIcon } from './git-branch';
 import { PhosphorGitCommitIcon } from './git-commit';
 import { PhosphorGitDiffIcon } from './git-diff';
+import { PhosphorGitDiffArrowsIcon } from './git-diff-arrows';
 import { PhosphorGitForkIcon } from './git-fork';
 import { PhosphorGitMergeIcon } from './git-merge';
 import { PhosphorGitPullRequestIcon } from './git-pull-request';
@@ -184,6 +188,7 @@ import { PhosphorHouseIcon } from './house';
 import { PhosphorIdentificationCardIcon } from './identification-card';
 import { PhosphorInstagramLogoIcon } from './instagram-logo';
 import { PhosphorKeyIcon } from './key';
+import { PhosphorKeyCircleIcon } from './key-circle';
 import { PhosphorKeyboardIcon } from './keyboard';
 import { PhosphorLayoutIcon } from './layout';
 import { PhosphorLeafIcon } from './leaf';
@@ -229,6 +234,7 @@ import { PhosphorQuestionIcon } from './question';
 import { PhosphorRabbitIcon } from './rabbit';
 import { PhosphorRadioIcon } from './radio';
 import { PhosphorReceiptIcon } from './receipt';
+import { PhosphorReceiptTextIcon } from './receipt-text';
 import { PhosphorRefreshIcon } from './refresh';
 import { PhosphorRobotIcon } from './robot';
 import { PhosphorRocketIcon } from './rocket';
@@ -249,10 +255,13 @@ import { PhosphorSlidersHorizontalIcon } from './sliders-horizontal';
 import { PhosphorSmileyIcon } from './smiley';
 import { PhosphorSmileyAngryIcon } from './smiley-angry';
 import { PhosphorSmileyMehIcon } from './smiley-meh';
+import { PhosphorSmileyMehNeutralIcon } from './smiley-meh-neutral';
 import { PhosphorSmileySadIcon } from './smiley-sad';
 import { PhosphorSnowflakeIcon } from './snowflake';
 import { PhosphorSortAscendingIcon } from './sort-ascending';
+import { PhosphorSortAscendingAlphabeticalIcon } from './sort-ascending-alphabetical';
 import { PhosphorSortDescendingIcon } from './sort-descending';
+import { PhosphorSortDescendingAlphabeticalIcon } from './sort-descending-alphabetical';
 import { PhosphorSparkleIcon } from './sparkle';
 import { PhosphorSpeakerXIcon } from './speaker-x';
 import { PhosphorSpinnerIcon } from './spinner';
@@ -267,6 +276,7 @@ import { PhosphorStethoscopeIcon } from './stethoscope';
 import { PhosphorSunIcon } from './sun';
 import { PhosphorSunDimIcon } from './sun-dim';
 import { PhosphorSunHorizonIcon } from './sun-horizon';
+import { PhosphorSunMediumIcon } from './sun-medium';
 import { PhosphorSwimmingPoolIcon } from './swimming-pool';
 import { PhosphorSyringeIcon } from './syringe';
 import { PhosphorTerminalIcon } from './terminal';
@@ -297,13 +307,17 @@ import { PhosphorUserIcon } from './user';
 import { PhosphorUserCheckIcon } from './user-check';
 import { PhosphorUserGearIcon } from './user-gear';
 import { PhosphorUserPlusIcon } from './user-plus';
+import { PhosphorUserRoundCheckIcon } from './user-round-check';
+import { PhosphorUserRoundPlusIcon } from './user-round-plus';
 import { PhosphorUsersIcon } from './users';
+import { PhosphorUsersRoundIcon } from './users-round';
 import { PhosphorVibrateIcon } from './vibrate';
 import { PhosphorWalletIcon } from './wallet';
 import { PhosphorWashingMachineIcon } from './washing-machine';
 import { PhosphorWaveformIcon } from './waveform';
 import { PhosphorWavesIcon } from './waves';
 import { PhosphorWebhooksLogoIcon } from './webhooks-logo';
+import { PhosphorWheelchairMotionIcon } from './wheelchair-motion';
 import { PhosphorWifiHighIcon } from './wifi-high';
 import { PhosphorWifiLowIcon } from './wifi-low';
 import { PhosphorWindIcon } from './wind';
@@ -316,12 +330,24 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'airplane-landing',
     icon: PhosphorAirplaneLandingIcon,
-    keywords: ['airplane', 'landing', 'plane-landing', 'plane'],
+    keywords: [
+      'airplane-landing',
+      'airplane',
+      'landing',
+      'plane-landing',
+      'plane',
+    ],
   },
   {
     name: 'airplane-takeoff',
     icon: PhosphorAirplaneTakeoffIcon,
-    keywords: ['airplane', 'takeoff', 'plane-takeoff', 'plane'],
+    keywords: [
+      'airplane-takeoff',
+      'airplane',
+      'takeoff',
+      'plane-takeoff',
+      'plane',
+    ],
   },
   { name: 'airplay', icon: PhosphorAirplayIcon, keywords: ['airplay'] },
   {
@@ -332,54 +358,83 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'align-center-horizontal',
     icon: PhosphorAlignCenterHorizontalIcon,
-    keywords: ['align', 'center', 'horizontal', 'align-horizontal'],
+    keywords: [
+      'align-center-horizontal',
+      'align',
+      'center',
+      'horizontal',
+      'align-horizontal',
+    ],
   },
   {
     name: 'align-center-vertical',
     icon: PhosphorAlignCenterVerticalIcon,
-    keywords: ['align', 'center', 'vertical', 'align-vertical'],
+    keywords: [
+      'align-center-vertical',
+      'align',
+      'center',
+      'vertical',
+      'align-vertical',
+    ],
   },
   { name: 'ambulance', icon: PhosphorAmbulanceIcon, keywords: ['ambulance'] },
   { name: 'archive', icon: PhosphorArchiveIcon, keywords: ['archive'] },
   {
     name: 'arrow-bend-up-left',
     icon: PhosphorArrowBendUpLeftIcon,
-    keywords: ['arrow', 'bend', 'up', 'left', 'undo'],
+    keywords: ['arrow-bend-up-left', 'arrow', 'bend', 'up', 'left', 'undo'],
   },
   {
     name: 'arrow-bend-up-right',
     icon: PhosphorArrowBendUpRightIcon,
-    keywords: ['arrow', 'bend', 'up', 'right', 'redo'],
+    keywords: ['arrow-bend-up-right', 'arrow', 'bend', 'up', 'right', 'redo'],
   },
   {
     name: 'arrow-counter-clockwise',
     icon: PhosphorArrowCounterClockwiseIcon,
-    keywords: ['arrow', 'counter', 'clockwise', 'rotate-ccw', 'rotate', 'ccw'],
+    keywords: [
+      'arrow-counter-clockwise',
+      'arrow',
+      'counter',
+      'clockwise',
+      'rotate-ccw',
+      'rotate',
+      'ccw',
+    ],
   },
   {
     name: 'arrow-down',
     icon: PhosphorArrowDownIcon,
-    keywords: ['arrow', 'down', 'direction', 'south', 'bottom', 'arrow-down'],
+    keywords: ['arrow-down', 'arrow', 'down', 'direction', 'south', 'bottom'],
   },
   {
     name: 'arrow-down-left',
     icon: PhosphorArrowDownLeftIcon,
-    keywords: ['arrow', 'down', 'left', 'arrow-down-left'],
+    keywords: ['arrow-down-left', 'arrow', 'down', 'left'],
   },
   {
     name: 'arrow-down-right',
     icon: PhosphorArrowDownRightIcon,
-    keywords: ['arrow', 'down', 'right', 'arrow-down-right'],
+    keywords: ['arrow-down-right', 'arrow', 'down', 'right'],
   },
   {
     name: 'arrow-elbow-down-left',
     icon: PhosphorArrowElbowDownLeftIcon,
-    keywords: ['arrow', 'elbow', 'down', 'left', 'corner-down-left', 'corner'],
+    keywords: [
+      'arrow-elbow-down-left',
+      'arrow',
+      'elbow',
+      'down',
+      'left',
+      'corner-down-left',
+      'corner',
+    ],
   },
   {
     name: 'arrow-elbow-down-right',
     icon: PhosphorArrowElbowDownRightIcon,
     keywords: [
+      'arrow-elbow-down-right',
       'arrow',
       'elbow',
       'down',
@@ -391,17 +446,34 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'arrow-elbow-left-down',
     icon: PhosphorArrowElbowLeftDownIcon,
-    keywords: ['arrow', 'elbow', 'left', 'down', 'corner-left-down', 'corner'],
+    keywords: [
+      'arrow-elbow-left-down',
+      'arrow',
+      'elbow',
+      'left',
+      'down',
+      'corner-left-down',
+      'corner',
+    ],
   },
   {
     name: 'arrow-elbow-left-up',
     icon: PhosphorArrowElbowLeftUpIcon,
-    keywords: ['arrow', 'elbow', 'left', 'up', 'corner-left-up', 'corner'],
+    keywords: [
+      'arrow-elbow-left-up',
+      'arrow',
+      'elbow',
+      'left',
+      'up',
+      'corner-left-up',
+      'corner',
+    ],
   },
   {
     name: 'arrow-elbow-right-down',
     icon: PhosphorArrowElbowRightDownIcon,
     keywords: [
+      'arrow-elbow-right-down',
       'arrow',
       'elbow',
       'right',
@@ -413,32 +485,71 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'arrow-elbow-right-up',
     icon: PhosphorArrowElbowRightUpIcon,
-    keywords: ['arrow', 'elbow', 'right', 'up', 'corner-right-up', 'corner'],
+    keywords: [
+      'arrow-elbow-right-up',
+      'arrow',
+      'elbow',
+      'right',
+      'up',
+      'corner-right-up',
+      'corner',
+    ],
   },
   {
     name: 'arrow-elbow-up-left',
     icon: PhosphorArrowElbowUpLeftIcon,
-    keywords: ['arrow', 'elbow', 'up', 'left', 'corner-up-left', 'corner'],
+    keywords: [
+      'arrow-elbow-up-left',
+      'arrow',
+      'elbow',
+      'up',
+      'left',
+      'corner-up-left',
+      'corner',
+    ],
   },
   {
     name: 'arrow-elbow-up-right',
     icon: PhosphorArrowElbowUpRightIcon,
-    keywords: ['arrow', 'elbow', 'up', 'right', 'corner-up-right', 'corner'],
+    keywords: [
+      'arrow-elbow-up-right',
+      'arrow',
+      'elbow',
+      'up',
+      'right',
+      'corner-up-right',
+      'corner',
+    ],
   },
   {
     name: 'arrow-fat-down',
     icon: PhosphorArrowFatDownIcon,
-    keywords: ['arrow', 'fat', 'down', 'arrow-big-down', 'big'],
+    keywords: [
+      'arrow-fat-down',
+      'arrow',
+      'fat',
+      'down',
+      'arrow-big-down',
+      'big',
+    ],
   },
   {
     name: 'arrow-fat-left',
     icon: PhosphorArrowFatLeftIcon,
-    keywords: ['arrow', 'fat', 'left', 'arrow-big-left', 'big'],
+    keywords: [
+      'arrow-fat-left',
+      'arrow',
+      'fat',
+      'left',
+      'arrow-big-left',
+      'big',
+    ],
   },
   {
     name: 'arrow-fat-line-down',
     icon: PhosphorArrowFatLineDownIcon,
     keywords: [
+      'arrow-fat-line-down',
       'arrow',
       'fat',
       'line',
@@ -452,6 +563,7 @@ const PHOSPHOR_ICON_LIST = [
     name: 'arrow-fat-line-left',
     icon: PhosphorArrowFatLineLeftIcon,
     keywords: [
+      'arrow-fat-line-left',
       'arrow',
       'fat',
       'line',
@@ -465,6 +577,7 @@ const PHOSPHOR_ICON_LIST = [
     name: 'arrow-fat-line-right',
     icon: PhosphorArrowFatLineRightIcon,
     keywords: [
+      'arrow-fat-line-right',
       'arrow',
       'fat',
       'line',
@@ -478,6 +591,7 @@ const PHOSPHOR_ICON_LIST = [
     name: 'arrow-fat-line-up',
     icon: PhosphorArrowFatLineUpIcon,
     keywords: [
+      'arrow-fat-line-up',
       'arrow',
       'fat',
       'line',
@@ -490,80 +604,121 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'arrow-fat-right',
     icon: PhosphorArrowFatRightIcon,
-    keywords: ['arrow', 'fat', 'right', 'arrow-big-right', 'big'],
+    keywords: [
+      'arrow-fat-right',
+      'arrow',
+      'fat',
+      'right',
+      'arrow-big-right',
+      'big',
+    ],
   },
   {
     name: 'arrow-fat-up',
     icon: PhosphorArrowFatUpIcon,
-    keywords: ['arrow', 'fat', 'up', 'arrow-big-up', 'big'],
+    keywords: ['arrow-fat-up', 'arrow', 'fat', 'up', 'arrow-big-up', 'big'],
   },
   {
     name: 'arrow-left',
     icon: PhosphorArrowLeftIcon,
-    keywords: ['arrow', 'left', 'direction', 'west', 'back', 'arrow-left'],
+    keywords: ['arrow-left', 'arrow', 'left', 'direction', 'west', 'back'],
   },
   {
     name: 'arrow-right',
     icon: PhosphorArrowRightIcon,
     keywords: [
+      'arrow-right',
       'arrow',
       'right',
       'direction',
       'east',
       'forward',
       'next',
-      'arrow-right',
     ],
   },
   {
     name: 'arrow-square-down',
     icon: PhosphorArrowSquareDownIcon,
-    keywords: ['arrow', 'square', 'down', 'square-arrow-down'],
+    keywords: [
+      'arrow-square-down',
+      'arrow',
+      'square',
+      'down',
+      'square-arrow-down',
+    ],
   },
   {
     name: 'arrow-square-left',
     icon: PhosphorArrowSquareLeftIcon,
-    keywords: ['arrow', 'square', 'left', 'square-arrow-left'],
+    keywords: [
+      'arrow-square-left',
+      'arrow',
+      'square',
+      'left',
+      'square-arrow-left',
+    ],
   },
   {
     name: 'arrow-square-out',
     icon: PhosphorArrowSquareOutIcon,
-    keywords: ['arrow', 'square', 'out', 'external-link', 'external', 'link'],
+    keywords: [
+      'arrow-square-out',
+      'arrow',
+      'square',
+      'out',
+      'external-link',
+      'external',
+      'link',
+    ],
   },
   {
     name: 'arrow-square-right',
     icon: PhosphorArrowSquareRightIcon,
-    keywords: ['arrow', 'square', 'right', 'square-arrow-right'],
+    keywords: [
+      'arrow-square-right',
+      'arrow',
+      'square',
+      'right',
+      'square-arrow-right',
+    ],
   },
   {
     name: 'arrow-square-up',
     icon: PhosphorArrowSquareUpIcon,
-    keywords: ['arrow', 'square', 'up', 'square-arrow-up'],
+    keywords: ['arrow-square-up', 'arrow', 'square', 'up', 'square-arrow-up'],
   },
   {
     name: 'arrow-up',
     icon: PhosphorArrowUpIcon,
-    keywords: ['arrow', 'up', 'direction', 'north', 'top', 'arrow-up'],
+    keywords: ['arrow-up', 'arrow', 'up', 'direction', 'north', 'top'],
   },
   {
     name: 'arrow-up-left',
     icon: PhosphorArrowUpLeftIcon,
-    keywords: ['arrow', 'up', 'left', 'arrow-up-left'],
+    keywords: ['arrow-up-left', 'arrow', 'up', 'left'],
   },
   {
     name: 'arrow-up-right',
     icon: PhosphorArrowUpRightIcon,
-    keywords: ['arrow', 'up', 'right', 'arrow-up-right'],
+    keywords: ['arrow-up-right', 'arrow', 'up', 'right'],
   },
   {
     name: 'arrows-clockwise',
     icon: PhosphorArrowsClockwiseIcon,
-    keywords: ['arrows', 'clockwise', 'refresh-cw', 'refresh', 'cw'],
+    keywords: [
+      'arrows-clockwise',
+      'arrows',
+      'clockwise',
+      'refresh-cw',
+      'refresh',
+      'cw',
+    ],
   },
   {
     name: 'arrows-counter-clockwise',
     icon: PhosphorArrowsCounterClockwiseIcon,
     keywords: [
+      'arrows-counter-clockwise',
       'arrows',
       'counter',
       'clockwise',
@@ -575,17 +730,25 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'arrows-in',
     icon: PhosphorArrowsInIcon,
-    keywords: ['arrows', 'in', 'shrink'],
+    keywords: ['arrows-in', 'arrows', 'in', 'shrink'],
   },
   {
     name: 'arrows-out',
     icon: PhosphorArrowsOutIcon,
-    keywords: ['arrows', 'out', 'expand'],
+    keywords: ['arrows-out', 'arrows', 'out', 'expand'],
   },
   {
     name: 'arrows-out-simple',
     icon: PhosphorArrowsOutSimpleIcon,
-    keywords: ['arrows', 'out', 'simple', 'maximize-2', 'maximize', '2'],
+    keywords: [
+      'arrows-out-simple',
+      'arrows',
+      'out',
+      'simple',
+      'maximize-2',
+      'maximize',
+      '2',
+    ],
   },
   { name: 'at', icon: PhosphorAtIcon, keywords: ['at', 'at-sign', 'sign'] },
   { name: 'atom', icon: PhosphorAtomIcon, keywords: ['atom'] },
@@ -603,37 +766,37 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'battery-charging',
     icon: PhosphorBatteryChargingIcon,
-    keywords: ['battery', 'charging', 'battery-charging'],
+    keywords: ['battery-charging', 'battery', 'charging'],
   },
   {
     name: 'battery-empty',
     icon: PhosphorBatteryEmptyIcon,
-    keywords: ['battery', 'empty'],
+    keywords: ['battery-empty', 'battery', 'empty'],
   },
   {
     name: 'battery-full',
     icon: PhosphorBatteryFullIcon,
-    keywords: ['battery', 'full', 'battery-full'],
+    keywords: ['battery-full', 'battery', 'full'],
   },
   {
     name: 'battery-low',
     icon: PhosphorBatteryLowIcon,
-    keywords: ['battery', 'low', 'battery-low'],
+    keywords: ['battery-low', 'battery', 'low'],
   },
   {
     name: 'battery-medium',
     icon: PhosphorBatteryMediumIcon,
-    keywords: ['battery', 'medium', 'battery-medium'],
+    keywords: ['battery-medium', 'battery', 'medium'],
   },
   {
     name: 'battery-plus',
     icon: PhosphorBatteryPlusIcon,
-    keywords: ['battery', 'plus', 'battery-plus'],
+    keywords: ['battery-plus', 'battery', 'plus'],
   },
   {
     name: 'battery-warning',
     icon: PhosphorBatteryWarningIcon,
-    keywords: ['battery', 'warning', 'battery-warning'],
+    keywords: ['battery-warning', 'battery', 'warning'],
   },
   {
     name: 'bell',
@@ -645,12 +808,12 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'bluetooth-connected',
     icon: PhosphorBluetoothConnectedIcon,
-    keywords: ['bluetooth', 'connected', 'bluetooth-connected'],
+    keywords: ['bluetooth-connected', 'bluetooth', 'connected'],
   },
   {
     name: 'bluetooth-slash',
     icon: PhosphorBluetoothSlashIcon,
-    keywords: ['bluetooth', 'slash', 'bluetooth-off', 'off'],
+    keywords: ['bluetooth-slash', 'bluetooth', 'slash', 'bluetooth-off', 'off'],
   },
   { name: 'boat', icon: PhosphorBoatIcon, keywords: ['boat', 'ship'] },
   { name: 'bone', icon: PhosphorBoneIcon, keywords: ['bone'] },
@@ -658,13 +821,18 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'bowl-steam',
     icon: PhosphorBowlSteamIcon,
-    keywords: ['bowl', 'steam', 'soup'],
+    keywords: ['bowl-steam', 'bowl', 'steam', 'soup'],
   },
   { name: 'brain', icon: PhosphorBrainIcon, keywords: ['brain'] },
   {
     name: 'briefcase',
     icon: PhosphorBriefcaseIcon,
     keywords: ['briefcase', 'briefcase-business', 'business'],
+  },
+  {
+    name: 'broadcast',
+    icon: PhosphorBroadcastIcon,
+    keywords: ['broadcast', 'radio'],
   },
   {
     name: 'calendar',
@@ -674,27 +842,28 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'calendar-check',
     icon: PhosphorCalendarCheckIcon,
-    keywords: ['calendar', 'check', 'calendar-check'],
+    keywords: ['calendar-check', 'calendar', 'check'],
   },
   {
     name: 'calendar-dots',
     icon: PhosphorCalendarDotsIcon,
-    keywords: ['calendar', 'dots', 'calendar-days', 'days'],
+    keywords: ['calendar-dots', 'calendar', 'dots', 'calendar-days', 'days'],
   },
   {
     name: 'call-bell',
     icon: PhosphorCallBellIcon,
-    keywords: ['call', 'bell', 'concierge-bell', 'concierge'],
+    keywords: ['call-bell', 'call', 'bell', 'concierge-bell', 'concierge'],
   },
   {
     name: 'camera-rotate',
     icon: PhosphorCameraRotateIcon,
-    keywords: ['camera', 'rotate', 'switch-camera', 'switch'],
+    keywords: ['camera-rotate', 'camera', 'rotate', 'switch-camera', 'switch'],
   },
   {
     name: 'cards-three',
     icon: PhosphorCardsThreeIcon,
     keywords: [
+      'cards-three',
       'cards',
       'three',
       'gallery-vertical-end',
@@ -707,49 +876,105 @@ const PHOSPHOR_ICON_LIST = [
     ],
   },
   {
+    name: 'cards-three-square-stack',
+    icon: PhosphorCardsThreeSquareStackIcon,
+    keywords: ['cards-three-square-stack', 'square-stack'],
+  },
+  {
     name: 'caret-circle-down',
     icon: PhosphorCaretCircleDownIcon,
-    keywords: ['caret', 'circle', 'down', 'circle-chevron-down', 'chevron'],
+    keywords: [
+      'caret-circle-down',
+      'caret',
+      'circle',
+      'down',
+      'circle-chevron-down',
+      'chevron',
+    ],
   },
   {
     name: 'caret-circle-left',
     icon: PhosphorCaretCircleLeftIcon,
-    keywords: ['caret', 'circle', 'left', 'circle-chevron-left', 'chevron'],
+    keywords: [
+      'caret-circle-left',
+      'caret',
+      'circle',
+      'left',
+      'circle-chevron-left',
+      'chevron',
+    ],
   },
   {
     name: 'caret-circle-right',
     icon: PhosphorCaretCircleRightIcon,
-    keywords: ['caret', 'circle', 'right', 'circle-chevron-right', 'chevron'],
+    keywords: [
+      'caret-circle-right',
+      'caret',
+      'circle',
+      'right',
+      'circle-chevron-right',
+      'chevron',
+    ],
   },
   {
     name: 'caret-circle-up',
     icon: PhosphorCaretCircleUpIcon,
-    keywords: ['caret', 'circle', 'up', 'circle-chevron-up', 'chevron'],
+    keywords: [
+      'caret-circle-up',
+      'caret',
+      'circle',
+      'up',
+      'circle-chevron-up',
+      'chevron',
+    ],
   },
   {
     name: 'caret-line-left',
     icon: PhosphorCaretLineLeftIcon,
-    keywords: ['caret', 'line', 'left', 'chevron-first', 'chevron', 'first'],
+    keywords: [
+      'caret-line-left',
+      'caret',
+      'line',
+      'left',
+      'chevron-first',
+      'chevron',
+      'first',
+    ],
   },
   {
     name: 'caret-up-down',
     icon: PhosphorCaretUpDownIcon,
-    keywords: ['caret', 'up', 'down', 'chevrons-up-down', 'chevrons'],
+    keywords: [
+      'caret-up-down',
+      'caret',
+      'up',
+      'down',
+      'chevrons-up-down',
+      'chevrons',
+    ],
   },
   {
     name: 'cell-tower',
     icon: PhosphorCellTowerIcon,
-    keywords: ['cell', 'tower', 'radio-tower', 'radio'],
+    keywords: ['cell-tower', 'cell', 'tower', 'radio-tower', 'radio'],
   },
   {
     name: 'charging-station',
     icon: PhosphorChargingStationIcon,
-    keywords: ['charging', 'station', 'ev-charger', 'ev', 'charger'],
+    keywords: [
+      'charging-station',
+      'charging',
+      'station',
+      'ev-charger',
+      'ev',
+      'charger',
+    ],
   },
   {
     name: 'chart-bar',
     icon: PhosphorChartBarIcon,
     keywords: [
+      'chart-bar',
       'chart',
       'bar',
       'chart-column-increasing',
@@ -761,19 +986,24 @@ const PHOSPHOR_ICON_LIST = [
     ],
   },
   {
+    name: 'chart-bar-no-axes',
+    icon: PhosphorChartBarNoAxesIcon,
+    keywords: ['chart-bar-no-axes', 'chart-no-axes-column-increasing'],
+  },
+  {
     name: 'chart-line',
     icon: PhosphorChartLineIcon,
-    keywords: ['chart', 'line', 'chart-line'],
+    keywords: ['chart-line', 'chart', 'line'],
   },
   {
     name: 'chart-pie',
     icon: PhosphorChartPieIcon,
-    keywords: ['chart', 'pie', 'chart-pie'],
+    keywords: ['chart-pie', 'chart', 'pie'],
   },
   {
     name: 'chart-scatter',
     icon: PhosphorChartScatterIcon,
-    keywords: ['chart', 'scatter', 'chart-scatter'],
+    keywords: ['chart-scatter', 'chart', 'scatter'],
   },
   {
     name: 'chat',
@@ -783,12 +1013,13 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'chat-circle',
     icon: PhosphorChatCircleIcon,
-    keywords: ['chat', 'circle', 'message-circle', 'message'],
+    keywords: ['chat-circle', 'chat', 'circle', 'message-circle', 'message'],
   },
   {
     name: 'chat-circle-dots',
     icon: PhosphorChatCircleDotsIcon,
     keywords: [
+      'chat-circle-dots',
       'chat',
       'circle',
       'dots',
@@ -801,6 +1032,7 @@ const PHOSPHOR_ICON_LIST = [
     name: 'chat-dots',
     icon: PhosphorChatDotsIcon,
     keywords: [
+      'chat-dots',
       'chat',
       'dots',
       'message-square-more',
@@ -817,7 +1049,7 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'check-circle',
     icon: PhosphorCheckCircleIcon,
-    keywords: ['check', 'circle', 'circle-check'],
+    keywords: ['check-circle', 'check', 'circle', 'circle-check'],
   },
   {
     name: 'checks',
@@ -828,6 +1060,7 @@ const PHOSPHOR_ICON_LIST = [
     name: 'chevron-down',
     icon: PhosphorChevronDownIcon,
     keywords: [
+      'chevron-down',
       'chevron',
       'down',
       'direction',
@@ -835,13 +1068,13 @@ const PHOSPHOR_ICON_LIST = [
       'bottom',
       'collapse',
       'caret-down',
-      'chevron-down',
     ],
   },
   {
     name: 'chevron-left',
     icon: PhosphorChevronLeftIcon,
     keywords: [
+      'chevron-left',
       'chevron',
       'left',
       'direction',
@@ -849,13 +1082,13 @@ const PHOSPHOR_ICON_LIST = [
       'back',
       'previous',
       'caret-left',
-      'chevron-left',
     ],
   },
   {
     name: 'chevron-right',
     icon: PhosphorChevronRightIcon,
     keywords: [
+      'chevron-right',
       'chevron',
       'right',
       'direction',
@@ -863,13 +1096,13 @@ const PHOSPHOR_ICON_LIST = [
       'forward',
       'next',
       'caret-right',
-      'chevron-right',
     ],
   },
   {
     name: 'chevron-up',
     icon: PhosphorChevronUpIcon,
     keywords: [
+      'chevron-up',
       'chevron',
       'up',
       'direction',
@@ -877,60 +1110,79 @@ const PHOSPHOR_ICON_LIST = [
       'top',
       'expand',
       'caret-up',
-      'chevron-up',
     ],
   },
   { name: 'cigarette', icon: PhosphorCigaretteIcon, keywords: ['cigarette'] },
   {
     name: 'cigarette-slash',
     icon: PhosphorCigaretteSlashIcon,
-    keywords: ['cigarette', 'slash', 'cigarette-off', 'off'],
+    keywords: ['cigarette-slash', 'cigarette', 'slash', 'cigarette-off', 'off'],
   },
   {
     name: 'circle-dashed',
     icon: PhosphorCircleDashedIcon,
-    keywords: ['circle', 'dashed', 'circle-dashed'],
+    keywords: ['circle-dashed', 'circle', 'dashed'],
   },
   {
     name: 'circle-half',
     icon: PhosphorCircleHalfIcon,
-    keywords: ['circle', 'half', 'contrast'],
+    keywords: ['circle-half', 'circle', 'half', 'contrast'],
   },
   { name: 'clock', icon: PhosphorClockIcon, keywords: ['clock'] },
   {
     name: 'clock-counter-clockwise',
     icon: PhosphorClockCounterClockwiseIcon,
-    keywords: ['clock', 'counter', 'clockwise', 'history'],
+    keywords: [
+      'clock-counter-clockwise',
+      'clock',
+      'counter',
+      'clockwise',
+      'history',
+    ],
   },
   {
     name: 'cloud-arrow-down',
     icon: PhosphorCloudArrowDownIcon,
-    keywords: ['cloud', 'arrow', 'down', 'cloud-download', 'download'],
+    keywords: [
+      'cloud-arrow-down',
+      'cloud',
+      'arrow',
+      'down',
+      'cloud-download',
+      'download',
+    ],
   },
   {
     name: 'cloud-arrow-up',
     icon: PhosphorCloudArrowUpIcon,
-    keywords: ['cloud', 'arrow', 'up', 'cloud-upload', 'upload'],
+    keywords: [
+      'cloud-arrow-up',
+      'cloud',
+      'arrow',
+      'up',
+      'cloud-upload',
+      'upload',
+    ],
   },
   {
     name: 'cloud-lightning',
     icon: PhosphorCloudLightningIcon,
-    keywords: ['cloud', 'lightning', 'cloud-lightning'],
+    keywords: ['cloud-lightning', 'cloud', 'lightning'],
   },
   {
     name: 'cloud-rain',
     icon: PhosphorCloudRainIcon,
-    keywords: ['cloud', 'rain', 'cloud-rain'],
+    keywords: ['cloud-rain', 'cloud', 'rain'],
   },
   {
     name: 'cloud-snow',
     icon: PhosphorCloudSnowIcon,
-    keywords: ['cloud', 'snow', 'cloud-snow'],
+    keywords: ['cloud-snow', 'cloud', 'snow'],
   },
   {
     name: 'cloud-sun',
     icon: PhosphorCloudSunIcon,
-    keywords: ['cloud', 'sun', 'cloud-sun'],
+    keywords: ['cloud-sun', 'cloud', 'sun'],
   },
   { name: 'coffee', icon: PhosphorCoffeeIcon, keywords: ['coffee'] },
   { name: 'compass', icon: PhosphorCompassIcon, keywords: ['compass'] },
@@ -942,70 +1194,105 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'contactless-payment',
     icon: PhosphorContactlessPaymentIcon,
-    keywords: ['contactless', 'payment', 'nfc'],
+    keywords: ['contactless-payment', 'contactless', 'payment', 'nfc'],
   },
   {
     name: 'cooking-pot',
     icon: PhosphorCookingPotIcon,
-    keywords: ['cooking', 'pot', 'cooking-pot'],
+    keywords: ['cooking-pot', 'cooking', 'pot'],
   },
   { name: 'copy', icon: PhosphorCopyIcon, keywords: ['copy'] },
   {
     name: 'corners-in',
     icon: PhosphorCornersInIcon,
-    keywords: ['corners', 'in', 'minimize'],
+    keywords: ['corners-in', 'corners', 'in', 'minimize'],
   },
   {
     name: 'corners-out',
     icon: PhosphorCornersOutIcon,
-    keywords: ['corners', 'out', 'maximize'],
+    keywords: ['corners-out', 'corners', 'out', 'maximize'],
   },
   { name: 'cpu', icon: PhosphorCpuIcon, keywords: ['cpu'] },
   {
     name: 'credit-card',
     icon: PhosphorCreditCardIcon,
-    keywords: ['credit', 'card', 'credit-card'],
+    keywords: ['credit-card', 'credit', 'card'],
   },
   { name: 'cube', icon: PhosphorCubeIcon, keywords: ['cube', 'box'] },
   {
     name: 'currency-circle-dollar',
     icon: PhosphorCurrencyCircleDollarIcon,
-    keywords: ['currency', 'circle', 'dollar', 'circle-dollar-sign', 'sign'],
+    keywords: [
+      'currency-circle-dollar',
+      'currency',
+      'circle',
+      'dollar',
+      'circle-dollar-sign',
+      'sign',
+    ],
   },
   {
     name: 'currency-dollar',
     icon: PhosphorCurrencyDollarIcon,
-    keywords: ['currency', 'dollar', 'dollar-sign', 'sign'],
+    keywords: ['currency-dollar', 'currency', 'dollar', 'dollar-sign', 'sign'],
   },
   {
     name: 'currency-eur',
     icon: PhosphorCurrencyEurIcon,
-    keywords: ['currency', 'eur', 'euro'],
+    keywords: ['currency-eur', 'currency', 'eur', 'euro'],
   },
   {
     name: 'currency-gbp',
     icon: PhosphorCurrencyGbpIcon,
-    keywords: ['currency', 'gbp', 'pound-sterling', 'pound', 'sterling'],
+    keywords: [
+      'currency-gbp',
+      'currency',
+      'gbp',
+      'pound-sterling',
+      'pound',
+      'sterling',
+    ],
   },
   {
     name: 'currency-inr',
     icon: PhosphorCurrencyInrIcon,
-    keywords: ['currency', 'inr', 'indian-rupee', 'indian', 'rupee'],
+    keywords: [
+      'currency-inr',
+      'currency',
+      'inr',
+      'indian-rupee',
+      'indian',
+      'rupee',
+    ],
   },
   {
     name: 'currency-jpy',
     icon: PhosphorCurrencyJpyIcon,
-    keywords: ['currency', 'jpy', 'japanese-yen', 'japanese', 'yen'],
+    keywords: [
+      'currency-jpy',
+      'currency',
+      'jpy',
+      'japanese-yen',
+      'japanese',
+      'yen',
+    ],
   },
   {
     name: 'currency-rub',
     icon: PhosphorCurrencyRubIcon,
-    keywords: ['currency', 'rub', 'russian-ruble', 'russian', 'ruble'],
+    keywords: [
+      'currency-rub',
+      'currency',
+      'rub',
+      'russian-ruble',
+      'russian',
+      'ruble',
+    ],
   },
   {
     name: 'cursor-click',
     icon: PhosphorCursorClickIcon,
-    keywords: ['cursor', 'click', 'cursor-click'],
+    keywords: ['cursor-click', 'cursor', 'click'],
   },
   {
     name: 'detective',
@@ -1016,22 +1303,36 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'discord-logo',
     icon: PhosphorDiscordLogoIcon,
-    keywords: ['discord', 'logo'],
+    keywords: ['discord-logo', 'discord', 'logo'],
   },
   {
     name: 'dots-nine',
     icon: PhosphorDotsNineIcon,
-    keywords: ['dots', 'nine', 'grip'],
+    keywords: ['dots-nine', 'dots', 'nine', 'grip'],
   },
   {
     name: 'dots-six',
     icon: PhosphorDotsSixIcon,
-    keywords: ['dots', 'six', 'grip-horizontal', 'grip', 'horizontal'],
+    keywords: [
+      'dots-six',
+      'dots',
+      'six',
+      'grip-horizontal',
+      'grip',
+      'horizontal',
+    ],
   },
   {
     name: 'dots-six-vertical',
     icon: PhosphorDotsSixVerticalIcon,
-    keywords: ['dots', 'six', 'vertical', 'grip-vertical', 'grip'],
+    keywords: [
+      'dots-six-vertical',
+      'dots',
+      'six',
+      'vertical',
+      'grip-vertical',
+      'grip',
+    ],
   },
   {
     name: 'download',
@@ -1041,7 +1342,7 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'dribbble-logo',
     icon: PhosphorDribbbleLogoIcon,
-    keywords: ['dribbble', 'logo'],
+    keywords: ['dribbble-logo', 'dribbble', 'logo'],
   },
   { name: 'drop', icon: PhosphorDropIcon, keywords: ['drop', 'droplet'] },
   {
@@ -1057,24 +1358,24 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'eye-slash',
     icon: PhosphorEyeSlashIcon,
-    keywords: ['eye', 'slash', 'eye-off', 'off'],
+    keywords: ['eye-slash', 'eye', 'slash', 'eye-off', 'off'],
   },
   {
     name: 'facebook-logo',
     icon: PhosphorFacebookLogoIcon,
-    keywords: ['facebook', 'logo'],
+    keywords: ['facebook-logo', 'facebook', 'logo'],
   },
   { name: 'fan', icon: PhosphorFanIcon, keywords: ['fan'] },
   { name: 'feather', icon: PhosphorFeatherIcon, keywords: ['feather'] },
   {
     name: 'figma-logo',
     icon: PhosphorFigmaLogoIcon,
-    keywords: ['figma', 'logo'],
+    keywords: ['figma-logo', 'figma', 'logo'],
   },
   {
     name: 'file-text',
     icon: PhosphorFileTextIcon,
-    keywords: ['file', 'text', 'file-text'],
+    keywords: ['file-text', 'file', 'text'],
   },
   {
     name: 'files',
@@ -1084,7 +1385,7 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'film-slate',
     icon: PhosphorFilmSlateIcon,
-    keywords: ['film', 'slate', 'clap'],
+    keywords: ['film-slate', 'film', 'slate', 'clap'],
   },
   {
     name: 'filter',
@@ -1101,22 +1402,22 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'folder-lock',
     icon: PhosphorFolderLockIcon,
-    keywords: ['folder', 'lock', 'folder-lock'],
+    keywords: ['folder-lock', 'folder', 'lock'],
   },
   {
     name: 'folder-minus',
     icon: PhosphorFolderMinusIcon,
-    keywords: ['folder', 'minus', 'folder-minus'],
+    keywords: ['folder-minus', 'folder', 'minus'],
   },
   {
     name: 'folder-open',
     icon: PhosphorFolderOpenIcon,
-    keywords: ['folder', 'open', 'folder-open'],
+    keywords: ['folder-open', 'folder', 'open'],
   },
   {
     name: 'folder-plus',
     icon: PhosphorFolderPlusIcon,
-    keywords: ['folder', 'plus', 'folder-plus'],
+    keywords: ['folder-plus', 'folder', 'plus'],
   },
   { name: 'folders', icon: PhosphorFoldersIcon, keywords: ['folders'] },
   { name: 'gauge', icon: PhosphorGaugeIcon, keywords: ['gauge'] },
@@ -1124,27 +1425,34 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'gear',
     icon: PhosphorGearIcon,
-    keywords: ['settings', 'gear', 'cog', 'preferences', 'config'],
+    keywords: ['gear', 'settings', 'cog', 'preferences', 'config'],
   },
   {
     name: 'gear-fine',
     icon: PhosphorGearFineIcon,
-    keywords: ['gear', 'fine', 'cog'],
+    keywords: ['gear-fine', 'gear', 'fine', 'cog'],
   },
   {
     name: 'git-branch',
     icon: PhosphorGitBranchIcon,
-    keywords: ['git', 'branch', 'git-branch'],
+    keywords: ['git-branch', 'git', 'branch'],
   },
   {
     name: 'git-commit',
     icon: PhosphorGitCommitIcon,
-    keywords: ['git', 'commit', 'git-commit-horizontal', 'horizontal'],
+    keywords: [
+      'git-commit',
+      'git',
+      'commit',
+      'git-commit-horizontal',
+      'horizontal',
+    ],
   },
   {
     name: 'git-diff',
     icon: PhosphorGitDiffIcon,
     keywords: [
+      'git-diff',
       'git',
       'diff',
       'git-compare',
@@ -1154,71 +1462,80 @@ const PHOSPHOR_ICON_LIST = [
     ],
   },
   {
+    name: 'git-diff-arrows',
+    icon: PhosphorGitDiffArrowsIcon,
+    keywords: ['git-diff-arrows', 'git-compare-arrows'],
+  },
+  {
     name: 'git-fork',
     icon: PhosphorGitForkIcon,
-    keywords: ['git', 'fork', 'git-fork'],
+    keywords: ['git-fork', 'git', 'fork'],
   },
   {
     name: 'git-merge',
     icon: PhosphorGitMergeIcon,
-    keywords: ['git', 'merge', 'git-merge'],
+    keywords: ['git-merge', 'git', 'merge'],
   },
   {
     name: 'git-pull-request',
     icon: PhosphorGitPullRequestIcon,
-    keywords: ['git', 'pull', 'request', 'git-pull-request'],
+    keywords: ['git-pull-request', 'git', 'pull', 'request'],
   },
   {
     name: 'github-logo',
     icon: PhosphorGithubLogoIcon,
-    keywords: ['github', 'logo'],
+    keywords: ['github-logo', 'github', 'logo'],
   },
   {
     name: 'gitlab-logo',
     icon: PhosphorGitlabLogoIcon,
-    keywords: ['gitlab', 'logo'],
+    keywords: ['gitlab-logo', 'gitlab', 'logo'],
   },
   {
     name: 'globe-hemisphere-west',
     icon: PhosphorGlobeHemisphereWestIcon,
-    keywords: ['globe', 'hemisphere', 'west', 'earth'],
+    keywords: ['globe-hemisphere-west', 'globe', 'hemisphere', 'west', 'earth'],
   },
   {
     name: 'google-chrome-logo',
     icon: PhosphorGoogleChromeLogoIcon,
-    keywords: ['google', 'chrome', 'logo'],
+    keywords: ['google-chrome-logo', 'google', 'chrome', 'logo'],
   },
   {
     name: 'graduation-cap',
     icon: PhosphorGraduationCapIcon,
-    keywords: ['graduation', 'cap', 'graduation-cap'],
+    keywords: ['graduation-cap', 'graduation', 'cap'],
   },
   { name: 'hammer', icon: PhosphorHammerIcon, keywords: ['hammer'] },
   {
     name: 'hand-coins',
     icon: PhosphorHandCoinsIcon,
-    keywords: ['hand', 'coins', 'hand-coins'],
+    keywords: ['hand-coins', 'hand', 'coins'],
   },
   {
     name: 'hand-fist',
     icon: PhosphorHandFistIcon,
-    keywords: ['hand', 'fist', 'hand-fist'],
+    keywords: ['hand-fist', 'hand', 'fist'],
   },
   {
     name: 'hand-grabbing',
     icon: PhosphorHandGrabbingIcon,
-    keywords: ['hand', 'grabbing', 'hand-grab', 'grab'],
+    keywords: ['hand-grabbing', 'hand', 'grabbing', 'hand-grab', 'grab'],
   },
   {
     name: 'hand-heart',
     icon: PhosphorHandHeartIcon,
-    keywords: ['hand', 'heart', 'hand-heart'],
+    keywords: ['hand-heart', 'hand', 'heart'],
   },
-  { name: 'hand-palm', icon: PhosphorHandPalmIcon, keywords: ['hand', 'palm'] },
+  {
+    name: 'hand-palm',
+    icon: PhosphorHandPalmIcon,
+    keywords: ['hand-palm', 'hand', 'palm'],
+  },
   {
     name: 'hard-drives',
     icon: PhosphorHardDrivesIcon,
-    keywords: ['hard', 'drives', 'server'],
+    keywords: ['hard-drives', 'hard', 'drives', 'server'],
   },
   {
     name: 'heart',
@@ -1234,23 +1551,30 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'house',
     icon: PhosphorHouseIcon,
-    keywords: ['home', 'house', 'building', 'main', 'dashboard'],
+    keywords: ['house', 'home', 'building', 'main', 'dashboard'],
   },
   {
     name: 'identification-card',
     icon: PhosphorIdentificationCardIcon,
-    keywords: ['identification', 'card', 'id-card', 'id'],
+    keywords: [
+      'identification-card',
+      'identification',
+      'card',
+      'id-card',
+      'id',
+    ],
   },
   {
     name: 'instagram-logo',
     icon: PhosphorInstagramLogoIcon,
-    keywords: ['instagram', 'logo'],
+    keywords: ['instagram-logo', 'instagram', 'logo'],
   },
   {
     name: 'key',
     icon: PhosphorKeyIcon,
     keywords: ['key', 'key-circle', 'circle'],
   },
+  { name: 'key-circle', icon: PhosphorKeyCircleIcon, keywords: ['key-circle'] },
   { name: 'keyboard', icon: PhosphorKeyboardIcon, keywords: ['keyboard'] },
   {
     name: 'layout',
@@ -1266,23 +1590,30 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'lightning-slash',
     icon: PhosphorLightningSlashIcon,
-    keywords: ['lightning', 'slash', 'zap-off', 'zap', 'off'],
+    keywords: [
+      'lightning-slash',
+      'lightning',
+      'slash',
+      'zap-off',
+      'zap',
+      'off',
+    ],
   },
   { name: 'link', icon: PhosphorLinkIcon, keywords: ['link'] },
   {
     name: 'link-simple',
     icon: PhosphorLinkSimpleIcon,
-    keywords: ['link', 'simple', 'link-2', '2'],
+    keywords: ['link-simple', 'link', 'simple', 'link-2', '2'],
   },
   {
     name: 'linkedin-logo',
     icon: PhosphorLinkedinLogoIcon,
-    keywords: ['linkedin', 'logo'],
+    keywords: ['linkedin-logo', 'linkedin', 'logo'],
   },
   {
     name: 'list',
     icon: PhosphorListIcon,
-    keywords: ['menu', 'hamburger', 'list', 'navigation', 'lines'],
+    keywords: ['list', 'menu', 'hamburger', 'navigation', 'lines'],
   },
   {
     name: 'lock',
@@ -1292,28 +1623,42 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'lock-key',
     icon: PhosphorLockKeyIcon,
-    keywords: ['lock', 'key', 'lock-keyhole', 'keyhole'],
+    keywords: ['lock-key', 'lock', 'key', 'lock-keyhole', 'keyhole'],
   },
   {
     name: 'lock-key-open',
     icon: PhosphorLockKeyOpenIcon,
-    keywords: ['lock', 'key', 'open', 'lock-keyhole-open', 'keyhole'],
+    keywords: [
+      'lock-key-open',
+      'lock',
+      'key',
+      'open',
+      'lock-keyhole-open',
+      'keyhole',
+    ],
   },
   {
     name: 'lock-open',
     icon: PhosphorLockOpenIcon,
-    keywords: ['lock', 'open', 'lock-open'],
+    keywords: ['lock-open', 'lock', 'open'],
   },
   { name: 'mailbox', icon: PhosphorMailboxIcon, keywords: ['mailbox'] },
   {
     name: 'map-pin',
     icon: PhosphorMapPinIcon,
-    keywords: ['map', 'pin', 'map-pin'],
+    keywords: ['map-pin', 'map', 'pin'],
   },
   {
     name: 'map-pin-plus',
     icon: PhosphorMapPinPlusIcon,
-    keywords: ['map', 'pin', 'plus', 'map-pin-plus-inside', 'inside'],
+    keywords: [
+      'map-pin-plus',
+      'map',
+      'pin',
+      'plus',
+      'map-pin-plus-inside',
+      'inside',
+    ],
   },
   {
     name: 'microphone',
@@ -1323,13 +1668,20 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'microphone-slash',
     icon: PhosphorMicrophoneSlashIcon,
-    keywords: ['microphone', 'slash', 'mic-off', 'mic', 'off'],
+    keywords: [
+      'microphone-slash',
+      'microphone',
+      'slash',
+      'mic-off',
+      'mic',
+      'off',
+    ],
   },
   { name: 'moon', icon: PhosphorMoonIcon, keywords: ['moon'] },
   {
     name: 'note-pencil',
     icon: PhosphorNotePencilIcon,
-    keywords: ['note', 'pencil', 'square-pen', 'square', 'pen'],
+    keywords: ['note-pencil', 'note', 'pencil', 'square-pen', 'square', 'pen'],
   },
   {
     name: 'notebook',
@@ -1340,7 +1692,7 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'paper-plane-tilt',
     icon: PhosphorPaperPlaneTiltIcon,
-    keywords: ['paper', 'plane', 'tilt', 'send'],
+    keywords: ['paper-plane-tilt', 'paper', 'plane', 'tilt', 'send'],
   },
   {
     name: 'paperclip',
@@ -1352,7 +1704,7 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'pen-nib',
     icon: PhosphorPenNibIcon,
-    keywords: ['pen', 'nib', 'pen-tool', 'tool'],
+    keywords: ['pen-nib', 'pen', 'nib', 'pen-tool', 'tool'],
   },
   {
     name: 'pencil',
@@ -1362,44 +1714,56 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'person-arms-spread',
     icon: PhosphorPersonArmsSpreadIcon,
-    keywords: ['person', 'arms', 'spread', 'accessibility'],
+    keywords: [
+      'person-arms-spread',
+      'person',
+      'arms',
+      'spread',
+      'accessibility',
+    ],
   },
   { name: 'phone', icon: PhosphorPhoneIcon, keywords: ['phone'] },
   {
     name: 'phone-call',
     icon: PhosphorPhoneCallIcon,
-    keywords: ['phone', 'call', 'phone-call'],
+    keywords: ['phone-call', 'phone', 'call'],
   },
   {
     name: 'phone-incoming',
     icon: PhosphorPhoneIncomingIcon,
-    keywords: ['phone', 'incoming', 'phone-incoming'],
+    keywords: ['phone-incoming', 'phone', 'incoming'],
   },
   {
     name: 'phone-slash',
     icon: PhosphorPhoneSlashIcon,
-    keywords: ['phone', 'slash', 'phone-off', 'off'],
+    keywords: ['phone-slash', 'phone', 'slash', 'phone-off', 'off'],
   },
   {
     name: 'phone-transfer',
     icon: PhosphorPhoneTransferIcon,
-    keywords: ['phone', 'transfer', 'phone-forwarded', 'forwarded'],
+    keywords: [
+      'phone-transfer',
+      'phone',
+      'transfer',
+      'phone-forwarded',
+      'forwarded',
+    ],
   },
   {
     name: 'phone-x',
     icon: PhosphorPhoneXIcon,
-    keywords: ['phone', 'x', 'phone-missed', 'missed'],
+    keywords: ['phone-x', 'phone', 'x', 'phone-missed', 'missed'],
   },
   { name: 'play', icon: PhosphorPlayIcon, keywords: ['play'] },
   {
     name: 'plug-charging',
     icon: PhosphorPlugChargingIcon,
-    keywords: ['plug', 'charging', 'plug-zap', 'zap'],
+    keywords: ['plug-charging', 'plug', 'charging', 'plug-zap', 'zap'],
   },
   {
     name: 'plugs-connected',
     icon: PhosphorPlugsConnectedIcon,
-    keywords: ['plugs', 'connected', 'connect'],
+    keywords: ['plugs-connected', 'plugs', 'connected', 'connect'],
   },
   {
     name: 'plus',
@@ -1425,6 +1789,11 @@ const PHOSPHOR_ICON_LIST = [
     keywords: ['receipt', 'receipt-text', 'text'],
   },
   {
+    name: 'receipt-text',
+    icon: PhosphorReceiptTextIcon,
+    keywords: ['receipt-text'],
+  },
+  {
     name: 'refresh',
     icon: PhosphorRefreshIcon,
     keywords: [
@@ -1448,7 +1817,7 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'scan-smiley',
     icon: PhosphorScanSmileyIcon,
-    keywords: ['scan', 'smiley', 'scan-face', 'face'],
+    keywords: ['scan-smiley', 'scan', 'smiley', 'scan-face', 'face'],
   },
   {
     name: 'screencast',
@@ -1458,12 +1827,19 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'seal-percent',
     icon: PhosphorSealPercentIcon,
-    keywords: ['seal', 'percent', 'badge-percent', 'badge'],
+    keywords: ['seal-percent', 'seal', 'percent', 'badge-percent', 'badge'],
   },
   {
     name: 'seal-warning',
     icon: PhosphorSealWarningIcon,
-    keywords: ['seal', 'warning', 'badge-alert', 'badge', 'alert'],
+    keywords: [
+      'seal-warning',
+      'seal',
+      'warning',
+      'badge-alert',
+      'badge',
+      'alert',
+    ],
   },
   {
     name: 'search',
@@ -1480,7 +1856,7 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'security-camera',
     icon: PhosphorSecurityCameraIcon,
-    keywords: ['security', 'camera', 'cctv'],
+    keywords: ['security-camera', 'security', 'camera', 'cctv'],
   },
   {
     name: 'share',
@@ -1490,12 +1866,12 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'shield-check',
     icon: PhosphorShieldCheckIcon,
-    keywords: ['shield', 'check', 'shield-check'],
+    keywords: ['shield-check', 'shield', 'check'],
   },
   {
     name: 'shopping-cart',
     icon: PhosphorShoppingCartIcon,
-    keywords: ['shopping', 'cart'],
+    keywords: ['shopping-cart', 'shopping', 'cart'],
   },
   {
     name: 'shower',
@@ -1505,39 +1881,45 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'sign-in',
     icon: PhosphorSignInIcon,
-    keywords: ['sign', 'in', 'login'],
+    keywords: ['sign-in', 'sign', 'in', 'login'],
   },
   {
     name: 'sign-out',
     icon: PhosphorSignOutIcon,
-    keywords: ['sign', 'out', 'logout'],
+    keywords: ['sign-out', 'sign', 'out', 'logout'],
   },
   {
     name: 'sliders-horizontal',
     icon: PhosphorSlidersHorizontalIcon,
-    keywords: ['sliders', 'horizontal', 'sliders-horizontal'],
+    keywords: ['sliders-horizontal', 'sliders', 'horizontal'],
   },
   { name: 'smiley', icon: PhosphorSmileyIcon, keywords: ['smiley', 'smile'] },
   {
     name: 'smiley-angry',
     icon: PhosphorSmileyAngryIcon,
-    keywords: ['smiley', 'angry'],
+    keywords: ['smiley-angry', 'smiley', 'angry'],
   },
   {
     name: 'smiley-meh',
     icon: PhosphorSmileyMehIcon,
-    keywords: ['smiley', 'meh', 'annoyed'],
+    keywords: ['smiley-meh', 'smiley', 'meh', 'annoyed'],
+  },
+  {
+    name: 'smiley-meh-neutral',
+    icon: PhosphorSmileyMehNeutralIcon,
+    keywords: ['smiley-meh-neutral', 'meh'],
   },
   {
     name: 'smiley-sad',
     icon: PhosphorSmileySadIcon,
-    keywords: ['smiley', 'sad', 'frown'],
+    keywords: ['smiley-sad', 'smiley', 'sad', 'frown'],
   },
   { name: 'snowflake', icon: PhosphorSnowflakeIcon, keywords: ['snowflake'] },
   {
     name: 'sort-ascending',
     icon: PhosphorSortAscendingIcon,
     keywords: [
+      'sort-ascending',
       'sort',
       'ascending',
       'arrow-down-0-1',
@@ -1551,9 +1933,15 @@ const PHOSPHOR_ICON_LIST = [
     ],
   },
   {
+    name: 'sort-ascending-alphabetical',
+    icon: PhosphorSortAscendingAlphabeticalIcon,
+    keywords: ['sort-ascending-alphabetical', 'arrow-down-a-z'],
+  },
+  {
     name: 'sort-descending',
     icon: PhosphorSortDescendingIcon,
     keywords: [
+      'sort-descending',
       'sort',
       'descending',
       'arrow-down-1-0',
@@ -1567,6 +1955,11 @@ const PHOSPHOR_ICON_LIST = [
     ],
   },
   {
+    name: 'sort-descending-alphabetical',
+    icon: PhosphorSortDescendingAlphabeticalIcon,
+    keywords: ['sort-descending-alphabetical', 'arrow-down-z-a'],
+  },
+  {
     name: 'sparkle',
     icon: PhosphorSparkleIcon,
     keywords: ['sparkle', 'sparkles'],
@@ -1574,7 +1967,7 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'speaker-x',
     icon: PhosphorSpeakerXIcon,
-    keywords: ['speaker', 'x', 'volume'],
+    keywords: ['speaker-x', 'speaker', 'x', 'volume'],
   },
   {
     name: 'spinner',
@@ -1584,22 +1977,43 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'spinner-ball',
     icon: PhosphorSpinnerBallIcon,
-    keywords: ['spinner', 'ball', 'loader-pinwheel', 'loader', 'pinwheel'],
+    keywords: [
+      'spinner-ball',
+      'spinner',
+      'ball',
+      'loader-pinwheel',
+      'loader',
+      'pinwheel',
+    ],
   },
   {
     name: 'spinner-gap',
     icon: PhosphorSpinnerGapIcon,
-    keywords: ['spinner', 'gap', 'loader-circle', 'loader', 'circle'],
+    keywords: [
+      'spinner-gap',
+      'spinner',
+      'gap',
+      'loader-circle',
+      'loader',
+      'circle',
+    ],
   },
   {
     name: 'spray-bottle',
     icon: PhosphorSprayBottleIcon,
-    keywords: ['spray', 'bottle', 'spray-can', 'can'],
+    keywords: ['spray-bottle', 'spray', 'bottle', 'spray-can', 'can'],
   },
   {
     name: 'squares-four',
     icon: PhosphorSquaresFourIcon,
-    keywords: ['squares', 'four', 'layout-grid', 'layout', 'grid'],
+    keywords: [
+      'squares-four',
+      'squares',
+      'four',
+      'layout-grid',
+      'layout',
+      'grid',
+    ],
   },
   { name: 'stack', icon: PhosphorStackIcon, keywords: ['stack', 'layers'] },
   { name: 'stamp', icon: PhosphorStampIcon, keywords: ['stamp'] },
@@ -1621,45 +2035,57 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'sun-dim',
     icon: PhosphorSunDimIcon,
-    keywords: ['sun', 'dim', 'sun-dim'],
+    keywords: ['sun-dim', 'sun', 'dim'],
   },
   {
     name: 'sun-horizon',
     icon: PhosphorSunHorizonIcon,
-    keywords: ['sun', 'horizon', 'sunset'],
+    keywords: ['sun-horizon', 'sun', 'horizon', 'sunset'],
   },
+  { name: 'sun-medium', icon: PhosphorSunMediumIcon, keywords: ['sun-medium'] },
   {
     name: 'swimming-pool',
     icon: PhosphorSwimmingPoolIcon,
-    keywords: ['swimming', 'pool', 'waves-ladder', 'waves', 'ladder'],
+    keywords: [
+      'swimming-pool',
+      'swimming',
+      'pool',
+      'waves-ladder',
+      'waves',
+      'ladder',
+    ],
   },
   { name: 'syringe', icon: PhosphorSyringeIcon, keywords: ['syringe'] },
   { name: 'terminal', icon: PhosphorTerminalIcon, keywords: ['terminal'] },
   {
     name: 'text-align-center',
     icon: PhosphorTextAlignCenterIcon,
-    keywords: ['text', 'align', 'center', 'align-center'],
+    keywords: ['text-align-center', 'text', 'align', 'center', 'align-center'],
   },
   {
     name: 'text-align-left',
     icon: PhosphorTextAlignLeftIcon,
-    keywords: ['text', 'align', 'left', 'align-left'],
+    keywords: ['text-align-left', 'text', 'align', 'left', 'align-left'],
   },
   {
     name: 'text-align-right',
     icon: PhosphorTextAlignRightIcon,
-    keywords: ['text', 'align', 'right', 'align-right'],
+    keywords: ['text-align-right', 'text', 'align', 'right', 'align-right'],
   },
-  { name: 'text-b', icon: PhosphorTextBIcon, keywords: ['text', 'b', 'bold'] },
+  {
+    name: 'text-b',
+    icon: PhosphorTextBIcon,
+    keywords: ['text-b', 'text', 'b', 'bold'],
+  },
   {
     name: 'text-italic',
     icon: PhosphorTextItalicIcon,
-    keywords: ['text', 'italic'],
+    keywords: ['text-italic', 'text', 'italic'],
   },
   {
     name: 'text-underline',
     icon: PhosphorTextUnderlineIcon,
-    keywords: ['text', 'underline'],
+    keywords: ['text-underline', 'text', 'underline'],
   },
   {
     name: 'thermometer',
@@ -1669,12 +2095,12 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'thumbs-down',
     icon: PhosphorThumbsDownIcon,
-    keywords: ['thumbs', 'down', 'downvote'],
+    keywords: ['thumbs-down', 'thumbs', 'down', 'downvote'],
   },
   {
     name: 'thumbs-up',
     icon: PhosphorThumbsUpIcon,
-    keywords: ['thumbs', 'up', 'upvote'],
+    keywords: ['thumbs-up', 'thumbs', 'up', 'upvote'],
   },
   { name: 'ticket', icon: PhosphorTicketIcon, keywords: ['ticket'] },
   { name: 'timer', icon: PhosphorTimerIcon, keywords: ['timer'] },
@@ -1697,33 +2123,33 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'tree-evergreen',
     icon: PhosphorTreeEvergreenIcon,
-    keywords: ['tree', 'evergreen', 'tree-pine', 'pine'],
+    keywords: ['tree-evergreen', 'tree', 'evergreen', 'tree-pine', 'pine'],
   },
   {
     name: 'tree-structure',
     icon: PhosphorTreeStructureIcon,
-    keywords: ['tree', 'structure', 'workflow'],
+    keywords: ['tree-structure', 'tree', 'structure', 'workflow'],
   },
   {
     name: 'trend-down',
     icon: PhosphorTrendDownIcon,
-    keywords: ['trend', 'down', 'trending-down', 'trending'],
+    keywords: ['trend-down', 'trend', 'down', 'trending-down', 'trending'],
   },
   {
     name: 'trend-up',
     icon: PhosphorTrendUpIcon,
-    keywords: ['trend', 'up', 'trending-up', 'trending'],
+    keywords: ['trend-up', 'trend', 'up', 'trending-up', 'trending'],
   },
   { name: 'truck', icon: PhosphorTruckIcon, keywords: ['truck'] },
   {
     name: 'twitch-logo',
     icon: PhosphorTwitchLogoIcon,
-    keywords: ['twitch', 'logo'],
+    keywords: ['twitch-logo', 'twitch', 'logo'],
   },
   {
     name: 'twitter-logo',
     icon: PhosphorTwitterLogoIcon,
-    keywords: ['twitter', 'logo'],
+    keywords: ['twitter-logo', 'twitter', 'logo'],
   },
   {
     name: 'upload',
@@ -1738,29 +2164,44 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'user-check',
     icon: PhosphorUserCheckIcon,
-    keywords: ['user', 'check', 'user-check', 'user-round-check', 'round'],
+    keywords: ['user-check', 'user', 'check', 'user-round-check', 'round'],
   },
   {
     name: 'user-gear',
     icon: PhosphorUserGearIcon,
-    keywords: ['user', 'gear', 'user-round-cog', 'round', 'cog'],
+    keywords: ['user-gear', 'user', 'gear', 'user-round-cog', 'round', 'cog'],
   },
   {
     name: 'user-plus',
     icon: PhosphorUserPlusIcon,
-    keywords: ['user', 'plus', 'user-plus', 'user-round-plus', 'round'],
+    keywords: ['user-plus', 'user', 'plus', 'user-round-plus', 'round'],
+  },
+  {
+    name: 'user-round-check',
+    icon: PhosphorUserRoundCheckIcon,
+    keywords: ['user-round-check'],
+  },
+  {
+    name: 'user-round-plus',
+    icon: PhosphorUserRoundPlusIcon,
+    keywords: ['user-round-plus'],
   },
   {
     name: 'users',
     icon: PhosphorUsersIcon,
     keywords: ['users', 'users-round', 'round'],
   },
+  {
+    name: 'users-round',
+    icon: PhosphorUsersRoundIcon,
+    keywords: ['users-round'],
+  },
   { name: 'vibrate', icon: PhosphorVibrateIcon, keywords: ['vibrate'] },
   { name: 'wallet', icon: PhosphorWalletIcon, keywords: ['wallet'] },
   {
     name: 'washing-machine',
     icon: PhosphorWashingMachineIcon,
-    keywords: ['washing', 'machine', 'washing-machine'],
+    keywords: ['washing-machine', 'washing', 'machine'],
   },
   {
     name: 'waveform',
@@ -1771,25 +2212,34 @@ const PHOSPHOR_ICON_LIST = [
   {
     name: 'webhooks-logo',
     icon: PhosphorWebhooksLogoIcon,
-    keywords: ['webhooks', 'logo', 'webhook'],
+    keywords: ['webhooks-logo', 'webhooks', 'logo', 'webhook'],
   },
-  { name: 'wifi-high', icon: PhosphorWifiHighIcon, keywords: ['wifi', 'high'] },
+  {
+    name: 'wheelchair-motion',
+    icon: PhosphorWheelchairMotionIcon,
+    keywords: ['wheelchair-motion', 'accessibility'],
+  },
+  {
+    name: 'wifi-high',
+    icon: PhosphorWifiHighIcon,
+    keywords: ['wifi-high', 'wifi', 'high'],
+  },
   {
     name: 'wifi-low',
     icon: PhosphorWifiLowIcon,
-    keywords: ['wifi', 'low', 'wifi-low'],
+    keywords: ['wifi-low', 'wifi', 'low'],
   },
   { name: 'wind', icon: PhosphorWindIcon, keywords: ['wind'] },
   { name: 'wrench', icon: PhosphorWrenchIcon, keywords: ['wrench'] },
   {
     name: 'x',
     icon: PhosphorXIcon,
-    keywords: ['close', 'x', 'cancel', 'dismiss', 'remove', 'delete'],
+    keywords: ['x', 'close', 'cancel', 'dismiss', 'remove', 'delete'],
   },
   {
     name: 'youtube-logo',
     icon: PhosphorYoutubeLogoIcon,
-    keywords: ['youtube', 'logo'],
+    keywords: ['youtube-logo', 'youtube', 'logo'],
   },
 ];
 
@@ -1864,12 +2314,14 @@ export {
   PhosphorBowlSteamIcon,
   PhosphorBrainIcon,
   PhosphorBriefcaseIcon,
+  PhosphorBroadcastIcon,
   PhosphorCalendarIcon,
   PhosphorCalendarCheckIcon,
   PhosphorCalendarDotsIcon,
   PhosphorCallBellIcon,
   PhosphorCameraRotateIcon,
   PhosphorCardsThreeIcon,
+  PhosphorCardsThreeSquareStackIcon,
   PhosphorCaretCircleDownIcon,
   PhosphorCaretCircleLeftIcon,
   PhosphorCaretCircleRightIcon,
@@ -1879,6 +2331,7 @@ export {
   PhosphorCellTowerIcon,
   PhosphorChargingStationIcon,
   PhosphorChartBarIcon,
+  PhosphorChartBarNoAxesIcon,
   PhosphorChartLineIcon,
   PhosphorChartPieIcon,
   PhosphorChartScatterIcon,
@@ -1959,6 +2412,7 @@ export {
   PhosphorGitBranchIcon,
   PhosphorGitCommitIcon,
   PhosphorGitDiffIcon,
+  PhosphorGitDiffArrowsIcon,
   PhosphorGitForkIcon,
   PhosphorGitMergeIcon,
   PhosphorGitPullRequestIcon,
@@ -1981,6 +2435,7 @@ export {
   PhosphorIdentificationCardIcon,
   PhosphorInstagramLogoIcon,
   PhosphorKeyIcon,
+  PhosphorKeyCircleIcon,
   PhosphorKeyboardIcon,
   PhosphorLayoutIcon,
   PhosphorLeafIcon,
@@ -2026,6 +2481,7 @@ export {
   PhosphorRabbitIcon,
   PhosphorRadioIcon,
   PhosphorReceiptIcon,
+  PhosphorReceiptTextIcon,
   PhosphorRefreshIcon,
   PhosphorRobotIcon,
   PhosphorRocketIcon,
@@ -2046,10 +2502,13 @@ export {
   PhosphorSmileyIcon,
   PhosphorSmileyAngryIcon,
   PhosphorSmileyMehIcon,
+  PhosphorSmileyMehNeutralIcon,
   PhosphorSmileySadIcon,
   PhosphorSnowflakeIcon,
   PhosphorSortAscendingIcon,
+  PhosphorSortAscendingAlphabeticalIcon,
   PhosphorSortDescendingIcon,
+  PhosphorSortDescendingAlphabeticalIcon,
   PhosphorSparkleIcon,
   PhosphorSpeakerXIcon,
   PhosphorSpinnerIcon,
@@ -2064,6 +2523,7 @@ export {
   PhosphorSunIcon,
   PhosphorSunDimIcon,
   PhosphorSunHorizonIcon,
+  PhosphorSunMediumIcon,
   PhosphorSwimmingPoolIcon,
   PhosphorSyringeIcon,
   PhosphorTerminalIcon,
@@ -2094,13 +2554,17 @@ export {
   PhosphorUserCheckIcon,
   PhosphorUserGearIcon,
   PhosphorUserPlusIcon,
+  PhosphorUserRoundCheckIcon,
+  PhosphorUserRoundPlusIcon,
   PhosphorUsersIcon,
+  PhosphorUsersRoundIcon,
   PhosphorVibrateIcon,
   PhosphorWalletIcon,
   PhosphorWashingMachineIcon,
   PhosphorWaveformIcon,
   PhosphorWavesIcon,
   PhosphorWebhooksLogoIcon,
+  PhosphorWheelchairMotionIcon,
   PhosphorWifiHighIcon,
   PhosphorWifiLowIcon,
   PhosphorWindIcon,

@@ -75,6 +75,7 @@ import { TablerBrandTwitchIcon } from './brand-twitch';
 import { TablerBrandTwitterIcon } from './brand-twitter';
 import { TablerBrandYoutubeIcon } from './brand-youtube';
 import { TablerBriefcaseIcon } from './briefcase';
+import { TablerBroadcastIcon } from './broadcast';
 import { TablerBuildingBroadcastTowerIcon } from './building-broadcast-tower';
 import { TablerCalendarIcon } from './calendar';
 import { TablerCalendarCheckIcon } from './calendar-check';
@@ -84,6 +85,7 @@ import { TablerCameraRotateIcon } from './camera-rotate';
 import { TablerCastIcon } from './cast';
 import { TablerChargingPileIcon } from './charging-pile';
 import { TablerChartBarPopularIcon } from './chart-bar-popular';
+import { TablerChartBarPopularNoAxesIcon } from './chart-bar-popular-no-axes';
 import { TablerChartLineIcon } from './chart-line';
 import { TablerChartPieIcon } from './chart-pie';
 import { TablerChartScatterIcon } from './chart-scatter';
@@ -150,6 +152,7 @@ import { TablerDeviceHeartMonitorIcon } from './device-heart-monitor';
 import { TablerDeviceMobileChargingIcon } from './device-mobile-charging';
 import { TablerDeviceMobileVibrationIcon } from './device-mobile-vibration';
 import { TablerDeviceProjectorIcon } from './device-projector';
+import { TablerDisabled2Icon } from './disabled-2';
 import { TablerDiscIcon } from './disc';
 import { TablerDownloadIcon } from './download';
 import { TablerDropletIcon } from './droplet';
@@ -187,6 +190,7 @@ import { TablerGavelIcon } from './gavel';
 import { TablerGitBranchIcon } from './git-branch';
 import { TablerGitCommitIcon } from './git-commit';
 import { TablerGitCompareIcon } from './git-compare';
+import { TablerGitCompareArrowsIcon } from './git-compare-arrows';
 import { TablerGitForkIcon } from './git-fork';
 import { TablerGitMergeIcon } from './git-merge';
 import { TablerGitPullRequestIcon } from './git-pull-request';
@@ -207,6 +211,7 @@ import { TablerHourglassIcon } from './hourglass';
 import { TablerIdIcon } from './id';
 import { TablerItalicIcon } from './italic';
 import { TablerKeyIcon } from './key';
+import { TablerKeySquareIcon } from './key-square';
 import { TablerKeyboardIcon } from './keyboard';
 import { TablerLanguageIcon } from './language';
 import { TablerLayoutAlignCenterIcon } from './layout-align-center';
@@ -217,9 +222,11 @@ import { TablerLayoutSidebarLeftExpandIcon } from './layout-sidebar-left-expand'
 import { TablerLayoutSidebarRightExpandIcon } from './layout-sidebar-right-expand';
 import { TablerLeafIcon } from './leaf';
 import { TablerLinkIcon } from './link';
+import { TablerLink2Icon } from './link-2';
 import { TablerLoaderIcon } from './loader';
 import { TablerLoader2Icon } from './loader-2';
 import { TablerLockIcon } from './lock';
+import { TablerLockKeyholeOpenIcon } from './lock-keyhole-open';
 import { TablerLockOpenIcon } from './lock-open';
 import { TablerLoginIcon } from './login';
 import { TablerLogoutIcon } from './logout';
@@ -277,6 +284,7 @@ import { TablerPoolIcon } from './pool';
 import { TablerPropellerIcon } from './propeller';
 import { TablerRadioIcon } from './radio';
 import { TablerReceiptIcon } from './receipt';
+import { TablerReceiptDollarIcon } from './receipt-dollar';
 import { TablerReceiptEuroIcon } from './receipt-euro';
 import { TablerReceiptPoundIcon } from './receipt-pound';
 import { TablerReceiptRupeeIcon } from './receipt-rupee';
@@ -358,7 +366,9 @@ import { TablerUserIcon } from './user';
 import { TablerUserCheckIcon } from './user-check';
 import { TablerUserCogIcon } from './user-cog';
 import { TablerUserPlusIcon } from './user-plus';
+import { TablerUserRoundPlusIcon } from './user-round-plus';
 import { TablerUsersIcon } from './users';
+import { TablerUsersRoundIcon } from './users-round';
 import { TablerVaccineIcon } from './vaccine';
 import { TablerVolumeIcon } from './volume';
 import { TablerWalletIcon } from './wallet';
@@ -381,12 +391,18 @@ const TABLER_ICON_LIST = [
   {
     name: 'adjustments-horizontal',
     icon: TablerAdjustmentsHorizontalIcon,
-    keywords: ['adjustments', 'horizontal', 'sliders-horizontal', 'sliders'],
+    keywords: [
+      'adjustments-horizontal',
+      'adjustments',
+      'horizontal',
+      'sliders-horizontal',
+      'sliders',
+    ],
   },
   {
     name: 'air-conditioning',
     icon: TablerAirConditioningIcon,
-    keywords: ['air', 'conditioning', 'air-vent', 'vent'],
+    keywords: ['air-conditioning', 'air', 'conditioning', 'air-vent', 'vent'],
   },
   {
     name: 'alarm',
@@ -396,147 +412,186 @@ const TABLER_ICON_LIST = [
   {
     name: 'alarm-minus',
     icon: TablerAlarmMinusIcon,
-    keywords: ['alarm', 'minus', 'alarm-clock-minus', 'clock'],
+    keywords: ['alarm-minus', 'alarm', 'minus', 'alarm-clock-minus', 'clock'],
   },
   {
     name: 'alarm-plus',
     icon: TablerAlarmPlusIcon,
-    keywords: ['alarm', 'plus', 'alarm-clock-plus', 'clock'],
+    keywords: ['alarm-plus', 'alarm', 'plus', 'alarm-clock-plus', 'clock'],
   },
   {
     name: 'alarm-smoke',
     icon: TablerAlarmSmokeIcon,
-    keywords: ['alarm', 'smoke', 'alarm-smoke'],
+    keywords: ['alarm-smoke', 'alarm', 'smoke'],
   },
   {
     name: 'align-center',
     icon: TablerAlignCenterIcon,
-    keywords: ['align', 'center', 'align-center'],
+    keywords: ['align-center', 'align', 'center'],
   },
   {
     name: 'align-left',
     icon: TablerAlignLeftIcon,
-    keywords: ['align', 'left', 'align-left'],
+    keywords: ['align-left', 'align', 'left'],
   },
   {
     name: 'align-right',
     icon: TablerAlignRightIcon,
-    keywords: ['align', 'right', 'align-right'],
+    keywords: ['align-right', 'align', 'right'],
   },
   { name: 'ambulance', icon: TablerAmbulanceIcon, keywords: ['ambulance'] },
   { name: 'archive', icon: TablerArchiveIcon, keywords: ['archive'] },
   {
     name: 'arrow-back-up',
     icon: TablerArrowBackUpIcon,
-    keywords: ['arrow', 'back', 'up', 'undo'],
+    keywords: ['arrow-back-up', 'arrow', 'back', 'up', 'undo'],
   },
   {
     name: 'arrow-big-down',
     icon: TablerArrowBigDownIcon,
-    keywords: ['arrow', 'big', 'down', 'arrow-big-down'],
+    keywords: ['arrow-big-down', 'arrow', 'big', 'down'],
   },
   {
     name: 'arrow-big-down-line',
     icon: TablerArrowBigDownLineIcon,
-    keywords: ['arrow', 'big', 'down', 'line', 'arrow-big-down-dash', 'dash'],
+    keywords: [
+      'arrow-big-down-line',
+      'arrow',
+      'big',
+      'down',
+      'line',
+      'arrow-big-down-dash',
+      'dash',
+    ],
   },
   {
     name: 'arrow-big-left',
     icon: TablerArrowBigLeftIcon,
-    keywords: ['arrow', 'big', 'left', 'arrow-big-left'],
+    keywords: ['arrow-big-left', 'arrow', 'big', 'left'],
   },
   {
     name: 'arrow-big-left-line',
     icon: TablerArrowBigLeftLineIcon,
-    keywords: ['arrow', 'big', 'left', 'line', 'arrow-big-left-dash', 'dash'],
+    keywords: [
+      'arrow-big-left-line',
+      'arrow',
+      'big',
+      'left',
+      'line',
+      'arrow-big-left-dash',
+      'dash',
+    ],
   },
   {
     name: 'arrow-big-right',
     icon: TablerArrowBigRightIcon,
-    keywords: ['arrow', 'big', 'right', 'arrow-big-right'],
+    keywords: ['arrow-big-right', 'arrow', 'big', 'right'],
   },
   {
     name: 'arrow-big-right-line',
     icon: TablerArrowBigRightLineIcon,
-    keywords: ['arrow', 'big', 'right', 'line', 'arrow-big-right-dash', 'dash'],
+    keywords: [
+      'arrow-big-right-line',
+      'arrow',
+      'big',
+      'right',
+      'line',
+      'arrow-big-right-dash',
+      'dash',
+    ],
   },
   {
     name: 'arrow-big-up',
     icon: TablerArrowBigUpIcon,
-    keywords: ['arrow', 'big', 'up', 'arrow-big-up'],
+    keywords: ['arrow-big-up', 'arrow', 'big', 'up'],
   },
   {
     name: 'arrow-big-up-line',
     icon: TablerArrowBigUpLineIcon,
-    keywords: ['arrow', 'big', 'up', 'line', 'arrow-big-up-dash', 'dash'],
+    keywords: [
+      'arrow-big-up-line',
+      'arrow',
+      'big',
+      'up',
+      'line',
+      'arrow-big-up-dash',
+      'dash',
+    ],
   },
   {
     name: 'arrow-down',
     icon: TablerArrowDownIcon,
-    keywords: ['arrow', 'down', 'direction', 'south', 'bottom', 'arrow-down'],
+    keywords: ['arrow-down', 'arrow', 'down', 'direction', 'south', 'bottom'],
   },
   {
     name: 'arrow-down-left',
     icon: TablerArrowDownLeftIcon,
-    keywords: ['arrow', 'down', 'left', 'arrow-down-left'],
+    keywords: ['arrow-down-left', 'arrow', 'down', 'left'],
   },
   {
     name: 'arrow-down-right',
     icon: TablerArrowDownRightIcon,
-    keywords: ['arrow', 'down', 'right', 'arrow-down-right'],
+    keywords: ['arrow-down-right', 'arrow', 'down', 'right'],
   },
   {
     name: 'arrow-forward-up',
     icon: TablerArrowForwardUpIcon,
-    keywords: ['arrow', 'forward', 'up', 'redo'],
+    keywords: ['arrow-forward-up', 'arrow', 'forward', 'up', 'redo'],
   },
   {
     name: 'arrow-left',
     icon: TablerArrowLeftIcon,
-    keywords: ['arrow', 'left', 'direction', 'west', 'back', 'arrow-left'],
+    keywords: ['arrow-left', 'arrow', 'left', 'direction', 'west', 'back'],
   },
   {
     name: 'arrow-right',
     icon: TablerArrowRightIcon,
     keywords: [
+      'arrow-right',
       'arrow',
       'right',
       'direction',
       'east',
       'forward',
       'next',
-      'arrow-right',
     ],
   },
   {
     name: 'arrow-up',
     icon: TablerArrowUpIcon,
-    keywords: ['arrow', 'up', 'direction', 'north', 'top', 'arrow-up'],
+    keywords: ['arrow-up', 'arrow', 'up', 'direction', 'north', 'top'],
   },
   {
     name: 'arrow-up-left',
     icon: TablerArrowUpLeftIcon,
-    keywords: ['arrow', 'up', 'left', 'arrow-up-left'],
+    keywords: ['arrow-up-left', 'arrow', 'up', 'left'],
   },
   {
     name: 'arrow-up-right',
     icon: TablerArrowUpRightIcon,
-    keywords: ['arrow', 'up', 'right', 'arrow-up-right'],
+    keywords: ['arrow-up-right', 'arrow', 'up', 'right'],
   },
   {
     name: 'arrows-diagonal',
     icon: TablerArrowsDiagonalIcon,
-    keywords: ['arrows', 'diagonal', 'maximize-2', 'maximize', '2'],
+    keywords: [
+      'arrows-diagonal',
+      'arrows',
+      'diagonal',
+      'maximize-2',
+      'maximize',
+      '2',
+    ],
   },
   {
     name: 'arrows-maximize',
     icon: TablerArrowsMaximizeIcon,
-    keywords: ['arrows', 'maximize', 'expand'],
+    keywords: ['arrows-maximize', 'arrows', 'maximize', 'expand'],
   },
   {
     name: 'arrows-minimize',
     icon: TablerArrowsMinimizeIcon,
-    keywords: ['arrows', 'minimize', 'shrink'],
+    keywords: ['arrows-minimize', 'arrows', 'minimize', 'shrink'],
   },
   { name: 'at', icon: TablerAtIcon, keywords: ['at', 'at-sign', 'sign'] },
   { name: 'atom', icon: TablerAtomIcon, keywords: ['atom'] },
@@ -551,33 +606,39 @@ const TABLER_ICON_LIST = [
   {
     name: 'barrier-block',
     icon: TablerBarrierBlockIcon,
-    keywords: ['barrier', 'block', 'construction'],
+    keywords: ['barrier-block', 'barrier', 'block', 'construction'],
   },
   { name: 'battery', icon: TablerBatteryIcon, keywords: ['battery'] },
   {
     name: 'battery-1',
     icon: TablerBattery1Icon,
-    keywords: ['battery', '1', 'battery-low', 'low'],
+    keywords: ['battery-1', 'battery', '1', 'battery-low', 'low'],
   },
   {
     name: 'battery-2',
     icon: TablerBattery2Icon,
-    keywords: ['battery', '2', 'battery-medium', 'medium'],
+    keywords: ['battery-2', 'battery', '2', 'battery-medium', 'medium'],
   },
   {
     name: 'battery-4',
     icon: TablerBattery4Icon,
-    keywords: ['battery', '4', 'battery-full', 'full'],
+    keywords: ['battery-4', 'battery', '4', 'battery-full', 'full'],
   },
   {
     name: 'battery-charging',
     icon: TablerBatteryChargingIcon,
-    keywords: ['battery', 'charging', 'battery-charging'],
+    keywords: ['battery-charging', 'battery', 'charging'],
   },
   {
     name: 'battery-exclamation',
     icon: TablerBatteryExclamationIcon,
-    keywords: ['battery', 'exclamation', 'battery-warning', 'warning'],
+    keywords: [
+      'battery-exclamation',
+      'battery',
+      'exclamation',
+      'battery-warning',
+      'warning',
+    ],
   },
   {
     name: 'bell',
@@ -587,7 +648,7 @@ const TABLER_ICON_LIST = [
   {
     name: 'bell-school',
     icon: TablerBellSchoolIcon,
-    keywords: ['bell', 'school', 'bell-electric', 'electric'],
+    keywords: ['bell-school', 'bell', 'school', 'bell-electric', 'electric'],
   },
   { name: 'binary', icon: TablerBinaryIcon, keywords: ['binary'] },
   { name: 'blocks', icon: TablerBlocksIcon, keywords: ['blocks'] },
@@ -595,98 +656,98 @@ const TABLER_ICON_LIST = [
   {
     name: 'bluetooth-connected',
     icon: TablerBluetoothConnectedIcon,
-    keywords: ['bluetooth', 'connected', 'bluetooth-connected'],
+    keywords: ['bluetooth-connected', 'bluetooth', 'connected'],
   },
   {
     name: 'bluetooth-off',
     icon: TablerBluetoothOffIcon,
-    keywords: ['bluetooth', 'off', 'bluetooth-off'],
+    keywords: ['bluetooth-off', 'bluetooth', 'off'],
   },
   { name: 'bold', icon: TablerBoldIcon, keywords: ['bold'] },
   { name: 'bolt', icon: TablerBoltIcon, keywords: ['bolt', 'zap'] },
   {
     name: 'bolt-off',
     icon: TablerBoltOffIcon,
-    keywords: ['bolt', 'off', 'zap-off', 'zap'],
+    keywords: ['bolt-off', 'bolt', 'off', 'zap-off', 'zap'],
   },
   { name: 'bone', icon: TablerBoneIcon, keywords: ['bone'] },
   {
     name: 'book-2',
     icon: TablerBook2Icon,
-    keywords: ['book', '2', 'book-text', 'text'],
+    keywords: ['book-2', 'book', '2', 'book-text', 'text'],
   },
   { name: 'bookmark', icon: TablerBookmarkIcon, keywords: ['bookmark'] },
   {
     name: 'bookmark-minus',
     icon: TablerBookmarkMinusIcon,
-    keywords: ['bookmark', 'minus', 'bookmark-minus'],
+    keywords: ['bookmark-minus', 'bookmark', 'minus'],
   },
   {
     name: 'bookmark-plus',
     icon: TablerBookmarkPlusIcon,
-    keywords: ['bookmark', 'plus', 'bookmark-plus'],
+    keywords: ['bookmark-plus', 'bookmark', 'plus'],
   },
   { name: 'box', icon: TablerBoxIcon, keywords: ['box'] },
   { name: 'brain', icon: TablerBrainIcon, keywords: ['brain'] },
   {
     name: 'brand-chrome',
     icon: TablerBrandChromeIcon,
-    keywords: ['brand', 'chrome'],
+    keywords: ['brand-chrome', 'brand', 'chrome'],
   },
   {
     name: 'brand-discord',
     icon: TablerBrandDiscordIcon,
-    keywords: ['brand', 'discord'],
+    keywords: ['brand-discord', 'brand', 'discord'],
   },
   {
     name: 'brand-dribbble',
     icon: TablerBrandDribbbleIcon,
-    keywords: ['brand', 'dribbble'],
+    keywords: ['brand-dribbble', 'brand', 'dribbble'],
   },
   {
     name: 'brand-facebook',
     icon: TablerBrandFacebookIcon,
-    keywords: ['brand', 'facebook'],
+    keywords: ['brand-facebook', 'brand', 'facebook'],
   },
   {
     name: 'brand-figma',
     icon: TablerBrandFigmaIcon,
-    keywords: ['brand', 'figma'],
+    keywords: ['brand-figma', 'brand', 'figma'],
   },
   {
     name: 'brand-github',
     icon: TablerBrandGithubIcon,
-    keywords: ['brand', 'github'],
+    keywords: ['brand-github', 'brand', 'github'],
   },
   {
     name: 'brand-gitlab',
     icon: TablerBrandGitlabIcon,
-    keywords: ['brand', 'gitlab'],
+    keywords: ['brand-gitlab', 'brand', 'gitlab'],
   },
   {
     name: 'brand-instagram',
     icon: TablerBrandInstagramIcon,
-    keywords: ['brand', 'instagram'],
+    keywords: ['brand-instagram', 'brand', 'instagram'],
   },
   {
     name: 'brand-linkedin',
     icon: TablerBrandLinkedinIcon,
-    keywords: ['brand', 'linkedin'],
+    keywords: ['brand-linkedin', 'brand', 'linkedin'],
   },
   {
     name: 'brand-twitch',
     icon: TablerBrandTwitchIcon,
-    keywords: ['brand', 'twitch'],
+    keywords: ['brand-twitch', 'brand', 'twitch'],
   },
   {
     name: 'brand-twitter',
     icon: TablerBrandTwitterIcon,
-    keywords: ['brand', 'twitter'],
+    keywords: ['brand-twitter', 'brand', 'twitter'],
   },
   {
     name: 'brand-youtube',
     icon: TablerBrandYoutubeIcon,
-    keywords: ['brand', 'youtube'],
+    keywords: ['brand-youtube', 'brand', 'youtube'],
   },
   {
     name: 'briefcase',
@@ -694,9 +755,21 @@ const TABLER_ICON_LIST = [
     keywords: ['briefcase', 'briefcase-business', 'business'],
   },
   {
+    name: 'broadcast',
+    icon: TablerBroadcastIcon,
+    keywords: ['broadcast', 'radio'],
+  },
+  {
     name: 'building-broadcast-tower',
     icon: TablerBuildingBroadcastTowerIcon,
-    keywords: ['building', 'broadcast', 'tower', 'radio-tower', 'radio'],
+    keywords: [
+      'building-broadcast-tower',
+      'building',
+      'broadcast',
+      'tower',
+      'radio-tower',
+      'radio',
+    ],
   },
   {
     name: 'calendar',
@@ -706,33 +779,41 @@ const TABLER_ICON_LIST = [
   {
     name: 'calendar-check',
     icon: TablerCalendarCheckIcon,
-    keywords: ['calendar', 'check', 'calendar-check-2', '2'],
+    keywords: ['calendar-check', 'calendar', 'check', 'calendar-check-2', '2'],
   },
   {
     name: 'calendar-cog',
     icon: TablerCalendarCogIcon,
-    keywords: ['calendar', 'cog', 'calendar-cog'],
+    keywords: ['calendar-cog', 'calendar', 'cog'],
   },
   {
     name: 'calendar-week',
     icon: TablerCalendarWeekIcon,
-    keywords: ['calendar', 'week', 'calendar-days', 'days'],
+    keywords: ['calendar-week', 'calendar', 'week', 'calendar-days', 'days'],
   },
   {
     name: 'camera-rotate',
     icon: TablerCameraRotateIcon,
-    keywords: ['camera', 'rotate', 'switch-camera', 'switch'],
+    keywords: ['camera-rotate', 'camera', 'rotate', 'switch-camera', 'switch'],
   },
   { name: 'cast', icon: TablerCastIcon, keywords: ['cast'] },
   {
     name: 'charging-pile',
     icon: TablerChargingPileIcon,
-    keywords: ['charging', 'pile', 'ev-charger', 'ev', 'charger'],
+    keywords: [
+      'charging-pile',
+      'charging',
+      'pile',
+      'ev-charger',
+      'ev',
+      'charger',
+    ],
   },
   {
     name: 'chart-bar-popular',
     icon: TablerChartBarPopularIcon,
     keywords: [
+      'chart-bar-popular',
       'chart',
       'bar',
       'popular',
@@ -745,19 +826,24 @@ const TABLER_ICON_LIST = [
     ],
   },
   {
+    name: 'chart-bar-popular-no-axes',
+    icon: TablerChartBarPopularNoAxesIcon,
+    keywords: ['chart-bar-popular-no-axes', 'chart-no-axes-column-increasing'],
+  },
+  {
     name: 'chart-line',
     icon: TablerChartLineIcon,
-    keywords: ['chart', 'line', 'chart-line'],
+    keywords: ['chart-line', 'chart', 'line'],
   },
   {
     name: 'chart-pie',
     icon: TablerChartPieIcon,
-    keywords: ['chart', 'pie', 'chart-pie'],
+    keywords: ['chart-pie', 'chart', 'pie'],
   },
   {
     name: 'chart-scatter',
     icon: TablerChartScatterIcon,
-    keywords: ['chart', 'scatter', 'chart-scatter'],
+    keywords: ['chart-scatter', 'chart', 'scatter'],
   },
   {
     name: 'check',
@@ -777,109 +863,116 @@ const TABLER_ICON_LIST = [
   {
     name: 'chess-bishop',
     icon: TablerChessBishopIcon,
-    keywords: ['chess', 'bishop', 'chess-bishop'],
+    keywords: ['chess-bishop', 'chess', 'bishop'],
   },
   {
     name: 'chess-king',
     icon: TablerChessKingIcon,
-    keywords: ['chess', 'king', 'chess-king'],
+    keywords: ['chess-king', 'chess', 'king'],
   },
   {
     name: 'chess-knight',
     icon: TablerChessKnightIcon,
-    keywords: ['chess', 'knight', 'chess-knight'],
+    keywords: ['chess-knight', 'chess', 'knight'],
   },
   {
     name: 'chevron-down',
     icon: TablerChevronDownIcon,
     keywords: [
+      'chevron-down',
       'chevron',
       'down',
       'direction',
       'south',
       'bottom',
       'collapse',
-      'chevron-down',
     ],
   },
   {
     name: 'chevron-left',
     icon: TablerChevronLeftIcon,
     keywords: [
+      'chevron-left',
       'chevron',
       'left',
       'direction',
       'west',
       'back',
       'previous',
-      'chevron-left',
     ],
   },
   {
     name: 'chevron-left-pipe',
     icon: TablerChevronLeftPipeIcon,
-    keywords: ['chevron', 'left', 'pipe', 'chevron-first', 'first'],
+    keywords: [
+      'chevron-left-pipe',
+      'chevron',
+      'left',
+      'pipe',
+      'chevron-first',
+      'first',
+    ],
   },
   {
     name: 'chevron-right',
     icon: TablerChevronRightIcon,
     keywords: [
+      'chevron-right',
       'chevron',
       'right',
       'direction',
       'east',
       'forward',
       'next',
-      'chevron-right',
     ],
   },
   {
     name: 'chevron-up',
     icon: TablerChevronUpIcon,
     keywords: [
+      'chevron-up',
       'chevron',
       'up',
       'direction',
       'north',
       'top',
       'expand',
-      'chevron-up',
     ],
   },
   {
     name: 'christmas-tree',
     icon: TablerChristmasTreeIcon,
-    keywords: ['christmas', 'tree', 'tree-pine', 'pine'],
+    keywords: ['christmas-tree', 'christmas', 'tree', 'tree-pine', 'pine'],
   },
   {
     name: 'circle-check',
     icon: TablerCircleCheckIcon,
-    keywords: ['circle', 'check', 'circle-check'],
+    keywords: ['circle-check', 'circle', 'check'],
   },
   {
     name: 'circle-chevron-down',
     icon: TablerCircleChevronDownIcon,
-    keywords: ['circle', 'chevron', 'down', 'circle-chevron-down'],
+    keywords: ['circle-chevron-down', 'circle', 'chevron', 'down'],
   },
   {
     name: 'circle-chevron-left',
     icon: TablerCircleChevronLeftIcon,
-    keywords: ['circle', 'chevron', 'left', 'circle-chevron-left'],
+    keywords: ['circle-chevron-left', 'circle', 'chevron', 'left'],
   },
   {
     name: 'circle-chevron-right',
     icon: TablerCircleChevronRightIcon,
-    keywords: ['circle', 'chevron', 'right', 'circle-chevron-right'],
+    keywords: ['circle-chevron-right', 'circle', 'chevron', 'right'],
   },
   {
     name: 'circle-chevron-up',
     icon: TablerCircleChevronUpIcon,
-    keywords: ['circle', 'chevron', 'up', 'circle-chevron-up'],
+    keywords: ['circle-chevron-up', 'circle', 'chevron', 'up'],
   },
   {
     name: 'circle-dashed',
     icon: TablerCircleDashedIcon,
-    keywords: ['circle', 'dashed', 'circle-dashed'],
+    keywords: ['circle-dashed', 'circle', 'dashed'],
   },
   {
     name: 'click',
@@ -889,38 +982,38 @@ const TABLER_ICON_LIST = [
   {
     name: 'clipboard-check',
     icon: TablerClipboardCheckIcon,
-    keywords: ['clipboard', 'check', 'clipboard-check'],
+    keywords: ['clipboard-check', 'clipboard', 'check'],
   },
   { name: 'clock', icon: TablerClockIcon, keywords: ['clock'] },
   {
     name: 'cloud-cog',
     icon: TablerCloudCogIcon,
-    keywords: ['cloud', 'cog', 'cloud-cog'],
+    keywords: ['cloud-cog', 'cloud', 'cog'],
   },
   {
     name: 'cloud-download',
     icon: TablerCloudDownloadIcon,
-    keywords: ['cloud', 'download', 'cloud-download'],
+    keywords: ['cloud-download', 'cloud', 'download'],
   },
   {
     name: 'cloud-rain',
     icon: TablerCloudRainIcon,
-    keywords: ['cloud', 'rain', 'cloud-rain'],
+    keywords: ['cloud-rain', 'cloud', 'rain'],
   },
   {
     name: 'cloud-snow',
     icon: TablerCloudSnowIcon,
-    keywords: ['cloud', 'snow', 'cloud-snow'],
+    keywords: ['cloud-snow', 'cloud', 'snow'],
   },
   {
     name: 'cloud-storm',
     icon: TablerCloudStormIcon,
-    keywords: ['cloud', 'storm', 'cloud-lightning', 'lightning'],
+    keywords: ['cloud-storm', 'cloud', 'storm', 'cloud-lightning', 'lightning'],
   },
   {
     name: 'cloud-upload',
     icon: TablerCloudUploadIcon,
-    keywords: ['cloud', 'upload', 'cloud-upload'],
+    keywords: ['cloud-upload', 'cloud', 'upload'],
   },
   { name: 'coffee', icon: TablerCoffeeIcon, keywords: ['coffee'] },
   {
@@ -939,104 +1032,135 @@ const TABLER_ICON_LIST = [
   {
     name: 'corner-down-left',
     icon: TablerCornerDownLeftIcon,
-    keywords: ['corner', 'down', 'left', 'corner-down-left'],
+    keywords: ['corner-down-left', 'corner', 'down', 'left'],
   },
   {
     name: 'corner-down-right',
     icon: TablerCornerDownRightIcon,
-    keywords: ['corner', 'down', 'right', 'corner-down-right'],
+    keywords: ['corner-down-right', 'corner', 'down', 'right'],
   },
   {
     name: 'corner-left-down',
     icon: TablerCornerLeftDownIcon,
-    keywords: ['corner', 'left', 'down', 'corner-left-down'],
+    keywords: ['corner-left-down', 'corner', 'left', 'down'],
   },
   {
     name: 'corner-left-up',
     icon: TablerCornerLeftUpIcon,
-    keywords: ['corner', 'left', 'up', 'corner-left-up'],
+    keywords: ['corner-left-up', 'corner', 'left', 'up'],
   },
   {
     name: 'corner-right-down',
     icon: TablerCornerRightDownIcon,
-    keywords: ['corner', 'right', 'down', 'corner-right-down'],
+    keywords: ['corner-right-down', 'corner', 'right', 'down'],
   },
   {
     name: 'corner-right-up',
     icon: TablerCornerRightUpIcon,
-    keywords: ['corner', 'right', 'up', 'corner-right-up'],
+    keywords: ['corner-right-up', 'corner', 'right', 'up'],
   },
   {
     name: 'corner-up-left',
     icon: TablerCornerUpLeftIcon,
-    keywords: ['corner', 'up', 'left', 'corner-up-left'],
+    keywords: ['corner-up-left', 'corner', 'up', 'left'],
   },
   {
     name: 'corner-up-right',
     icon: TablerCornerUpRightIcon,
-    keywords: ['corner', 'up', 'right', 'corner-up-right'],
+    keywords: ['corner-up-right', 'corner', 'up', 'right'],
   },
   { name: 'cpu', icon: TablerCpuIcon, keywords: ['cpu'] },
   {
     name: 'credit-card',
     icon: TablerCreditCardIcon,
-    keywords: ['credit', 'card', 'credit-card'],
+    keywords: ['credit-card', 'credit', 'card'],
   },
   { name: 'cup', icon: TablerCupIcon, keywords: ['cup', 'cup-soda', 'soda'] },
   {
     name: 'currency-dollar',
     icon: TablerCurrencyDollarIcon,
-    keywords: ['currency', 'dollar', 'dollar-sign', 'sign'],
+    keywords: ['currency-dollar', 'currency', 'dollar', 'dollar-sign', 'sign'],
   },
   {
     name: 'currency-euro',
     icon: TablerCurrencyEuroIcon,
-    keywords: ['currency', 'euro'],
+    keywords: ['currency-euro', 'currency', 'euro'],
   },
   {
     name: 'currency-frank',
     icon: TablerCurrencyFrankIcon,
-    keywords: ['currency', 'frank', 'swiss-franc', 'swiss', 'franc'],
+    keywords: [
+      'currency-frank',
+      'currency',
+      'frank',
+      'swiss-franc',
+      'swiss',
+      'franc',
+    ],
   },
   {
     name: 'currency-lari',
     icon: TablerCurrencyLariIcon,
-    keywords: ['currency', 'lari', 'georgian-lari', 'georgian'],
+    keywords: [
+      'currency-lari',
+      'currency',
+      'lari',
+      'georgian-lari',
+      'georgian',
+    ],
   },
   {
     name: 'currency-lira',
     icon: TablerCurrencyLiraIcon,
-    keywords: ['currency', 'lira', 'turkish-lira', 'turkish'],
+    keywords: ['currency-lira', 'currency', 'lira', 'turkish-lira', 'turkish'],
   },
   {
     name: 'currency-peso',
     icon: TablerCurrencyPesoIcon,
-    keywords: ['currency', 'peso', 'philippine-peso', 'philippine'],
+    keywords: [
+      'currency-peso',
+      'currency',
+      'peso',
+      'philippine-peso',
+      'philippine',
+    ],
   },
   {
     name: 'currency-pound',
     icon: TablerCurrencyPoundIcon,
-    keywords: ['currency', 'pound', 'pound-sterling', 'sterling'],
+    keywords: [
+      'currency-pound',
+      'currency',
+      'pound',
+      'pound-sterling',
+      'sterling',
+    ],
   },
   {
     name: 'currency-riyal',
     icon: TablerCurrencyRiyalIcon,
-    keywords: ['currency', 'riyal', 'saudi-riyal', 'saudi'],
+    keywords: ['currency-riyal', 'currency', 'riyal', 'saudi-riyal', 'saudi'],
   },
   {
     name: 'currency-ruble',
     icon: TablerCurrencyRubleIcon,
-    keywords: ['currency', 'ruble', 'russian-ruble', 'russian'],
+    keywords: [
+      'currency-ruble',
+      'currency',
+      'ruble',
+      'russian-ruble',
+      'russian',
+    ],
   },
   {
     name: 'currency-rupee',
     icon: TablerCurrencyRupeeIcon,
-    keywords: ['currency', 'rupee', 'indian-rupee', 'indian'],
+    keywords: ['currency-rupee', 'currency', 'rupee', 'indian-rupee', 'indian'],
   },
   {
     name: 'currency-yen',
     icon: TablerCurrencyYenIcon,
-    keywords: ['currency', 'yen', 'japanese-yen', 'japanese'],
+    keywords: ['currency-yen', 'currency', 'yen', 'japanese-yen', 'japanese'],
   },
   {
     name: 'dashboard',
@@ -1046,22 +1170,37 @@ const TABLER_ICON_LIST = [
   {
     name: 'device-cctv',
     icon: TablerDeviceCctvIcon,
-    keywords: ['device', 'cctv'],
+    keywords: ['device-cctv', 'device', 'cctv'],
   },
   {
     name: 'device-desktop-check',
     icon: TablerDeviceDesktopCheckIcon,
-    keywords: ['device', 'desktop', 'check', 'monitor-check', 'monitor'],
+    keywords: [
+      'device-desktop-check',
+      'device',
+      'desktop',
+      'check',
+      'monitor-check',
+      'monitor',
+    ],
   },
   {
     name: 'device-desktop-cog',
     icon: TablerDeviceDesktopCogIcon,
-    keywords: ['device', 'desktop', 'cog', 'monitor-cog', 'monitor'],
+    keywords: [
+      'device-desktop-cog',
+      'device',
+      'desktop',
+      'cog',
+      'monitor-cog',
+      'monitor',
+    ],
   },
   {
     name: 'device-heart-monitor',
     icon: TablerDeviceHeartMonitorIcon,
     keywords: [
+      'device-heart-monitor',
       'device',
       'heart',
       'monitor',
@@ -1074,6 +1213,7 @@ const TABLER_ICON_LIST = [
     name: 'device-mobile-charging',
     icon: TablerDeviceMobileChargingIcon,
     keywords: [
+      'device-mobile-charging',
       'device',
       'mobile',
       'charging',
@@ -1084,12 +1224,23 @@ const TABLER_ICON_LIST = [
   {
     name: 'device-mobile-vibration',
     icon: TablerDeviceMobileVibrationIcon,
-    keywords: ['device', 'mobile', 'vibration', 'vibrate'],
+    keywords: [
+      'device-mobile-vibration',
+      'device',
+      'mobile',
+      'vibration',
+      'vibrate',
+    ],
   },
   {
     name: 'device-projector',
     icon: TablerDeviceProjectorIcon,
-    keywords: ['device', 'projector'],
+    keywords: ['device-projector', 'device', 'projector'],
+  },
+  {
+    name: 'disabled-2',
+    icon: TablerDisabled2Icon,
+    keywords: ['disabled-2', 'accessibility'],
   },
   { name: 'disc', icon: TablerDiscIcon, keywords: ['disc', 'disc-3', '3'] },
   {
@@ -1106,7 +1257,7 @@ const TABLER_ICON_LIST = [
   {
     name: 'external-link',
     icon: TablerExternalLinkIcon,
-    keywords: ['external', 'link', 'external-link'],
+    keywords: ['external-link', 'external', 'link'],
   },
   {
     name: 'eye',
@@ -1116,38 +1267,38 @@ const TABLER_ICON_LIST = [
   {
     name: 'eye-off',
     icon: TablerEyeOffIcon,
-    keywords: ['eye', 'off', 'eye-off'],
+    keywords: ['eye-off', 'eye', 'off'],
   },
   {
     name: 'face-id',
     icon: TablerFaceIdIcon,
-    keywords: ['face', 'id', 'scan-face', 'scan'],
+    keywords: ['face-id', 'face', 'id', 'scan-face', 'scan'],
   },
   { name: 'feather', icon: TablerFeatherIcon, keywords: ['feather'] },
   {
     name: 'file-check',
     icon: TablerFileCheckIcon,
-    keywords: ['file', 'check', 'file-check'],
+    keywords: ['file-check', 'file', 'check'],
   },
   {
     name: 'file-pencil',
     icon: TablerFilePencilIcon,
-    keywords: ['file', 'pencil', 'file-pen-line', 'pen', 'line'],
+    keywords: ['file-pencil', 'file', 'pencil', 'file-pen-line', 'pen', 'line'],
   },
   {
     name: 'file-settings',
     icon: TablerFileSettingsIcon,
-    keywords: ['file', 'settings', 'file-cog', 'cog'],
+    keywords: ['file-settings', 'file', 'settings', 'file-cog', 'cog'],
   },
   {
     name: 'file-stack',
     icon: TablerFileStackIcon,
-    keywords: ['file', 'stack', 'file-stack'],
+    keywords: ['file-stack', 'file', 'stack'],
   },
   {
     name: 'file-text',
     icon: TablerFileTextIcon,
-    keywords: ['file', 'text', 'file-text'],
+    keywords: ['file-text', 'file', 'text'],
   },
   {
     name: 'filter',
@@ -1162,64 +1313,70 @@ const TABLER_ICON_LIST = [
   {
     name: 'fish-christianity',
     icon: TablerFishChristianityIcon,
-    keywords: ['fish', 'christianity', 'fish-symbol', 'symbol'],
+    keywords: [
+      'fish-christianity',
+      'fish',
+      'christianity',
+      'fish-symbol',
+      'symbol',
+    ],
   },
   { name: 'flame', icon: TablerFlameIcon, keywords: ['flame'] },
   { name: 'flask', icon: TablerFlaskIcon, keywords: ['flask'] },
   {
     name: 'folder-check',
     icon: TablerFolderCheckIcon,
-    keywords: ['folder', 'check', 'folder-check'],
+    keywords: ['folder-check', 'folder', 'check'],
   },
   {
     name: 'folder-code',
     icon: TablerFolderCodeIcon,
-    keywords: ['folder', 'code', 'folder-code'],
+    keywords: ['folder-code', 'folder', 'code'],
   },
   {
     name: 'folder-cog',
     icon: TablerFolderCogIcon,
-    keywords: ['folder', 'cog', 'folder-cog'],
+    keywords: ['folder-cog', 'folder', 'cog'],
   },
   {
     name: 'folder-down',
     icon: TablerFolderDownIcon,
-    keywords: ['folder', 'down', 'folder-down'],
+    keywords: ['folder-down', 'folder', 'down'],
   },
   {
     name: 'folder-heart',
     icon: TablerFolderHeartIcon,
-    keywords: ['folder', 'heart', 'folder-heart'],
+    keywords: ['folder-heart', 'folder', 'heart'],
   },
   {
     name: 'folder-minus',
     icon: TablerFolderMinusIcon,
-    keywords: ['folder', 'minus', 'folder-minus'],
+    keywords: ['folder-minus', 'folder', 'minus'],
   },
   {
     name: 'folder-open',
     icon: TablerFolderOpenIcon,
-    keywords: ['folder', 'open', 'folder-open'],
+    keywords: ['folder-open', 'folder', 'open'],
   },
   {
     name: 'folder-plus',
     icon: TablerFolderPlusIcon,
-    keywords: ['folder', 'plus', 'folder-plus'],
+    keywords: ['folder-plus', 'folder', 'plus'],
   },
   {
     name: 'folder-root',
     icon: TablerFolderRootIcon,
-    keywords: ['folder', 'root', 'folder-root'],
+    keywords: ['folder-root', 'folder', 'root'],
   },
   {
     name: 'folder-up',
     icon: TablerFolderUpIcon,
-    keywords: ['folder', 'up', 'folder-up'],
+    keywords: ['folder-up', 'folder', 'up'],
   },
   {
     name: 'folder-x',
     icon: TablerFolderXIcon,
-    keywords: ['folder', 'x', 'folder-x'],
+    keywords: ['folder-x', 'folder', 'x'],
   },
   { name: 'folders', icon: TablerFoldersIcon, keywords: ['folders'] },
   { name: 'frame', icon: TablerFrameIcon, keywords: ['frame'] },
@@ -1232,60 +1389,75 @@ const TABLER_ICON_LIST = [
   {
     name: 'git-branch',
     icon: TablerGitBranchIcon,
-    keywords: ['git', 'branch', 'git-branch'],
+    keywords: ['git-branch', 'git', 'branch'],
   },
   {
     name: 'git-commit',
     icon: TablerGitCommitIcon,
-    keywords: ['git', 'commit', 'git-commit-vertical', 'vertical'],
+    keywords: [
+      'git-commit',
+      'git',
+      'commit',
+      'git-commit-vertical',
+      'vertical',
+    ],
   },
   {
     name: 'git-compare',
     icon: TablerGitCompareIcon,
-    keywords: ['git', 'compare', 'git-compare', 'git-compare-arrows', 'arrows'],
+    keywords: ['git-compare', 'git', 'compare', 'git-compare-arrows', 'arrows'],
+  },
+  {
+    name: 'git-compare-arrows',
+    icon: TablerGitCompareArrowsIcon,
+    keywords: ['git-compare-arrows'],
   },
   {
     name: 'git-fork',
     icon: TablerGitForkIcon,
-    keywords: ['git', 'fork', 'git-fork'],
+    keywords: ['git-fork', 'git', 'fork'],
   },
   {
     name: 'git-merge',
     icon: TablerGitMergeIcon,
-    keywords: ['git', 'merge', 'git-merge'],
+    keywords: ['git-merge', 'git', 'merge'],
   },
   {
     name: 'git-pull-request',
     icon: TablerGitPullRequestIcon,
-    keywords: ['git', 'pull', 'request', 'git-pull-request'],
+    keywords: ['git-pull-request', 'git', 'pull', 'request'],
   },
   {
     name: 'git-pull-request-closed',
     icon: TablerGitPullRequestClosedIcon,
-    keywords: ['git', 'pull', 'request', 'closed', 'git-pull-request-closed'],
+    keywords: ['git-pull-request-closed', 'git', 'pull', 'request', 'closed'],
   },
   {
     name: 'grid-dots',
     icon: TablerGridDotsIcon,
-    keywords: ['grid', 'dots', 'grip'],
+    keywords: ['grid-dots', 'grid', 'dots', 'grip'],
   },
   {
     name: 'grip-horizontal',
     icon: TablerGripHorizontalIcon,
-    keywords: ['grip', 'horizontal', 'grip-horizontal'],
+    keywords: ['grip-horizontal', 'grip', 'horizontal'],
   },
   {
     name: 'grip-vertical',
     icon: TablerGripVerticalIcon,
-    keywords: ['grip', 'vertical', 'grip-vertical'],
+    keywords: ['grip-vertical', 'grip', 'vertical'],
   },
   { name: 'hammer', icon: TablerHammerIcon, keywords: ['hammer'] },
   {
     name: 'hand-grab',
     icon: TablerHandGrabIcon,
-    keywords: ['hand', 'grab', 'hand-grab'],
+    keywords: ['hand-grab', 'hand', 'grab'],
   },
-  { name: 'hand-stop', icon: TablerHandStopIcon, keywords: ['hand', 'stop'] },
+  {
+    name: 'hand-stop',
+    icon: TablerHandStopIcon,
+    keywords: ['hand-stop', 'hand', 'stop'],
+  },
   {
     name: 'heart',
     icon: TablerHeartIcon,
@@ -1294,7 +1466,7 @@ const TABLER_ICON_LIST = [
   {
     name: 'heart-handshake',
     icon: TablerHeartHandshakeIcon,
-    keywords: ['heart', 'handshake', 'heart-handshake'],
+    keywords: ['heart-handshake', 'heart', 'handshake'],
   },
   {
     name: 'heartbeat',
@@ -1304,7 +1476,7 @@ const TABLER_ICON_LIST = [
   {
     name: 'help-circle',
     icon: TablerHelpCircleIcon,
-    keywords: ['help', 'circle', 'circle-help'],
+    keywords: ['help-circle', 'help', 'circle', 'circle-help'],
   },
   { name: 'history', icon: TablerHistoryIcon, keywords: ['history'] },
   {
@@ -1320,6 +1492,7 @@ const TABLER_ICON_LIST = [
     icon: TablerKeyIcon,
     keywords: ['key', 'key-square', 'square'],
   },
+  { name: 'key-square', icon: TablerKeySquareIcon, keywords: ['key-square'] },
   { name: 'keyboard', icon: TablerKeyboardIcon, keywords: ['keyboard'] },
   {
     name: 'language',
@@ -1329,22 +1502,37 @@ const TABLER_ICON_LIST = [
   {
     name: 'layout-align-center',
     icon: TablerLayoutAlignCenterIcon,
-    keywords: ['layout', 'align', 'center', 'align-horizontal', 'horizontal'],
+    keywords: [
+      'layout-align-center',
+      'layout',
+      'align',
+      'center',
+      'align-horizontal',
+      'horizontal',
+    ],
   },
   {
     name: 'layout-align-middle',
     icon: TablerLayoutAlignMiddleIcon,
-    keywords: ['layout', 'align', 'middle', 'align-vertical', 'vertical'],
+    keywords: [
+      'layout-align-middle',
+      'layout',
+      'align',
+      'middle',
+      'align-vertical',
+      'vertical',
+    ],
   },
   {
     name: 'layout-grid',
     icon: TablerLayoutGridIcon,
-    keywords: ['layout', 'grid', 'layout-grid'],
+    keywords: ['layout-grid', 'layout', 'grid'],
   },
   {
     name: 'layout-sidebar-left-collapse',
     icon: TablerLayoutSidebarLeftCollapseIcon,
     keywords: [
+      'layout-sidebar-left-collapse',
       'layout',
       'sidebar',
       'left',
@@ -1358,6 +1546,7 @@ const TABLER_ICON_LIST = [
     name: 'layout-sidebar-left-expand',
     icon: TablerLayoutSidebarLeftExpandIcon,
     keywords: [
+      'layout-sidebar-left-expand',
       'layout',
       'sidebar',
       'left',
@@ -1371,6 +1560,7 @@ const TABLER_ICON_LIST = [
     name: 'layout-sidebar-right-expand',
     icon: TablerLayoutSidebarRightExpandIcon,
     keywords: [
+      'layout-sidebar-right-expand',
       'layout',
       'sidebar',
       'right',
@@ -1382,11 +1572,12 @@ const TABLER_ICON_LIST = [
   },
   { name: 'leaf', icon: TablerLeafIcon, keywords: ['leaf'] },
   { name: 'link', icon: TablerLinkIcon, keywords: ['link', 'link-2', '2'] },
+  { name: 'link-2', icon: TablerLink2Icon, keywords: ['link-2'] },
   { name: 'loader', icon: TablerLoaderIcon, keywords: ['loader'] },
   {
     name: 'loader-2',
     icon: TablerLoader2Icon,
-    keywords: ['loader', '2', 'loader-circle', 'circle'],
+    keywords: ['loader-2', 'loader', '2', 'loader-circle', 'circle'],
   },
   {
     name: 'lock',
@@ -1402,9 +1593,14 @@ const TABLER_ICON_LIST = [
     ],
   },
   {
+    name: 'lock-keyhole-open',
+    icon: TablerLockKeyholeOpenIcon,
+    keywords: ['lock-keyhole-open'],
+  },
+  {
     name: 'lock-open',
     icon: TablerLockOpenIcon,
-    keywords: ['lock', 'open', 'lock-keyhole-open', 'lock-open', 'keyhole'],
+    keywords: ['lock-open', 'lock', 'open', 'lock-keyhole-open', 'keyhole'],
   },
   { name: 'login', icon: TablerLoginIcon, keywords: ['login'] },
   { name: 'logout', icon: TablerLogoutIcon, keywords: ['logout'] },
@@ -1416,33 +1612,33 @@ const TABLER_ICON_LIST = [
   {
     name: 'mail-check',
     icon: TablerMailCheckIcon,
-    keywords: ['mail', 'check', 'mail-check'],
+    keywords: ['mail-check', 'mail', 'check'],
   },
   { name: 'mailbox', icon: TablerMailboxIcon, keywords: ['mailbox'] },
   {
     name: 'map-pin',
     icon: TablerMapPinIcon,
-    keywords: ['map', 'pin', 'map-pin'],
+    keywords: ['map-pin', 'map', 'pin'],
   },
   {
     name: 'map-pin-check',
     icon: TablerMapPinCheckIcon,
-    keywords: ['map', 'pin', 'check', 'map-pin-check'],
+    keywords: ['map-pin-check', 'map', 'pin', 'check'],
   },
   {
     name: 'map-pin-minus',
     icon: TablerMapPinMinusIcon,
-    keywords: ['map', 'pin', 'minus', 'map-pin-minus'],
+    keywords: ['map-pin-minus', 'map', 'pin', 'minus'],
   },
   {
     name: 'map-pin-off',
     icon: TablerMapPinOffIcon,
-    keywords: ['map', 'pin', 'off', 'map-pin-off'],
+    keywords: ['map-pin-off', 'map', 'pin', 'off'],
   },
   {
     name: 'map-pin-plus',
     icon: TablerMapPinPlusIcon,
-    keywords: ['map', 'pin', 'plus', 'map-pin-plus'],
+    keywords: ['map-pin-plus', 'map', 'pin', 'plus'],
   },
   { name: 'maximize', icon: TablerMaximizeIcon, keywords: ['maximize'] },
   {
@@ -1458,47 +1654,73 @@ const TABLER_ICON_LIST = [
   {
     name: 'message-chatbot',
     icon: TablerMessageChatbotIcon,
-    keywords: ['message', 'chatbot', 'bot-message-square', 'bot', 'square'],
+    keywords: [
+      'message-chatbot',
+      'message',
+      'chatbot',
+      'bot-message-square',
+      'bot',
+      'square',
+    ],
   },
   {
     name: 'message-check',
     icon: TablerMessageCheckIcon,
-    keywords: ['message', 'check', 'message-square-check', 'square'],
+    keywords: [
+      'message-check',
+      'message',
+      'check',
+      'message-square-check',
+      'square',
+    ],
   },
   {
     name: 'message-circle',
     icon: TablerMessageCircleIcon,
-    keywords: ['message', 'circle', 'message-circle'],
+    keywords: ['message-circle', 'message', 'circle'],
   },
   {
     name: 'message-circle-check',
     icon: TablerMessageCircleCheckIcon,
-    keywords: ['message', 'circle', 'check', 'message-circle-check'],
+    keywords: ['message-circle-check', 'message', 'circle', 'check'],
   },
   {
     name: 'message-circle-plus',
     icon: TablerMessageCirclePlusIcon,
-    keywords: ['message', 'circle', 'plus', 'message-circle-plus'],
+    keywords: ['message-circle-plus', 'message', 'circle', 'plus'],
   },
   {
     name: 'message-circle-x',
     icon: TablerMessageCircleXIcon,
-    keywords: ['message', 'circle', 'x', 'message-circle-x'],
+    keywords: ['message-circle-x', 'message', 'circle', 'x'],
   },
   {
     name: 'message-dots',
     icon: TablerMessageDotsIcon,
-    keywords: ['message', 'dots', 'message-square-more', 'square', 'more'],
+    keywords: [
+      'message-dots',
+      'message',
+      'dots',
+      'message-square-more',
+      'square',
+      'more',
+    ],
   },
   {
     name: 'message-plus',
     icon: TablerMessagePlusIcon,
-    keywords: ['message', 'plus', 'message-square-plus', 'square'],
+    keywords: [
+      'message-plus',
+      'message',
+      'plus',
+      'message-square-plus',
+      'square',
+    ],
   },
   {
     name: 'message-x',
     icon: TablerMessageXIcon,
-    keywords: ['message', 'x', 'message-square-x', 'square'],
+    keywords: ['message-x', 'message', 'x', 'message-square-x', 'square'],
   },
   {
     name: 'microphone',
@@ -1508,43 +1730,43 @@ const TABLER_ICON_LIST = [
   {
     name: 'microphone-off',
     icon: TablerMicrophoneOffIcon,
-    keywords: ['microphone', 'off', 'mic-off', 'mic'],
+    keywords: ['microphone-off', 'microphone', 'off', 'mic-off', 'mic'],
   },
   { name: 'minimize', icon: TablerMinimizeIcon, keywords: ['minimize'] },
   {
     name: 'mood-angry',
     icon: TablerMoodAngryIcon,
-    keywords: ['mood', 'angry'],
+    keywords: ['mood-angry', 'mood', 'angry'],
   },
   {
     name: 'mood-annoyed',
     icon: TablerMoodAnnoyedIcon,
-    keywords: ['mood', 'annoyed'],
+    keywords: ['mood-annoyed', 'mood', 'annoyed'],
   },
   {
     name: 'mood-happy',
     icon: TablerMoodHappyIcon,
-    keywords: ['mood', 'happy', 'laugh'],
+    keywords: ['mood-happy', 'mood', 'happy', 'laugh'],
   },
   {
     name: 'mood-neutral',
     icon: TablerMoodNeutralIcon,
-    keywords: ['mood', 'neutral', 'meh'],
+    keywords: ['mood-neutral', 'mood', 'neutral', 'meh'],
   },
   {
     name: 'mood-plus',
     icon: TablerMoodPlusIcon,
-    keywords: ['mood', 'plus', 'smile-plus', 'smile'],
+    keywords: ['mood-plus', 'mood', 'plus', 'smile-plus', 'smile'],
   },
   {
     name: 'mood-sad',
     icon: TablerMoodSadIcon,
-    keywords: ['mood', 'sad', 'frown'],
+    keywords: ['mood-sad', 'mood', 'sad', 'frown'],
   },
   {
     name: 'mood-smile',
     icon: TablerMoodSmileIcon,
-    keywords: ['mood', 'smile'],
+    keywords: ['mood-smile', 'mood', 'smile'],
   },
   { name: 'moon', icon: TablerMoonIcon, keywords: ['moon'] },
   { name: 'nfc', icon: TablerNfcIcon, keywords: ['nfc'] },
@@ -1568,54 +1790,66 @@ const TABLER_ICON_LIST = [
   {
     name: 'phone-call',
     icon: TablerPhoneCallIcon,
-    keywords: ['phone', 'call', 'phone-call'],
+    keywords: ['phone-call', 'phone', 'call'],
   },
   {
     name: 'phone-incoming',
     icon: TablerPhoneIncomingIcon,
-    keywords: ['phone', 'incoming', 'phone-incoming'],
+    keywords: ['phone-incoming', 'phone', 'incoming'],
   },
   {
     name: 'phone-off',
     icon: TablerPhoneOffIcon,
-    keywords: ['phone', 'off', 'phone-off'],
+    keywords: ['phone-off', 'phone', 'off'],
   },
   {
     name: 'phone-outgoing',
     icon: TablerPhoneOutgoingIcon,
-    keywords: ['phone', 'outgoing', 'phone-forwarded', 'forwarded'],
+    keywords: [
+      'phone-outgoing',
+      'phone',
+      'outgoing',
+      'phone-forwarded',
+      'forwarded',
+    ],
   },
   {
     name: 'phone-x',
     icon: TablerPhoneXIcon,
-    keywords: ['phone', 'x', 'phone-missed', 'missed'],
+    keywords: ['phone-x', 'phone', 'x', 'phone-missed', 'missed'],
   },
   { name: 'pick', icon: TablerPickIcon, keywords: ['pick', 'pickaxe'] },
   { name: 'plane', icon: TablerPlaneIcon, keywords: ['plane', 'airplane'] },
   {
     name: 'plane-arrival',
     icon: TablerPlaneArrivalIcon,
-    keywords: ['plane', 'arrival', 'plane-landing', 'landing'],
+    keywords: ['plane-arrival', 'plane', 'arrival', 'plane-landing', 'landing'],
   },
   {
     name: 'plane-departure',
     icon: TablerPlaneDepartureIcon,
-    keywords: ['plane', 'departure', 'plane-takeoff', 'takeoff'],
+    keywords: [
+      'plane-departure',
+      'plane',
+      'departure',
+      'plane-takeoff',
+      'takeoff',
+    ],
   },
   {
     name: 'player-pause',
     icon: TablerPlayerPauseIcon,
-    keywords: ['player', 'pause'],
+    keywords: ['player-pause', 'player', 'pause'],
   },
   {
     name: 'player-play',
     icon: TablerPlayerPlayIcon,
-    keywords: ['player', 'play'],
+    keywords: ['player-play', 'player', 'play'],
   },
   {
     name: 'plug-connected',
     icon: TablerPlugConnectedIcon,
-    keywords: ['plug', 'connected', 'connect'],
+    keywords: ['plug-connected', 'plug', 'connected', 'connect'],
   },
   {
     name: 'plus',
@@ -1639,24 +1873,47 @@ const TABLER_ICON_LIST = [
     keywords: ['receipt', 'receipt-text', 'text'],
   },
   {
+    name: 'receipt-dollar',
+    icon: TablerReceiptDollarIcon,
+    keywords: ['receipt-dollar', 'receipt'],
+  },
+  {
     name: 'receipt-euro',
     icon: TablerReceiptEuroIcon,
-    keywords: ['receipt', 'euro', 'receipt-euro'],
+    keywords: ['receipt-euro', 'receipt', 'euro'],
   },
   {
     name: 'receipt-pound',
     icon: TablerReceiptPoundIcon,
-    keywords: ['receipt', 'pound', 'receipt-pound-sterling', 'sterling'],
+    keywords: [
+      'receipt-pound',
+      'receipt',
+      'pound',
+      'receipt-pound-sterling',
+      'sterling',
+    ],
   },
   {
     name: 'receipt-rupee',
     icon: TablerReceiptRupeeIcon,
-    keywords: ['receipt', 'rupee', 'receipt-indian-rupee', 'indian'],
+    keywords: [
+      'receipt-rupee',
+      'receipt',
+      'rupee',
+      'receipt-indian-rupee',
+      'indian',
+    ],
   },
   {
     name: 'receipt-yen',
     icon: TablerReceiptYenIcon,
-    keywords: ['receipt', 'yen', 'receipt-japanese-yen', 'japanese'],
+    keywords: [
+      'receipt-yen',
+      'receipt',
+      'yen',
+      'receipt-japanese-yen',
+      'japanese',
+    ],
   },
   {
     name: 'refresh',
@@ -1674,7 +1931,7 @@ const TABLER_ICON_LIST = [
   {
     name: 'refresh-dot',
     icon: TablerRefreshDotIcon,
-    keywords: ['refresh', 'dot', 'refresh-ccw-dot', 'ccw'],
+    keywords: ['refresh-dot', 'refresh', 'dot', 'refresh-ccw-dot', 'ccw'],
   },
   { name: 'ripple', icon: TablerRippleIcon, keywords: ['ripple', 'waves'] },
   { name: 'robot', icon: TablerRobotIcon, keywords: ['robot', 'bot'] },
@@ -1682,7 +1939,7 @@ const TABLER_ICON_LIST = [
   {
     name: 'rocking-chair',
     icon: TablerRockingChairIcon,
-    keywords: ['rocking', 'chair', 'rocking-chair'],
+    keywords: ['rocking-chair', 'rocking', 'chair'],
   },
   {
     name: 'rollercoaster',
@@ -1692,7 +1949,14 @@ const TABLER_ICON_LIST = [
   {
     name: 'rosette-discount',
     icon: TablerRosetteDiscountIcon,
-    keywords: ['rosette', 'discount', 'badge-percent', 'badge', 'percent'],
+    keywords: [
+      'rosette-discount',
+      'rosette',
+      'discount',
+      'badge-percent',
+      'badge',
+      'percent',
+    ],
   },
   {
     name: 'rotate',
@@ -1702,14 +1966,14 @@ const TABLER_ICON_LIST = [
   {
     name: 'rotate-clockwise',
     icon: TablerRotateClockwiseIcon,
-    keywords: ['rotate', 'clockwise', 'rotate-cw', 'cw'],
+    keywords: ['rotate-clockwise', 'rotate', 'clockwise', 'rotate-cw', 'cw'],
   },
   { name: 'route', icon: TablerRouteIcon, keywords: ['route'] },
   { name: 'router', icon: TablerRouterIcon, keywords: ['router'] },
   {
     name: 'rubber-stamp',
     icon: TablerRubberStampIcon,
-    keywords: ['rubber', 'stamp'],
+    keywords: ['rubber-stamp', 'rubber', 'stamp'],
   },
   {
     name: 'save',
@@ -1737,7 +2001,7 @@ const TABLER_ICON_LIST = [
   {
     name: 'server-cog',
     icon: TablerServerCogIcon,
-    keywords: ['server', 'cog', 'server-cog'],
+    keywords: ['server-cog', 'server', 'cog'],
   },
   {
     name: 'settings',
@@ -1752,13 +2016,13 @@ const TABLER_ICON_LIST = [
   {
     name: 'shield-check',
     icon: TablerShieldCheckIcon,
-    keywords: ['shield', 'check', 'shield-check'],
+    keywords: ['shield-check', 'shield', 'check'],
   },
   { name: 'ship', icon: TablerShipIcon, keywords: ['ship'] },
   {
     name: 'shopping-cart',
     icon: TablerShoppingCartIcon,
-    keywords: ['shopping', 'cart'],
+    keywords: ['shopping-cart', 'shopping', 'cart'],
   },
   { name: 'shredder', icon: TablerShredderIcon, keywords: ['shredder'] },
   {
@@ -1769,13 +2033,21 @@ const TABLER_ICON_LIST = [
   {
     name: 'smoking-no',
     icon: TablerSmokingNoIcon,
-    keywords: ['smoking', 'no', 'cigarette-off', 'cigarette', 'off'],
+    keywords: [
+      'smoking-no',
+      'smoking',
+      'no',
+      'cigarette-off',
+      'cigarette',
+      'off',
+    ],
   },
   { name: 'snowflake', icon: TablerSnowflakeIcon, keywords: ['snowflake'] },
   {
     name: 'sort-ascending-letters',
     icon: TablerSortAscendingLettersIcon,
     keywords: [
+      'sort-ascending-letters',
       'sort',
       'ascending',
       'letters',
@@ -1790,6 +2062,7 @@ const TABLER_ICON_LIST = [
     name: 'sort-ascending-numbers',
     icon: TablerSortAscendingNumbersIcon,
     keywords: [
+      'sort-ascending-numbers',
       'sort',
       'ascending',
       'numbers',
@@ -1804,6 +2077,7 @@ const TABLER_ICON_LIST = [
     name: 'sort-descending-letters',
     icon: TablerSortDescendingLettersIcon,
     keywords: [
+      'sort-descending-letters',
       'sort',
       'descending',
       'letters',
@@ -1818,6 +2092,7 @@ const TABLER_ICON_LIST = [
     name: 'sort-descending-numbers',
     icon: TablerSortDescendingNumbersIcon,
     keywords: [
+      'sort-descending-numbers',
       'sort',
       'descending',
       'numbers',
@@ -1843,42 +2118,42 @@ const TABLER_ICON_LIST = [
   {
     name: 'square-arrow-down',
     icon: TablerSquareArrowDownIcon,
-    keywords: ['square', 'arrow', 'down', 'square-arrow-down'],
+    keywords: ['square-arrow-down', 'square', 'arrow', 'down'],
   },
   {
     name: 'square-arrow-left',
     icon: TablerSquareArrowLeftIcon,
-    keywords: ['square', 'arrow', 'left', 'square-arrow-left'],
+    keywords: ['square-arrow-left', 'square', 'arrow', 'left'],
   },
   {
     name: 'square-arrow-right',
     icon: TablerSquareArrowRightIcon,
-    keywords: ['square', 'arrow', 'right', 'square-arrow-right'],
+    keywords: ['square-arrow-right', 'square', 'arrow', 'right'],
   },
   {
     name: 'square-arrow-up',
     icon: TablerSquareArrowUpIcon,
-    keywords: ['square', 'arrow', 'up', 'square-arrow-up'],
+    keywords: ['square-arrow-up', 'square', 'arrow', 'up'],
   },
   {
     name: 'square-chevron-down',
     icon: TablerSquareChevronDownIcon,
-    keywords: ['square', 'chevron', 'down', 'square-chevron-down'],
+    keywords: ['square-chevron-down', 'square', 'chevron', 'down'],
   },
   {
     name: 'square-chevron-left',
     icon: TablerSquareChevronLeftIcon,
-    keywords: ['square', 'chevron', 'left', 'square-chevron-left'],
+    keywords: ['square-chevron-left', 'square', 'chevron', 'left'],
   },
   {
     name: 'square-chevron-right',
     icon: TablerSquareChevronRightIcon,
-    keywords: ['square', 'chevron', 'right', 'square-chevron-right'],
+    keywords: ['square-chevron-right', 'square', 'chevron', 'right'],
   },
   {
     name: 'square-chevron-up',
     icon: TablerSquareChevronUpIcon,
-    keywords: ['square', 'chevron', 'up', 'square-chevron-up'],
+    keywords: ['square-chevron-up', 'square', 'chevron', 'up'],
   },
   {
     name: 'squares',
@@ -1888,7 +2163,7 @@ const TABLER_ICON_LIST = [
   {
     name: 'stack-2',
     icon: TablerStack2Icon,
-    keywords: ['stack', '2', 'layers'],
+    keywords: ['stack-2', 'stack', '2', 'layers'],
   },
   {
     name: 'star',
@@ -1909,17 +2184,17 @@ const TABLER_ICON_LIST = [
   {
     name: 'sun-high',
     icon: TablerSunHighIcon,
-    keywords: ['sun', 'high', 'sun-medium', 'medium'],
+    keywords: ['sun-high', 'sun', 'high', 'sun-medium', 'medium'],
   },
   {
     name: 'sun-low',
     icon: TablerSunLowIcon,
-    keywords: ['sun', 'low', 'sun-dim', 'dim'],
+    keywords: ['sun-low', 'sun', 'low', 'sun-dim', 'dim'],
   },
   {
     name: 'sun-moon',
     icon: TablerSunMoonIcon,
-    keywords: ['sun', 'moon', 'sun-moon'],
+    keywords: ['sun-moon', 'sun', 'moon'],
   },
   { name: 'sunset', icon: TablerSunsetIcon, keywords: ['sunset'] },
   { name: 'telescope', icon: TablerTelescopeIcon, keywords: ['telescope'] },
@@ -1927,7 +2202,7 @@ const TABLER_ICON_LIST = [
   {
     name: 'text-scan-2',
     icon: TablerTextScan2Icon,
-    keywords: ['text', 'scan', '2', 'scan-text'],
+    keywords: ['text-scan-2', 'text', 'scan', '2', 'scan-text'],
   },
   {
     name: 'thermometer',
@@ -1937,12 +2212,12 @@ const TABLER_ICON_LIST = [
   {
     name: 'thumb-down',
     icon: TablerThumbDownIcon,
-    keywords: ['thumb', 'down', 'downvote'],
+    keywords: ['thumb-down', 'thumb', 'down', 'downvote'],
   },
   {
     name: 'thumb-up',
     icon: TablerThumbUpIcon,
-    keywords: ['thumb', 'up', 'upvote'],
+    keywords: ['thumb-up', 'thumb', 'up', 'upvote'],
   },
   { name: 'ticket', icon: TablerTicketIcon, keywords: ['ticket'] },
   { name: 'tool', icon: TablerToolIcon, keywords: ['tool', 'wrench'] },
@@ -1960,17 +2235,17 @@ const TABLER_ICON_LIST = [
   {
     name: 'trending-down',
     icon: TablerTrendingDownIcon,
-    keywords: ['trending', 'down', 'trending-down'],
+    keywords: ['trending-down', 'trending', 'down'],
   },
   {
     name: 'trending-up',
     icon: TablerTrendingUpIcon,
-    keywords: ['trending', 'up', 'trending-up'],
+    keywords: ['trending-up', 'trending', 'up'],
   },
   {
     name: 'trending-up-down',
     icon: TablerTrendingUpDownIcon,
-    keywords: ['trending', 'up', 'down', 'trending-up-down'],
+    keywords: ['trending-up-down', 'trending', 'up', 'down'],
   },
   { name: 'truck', icon: TablerTruckIcon, keywords: ['truck'] },
   { name: 'underline', icon: TablerUnderlineIcon, keywords: ['underline'] },
@@ -1987,22 +2262,32 @@ const TABLER_ICON_LIST = [
   {
     name: 'user-check',
     icon: TablerUserCheckIcon,
-    keywords: ['user', 'check', 'user-check', 'user-round-check', 'round'],
+    keywords: ['user-check', 'user', 'check', 'user-round-check', 'round'],
   },
   {
     name: 'user-cog',
     icon: TablerUserCogIcon,
-    keywords: ['user', 'cog', 'user-round-cog', 'round'],
+    keywords: ['user-cog', 'user', 'cog', 'user-round-cog', 'round'],
   },
   {
     name: 'user-plus',
     icon: TablerUserPlusIcon,
-    keywords: ['user', 'plus', 'user-plus', 'user-round-plus', 'round'],
+    keywords: ['user-plus', 'user', 'plus', 'user-round-plus', 'round'],
+  },
+  {
+    name: 'user-round-plus',
+    icon: TablerUserRoundPlusIcon,
+    keywords: ['user-round-plus'],
   },
   {
     name: 'users',
     icon: TablerUsersIcon,
     keywords: ['users', 'users-round', 'round'],
+  },
+  {
+    name: 'users-round',
+    icon: TablerUsersRoundIcon,
+    keywords: ['users-round'],
   },
   {
     name: 'vaccine',
@@ -2014,14 +2299,14 @@ const TABLER_ICON_LIST = [
   {
     name: 'wash-machine',
     icon: TablerWashMachineIcon,
-    keywords: ['wash', 'machine', 'washing-machine', 'washing'],
+    keywords: ['wash-machine', 'wash', 'machine', 'washing-machine', 'washing'],
   },
   { name: 'webhook', icon: TablerWebhookIcon, keywords: ['webhook'] },
   { name: 'wifi', icon: TablerWifiIcon, keywords: ['wifi'] },
   {
     name: 'wifi-1',
     icon: TablerWifi1Icon,
-    keywords: ['wifi', '1', 'wifi-low', 'low'],
+    keywords: ['wifi-1', 'wifi', '1', 'wifi-low', 'low'],
   },
   { name: 'wind', icon: TablerWindIcon, keywords: ['wind'] },
   {
@@ -2033,7 +2318,7 @@ const TABLER_ICON_LIST = [
   {
     name: 'x',
     icon: TablerXIcon,
-    keywords: ['close', 'x', 'cancel', 'dismiss', 'remove', 'delete'],
+    keywords: ['x', 'close', 'cancel', 'dismiss', 'remove', 'delete'],
   },
 ];
 
@@ -2116,6 +2401,7 @@ export {
   TablerBrandTwitterIcon,
   TablerBrandYoutubeIcon,
   TablerBriefcaseIcon,
+  TablerBroadcastIcon,
   TablerBuildingBroadcastTowerIcon,
   TablerCalendarIcon,
   TablerCalendarCheckIcon,
@@ -2125,6 +2411,7 @@ export {
   TablerCastIcon,
   TablerChargingPileIcon,
   TablerChartBarPopularIcon,
+  TablerChartBarPopularNoAxesIcon,
   TablerChartLineIcon,
   TablerChartPieIcon,
   TablerChartScatterIcon,
@@ -2191,6 +2478,7 @@ export {
   TablerDeviceMobileChargingIcon,
   TablerDeviceMobileVibrationIcon,
   TablerDeviceProjectorIcon,
+  TablerDisabled2Icon,
   TablerDiscIcon,
   TablerDownloadIcon,
   TablerDropletIcon,
@@ -2228,6 +2516,7 @@ export {
   TablerGitBranchIcon,
   TablerGitCommitIcon,
   TablerGitCompareIcon,
+  TablerGitCompareArrowsIcon,
   TablerGitForkIcon,
   TablerGitMergeIcon,
   TablerGitPullRequestIcon,
@@ -2248,6 +2537,7 @@ export {
   TablerIdIcon,
   TablerItalicIcon,
   TablerKeyIcon,
+  TablerKeySquareIcon,
   TablerKeyboardIcon,
   TablerLanguageIcon,
   TablerLayoutAlignCenterIcon,
@@ -2258,9 +2548,11 @@ export {
   TablerLayoutSidebarRightExpandIcon,
   TablerLeafIcon,
   TablerLinkIcon,
+  TablerLink2Icon,
   TablerLoaderIcon,
   TablerLoader2Icon,
   TablerLockIcon,
+  TablerLockKeyholeOpenIcon,
   TablerLockOpenIcon,
   TablerLoginIcon,
   TablerLogoutIcon,
@@ -2318,6 +2610,7 @@ export {
   TablerPropellerIcon,
   TablerRadioIcon,
   TablerReceiptIcon,
+  TablerReceiptDollarIcon,
   TablerReceiptEuroIcon,
   TablerReceiptPoundIcon,
   TablerReceiptRupeeIcon,
@@ -2399,7 +2692,9 @@ export {
   TablerUserCheckIcon,
   TablerUserCogIcon,
   TablerUserPlusIcon,
+  TablerUserRoundPlusIcon,
   TablerUsersIcon,
+  TablerUsersRoundIcon,
   TablerVaccineIcon,
   TablerVolumeIcon,
   TablerWalletIcon,

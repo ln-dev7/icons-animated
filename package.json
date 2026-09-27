@@ -17,7 +17,9 @@
     "gen-cli": "pnpm lint && pnpm run sync-registry && pnpm run build-registry && pnpm run check-registry",
     "check-icon-content": "node --import tsx --test scripts/check-icon-content.test.ts scripts/check-install-command.test.ts",
     "check-catalog-coverage": "node --import tsx scripts/check-catalog-coverage.ts",
-    "check-frameworks": "node --import tsx --test scripts/framework-sources.test.ts && node --import tsx scripts/check-frameworks.mjs"
+    "check-frameworks": "node --import tsx --test scripts/framework-sources.test.ts && node --import tsx scripts/check-frameworks.mjs",
+    "check-animation-parity": "node --import tsx scripts/check-animation-parity.ts",
+    "check-framework-runtime": "node --import tsx --test scripts/framework-runtime.test.mjs"
   },
   "dependencies": {
     "@base-ui-components/react": "1.0.0-rc.0",

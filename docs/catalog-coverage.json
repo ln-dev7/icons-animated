@@ -1,8 +1,9 @@
 {
   "reference": {
     "site": "https://lucide-animated.com/",
-    "snapshotDate": "2026-09-26",
-    "iconCount": 467
+    "snapshotDate": "2026-09-27",
+    "iconCount": 467,
+    "commit": "072c38b1b04ea738d90a084485ccaad4b890ddca"
   },
   "upstreamPackages": {
     "hugeicons": {
@@ -30,30 +31,30 @@
   "summary": {
     "hugeicons": {
       "referenceCount": 467,
-      "mappedReferences": 466,
-      "unavailableReferences": 1,
-      "distinctMappedComponents": 466,
+      "mappedReferences": 467,
+      "unavailableReferences": 0,
+      "distinctMappedComponents": 467,
       "newComponents": 444,
-      "retainedBaselineComponents": 31,
-      "catalogComponentsAfterIntegration": 475
+      "retainedBaselineComponents": 35,
+      "catalogComponentsAfterIntegration": 479
     },
     "tabler": {
       "referenceCount": 467,
       "mappedReferences": 375,
       "unavailableReferences": 92,
-      "distinctMappedComponents": 364,
-      "newComponents": 341,
-      "retainedBaselineComponents": 31,
-      "catalogComponentsAfterIntegration": 372
+      "distinctMappedComponents": 372,
+      "newComponents": 348,
+      "retainedBaselineComponents": 34,
+      "catalogComponentsAfterIntegration": 382
     },
     "phosphor": {
       "referenceCount": 467,
       "mappedReferences": 316,
       "unavailableReferences": 151,
-      "distinctMappedComponents": 304,
-      "newComponents": 281,
-      "retainedBaselineComponents": 31,
-      "catalogComponentsAfterIntegration": 312
+      "distinctMappedComponents": 316,
+      "newComponents": 292,
+      "retainedBaselineComponents": 34,
+      "catalogComponentsAfterIntegration": 326
     }
   },
   "icons": [
@@ -138,36 +139,37 @@
       "libraries": {
         "hugeicons": {
           "available": true,
-          "catalogName": "universal-access",
-          "registryName": "hugeicons-universal-access",
-          "registryUrl": "https://icons.lndev.me/r/hugeicons-universal-access.json",
-          "nativeName": "universal-access",
-          "nativeSource": "dist/esm/UniversalAccessIcon.js",
-          "componentPath": "icons/hugeicons/universal-access.tsx",
+          "catalogName": "disability-02",
+          "registryName": "hugeicons-disability-02",
+          "registryUrl": "https://icons.lndev.me/r/hugeicons-disability-02.json",
+          "nativeName": "disability-02",
+          "nativeSource": "dist/esm/Disability02Icon.js",
+          "componentPath": "icons/hugeicons/disability-02.tsx",
           "retainedBaselineComponent": false,
-          "note": "Universal-access standing figure; official Accessibility is a wheelchair user."
+          "note": "Corrected semantic alias to native Disability02 instead of standing accessibility. Native wheel has one partial arc rather than three broken contours; rotation pivot follows the native wheel centre. Forearm extension is applied to native endpoints.",
+          "reference": "accessibility"
         },
         "tabler": {
           "available": true,
-          "catalogName": "accessible",
-          "registryName": "tabler-accessible",
-          "registryUrl": "https://icons.lndev.me/r/tabler-accessible.json",
-          "nativeName": "accessible",
-          "nativeSource": "icons/outline/accessible.svg",
-          "componentPath": "icons/tabler/accessible.tsx",
+          "catalogName": "disabled-2",
+          "registryName": "tabler-disabled-2",
+          "registryUrl": "https://icons.lndev.me/r/tabler-disabled-2.json",
+          "nativeName": "disabled-2",
+          "nativeSource": "icons/outline/disabled-2.svg",
+          "componentPath": "icons/tabler/disabled-2.tsx",
           "retainedBaselineComponent": false,
-          "note": "Native Tabler name for accessibility: accessible."
+          "note": "Native moving-wheelchair counterpart. The previous standing accessible icon remains available separately."
         },
         "phosphor": {
           "available": true,
-          "catalogName": "person-arms-spread",
-          "registryName": "phosphor-person-arms-spread",
-          "registryUrl": "https://icons.lndev.me/r/phosphor-person-arms-spread.json",
-          "nativeName": "person-arms-spread",
-          "nativeSource": "assets/regular/person-arms-spread.svg",
-          "componentPath": "icons/phosphor/person-arms-spread.tsx",
+          "catalogName": "wheelchair-motion",
+          "registryName": "phosphor-wheelchair-motion",
+          "registryUrl": "https://icons.lndev.me/r/phosphor-wheelchair-motion.json",
+          "nativeName": "wheelchair-motion",
+          "nativeSource": "assets/regular/wheelchair-motion.svg",
+          "componentPath": "icons/phosphor/wheelchair-motion.tsx",
           "retainedBaselineComponent": false,
-          "note": "Symbole humain bras écartés de l'accessibilité."
+          "note": "Corrected semantic correspondence using the native wheelchair-motion regular shape. The previous component stays available separately."
         }
       }
     },
@@ -1300,14 +1302,14 @@
         },
         "phosphor": {
           "available": true,
-          "catalogName": "sort-ascending",
-          "registryName": "phosphor-sort-ascending",
-          "registryUrl": "https://icons.lndev.me/r/phosphor-sort-ascending.json",
+          "catalogName": "sort-ascending-alphabetical",
+          "registryName": "phosphor-sort-ascending-alphabetical",
+          "registryUrl": "https://icons.lndev.me/r/phosphor-sort-ascending-alphabetical.json",
           "nativeName": "sort-ascending",
           "nativeSource": "assets/regular/sort-ascending.svg",
-          "componentPath": "icons/phosphor/sort-ascending.tsx",
+          "componentPath": "icons/phosphor/sort-ascending-alphabetical.tsx",
           "retainedBaselineComponent": false,
-          "note": "Tri croissant officiel ; barres plutôt que lettres."
+          "note": "Dedicated arrow-down-a-z choreography on the native sort-ascending regular shape."
         }
       }
     },
@@ -1414,14 +1416,14 @@
         },
         "phosphor": {
           "available": true,
-          "catalogName": "sort-descending",
-          "registryName": "phosphor-sort-descending",
-          "registryUrl": "https://icons.lndev.me/r/phosphor-sort-descending.json",
+          "catalogName": "sort-descending-alphabetical",
+          "registryName": "phosphor-sort-descending-alphabetical",
+          "registryUrl": "https://icons.lndev.me/r/phosphor-sort-descending-alphabetical.json",
           "nativeName": "sort-descending",
           "nativeSource": "assets/regular/sort-descending.svg",
-          "componentPath": "icons/phosphor/sort-descending.tsx",
+          "componentPath": "icons/phosphor/sort-descending-alphabetical.tsx",
           "retainedBaselineComponent": false,
-          "note": "Tri décroissant officiel ; barres plutôt que lettres."
+          "note": "Dedicated arrow-down-z-a choreography on the native sort-descending regular shape."
         }
       }
     },
@@ -3607,25 +3609,25 @@
         },
         "tabler": {
           "available": true,
-          "catalogName": "chart-bar-popular",
-          "registryName": "tabler-chart-bar-popular",
-          "registryUrl": "https://icons.lndev.me/r/tabler-chart-bar-popular.json",
+          "catalogName": "chart-bar-popular-no-axes",
+          "registryName": "tabler-chart-bar-popular-no-axes",
+          "registryUrl": "https://icons.lndev.me/r/tabler-chart-bar-popular-no-axes.json",
           "nativeName": "chart-bar-popular",
           "nativeSource": "icons/outline/chart-bar-popular.svg",
-          "componentPath": "icons/tabler/chart-bar-popular.tsx",
+          "componentPath": "icons/tabler/chart-bar-popular-no-axes.tsx",
           "retainedBaselineComponent": false,
-          "note": "Native Tabler name for chart-no-axes-column-increasing: chart-bar-popular."
+          "note": "Native geometry preserved with the dedicated chart-no-axes-column-increasing animation program."
         },
         "phosphor": {
           "available": true,
-          "catalogName": "chart-bar",
-          "registryName": "phosphor-chart-bar",
-          "registryUrl": "https://icons.lndev.me/r/phosphor-chart-bar.json",
+          "catalogName": "chart-bar-no-axes",
+          "registryName": "phosphor-chart-bar-no-axes",
+          "registryUrl": "https://icons.lndev.me/r/phosphor-chart-bar-no-axes.json",
           "nativeName": "chart-bar",
           "nativeSource": "assets/regular/chart-bar.svg",
-          "componentPath": "icons/phosphor/chart-bar.tsx",
+          "componentPath": "icons/phosphor/chart-bar-no-axes.tsx",
           "retainedBaselineComponent": false,
-          "note": "Barres verticales croissantes ; le dessin Phosphor conserve une ligne de base."
+          "note": "Dedicated chart-no-axes-column-increasing choreography on the native chart-bar regular shape."
         }
       }
     },
@@ -6103,37 +6105,38 @@
       "reference": "delete",
       "libraries": {
         "hugeicons": {
-          "available": false,
-          "catalogName": null,
-          "registryName": null,
-          "registryUrl": null,
-          "nativeName": null,
-          "nativeSource": null,
-          "componentPath": null,
-          "retainedBaselineComponent": false,
-          "note": "No keyboard backspace/delete-key symbol in this free catalog. Delete01–04 are trash cans; Eraser is a physical eraser, so neither is an honest substitute."
+          "available": true,
+          "catalogName": "trash",
+          "registryName": "hugeicons-trash",
+          "registryUrl": "https://icons.lndev.me/r/hugeicons-trash.json",
+          "nativeName": "trash",
+          "nativeSource": "dist/esm/TrashIcon.js",
+          "componentPath": "icons/hugeicons/trash.tsx",
+          "retainedBaselineComponent": true,
+          "note": "Corrected reference semantics: delete is a trash can. Reuses native trash; body shifts1 unit and grooves0.5 units from their native endpoints with the reference spring.",
+          "reference": "delete"
         },
         "tabler": {
           "available": true,
-          "catalogName": "backspace",
-          "registryName": "tabler-backspace",
-          "registryUrl": "https://icons.lndev.me/r/tabler-backspace.json",
-          "nativeName": "backspace",
-          "nativeSource": "icons/outline/backspace.svg",
-          "componentPath": "icons/tabler/backspace.tsx",
-          "retainedBaselineComponent": false,
-          "note": "Native Tabler name for delete: backspace."
+          "catalogName": "trash",
+          "registryName": "tabler-trash",
+          "registryUrl": "https://icons.lndev.me/r/tabler-trash.json",
+          "nativeName": "trash",
+          "nativeSource": "icons/outline/trash.svg",
+          "componentPath": "icons/tabler/trash.tsx",
+          "retainedBaselineComponent": true,
+          "note": "Lucide animated delete uses a trash can, so the native trash icon is used. The existing backspace component is retained separately."
         },
         "phosphor": {
           "available": true,
-          "catalogName": "backspace",
-          "registryName": "phosphor-backspace",
-          "registryUrl": "https://icons.lndev.me/r/phosphor-backspace.json",
-          "nativeName": "backspace",
-          "nativeSource": "assets/regular/backspace.svg",
-          "componentPath": "icons/phosphor/backspace.tsx",
-          "retainedBaselineComponent": false,
-          "note": "Touche de suppression arrière avec croix."
+          "catalogName": "trash",
+          "registryName": "phosphor-trash",
+          "registryUrl": "https://icons.lndev.me/r/phosphor-trash.json",
+          "nativeName": "trash",
+          "nativeSource": "assets/regular/trash.svg",
+          "componentPath": "icons/phosphor/trash.tsx",
+          "retainedBaselineComponent": true,
+          "note": "Lucide animated delete uses a trash can, so the native trash icon is used. The existing backspace component is retained separately."
         }
       }
     },
@@ -8661,25 +8664,25 @@
         },
         "tabler": {
           "available": true,
-          "catalogName": "git-compare",
-          "registryName": "tabler-git-compare",
-          "registryUrl": "https://icons.lndev.me/r/tabler-git-compare.json",
+          "catalogName": "git-compare-arrows",
+          "registryName": "tabler-git-compare-arrows",
+          "registryUrl": "https://icons.lndev.me/r/tabler-git-compare-arrows.json",
           "nativeName": "git-compare",
           "nativeSource": "icons/outline/git-compare.svg",
-          "componentPath": "icons/tabler/git-compare.tsx",
+          "componentPath": "icons/tabler/git-compare-arrows.tsx",
           "retainedBaselineComponent": false,
-          "note": "Native Tabler name for git-compare-arrows: git-compare."
+          "note": "Native geometry preserved with the dedicated git-compare-arrows animation program."
         },
         "phosphor": {
           "available": true,
-          "catalogName": "git-diff",
-          "registryName": "phosphor-git-diff",
-          "registryUrl": "https://icons.lndev.me/r/phosphor-git-diff.json",
+          "catalogName": "git-diff-arrows",
+          "registryName": "phosphor-git-diff-arrows",
+          "registryUrl": "https://icons.lndev.me/r/phosphor-git-diff-arrows.json",
           "nativeName": "git-diff",
           "nativeSource": "assets/regular/git-diff.svg",
-          "componentPath": "icons/phosphor/git-diff.tsx",
+          "componentPath": "icons/phosphor/git-diff-arrows.tsx",
           "retainedBaselineComponent": false,
-          "note": "Deux branches et flèches opposées de comparaison Git."
+          "note": "Dedicated git-compare-arrows choreography on the native git-diff regular shape."
         }
       }
     },
@@ -10040,14 +10043,14 @@
         },
         "phosphor": {
           "available": true,
-          "catalogName": "key",
-          "registryName": "phosphor-key",
-          "registryUrl": "https://icons.lndev.me/r/phosphor-key.json",
+          "catalogName": "key-circle",
+          "registryName": "phosphor-key-circle",
+          "registryUrl": "https://icons.lndev.me/r/phosphor-key-circle.json",
           "nativeName": "key",
           "nativeSource": "assets/regular/key.svg",
-          "componentPath": "icons/phosphor/key.tsx",
+          "componentPath": "icons/phosphor/key-circle.tsx",
           "retainedBaselineComponent": false,
-          "note": "Clé à tête circulaire ; circle qualifie la tête et non un cadre autour de l'icône."
+          "note": "Dedicated key-circle choreography on the native key regular shape."
         }
       }
     },
@@ -10067,14 +10070,14 @@
         },
         "tabler": {
           "available": true,
-          "catalogName": "key",
-          "registryName": "tabler-key",
-          "registryUrl": "https://icons.lndev.me/r/tabler-key.json",
+          "catalogName": "key-square",
+          "registryName": "tabler-key-square",
+          "registryUrl": "https://icons.lndev.me/r/tabler-key-square.json",
           "nativeName": "key",
           "nativeSource": "icons/outline/key.svg",
-          "componentPath": "icons/tabler/key.tsx",
+          "componentPath": "icons/tabler/key-square.tsx",
           "retainedBaselineComponent": false,
-          "note": "Native Tabler name for key-square: key."
+          "note": "Native geometry preserved with the dedicated key-square animation program."
         },
         "phosphor": {
           "available": false,
@@ -10284,14 +10287,15 @@
       "libraries": {
         "hugeicons": {
           "available": true,
-          "catalogName": "layout-grid",
-          "registryName": "hugeicons-layout-grid",
-          "registryUrl": "https://icons.lndev.me/r/hugeicons-layout-grid.json",
-          "nativeName": "layout-grid",
-          "nativeSource": "dist/esm/LayoutGridIcon.js",
-          "componentPath": "icons/hugeicons/layout-grid.tsx",
+          "catalogName": "grid-view",
+          "registryName": "hugeicons-grid-view",
+          "registryUrl": "https://icons.lndev.me/r/hugeicons-grid-view.json",
+          "nativeName": "grid-view",
+          "nativeSource": "dist/esm/GridViewIcon.js",
+          "componentPath": "icons/hugeicons/grid-view.tsx",
           "retainedBaselineComponent": false,
-          "note": "Official Hugeicons counterpart; native geometry retained."
+          "note": "Corrected semantic alias to native GridView with four separate cells; former LayoutGrid shared-frame icon retained as an extra.",
+          "reference": "layout-grid"
         },
         "tabler": {
           "available": true,
@@ -10485,14 +10489,14 @@
         },
         "tabler": {
           "available": true,
-          "catalogName": "link",
-          "registryName": "tabler-link",
-          "registryUrl": "https://icons.lndev.me/r/tabler-link.json",
+          "catalogName": "link-2",
+          "registryName": "tabler-link-2",
+          "registryUrl": "https://icons.lndev.me/r/tabler-link-2.json",
           "nativeName": "link",
           "nativeSource": "icons/outline/link.svg",
-          "componentPath": "icons/tabler/link.tsx",
+          "componentPath": "icons/tabler/link-2.tsx",
           "retainedBaselineComponent": false,
-          "note": "Native Tabler name for link-2: link."
+          "note": "Native geometry preserved with the dedicated link-2 animation program."
         },
         "phosphor": {
           "available": true,
@@ -10751,14 +10755,14 @@
         },
         "tabler": {
           "available": true,
-          "catalogName": "lock-open",
-          "registryName": "tabler-lock-open",
-          "registryUrl": "https://icons.lndev.me/r/tabler-lock-open.json",
+          "catalogName": "lock-keyhole-open",
+          "registryName": "tabler-lock-keyhole-open",
+          "registryUrl": "https://icons.lndev.me/r/tabler-lock-keyhole-open.json",
           "nativeName": "lock-open",
           "nativeSource": "icons/outline/lock-open.svg",
-          "componentPath": "icons/tabler/lock-open.tsx",
+          "componentPath": "icons/tabler/lock-keyhole-open.tsx",
           "retainedBaselineComponent": false,
-          "note": "Native Tabler name for lock-keyhole-open: lock-open."
+          "note": "Native geometry preserved with the dedicated lock-keyhole-open animation program."
         },
         "phosphor": {
           "available": true,
@@ -10930,14 +10934,15 @@
       "libraries": {
         "hugeicons": {
           "available": true,
-          "catalogName": "mailbox",
-          "registryName": "hugeicons-mailbox",
-          "registryUrl": "https://icons.lndev.me/r/hugeicons-mailbox.json",
-          "nativeName": "mailbox",
-          "nativeSource": "dist/esm/MailboxIcon.js",
-          "componentPath": "icons/hugeicons/mailbox.tsx",
+          "catalogName": "mailbox-01",
+          "registryName": "hugeicons-mailbox-01",
+          "registryUrl": "https://icons.lndev.me/r/hugeicons-mailbox-01.json",
+          "nativeName": "mailbox-01",
+          "nativeSource": "dist/esm/Mailbox01Icon.js",
+          "componentPath": "icons/hugeicons/mailbox-01.tsx",
           "retainedBaselineComponent": false,
-          "note": "Official Hugeicons counterpart; native geometry retained."
+          "note": "Corrected alias to native Mailbox01, which has a movable flag. Native flag pivot is17.5,8; former upright Mailbox without a flag retained as an extra.",
+          "reference": "mailbox"
         },
         "tabler": {
           "available": true,
@@ -11446,14 +11451,14 @@
         },
         "phosphor": {
           "available": true,
-          "catalogName": "smiley-meh",
-          "registryName": "phosphor-smiley-meh",
-          "registryUrl": "https://icons.lndev.me/r/phosphor-smiley-meh.json",
+          "catalogName": "smiley-meh-neutral",
+          "registryName": "phosphor-smiley-meh-neutral",
+          "registryUrl": "https://icons.lndev.me/r/phosphor-smiley-meh-neutral.json",
           "nativeName": "smiley-meh",
           "nativeSource": "assets/regular/smiley-meh.svg",
-          "componentPath": "icons/phosphor/smiley-meh.tsx",
+          "componentPath": "icons/phosphor/smiley-meh-neutral.tsx",
           "retainedBaselineComponent": false,
-          "note": "Visage neutre à bouche horizontale."
+          "note": "Dedicated meh choreography on the native smiley-meh regular shape."
         }
       }
     },
@@ -13096,36 +13101,37 @@
       "libraries": {
         "hugeicons": {
           "available": true,
-          "catalogName": "radio",
-          "registryName": "hugeicons-radio",
-          "registryUrl": "https://icons.lndev.me/r/hugeicons-radio.json",
-          "nativeName": "radio",
-          "nativeSource": "dist/esm/RadioIcon.js",
-          "componentPath": "icons/hugeicons/radio.tsx",
+          "catalogName": "hotspot",
+          "registryName": "hugeicons-hotspot",
+          "registryUrl": "https://icons.lndev.me/r/hugeicons-hotspot.json",
+          "nativeName": "hotspot",
+          "nativeSource": "dist/esm/HotspotIcon.js",
+          "componentPath": "icons/hugeicons/hotspot.tsx",
           "retainedBaselineComponent": false,
-          "note": "Official Hugeicons counterpart; native geometry retained."
+          "note": "Corrected semantic alias to native Hotspot instead of cabinet radio. Native upper-connected RF arcs are split at their existing top Bézier junction so left/right source phases apply without changing the resting geometry.",
+          "reference": "radio"
         },
         "tabler": {
           "available": true,
-          "catalogName": "radio",
-          "registryName": "tabler-radio",
-          "registryUrl": "https://icons.lndev.me/r/tabler-radio.json",
-          "nativeName": "radio",
-          "nativeSource": "icons/outline/radio.svg",
-          "componentPath": "icons/tabler/radio.tsx",
+          "catalogName": "broadcast",
+          "registryName": "tabler-broadcast",
+          "registryUrl": "https://icons.lndev.me/r/tabler-broadcast.json",
+          "nativeName": "broadcast",
+          "nativeSource": "icons/outline/broadcast.svg",
+          "componentPath": "icons/tabler/broadcast.tsx",
           "retainedBaselineComponent": false,
-          "note": "Official Tabler outline geometry."
+          "note": "Native geometry preserved with the dedicated radio animation program."
         },
         "phosphor": {
           "available": true,
-          "catalogName": "radio",
-          "registryName": "phosphor-radio",
-          "registryUrl": "https://icons.lndev.me/r/phosphor-radio.json",
-          "nativeName": "radio",
-          "nativeSource": "assets/regular/radio.svg",
-          "componentPath": "icons/phosphor/radio.tsx",
+          "catalogName": "broadcast",
+          "registryName": "phosphor-broadcast",
+          "registryUrl": "https://icons.lndev.me/r/phosphor-broadcast.json",
+          "nativeName": "broadcast",
+          "nativeSource": "assets/regular/broadcast.svg",
+          "componentPath": "icons/phosphor/broadcast.tsx",
           "retainedBaselineComponent": false,
-          "note": "Équivalent direct du catalogue officiel Phosphor regular."
+          "note": "Corrected semantic correspondence using the native broadcast regular shape. The previous component stays available separately."
         }
       }
     },
@@ -13183,14 +13189,14 @@
         },
         "tabler": {
           "available": true,
-          "catalogName": "receipt",
-          "registryName": "tabler-receipt",
-          "registryUrl": "https://icons.lndev.me/r/tabler-receipt.json",
-          "nativeName": "receipt",
-          "nativeSource": "icons/outline/receipt.svg",
-          "componentPath": "icons/tabler/receipt.tsx",
+          "catalogName": "receipt-dollar",
+          "registryName": "tabler-receipt-dollar",
+          "registryUrl": "https://icons.lndev.me/r/tabler-receipt-dollar.json",
+          "nativeName": "receipt-dollar",
+          "nativeSource": "icons/outline/receipt-dollar.svg",
+          "componentPath": "icons/tabler/receipt-dollar.tsx",
           "retainedBaselineComponent": false,
-          "note": "Official Tabler outline geometry."
+          "note": "Native geometry preserved with the dedicated receipt animation program."
         },
         "phosphor": {
           "available": true,
@@ -13498,14 +13504,14 @@
         },
         "phosphor": {
           "available": true,
-          "catalogName": "receipt",
-          "registryName": "phosphor-receipt",
-          "registryUrl": "https://icons.lndev.me/r/phosphor-receipt.json",
+          "catalogName": "receipt-text",
+          "registryName": "phosphor-receipt-text",
+          "registryUrl": "https://icons.lndev.me/r/phosphor-receipt-text.json",
           "nativeName": "receipt",
           "nativeSource": "assets/regular/receipt.svg",
-          "componentPath": "icons/phosphor/receipt.tsx",
+          "componentPath": "icons/phosphor/receipt-text.tsx",
           "retainedBaselineComponent": false,
-          "note": "Ticket avec lignes de texte dans le dessin officiel."
+          "note": "Dedicated receipt-text choreography on the native receipt regular shape."
         }
       }
     },
@@ -15436,14 +15442,14 @@
         },
         "phosphor": {
           "available": true,
-          "catalogName": "cards-three",
-          "registryName": "phosphor-cards-three",
-          "registryUrl": "https://icons.lndev.me/r/phosphor-cards-three.json",
+          "catalogName": "cards-three-square-stack",
+          "registryName": "phosphor-cards-three-square-stack",
+          "registryUrl": "https://icons.lndev.me/r/phosphor-cards-three-square-stack.json",
           "nativeName": "cards-three",
           "nativeSource": "assets/regular/cards-three.svg",
-          "componentPath": "icons/phosphor/cards-three.tsx",
+          "componentPath": "icons/phosphor/cards-three-square-stack.tsx",
           "retainedBaselineComponent": false,
-          "note": "Empilement de trois surfaces rectangulaires ; conserver le nom natif cards-three."
+          "note": "Dedicated square-stack choreography on the native cards-three regular shape."
         }
       }
     },
@@ -15626,14 +15632,14 @@
         },
         "phosphor": {
           "available": true,
-          "catalogName": "sun",
-          "registryName": "phosphor-sun",
-          "registryUrl": "https://icons.lndev.me/r/phosphor-sun.json",
+          "catalogName": "sun-medium",
+          "registryName": "phosphor-sun-medium",
+          "registryUrl": "https://icons.lndev.me/r/phosphor-sun-medium.json",
           "nativeName": "sun",
           "nativeSource": "assets/regular/sun.svg",
-          "componentPath": "icons/phosphor/sun.tsx",
+          "componentPath": "icons/phosphor/sun-medium.tsx",
           "retainedBaselineComponent": false,
-          "note": "Soleil standard ; variante de rayons dédupliquée."
+          "note": "Dedicated sun-medium choreography on the native sun regular shape."
         }
       }
     },
@@ -16766,14 +16772,14 @@
         },
         "phosphor": {
           "available": true,
-          "catalogName": "user-check",
-          "registryName": "phosphor-user-check",
-          "registryUrl": "https://icons.lndev.me/r/phosphor-user-check.json",
+          "catalogName": "user-round-check",
+          "registryName": "phosphor-user-round-check",
+          "registryUrl": "https://icons.lndev.me/r/phosphor-user-round-check.json",
           "nativeName": "user-check",
           "nativeSource": "assets/regular/user-check.svg",
-          "componentPath": "icons/phosphor/user-check.tsx",
+          "componentPath": "icons/phosphor/user-round-check.tsx",
           "retainedBaselineComponent": false,
-          "note": "Utilisateur et coche ; les contours arrondis relèvent du style natif."
+          "note": "Dedicated user-round-check choreography on the native user-check regular shape."
         }
       }
     },
@@ -16831,25 +16837,25 @@
         },
         "tabler": {
           "available": true,
-          "catalogName": "user-plus",
-          "registryName": "tabler-user-plus",
-          "registryUrl": "https://icons.lndev.me/r/tabler-user-plus.json",
+          "catalogName": "user-round-plus",
+          "registryName": "tabler-user-round-plus",
+          "registryUrl": "https://icons.lndev.me/r/tabler-user-round-plus.json",
           "nativeName": "user-plus",
           "nativeSource": "icons/outline/user-plus.svg",
-          "componentPath": "icons/tabler/user-plus.tsx",
+          "componentPath": "icons/tabler/user-round-plus.tsx",
           "retainedBaselineComponent": false,
-          "note": "Native Tabler name for user-round-plus: user-plus."
+          "note": "Native geometry preserved with the dedicated user-round-plus animation program."
         },
         "phosphor": {
           "available": true,
-          "catalogName": "user-plus",
-          "registryName": "phosphor-user-plus",
-          "registryUrl": "https://icons.lndev.me/r/phosphor-user-plus.json",
+          "catalogName": "user-round-plus",
+          "registryName": "phosphor-user-round-plus",
+          "registryUrl": "https://icons.lndev.me/r/phosphor-user-round-plus.json",
           "nativeName": "user-plus",
           "nativeSource": "assets/regular/user-plus.svg",
-          "componentPath": "icons/phosphor/user-plus.tsx",
+          "componentPath": "icons/phosphor/user-round-plus.tsx",
           "retainedBaselineComponent": false,
-          "note": "Utilisateur et plus ; variante stylistique dédupliquée."
+          "note": "Dedicated user-round-plus choreography on the native user-plus regular shape."
         }
       }
     },
@@ -16907,25 +16913,25 @@
         },
         "tabler": {
           "available": true,
-          "catalogName": "users",
-          "registryName": "tabler-users",
-          "registryUrl": "https://icons.lndev.me/r/tabler-users.json",
+          "catalogName": "users-round",
+          "registryName": "tabler-users-round",
+          "registryUrl": "https://icons.lndev.me/r/tabler-users-round.json",
           "nativeName": "users",
           "nativeSource": "icons/outline/users.svg",
-          "componentPath": "icons/tabler/users.tsx",
+          "componentPath": "icons/tabler/users-round.tsx",
           "retainedBaselineComponent": false,
-          "note": "Native Tabler name for users-round: users."
+          "note": "Native geometry preserved with the dedicated users-round animation program."
         },
         "phosphor": {
           "available": true,
-          "catalogName": "users",
-          "registryName": "phosphor-users",
-          "registryUrl": "https://icons.lndev.me/r/phosphor-users.json",
+          "catalogName": "users-round",
+          "registryName": "phosphor-users-round",
+          "registryUrl": "https://icons.lndev.me/r/phosphor-users-round.json",
           "nativeName": "users",
           "nativeSource": "assets/regular/users.svg",
-          "componentPath": "icons/phosphor/users.tsx",
+          "componentPath": "icons/phosphor/users-round.tsx",
           "retainedBaselineComponent": false,
-          "note": "Groupe de personnes ; variante stylistique dédupliquée."
+          "note": "Dedicated users-round choreography on the native users regular shape."
         }
       }
     },

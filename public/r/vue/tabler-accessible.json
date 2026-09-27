@@ -3,7 +3,7 @@
   "name": "tabler-accessible",
   "type": "registry:ui",
   "title": "accessible (Vue)",
-  "description": "Animated tabler icon for Vue 3.",
+  "description": "Animated tabler icon for Vue 3.5+.",
   "dependencies": [
     "motion@13.1.1",
     "framer-motion@13.1.1",
@@ -18,5 +18,5 @@
       "type": "registry:ui"
     }
   ],
-  "docs": "Requires Vue 3. Animates on hover and keyboard focus. Exposes startAnimation() and stopAnimation(); set controlled to true for imperative-only playback. Respects prefers-reduced-motion."
+  "docs": "Requires Vue 3.5+. Animates on hover and keyboard focus. Exposes startAnimation() and stopAnimation(); set controlled to true for imperative-only playback. Respects prefers-reduced-motion."
 }

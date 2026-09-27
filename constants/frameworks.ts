@@ -13,12 +13,12 @@ export const FRAMEWORK_INFO = {
     name: 'Vue',
     extension: 'vue',
     cli: 'shadcn-vue@latest',
-    version: 'Vue 3',
+    version: 'Vue 3.5+',
   },
   svelte: {
     name: 'Svelte',
     extension: 'svelte',
     cli: 'shadcn-svelte@latest',
-    version: 'Svelte 5',
+    version: 'Svelte 5.20+',
   },
 } as const;
