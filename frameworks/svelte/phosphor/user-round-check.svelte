@@ -1,12 +1,12 @@
-<script setup lang="ts">
+<script lang="ts">
 // @ts-nocheck
 /**
  * @license
  * MIT License
  * Choreography copyright (c) 2024-2026 pqoqubbw
- * Reference: https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca
+ * Reference: user-round-check @ 072c38b1b04ea738d90a084485ccaad4b890ddca
  *
- * Copyright (c) 2025 Hugeicons
+ * Copyright (c) 2023 Phosphor Icons
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -27,12 +27,33 @@
  * SOFTWARE.
  */
 import { SVGVisualElement, animateVisualElement, setTarget, scrapeSVGMotionValuesFromProps, resolveMotionValue, resolveVariantFromProps, isControllingVariants, isVariantNode, getDefaultValueType, visualElementStore, camelCaseAttributes, cubicBezier, easeInOut, easeOut, easeIn } from 'motion';
-import { onMounted, onBeforeUnmount, shallowRef, useId, watch } from 'vue';
-const props = defineProps({ size: { type: Number, default: 28 }, controlled: { type: Boolean, default: false } });
-const root = shallowRef();
-const instanceId = useId();
+import { onMount } from 'svelte';
+let { size = 28, controlled = false, ...rest } = $props();
+let root;
+const instanceId = $props.id();
 function createIconProgram(api) {
-  const { Fragment, cn, forwardRef, getDefaultValueType, iconNode, motion, setTarget, useAnimation, useCallback, useEffect, useImperativeHandle, useMemo, useRef, useState, visualElementStore } = api;
+  const { Fragment, cn, forwardRef, getDefaultValueType, iconNode, motion, setTarget, useAnimation, useCallback, useEffect, useId, useImperativeHandle, useMemo, useRef, useState, visualElementStore } = api;
+function nativePartTarget(target, draw) {
+    const drawKeys = new Set([
+        'pathLength',
+        'pathOffset',
+        'pathSpacing',
+        'strokeDasharray',
+        'strokeDashoffset',
+    ]);
+    return Object.fromEntries(Object.entries(target).filter(([key]) => key === 'transition' ||
+        (draw === 'geometry'
+            ? key === 'd'
+            : key !== 'd' && (draw ? drawKeys.has(key) : !drawKeys.has(key)))));
+}
+function nativePartVariants(variants, draw) {
+    return Object.fromEntries(Object.entries(variants).map(([name, target]) => [
+        name,
+        typeof target === 'function'
+            ? (...args) => nativePartTarget(target(...args), draw)
+            : nativePartTarget(target, draw),
+    ]));
+}
 const CHECK_VARIANTS = {
     normal: {
         pathLength: 1,
@@ -50,7 +71,8 @@ const CHECK_VARIANTS = {
         },
     },
 };
-const HugeiconsUserRoundCheckIcon = forwardRef(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
+const PhosphorUserRoundCheckIcon = forwardRef(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
+    const nativeMaskId = useId();
     const controls = useAnimation();
     const isControlledRef = useRef(false);
     const { rootRef: iconRootRef, reduceDefinition, ...iconAccessibility } = useIconAccessibility(ref, () => {
@@ -97,12 +119,18 @@ const HugeiconsUserRoundCheckIcon = forwardRef(({ onMouseEnter, onMouseLeave, cl
             }
             props.onBlur?.(event);
         } },
-        iconNode("svg", { xmlns: "http://www.w3.org/2000/svg", width: size, height: size, viewBox: "0 0 24 24", fill: "none", "aria-hidden": "true", focusable: "false" },
-            iconNode("path", { d: "M3 20C3 16.134 6.13401 13 10 13C11.9587 13 13.7295 13.8045 15 15.101", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5" }),
-            iconNode("path", { d: "M15 8C15 5.23858 12.7614 3 10 3C7.23858 3 5 5.23858 5 8C5 10.7614 7.23858 13 10 13C12.7614 13 15 10.7614 15 8Z", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5" }),
-            iconNode(motion.path, { d: "M13 18.5C13 18.5 14.3485 19.0067 15 21C15 21 18.1765 16 21 15", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5", animate: reduceDefinition(controls), initial: "normal", style: { transformOrigin: 'center' }, variants: CHECK_VARIANTS }))));
+        iconNode("svg", { xmlns: "http://www.w3.org/2000/svg", width: size, height: size, viewBox: "0 0 24 24", fill: "currentColor", "aria-hidden": "true", focusable: "false" },
+            iconNode("g", { transform: "scale(0.09375)" },
+                iconNode("path", { d: "M 144 157.68 a 68 68 0 1 0 -71.9 0 c -20.65 6.76 -39.23 19.39 -54.17 37.17 a 8 8 0 0 0 12.25 10.3 C 50.25 181.19 77.91 168 108 168 s 57.75 13.19 77.87 37.15 a 8 8 0 0 0 12.25 -10.3 C 183.18 177.07 164.6 164.44 144 157.68 Z M 56 100 a 52 52 0 1 1 52 52 A 52.06 52.06 0 0 1 56 100 Z", fill: "currentColor" })),
+            iconNode(motion.g, { animate: reduceDefinition(controls), initial: "normal", style: { transformOrigin: 'center' }, variants: nativePartVariants(CHECK_VARIANTS, false) },
+                iconNode("defs", null,
+                    iconNode("mask", { id: nativeMaskId + '-2', maskUnits: "userSpaceOnUse", x: "-24", y: "-24", width: "72", height: "72" },
+                        iconNode(motion.path, { d: "M17.999583699987888 13.507908511637389l1.9996666625989252 2.2566093295201672 3.9993333251978505-4.5132186590403345", fill: "none", stroke: "white", strokeWidth: 4.753306248822157, strokeLinecap: "round", strokeLinejoin: "round", animate: reduceDefinition(controls), initial: "normal", variants: nativePartVariants(CHECK_VARIANTS, true) }))),
+                iconNode("g", { mask: 'url(#' + nativeMaskId + '-2' + ')' },
+                    iconNode("g", { transform: "scale(0.09375)" },
+                        iconNode("path", { d: "M 253.66 133.66 l -32 32 a 8 8 0 0 1 -11.32 0 l -16 -16 a 8 8 0 0 1 11.32 -11.32 L 216 148.69 l 26.34 -26.35 a 8 8 0 0 1 11.32 11.32 Z", fill: "currentColor" })))))));
 });
-HugeiconsUserRoundCheckIcon.displayName = 'HugeiconsUserRoundCheckIcon';
+PhosphorUserRoundCheckIcon.displayName = 'PhosphorUserRoundCheckIcon';
 function useIconAccessibility(ref, createHandle, controllers) {
     const rawHandle = createHandle();
     const raw = useRef(rawHandle);
@@ -229,7 +257,7 @@ function useIconAccessibility(ref, createHandle, controllers) {
     };
 }
 
-  return HugeiconsUserRoundCheckIcon;
+  return PhosphorUserRoundCheckIcon;
 }
 
 function mountIconProgram(createProgram, container, getSize, isControlled, instanceId) {
@@ -526,20 +554,31 @@ function mountIconProgram(createProgram, container, getSize, isControlled, insta
 }
 
 let controller;
-function startAnimation() { return controller?.startAnimation(); }
-function stopAnimation() { return controller?.stopAnimation(); }
-onMounted(() => { controller = mountIconProgram(createIconProgram, root.value, () => props.size, () => props.controlled, instanceId); });
-watch(() => [props.size, props.controlled], () => controller?.update());
-onBeforeUnmount(() => controller?.destroy());
-defineExpose({ startAnimation, stopAnimation });
+export function startAnimation() { return controller?.startAnimation(); }
+export function stopAnimation() { return controller?.stopAnimation(); }
+$effect(() => { size; controlled; controller?.update(); });
+onMount(() => {
+  controller = mountIconProgram(createIconProgram, root, () => size, () => controlled, instanceId);
+  return () => controller?.destroy();
+});
 </script>
 
-<template>
-  <div ref="root" class="">
-    <svg data-icon-node="0" xmlns="http://www.w3.org/2000/svg" :width="size" :height="size" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
-      <path data-icon-node="0.0" d="M3 20C3 16.134 6.13401 13 10 13C11.9587 13 13.7295 13.8045 15 15.101" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-      <path data-icon-node="0.1" d="M15 8C15 5.23858 12.7614 3 10 3C7.23858 3 5 5.23858 5 8C5 10.7614 7.23858 13 10 13C12.7614 13 15 10.7614 15 8Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-      <path data-icon-node="0.2" d="M13 18.5C13 18.5 14.3485 19.0067 15 21C15 21 18.1765 16 21 15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" style="transform-origin: center; opacity: 1" pathLength="1" stroke-dashoffset="0" stroke-dasharray="1 1" />
-    </svg>
-  </div>
-</template>
+<div  bind:this={root} {...rest} class={["", rest.class].filter(Boolean).join(' ')}>
+  <svg data-icon-node="0" xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    <g data-icon-node="0.0" transform="scale(0.09375)">
+      <path data-icon-node="0.0.0" d="M 144 157.68 a 68 68 0 1 0 -71.9 0 c -20.65 6.76 -39.23 19.39 -54.17 37.17 a 8 8 0 0 0 12.25 10.3 C 50.25 181.19 77.91 168 108 168 s 57.75 13.19 77.87 37.15 a 8 8 0 0 0 12.25 -10.3 C 183.18 177.07 164.6 164.44 144 157.68 Z M 56 100 a 52 52 0 1 1 52 52 A 52.06 52.06 0 0 1 56 100 Z" fill="currentColor" />
+    </g>
+    <g data-icon-node="0.1" style="transform-origin: center; opacity: 1">
+      <defs data-icon-node="0.1.0" >
+        <mask data-icon-node="0.1.0.0" id={instanceId + '-0' + "-2"} maskUnits="userSpaceOnUse" x="-24" y="-24" width="72" height="72">
+          <path data-icon-node="0.1.0.0.0" d="M17.999583699987888 13.507908511637389l1.9996666625989252 2.2566093295201672 3.9993333251978505-4.5132186590403345" fill="none" stroke="white" stroke-width="4.753306248822157" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dashoffset="0" stroke-dasharray="1 1" />
+        </mask>
+      </defs>
+      <g data-icon-node="0.1.1" mask={"url(#" + instanceId + '-0' + "-2)"}>
+        <g data-icon-node="0.1.1.0" transform="scale(0.09375)">
+          <path data-icon-node="0.1.1.0.0" d="M 253.66 133.66 l -32 32 a 8 8 0 0 1 -11.32 0 l -16 -16 a 8 8 0 0 1 11.32 -11.32 L 216 148.69 l 26.34 -26.35 a 8 8 0 0 1 11.32 11.32 Z" fill="currentColor" />
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>

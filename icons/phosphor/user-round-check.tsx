@@ -2,9 +2,9 @@
  * @license
  * MIT License
  * Choreography copyright (c) 2024-2026 pqoqubbw
- * Reference: https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca
+ * Reference: user-round-check @ 072c38b1b04ea738d90a084485ccaad4b890ddca
  *
- * Copyright (c) 2025 Hugeicons
+ * Copyright (c) 2023 Phosphor Icons
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -31,12 +31,17 @@ import type {
   ResolvedValues,
   VisualElement,
 } from 'motion';
-import type { Variants } from 'motion/react';
+import type {
+  TargetAndTransition as NativeMotionTarget,
+  Variants as NativeMotionVariants,
+  Variants,
+} from 'motion/react';
 import type { ForwardedRef, HTMLAttributes } from 'react';
 import {
   forwardRef,
   useCallback,
   useEffect,
+  useId,
   useImperativeHandle,
   useMemo,
   useRef,
@@ -47,11 +52,45 @@ import { motion, useAnimation } from 'motion/react';
 
 import { cn } from '@/lib/utils';
 
-export interface HugeiconsUserRoundCheckIconHandle {
+function nativePartTarget(
+  target: Record<string, unknown>,
+  draw: boolean | 'geometry'
+): NativeMotionTarget {
+  const drawKeys = new Set([
+    'pathLength',
+    'pathOffset',
+    'pathSpacing',
+    'strokeDasharray',
+    'strokeDashoffset',
+  ]);
+  return Object.fromEntries(
+    Object.entries(target).filter(
+      ([key]) =>
+        key === 'transition' ||
+        (draw === 'geometry'
+          ? key === 'd'
+          : key !== 'd' && (draw ? drawKeys.has(key) : !drawKeys.has(key)))
+    )
+  ) as NativeMotionTarget;
+}
+function nativePartVariants(
+  variants: Record<string, unknown>,
+  draw: boolean | 'geometry'
+): NativeMotionVariants {
+  return Object.fromEntries(
+    Object.entries(variants).map(([name, target]) => [
+      name,
+      typeof target === 'function'
+        ? (...args: unknown[]) => nativePartTarget(target(...args), draw)
+        : nativePartTarget(target as Record<string, unknown>, draw),
+    ])
+  ) as NativeMotionVariants;
+}
+export interface PhosphorUserRoundCheckIconHandle {
   startAnimation: () => void;
   stopAnimation: () => void;
 }
-interface HugeiconsUserRoundCheckIconProps extends HTMLAttributes<HTMLDivElement> {
+interface PhosphorUserRoundCheckIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
 const CHECK_VARIANTS: Variants = {
@@ -71,10 +110,11 @@ const CHECK_VARIANTS: Variants = {
     },
   },
 };
-const HugeiconsUserRoundCheckIcon = forwardRef<
-  HugeiconsUserRoundCheckIconHandle,
-  HugeiconsUserRoundCheckIconProps
+const PhosphorUserRoundCheckIcon = forwardRef<
+  PhosphorUserRoundCheckIconHandle,
+  PhosphorUserRoundCheckIconProps
 >(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
+  const nativeMaskId = useId();
   const controls = useAnimation();
   const isControlledRef = useRef(false);
   const {
@@ -143,41 +183,60 @@ const HugeiconsUserRoundCheckIcon = forwardRef<
         width={size}
         height={size}
         viewBox="0 0 24 24"
-        fill="none"
+        fill="currentColor"
         aria-hidden="true"
         focusable="false"
       >
-        <path
-          d="M3 20C3 16.134 6.13401 13 10 13C11.9587 13 13.7295 13.8045 15 15.101"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-        />
-        <path
-          d="M15 8C15 5.23858 12.7614 3 10 3C7.23858 3 5 5.23858 5 8C5 10.7614 7.23858 13 10 13C12.7614 13 15 10.7614 15 8Z"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-        />
-        <motion.path
-          d="M13 18.5C13 18.5 14.3485 19.0067 15 21C15 21 18.1765 16 21 15"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
+        <g transform="scale(0.09375)">
+          <path
+            d="M 144 157.68 a 68 68 0 1 0 -71.9 0 c -20.65 6.76 -39.23 19.39 -54.17 37.17 a 8 8 0 0 0 12.25 10.3 C 50.25 181.19 77.91 168 108 168 s 57.75 13.19 77.87 37.15 a 8 8 0 0 0 12.25 -10.3 C 183.18 177.07 164.6 164.44 144 157.68 Z M 56 100 a 52 52 0 1 1 52 52 A 52.06 52.06 0 0 1 56 100 Z"
+            fill="currentColor"
+          />
+        </g>
+
+        <motion.g
           animate={reduceDefinition(controls)}
           initial="normal"
           style={{ transformOrigin: 'center' }}
-          variants={CHECK_VARIANTS}
-        />
+          variants={nativePartVariants(CHECK_VARIANTS, false)}
+        >
+          <defs>
+            <mask
+              id={nativeMaskId + '-2'}
+              maskUnits="userSpaceOnUse"
+              x="-24"
+              y="-24"
+              width="72"
+              height="72"
+            >
+              <motion.path
+                d="M17.999583699987888 13.507908511637389l1.9996666625989252 2.2566093295201672 3.9993333251978505-4.5132186590403345"
+                fill="none"
+                stroke="white"
+                strokeWidth={4.753306248822157}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                animate={reduceDefinition(controls)}
+                initial="normal"
+                variants={nativePartVariants(CHECK_VARIANTS, true)}
+              />
+            </mask>
+          </defs>
+          <g mask={'url(#' + nativeMaskId + '-2' + ')'}>
+            <g transform="scale(0.09375)">
+              <path
+                d="M 253.66 133.66 l -32 32 a 8 8 0 0 1 -11.32 0 l -16 -16 a 8 8 0 0 1 11.32 -11.32 L 216 148.69 l 26.34 -26.35 a 8 8 0 0 1 11.32 11.32 Z"
+                fill="currentColor"
+              />
+            </g>
+          </g>
+        </motion.g>
       </svg>
     </div>
   );
 });
-HugeiconsUserRoundCheckIcon.displayName = 'HugeiconsUserRoundCheckIcon';
-export { HugeiconsUserRoundCheckIcon };
+PhosphorUserRoundCheckIcon.displayName = 'PhosphorUserRoundCheckIcon';
+export { PhosphorUserRoundCheckIcon };
 
 type IconAccessibilityHandle = {
   startAnimation: () => unknown;
