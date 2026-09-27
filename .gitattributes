@@ -1,0 +1,5 @@
+# Framework ports and registries are generated from the canonical React sources.
+frameworks/** linguist-generated=true
+public/r/** linguist-generated=true
+registry.json linguist-generated=true
+scripts/registry-components.ts linguist-generated=true
