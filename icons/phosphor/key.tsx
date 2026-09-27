@@ -1,6 +1,8 @@
 /**
  * @license
  * MIT License
+ * Choreography copyright (c) 2024-2026 pqoqubbw
+ * Reference: key @ 072c38b1b04ea738d90a084485ccaad4b890ddca
  *
  * Copyright (c) 2023 Phosphor Icons
  *
@@ -24,16 +26,23 @@
  */
 'use client';
 
-import type { Variants } from 'motion/react';
-import type { HTMLAttributes } from 'react';
+import type {
+  LegacyAnimationControls,
+  ResolvedValues,
+  VisualElement,
+} from 'motion';
+import type { ForwardedRef, HTMLAttributes } from 'react';
 import {
   forwardRef,
   useCallback,
   useEffect,
   useImperativeHandle,
+  useMemo,
   useRef,
+  useState,
 } from 'react';
-import { motion, useAnimation, useReducedMotion } from 'motion/react';
+import { getDefaultValueType, setTarget, visualElementStore } from 'motion';
+import { motion, useAnimation } from 'motion/react';
 
 import { cn } from '@/lib/utils';
 
@@ -44,111 +53,276 @@ export interface PhosphorKeyIconHandle {
 interface PhosphorKeyIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
-
-const ICON_VARIANTS: Variants = {
-  normal: {
-    x: 0,
-    y: 0,
-    rotate: 0,
-    scale: 1,
-    scaleX: 1,
-    scaleY: 1,
-    opacity: 1,
-    transition: { duration: 0.18, ease: 'easeOut' },
-  },
-  animate: {
-    rotate: [0, -6, 6, -3, 0],
-    scale: [1, 0.96, 1],
-    transition: { duration: 0.65, ease: 'easeInOut' },
-  },
-};
-
 const PhosphorKeyIcon = forwardRef<PhosphorKeyIconHandle, PhosphorKeyIconProps>(
-  (
-    {
-      onMouseEnter,
-      onMouseLeave,
-      onFocus,
-      onBlur,
-      className,
-      size = 28,
-      ...props
-    },
-    ref
-  ) => {
+  ({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
     const controls = useAnimation();
-    const reducedMotion = useReducedMotion();
-    const sequence = useRef(0);
-    const startAnimation = useCallback(() => {
-      const current = ++sequence.current;
-      controls.stop();
-      controls.set('normal');
-      if (reducedMotion) return;
-      void controls.start('animate').then(() => {
-        if (sequence.current === current) controls.set('normal');
-      });
-    }, [controls, reducedMotion]);
-    const stopAnimation = useCallback(() => {
-      sequence.current += 1;
-      void controls.start('normal');
-    }, [controls]);
-    useImperativeHandle(ref, () => ({ startAnimation, stopAnimation }), [
-      startAnimation,
-      stopAnimation,
-    ]);
-    useEffect(() => {
-      if (reducedMotion) {
-        sequence.current += 1;
-        controls.set('normal');
-      }
-      return () => {
-        sequence.current += 1;
-        controls.stop();
+    const isControlledRef = useRef(false);
+    const {
+      rootRef: iconRootRef,
+      reduceDefinition,
+      ...iconAccessibility
+    } = useIconAccessibility(ref, () => {
+      isControlledRef.current = ref != null;
+      return {
+        startAnimation: () => controls.start('animate'),
+        stopAnimation: () => controls.start('normal'),
       };
-    }, [controls, reducedMotion]);
+    }, [controls]);
+    const handleMouseEnter = useCallback(
+      (e: React.MouseEvent<HTMLDivElement>) => {
+        if (isControlledRef.current) {
+          void e;
+        } else {
+          controls.start('animate');
+        }
+      },
+      [controls]
+    );
+    const handleMouseLeave = useCallback(
+      (e: React.MouseEvent<HTMLDivElement>) => {
+        if (isControlledRef.current) {
+          void e;
+        } else {
+          controls.start('normal');
+        }
+      },
+      [controls]
+    );
     return (
       <div
-        {...props}
         className={cn(className)}
+        {...props}
+        ref={iconRootRef}
         onMouseEnter={(event) => {
-          if (!ref) startAnimation();
+          if (!iconAccessibility.controlled && !iconAccessibility.reduced) {
+            handleMouseEnter(event);
+          }
           onMouseEnter?.(event);
         }}
         onMouseLeave={(event) => {
-          if (!ref) stopAnimation();
+          if (!iconAccessibility.controlled) {
+            handleMouseLeave(event);
+          }
           onMouseLeave?.(event);
         }}
         onFocus={(event) => {
-          if (!ref) startAnimation();
-          onFocus?.(event);
+          if (!iconAccessibility.controlled && !iconAccessibility.reduced) {
+            iconAccessibility.startAnimation();
+          }
+          props.onFocus?.(event);
         }}
         onBlur={(event) => {
-          if (!ref) stopAnimation();
-          onBlur?.(event);
+          if (!iconAccessibility.controlled) {
+            iconAccessibility.stopAnimation();
+          }
+          props.onBlur?.(event);
         }}
       >
-        <svg
+        <motion.svg
           xmlns="http://www.w3.org/2000/svg"
           width={size}
           height={size}
-          viewBox="0 0 256 256"
+          viewBox="0 0 24 24"
           fill="currentColor"
-          overflow="visible"
           aria-hidden="true"
           focusable="false"
+          animate={reduceDefinition(controls)}
+          initial="normal"
+          style={{ originX: 0.3, originY: 0.7 }}
+          variants={{
+            normal: {
+              rotate: 0,
+              transition: {
+                type: 'spring',
+                stiffness: 120,
+                damping: 14,
+                duration: 0.8,
+              },
+            },
+            animate: {
+              rotate: [-3, -33, -25, -28],
+              transition: {
+                duration: 0.6,
+                times: [0, 0.6, 0.8, 1],
+                ease: 'easeInOut',
+              },
+            },
+          }}
         >
-          <motion.g
-            initial="normal"
-            animate={controls}
-            variants={ICON_VARIANTS}
-            style={{ transformOrigin: '128px 128px' }}
-          >
-            <path d="M216.57,39.43A80,80,0,0,0,83.91,120.78L28.69,176A15.86,15.86,0,0,0,24,187.31V216a16,16,0,0,0,16,16H72a8,8,0,0,0,8-8V208H96a8,8,0,0,0,8-8V184h16a8,8,0,0,0,5.66-2.34l9.56-9.57A79.73,79.73,0,0,0,160,176h.1A80,80,0,0,0,216.57,39.43ZM224,98.1c-1.09,34.09-29.75,61.86-63.89,61.9H160a63.7,63.7,0,0,1-23.65-4.51,8,8,0,0,0-8.84,1.68L116.69,168H96a8,8,0,0,0-8,8v16H72a8,8,0,0,0-8,8v16H40V187.31l58.83-58.82a8,8,0,0,0,1.68-8.84A63.72,63.72,0,0,1,96,95.92c0-34.14,27.81-62.8,61.9-63.89A64,64,0,0,1,224,98.1ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z" />
-          </motion.g>
-        </svg>
+          <g transform="scale(0.09375)">
+            <path
+              d="M 216.57 39.43 A 80 80 0 0 0 83.91 120.78 L 28.69 176 A 15.86 15.86 0 0 0 24 187.31 V 216 a 16 16 0 0 0 16 16 H 72 a 8 8 0 0 0 8 -8 V 208 H 96 a 8 8 0 0 0 8 -8 V 184 h 16 a 8 8 0 0 0 5.66 -2.34 l 9.56 -9.57 A 79.73 79.73 0 0 0 160 176 h 0.1 A 80 80 0 0 0 216.57 39.43 Z M 224 98.1 c -1.09 34.09 -29.75 61.86 -63.89 61.9 H 160 a 63.7 63.7 0 0 1 -23.65 -4.51 a 8 8 0 0 0 -8.84 1.68 L 116.69 168 H 96 a 8 8 0 0 0 -8 8 v 16 H 72 a 8 8 0 0 0 -8 8 v 16 H 40 V 187.31 l 58.83 -58.82 a 8 8 0 0 0 1.68 -8.84 A 63.72 63.72 0 0 1 96 95.92 c 0 -34.14 27.81 -62.8 61.9 -63.89 A 64 64 0 0 1 224 98.1 Z"
+              fill="currentColor"
+            />
+          </g>
+
+          <g transform="scale(0.09375)">
+            <path
+              d="M 192 76 a 12 12 0 1 1 -12 -12 A 12 12 0 0 1 192 76 Z"
+              fill="currentColor"
+            />
+          </g>
+        </motion.svg>
       </div>
     );
   }
 );
 PhosphorKeyIcon.displayName = 'PhosphorKeyIcon';
 export { PhosphorKeyIcon };
+
+type IconAccessibilityHandle = {
+  startAnimation: () => unknown;
+  stopAnimation: () => unknown;
+};
+
+type IconAccessibilitySnapshot = {
+  visual: VisualElement;
+  values: ResolvedValues;
+  attributes: Record<string, string>;
+};
+
+function useIconAccessibility(
+  ref: ForwardedRef<IconAccessibilityHandle>,
+  createHandle: () => IconAccessibilityHandle,
+  controllers: LegacyAnimationControls[]
+) {
+  const rawHandle = createHandle();
+  const raw = useRef(rawHandle);
+  useEffect(() => {
+    raw.current = rawHandle;
+  }, [rawHandle]);
+  const controls = useRef(controllers);
+  const rootRef = useRef<HTMLDivElement | null>(null);
+  const preference = useRef(false);
+  const mounted = useRef(true);
+  const [reduced, setReduced] = useState(false);
+  const api = useMemo(
+    () => ({
+      startAnimation() {
+        if (
+          mounted.current &&
+          !preference.current &&
+          !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        ) {
+          void raw.current.startAnimation();
+        }
+      },
+      stopAnimation() {
+        if (mounted.current) void raw.current.stopAnimation();
+      },
+    }),
+    []
+  );
+  useImperativeHandle(ref, () => api, [api]);
+
+  useEffect(() => {
+    mounted.current = true;
+    const media = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const snapshots: IconAccessibilitySnapshot[] = [];
+    rootRef.current
+      ?.querySelectorAll<SVGElement>('svg, svg *')
+      .forEach((element) => {
+        const visual = visualElementStore.get(element);
+        if (visual)
+          snapshots.push({
+            visual,
+            values: { ...visual.latestValues },
+            attributes: Object.fromEntries(
+              [...element.attributes].map((attribute) => [
+                attribute.name,
+                attribute.value,
+              ])
+            ),
+          });
+      });
+    const restore = () => {
+      for (const snapshot of snapshots) {
+        const { visual, values, attributes } = snapshot;
+        visual.values.forEach((value) => value.stop());
+        const props = visual.getProps() as unknown as {
+          [key: string]: unknown;
+          style?: Record<string, unknown>;
+        };
+        const reset: Record<string, string | number> = {};
+        visual.values.forEach((_motionValue, key) => {
+          const attribute = key.replace(
+            /[A-Z]/g,
+            (letter) => '-' + letter.toLowerCase()
+          );
+          const defaults: Record<string, number> = {
+            opacity: 1,
+            pathLength: 1,
+            pathSpacing: 1,
+            pathOffset: 0,
+            strokeDashoffset: 0,
+          };
+          const value =
+            values[key] ??
+            props.style?.[key] ??
+            props[key] ??
+            getDefaultValueType(key)?.default ??
+            defaults[key] ??
+            attributes[attribute];
+          if (typeof value === 'number' || typeof value === 'string')
+            reset[key] = value;
+        });
+        setTarget(visual, reset);
+        visual.render();
+      }
+    };
+    const activeControls = controls.current;
+    const originals = activeControls.map((control) => {
+      const original = control.start;
+      control.start = (definition, transition) => {
+        if (!mounted.current) return new Promise<never>(() => {});
+        if (preference.current) {
+          control.set(definition);
+          return Promise.resolve();
+        }
+        return original(definition, transition);
+      };
+      return original;
+    });
+    const change = () => {
+      preference.current = media.matches;
+      setReduced(media.matches);
+      if (media.matches) {
+        void raw.current.stopAnimation();
+        activeControls.forEach((control) => control.stop());
+        restore();
+      }
+    };
+    change();
+    media.addEventListener('change', change);
+    return () => {
+      mounted.current = false;
+      media.removeEventListener('change', change);
+      activeControls.forEach((control, index) => {
+        control.stop();
+        control.start = originals[index];
+      });
+    };
+  }, []);
+
+  return {
+    ...api,
+    rootRef,
+    controlled: ref != null,
+    reduced,
+    reduceDefinition<T>(definition: T): T {
+      if (
+        reduced &&
+        definition &&
+        typeof definition === 'object' &&
+        !Array.isArray(definition) &&
+        !('start' in definition)
+      ) {
+        return {
+          ...definition,
+          transition: { type: false, duration: 0, delay: 0, repeat: 0 },
+        } as T;
+      }
+      return definition;
+    },
+  };
+}
