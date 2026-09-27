@@ -2,9 +2,9 @@
  * @license
  * MIT License
  * Choreography copyright (c) 2024-2026 pqoqubbw
- * Reference: https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca
+ * Reference: users-round @ 072c38b1b04ea738d90a084485ccaad4b890ddca
  *
- * Copyright (c) 2025 Hugeicons
+ * Copyright (c) 2023 Phosphor Icons
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -47,11 +47,11 @@ import { motion, useAnimation } from 'motion/react';
 
 import { cn } from '@/lib/utils';
 
-export interface HugeiconsUsersRoundIconHandle {
+export interface PhosphorUsersRoundIconHandle {
   startAnimation: () => void;
   stopAnimation: () => void;
 }
-interface HugeiconsUsersRoundIconProps extends HTMLAttributes<HTMLDivElement> {
+interface PhosphorUsersRoundIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
 const PATH_VARIANTS: Variants = {
@@ -75,9 +75,9 @@ const PATH_VARIANTS: Variants = {
     },
   },
 };
-const HugeiconsUsersRoundIcon = forwardRef<
-  HugeiconsUsersRoundIconHandle,
-  HugeiconsUsersRoundIconProps
+const PhosphorUsersRoundIcon = forwardRef<
+  PhosphorUsersRoundIconHandle,
+  PhosphorUsersRoundIconProps
 >(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
   const controls = useAnimation();
   const isControlledRef = useRef(false);
@@ -147,50 +147,35 @@ const HugeiconsUsersRoundIcon = forwardRef<
         width={size}
         height={size}
         viewBox="0 0 24 24"
-        fill="none"
+        fill="currentColor"
         aria-hidden="true"
         focusable="false"
       >
-        <path
-          d="M15 21C15 17.6863 12.3137 15 9 15C5.68629 15 3 17.6863 3 21"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-        />
-        <path
-          d="M13 11C13 8.79086 11.2091 7 9 7C6.79086 7 5 8.79086 5 11C5 13.2091 6.79086 15 9 15C11.2091 15 13 13.2091 13 11Z"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-        />
-        <motion.path
-          d="M11.0386 7.55773C11.0131 7.37547 11 7.18927 11 7C11 4.79086 12.7909 3 15 3C17.2091 3 19 4.79086 19 7C19 9.20914 17.2091 11 15 11C14.2554 11 13.5584 10.7966 12.9614 10.4423"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
+        <g transform="scale(0.09375)">
+          <path
+            d="M 117.25 157.92 a 60 60 0 1 0 -66.5 0 A 95.83 95.83 0 0 0 3.53 195.63 a 8 8 0 1 0 13.4 8.74 a 80 80 0 0 1 134.14 0 a 8 8 0 0 0 13.4 -8.74 A 95.83 95.83 0 0 0 117.25 157.92 Z M 40 108 a 44 44 0 1 1 44 44 A 44.05 44.05 0 0 1 40 108 Z"
+            fill="currentColor"
+          />
+        </g>
+
+        <motion.g
           animate={reduceDefinition(controls)}
           initial="normal"
           variants={PATH_VARIANTS}
-        />
-        <motion.path
-          d="M21 17C21 13.6863 18.3137 11 15 11"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          animate={reduceDefinition(controls)}
-          initial="normal"
-          variants={PATH_VARIANTS}
-        />
+        >
+          <g transform="scale(0.09375)">
+            <path
+              d="M 250.14 206.7 a 8 8 0 0 1 -11.07 -2.33 A 79.83 79.83 0 0 0 172 168 a 8 8 0 0 1 0 -16 a 44 44 0 1 0 -16.34 -84.87 a 8 8 0 1 1 -5.94 -14.85 a 60 60 0 0 1 55.53 105.64 a 95.83 95.83 0 0 1 47.22 37.71 A 8 8 0 0 1 250.14 206.7 Z"
+              fill="currentColor"
+            />
+          </g>
+        </motion.g>
       </svg>
     </div>
   );
 });
-HugeiconsUsersRoundIcon.displayName = 'HugeiconsUsersRoundIcon';
-export { HugeiconsUsersRoundIcon };
+PhosphorUsersRoundIcon.displayName = 'PhosphorUsersRoundIcon';
+export { PhosphorUsersRoundIcon };
 
 type IconAccessibilityHandle = {
   startAnimation: () => unknown;

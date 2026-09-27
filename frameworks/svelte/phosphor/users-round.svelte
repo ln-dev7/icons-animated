@@ -1,12 +1,12 @@
-<script setup lang="ts">
+<script lang="ts">
 // @ts-nocheck
 /**
  * @license
  * MIT License
  * Choreography copyright (c) 2024-2026 pqoqubbw
- * Reference: https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca
+ * Reference: users-round @ 072c38b1b04ea738d90a084485ccaad4b890ddca
  *
- * Copyright (c) 2025 Hugeicons
+ * Copyright (c) 2023 Phosphor Icons
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -27,10 +27,10 @@
  * SOFTWARE.
  */
 import { SVGVisualElement, animateVisualElement, setTarget, scrapeSVGMotionValuesFromProps, resolveMotionValue, resolveVariantFromProps, isControllingVariants, isVariantNode, getDefaultValueType, visualElementStore, camelCaseAttributes, cubicBezier, easeInOut, easeOut, easeIn } from 'motion';
-import { onMounted, onBeforeUnmount, shallowRef, useId, watch } from 'vue';
-const props = defineProps({ size: { type: Number, default: 28 }, controlled: { type: Boolean, default: false } });
-const root = shallowRef();
-const instanceId = useId();
+import { onMount } from 'svelte';
+let { size = 28, controlled = false, ...rest } = $props();
+let root;
+const instanceId = $props.id();
 function createIconProgram(api) {
   const { Fragment, cn, forwardRef, getDefaultValueType, iconNode, motion, setTarget, useAnimation, useCallback, useEffect, useImperativeHandle, useMemo, useRef, useState, visualElementStore } = api;
 const PATH_VARIANTS = {
@@ -54,7 +54,7 @@ const PATH_VARIANTS = {
         },
     },
 };
-const HugeiconsUsersRoundIcon = forwardRef(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
+const PhosphorUsersRoundIcon = forwardRef(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
     const controls = useAnimation();
     const isControlledRef = useRef(false);
     const { rootRef: iconRootRef, reduceDefinition, ...iconAccessibility } = useIconAccessibility(ref, () => {
@@ -101,13 +101,14 @@ const HugeiconsUsersRoundIcon = forwardRef(({ onMouseEnter, onMouseLeave, classN
             }
             props.onBlur?.(event);
         } },
-        iconNode("svg", { xmlns: "http://www.w3.org/2000/svg", width: size, height: size, viewBox: "0 0 24 24", fill: "none", "aria-hidden": "true", focusable: "false" },
-            iconNode("path", { d: "M15 21C15 17.6863 12.3137 15 9 15C5.68629 15 3 17.6863 3 21", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5" }),
-            iconNode("path", { d: "M13 11C13 8.79086 11.2091 7 9 7C6.79086 7 5 8.79086 5 11C5 13.2091 6.79086 15 9 15C11.2091 15 13 13.2091 13 11Z", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5" }),
-            iconNode(motion.path, { d: "M11.0386 7.55773C11.0131 7.37547 11 7.18927 11 7C11 4.79086 12.7909 3 15 3C17.2091 3 19 4.79086 19 7C19 9.20914 17.2091 11 15 11C14.2554 11 13.5584 10.7966 12.9614 10.4423", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5", animate: reduceDefinition(controls), initial: "normal", variants: PATH_VARIANTS }),
-            iconNode(motion.path, { d: "M21 17C21 13.6863 18.3137 11 15 11", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5", animate: reduceDefinition(controls), initial: "normal", variants: PATH_VARIANTS }))));
+        iconNode("svg", { xmlns: "http://www.w3.org/2000/svg", width: size, height: size, viewBox: "0 0 24 24", fill: "currentColor", "aria-hidden": "true", focusable: "false" },
+            iconNode("g", { transform: "scale(0.09375)" },
+                iconNode("path", { d: "M 117.25 157.92 a 60 60 0 1 0 -66.5 0 A 95.83 95.83 0 0 0 3.53 195.63 a 8 8 0 1 0 13.4 8.74 a 80 80 0 0 1 134.14 0 a 8 8 0 0 0 13.4 -8.74 A 95.83 95.83 0 0 0 117.25 157.92 Z M 40 108 a 44 44 0 1 1 44 44 A 44.05 44.05 0 0 1 40 108 Z", fill: "currentColor" })),
+            iconNode(motion.g, { animate: reduceDefinition(controls), initial: "normal", variants: PATH_VARIANTS },
+                iconNode("g", { transform: "scale(0.09375)" },
+                    iconNode("path", { d: "M 250.14 206.7 a 8 8 0 0 1 -11.07 -2.33 A 79.83 79.83 0 0 0 172 168 a 8 8 0 0 1 0 -16 a 44 44 0 1 0 -16.34 -84.87 a 8 8 0 1 1 -5.94 -14.85 a 60 60 0 0 1 55.53 105.64 a 95.83 95.83 0 0 1 47.22 37.71 A 8 8 0 0 1 250.14 206.7 Z", fill: "currentColor" }))))));
 });
-HugeiconsUsersRoundIcon.displayName = 'HugeiconsUsersRoundIcon';
+PhosphorUsersRoundIcon.displayName = 'PhosphorUsersRoundIcon';
 function useIconAccessibility(ref, createHandle, controllers) {
     const rawHandle = createHandle();
     const raw = useRef(rawHandle);
@@ -234,7 +235,7 @@ function useIconAccessibility(ref, createHandle, controllers) {
     };
 }
 
-  return HugeiconsUsersRoundIcon;
+  return PhosphorUsersRoundIcon;
 }
 
 function mountIconProgram(createProgram, container, getSize, isControlled, instanceId) {
@@ -531,21 +532,24 @@ function mountIconProgram(createProgram, container, getSize, isControlled, insta
 }
 
 let controller;
-function startAnimation() { return controller?.startAnimation(); }
-function stopAnimation() { return controller?.stopAnimation(); }
-onMounted(() => { controller = mountIconProgram(createIconProgram, root.value, () => props.size, () => props.controlled, instanceId); });
-watch(() => [props.size, props.controlled], () => controller?.update());
-onBeforeUnmount(() => controller?.destroy());
-defineExpose({ startAnimation, stopAnimation });
+export function startAnimation() { return controller?.startAnimation(); }
+export function stopAnimation() { return controller?.stopAnimation(); }
+$effect(() => { size; controlled; controller?.update(); });
+onMount(() => {
+  controller = mountIconProgram(createIconProgram, root, () => size, () => controlled, instanceId);
+  return () => controller?.destroy();
+});
 </script>
 
-<template>
-  <div ref="root" class="">
-    <svg data-icon-node="0" xmlns="http://www.w3.org/2000/svg" :width="size" :height="size" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
-      <path data-icon-node="0.0" d="M15 21C15 17.6863 12.3137 15 9 15C5.68629 15 3 17.6863 3 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-      <path data-icon-node="0.1" d="M13 11C13 8.79086 11.2091 7 9 7C6.79086 7 5 8.79086 5 11C5 13.2091 6.79086 15 9 15C11.2091 15 13 13.2091 13 11Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-      <path data-icon-node="0.2" d="M11.0386 7.55773C11.0131 7.37547 11 7.18927 11 7C11 4.79086 12.7909 3 15 3C17.2091 3 19 4.79086 19 7C19 9.20914 17.2091 11 15 11C14.2554 11 13.5584 10.7966 12.9614 10.4423" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" style="transform: none; opacity: 1; transform-origin: 50% 50%; transform-box: fill-box" />
-      <path data-icon-node="0.3" d="M21 17C21 13.6863 18.3137 11 15 11" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" style="transform: none; opacity: 1; transform-origin: 50% 50%; transform-box: fill-box" />
-    </svg>
-  </div>
-</template>
+<div  bind:this={root} {...rest} class={["", rest.class].filter(Boolean).join(' ')}>
+  <svg data-icon-node="0" xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    <g data-icon-node="0.0" transform="scale(0.09375)">
+      <path data-icon-node="0.0.0" d="M 117.25 157.92 a 60 60 0 1 0 -66.5 0 A 95.83 95.83 0 0 0 3.53 195.63 a 8 8 0 1 0 13.4 8.74 a 80 80 0 0 1 134.14 0 a 8 8 0 0 0 13.4 -8.74 A 95.83 95.83 0 0 0 117.25 157.92 Z M 40 108 a 44 44 0 1 1 44 44 A 44.05 44.05 0 0 1 40 108 Z" fill="currentColor" />
+    </g>
+    <g data-icon-node="0.1" style="transform: none; opacity: 1; transform-origin: 50% 50%; transform-box: fill-box">
+      <g data-icon-node="0.1.0" transform="scale(0.09375)">
+        <path data-icon-node="0.1.0.0" d="M 250.14 206.7 a 8 8 0 0 1 -11.07 -2.33 A 79.83 79.83 0 0 0 172 168 a 8 8 0 0 1 0 -16 a 44 44 0 1 0 -16.34 -84.87 a 8 8 0 1 1 -5.94 -14.85 a 60 60 0 0 1 55.53 105.64 a 95.83 95.83 0 0 1 47.22 37.71 A 8 8 0 0 1 250.14 206.7 Z" fill="currentColor" />
+      </g>
+    </g>
+  </svg>
+</div>

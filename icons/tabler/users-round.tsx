@@ -4,7 +4,7 @@
  * Choreography copyright (c) 2024-2026 pqoqubbw
  * Reference: https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca
  *
- * Copyright (c) 2025 Hugeicons
+ * Copyright (c) 2020-2026 Paweł Kuna
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -47,11 +47,11 @@ import { motion, useAnimation } from 'motion/react';
 
 import { cn } from '@/lib/utils';
 
-export interface HugeiconsUsersRoundIconHandle {
+export interface TablerUsersRoundIconHandle {
   startAnimation: () => void;
   stopAnimation: () => void;
 }
-interface HugeiconsUsersRoundIconProps extends HTMLAttributes<HTMLDivElement> {
+interface TablerUsersRoundIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
 const PATH_VARIANTS: Variants = {
@@ -75,9 +75,9 @@ const PATH_VARIANTS: Variants = {
     },
   },
 };
-const HugeiconsUsersRoundIcon = forwardRef<
-  HugeiconsUsersRoundIconHandle,
-  HugeiconsUsersRoundIconProps
+const TablerUsersRoundIcon = forwardRef<
+  TablerUsersRoundIconHandle,
+  TablerUsersRoundIconProps
 >(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
   const controls = useAnimation();
   const isControlledRef = useRef(false);
@@ -148,39 +148,17 @@ const HugeiconsUsersRoundIcon = forwardRef<
         height={size}
         viewBox="0 0 24 24"
         fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         aria-hidden="true"
         focusable="false"
       >
-        <path
-          d="M15 21C15 17.6863 12.3137 15 9 15C5.68629 15 3 17.6863 3 21"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-        />
-        <path
-          d="M13 11C13 8.79086 11.2091 7 9 7C6.79086 7 5 8.79086 5 11C5 13.2091 6.79086 15 9 15C11.2091 15 13 13.2091 13 11Z"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-        />
+        <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+        <path d="M5 7a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
         <motion.path
-          d="M11.0386 7.55773C11.0131 7.37547 11 7.18927 11 7C11 4.79086 12.7909 3 15 3C17.2091 3 19 4.79086 19 7C19 9.20914 17.2091 11 15 11C14.2554 11 13.5584 10.7966 12.9614 10.4423"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          animate={reduceDefinition(controls)}
-          initial="normal"
-          variants={PATH_VARIANTS}
-        />
-        <motion.path
-          d="M21 17C21 13.6863 18.3137 11 15 11"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
+          d="M16 3.13a4 4 0 0 1 0 7.75 M21 21v-2a4 4 0 0 0 -3 -3.85"
           animate={reduceDefinition(controls)}
           initial="normal"
           variants={PATH_VARIANTS}
@@ -189,8 +167,8 @@ const HugeiconsUsersRoundIcon = forwardRef<
     </div>
   );
 });
-HugeiconsUsersRoundIcon.displayName = 'HugeiconsUsersRoundIcon';
-export { HugeiconsUsersRoundIcon };
+TablerUsersRoundIcon.displayName = 'TablerUsersRoundIcon';
+export { TablerUsersRoundIcon };
 
 type IconAccessibilityHandle = {
   startAnimation: () => unknown;
