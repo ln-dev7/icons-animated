@@ -4,6 +4,2364 @@
   "homepage": "https://icons.lndev.me",
   "items": [
     {
+      "name": "heroicons-academic-cap",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-academic-cap.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-adjustments-horizontal",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-adjustments-horizontal.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-archive-box",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-archive-box.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-arrow-down",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-arrow-down.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-arrow-down-left",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-arrow-down-left.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-arrow-down-right",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-arrow-down-right.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-arrow-down-tray",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-arrow-down-tray.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-arrow-left",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-arrow-left.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-arrow-path",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-arrow-path.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-arrow-right",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-arrow-right.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-arrow-right-end-on-rectangle",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-arrow-right-end-on-rectangle.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-arrow-right-start-on-rectangle",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-arrow-right-start-on-rectangle.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-arrow-top-right-on-square",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-arrow-top-right-on-square.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-arrow-trending-down",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-arrow-trending-down.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-arrow-trending-up",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-arrow-trending-up.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-arrow-turn-down-left",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-arrow-turn-down-left.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-arrow-turn-down-right",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-arrow-turn-down-right.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-arrow-turn-left-down",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-arrow-turn-left-down.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-arrow-turn-left-up",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-arrow-turn-left-up.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-arrow-turn-right-down",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-arrow-turn-right-down.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-arrow-turn-right-up",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-arrow-turn-right-up.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-arrow-turn-up-left",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-arrow-turn-up-left.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-arrow-turn-up-right",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-arrow-turn-up-right.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-arrow-up",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-arrow-up.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-arrow-up-left",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-arrow-up-left.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-arrow-up-right",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-arrow-up-right.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-arrow-up-tray",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-arrow-up-tray.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-arrow-uturn-left",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-arrow-uturn-left.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-arrow-uturn-right",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-arrow-uturn-right.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-arrows-pointing-in",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-arrows-pointing-in.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-arrows-pointing-out",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-arrows-pointing-out.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-at-symbol",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-at-symbol.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-bars-3",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-bars-3.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-battery-0",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-battery-0.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-battery-100",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-battery-100.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-battery-50",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-battery-50.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-beaker",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-beaker.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-bell",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-bell.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-bold",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-bold.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-bolt",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-bolt.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-bolt-slash",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-bolt-slash.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-bookmark",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-bookmark.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-briefcase",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-briefcase.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-calendar-days",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-calendar-days.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-chart-bar",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-chart-bar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-chart-pie",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-chart-pie.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-chat-bubble-left",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-chat-bubble-left.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-chat-bubble-left-ellipsis",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-chat-bubble-left-ellipsis.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-chat-bubble-oval-left",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-chat-bubble-oval-left.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-chat-bubble-oval-left-ellipsis",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-chat-bubble-oval-left-ellipsis.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-check",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-check.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-check-circle",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-check-circle.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-chevron-down",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-chevron-down.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-chevron-left",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-chevron-left.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-chevron-right",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-chevron-right.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-chevron-up",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-chevron-up.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-chevron-up-down",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-chevron-up-down.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-clock",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-clock.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-cloud-arrow-down",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-cloud-arrow-down.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-cloud-arrow-up",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-cloud-arrow-up.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-cog",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-cog.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-cog-6-tooth",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-cog-6-tooth.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-command-line",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-command-line.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-cpu-chip",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-cpu-chip.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-credit-card",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-credit-card.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-cube",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-cube.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-currency-dollar",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-currency-dollar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-cursor-arrow-rays",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-cursor-arrow-rays.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-document-check",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-document-check.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-document-text",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-document-text.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-eye",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-eye.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-eye-slash",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-eye-slash.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-face-frown",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-face-frown.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-face-smile",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-face-smile.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-finger-print",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-finger-print.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-fire",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-fire.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-folder-arrow-down",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-folder-arrow-down.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-folder-minus",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-folder-minus.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-folder-open",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-folder-open.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-folder-plus",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-folder-plus.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-globe-europe-africa",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-globe-europe-africa.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-hand-raised",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-hand-raised.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-hand-thumb-down",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-hand-thumb-down.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-hand-thumb-up",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-hand-thumb-up.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-heart",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-heart.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-home",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-home.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-identification",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-identification.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-italic",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-italic.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-key",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-key.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-language",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-language.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-link",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-link.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-lock-closed",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-lock-closed.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-lock-open",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-lock-open.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-magnifying-glass",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-magnifying-glass.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-map-pin",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-map-pin.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-microphone",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-microphone.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-moon",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-moon.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-no-symbol",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-no-symbol.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-paper-airplane",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-paper-airplane.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-paper-clip",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-paper-clip.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-pause",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-pause.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-pencil-square",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-pencil-square.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-percent-badge",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-percent-badge.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-phone",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-phone.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-phone-arrow-down-left",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-phone-arrow-down-left.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-phone-arrow-up-right",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-phone-arrow-up-right.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-play",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-play.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-plus",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-plus.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-question-mark-circle",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-question-mark-circle.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-rectangle-stack",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-rectangle-stack.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-rocket-launch",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-rocket-launch.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-shield-check",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-shield-check.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-shopping-cart",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-shopping-cart.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-signal",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-signal.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-sparkles",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-sparkles.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-speaker-wave",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-speaker-wave.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-square-2-stack",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-square-2-stack.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-square-3-stack-3d",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-square-3-stack-3d.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-squares-2x2",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-squares-2x2.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-sun",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-sun.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-ticket",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-ticket.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-trash",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-trash.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-truck",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-truck.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-underline",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-underline.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-user",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-user.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-user-plus",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-user-plus.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-users",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-users.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-wallet",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-wallet.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-wifi",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-wifi.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-wrench",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-wrench.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heroicons-x-mark",
+      "type": "registry:ui",
+      "registryDependencies": [],
+      "dependencies": [
+        "motion@13.1.1",
+        "framer-motion@13.1.1",
+        "motion-dom@13.1.1",
+        "motion-utils@13.0.0"
+      ],
+      "devDependencies": [],
+      "files": [
+        {
+          "path": "heroicons-x-mark.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hugeicons-a-arrow-down",
       "type": "registry:ui",
       "registryDependencies": [],

@@ -71,7 +71,7 @@ for (const [label, content] of [
 test('regeneration removes orphaned framework components', async () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'icon-framework-test-'));
   try {
-    for (const library of ['hugeicons', 'tabler', 'phosphor']) {
+    for (const library of ['hugeicons', 'tabler', 'phosphor', 'heroicons']) {
       fs.mkdirSync(path.join(root, 'icons', library), { recursive: true });
     }
     const file = path.join(root, 'icons', 'hugeicons', 'fixture.tsx');
