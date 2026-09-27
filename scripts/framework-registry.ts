@@ -3,6 +3,7 @@ import path from 'path';
 
 import type { Schema } from './registry-schema';
 import { FRAMEWORK_INFO } from '../constants/frameworks';
+import { ANIMATION_ENGINE_DEPENDENCIES } from './animation-engine';
 import { discoverIcons, PROJECT_ROOT } from './icon-catalog';
 
 export const PORTABLE_FRAMEWORKS = ['vue', 'svelte'] as const;
@@ -29,7 +30,7 @@ export function createFrameworkRegistryItems() {
         type: 'registry:ui',
         title: `${icon.name} (${frameworkName})`,
         description: `Animated ${icon.library} icon for ${version}.`,
-        dependencies: ['motion@^12.23.26'],
+        dependencies: ANIMATION_ENGINE_DEPENDENCIES,
         registryDependencies: [],
         files: [
           {

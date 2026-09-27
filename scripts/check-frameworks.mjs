@@ -14,19 +14,35 @@ const { discoverIcons, getFiles } = await import('./icon-catalog.ts');
 const { extractPortableIcon, frameworkPath } =
   await import('./framework-sources.ts');
 const { renderFrameworkSource } = await import('./framework-generator.ts');
+const { extractProgramIcon } = await import('./framework-program.ts');
+const { renderProgramFrameworkSource } =
+  await import('./framework-program-render.ts');
 const reports = { vue: 0, svelte: 0, animationParts: 0 };
 const expected = { vue: [], svelte: [] };
 
 for (const source of discoverIcons(root)) {
-  const icon = extractPortableIcon(source);
-  reports.animationParts += icon.parts.length;
+  const contentSource = fs.readFileSync(source.path, 'utf8');
+  const program = /forwardRef/.test(contentSource)
+    ? extractProgramIcon(source)
+    : undefined;
+  const icon = program ? undefined : extractPortableIcon(source);
+  const countParts = (node) =>
+    typeof node === 'object'
+      ? Number(node.tag.startsWith('motion.')) +
+        node.children.reduce((sum, child) => sum + countParts(child), 0)
+      : 0;
+  reports.animationParts += program
+    ? countParts(program.tree)
+    : icon.parts.length;
   for (const framework of ['vue', 'svelte']) {
     const filename = frameworkPath(source, framework, root);
     expected[framework].push(filename);
     const content = fs.readFileSync(filename, 'utf8');
     assert.equal(
       content,
-      renderFrameworkSource(icon, framework),
+      program
+        ? renderProgramFrameworkSource(program, framework)
+        : renderFrameworkSource(icon, framework),
       `Stale generated component: ${filename}`
     );
     if (framework === 'vue') {

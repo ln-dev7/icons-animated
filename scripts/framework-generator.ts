@@ -4,10 +4,13 @@ import { fileURLToPath } from 'url';
 
 import type { PortableIcon, SvgNode } from './framework-sources';
 import type { IconSource } from './icon-catalog';
+import { ANIMATION_ENGINE_DEPENDENCIES } from './animation-engine';
+import { extractProgramIcon } from './framework-program';
+import { renderProgramFrameworkSource } from './framework-program-render';
 import { extractPortableIcon, frameworkPath } from './framework-sources';
 import { discoverIcons, getFiles, PROJECT_ROOT } from './icon-catalog';
 
-export const FRAMEWORK_DEPENDENCIES = ['motion'];
+export const FRAMEWORK_DEPENDENCIES = ANIMATION_ENGINE_DEPENDENCIES;
 export type Framework = 'vue' | 'svelte';
 export interface FrameworkSource extends IconSource {
   framework: Framework;
@@ -192,10 +195,16 @@ export async function generateFrameworkSources(
 ): Promise<FrameworkSource[]> {
   const sources: FrameworkSource[] = [];
   for (const source of discoverIcons(root)) {
-    const icon = extractPortableIcon(source);
+    const content = fs.readFileSync(source.path, 'utf8');
+    const program = /forwardRef/.test(content)
+      ? extractProgramIcon(source)
+      : undefined;
+    const icon = program ? undefined : extractPortableIcon(source);
     for (const framework of ['vue', 'svelte'] as const) {
       const destination = frameworkPath(source, framework, root);
-      const content = renderFrameworkSource(icon, framework);
+      const content = program
+        ? renderProgramFrameworkSource(program, framework)
+        : renderFrameworkSource(icon!, framework);
       fs.mkdirSync(path.dirname(destination), { recursive: true });
       fs.writeFileSync(destination, content);
       sources.push({

@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { format, resolveConfig } from 'prettier';
 
+import { withAnimationEngine } from './animation-engine';
 import { discoverIcons, PROJECT_ROOT } from './icon-catalog';
 import { components } from './registry-components';
 
@@ -32,8 +33,8 @@ async function syncRegistry() {
       name: source.registryName,
       path: source.relativePath,
       registryDependencies: [],
-      dependencies: ['motion'],
       ...metadata,
+      dependencies: withAnimationEngine(existing?.dependencies),
     };
     const properties = Object.entries(component).map(([key, value]) => {
       const serialized =
