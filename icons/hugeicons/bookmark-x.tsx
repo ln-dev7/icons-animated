@@ -1,6 +1,8 @@
 /**
  * @license
  * MIT License
+ * Choreography copyright (c) 2024-2026 pqoqubbw
+ * Reference: https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca
  *
  * Copyright (c) 2025 Hugeicons
  *
@@ -24,16 +26,24 @@
  */
 'use client';
 
+import type {
+  LegacyAnimationControls,
+  ResolvedValues,
+  VisualElement,
+} from 'motion';
 import type { Variants } from 'motion/react';
-import type { HTMLAttributes } from 'react';
+import type { ForwardedRef, HTMLAttributes } from 'react';
 import {
   forwardRef,
   useCallback,
   useEffect,
   useImperativeHandle,
+  useMemo,
   useRef,
+  useState,
 } from 'react';
-import { motion, useAnimation, useReducedMotion } from 'motion/react';
+import { getDefaultValueType, setTarget, visualElementStore } from 'motion';
+import { motion, useAnimation } from 'motion/react';
 
 import { cn } from '@/lib/utils';
 
@@ -44,138 +54,303 @@ export interface HugeiconsBookmarkXIconHandle {
 interface HugeiconsBookmarkXIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
-
-const ICON_VARIANTS: Variants = {
-  normal: {
-    x: 0,
-    y: 0,
-    rotate: 0,
-    scale: 1,
-    scaleX: 1,
-    scaleY: 1,
-    opacity: 1,
-    transition: { duration: 0.18, ease: 'easeOut' },
-  },
-  animate: { transition: { duration: 0.65, ease: 'easeInOut' } },
-};
-
-const DETAIL_0_VARIANTS: Variants = {
-  normal: {
-    scale: 1,
-    opacity: 1,
-    transition: { duration: 0.18, ease: 'easeOut' },
-  },
+const BOOKMARK_VARIANTS: Variants = {
+  normal: { scaleY: 1, scaleX: 1 },
   animate: {
-    scale: [1, 0.8, 1.12, 1],
-    opacity: [1, 0.55, 1, 1],
-    transition: { duration: 0.65, delay: 0, ease: 'easeInOut' },
+    scaleY: [1, 1.3, 0.9, 1.05, 1],
+    scaleX: [1, 0.9, 1.1, 0.95, 1],
+    transition: {
+      duration: 0.6,
+      ease: 'easeOut',
+    },
   },
 };
-
+const X_LINE_VARIANTS: Variants = {
+  normal: { strokeDashoffset: 0, opacity: 1 },
+  animate: (i: number) => ({
+    strokeDashoffset: [1, 0],
+    opacity: 1,
+    transition: {
+      duration: 0.3,
+      ease: 'easeOut',
+      delay: i * 0.1,
+    },
+  }),
+};
 const HugeiconsBookmarkXIcon = forwardRef<
   HugeiconsBookmarkXIconHandle,
   HugeiconsBookmarkXIconProps
->(
-  (
-    {
-      onMouseEnter,
-      onMouseLeave,
-      onFocus,
-      onBlur,
-      className,
-      size = 28,
-      ...props
-    },
-    ref
-  ) => {
-    const controls = useAnimation();
-    const reducedMotion = useReducedMotion();
-    const sequence = useRef(0);
-    const startAnimation = useCallback(() => {
-      const current = ++sequence.current;
-      controls.stop();
-      controls.set('normal');
-      if (reducedMotion) return;
-      void controls.start('animate').then(() => {
-        if (sequence.current === current) controls.set('normal');
-      });
-    }, [controls, reducedMotion]);
-    const stopAnimation = useCallback(() => {
-      sequence.current += 1;
-      void controls.start('normal');
-    }, [controls]);
-    useImperativeHandle(ref, () => ({ startAnimation, stopAnimation }), [
-      startAnimation,
-      stopAnimation,
-    ]);
-    useEffect(() => {
-      if (reducedMotion) {
-        sequence.current += 1;
-        controls.set('normal');
+>(({ className, size = 28, onMouseEnter, onMouseLeave, ...props }, ref) => {
+  const controls = useAnimation();
+  const isControlledRef = useRef(false);
+  const {
+    rootRef: iconRootRef,
+    reduceDefinition,
+    ...iconAccessibility
+  } = useIconAccessibility(ref, () => {
+    isControlledRef.current = ref != null;
+    return {
+      startAnimation: () => controls.start('animate'),
+      stopAnimation: () => controls.start('normal'),
+    };
+  }, [controls]);
+  const handleMouseEnter = useCallback(
+    (e: React.MouseEvent<HTMLDivElement>) => {
+      if (isControlledRef.current) {
+        void e;
+      } else {
+        controls.start('animate');
       }
-      return () => {
-        sequence.current += 1;
-        controls.stop();
-      };
-    }, [controls, reducedMotion]);
-    return (
-      <div
-        {...props}
-        className={cn(className)}
-        onMouseEnter={(event) => {
-          if (!ref) startAnimation();
-          onMouseEnter?.(event);
-        }}
-        onMouseLeave={(event) => {
-          if (!ref) stopAnimation();
-          onMouseLeave?.(event);
-        }}
-        onFocus={(event) => {
-          if (!ref) startAnimation();
-          onFocus?.(event);
-        }}
-        onBlur={(event) => {
-          if (!ref) stopAnimation();
-          onBlur?.(event);
-        }}
+    },
+    [controls]
+  );
+  const handleMouseLeave = useCallback(
+    (e: React.MouseEvent<HTMLDivElement>) => {
+      if (isControlledRef.current) {
+        void e;
+      } else {
+        controls.start('normal');
+      }
+    },
+    [controls]
+  );
+  return (
+    <div
+      className={cn(className)}
+      {...props}
+      ref={iconRootRef}
+      onMouseEnter={(event) => {
+        if (!iconAccessibility.controlled && !iconAccessibility.reduced) {
+          handleMouseEnter(event);
+        }
+        onMouseEnter?.(event);
+      }}
+      onMouseLeave={(event) => {
+        if (!iconAccessibility.controlled) {
+          handleMouseLeave(event);
+        }
+        onMouseLeave?.(event);
+      }}
+      onFocus={(event) => {
+        if (!iconAccessibility.controlled && !iconAccessibility.reduced) {
+          iconAccessibility.startAnimation();
+        }
+        props.onFocus?.(event);
+      }}
+      onBlur={(event) => {
+        if (!iconAccessibility.controlled) {
+          iconAccessibility.stopAnimation();
+        }
+        props.onBlur?.(event);
+      }}
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        fill="none"
+        aria-hidden="true"
+        focusable="false"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width={size}
-          height={size}
-          viewBox="0 0 24 24"
-          fill="none"
-          overflow="visible"
-          aria-hidden="true"
-          focusable="false"
-        >
-          <motion.g
-            initial="normal"
-            animate={controls}
-            variants={ICON_VARIANTS}
-            style={{ transformOrigin: '12px 12px' }}
-          >
-            <motion.path
-              d="M20.5 2.5L14.5 8.5M14.5 2.5L20.5 8.5"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="1.5"
-              variants={DETAIL_0_VARIANTS}
-              style={{ transformOrigin: '17.5px 5.5px' }}
-            />
-            <path
-              d="M19 11.5V17.9808C19 20.2867 19 21.4396 18.2272 21.8523C16.7305 22.6514 13.9232 19.9852 12.59 19.1824C11.8168 18.7168 11.4302 18.484 11 18.484C10.5698 18.484 10.1832 18.7168 9.41 19.1824C8.0768 19.9852 5.26947 22.6514 3.77285 21.8523C3 21.4396 3 20.2867 3 17.9808V9.70753C3 6.07416 3 4.25748 4.17157 3.12874C5.34315 2 7.22876 2 11 2"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="1.5"
-            />
-          </motion.g>
-        </svg>
-      </div>
-    );
-  }
-);
+        <motion.path
+          d="M19 11.5V17.9808C19 20.2867 19 21.4396 18.2272 21.8523C16.7305 22.6514 13.9232 19.9852 12.59 19.1824C11.8168 18.7168 11.4302 18.484 11 18.484C10.5698 18.484 10.1832 18.7168 9.41 19.1824C8.0768 19.9852 5.26947 22.6514 3.77285 21.8523C3 21.4396 3 20.2867 3 17.9808V9.70753C3 6.07416 3 4.25748 4.17157 3.12874C5.34315 2 7.22876 2 11 2"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="1.5"
+          animate={reduceDefinition(controls)}
+          style={{ originX: 0.5, originY: 0.5 }}
+          variants={BOOKMARK_VARIANTS}
+        />
+
+        <motion.path
+          d="M 20.5 2.5 L 14.5 8.5"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="1.5"
+          animate={reduceDefinition(controls)}
+          custom={0}
+          initial="normal"
+          pathLength="1"
+          strokeDasharray="1 1"
+          variants={X_LINE_VARIANTS}
+        />
+
+        <motion.path
+          d="M 14.5 2.5 L 20.5 8.5"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="1.5"
+          animate={reduceDefinition(controls)}
+          custom={1}
+          initial="normal"
+          pathLength="1"
+          strokeDasharray="1 1"
+          variants={X_LINE_VARIANTS}
+        />
+      </svg>
+    </div>
+  );
+});
 HugeiconsBookmarkXIcon.displayName = 'HugeiconsBookmarkXIcon';
 export { HugeiconsBookmarkXIcon };
+
+type IconAccessibilityHandle = {
+  startAnimation: () => unknown;
+  stopAnimation: () => unknown;
+};
+
+type IconAccessibilitySnapshot = {
+  visual: VisualElement;
+  values: ResolvedValues;
+  attributes: Record<string, string>;
+};
+
+function useIconAccessibility(
+  ref: ForwardedRef<IconAccessibilityHandle>,
+  createHandle: () => IconAccessibilityHandle,
+  controllers: LegacyAnimationControls[]
+) {
+  const rawHandle = createHandle();
+  const raw = useRef(rawHandle);
+  useEffect(() => {
+    raw.current = rawHandle;
+  }, [rawHandle]);
+  const controls = useRef(controllers);
+  const rootRef = useRef<HTMLDivElement | null>(null);
+  const preference = useRef(false);
+  const mounted = useRef(true);
+  const [reduced, setReduced] = useState(false);
+  const api = useMemo(
+    () => ({
+      startAnimation() {
+        if (
+          mounted.current &&
+          !preference.current &&
+          !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        ) {
+          void raw.current.startAnimation();
+        }
+      },
+      stopAnimation() {
+        if (mounted.current) void raw.current.stopAnimation();
+      },
+    }),
+    []
+  );
+  useImperativeHandle(ref, () => api, [api]);
+
+  useEffect(() => {
+    mounted.current = true;
+    const media = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const snapshots: IconAccessibilitySnapshot[] = [];
+    rootRef.current
+      ?.querySelectorAll<SVGElement>('svg, svg *')
+      .forEach((element) => {
+        const visual = visualElementStore.get(element);
+        if (visual)
+          snapshots.push({
+            visual,
+            values: { ...visual.latestValues },
+            attributes: Object.fromEntries(
+              [...element.attributes].map((attribute) => [
+                attribute.name,
+                attribute.value,
+              ])
+            ),
+          });
+      });
+    const restore = () => {
+      for (const snapshot of snapshots) {
+        const { visual, values, attributes } = snapshot;
+        visual.values.forEach((value) => value.stop());
+        const props = visual.getProps() as unknown as {
+          [key: string]: unknown;
+          style?: Record<string, unknown>;
+        };
+        const reset: Record<string, string | number> = {};
+        visual.values.forEach((_motionValue, key) => {
+          const attribute = key.replace(
+            /[A-Z]/g,
+            (letter) => '-' + letter.toLowerCase()
+          );
+          const defaults: Record<string, number> = {
+            opacity: 1,
+            pathLength: 1,
+            pathSpacing: 1,
+            pathOffset: 0,
+            strokeDashoffset: 0,
+          };
+          const value =
+            values[key] ??
+            props.style?.[key] ??
+            props[key] ??
+            getDefaultValueType(key)?.default ??
+            defaults[key] ??
+            attributes[attribute];
+          if (typeof value === 'number' || typeof value === 'string')
+            reset[key] = value;
+        });
+        setTarget(visual, reset);
+        visual.render();
+      }
+    };
+    const activeControls = controls.current;
+    const originals = activeControls.map((control) => {
+      const original = control.start;
+      control.start = (definition, transition) => {
+        if (!mounted.current) return new Promise<never>(() => {});
+        if (preference.current) {
+          control.set(definition);
+          return Promise.resolve();
+        }
+        return original(definition, transition);
+      };
+      return original;
+    });
+    const change = () => {
+      preference.current = media.matches;
+      setReduced(media.matches);
+      if (media.matches) {
+        void raw.current.stopAnimation();
+        activeControls.forEach((control) => control.stop());
+        restore();
+      }
+    };
+    change();
+    media.addEventListener('change', change);
+    return () => {
+      mounted.current = false;
+      media.removeEventListener('change', change);
+      activeControls.forEach((control, index) => {
+        control.stop();
+        control.start = originals[index];
+      });
+    };
+  }, []);
+
+  return {
+    ...api,
+    rootRef,
+    controlled: ref != null,
+    reduced,
+    reduceDefinition<T>(definition: T): T {
+      if (
+        reduced &&
+        definition &&
+        typeof definition === 'object' &&
+        !Array.isArray(definition) &&
+        !('start' in definition)
+      ) {
+        return {
+          ...definition,
+          transition: { type: false, duration: 0, delay: 0, repeat: 0 },
+        } as T;
+      }
+      return definition;
+    },
+  };
+}
