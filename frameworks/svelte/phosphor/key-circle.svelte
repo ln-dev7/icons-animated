@@ -3,8 +3,10 @@
 /**
  * @license
  * MIT License
+ * Choreography copyright (c) 2024-2026 pqoqubbw
+ * Reference: key-circle @ 072c38b1b04ea738d90a084485ccaad4b890ddca
  *
- * Copyright (c) 2025 Hugeicons
+ * Copyright (c) 2023 Phosphor Icons
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -31,55 +33,32 @@ let root;
 const instanceId = $props.id();
 function createIconProgram(api) {
   const { Fragment, cn, forwardRef, getDefaultValueType, iconNode, motion, setTarget, useAnimation, useCallback, useEffect, useImperativeHandle, useMemo, useRef, useState, visualElementStore } = api;
-const HugeiconsKeyRoundIcon = forwardRef(({ onMouseEnter, onMouseLeave, onFocus, onBlur, className, size = 28, ...props }, ref) => {
+const PhosphorKeyCircleIcon = forwardRef(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
     const controls = useAnimation();
-    const motionPreference = useRef(false);
-    const startAnimation = useCallback(() => {
-        if (!motionPreference.current)
-            return controls.start('animate');
-    }, [controls]);
-    const stopAnimation = useCallback(() => {
-        if (motionPreference.current) {
-            controls.stop();
-            controls.set('normal');
-            return;
-        }
-        return controls.start('normal');
-    }, [controls]);
-    useEffect(() => {
-        const media = window.matchMedia('(prefers-reduced-motion: reduce)');
-        const updatePreference = () => {
-            motionPreference.current = media.matches;
-            if (media.matches) {
-                controls.stop();
-                controls.set('normal');
-            }
-        };
-        updatePreference();
-        media.addEventListener('change', updatePreference);
-        return () => {
-            media.removeEventListener('change', updatePreference);
-            controls.stop();
-        };
-    }, [controls]);
     const isControlledRef = useRef(false);
     const { rootRef: iconRootRef, reduceDefinition, ...iconAccessibility } = useIconAccessibility(ref, () => {
         isControlledRef.current = ref != null;
         return {
-            startAnimation: () => startAnimation(),
-            stopAnimation: () => stopAnimation(),
+            startAnimation: () => controls.start('animate'),
+            stopAnimation: () => controls.start('normal'),
         };
     }, [controls]);
     const handleMouseEnter = useCallback((e) => {
-        if (!isControlledRef.current)
-            startAnimation();
-        void e;
-    }, [startAnimation]);
+        if (isControlledRef.current) {
+            void e;
+        }
+        else {
+            controls.start('animate');
+        }
+    }, [controls]);
     const handleMouseLeave = useCallback((e) => {
-        if (!isControlledRef.current)
-            stopAnimation();
-        void e;
-    }, [stopAnimation]);
+        if (isControlledRef.current) {
+            void e;
+        }
+        else {
+            controls.start('normal');
+        }
+    }, [controls]);
     return (iconNode("div", { className: cn(className), ...props, ref: iconRootRef, onMouseEnter: (event) => {
             if (!iconAccessibility.controlled && !iconAccessibility.reduced) {
                 handleMouseEnter(event);
@@ -92,24 +71,16 @@ const HugeiconsKeyRoundIcon = forwardRef(({ onMouseEnter, onMouseLeave, onFocus,
             onMouseLeave?.(event);
         }, onFocus: (event) => {
             if (!iconAccessibility.controlled && !iconAccessibility.reduced) {
-                ((event) => {
-                    if (!isControlledRef.current)
-                        startAnimation();
-                    void event;
-                })(event);
+                iconAccessibility.startAnimation();
             }
-            onFocus?.(event);
+            props.onFocus?.(event);
         }, onBlur: (event) => {
             if (!iconAccessibility.controlled) {
-                ((event) => {
-                    if (!isControlledRef.current)
-                        stopAnimation();
-                    void event;
-                })(event);
+                iconAccessibility.stopAnimation();
             }
-            onBlur?.(event);
+            props.onBlur?.(event);
         } },
-        iconNode(motion.svg, { xmlns: "http://www.w3.org/2000/svg", width: size, height: size, viewBox: "0 0 24 24", fill: "none", "aria-hidden": "true", focusable: "false", animate: reduceDefinition(controls), transition: {
+        iconNode(motion.svg, { xmlns: "http://www.w3.org/2000/svg", width: size, height: size, viewBox: "0 0 24 24", fill: "currentColor", "aria-hidden": "true", focusable: "false", animate: reduceDefinition(controls), transition: {
                 duration: 0.9,
                 bounce: 0.5,
             }, variants: {
@@ -119,10 +90,12 @@ const HugeiconsKeyRoundIcon = forwardRef(({ onMouseEnter, onMouseLeave, onFocus,
                     rotate: [0, 3, -3, 0],
                 },
             } },
-            iconNode("path", { d: "M15 15.5C18.5899 15.5 21.5 12.5899 21.5 9C21.5 5.41015 18.5899 2.5 15 2.5C11.4101 2.5 8.5 5.41015 8.5 9C8.5 9.41773 8.5394 9.82625 8.6147 10.2221C8.75737 10.972 8.82871 11.347 8.75558 11.5844C8.68245 11.8217 8.47202 12.032 8.05118 12.4526L3.67253 16.8283C3.094 17.4064 2.80474 17.6955 2.65237 18.0631C2.5 18.4308 2.5 18.8398 2.5 19.6576V21.5H6V19.5H8V17.5H10L11.5526 15.9485C11.9729 15.5286 12.183 15.3186 12.4201 15.2456C12.6572 15.1726 13.0316 15.2436 13.7806 15.3858C14.1756 15.4608 14.5832 15.5 15 15.5Z", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5" }),
-            iconNode("path", { d: "M18 7.5C18 8.32843 17.3284 9 16.5 9C15.6716 9 15 8.32843 15 7.5C15 6.67157 15.6716 6 16.5 6C17.3284 6 18 6.67157 18 7.5Z", stroke: "currentColor", strokeWidth: "1.5" }))));
+            iconNode("g", { transform: "scale(0.09375)" },
+                iconNode("path", { d: "M 216.57 39.43 A 80 80 0 0 0 83.91 120.78 L 28.69 176 A 15.86 15.86 0 0 0 24 187.31 V 216 a 16 16 0 0 0 16 16 H 72 a 8 8 0 0 0 8 -8 V 208 H 96 a 8 8 0 0 0 8 -8 V 184 h 16 a 8 8 0 0 0 5.66 -2.34 l 9.56 -9.57 A 79.73 79.73 0 0 0 160 176 h 0.1 A 80 80 0 0 0 216.57 39.43 Z M 224 98.1 c -1.09 34.09 -29.75 61.86 -63.89 61.9 H 160 a 63.7 63.7 0 0 1 -23.65 -4.51 a 8 8 0 0 0 -8.84 1.68 L 116.69 168 H 96 a 8 8 0 0 0 -8 8 v 16 H 72 a 8 8 0 0 0 -8 8 v 16 H 40 V 187.31 l 58.83 -58.82 a 8 8 0 0 0 1.68 -8.84 A 63.72 63.72 0 0 1 96 95.92 c 0 -34.14 27.81 -62.8 61.9 -63.89 A 64 64 0 0 1 224 98.1 Z", fill: "currentColor" })),
+            iconNode("g", { transform: "scale(0.09375)" },
+                iconNode("path", { d: "M 192 76 a 12 12 0 1 1 -12 -12 A 12 12 0 0 1 192 76 Z", fill: "currentColor" })))));
 });
-HugeiconsKeyRoundIcon.displayName = 'HugeiconsKeyRoundIcon';
+PhosphorKeyCircleIcon.displayName = 'PhosphorKeyCircleIcon';
 function useIconAccessibility(ref, createHandle, controllers) {
     const rawHandle = createHandle();
     const raw = useRef(rawHandle);
@@ -249,7 +222,7 @@ function useIconAccessibility(ref, createHandle, controllers) {
     };
 }
 
-  return HugeiconsKeyRoundIcon;
+  return PhosphorKeyCircleIcon;
 }
 
 function mountIconProgram(createProgram, container, getSize, isControlled, instanceId) {
@@ -556,8 +529,12 @@ onMount(() => {
 </script>
 
 <div  bind:this={root} {...rest} class={["", rest.class].filter(Boolean).join(' ')}>
-  <svg data-icon-node="0" xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
-    <path data-icon-node="0.0" d="M15 15.5C18.5899 15.5 21.5 12.5899 21.5 9C21.5 5.41015 18.5899 2.5 15 2.5C11.4101 2.5 8.5 5.41015 8.5 9C8.5 9.41773 8.5394 9.82625 8.6147 10.2221C8.75737 10.972 8.82871 11.347 8.75558 11.5844C8.68245 11.8217 8.47202 12.032 8.05118 12.4526L3.67253 16.8283C3.094 17.4064 2.80474 17.6955 2.65237 18.0631C2.5 18.4308 2.5 18.8398 2.5 19.6576V21.5H6V19.5H8V17.5H10L11.5526 15.9485C11.9729 15.5286 12.183 15.3186 12.4201 15.2456C12.6572 15.1726 13.0316 15.2436 13.7806 15.3858C14.1756 15.4608 14.5832 15.5 15 15.5Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-    <path data-icon-node="0.1" d="M18 7.5C18 8.32843 17.3284 9 16.5 9C15.6716 9 15 8.32843 15 7.5C15 6.67157 15.6716 6 16.5 6C17.3284 6 18 6.67157 18 7.5Z" stroke="currentColor" stroke-width="1.5" />
+  <svg data-icon-node="0" xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    <g data-icon-node="0.0" transform="scale(0.09375)">
+      <path data-icon-node="0.0.0" d="M 216.57 39.43 A 80 80 0 0 0 83.91 120.78 L 28.69 176 A 15.86 15.86 0 0 0 24 187.31 V 216 a 16 16 0 0 0 16 16 H 72 a 8 8 0 0 0 8 -8 V 208 H 96 a 8 8 0 0 0 8 -8 V 184 h 16 a 8 8 0 0 0 5.66 -2.34 l 9.56 -9.57 A 79.73 79.73 0 0 0 160 176 h 0.1 A 80 80 0 0 0 216.57 39.43 Z M 224 98.1 c -1.09 34.09 -29.75 61.86 -63.89 61.9 H 160 a 63.7 63.7 0 0 1 -23.65 -4.51 a 8 8 0 0 0 -8.84 1.68 L 116.69 168 H 96 a 8 8 0 0 0 -8 8 v 16 H 72 a 8 8 0 0 0 -8 8 v 16 H 40 V 187.31 l 58.83 -58.82 a 8 8 0 0 0 1.68 -8.84 A 63.72 63.72 0 0 1 96 95.92 c 0 -34.14 27.81 -62.8 61.9 -63.89 A 64 64 0 0 1 224 98.1 Z" fill="currentColor" />
+    </g>
+    <g data-icon-node="0.1" transform="scale(0.09375)">
+      <path data-icon-node="0.1.0" d="M 192 76 a 12 12 0 1 1 -12 -12 A 12 12 0 0 1 192 76 Z" fill="currentColor" />
+    </g>
   </svg>
 </div>
