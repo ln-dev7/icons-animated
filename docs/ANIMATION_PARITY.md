@@ -2,7 +2,7 @@
 
 The animation reference is the 467-icon [Lucide Animated](https://lucide-animated.com/) catalog, verified against [pqoqubbw/icons revision 072c38b1](https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca). All 467 published registry sources matched that snapshot. Its MIT notice is centralized in [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md). Include that file and [LICENSE](../LICENSE) when redistributing the components.
 
-Native Hugeicons, Tabler and Phosphor geometry takes priority when the designs differ. The integration transfers the reference animation program: controllers, keyframes, durations, delays, easing, spring parameters, sequences, repeats, state changes and start/stop behavior. Paths are assigned by their meaning (hand, wheel, knob, flap, etc.). Compound native paths are partitioned where necessary so those parts can move independently.
+Native Hugeicons, Tabler, Phosphor and Heroicons geometry takes priority when the designs differ. The integration transfers the reference animation program: controllers, keyframes, durations, delays, easing, spring parameters, sequences, repeats, state changes and start/stop behavior. Paths are assigned by their meaning (hand, wheel, knob, flap, etc.). Compound native paths are partitioned where necessary so those parts can move independently.
 
 ## Scope
 
@@ -11,8 +11,11 @@ Native Hugeicons, Tabler and Phosphor geometry takes priority when the designs d
 | Hugeicons |                     467 |                467 |           479 |
 | Tabler    |                     375 |                372 |           382 |
 | Phosphor  |                     316 |                316 |           326 |
+| Heroicons |                     131 |                131 |           131 |
 
 Several Tabler reference names have the same program and share a component. Different programs receive separate variants, such as `git-compare-arrows` and `users-round`. The 32 existing icons without a direct reference remain available; they are not counted as reference transfers. Missing native counterparts are listed in [catalog coverage](CATALOG_COVERAGE.md).
+
+Heroicons components start from the project's own component for the same reference (Tabler, or Hugeicons for three icons), which already carries the adapted reference program. Each native Heroicons contour joins the source part it overlaps best; the program (controllers, variants, timings, lifecycle, accessibility handling) is kept and only the geometry changes. Animated stroke widths are scaled to the 1.5 native stroke. A transform shared by several native contours runs on one group so they keep their relative placement. Contours with no source counterpart stay static, such as the `command-line` frame. Fifteen icons were adapted by hand: programs that morph coordinates (the four arrows, the `smile` and `frown` mouths, `trash`, `archive-box`, the `battery-0` charge fill, the slider knobs), sources that build parts in expressions (`speaker-wave`, `truck`, `calendar-days`), the `ticket` tear, which cuts the native outline at its perforation, and `paper-airplane`, whose native plane faces right instead of up-right. Each ledger entry names its `programmeSource`.
 
 The [per-component ledger](animation-parity.json) records source paths, reference names, native part mappings, limitations and source hashes. It describes fidelity to an animation program, not pixel identity between different icon designs.
 
