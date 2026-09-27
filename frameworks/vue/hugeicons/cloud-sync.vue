@@ -1,7 +1,10 @@
 <script setup lang="ts">
+// @ts-nocheck
 /**
  * @license
  * MIT License
+ * Choreography copyright (c) 2024-2026 pqoqubbw
+ * Reference: https://github.com/pqoqubbw/icons/tree/072c38b1b04ea738d90a084485ccaad4b890ddca
  *
  * Copyright (c) 2025 Hugeicons
  *
@@ -23,206 +26,517 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-import { animate } from 'motion';
-import type { AnimationOptions, AnimationPlaybackControlsWithThen, DOMKeyframesDefinition } from 'motion';
-import { onMounted, onBeforeUnmount, shallowRef } from 'vue';
-
-const props = withDefaults(defineProps<{ size?: number; controlled?: boolean }>(), {
-  size: 28,
-  controlled: false,
-});
-const root = shallowRef<HTMLDivElement>();
-
-type State = 'normal' | 'animate';
-type Part = {
-  normal: DOMKeyframesDefinition & { transition?: AnimationOptions };
-  animate: DOMKeyframesDefinition & { transition?: AnimationOptions };
-  transition: AnimationOptions;
+import { SVGVisualElement, animateVisualElement, setTarget, scrapeSVGMotionValuesFromProps, resolveMotionValue, resolveVariantFromProps, isControllingVariants, isVariantNode, getDefaultValueType, visualElementStore, camelCaseAttributes, cubicBezier, easeInOut, easeOut, easeIn } from 'motion';
+import { onMounted, onBeforeUnmount, shallowRef, useId, watch } from 'vue';
+const props = defineProps({ size: { type: Number, default: 28 }, controlled: { type: Boolean, default: false } });
+const root = shallowRef();
+const instanceId = useId();
+function createIconProgram(api) {
+  const { Fragment, cn, forwardRef, getDefaultValueType, iconNode, motion, setTarget, useAnimation, useCallback, useEffect, useImperativeHandle, useMemo, useRef, useState, visualElementStore } = api;
+const SYNC_VARIANTS = {
+    normal: { rotate: 0 },
+    animate: {
+        rotate: -360,
+    },
 };
+const SYNC_TRANSITION = {
+    duration: 1.2,
+    ease: 'easeInOut',
+};
+const HugeiconsCloudSyncIcon = forwardRef(({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
+    const controls = useAnimation();
+    const isControlledRef = useRef(false);
+    const { rootRef: iconRootRef, reduceDefinition, ...iconAccessibility } = useIconAccessibility(ref, () => {
+        isControlledRef.current = ref != null;
+        return {
+            startAnimation: () => controls.start('animate'),
+            stopAnimation: () => controls.start('normal'),
+        };
+    }, [controls]);
+    const handleMouseEnter = useCallback((e) => {
+        if (isControlledRef.current) {
+            void e;
+        }
+        else {
+            controls.start('animate');
+        }
+    }, [controls]);
+    const handleMouseLeave = useCallback((e) => {
+        if (isControlledRef.current) {
+            void e;
+        }
+        else {
+            controls.start('normal');
+        }
+    }, [controls]);
+    return (iconNode("div", { className: cn(className), ...props, ref: iconRootRef, onMouseEnter: (event) => {
+            if (!iconAccessibility.controlled && !iconAccessibility.reduced) {
+                handleMouseEnter(event);
+            }
+            onMouseEnter?.(event);
+        }, onMouseLeave: (event) => {
+            if (!iconAccessibility.controlled) {
+                handleMouseLeave(event);
+            }
+            onMouseLeave?.(event);
+        }, onFocus: (event) => {
+            if (!iconAccessibility.controlled && !iconAccessibility.reduced) {
+                iconAccessibility.startAnimation();
+            }
+            props.onFocus?.(event);
+        }, onBlur: (event) => {
+            if (!iconAccessibility.controlled) {
+                iconAccessibility.stopAnimation();
+            }
+            props.onBlur?.(event);
+        } },
+        iconNode("svg", { xmlns: "http://www.w3.org/2000/svg", width: size, height: size, viewBox: "0 0 24 24", fill: "none", "aria-hidden": "true", focusable: "false" },
+            iconNode("path", { d: "M17.4776 9.00005C17.485 9.00002 17.4925 9 17.5 9C19.9853 9 22 11.0147 22 13.5C22 15.0602 21.206 16.435 20 17.2422M17.4776 9.00005C17.4924 8.83536 17.5 8.66856 17.5 8.5C17.5 5.46243 15.0376 3 12 3C9.12324 3 6.76233 5.20862 6.52042 8.0227M17.4776 9.00005C17.4466 9.34345 17.3841 9.67773 17.293 10M6.52042 8.0227C3.98398 8.26407 2 10.4003 2 13C2 14.7891 2.93963 16.3587 4.35232 17.2422M6.52042 8.0227C6.67826 8.00768 6.83823 8 7 8C7.7111 8 8.38754 8.14845 9 8.41604", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5" }),
+            iconNode(motion.g, { animate: reduceDefinition(controls), initial: "normal", transition: SYNC_TRANSITION, variants: SYNC_VARIANTS },
+                iconNode("path", { d: "M15.4643 14.5C14.7727 13.3044 13.48 12.5 11.9994 12.5C10.472 12.5 9.14453 13.3561 8.4707 14.6147M8.53456 18.5C9.22618 19.6956 10.5189 20.5 11.9994 20.5C13.5221 20.5 14.8461 19.6492 15.5219 18.397", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5" }),
+                iconNode("path", { d: "M15.0925 20.8875C15.0304 21.297 15.312 21.6794 15.7215 21.7415C16.1311 21.8037 16.5134 21.522 16.5756 21.1125L15.8341 21L15.0925 20.8875ZM12.8875 17.4245C12.4779 17.4866 12.1963 17.869 12.2585 18.2785C12.3206 18.688 12.703 18.9696 13.1125 18.9075L13 18.166L12.8875 17.4245ZM15.834 18.166L15.3037 18.6963C15.2027 18.5953 15.1971 18.5102 15.2133 18.5753C15.2236 18.6171 15.2357 18.6942 15.243 18.8126C15.2575 19.0472 15.2484 19.3517 15.2259 19.6703C15.2038 19.9839 15.1704 20.2893 15.1422 20.5179C15.1282 20.6317 15.1156 20.7253 15.1066 20.79C15.102 20.8223 15.0984 20.8473 15.096 20.864C15.0948 20.8723 15.0939 20.8785 15.0933 20.8824C15.093 20.8844 15.0928 20.8859 15.0927 20.8867C15.0926 20.8871 15.0926 20.8874 15.0925 20.8875C15.0925 20.8876 15.0925 20.8876 15.0925 20.8876C15.0925 20.8876 15.0925 20.8876 15.0925 20.8876C15.0925 20.8875 15.0925 20.8875 15.8341 21C16.5756 21.1125 16.5756 21.1124 16.5756 21.1124C16.5756 21.1123 16.5756 21.1122 16.5756 21.1122C16.5756 21.112 16.5757 21.1118 16.5757 21.1116C16.5758 21.1111 16.5759 21.1105 16.576 21.1097C16.5762 21.1082 16.5765 21.1061 16.5769 21.1034C16.5777 21.098 16.5789 21.0904 16.5803 21.0806C16.5832 21.061 16.5872 21.0328 16.5922 20.9971C16.6021 20.9257 16.6158 20.8242 16.6309 20.7015C16.6611 20.4571 16.6977 20.124 16.7222 19.7758C16.7464 19.4325 16.7607 19.0519 16.7401 18.72C16.73 18.5553 16.7099 18.3788 16.6692 18.2146C16.6343 18.0737 16.5587 17.83 16.3644 17.6356L15.834 18.166ZM13 18.166C13.1125 18.9075 13.1125 18.9075 13.1124 18.9075C13.1124 18.9075 13.1124 18.9075 13.1124 18.9075C13.1124 18.9075 13.1124 18.9075 13.1125 18.9075C13.1126 18.9075 13.1129 18.9074 13.1133 18.9074C13.1142 18.9072 13.1156 18.907 13.1176 18.9067C13.1215 18.9061 13.1277 18.9052 13.1361 18.904C13.1527 18.9016 13.1777 18.898 13.21 18.8935C13.2747 18.8845 13.3683 18.8719 13.4821 18.8578C13.7107 18.8296 14.0161 18.7962 14.3298 18.7741C14.6483 18.7516 14.9528 18.7425 15.1874 18.757C15.3058 18.7643 15.3829 18.7764 15.4247 18.7867C15.4898 18.8029 15.4047 18.7973 15.3037 18.6963L15.834 18.166L16.3644 17.6356C16.17 17.4413 15.9263 17.3657 15.7854 17.3308C15.6212 17.2901 15.4447 17.27 15.28 17.2599C14.9481 17.2393 14.5675 17.2536 14.2242 17.2778C13.876 17.3024 13.5429 17.3389 13.2985 17.3691C13.1758 17.3842 13.0743 17.3979 13.0029 17.4078C12.9672 17.4128 12.939 17.4169 12.9194 17.4197C12.9096 17.4212 12.9019 17.4223 12.8966 17.4231C12.8939 17.4235 12.8918 17.4238 12.8903 17.424C12.8895 17.4242 12.8889 17.4242 12.8884 17.4243C12.8882 17.4244 12.888 17.4244 12.8878 17.4244C12.8878 17.4244 12.8877 17.4244 12.8876 17.4244C12.8875 17.4244 12.8875 17.4245 13 18.166Z", fill: "currentColor" }),
+                iconNode("path", { d: "M8.90745 12.1125C8.9696 11.703 8.68799 11.3206 8.27846 11.2585C7.86894 11.1963 7.48658 11.478 7.42443 11.8875L8.16594 12L8.90745 12.1125ZM11.1125 15.5755C11.5221 15.5134 11.8037 15.131 11.7415 14.7215C11.6794 14.312 11.297 14.0304 10.8875 14.0925L11 14.834L11.1125 15.5755ZM8.16597 14.834L8.6963 14.3037C8.79731 14.4047 8.80288 14.4898 8.78674 14.4247C8.77638 14.3829 8.76432 14.3058 8.757 14.1874C8.7425 13.9528 8.75161 13.6483 8.77407 13.3297C8.79618 13.0161 8.8296 12.7107 8.8578 12.4821C8.87183 12.3683 8.88443 12.2747 8.89345 12.21C8.89795 12.1777 8.90155 12.1527 8.90398 12.136C8.90519 12.1277 8.90611 12.1215 8.9067 12.1176C8.907 12.1156 8.90721 12.1141 8.90734 12.1133C8.9074 12.1129 8.90744 12.1126 8.90746 12.1125C8.90747 12.1124 8.90748 12.1124 8.90748 12.1124C8.90747 12.1124 8.90747 12.1124 8.90747 12.1124C8.90746 12.1125 8.90745 12.1125 8.16594 12C7.42443 11.8875 7.42442 11.8876 7.42441 11.8876C7.4244 11.8877 7.42439 11.8878 7.42438 11.8878C7.42435 11.888 7.42432 11.8882 7.42429 11.8884C7.42422 11.8889 7.42413 11.8895 7.42401 11.8903C7.42378 11.8918 7.42347 11.8939 7.42307 11.8966C7.42227 11.902 7.42113 11.9096 7.4197 11.9194C7.41684 11.939 7.41279 11.9672 7.40781 12.0029C7.39787 12.0743 7.38421 12.1758 7.36908 12.2985C7.33893 12.5429 7.30234 12.876 7.27778 13.2242C7.25358 13.5675 7.23935 13.9481 7.25986 14.28C7.27004 14.4447 7.29007 14.6212 7.33077 14.7854C7.36569 14.9263 7.44126 15.17 7.63563 15.3644L8.16597 14.834ZM11 14.834C10.8875 14.0925 10.8875 14.0925 10.8876 14.0925C10.8876 14.0925 10.8876 14.0925 10.8876 14.0925C10.8876 14.0925 10.8876 14.0925 10.8875 14.0925C10.8874 14.0925 10.8871 14.0926 10.8867 14.0926C10.8858 14.0928 10.8844 14.093 10.8824 14.0933C10.8785 14.0939 10.8723 14.0948 10.864 14.096C10.8473 14.0984 10.8223 14.102 10.79 14.1065C10.7253 14.1155 10.6317 14.1281 10.5179 14.1422C10.2893 14.1704 9.98385 14.2038 9.67024 14.2259C9.35171 14.2484 9.04716 14.2575 8.81258 14.243C8.69415 14.2357 8.61713 14.2236 8.57533 14.2133C8.5102 14.1971 8.59528 14.2027 8.6963 14.3037L8.16597 14.834L7.63563 15.3644C7.83 15.5587 8.07366 15.6343 8.21457 15.6692C8.37881 15.7099 8.55529 15.73 8.72005 15.7401C9.05186 15.7607 9.43248 15.7464 9.77578 15.7222C10.124 15.6976 10.4571 15.6611 10.7015 15.6309C10.8242 15.6158 10.9257 15.6021 10.9971 15.5922C11.0328 15.5872 11.061 15.5831 11.0806 15.5803C11.0904 15.5788 11.0981 15.5777 11.1034 15.5769C11.1061 15.5765 11.1082 15.5762 11.1097 15.576C11.1105 15.5758 11.1111 15.5758 11.1116 15.5757C11.1118 15.5756 11.112 15.5756 11.1122 15.5756C11.1123 15.5756 11.1123 15.5756 11.1124 15.5756C11.1125 15.5756 11.1125 15.5755 11 14.834Z", fill: "currentColor" })))));
+});
+HugeiconsCloudSyncIcon.displayName = 'HugeiconsCloudSyncIcon';
+function useIconAccessibility(ref, createHandle, controllers) {
+    const rawHandle = createHandle();
+    const raw = useRef(rawHandle);
+    useEffect(() => {
+        raw.current = rawHandle;
+    }, [rawHandle]);
+    const controls = useRef(controllers);
+    const rootRef = useRef(null);
+    const preference = useRef(false);
+    const mounted = useRef(true);
+    const [reduced, setReduced] = useState(false);
+    const api = useMemo(() => ({
+        startAnimation() {
+            if (mounted.current &&
+                !preference.current &&
+                !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                void raw.current.startAnimation();
+            }
+        },
+        stopAnimation() {
+            if (mounted.current)
+                void raw.current.stopAnimation();
+        },
+    }), []);
+    useImperativeHandle(ref, () => api, [api]);
+    useEffect(() => {
+        mounted.current = true;
+        const media = window.matchMedia('(prefers-reduced-motion: reduce)');
+        const snapshots = [];
+        rootRef.current
+            ?.querySelectorAll('svg, svg *')
+            .forEach((element) => {
+            const visual = visualElementStore.get(element);
+            if (visual)
+                snapshots.push({
+                    visual,
+                    values: { ...visual.latestValues },
+                    attributes: Object.fromEntries([...element.attributes].map((attribute) => [
+                        attribute.name,
+                        attribute.value,
+                    ])),
+                });
+        });
+        const restore = () => {
+            for (const snapshot of snapshots) {
+                const { visual, values, attributes } = snapshot;
+                visual.values.forEach((value) => value.stop());
+                const props = visual.getProps();
+                const reset = {};
+                visual.values.forEach((_motionValue, key) => {
+                    const attribute = key.replace(/[A-Z]/g, (letter) => '-' + letter.toLowerCase());
+                    const defaults = {
+                        opacity: 1,
+                        pathLength: 1,
+                        pathSpacing: 1,
+                        pathOffset: 0,
+                        strokeDashoffset: 0,
+                    };
+                    const value = values[key] ??
+                        props.style?.[key] ??
+                        props[key] ??
+                        getDefaultValueType(key)?.default ??
+                        defaults[key] ??
+                        attributes[attribute];
+                    if (typeof value === 'number' || typeof value === 'string')
+                        reset[key] = value;
+                });
+                setTarget(visual, reset);
+                visual.render();
+            }
+        };
+        const activeControls = controls.current;
+        const originals = activeControls.map((control) => {
+            const original = control.start;
+            control.start = (definition, transition) => {
+                if (!mounted.current)
+                    return new Promise(() => { });
+                if (preference.current) {
+                    control.set(definition);
+                    return Promise.resolve();
+                }
+                return original(definition, transition);
+            };
+            return original;
+        });
+        const change = () => {
+            preference.current = media.matches;
+            setReduced(media.matches);
+            if (media.matches) {
+                void raw.current.stopAnimation();
+                activeControls.forEach((control) => control.stop());
+                restore();
+            }
+        };
+        change();
+        media.addEventListener('change', change);
+        return () => {
+            mounted.current = false;
+            media.removeEventListener('change', change);
+            activeControls.forEach((control, index) => {
+                control.stop();
+                control.start = originals[index];
+            });
+        };
+    }, []);
+    return {
+        ...api,
+        rootRef,
+        controlled: ref != null,
+        reduced,
+        reduceDefinition(definition) {
+            if (reduced &&
+                definition &&
+                typeof definition === 'object' &&
+                !Array.isArray(definition) &&
+                !('start' in definition)) {
+                return {
+                    ...definition,
+                    transition: { type: false, duration: 0, delay: 0, repeat: 0 },
+                };
+            }
+            return definition;
+        },
+    };
+}
 
-const parts = [
-  {
-    "normal": {
-      "x": 0,
-      "y": 0,
-      "rotate": 0,
-      "scale": 1,
-      "scaleX": 1,
-      "scaleY": 1,
-      "opacity": 1,
-      "transition": {
-        "duration": 0.18,
-        "ease": "easeOut"
-      }
-    },
-    "animate": {
-      "transition": {
-        "duration": 1,
-        "ease": "easeInOut"
-      }
-    },
-    "transition": {}
-  },
-  {
-    "normal": {
-      "rotate": 0,
-      "transition": {
-        "duration": 0.18,
-        "ease": "easeOut"
-      }
-    },
-    "animate": {
-      "rotate": [
-        0,
-        180,
-        360
-      ],
-      "transition": {
-        "duration": 0.9,
-        "delay": 0,
-        "ease": "easeInOut"
-      }
-    },
-    "transition": {}
-  },
-  {
-    "normal": {
-      "rotate": 0,
-      "transition": {
-        "duration": 0.18,
-        "ease": "easeOut"
-      }
-    },
-    "animate": {
-      "rotate": [
-        0,
-        180,
-        360
-      ],
-      "transition": {
-        "duration": 0.9,
-        "delay": 0,
-        "ease": "easeInOut"
-      }
-    },
-    "transition": {}
-  },
-  {
-    "normal": {
-      "rotate": 0,
-      "transition": {
-        "duration": 0.18,
-        "ease": "easeOut"
-      }
-    },
-    "animate": {
-      "rotate": [
-        0,
-        180,
-        360
-      ],
-      "transition": {
-        "duration": 0.9,
-        "delay": 0,
-        "ease": "easeInOut"
-      }
-    },
-    "transition": {}
+  return HugeiconsCloudSyncIcon;
+}
+
+function mountIconProgram(createProgram, container, getSize, isControlled, instanceId) {
+  let alive = true;
+  let cursor = 0;
+  let idCounter = 0;
+  let handle;
+  let component;
+  let currentTree;
+  let rendering = false;
+  let queued = false;
+  const slots = [];
+  const effects = [];
+  const nodes = new Map();
+  const controllers = new Set();
+  const media = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const flat = values => values.flat(Infinity).filter(value => value !== null && value !== undefined && value !== false && value !== true);
+  const isController = value => Boolean(value && value.__controller);
+  const isLabel = value => typeof value === 'string' || Array.isArray(value);
+  const svgCaseAttributes = new Set([...camelCaseAttributes, ...["viewBox","preserveAspectRatio","pathLength","gradientUnits","gradientTransform","patternUnits","patternContentUnits","patternTransform","maskUnits","maskContentUnits","clipPathUnits","markerWidth","markerHeight","markerUnits","refX","refY","textLength","lengthAdjust","keyPoints","keyTimes","keySplines","baseFrequency","kernelMatrix","kernelUnitLength","numOctaves","stitchTiles","stdDeviation","filterRes","filterUnits","primitiveUnits","xChannelSelector","yChannelSelector","pointsAtX","pointsAtY","pointsAtZ","specularConstant","specularExponent","surfaceScale","limitingConeAngle","targetX","targetY","preserveAlpha","tableValues","startOffset","repeatCount","repeatDur","calcMode"]]);
+  const attributeName = name => svgCaseAttributes.has(name) ? name : name === 'className' ? 'class' : name.replace(/[A-Z]/g, letter => '-' + letter.toLowerCase());
+  const motionKeys = new Set(['initial','animate','exit','variants','transition','custom','inherit','key','ref','children']);
+  function sameDependencies(previous, next) {
+    return previous && next && previous.length === next.length && next.every((value,index) => Object.is(value,previous[index]));
   }
-] as unknown as Part[];
-let animations: AnimationPlaybackControlsWithThen[] = [];
-let sequence = 0;
-let media: MediaQueryList | undefined;
-let initialized = false;
-
-function cancelAnimations() {
-  animations.forEach((animation) => animation.stop());
-  animations = [];
-}
-
-function run(state: State, instant = false) {
-  const container = root.value;
-  if (!container) return [];
-  return parts.flatMap((part, index) => {
-    const element = container.querySelector<SVGElement>(`[data-icon-part="${index}"]`);
-    if (!element) return [];
-    const { transition, ...keyframes } = part[state];
-    if (!Object.keys(keyframes).length) return [];
-    const options: AnimationOptions = instant
-      ? { duration: 0, delay: 0, type: 'tween' }
-      : { ...part.transition, ...transition };
-    const animation = animate(element, keyframes, options);
-    if (instant) animation.complete();
-    return [animation];
-  });
-}
-
-function startAnimation() {
-  if (!media || media.matches) return;
-  const current = ++sequence;
-  cancelAnimations();
-  initialized = true;
-  run('normal', true);
-  animations = run('animate');
-  void Promise.all(animations).then(() => {
-    if (sequence === current) {
-      animations = [];
-      run('normal', true);
+  function dispatch(node, definition, override, instant = false) {
+    if (instant) {
+      const set = (visual, value) => {
+        if (Array.isArray(value)) return [...value].reverse().forEach(label => set(visual,label));
+        setTarget(visual,value);
+        if (typeof value === 'string') visual.variantChildren?.forEach(child => set(child,value));
+        visual.render();
+      };
+      set(node.visual,definition);
+      return Promise.resolve();
     }
-  });
-}
-
-function stopAnimation() {
-  sequence += 1;
-  cancelAnimations();
-  if (!initialized) return;
-  animations = run('normal', Boolean(media?.matches));
-}
-
-function mountAnimation() {
-  const container = root.value;
-  if (!container) return () => {};
-  media = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const start = () => { if (!props.controlled) startAnimation(); };
-  const stop = () => { if (!props.controlled) stopAnimation(); };
-  const preferenceChanged = () => {
-    if (media?.matches) stopAnimation();
-  };
-  container.addEventListener('mouseenter', start);
-  container.addEventListener('mouseleave', stop);
-  container.addEventListener('focusin', start);
-  container.addEventListener('focusout', stop);
-  media.addEventListener('change', preferenceChanged);
-  if (!media.matches) {
-    initialized = true;
-    run('normal', true);
+    return animateVisualElement(node.visual,definition,{transitionOverride:override});
   }
-  return () => {
-    sequence += 1;
-    cancelAnimations();
-    container.removeEventListener('mouseenter', start);
-    container.removeEventListener('mouseleave', stop);
-    container.removeEventListener('focusin', start);
-    container.removeEventListener('focusout', stop);
-    media?.removeEventListener('change', preferenceChanged);
-    media = undefined;
+  function stopNode(node) { node.visual?.values.forEach(value => value.stop()); }
+  function createController() {
+    const subscribers = new Set();
+    const control = {
+      __controller:true, subscribers,
+      start(definition,transitionOverride) {
+        if (!alive || media.matches) return Promise.resolve();
+        return Promise.all([...subscribers].map(node => dispatch(node,definition,transitionOverride)));
+      },
+      set(definition) {
+        if (!alive) return;
+        subscribers.forEach(node => { void dispatch(node,definition,undefined,true); });
+      },
+      stop() { subscribers.forEach(stopNode); },
+    };
+    controllers.add(control);
+    return control;
+  }
+  function stored(initialize) {
+    const index=cursor++;
+    return slots[index] ?? (slots[index]=initialize());
+  }
+  function rerender() {
+    if (!alive || queued) return;
+    queued=true;
+    const channel=new MessageChannel();
+    channel.port1.onmessage=() => {channel.port1.close();channel.port2.close();queued=false;if(alive)draw();};
+    channel.port2.postMessage(null);
+  }
+  const api = {
+    iconNode:(tag,props,...children) => ({tag,props:props || {},children:flat(children)}),
+    motion:new Proxy({}, {get:(_,key) => 'motion.' + String(key)}),
+    Fragment:'fragment', AnimatePresence:'presence',
+    forwardRef:callback => callback,
+    useAnimation:() => stored(createController),
+    useAnimationControls:() => stored(createController),
+    useId:() => stored(() => instanceId + '-' + idCounter++),
+    useRef:value => stored(() => ({current:value})),
+    useState(initial) {
+      const slot=stored(() => ({value:typeof initial === 'function' ? initial() : initial}));
+      return [slot.value,value => {const next=typeof value === 'function' ? value(slot.value) : value;if(!Object.is(next,slot.value)){slot.value=next;rerender();}}];
+    },
+    useCallback(callback,dependencies) {
+      const slot=stored(() => ({callback,dependencies}));
+      if(!sameDependencies(slot.dependencies,dependencies)){slot.callback=callback;slot.dependencies=dependencies;}
+      return slot.callback;
+    },
+    useMemo(callback,dependencies) {
+      const slot=stored(() => ({value:callback(),dependencies}));
+      if(!sameDependencies(slot.dependencies,dependencies)){slot.value=callback();slot.dependencies=dependencies;}
+      return slot.value;
+    },
+    useEffect(callback,dependencies) {
+      const slot=stored(() => ({dependencies:undefined,cleanup:undefined}));
+      if(!sameDependencies(slot.dependencies,dependencies)){
+        slot.dependencies=dependencies;
+        effects.push(() => {slot.cleanup?.();slot.cleanup=callback();});
+      }
+    },
+    useImperativeHandle(_ref,callback) { handle=callback(); },
+    useReducedMotion:() => media.matches,
+    cn:(...values) => values.filter(Boolean).join(' '),
+    cubicBezier, easeInOut, easeOut, easeIn, getDefaultValueType, setTarget, visualElementStore,
   };
+  api.useLayoutEffect=api.useEffect;
+  function applyAttributes(element, props, previous = {}) {
+    for (const [name,value] of Object.entries(props)) {
+      if (motionKeys.has(name) || name.startsWith('on') || value === undefined || value === null || typeof value === 'function') continue;
+      if (Object.is(value,previous[name])) continue;
+      if (name === 'style') {
+        for (const [key,item] of Object.entries(value)) {
+          if (['originX','originY'].includes(key)) continue;
+          if (Object.is(item,previous.style?.[key])) continue;
+          element.style[key]=item;
+        }
+      } else element.setAttribute(attributeName(name),String(value));
+    }
+  }
+  function motionNode(descriptor, element, id, parentVariant, inheritedInitial) {
+    const props=descriptor.props;
+    const controller=isController(props.animate) ? props.animate : undefined;
+    const controlling=isControllingVariants(props);
+    const variantNode=isVariantNode(props);
+    let initial=props.initial;
+    if(initial === undefined && variantNode && !controlling && props.inherit !== false) initial=inheritedInitial;
+    const blockInitial=initial === false || inheritedInitial === false;
+    const latestValues={};
+    const scraped=scrapeSVGMotionValuesFromProps(props,{});
+    for(const key in scraped) latestValues[key]=resolveMotionValue(scraped[key]);
+    const initialTarget=blockInitial ? props.animate : initial;
+    if(initialTarget && typeof initialTarget !== 'boolean' && !isController(initialTarget)) {
+      const definitions=Array.isArray(initialTarget) ? initialTarget : [initialTarget];
+      for(const definition of definitions) {
+        const resolved=resolveVariantFromProps(props,definition);
+        if(!resolved) continue;
+        const {transition,transitionEnd,...target}=resolved;
+        for(const key in target) {
+          const raw=target[key];
+          const value=Array.isArray(raw) ? raw[blockInitial ? raw.length-1 : 0] : raw;
+          if(value !== null) latestValues[key]=value;
+        }
+        Object.assign(latestValues,transitionEnd);
+      }
+    }
+    const visual=new SVGVisualElement({
+      parent:parentVariant?.visual,props,presenceContext:null,reducedMotionConfig:'never',
+      visualState:{latestValues,renderState:{style:{},transform:{},transformOrigin:{},vars:{},attrs:{}}},
+    });
+    visual.mount(element);
+    visual.render();
+    const node={id,tag:descriptor.tag,descriptor,element,props,visual,controller,rest:{...latestValues},attributes:Object.fromEntries([...element.attributes].map(attribute=>[attribute.name,attribute.value]))};
+    controller?.subscribers.add(node);
+    if(props.animate && !controller && !blockInitial && !media.matches) void dispatch(node,props.animate);
+    return {node,nextVariant:node,nextInitial:initial};
+  }
+  function removeTree(id) {
+    for(const [key,node] of nodes) if(key === id || key.startsWith(id + '.')) {
+      node.controller?.subscribers.delete(node);
+      stopNode(node);
+      node.visual?.unmount();
+      nodes.delete(key);
+    }
+  }
+  function mountTree(descriptor, parentElement, id, parentVariant, inheritedInitial, reuse=true) {
+    if(typeof descriptor === 'string' || typeof descriptor === 'number') {
+      if(!reuse) parentElement.appendChild(document.createTextNode(String(descriptor)));
+      return;
+    }
+    if(descriptor.tag === 'fragment' || descriptor.tag === 'presence') {
+      let element=reuse ? container.querySelector('[data-icon-node="'+id+'"]') : null;
+      if(!element){element=document.createElementNS('http://www.w3.org/2000/svg','g');element.setAttribute('data-icon-node',id);parentElement.appendChild(element);}
+      const node={id,tag:descriptor.tag,element,props:descriptor.props,presence:descriptor.tag === 'presence',descriptor,parentVariant,inheritedInitial,pending:false,version:0};
+      nodes.set(id,node);
+      descriptor.children.forEach((child,index) => mountTree(child,element,id + '.' + index,parentVariant,descriptor.props.initial === false ? false : inheritedInitial,reuse));
+      return;
+    }
+    const animated=descriptor.tag.startsWith('motion.');
+    const tag=descriptor.tag.replace(/^motion\./,'');
+    let element=reuse ? container.querySelector('[data-icon-node="'+id+'"]') : null;
+    if(!element){element=document.createElementNS('http://www.w3.org/2000/svg',tag);element.setAttribute('data-icon-node',id);parentElement.appendChild(element);}
+    applyAttributes(element,descriptor.props);
+    let nextVariant=parentVariant, nextInitial=inheritedInitial;
+    if(animated) {
+      const result=motionNode(descriptor,element,id,parentVariant,inheritedInitial);
+      nodes.set(id,result.node);nextVariant=result.nextVariant;nextInitial=result.nextInitial;
+    } else nodes.set(id,{id,tag:descriptor.tag,descriptor,element,props:descriptor.props});
+    descriptor.children.forEach((child,index) => mountTree(child,element,id + '.' + index,nextVariant,nextInitial,reuse));
+  }
+  function presenceKey(descriptor) { return descriptor.children.map((child,index) => child?.props?.key ?? index).join('|'); }
+  function reconcile(descriptor, id, parentElement, parentVariant, inheritedInitial) {
+    if(typeof descriptor !== 'object') return;
+    const node=nodes.get(id);
+    if(!node || node.tag !== descriptor.tag) {
+      const before=node?.element.nextSibling;
+      node?.element.remove();
+      removeTree(id);
+      mountTree(descriptor,parentElement,id,parentVariant,inheritedInitial,false);
+      if(before?.parentNode === parentElement) parentElement.insertBefore(nodes.get(id).element,before);
+      return;
+    }
+    if(descriptor.tag === 'presence') {
+      node.next=descriptor;
+      if(node.pending) {
+        if(presenceKey(descriptor) !== presenceKey(node.descriptor)) return;
+        node.pending=false;
+        node.version++;
+        for(const [key,child] of nodes) if(key.startsWith(id+'.') && child.visual && child.props.animate && !isController(child.props.animate)) void dispatch(child,child.props.animate);
+      }
+      if(presenceKey(descriptor) !== presenceKey(node.descriptor)) {
+        node.pending=true;
+        const version=++node.version;
+        const exits=[];
+        for(const [key,child] of nodes) if(!media.matches && key.startsWith(id+'.') && child.props?.exit) exits.push(dispatch(child,child.props.exit));
+        void Promise.all(exits).then(() => {
+          if(!alive || nodes.get(id) !== node || node.version !== version) return;
+          const next=node.next;
+          for(const childId of [...nodes.keys()]) if(childId.startsWith(id+'.')) removeTree(childId);
+          node.element.replaceChildren();node.descriptor=next;node.pending=false;
+          next.children.forEach((child,index) => mountTree(child,node.element,id+'.'+index,node.parentVariant,node.inheritedInitial,false));
+        });
+        return;
+      }
+    }
+    if(descriptor.tag !== 'fragment' && descriptor.tag !== 'presence') applyAttributes(node.element,descriptor.props,node.props);
+    node.props=descriptor.props;node.visual?.update(descriptor.props,null);
+    const nextVariant=node.visual ? node : parentVariant;
+    const nextInitial=descriptor.props.initial ?? inheritedInitial;
+    descriptor.children.forEach((child,index) => reconcile(child,id+'.'+index,node.element,nextVariant,nextInitial));
+    for(let index=descriptor.children.length;index<node.descriptor.children.length;index++) {
+      const childId=id+'.'+index;
+      nodes.get(childId)?.element.remove();
+      removeTree(childId);
+    }
+    node.descriptor=descriptor;
+  }
+  function draw() {
+    if(rendering) return;
+    rendering=true;cursor=0;
+    const tree=component({size:getSize()},isControlled() ? {} : null);
+    if(tree.props.ref && typeof tree.props.ref === 'object') tree.props.ref.current=container;
+    if(!currentTree) tree.children.forEach((child,index) => mountTree(child,container,String(index),undefined,undefined));
+    else tree.children.forEach((child,index) => reconcile(child,String(index),container,undefined,undefined));
+    currentTree=tree;rendering=false;
+    effects.splice(0).forEach(effect => effect());
+  }
+  component=createProgram(api);
+  draw();
+  function startAnimation() {
+    if(alive && !media.matches) return handle?.startAnimation();
+  }
+  function stopAnimation() {
+    if(alive) return handle?.stopAnimation();
+  }
+  const start=event => {
+    if(isControlled() || media.matches) return;
+    const handler=currentTree.props[event.type === 'focusin' ? 'onFocus' : 'onMouseEnter'] ?? currentTree.props.onMouseEnter;
+    if(handler) void handler(event);else void startAnimation();
+  };
+  const stop=event => {
+    if(isControlled()) return;
+    const handler=currentTree.props[event.type === 'focusout' ? 'onBlur' : 'onMouseLeave'] ?? currentTree.props.onMouseLeave;
+    if(handler) void handler(event);else void stopAnimation();
+  };
+  const preferenceChanged=() => {
+    if(media.matches) {
+      void handle?.stopAnimation();
+      controllers.forEach(controller => controller.stop());
+      for(const node of nodes.values()) if(node.visual) {
+        stopNode(node);
+        const rest={};
+        node.visual.values.forEach((_value,key) => {
+          const value=node.rest[key] ?? node.props.style?.[key] ?? node.props[key] ?? getDefaultValueType(key)?.default ?? ({opacity:1,pathLength:1,pathSpacing:1,pathOffset:0,strokeDashoffset:0})[key] ?? node.attributes[attributeName(key)];
+          if(value !== undefined) rest[key]=value;
+        });
+        setTarget(node.visual,rest);node.visual.render();
+      }
+    }
+    rerender();
+  };
+  container.addEventListener('mouseenter',start);
+  container.addEventListener('mouseleave',stop);
+  container.addEventListener('focusin',start);
+  container.addEventListener('focusout',stop);
+  media.addEventListener('change',preferenceChanged);
+  return {startAnimation,stopAnimation,update:draw,destroy() {
+    alive=false;
+    controllers.forEach(controller => controller.stop());
+    for(const node of nodes.values()) {stopNode(node);node.visual?.unmount();}
+    slots.forEach(slot => slot.cleanup?.());
+    container.removeEventListener('mouseenter',start);
+    container.removeEventListener('mouseleave',stop);
+    container.removeEventListener('focusin',start);
+    container.removeEventListener('focusout',stop);
+    media.removeEventListener('change',preferenceChanged);
+  }};
 }
 
-let cleanup = () => {};
-onMounted(() => { cleanup = mountAnimation(); });
-onBeforeUnmount(() => cleanup());
+let controller;
+function startAnimation() { return controller?.startAnimation(); }
+function stopAnimation() { return controller?.stopAnimation(); }
+onMounted(() => { controller = mountIconProgram(createIconProgram, root.value, () => props.size, () => props.controlled, instanceId); });
+watch(() => [props.size, props.controlled], () => controller?.update());
+onBeforeUnmount(() => controller?.destroy());
 defineExpose({ startAnimation, stopAnimation });
 </script>
 
 <template>
-  <div ref="root">
-    <svg xmlns="http://www.w3.org/2000/svg" :width="size" :height="size" viewBox="0 0 24 24" fill="none" overflow="visible" aria-hidden="true" focusable="false">
-      <g style="transform-origin: 12px 12px" data-icon-part="0">
-        <path d="M17.4776 9.00005C17.485 9.00002 17.4925 9 17.5 9C19.9853 9 22 11.0147 22 13.5C22 15.0602 21.206 16.435 20 17.2422M17.4776 9.00005C17.4924 8.83536 17.5 8.66856 17.5 8.5C17.5 5.46243 15.0376 3 12 3C9.12324 3 6.76233 5.20862 6.52042 8.0227M17.4776 9.00005C17.4466 9.34345 17.3841 9.67773 17.293 10M6.52042 8.0227C3.98398 8.26407 2 10.4003 2 13C2 14.7891 2.93963 16.3587 4.35232 17.2422M6.52042 8.0227C6.67826 8.00768 6.83823 8 7 8C7.7111 8 8.38754 8.14845 9 8.41604" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-        <path d="M15.4643 14.5C14.7727 13.3044 13.48 12.5 11.9994 12.5C10.472 12.5 9.14453 13.3561 8.4707 14.6147M8.53456 18.5C9.22618 19.6956 10.5189 20.5 11.9994 20.5C13.5221 20.5 14.8461 19.6492 15.5219 18.397" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" style="transform-origin: 12px 16.5px" data-icon-part="1" />
-        <path d="M8.90745 12.1125C8.9696 11.703 8.68799 11.3206 8.27846 11.2585C7.86894 11.1963 7.48658 11.478 7.42443 11.8875L8.16594 12L8.90745 12.1125ZM11.1125 15.5755C11.5221 15.5134 11.8037 15.131 11.7415 14.7215C11.6794 14.312 11.297 14.0304 10.8875 14.0925L11 14.834L11.1125 15.5755ZM8.16597 14.834L8.6963 14.3037C8.79731 14.4047 8.80288 14.4898 8.78674 14.4247C8.77638 14.3829 8.76432 14.3058 8.757 14.1874C8.7425 13.9528 8.75161 13.6483 8.77407 13.3297C8.79618 13.0161 8.8296 12.7107 8.8578 12.4821C8.87183 12.3683 8.88443 12.2747 8.89345 12.21C8.89795 12.1777 8.90155 12.1527 8.90398 12.136C8.90519 12.1277 8.90611 12.1215 8.9067 12.1176C8.907 12.1156 8.90721 12.1141 8.90734 12.1133C8.9074 12.1129 8.90744 12.1126 8.90746 12.1125C8.90747 12.1124 8.90748 12.1124 8.90748 12.1124C8.90747 12.1124 8.90747 12.1124 8.90747 12.1124C8.90746 12.1125 8.90745 12.1125 8.16594 12C7.42443 11.8875 7.42442 11.8876 7.42441 11.8876C7.4244 11.8877 7.42439 11.8878 7.42438 11.8878C7.42435 11.888 7.42432 11.8882 7.42429 11.8884C7.42422 11.8889 7.42413 11.8895 7.42401 11.8903C7.42378 11.8918 7.42347 11.8939 7.42307 11.8966C7.42227 11.902 7.42113 11.9096 7.4197 11.9194C7.41684 11.939 7.41279 11.9672 7.40781 12.0029C7.39787 12.0743 7.38421 12.1758 7.36908 12.2985C7.33893 12.5429 7.30234 12.876 7.27778 13.2242C7.25358 13.5675 7.23935 13.9481 7.25986 14.28C7.27004 14.4447 7.29007 14.6212 7.33077 14.7854C7.36569 14.9263 7.44126 15.17 7.63563 15.3644L8.16597 14.834ZM11 14.834C10.8875 14.0925 10.8875 14.0925 10.8876 14.0925C10.8876 14.0925 10.8876 14.0925 10.8876 14.0925C10.8876 14.0925 10.8876 14.0925 10.8875 14.0925C10.8874 14.0925 10.8871 14.0926 10.8867 14.0926C10.8858 14.0928 10.8844 14.093 10.8824 14.0933C10.8785 14.0939 10.8723 14.0948 10.864 14.096C10.8473 14.0984 10.8223 14.102 10.79 14.1065C10.7253 14.1155 10.6317 14.1281 10.5179 14.1422C10.2893 14.1704 9.98385 14.2038 9.67024 14.2259C9.35171 14.2484 9.04716 14.2575 8.81258 14.243C8.69415 14.2357 8.61713 14.2236 8.57533 14.2133C8.5102 14.1971 8.59528 14.2027 8.6963 14.3037L8.16597 14.834L7.63563 15.3644C7.83 15.5587 8.07366 15.6343 8.21457 15.6692C8.37881 15.7099 8.55529 15.73 8.72005 15.7401C9.05186 15.7607 9.43248 15.7464 9.77578 15.7222C10.124 15.6976 10.4571 15.6611 10.7015 15.6309C10.8242 15.6158 10.9257 15.6021 10.9971 15.5922C11.0328 15.5872 11.061 15.5831 11.0806 15.5803C11.0904 15.5788 11.0981 15.5777 11.1034 15.5769C11.1061 15.5765 11.1082 15.5762 11.1097 15.576C11.1105 15.5758 11.1111 15.5758 11.1116 15.5757C11.1118 15.5756 11.112 15.5756 11.1122 15.5756C11.1123 15.5756 11.1123 15.5756 11.1124 15.5756C11.1125 15.5756 11.1125 15.5755 11 14.834Z" fill="currentColor" style="transform-origin: 12px 16.5px" data-icon-part="2" />
-        <path d="M15.0925 20.8875C15.0304 21.297 15.312 21.6794 15.7215 21.7415C16.1311 21.8037 16.5134 21.522 16.5756 21.1125L15.8341 21L15.0925 20.8875ZM12.8875 17.4245C12.4779 17.4866 12.1963 17.869 12.2585 18.2785C12.3206 18.688 12.703 18.9696 13.1125 18.9075L13 18.166L12.8875 17.4245ZM15.834 18.166L15.3037 18.6963C15.2027 18.5953 15.1971 18.5102 15.2133 18.5753C15.2236 18.6171 15.2357 18.6942 15.243 18.8126C15.2575 19.0472 15.2484 19.3517 15.2259 19.6703C15.2038 19.9839 15.1704 20.2893 15.1422 20.5179C15.1282 20.6317 15.1156 20.7253 15.1066 20.79C15.102 20.8223 15.0984 20.8473 15.096 20.864C15.0948 20.8723 15.0939 20.8785 15.0933 20.8824C15.093 20.8844 15.0928 20.8859 15.0927 20.8867C15.0926 20.8871 15.0926 20.8874 15.0925 20.8875C15.0925 20.8876 15.0925 20.8876 15.0925 20.8876C15.0925 20.8876 15.0925 20.8876 15.0925 20.8876C15.0925 20.8875 15.0925 20.8875 15.8341 21C16.5756 21.1125 16.5756 21.1124 16.5756 21.1124C16.5756 21.1123 16.5756 21.1122 16.5756 21.1122C16.5756 21.112 16.5757 21.1118 16.5757 21.1116C16.5758 21.1111 16.5759 21.1105 16.576 21.1097C16.5762 21.1082 16.5765 21.1061 16.5769 21.1034C16.5777 21.098 16.5789 21.0904 16.5803 21.0806C16.5832 21.061 16.5872 21.0328 16.5922 20.9971C16.6021 20.9257 16.6158 20.8242 16.6309 20.7015C16.6611 20.4571 16.6977 20.124 16.7222 19.7758C16.7464 19.4325 16.7607 19.0519 16.7401 18.72C16.73 18.5553 16.7099 18.3788 16.6692 18.2146C16.6343 18.0737 16.5587 17.83 16.3644 17.6356L15.834 18.166ZM13 18.166C13.1125 18.9075 13.1125 18.9075 13.1124 18.9075C13.1124 18.9075 13.1124 18.9075 13.1124 18.9075C13.1124 18.9075 13.1124 18.9075 13.1125 18.9075C13.1126 18.9075 13.1129 18.9074 13.1133 18.9074C13.1142 18.9072 13.1156 18.907 13.1176 18.9067C13.1215 18.9061 13.1277 18.9052 13.1361 18.904C13.1527 18.9016 13.1777 18.898 13.21 18.8935C13.2747 18.8845 13.3683 18.8719 13.4821 18.8578C13.7107 18.8296 14.0161 18.7962 14.3298 18.7741C14.6483 18.7516 14.9528 18.7425 15.1874 18.757C15.3058 18.7643 15.3829 18.7764 15.4247 18.7867C15.4898 18.8029 15.4047 18.7973 15.3037 18.6963L15.834 18.166L16.3644 17.6356C16.17 17.4413 15.9263 17.3657 15.7854 17.3308C15.6212 17.2901 15.4447 17.27 15.28 17.2599C14.9481 17.2393 14.5675 17.2536 14.2242 17.2778C13.876 17.3024 13.5429 17.3389 13.2985 17.3691C13.1758 17.3842 13.0743 17.3979 13.0029 17.4078C12.9672 17.4128 12.939 17.4169 12.9194 17.4197C12.9096 17.4212 12.9019 17.4223 12.8966 17.4231C12.8939 17.4235 12.8918 17.4238 12.8903 17.424C12.8895 17.4242 12.8889 17.4242 12.8884 17.4243C12.8882 17.4244 12.888 17.4244 12.8878 17.4244C12.8878 17.4244 12.8877 17.4244 12.8876 17.4244C12.8875 17.4244 12.8875 17.4245 13 18.166Z" fill="currentColor" style="transform-origin: 12px 16.5px" data-icon-part="3" />
+  <div ref="root" class="">
+    <svg data-icon-node="0" xmlns="http://www.w3.org/2000/svg" :width="size" :height="size" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+      <path data-icon-node="0.0" d="M17.4776 9.00005C17.485 9.00002 17.4925 9 17.5 9C19.9853 9 22 11.0147 22 13.5C22 15.0602 21.206 16.435 20 17.2422M17.4776 9.00005C17.4924 8.83536 17.5 8.66856 17.5 8.5C17.5 5.46243 15.0376 3 12 3C9.12324 3 6.76233 5.20862 6.52042 8.0227M17.4776 9.00005C17.4466 9.34345 17.3841 9.67773 17.293 10M6.52042 8.0227C3.98398 8.26407 2 10.4003 2 13C2 14.7891 2.93963 16.3587 4.35232 17.2422M6.52042 8.0227C6.67826 8.00768 6.83823 8 7 8C7.7111 8 8.38754 8.14845 9 8.41604" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+      <g data-icon-node="0.1" style="transform: none; transform-origin: 50% 50%; transform-box: fill-box">
+        <path data-icon-node="0.1.0" d="M15.4643 14.5C14.7727 13.3044 13.48 12.5 11.9994 12.5C10.472 12.5 9.14453 13.3561 8.4707 14.6147M8.53456 18.5C9.22618 19.6956 10.5189 20.5 11.9994 20.5C13.5221 20.5 14.8461 19.6492 15.5219 18.397" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+        <path data-icon-node="0.1.1" d="M15.0925 20.8875C15.0304 21.297 15.312 21.6794 15.7215 21.7415C16.1311 21.8037 16.5134 21.522 16.5756 21.1125L15.8341 21L15.0925 20.8875ZM12.8875 17.4245C12.4779 17.4866 12.1963 17.869 12.2585 18.2785C12.3206 18.688 12.703 18.9696 13.1125 18.9075L13 18.166L12.8875 17.4245ZM15.834 18.166L15.3037 18.6963C15.2027 18.5953 15.1971 18.5102 15.2133 18.5753C15.2236 18.6171 15.2357 18.6942 15.243 18.8126C15.2575 19.0472 15.2484 19.3517 15.2259 19.6703C15.2038 19.9839 15.1704 20.2893 15.1422 20.5179C15.1282 20.6317 15.1156 20.7253 15.1066 20.79C15.102 20.8223 15.0984 20.8473 15.096 20.864C15.0948 20.8723 15.0939 20.8785 15.0933 20.8824C15.093 20.8844 15.0928 20.8859 15.0927 20.8867C15.0926 20.8871 15.0926 20.8874 15.0925 20.8875C15.0925 20.8876 15.0925 20.8876 15.0925 20.8876C15.0925 20.8876 15.0925 20.8876 15.0925 20.8876C15.0925 20.8875 15.0925 20.8875 15.8341 21C16.5756 21.1125 16.5756 21.1124 16.5756 21.1124C16.5756 21.1123 16.5756 21.1122 16.5756 21.1122C16.5756 21.112 16.5757 21.1118 16.5757 21.1116C16.5758 21.1111 16.5759 21.1105 16.576 21.1097C16.5762 21.1082 16.5765 21.1061 16.5769 21.1034C16.5777 21.098 16.5789 21.0904 16.5803 21.0806C16.5832 21.061 16.5872 21.0328 16.5922 20.9971C16.6021 20.9257 16.6158 20.8242 16.6309 20.7015C16.6611 20.4571 16.6977 20.124 16.7222 19.7758C16.7464 19.4325 16.7607 19.0519 16.7401 18.72C16.73 18.5553 16.7099 18.3788 16.6692 18.2146C16.6343 18.0737 16.5587 17.83 16.3644 17.6356L15.834 18.166ZM13 18.166C13.1125 18.9075 13.1125 18.9075 13.1124 18.9075C13.1124 18.9075 13.1124 18.9075 13.1124 18.9075C13.1124 18.9075 13.1124 18.9075 13.1125 18.9075C13.1126 18.9075 13.1129 18.9074 13.1133 18.9074C13.1142 18.9072 13.1156 18.907 13.1176 18.9067C13.1215 18.9061 13.1277 18.9052 13.1361 18.904C13.1527 18.9016 13.1777 18.898 13.21 18.8935C13.2747 18.8845 13.3683 18.8719 13.4821 18.8578C13.7107 18.8296 14.0161 18.7962 14.3298 18.7741C14.6483 18.7516 14.9528 18.7425 15.1874 18.757C15.3058 18.7643 15.3829 18.7764 15.4247 18.7867C15.4898 18.8029 15.4047 18.7973 15.3037 18.6963L15.834 18.166L16.3644 17.6356C16.17 17.4413 15.9263 17.3657 15.7854 17.3308C15.6212 17.2901 15.4447 17.27 15.28 17.2599C14.9481 17.2393 14.5675 17.2536 14.2242 17.2778C13.876 17.3024 13.5429 17.3389 13.2985 17.3691C13.1758 17.3842 13.0743 17.3979 13.0029 17.4078C12.9672 17.4128 12.939 17.4169 12.9194 17.4197C12.9096 17.4212 12.9019 17.4223 12.8966 17.4231C12.8939 17.4235 12.8918 17.4238 12.8903 17.424C12.8895 17.4242 12.8889 17.4242 12.8884 17.4243C12.8882 17.4244 12.888 17.4244 12.8878 17.4244C12.8878 17.4244 12.8877 17.4244 12.8876 17.4244C12.8875 17.4244 12.8875 17.4245 13 18.166Z" fill="currentColor" />
+        <path data-icon-node="0.1.2" d="M8.90745 12.1125C8.9696 11.703 8.68799 11.3206 8.27846 11.2585C7.86894 11.1963 7.48658 11.478 7.42443 11.8875L8.16594 12L8.90745 12.1125ZM11.1125 15.5755C11.5221 15.5134 11.8037 15.131 11.7415 14.7215C11.6794 14.312 11.297 14.0304 10.8875 14.0925L11 14.834L11.1125 15.5755ZM8.16597 14.834L8.6963 14.3037C8.79731 14.4047 8.80288 14.4898 8.78674 14.4247C8.77638 14.3829 8.76432 14.3058 8.757 14.1874C8.7425 13.9528 8.75161 13.6483 8.77407 13.3297C8.79618 13.0161 8.8296 12.7107 8.8578 12.4821C8.87183 12.3683 8.88443 12.2747 8.89345 12.21C8.89795 12.1777 8.90155 12.1527 8.90398 12.136C8.90519 12.1277 8.90611 12.1215 8.9067 12.1176C8.907 12.1156 8.90721 12.1141 8.90734 12.1133C8.9074 12.1129 8.90744 12.1126 8.90746 12.1125C8.90747 12.1124 8.90748 12.1124 8.90748 12.1124C8.90747 12.1124 8.90747 12.1124 8.90747 12.1124C8.90746 12.1125 8.90745 12.1125 8.16594 12C7.42443 11.8875 7.42442 11.8876 7.42441 11.8876C7.4244 11.8877 7.42439 11.8878 7.42438 11.8878C7.42435 11.888 7.42432 11.8882 7.42429 11.8884C7.42422 11.8889 7.42413 11.8895 7.42401 11.8903C7.42378 11.8918 7.42347 11.8939 7.42307 11.8966C7.42227 11.902 7.42113 11.9096 7.4197 11.9194C7.41684 11.939 7.41279 11.9672 7.40781 12.0029C7.39787 12.0743 7.38421 12.1758 7.36908 12.2985C7.33893 12.5429 7.30234 12.876 7.27778 13.2242C7.25358 13.5675 7.23935 13.9481 7.25986 14.28C7.27004 14.4447 7.29007 14.6212 7.33077 14.7854C7.36569 14.9263 7.44126 15.17 7.63563 15.3644L8.16597 14.834ZM11 14.834C10.8875 14.0925 10.8875 14.0925 10.8876 14.0925C10.8876 14.0925 10.8876 14.0925 10.8876 14.0925C10.8876 14.0925 10.8876 14.0925 10.8875 14.0925C10.8874 14.0925 10.8871 14.0926 10.8867 14.0926C10.8858 14.0928 10.8844 14.093 10.8824 14.0933C10.8785 14.0939 10.8723 14.0948 10.864 14.096C10.8473 14.0984 10.8223 14.102 10.79 14.1065C10.7253 14.1155 10.6317 14.1281 10.5179 14.1422C10.2893 14.1704 9.98385 14.2038 9.67024 14.2259C9.35171 14.2484 9.04716 14.2575 8.81258 14.243C8.69415 14.2357 8.61713 14.2236 8.57533 14.2133C8.5102 14.1971 8.59528 14.2027 8.6963 14.3037L8.16597 14.834L7.63563 15.3644C7.83 15.5587 8.07366 15.6343 8.21457 15.6692C8.37881 15.7099 8.55529 15.73 8.72005 15.7401C9.05186 15.7607 9.43248 15.7464 9.77578 15.7222C10.124 15.6976 10.4571 15.6611 10.7015 15.6309C10.8242 15.6158 10.9257 15.6021 10.9971 15.5922C11.0328 15.5872 11.061 15.5831 11.0806 15.5803C11.0904 15.5788 11.0981 15.5777 11.1034 15.5769C11.1061 15.5765 11.1082 15.5762 11.1097 15.576C11.1105 15.5758 11.1111 15.5758 11.1116 15.5757C11.1118 15.5756 11.112 15.5756 11.1122 15.5756C11.1123 15.5756 11.1123 15.5756 11.1124 15.5756C11.1125 15.5756 11.1125 15.5755 11 14.834Z" fill="currentColor" />
       </g>
     </svg>
   </div>
