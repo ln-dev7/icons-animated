@@ -1,5 +1,6 @@
 import type { ForwardRefExoticComponent, RefAttributes } from 'react';
 
+import { HEROICONS_ICON_LIST } from '@/icons/heroicons';
 import { HUGEICONS_ICON_LIST } from '@/icons/hugeicons';
 import { PHOSPHOR_ICON_LIST } from '@/icons/phosphor';
 import { TABLER_ICON_LIST } from '@/icons/tabler';
@@ -93,6 +94,23 @@ const printReport = () => {
   if (phosphorReport.duplicateNames.length > 0) {
     console.log('❌ DUPLICATE NAMES FOUND:');
     for (const { name, indexes } of phosphorReport.duplicateNames) {
+      console.log(`   name: "${name}" - appears ${indexes.length} times`);
+    }
+    hasErrors = true;
+  } else {
+    console.log('✅ No duplicate names found\n');
+  }
+
+  // Check Heroicons icons
+  console.log('🔍 Checking for duplicates in HEROICONS_ICON_LIST...');
+  console.log(`   Total icons: ${HEROICONS_ICON_LIST.length}`);
+  const heroiconsReport = checkDuplicates(
+    HEROICONS_ICON_LIST as unknown as IconListItem[]
+  );
+
+  if (heroiconsReport.duplicateNames.length > 0) {
+    console.log('❌ DUPLICATE NAMES FOUND:');
+    for (const { name, indexes } of heroiconsReport.duplicateNames) {
       console.log(`   name: "${name}" - appears ${indexes.length} times`);
     }
     hasErrors = true;

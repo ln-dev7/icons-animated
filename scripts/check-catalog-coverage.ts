@@ -45,6 +45,7 @@ const PACKAGES = {
   hugeicons: '@hugeicons/core-free-icons',
   tabler: '@tabler/icons',
   phosphor: '@phosphor-icons/core',
+  heroicons: 'heroicons',
 };
 
 function readSearchAliases(library: Library) {
@@ -232,7 +233,7 @@ function checkCoverage() {
     );
   const expectedRows = coverage.icons.map((row) => [
     row.reference,
-    ...(['hugeicons', 'tabler', 'phosphor'] as const).map(
+    ...(['hugeicons', 'tabler', 'phosphor', 'heroicons'] as const).map(
       (library) => row.libraries[library].catalogName ?? '—'
     ),
   ]);

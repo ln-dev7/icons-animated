@@ -66,7 +66,12 @@ test('rejects malformed or unpublished icons before any file read', async (t) =>
 });
 
 test('reads the exact published component in each native library', async (t) => {
-  for (const library of ['hugeicons', 'tabler', 'phosphor'] as const) {
+  for (const library of [
+    'hugeicons',
+    'tabler',
+    'phosphor',
+    'heroicons',
+  ] as const) {
     await t.test(library, async () => {
       const registryName = `${library}-arrow-down`;
       const expected = JSON.parse(
@@ -162,7 +167,12 @@ test('rejects unknown framework paths before reading a file', async (t) => {
 
 test('each framework reads only its matching published component', async () => {
   for (const framework of ['react', 'vue', 'svelte'] as const) {
-    for (const library of ['hugeicons', 'tabler', 'phosphor'] as const) {
+    for (const library of [
+      'hugeicons',
+      'tabler',
+      'phosphor',
+      'heroicons',
+    ] as const) {
       const registryName = `${library}-arrow-down`;
       const folder = framework === 'react' ? [] : [framework];
       const expected = JSON.parse(

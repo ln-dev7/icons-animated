@@ -8,7 +8,12 @@ import type { IconFramework } from '@/constants/frameworks';
 import { FRAMEWORK_INFO, FRAMEWORKS } from '@/constants/frameworks';
 import registry from '@/registry.json';
 
-const ALLOWED_LIBRARIES = new Set(['hugeicons', 'tabler', 'phosphor']);
+const ALLOWED_LIBRARIES = new Set([
+  'hugeicons',
+  'tabler',
+  'phosphor',
+  'heroicons',
+]);
 const ALLOWED_ICONS = new Set(registry.items.map((item) => item.name));
 const ALLOWED_FRAMEWORKS = new Set<string>(FRAMEWORKS);
 const ICON_NAME_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;

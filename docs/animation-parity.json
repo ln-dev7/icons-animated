@@ -14,6 +14,4071 @@
   "interpretation": "Native glyph geometry is preserved. Matching choreography means source controllers, timings, easing, spring parameters and lifecycle, with explicit adaptations where native topology differs. This is not a claim of identical pixels or an exhaustive visual review of every frame.",
   "components": [
     {
+      "library": "heroicons",
+      "catalogName": "academic-cap",
+      "componentPath": "icons/heroicons/academic-cap.tsx",
+      "references": ["graduation-cap"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/school.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [1, 2],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [0, 3, 5],
+          "merge": true,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [4],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "462d94af91c951b3d86c2ccda6d3e2f9e8e6e90f25f86932c956ad6fa4fb76f6"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "adjustments-horizontal",
+      "componentPath": "icons/heroicons/adjustments-horizontal.tsx",
+      "references": ["sliders-horizontal"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/adjustments-horizontal.tsx",
+      "limitations": [
+        "Native knobs sit at different positions from the reference; each knob slides the same distance with the same spring, and the native rails are shortened and lengthened to follow it."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [3, 11, 7],
+          "merge": true,
+          "role": "rails left of each knob"
+        },
+        {
+          "ref": 1,
+          "native": [0, 8, 4],
+          "merge": true,
+          "role": "rails right of each knob"
+        },
+        {
+          "ref": 2,
+          "native": [1, 2, 9, 10, 5, 6],
+          "merge": true,
+          "role": "knobs (two native arcs each)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "284fbd186dcd3f69ef596f617e8d7dfd0d0fe86db47ac01cc8ebf871073fac1a"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "archive-box",
+      "componentPath": "icons/heroicons/archive-box.tsx",
+      "references": ["archive"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/archive.tsx",
+      "limitations": [
+        "The box squash and label drop are recomputed for the native box outline (same lift, spring and proportions)."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [2],
+          "merge": false,
+          "role": "lid"
+        },
+        {
+          "ref": 1,
+          "native": [0],
+          "merge": false,
+          "role": "box"
+        },
+        {
+          "ref": 2,
+          "native": [1],
+          "merge": false,
+          "role": "label"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "a5be305f6fab04b5289554ee1d85d8376aee375e7c6c66c38484223311735423"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "arrow-down-left",
+      "componentPath": "icons/heroicons/arrow-down-left.tsx",
+      "references": ["arrow-down-left"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/arrow-down-left.tsx",
+      "limitations": [
+        "Tabler part 2 (static path) has no Heroicons counterpart and is omitted.",
+        "Heroicons contours 1, 2 form source part 0 and move as one group."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [1, 2],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "83117d245a812e6a5684d62243e5ed7874715aae9f45b0e1f7b24b0ebff3587c"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "arrow-down-right",
+      "componentPath": "icons/heroicons/arrow-down-right.tsx",
+      "references": ["arrow-down-right"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/arrow-down-right.tsx",
+      "limitations": [
+        "Heroicons contours 1, 2 form source part 1 and move as one group."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [1, 2],
+          "merge": true,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "5d35ce2044295b8677e215d70764bad4f76ac9e53b20306f3bf503ddfaaeab74"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "arrow-down-tray",
+      "componentPath": "icons/heroicons/arrow-down-tray.tsx",
+      "references": ["download"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/download.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [1, 2],
+          "merge": true,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [3],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "1ed8eb8cf413cdc1dfbcecdf2d4e1dc8a39ad80e69478f0bb1137ecc4441c0f3"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "arrow-down",
+      "componentPath": "icons/heroicons/arrow-down.tsx",
+      "references": ["arrow-down"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/arrow-down.tsx",
+      "limitations": [
+        "The reference shortens the shaft by morphing its path; the same morph is applied to the native shaft, scaled to the longer Heroicons arrow (18 vs 14 units).",
+        "The two native head segments are drawn as one polyline through the same points so the head can move as one part."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1],
+          "merge": true,
+          "role": "arrow head (two native segments joined at the tip into one polyline)"
+        },
+        {
+          "ref": 1,
+          "native": [2],
+          "merge": false,
+          "role": "shaft"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "77e9bfbc731e9ef5a4363b1757d5fb0a528e304a5e9c98c1c34a211e52ac2cfe"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "arrow-left",
+      "componentPath": "icons/heroicons/arrow-left.tsx",
+      "references": ["arrow-left"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/arrow-left.tsx",
+      "limitations": [
+        "The reference shortens the shaft by morphing its path; the same morph is applied to the native shaft, scaled to the longer Heroicons arrow (18 vs 14 units).",
+        "The two native head segments are drawn as one polyline through the same points so the head can move as one part."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1],
+          "merge": true,
+          "role": "arrow head (two native segments joined at the tip into one polyline)"
+        },
+        {
+          "ref": 1,
+          "native": [2],
+          "merge": false,
+          "role": "shaft"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "eb7b5fd9972047dca4163d4622f7efd744f74a187d2220d2d735e627394e398c"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "arrow-path",
+      "componentPath": "icons/heroicons/arrow-path.tsx",
+      "references": ["refresh-cw"],
+      "adaptation": "whole-icon-reference-program",
+      "programmeSource": "icons/hugeicons/refresh-cw.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [3, 4],
+          "merge": true,
+          "role": "Hugeicons component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [0, 5],
+          "merge": true,
+          "role": "Hugeicons component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [1, 2],
+          "merge": true,
+          "role": "Hugeicons component part 2 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "29c2f99edddc5ee9aa1774ada2f490e033dd09c6903b7c308d08f725f1b8300e"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "arrow-right-end-on-rectangle",
+      "componentPath": "icons/heroicons/arrow-right-end-on-rectangle.tsx",
+      "references": ["login"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/login.tsx",
+      "limitations": [
+        "Heroicons contours 1, 3 form source part 1 and move as one group."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [1, 3],
+          "merge": true,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [2],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "1676fb299d07950bd07e0fdeb982db15c4549b37dbe65bc854b22230c6d91d73"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "arrow-right-start-on-rectangle",
+      "componentPath": "icons/heroicons/arrow-right-start-on-rectangle.tsx",
+      "references": ["logout"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/logout.tsx",
+      "limitations": [
+        "Heroicons contours 2, 3 form source part 2 and move as one group."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [2, 3],
+          "merge": true,
+          "role": "Tabler component part 2 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "c98600179a6105ad131a158ecc3c8f750d858137e2f7622a12ce459c2fde86a0"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "arrow-right",
+      "componentPath": "icons/heroicons/arrow-right.tsx",
+      "references": ["arrow-right"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/arrow-right.tsx",
+      "limitations": [
+        "The reference shortens the shaft by morphing its path; the same morph is applied to the native shaft, scaled to the longer Heroicons arrow (18 vs 14 units).",
+        "The two native head segments are drawn as one polyline through the same points so the head can move as one part."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1],
+          "merge": true,
+          "role": "arrow head (two native segments joined at the tip into one polyline)"
+        },
+        {
+          "ref": 1,
+          "native": [2],
+          "merge": false,
+          "role": "shaft"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "5efcc01967164c58ce1421d25cd614d0884fe6cdc347f8e609b994afab3dcc55"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "arrow-top-right-on-square",
+      "componentPath": "icons/heroicons/arrow-top-right-on-square.tsx",
+      "references": ["external-link"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/external-link.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [2, 3],
+          "merge": true,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "bedea72fe29f694099ea27bd5f8d3819c722a84a178ba0da69767ba9de8514a6"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "arrow-trending-down",
+      "componentPath": "icons/heroicons/arrow-trending-down.tsx",
+      "references": ["trending-down"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/trending-down.tsx",
+      "limitations": [
+        "Heroicons contours 1, 2 share the programme of source part 1 and animate concurrently."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [1, 2],
+          "merge": true,
+          "role": "Tabler component part 1 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "36be8665331dedcf3ddc8c0eb556506fefac1ca401fa8ef5e8f4b227a7248858"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "arrow-trending-up",
+      "componentPath": "icons/heroicons/arrow-trending-up.tsx",
+      "references": ["trending-up"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/trending-up.tsx",
+      "limitations": [
+        "Heroicons contours 1, 2 share the programme of source part 1 and animate concurrently."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [1, 2],
+          "merge": true,
+          "role": "Tabler component part 1 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "4102194d51340b62127704f88e1ff57f7eb260faff04e60896775ff8702cbf21"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "arrow-turn-down-left",
+      "componentPath": "icons/heroicons/arrow-turn-down-left.tsx",
+      "references": ["corner-down-left"],
+      "adaptation": "whole-icon-reference-program",
+      "programmeSource": "icons/tabler/corner-down-left.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1, 2],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "d496460ebd236f4434f6dcf9995192cebda21af62d95a8dd9ce720cd697d26cb"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "arrow-turn-down-right",
+      "componentPath": "icons/heroicons/arrow-turn-down-right.tsx",
+      "references": ["corner-down-right"],
+      "adaptation": "whole-icon-reference-program",
+      "programmeSource": "icons/tabler/corner-down-right.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1, 2],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "0aecbbe9c769cdeca98c69392eeb4f3213e40e2f29561b6e97bdf48e6e8694d1"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "arrow-turn-left-down",
+      "componentPath": "icons/heroicons/arrow-turn-left-down.tsx",
+      "references": ["corner-left-down"],
+      "adaptation": "whole-icon-reference-program",
+      "programmeSource": "icons/tabler/corner-left-down.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1, 2],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "35faa5a1f8ffea6387f6af368af2414641b976b11395d531fc4224128510eb52"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "arrow-turn-left-up",
+      "componentPath": "icons/heroicons/arrow-turn-left-up.tsx",
+      "references": ["corner-left-up"],
+      "adaptation": "whole-icon-reference-program",
+      "programmeSource": "icons/tabler/corner-left-up.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1, 2],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "9fc2025b2dcecf9854e4b27bacf32554c2df21e14f28a41a25f13798da3f22f4"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "arrow-turn-right-down",
+      "componentPath": "icons/heroicons/arrow-turn-right-down.tsx",
+      "references": ["corner-right-down"],
+      "adaptation": "whole-icon-reference-program",
+      "programmeSource": "icons/tabler/corner-right-down.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1, 2],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "3d182526f57bc3c3ae1fbc69b27fb32d84e1f8ecd2626c548aa83b464fff8149"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "arrow-turn-right-up",
+      "componentPath": "icons/heroicons/arrow-turn-right-up.tsx",
+      "references": ["corner-right-up"],
+      "adaptation": "whole-icon-reference-program",
+      "programmeSource": "icons/tabler/corner-right-up.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1, 2],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "2a5a10bf2406cb3d199aa670d7f5feab80be263564c58ee12fb08354155d581e"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "arrow-turn-up-left",
+      "componentPath": "icons/heroicons/arrow-turn-up-left.tsx",
+      "references": ["corner-up-left"],
+      "adaptation": "whole-icon-reference-program",
+      "programmeSource": "icons/tabler/corner-up-left.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1, 2],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "e6b731e722324374fb5dbd6528165adaf62083dc77254d68e810a84f3b5fd0be"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "arrow-turn-up-right",
+      "componentPath": "icons/heroicons/arrow-turn-up-right.tsx",
+      "references": ["corner-up-right"],
+      "adaptation": "whole-icon-reference-program",
+      "programmeSource": "icons/tabler/corner-up-right.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1, 2],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "f1b43dbcdcdbff93cdde6350e164227a75b7c941f283128369096e32299da8f8"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "arrow-up-left",
+      "componentPath": "icons/heroicons/arrow-up-left.tsx",
+      "references": ["arrow-up-left"],
+      "adaptation": "whole-icon-reference-program",
+      "programmeSource": "icons/tabler/arrow-up-left.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [1, 2],
+          "merge": true,
+          "role": "Tabler component part 1 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "6fdded0cb3fe2a398c25267f0c11c78042e0b3ae2293fae197a8c05208131973"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "arrow-up-right",
+      "componentPath": "icons/heroicons/arrow-up-right.tsx",
+      "references": ["arrow-up-right"],
+      "adaptation": "whole-icon-reference-program",
+      "programmeSource": "icons/tabler/arrow-up-right.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [1, 2],
+          "merge": true,
+          "role": "Tabler component part 1 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "c1cec330bf638efa9c8caae17bd60019e3c8d3cf682e12d70df6187453a896b3"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "arrow-up-tray",
+      "componentPath": "icons/heroicons/arrow-up-tray.tsx",
+      "references": ["upload"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/upload.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [1, 2],
+          "merge": true,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [3],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        },
+        {
+          "ref": 3,
+          "native": [],
+          "merge": false,
+          "role": "Tabler component part 3 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "6946761f0cab29b4537ae75420a7968058597539e886e8807e884ebf1a4b24e4"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "arrow-up",
+      "componentPath": "icons/heroicons/arrow-up.tsx",
+      "references": ["arrow-up"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/arrow-up.tsx",
+      "limitations": [
+        "The reference shortens the shaft by morphing its path; the same morph is applied to the native shaft, scaled to the longer Heroicons arrow (18 vs 14 units).",
+        "The two native head segments are drawn as one polyline through the same points so the head can move as one part."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1],
+          "merge": true,
+          "role": "arrow head (two native segments joined at the tip into one polyline)"
+        },
+        {
+          "ref": 1,
+          "native": [2],
+          "merge": false,
+          "role": "shaft"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "f98f1f41cc87bd097bc247a912360201e85be7f6b4a24f41227751b3add026da"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "arrow-uturn-left",
+      "componentPath": "icons/heroicons/arrow-uturn-left.tsx",
+      "references": ["undo"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/arrow-back-up.tsx",
+      "limitations": [
+        "Heroicons contours 0, 1 form source part 0 and move as one group."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [2],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "70c1d31d0cc905ce2ae186bd2e559d5cf87b997e11c784a7e57cba774d575f00"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "arrow-uturn-right",
+      "componentPath": "icons/heroicons/arrow-uturn-right.tsx",
+      "references": ["redo"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/arrow-forward-up.tsx",
+      "limitations": [
+        "Heroicons contours 0, 1 form source part 0 and move as one group."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [2],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "6c9dc36abc21e951367831a6a5baa7f72d7970c367bb8384b922db395fb4aa1e"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "arrows-pointing-in",
+      "componentPath": "icons/heroicons/arrows-pointing-in.tsx",
+      "references": ["shrink"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/arrows-minimize.tsx",
+      "limitations": [
+        "Heroicons contours 0, 1, 2 form source part 0 and move as one group.",
+        "Heroicons contours 6, 7, 8 form source part 1 and move as one group.",
+        "Heroicons contours 3, 4, 5 form source part 2 and move as one group.",
+        "Heroicons contours 9, 10, 11 form source part 3 and move as one group."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1, 2],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [6, 7, 8],
+          "merge": true,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [3, 4, 5],
+          "merge": true,
+          "role": "Tabler component part 2 (path)"
+        },
+        {
+          "ref": 3,
+          "native": [9, 10, 11],
+          "merge": true,
+          "role": "Tabler component part 3 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "cfb481637889c02790a64675b57ef163002ec8efdc442bc89b8d814b59f8b8ef"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "arrows-pointing-out",
+      "componentPath": "icons/heroicons/arrows-pointing-out.tsx",
+      "references": ["expand"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/arrows-maximize.tsx",
+      "limitations": [
+        "Heroicons contours 9, 10, 11 form source part 0 and move as one group.",
+        "Heroicons contours 3, 4, 5 form source part 1 and move as one group.",
+        "Heroicons contours 6, 7, 8 form source part 2 and move as one group.",
+        "Heroicons contours 0, 1, 2 form source part 3 and move as one group."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [9, 10, 11],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [3, 4, 5],
+          "merge": true,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [6, 7, 8],
+          "merge": true,
+          "role": "Tabler component part 2 (path)"
+        },
+        {
+          "ref": 3,
+          "native": [0, 1, 2],
+          "merge": true,
+          "role": "Tabler component part 3 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "e4f25568bdb6de74044c8a6162adc0faee41b0be1526e2517ca1c903e7e2389d"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "at-symbol",
+      "componentPath": "icons/heroicons/at-symbol.tsx",
+      "references": ["at-sign"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/at.tsx",
+      "limitations": [
+        "Heroicons contours 0, 2 share the programme of source part 0 and animate concurrently."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 2],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "54260ea7a8cb45aa8b4fae2a00c0a561294b4c1d467d3890c01d19e3cf0508e1"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "bars-3",
+      "componentPath": "icons/heroicons/bars-3.tsx",
+      "references": ["menu"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/menu.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [2],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "43470ded4895219aaf75b1ec654cea11d9e072aee4a85385f4264fdb8de3a027"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "battery-0",
+      "componentPath": "icons/heroicons/battery-0.tsx",
+      "references": ["battery"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/battery.tsx",
+      "limitations": [
+        "The charge fill only exists during the animation (as in the reference); at rest the native empty battery is shown unchanged."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1],
+          "merge": true,
+          "role": "battery (terminal and body)"
+        },
+        {
+          "ref": 1,
+          "native": [],
+          "merge": false,
+          "role": "charge fill, only visible while animating"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "f7377c6251c57a1d221fe561dfe6726d6293121694d7fff4145bcc8cf08a7b3b"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "battery-100",
+      "componentPath": "icons/heroicons/battery-100.tsx",
+      "references": ["battery-full"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/battery-4.tsx",
+      "limitations": [
+        "Tabler part 2 (animated path) has no Heroicons counterpart and is omitted.",
+        "Tabler part 3 (animated path) has no Heroicons counterpart and is omitted.",
+        "Tabler part 4 (animated path) has no Heroicons counterpart and is omitted."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 2],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        },
+        {
+          "ref": 3,
+          "native": [],
+          "merge": false,
+          "role": "Tabler component part 3 (path)"
+        },
+        {
+          "ref": 4,
+          "native": [],
+          "merge": false,
+          "role": "Tabler component part 4 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "a2cbbad73d5f75c26476382d9703c900ce14ed3daa0f02f38080c2c189e2196f"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "battery-50",
+      "componentPath": "icons/heroicons/battery-50.tsx",
+      "references": ["battery-medium"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/battery-2.tsx",
+      "limitations": [
+        "Tabler part 2 (animated path) has no Heroicons counterpart and is omitted."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 2],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "7862951f6eae35815b561ffc58532ba813ea68c8fd8630a96ac7974eaaf6981f"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "beaker",
+      "componentPath": "icons/heroicons/beaker.tsx",
+      "references": ["flask"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/flask.tsx",
+      "limitations": [
+        "Tabler part 1 (static path) has no Heroicons counterpart and is omitted."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [1, 2, 4],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [0, 3, 5, 6],
+          "merge": true,
+          "role": "Tabler component part 2 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "4691e7e48e94dc97d93186cc1a517471d1368857ebe2145485eaa67f89febeec"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "bell",
+      "componentPath": "icons/heroicons/bell.tsx",
+      "references": ["bell"],
+      "adaptation": "whole-icon-reference-program",
+      "programmeSource": "icons/tabler/bell.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [2],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "03f300b5f13d1c94d3c8c2f5044d305ece5b914b6fd11f1703e836967cec6f78"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "bold",
+      "componentPath": "icons/heroicons/bold.tsx",
+      "references": ["bold"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/bold.tsx",
+      "limitations": [
+        "Heroicons contours 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 share the programme of source part 0 and animate concurrently."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "7571ec0e8fc269cdf6aff44ac0b1912d7da3fa8377101ccb6389dedd6f0dc80c"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "bolt-slash",
+      "componentPath": "icons/heroicons/bolt-slash.tsx",
+      "references": ["zap-off"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/bolt-off.tsx",
+      "limitations": [
+        "Heroicons contours 3, 4 share the programme of source part 0 and animate concurrently.",
+        "Heroicons contours 0, 1 share the programme of source part 1 and animate concurrently."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [3, 4],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [0, 1],
+          "merge": true,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [2],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        },
+        {
+          "ref": 3,
+          "native": [5],
+          "merge": false,
+          "role": "Tabler component part 3 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "d0d407aff40e31e0c59662ba14bbd11eedc0cbc41c954490353d29fe2f34a6cb"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "bolt",
+      "componentPath": "icons/heroicons/bolt.tsx",
+      "references": ["zap"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/bolt.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "8edf754479efc9cef4c51620ddb6e25bb61b1bd001424d50ffd1f06117ba9874"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "bookmark",
+      "componentPath": "icons/heroicons/bookmark.tsx",
+      "references": ["bookmark"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/bookmark.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "a0170e9498f9f992363581c526a587759abb5db1f6402afddc4c77326d8b0f52"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "briefcase",
+      "componentPath": "icons/heroicons/briefcase.tsx",
+      "references": ["briefcase-business"],
+      "adaptation": "whole-icon-reference-program",
+      "programmeSource": "icons/tabler/briefcase.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1, 3],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [4, 5],
+          "merge": true,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [6],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        },
+        {
+          "ref": 3,
+          "native": [2],
+          "merge": false,
+          "role": "Tabler component part 3 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "25b57cc2ddcb4d0e741afc3620d7ac5358b538a179088b9f0abb2b67b7729c00"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "calendar-days",
+      "componentPath": "icons/heroicons/calendar-days.tsx",
+      "references": ["calendar-days"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/calendar-week.tsx",
+      "limitations": [
+        "Heroicons has 12 day dots against 7 in the reference; they blink with the same variants and the same overall stagger (0 to 0.5 s) in reading order."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1, 2, 3, 4],
+          "merge": true,
+          "role": "rings and frame"
+        },
+        {
+          "ref": 1,
+          "native": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+          "merge": true,
+          "role": "day dots (staggered in reading order)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "a7e2448790dad7c7dae2cd3b2021395319bf5be027a99450b44cffed4659e111"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "chart-bar",
+      "componentPath": "icons/heroicons/chart-bar.tsx",
+      "references": ["chart-no-axes-column-increasing"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/chart-bar-popular-no-axes.tsx",
+      "limitations": [
+        "Tabler part 3 (static path) has no Heroicons counterpart and is omitted."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [2],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        },
+        {
+          "ref": 3,
+          "native": [],
+          "merge": false,
+          "role": "Tabler component part 3 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "333ac1c4be8f21459d4a3b26b39aec725f314a63cc668743ffc7c137427db227"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "chart-pie",
+      "componentPath": "icons/heroicons/chart-pie.tsx",
+      "references": ["chart-pie"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/chart-pie.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "82007c61de401c05044c7fe83419152a3cb9910c929688e427a410b0cc051aff"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "chat-bubble-left-ellipsis",
+      "componentPath": "icons/heroicons/chat-bubble-left-ellipsis.tsx",
+      "references": ["message-square-more"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/message-dots.tsx",
+      "limitations": [
+        "Heroicons contours 0, 1 share the programme of source part 1 and animate concurrently.",
+        "Heroicons contours 2, 3 share the programme of source part 2 and animate concurrently.",
+        "Heroicons contours 4, 5 share the programme of source part 3 and animate concurrently."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [6],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [0, 1],
+          "merge": true,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [2, 3],
+          "merge": true,
+          "role": "Tabler component part 2 (path)"
+        },
+        {
+          "ref": 3,
+          "native": [4, 5],
+          "merge": true,
+          "role": "Tabler component part 3 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "07352662ce16cc2f647ef7896d3494fd55d54de128347186055a60af6b93aed1"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "chat-bubble-left",
+      "componentPath": "icons/heroicons/chat-bubble-left.tsx",
+      "references": ["message-square"],
+      "adaptation": "whole-icon-reference-program",
+      "programmeSource": "icons/tabler/message.tsx",
+      "limitations": [
+        "Tabler part 0 (static path) has no Heroicons counterpart and is omitted.",
+        "Tabler part 1 (static path) has no Heroicons counterpart and is omitted."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "3ee605dce4bae9ec58166ab4ed98b3a009e111df9777263d8b86a343298bdb5b"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "chat-bubble-oval-left-ellipsis",
+      "componentPath": "icons/heroicons/chat-bubble-oval-left-ellipsis.tsx",
+      "references": ["message-circle-more"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/hugeicons/message-circle-more.tsx",
+      "limitations": [
+        "Heroicons contours 0, 1 share the programme of source part 1 and animate concurrently.",
+        "Heroicons contours 2, 3 share the programme of source part 2 and animate concurrently.",
+        "Heroicons contours 4, 5 share the programme of source part 3 and animate concurrently."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [6],
+          "merge": false,
+          "role": "Hugeicons component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [0, 1],
+          "merge": true,
+          "role": "Hugeicons component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [2, 3],
+          "merge": true,
+          "role": "Hugeicons component part 2 (path)"
+        },
+        {
+          "ref": 3,
+          "native": [4, 5],
+          "merge": true,
+          "role": "Hugeicons component part 3 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "491133f3a26cdd29eb1b6920b33047b8e82e4d7a3230527364736bf1a824d72c"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "chat-bubble-oval-left",
+      "componentPath": "icons/heroicons/chat-bubble-oval-left.tsx",
+      "references": ["message-circle"],
+      "adaptation": "whole-icon-reference-program",
+      "programmeSource": "icons/tabler/message-circle.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "dacfd8475b672c5b111b81ce740ad9b708ad0100abf4ad4a4cc749a921287e93"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "check-circle",
+      "componentPath": "icons/heroicons/check-circle.tsx",
+      "references": ["circle-check"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/circle-check.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "ae2e2e5645c41d41f10710b051d83c8d4b2f430d08e0ae670caa5ce54e3aa7d2"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "check",
+      "componentPath": "icons/heroicons/check.tsx",
+      "references": ["check"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/check.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "d9ee7250350abfe5d924a48af86d7dac014fb9e86dbe57fcd283f67f3e14cdc1"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "chevron-down",
+      "componentPath": "icons/heroicons/chevron-down.tsx",
+      "references": ["chevron-down"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/chevron-down.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "33e1903001c219def70c25e314e8d2467f6de85714c07a8e22c0eb738b3356c1"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "chevron-left",
+      "componentPath": "icons/heroicons/chevron-left.tsx",
+      "references": ["chevron-left"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/chevron-left.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "3b1abc0c27391bc06eb540610c401fd8d4b247bcd3c3518efdb74f9d006d3d91"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "chevron-right",
+      "componentPath": "icons/heroicons/chevron-right.tsx",
+      "references": ["chevron-right"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/chevron-right.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "0bb1b727ea8ee7dcfb9b2a7672626f903455b0b0a541cf52104446a5898d1e7a"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "chevron-up-down",
+      "componentPath": "icons/heroicons/chevron-up-down.tsx",
+      "references": ["chevrons-up-down"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/selector.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "897ebb496ce9ee7b80f13c0a88da6c678d33d0cefd076d804847ef34c74831e3"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "chevron-up",
+      "componentPath": "icons/heroicons/chevron-up.tsx",
+      "references": ["chevron-up"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/chevron-up.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "16157540647a2c329a1eed4fedbd9243812d89d7c4fd6eca98b72105558935be"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "clock",
+      "componentPath": "icons/heroicons/clock.tsx",
+      "references": ["clock"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/clock.tsx",
+      "limitations": [
+        "The native polyline is cut at its vertex so that each segment carries the programme of its source part; the rest pose is unchanged."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [2],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "7476d5efe3a3d59793e4b1660dc7e44f1e5566750f573c648002f3fa7bcc6d44"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "cloud-arrow-down",
+      "componentPath": "icons/heroicons/cloud-arrow-down.tsx",
+      "references": ["cloud-download"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/cloud-download.tsx",
+      "limitations": [
+        "Tabler part 2 (static path) has no Heroicons counterpart and is omitted."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [3],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [0, 1, 2],
+          "merge": true,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "dd0b1f3951380c392ebdd126b53250b816ce36d7a0791602a9be107bb47a63a3"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "cloud-arrow-up",
+      "componentPath": "icons/heroicons/cloud-arrow-up.tsx",
+      "references": ["cloud-upload"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/cloud-upload.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [3],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [1, 2],
+          "merge": true,
+          "role": "Tabler component part 2 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "ad9741030c44a190a85f509a1eac8bda3ffa2e9de2287535c79a225c6835145d"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "cog-6-tooth",
+      "componentPath": "icons/heroicons/cog-6-tooth.tsx",
+      "references": ["settings"],
+      "adaptation": "whole-icon-reference-program",
+      "programmeSource": "icons/tabler/settings.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "91664f9ad519e735255245004d891db8564a6b10f7d1fd5913a3937835ca1600"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "cog",
+      "componentPath": "icons/heroicons/cog.tsx",
+      "references": ["cog"],
+      "adaptation": "whole-icon-reference-program",
+      "programmeSource": "icons/tabler/settings.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [
+            0, 1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 18, 19, 20
+          ],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [4, 16, 21],
+          "merge": true,
+          "role": "Tabler component part 1 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "6b295bf8b9745b8ad46a66a85464b0b0d8aa61ebe04bc93d97a287514793a6bd"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "command-line",
+      "componentPath": "icons/heroicons/command-line.tsx",
+      "references": ["terminal"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/terminal.tsx",
+      "limitations": [
+        "Heroicons contour 2 (the enclosing frame) has no counterpart in the reference and stays static."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": null,
+          "native": [2],
+          "merge": false,
+          "role": "static native frame (no source counterpart)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "a9b2e4c9fbf2621bba3d9ea188251bb50113a2821b9b14bc7408b8a8cecd3871"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "cpu-chip",
+      "componentPath": "icons/heroicons/cpu-chip.tsx",
+      "references": ["cpu"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/cpu.tsx",
+      "limitations": [
+        "Heroicons contours 8, 10 form source part 2 and move as one group.",
+        "Heroicons contours 9, 11 form source part 3 and move as one group.",
+        "Heroicons contours 3, 5 form source part 4 and move as one group.",
+        "Heroicons contours 4, 6 form source part 6 and move as one group."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [12],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [13],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [8, 10],
+          "merge": true,
+          "role": "Tabler component part 2 (path)"
+        },
+        {
+          "ref": 3,
+          "native": [9, 11],
+          "merge": true,
+          "role": "Tabler component part 3 (path)"
+        },
+        {
+          "ref": 4,
+          "native": [3, 5],
+          "merge": true,
+          "role": "Tabler component part 4 (path)"
+        },
+        {
+          "ref": 5,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 5 (path)"
+        },
+        {
+          "ref": 6,
+          "native": [4, 6],
+          "merge": true,
+          "role": "Tabler component part 6 (path)"
+        },
+        {
+          "ref": 7,
+          "native": [2],
+          "merge": false,
+          "role": "Tabler component part 7 (path)"
+        },
+        {
+          "ref": 8,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 8 (path)"
+        },
+        {
+          "ref": 9,
+          "native": [7],
+          "merge": false,
+          "role": "Tabler component part 9 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "45b5db36da1e1d87b5af39e41b742cf7f0bcd9072c26a835dd754bbe51dfc555"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "credit-card",
+      "componentPath": "icons/heroicons/credit-card.tsx",
+      "references": ["credit-card"],
+      "adaptation": "whole-icon-reference-program",
+      "programmeSource": "icons/tabler/credit-card.tsx",
+      "limitations": [
+        "Tabler part 3 (static path) has no Heroicons counterpart and is omitted."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [4],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [0, 1],
+          "merge": true,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [2, 3],
+          "merge": true,
+          "role": "Tabler component part 2 (path)"
+        },
+        {
+          "ref": 3,
+          "native": [],
+          "merge": false,
+          "role": "Tabler component part 3 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "d41b15266c88b189a3bafd65379d1e2c6378204a72469d30e3b9b5424ca8994a"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "cube",
+      "componentPath": "icons/heroicons/cube.tsx",
+      "references": ["box"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/box.tsx",
+      "limitations": [
+        "Heroicons contours 0, 2, 4 share the programme of source part 0 and animate concurrently.",
+        "Heroicons contours 1, 3 share the programme of source part 1 and animate concurrently."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 2, 4],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [1, 3],
+          "merge": true,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [5],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "ae8c15fc53b94e05d2dfbc4fc3e1cf5e239073d9bb3b91d7f00b45fed28db604"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "currency-dollar",
+      "componentPath": "icons/heroicons/currency-dollar.tsx",
+      "references": ["circle-dollar-sign"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/coin.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [2],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "044dc6a7fca7ba231b2207ae07a20a0d125c5d57df817fd9d10e0bc80fe8d22b"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "cursor-arrow-rays",
+      "componentPath": "icons/heroicons/cursor-arrow-rays.tsx",
+      "references": ["cursor-click"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/click.tsx",
+      "limitations": [
+        "Heroicons contours 0, 1 form source part 0 and move as one group.",
+        "Heroicons contours 2, 3, 4 form source part 1 and move as one group."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [2, 3, 4],
+          "merge": true,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [6],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        },
+        {
+          "ref": 3,
+          "native": [5],
+          "merge": false,
+          "role": "Tabler component part 3 (path)"
+        },
+        {
+          "ref": 4,
+          "native": [7],
+          "merge": false,
+          "role": "Tabler component part 4 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "e78dd41d8317c6bfe4bc09cefefbdfe67765c135e0062d271f21f9594b118764"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "document-check",
+      "componentPath": "icons/heroicons/document-check.tsx",
+      "references": ["file-check"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/file-check.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [2],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [3],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "75b5ea70fac288c892ea390c35776832237c5e4e78dbc4fd95806c0c6aa1517d"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "document-text",
+      "componentPath": "icons/heroicons/document-text.tsx",
+      "references": ["file-text"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/file-text.tsx",
+      "limitations": [
+        "Tabler part 2 (animated path) has no Heroicons counterpart and is omitted."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [3],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        },
+        {
+          "ref": 3,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 3 (path)"
+        },
+        {
+          "ref": 4,
+          "native": [2],
+          "merge": false,
+          "role": "Tabler component part 4 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "38b4b2f2eacd305c9175277c88e75371a620214cef9b6b7a9b1b258ea8c8d447"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "eye-slash",
+      "componentPath": "icons/heroicons/eye-slash.tsx",
+      "references": ["eye-off"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/eye-off.tsx",
+      "limitations": [
+        "Heroicons contours 2, 3, 4, 5, 7 share the programme of source part 3 and animate concurrently."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [6],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        },
+        {
+          "ref": 3,
+          "native": [2, 3, 4, 5, 7],
+          "merge": true,
+          "role": "Tabler component part 3 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "4a79c456ae8f5029f311b9fce65746eba9ae368a0491890dbb21259d3cfe01b2"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "eye",
+      "componentPath": "icons/heroicons/eye.tsx",
+      "references": ["eye"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/eye.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "eed20cbc2248da56186e3b9ba231abed2a39f9848998e45342a2802ceefc0597"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "face-frown",
+      "componentPath": "icons/heroicons/face-frown.tsx",
+      "references": ["frown"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/mood-sad.tsx",
+      "limitations": [
+        "The frown deepening is recomputed for the native two-arc mouth.",
+        "Each native eye (outline and centre dot) animates as one part."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [1],
+          "merge": false,
+          "role": "face"
+        },
+        {
+          "ref": 1,
+          "native": [0],
+          "merge": false,
+          "role": "mouth"
+        },
+        {
+          "ref": 2,
+          "native": [2, 3],
+          "merge": true,
+          "role": "left eye"
+        },
+        {
+          "ref": 3,
+          "native": [4, 5],
+          "merge": true,
+          "role": "right eye"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "f678db86fc2b132d4bb357abd8f91671fcb7a203bc5f2c8bb618f54ae3588849"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "face-smile",
+      "componentPath": "icons/heroicons/face-smile.tsx",
+      "references": ["smile"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/mood-smile.tsx",
+      "limitations": [
+        "The mouth morph is recomputed for the native mouth arc (same widening and lift, scaled to the Heroicons proportions).",
+        "Each native eye (outline and centre dot) animates as one part."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [1],
+          "merge": false,
+          "role": "face"
+        },
+        {
+          "ref": 1,
+          "native": [0],
+          "merge": false,
+          "role": "mouth"
+        },
+        {
+          "ref": 2,
+          "native": [2, 3],
+          "merge": true,
+          "role": "left eye"
+        },
+        {
+          "ref": 3,
+          "native": [4, 5],
+          "merge": true,
+          "role": "right eye"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "47d417834d00e4aa2334b8e1d7f08f4f8aa54556256d770ef6133ab371c0afce"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "finger-print",
+      "componentPath": "icons/heroicons/finger-print.tsx",
+      "references": ["fingerprint"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/fingerprint.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [4],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [4],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        },
+        {
+          "ref": 3,
+          "native": [],
+          "merge": false,
+          "role": "Tabler component part 3 (path)"
+        },
+        {
+          "ref": 4,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 4 (path)"
+        },
+        {
+          "ref": 5,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 5 (path)"
+        },
+        {
+          "ref": 6,
+          "native": [],
+          "merge": false,
+          "role": "Tabler component part 6 (path)"
+        },
+        {
+          "ref": 7,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 7 (path)"
+        },
+        {
+          "ref": 8,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 8 (path)"
+        },
+        {
+          "ref": 9,
+          "native": [],
+          "merge": false,
+          "role": "Tabler component part 9 (path)"
+        },
+        {
+          "ref": 10,
+          "native": [3],
+          "merge": false,
+          "role": "Tabler component part 10 (path)"
+        },
+        {
+          "ref": 11,
+          "native": [3],
+          "merge": false,
+          "role": "Tabler component part 11 (path)"
+        },
+        {
+          "ref": 12,
+          "native": [2],
+          "merge": false,
+          "role": "Tabler component part 12 (path)"
+        },
+        {
+          "ref": 13,
+          "native": [2],
+          "merge": false,
+          "role": "Tabler component part 13 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "d7582997da57a697d4fdd52142bd7d29aa348c1b0344415e57fa690becf2446a"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "fire",
+      "componentPath": "icons/heroicons/fire.tsx",
+      "references": ["flame"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/flame.tsx",
+      "limitations": [
+        "Heroicons contours 0, 1 share the programme of source part 0 and animate concurrently."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "d90ab9d4aab060b7d3fb188a35d5a3449bf0f3a9f20bf7cb5b4e6dacff5efe3a"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "folder-arrow-down",
+      "componentPath": "icons/heroicons/folder-arrow-down.tsx",
+      "references": ["folder-down"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/folder-down.tsx",
+      "limitations": [
+        "Tabler part 1 (static path) has no Heroicons counterpart and is omitted."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 2, 3],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "88fc5ca4f5ab0e82c484ebe50943406daa9ecc453ee509f6d577fe5c7c29c4e3"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "folder-minus",
+      "componentPath": "icons/heroicons/folder-minus.tsx",
+      "references": ["folder-minus"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/folder-minus.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "32656d2f76810d195c8aeb9428dd35eefb8ded052382659c15826ae0340aee4d"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "folder-open",
+      "componentPath": "icons/heroicons/folder-open.tsx",
+      "references": ["folder-open"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/folder-open.tsx",
+      "limitations": [
+        "Heroicons contours 0, 1, 2 form source part 0 and move as one group."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1, 2],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "148622139254e246316f2ab89cdf91df14667f84d0dc75dc7ab08b84b21de72c"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "folder-plus",
+      "componentPath": "icons/heroicons/folder-plus.tsx",
+      "references": ["folder-plus"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/folder-plus.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [2],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "f283f3afd1ece5b51b22730464df09e5392f9ccba6be9a2bc83aa62bc27fc006"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "globe-europe-africa",
+      "componentPath": "icons/heroicons/globe-europe-africa.tsx",
+      "references": ["earth"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/world.tsx",
+      "limitations": [
+        "Tabler part 2 (animated path) has no Heroicons counterpart and is omitted."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        },
+        {
+          "ref": 3,
+          "native": [2],
+          "merge": false,
+          "role": "Tabler component part 3 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "49dba72e9d44fcf097163ef05d6935a7bebdb2da67673be08ec58a64a9025d84"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "hand-raised",
+      "componentPath": "icons/heroicons/hand-raised.tsx",
+      "references": ["hand"],
+      "adaptation": "whole-icon-reference-program",
+      "programmeSource": "icons/tabler/hand-stop.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 2, 6],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [1, 3, 7],
+          "merge": true,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [4, 8],
+          "merge": true,
+          "role": "Tabler component part 2 (path)"
+        },
+        {
+          "ref": 3,
+          "native": [5],
+          "merge": false,
+          "role": "Tabler component part 3 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "b2558bfce9ae6f3f4a7c2492f39fbc2efade4524c1ec298bbb0903764a12740c"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "hand-thumb-down",
+      "componentPath": "icons/heroicons/hand-thumb-down.tsx",
+      "references": ["downvote"],
+      "adaptation": "whole-icon-reference-program",
+      "programmeSource": "icons/tabler/thumb-down.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1, 2, 3, 4],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "ac6850b667968ae7d4a8ab6892da5a255c395de9a4b4e4aca795138d1aa50d3d"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "hand-thumb-up",
+      "componentPath": "icons/heroicons/hand-thumb-up.tsx",
+      "references": ["upvote"],
+      "adaptation": "whole-icon-reference-program",
+      "programmeSource": "icons/tabler/thumb-up.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1, 2, 3],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "dca4b3588ead4072dd369bb926c5c3f02ad27792ae9279e88405965536309032"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "heart",
+      "componentPath": "icons/heroicons/heart.tsx",
+      "references": ["heart"],
+      "adaptation": "whole-icon-reference-program",
+      "programmeSource": "icons/tabler/heart.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "85da5f62ff13d2b0db222ea956286c5fb3cd4ad049f317e4b17e552ff8327087"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "home",
+      "componentPath": "icons/heroicons/home.tsx",
+      "references": ["home"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/home.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [2],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "e137e4c2d1e2d49b64afc6ff0b1a116176c716c1eea7f3a35c11c943670987a6"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "identification",
+      "componentPath": "icons/heroicons/identification.tsx",
+      "references": ["id-card"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/id.tsx",
+      "limitations": [
+        "Heroicons contours 2, 5 share the programme of source part 2 and animate concurrently."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [2, 5],
+          "merge": true,
+          "role": "Tabler component part 2 (path)"
+        },
+        {
+          "ref": 3,
+          "native": [],
+          "merge": false,
+          "role": "Tabler component part 3 (path)"
+        },
+        {
+          "ref": 4,
+          "native": [4],
+          "merge": false,
+          "role": "Tabler component part 4 (path)"
+        },
+        {
+          "ref": 5,
+          "native": [3],
+          "merge": false,
+          "role": "Tabler component part 5 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "8648a16757eb905ec60fbc5633ecb8a762a0b57967abc24a5a78e519ef488961"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "italic",
+      "componentPath": "icons/heroicons/italic.tsx",
+      "references": ["italic"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/italic.tsx",
+      "limitations": [
+        "Heroicons contours 3, 4 share the programme of source part 0 and animate concurrently.",
+        "Heroicons contours 0, 1 share the programme of source part 1 and animate concurrently."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [3, 4],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [0, 1],
+          "merge": true,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [2],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "ec02b6d732e95d9008734b77336a4a4eeaa58572ea4e4778ef1688fe0dcfef57"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "key",
+      "componentPath": "icons/heroicons/key.tsx",
+      "references": ["key"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/key.tsx",
+      "limitations": [
+        "Tabler part 1 (static path) has no Heroicons counterpart and is omitted."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "70a2688c29f0fa150cfd30792e351e1da57d64568f178952f3ae80643c22423b"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "language",
+      "componentPath": "icons/heroicons/language.tsx",
+      "references": ["languages"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/language.tsx",
+      "limitations": [
+        "Heroicons contours 2, 3, 6 share the programme of source part 2 and animate concurrently."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [7],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [5],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [2, 3, 6],
+          "merge": true,
+          "role": "Tabler component part 2 (path)"
+        },
+        {
+          "ref": 3,
+          "native": [4],
+          "merge": false,
+          "role": "Tabler component part 3 (path)"
+        },
+        {
+          "ref": 4,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 4 (path)"
+        },
+        {
+          "ref": 5,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 5 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "ed304f0a1d63e18ce9d2e3bb80dc79f4e69344d27d09a54c62e7143ae62c5fad"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "link",
+      "componentPath": "icons/heroicons/link.tsx",
+      "references": ["link"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/link.tsx",
+      "limitations": [
+        "Tabler part 2 (static path) has no Heroicons counterpart and is omitted."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "1e819d7423a1b6ec7beba99830e6e525ad66a88925d82e077603b3c0e864a074"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "lock-closed",
+      "componentPath": "icons/heroicons/lock-closed.tsx",
+      "references": ["lock"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/lock.tsx",
+      "limitations": [
+        "Tabler part 0 (static path) has no Heroicons counterpart and is omitted."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "388d4cfafb396c6d372da5125702f8ab82928b9fe4ed7e79f3318133aff96726"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "lock-open",
+      "componentPath": "icons/heroicons/lock-open.tsx",
+      "references": ["lock-open"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/lock-open.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "02efed75977f9f095e7d389f71a9bf6152745d6728e85f72dacd660e8e9be838"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "magnifying-glass",
+      "componentPath": "icons/heroicons/magnifying-glass.tsx",
+      "references": ["search"],
+      "adaptation": "whole-icon-reference-program",
+      "programmeSource": "icons/tabler/search.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 0 (circle)"
+        },
+        {
+          "ref": 1,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "5f831692ae021a6a2abdc38e6da08b4760450e348dc2061f96b808826fabddb9"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "map-pin",
+      "componentPath": "icons/heroicons/map-pin.tsx",
+      "references": ["map-pin"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/map-pin.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "75e01a8b025702df0677aa6ef04d50fdb1e5da9645cae0cfbfefc43dabd5d169"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "microphone",
+      "componentPath": "icons/heroicons/microphone.tsx",
+      "references": ["mic"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/microphone.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [2, 3],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [0, 1],
+          "merge": true,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [4],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "c001fb3cefceec227c9965586fe00f37d1c242ca903fd53b26ed7a63048c9ef2"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "moon",
+      "componentPath": "icons/heroicons/moon.tsx",
+      "references": ["moon"],
+      "adaptation": "whole-icon-reference-program",
+      "programmeSource": "icons/tabler/moon.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "3e35902203bed8b3afe3936ee2150533d820ede797a27ac8a2c0693d0075a55e"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "no-symbol",
+      "componentPath": "icons/heroicons/no-symbol.tsx",
+      "references": ["ban"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/ban.tsx",
+      "limitations": [
+        "Heroicons contours 0, 1 share the programme of source part 0 and animate concurrently."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [2],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "f54bfb2fade609cca8463872f8a891210533a8ca9345619422a2f823de301383"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "paper-airplane",
+      "componentPath": "icons/heroicons/paper-airplane.tsx",
+      "references": ["send"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/send.tsx",
+      "limitations": [
+        "The native plane points right instead of up-right: the flight vector and the dashed trail are turned 45° to match it, and the trail is re-anchored behind the native tail at 55 % of its size. At rest the native plane is shown unchanged."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1],
+          "merge": true,
+          "role": "plane and fold line (fly along the native heading and shrink)"
+        },
+        {
+          "ref": 1,
+          "native": [],
+          "merge": false,
+          "role": "dashed trail, only visible while animating"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "beecf1d0ae2a6641a2aa0faa417c16800089c9f2b72bb2a44d08ba7cd488bfb1"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "paper-clip",
+      "componentPath": "icons/heroicons/paper-clip.tsx",
+      "references": ["attach-file"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/paperclip.tsx",
+      "limitations": [
+        "Heroicons contours 0, 1, 2 share the programme of source part 0 and animate concurrently."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1, 2],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "acedd516054ff38efa113ae1480b4c7c76fd3dec8c98719312447814353be80f"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "pause",
+      "componentPath": "icons/heroicons/pause.tsx",
+      "references": ["pause"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/player-pause.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "24c76c3304dc61af3899fad561042c64ebac34175886509bcf7222117654a9fc"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "pencil-square",
+      "componentPath": "icons/heroicons/pencil-square.tsx",
+      "references": ["square-pen"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/edit.tsx",
+      "limitations": [
+        "Heroicons contours 0, 1 form source part 1 and move as one group."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [2],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [0, 1],
+          "merge": true,
+          "role": "Tabler component part 1 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "36a4c7c35c2922d5072988ffcd6eaf075d63d0ad2cdd2955bcb22844c2fc4319"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "percent-badge",
+      "componentPath": "icons/heroicons/percent-badge.tsx",
+      "references": ["badge-percent"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/rosette-discount.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [2, 3],
+          "merge": true,
+          "role": "Tabler component part 2 (path)"
+        },
+        {
+          "ref": 3,
+          "native": [4, 5],
+          "merge": true,
+          "role": "Tabler component part 3 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "86a4d485625eb97d0216378ec2253ffc365db8626ace13311960b96b7fccc9f8"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "phone-arrow-down-left",
+      "componentPath": "icons/heroicons/phone-arrow-down-left.tsx",
+      "references": ["phone-incoming"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/phone-incoming.tsx",
+      "limitations": [
+        "Heroicons contours 0, 1 share the programme of source part 0 and animate concurrently."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [2],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [3],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "ee4f619e62383d4239af0a16f0ffbd4191fdb5b4b3c26d4db6eceb7227a09534"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "phone-arrow-up-right",
+      "componentPath": "icons/heroicons/phone-arrow-up-right.tsx",
+      "references": ["phone-forwarded"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/phone-outgoing.tsx",
+      "limitations": [
+        "Heroicons contours 0, 1 form source part 1 and move as one group.",
+        "The native arrow points up-right, so the head and shaft travel the same distance along that diagonal instead of horizontally."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [2],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [0, 1],
+          "merge": true,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [3],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "8fe5b9a7bd8d358254fa57ec9f7f956725cea6de111c8e93a74f6883df11614d"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "phone",
+      "componentPath": "icons/heroicons/phone.tsx",
+      "references": ["phone"],
+      "adaptation": "whole-icon-reference-program",
+      "programmeSource": "icons/tabler/phone.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "ff7e5ecdd3dad660b5145526d193033cc190639a715a876d7c1cbdcd04cc0a89"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "play",
+      "componentPath": "icons/heroicons/play.tsx",
+      "references": ["play"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/player-play.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "b8498faca7b1cb770c59ea37d0940a46b4b8bda5c44a179b670a9d74b9c77d5f"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "plus",
+      "componentPath": "icons/heroicons/plus.tsx",
+      "references": ["plus"],
+      "adaptation": "whole-icon-reference-program",
+      "programmeSource": "icons/tabler/plus.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "e694721a86b173d586a80dbbcc7da12294ec2367837bf36c6272e502b915ce81"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "question-mark-circle",
+      "componentPath": "icons/heroicons/question-mark-circle.tsx",
+      "references": ["circle-help"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/help-circle.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [2],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "b276015b860e2875dbaffec685fa98bdcabbd664f52ee61dc83e1dee60acb90a"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "rectangle-stack",
+      "componentPath": "icons/heroicons/rectangle-stack.tsx",
+      "references": ["square-stack"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/squares.tsx",
+      "limitations": [
+        "Heroicons contours 0, 2 form source part 0 and move as one group.",
+        "Heroicons contours 1, 3, 4, 5 form source part 2 and move as one group."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 2],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [1, 3, 4, 5],
+          "merge": true,
+          "role": "Tabler component part 2 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "2843af4b7a33d9b9a1196f395365f7c9a875626e73c49a526e74d924b4809798"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "rocket-launch",
+      "componentPath": "icons/heroicons/rocket-launch.tsx",
+      "references": ["rocket"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/hugeicons/rocket.tsx",
+      "limitations": [
+        "Hugeicons part 3 (static path) has no Heroicons counterpart and is omitted."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [5],
+          "merge": false,
+          "role": "Hugeicons component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [6],
+          "merge": false,
+          "role": "Hugeicons component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [1],
+          "merge": false,
+          "role": "Hugeicons component part 2 (path)"
+        },
+        {
+          "ref": 3,
+          "native": [],
+          "merge": false,
+          "role": "Hugeicons component part 3 (path)"
+        },
+        {
+          "ref": 4,
+          "native": [7],
+          "merge": false,
+          "role": "Hugeicons component part 4 (path)"
+        },
+        {
+          "ref": 5,
+          "native": [0, 2, 3, 4],
+          "merge": true,
+          "role": "Hugeicons component part 5 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "186cd36dee22402fb9cb4de6e7275f7a66c5d4bbd773528ce1ef94e5216794de"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "shield-check",
+      "componentPath": "icons/heroicons/shield-check.tsx",
+      "references": ["shield-check"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/shield-check.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "afb86fc529306ed5470726cf29c1a697c2990b1b9bf476d2ab15ae8ede0129cb"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "shopping-cart",
+      "componentPath": "icons/heroicons/shopping-cart.tsx",
+      "references": ["cart"],
+      "adaptation": "whole-icon-reference-program",
+      "programmeSource": "icons/tabler/shopping-cart.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [4],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [5],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [0, 1, 3],
+          "merge": true,
+          "role": "Tabler component part 2 (path)"
+        },
+        {
+          "ref": 3,
+          "native": [2],
+          "merge": false,
+          "role": "Tabler component part 3 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "c60193a87255d93ecbe82151214af3538184ce37d6a5b051401f2b877ab32414"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "signal",
+      "componentPath": "icons/heroicons/signal.tsx",
+      "references": ["radio"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/broadcast.tsx",
+      "limitations": [
+        "Heroicons contours 4, 5 share the programme of source part 0 and animate concurrently.",
+        "Heroicons contours 0, 1, 2, 3 share the programme of source part 1 and animate concurrently."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [4, 5],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [0, 1, 2, 3],
+          "merge": true,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [6, 7],
+          "merge": true,
+          "role": "Tabler component part 2 (path)"
+        },
+        {
+          "ref": 3,
+          "native": [],
+          "merge": false,
+          "role": "Tabler component part 3 (path)"
+        },
+        {
+          "ref": 4,
+          "native": [],
+          "merge": false,
+          "role": "Tabler component part 4 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "2f56c9df74eecd9f71cad2b78f0170a2ae65f02b7d9a8bc8a7e08e7e24a00748"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "sparkles",
+      "componentPath": "icons/heroicons/sparkles.tsx",
+      "references": ["sparkles"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/sparkles.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        },
+        {
+          "ref": 3,
+          "native": [2],
+          "merge": false,
+          "role": "Tabler component part 3 (path)"
+        },
+        {
+          "ref": 4,
+          "native": [],
+          "merge": false,
+          "role": "Tabler component part 4 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "9e172bb2f5ea93ec198d3d3868839d7900ca121d33850c02bbfc714dab4ac462"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "speaker-wave",
+      "componentPath": "icons/heroicons/speaker-wave.tsx",
+      "references": ["volume"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/volume.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [2],
+          "merge": false,
+          "role": "speaker"
+        },
+        {
+          "ref": 1,
+          "native": [1],
+          "merge": false,
+          "role": "inner wave"
+        },
+        {
+          "ref": 2,
+          "native": [0],
+          "merge": false,
+          "role": "outer wave"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "f584ce8ec727fd393999a5ef429ec0afa042185b7f7112498ed3d29605c59b41"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "square-2-stack",
+      "componentPath": "icons/heroicons/square-2-stack.tsx",
+      "references": ["copy"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/copy.tsx",
+      "limitations": [
+        "Heroicons contours 1, 2 form source part 0 and move as one group."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [1, 2],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "658d0827f27beb4fa17c80a3cbd98f51cf09b124902f8ac8e8107c1469bcb5b8"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "square-3-stack-3d",
+      "componentPath": "icons/heroicons/square-3-stack-3d.tsx",
+      "references": ["layers"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/stack-2.tsx",
+      "limitations": [
+        "Heroicons contours 0, 3, 5 form source part 2 and move as one group."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [1, 2],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [4],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [0, 3, 5],
+          "merge": true,
+          "role": "Tabler component part 2 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "75f67aa2bb0120e4aef32534b3756f94d03cccc24d8ff08e721529f07660899a"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "squares-2x2",
+      "componentPath": "icons/heroicons/squares-2x2.tsx",
+      "references": ["layout-grid"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/layout-grid.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [2],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [3],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        },
+        {
+          "ref": 3,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 3 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "bd6d55d5ca01aaf56588264c922ffd7ec13904304bf5467b8b2e5b96cede0292"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "sun",
+      "componentPath": "icons/heroicons/sun.tsx",
+      "references": ["sun"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/sun.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [8],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        },
+        {
+          "ref": 3,
+          "native": [2],
+          "merge": false,
+          "role": "Tabler component part 3 (path)"
+        },
+        {
+          "ref": 4,
+          "native": [3],
+          "merge": false,
+          "role": "Tabler component part 4 (path)"
+        },
+        {
+          "ref": 5,
+          "native": [4],
+          "merge": false,
+          "role": "Tabler component part 5 (path)"
+        },
+        {
+          "ref": 6,
+          "native": [5],
+          "merge": false,
+          "role": "Tabler component part 6 (path)"
+        },
+        {
+          "ref": 7,
+          "native": [6],
+          "merge": false,
+          "role": "Tabler component part 7 (path)"
+        },
+        {
+          "ref": 8,
+          "native": [7],
+          "merge": false,
+          "role": "Tabler component part 8 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "1ef83e742e3203159350853945825754a53baf762590f25e588bb85082975c75"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "ticket",
+      "componentPath": "icons/heroicons/ticket.tsx",
+      "references": ["ticket"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/ticket.tsx",
+      "limitations": [
+        "The native outline is a single closed contour; it is cut at the perforation into the two halves the reference tears apart, which leaves the rest pose pixel-identical."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [6, 0, 1, 2, 3, 4, 5],
+          "merge": true,
+          "role": "left half, perforation and text lines (slide left)"
+        },
+        {
+          "ref": 1,
+          "native": [6],
+          "merge": false,
+          "role": "right half (slides right and tilts about the perforation)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "cfe391ac0891e48f1f695ddcbce55b5c7d1877654ee1bddad51036b3bbbe60cf"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "trash",
+      "componentPath": "icons/heroicons/trash.tsx",
+      "references": ["delete"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/trash.tsx",
+      "limitations": [
+        "The reference lowers the can and its lines by rewriting their coordinates; the native parts use the same spring and the same displacement as a translation (scaled to the taller Heroicons can)."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [2, 4, 5, 6, 7, 8],
+          "merge": true,
+          "role": "lid (rim and handle)"
+        },
+        {
+          "ref": 1,
+          "native": [3],
+          "merge": false,
+          "role": "can"
+        },
+        {
+          "ref": 2,
+          "native": [0],
+          "merge": false,
+          "role": "right line"
+        },
+        {
+          "ref": 3,
+          "native": [1],
+          "merge": false,
+          "role": "left line"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "fbd3d419185fecdd0d3cbb54bc2f2ebbe6965ad0d8d35b31420d3fb931c0127b"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "truck",
+      "componentPath": "icons/heroicons/truck.tsx",
+      "references": ["truck"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/truck.tsx",
+      "limitations": [
+        "The speed lines are animation-only decorations kept from the reference programme; at rest the native truck is shown unchanged."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [2, 3, 6, 7, 8, 9, 10, 11],
+          "merge": true,
+          "role": "body (bounces)"
+        },
+        {
+          "ref": 1,
+          "native": [0, 1],
+          "merge": true,
+          "role": "rear wheel"
+        },
+        {
+          "ref": 2,
+          "native": [4, 5],
+          "merge": true,
+          "role": "front wheel"
+        },
+        {
+          "ref": 3,
+          "native": [],
+          "merge": false,
+          "role": "speed lines, only visible while animating"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "5700556f05aa492caa88ab194135400b7fe5cbd68e236c5926c6b57844f3240e"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "underline",
+      "componentPath": "icons/heroicons/underline.tsx",
+      "references": ["underline"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/underline.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "9c11560b7f79c7ad62507f2010796fb0553a981ec0081dcf85a62d5fa0120340"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "user-plus",
+      "componentPath": "icons/heroicons/user-plus.tsx",
+      "references": ["user-plus"],
+      "adaptation": "native-geometry-adaptation",
+      "programmeSource": "icons/tabler/user-plus.tsx",
+      "limitations": [
+        "Tabler part 3 (static path) has no Heroicons counterpart and is omitted."
+      ],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [5],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [0, 3, 4],
+          "merge": true,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [1, 2],
+          "merge": true,
+          "role": "Tabler component part 2 (path)"
+        },
+        {
+          "ref": 3,
+          "native": [],
+          "merge": false,
+          "role": "Tabler component part 3 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "a569f6e40772320fe0bbec4cc2f38dfb12e6c4857346798d5d36d1d1db326c09"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "user",
+      "componentPath": "icons/heroicons/user.tsx",
+      "references": ["user"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/user.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "29273c5ba1293c6eb7142f223f234696ce771e0a207992797c25b14495bc90c1"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "users",
+      "componentPath": "icons/heroicons/users.tsx",
+      "references": ["users"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/users.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [1, 2],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [3],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        },
+        {
+          "ref": 3,
+          "native": [4],
+          "merge": false,
+          "role": "Tabler component part 3 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "58ab790ac9400dcea32260fb8d79c27c47bb9398fdb38aedd86ba43c140618e2"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "wallet",
+      "componentPath": "icons/heroicons/wallet.tsx",
+      "references": ["wallet"],
+      "adaptation": "whole-icon-reference-program",
+      "programmeSource": "icons/tabler/wallet.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1, 3, 4, 5],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [2],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "8470efd722609aa3229c7dcdbca94a3afdf00e7a0e40c8ccaf4db162b31004ee"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "wifi",
+      "componentPath": "icons/heroicons/wifi.tsx",
+      "references": ["wifi"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/wifi.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [3],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        },
+        {
+          "ref": 2,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 2 (path)"
+        },
+        {
+          "ref": 3,
+          "native": [2],
+          "merge": false,
+          "role": "Tabler component part 3 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "f7c869f45fff50715dd77a057835a0eed3a63a07f8c3fc847f1c25e31e871f81"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "wrench",
+      "componentPath": "icons/heroicons/wrench.tsx",
+      "references": ["wrench"],
+      "adaptation": "whole-icon-reference-program",
+      "programmeSource": "icons/tabler/tool.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0, 1],
+          "merge": true,
+          "role": "Tabler component part 0 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "f5c56e11472a3fe60b156208ae81611809004696ad96c2f5e74b3b5b70acb5b6"
+    },
+    {
+      "library": "heroicons",
+      "catalogName": "x-mark",
+      "componentPath": "icons/heroicons/x-mark.tsx",
+      "references": ["x"],
+      "adaptation": "exact-choreography",
+      "programmeSource": "icons/tabler/x.tsx",
+      "limitations": [],
+      "nativeParts": [
+        {
+          "ref": 0,
+          "native": [0],
+          "merge": false,
+          "role": "Tabler component part 0 (path)"
+        },
+        {
+          "ref": 1,
+          "native": [1],
+          "merge": false,
+          "role": "Tabler component part 1 (path)"
+        }
+      ],
+      "geometryProof": null,
+      "sourceSha256": "0624d9186609b166b6d59b73bad29f8f4cae085e1095cd7527044ab553438c0a"
+    },
+    {
       "library": "hugeicons",
       "catalogName": "a-arrow-down",
       "componentPath": "icons/hugeicons/a-arrow-down.tsx",

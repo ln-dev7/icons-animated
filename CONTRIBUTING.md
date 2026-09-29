@@ -34,6 +34,7 @@ We welcome contributions to our project! Please follow these steps to contribute
    - For Huge Icons: `/icons/hugeicons/`
    - For Tabler Icons: `/icons/tabler/`
    - For Phosphor Icons: `/icons/phosphor/`
+   - For Heroicons: `/icons/heroicons/`
 
    b. Create a new file with the icon name in lowercase, using hyphens for spaces:
 
@@ -43,18 +44,21 @@ We welcome contributions to our project! Please follow these steps to contribute
    /icons/tabler/[icon-name].tsx
    # or
    /icons/phosphor/[icon-name].tsx
+   # or
+   /icons/heroicons/[icon-name].tsx
    ```
 
    For example: `heart.tsx`, `arrow-right.tsx`, `user.tsx`
 
    c. Start from a current component such as [Hugeicons arrow-down](icons/hugeicons/arrow-down.tsx), preserving its playback lifecycle. Every icon must respect reduced motion, forward mouse/focus callbacks once, and clean up on unmount. Preserve the reference playback program: state names, awaits, loops, delays, custom functions and stop transitions. Do not add an automatic reset when the reference holds its final pose. The Vue/Svelte compiler supports full controller programs and stateful sequences.
 
-   d. Rename the component and its handle to match the library (`Hugeicons`, `Tabler`, or `Phosphor`) and your icon name in **PascalCase** (e.g., `HugeiconsHeartIcon`, `TablerHeartIcon`, `PhosphorStarIcon`).
+   d. Rename the component and its handle to match the library (`Hugeicons`, `Tabler`, `Phosphor` or `Heroicons`) and your icon name in **PascalCase** (e.g., `HugeiconsHeartIcon`, `TablerHeartIcon`, `PhosphorStarIcon`, `HeroiconsHeartIcon`).
 
    e. Find your icon on the respective icon library website:
    - Huge Icons: [hugeicons.com](https://hugeicons.com/)
    - Tabler: [tabler.io/icons](https://tabler.io/icons)
    - Phosphor: [phosphoricons.com](https://phosphoricons.com/)
+   - Heroicons: [heroicons.com](https://heroicons.com/) (outline, 24 × 24)
 
    Replace the example SVG shapes with the exact native geometry and preserve the upstream attribution and license in THIRD_PARTY_NOTICES.md. Keep license texts centralized instead of adding them to each component.
 
@@ -66,6 +70,7 @@ We welcome contributions to our project! Please follow these steps to contribute
    - For Huge Icons: `icons/hugeicons/index.ts`
    - For Tabler: `icons/tabler/index.ts`
    - For Phosphor: `icons/phosphor/index.ts`
+   - For Heroicons: `icons/heroicons/index.ts`
 
    b. Import your new icon component at the top of the file:
 
@@ -97,7 +102,7 @@ We welcome contributions to our project! Please follow these steps to contribute
    pnpm run gen-cli
    ```
 
-   This formats and lints the sources first, discovers every `.tsx` icon recursively in the three library directories (excluding `index.tsx`), synchronizes the manifest, builds `registry.json` and `public/r/*.json`, and verifies their contents. New icons receive the registry name `[library]-[icon-name]` and the pinned Motion engine dependencies automatically. No manual manifest entry is needed. Existing entries retain their custom metadata and dependencies; removed source files are removed from the generated registry.
+   This formats and lints the sources first, discovers every `.tsx` icon recursively in the four library directories (excluding `index.tsx`), synchronizes the manifest, builds `registry.json` and `public/r/*.json`, and verifies their contents. New icons receive the registry name `[library]-[icon-name]` and the pinned Motion engine dependencies automatically. No manual manifest entry is needed. Existing entries retain their custom metadata and dependencies; removed source files are removed from the generated registry.
 
    Keep icon file names unique within each library, including nested directories. The same name in different libraries is allowed. Keep each library's imports, list and named exports in sync with its source files.
 
@@ -139,7 +144,7 @@ We welcome contributions to our project! Please follow these steps to contribute
 ## Icon Naming Convention
 
 - Use lowercase with hyphens for file names: `heart.tsx`, `arrow-right.tsx`
-- Use PascalCase with library prefix for component names: `HugeiconsHeartIcon`, `TablerHeartIcon`, `PhosphorArrowRightIcon`
+- Use PascalCase with library prefix for component names: `HugeiconsHeartIcon`, `TablerHeartIcon`, `PhosphorArrowRightIcon`, `HeroiconsHeartIcon`
 - Follow the original icon library naming conventions
 
 ## Resources
@@ -147,6 +152,7 @@ We welcome contributions to our project! Please follow these steps to contribute
 - [Huge Icons](https://hugeicons.com/)
 - [Tabler Icons](https://tabler.io/icons)
 - [Phosphor Icons](https://phosphoricons.com/)
+- [Heroicons](https://heroicons.com/)
 - [Motion (Framer Motion)](https://motion.dev/)
 - [Original project: lucide-animated](https://lucide-animated.com/)
 

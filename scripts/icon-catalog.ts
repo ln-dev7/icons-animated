@@ -3,7 +3,12 @@ import path from 'path';
 import ts from 'typescript';
 
 export const PROJECT_ROOT = path.resolve(__dirname, '..');
-export const ICON_LIBRARIES = ['hugeicons', 'phosphor', 'tabler'] as const;
+export const ICON_LIBRARIES = [
+  'heroicons',
+  'hugeicons',
+  'phosphor',
+  'tabler',
+] as const;
 
 export type IconLibrary = (typeof ICON_LIBRARIES)[number];
 

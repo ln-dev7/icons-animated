@@ -23,7 +23,8 @@ import {
 type SelectableLibrary =
   | typeof ICON_LIBRARY.HUGEICONS
   | typeof ICON_LIBRARY.TABLER
-  | typeof ICON_LIBRARY.PHOSPHOR;
+  | typeof ICON_LIBRARY.PHOSPHOR
+  | typeof ICON_LIBRARY.HEROICONS;
 
 type IconLibraryContextType = {
   library: SelectableLibrary;
@@ -49,6 +50,7 @@ const libraryParser = parseAsStringLiteral([
   ICON_LIBRARY.HUGEICONS,
   ICON_LIBRARY.TABLER,
   ICON_LIBRARY.PHOSPHOR,
+  ICON_LIBRARY.HEROICONS,
 ] as const)
   .withDefault(ICON_LIBRARY.HUGEICONS)
   .withOptions({ clearOnDefault: false });

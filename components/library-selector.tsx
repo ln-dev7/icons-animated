@@ -35,6 +35,7 @@ const LibrarySelector = () => {
           <SelectItem value={ICON_LIBRARY.HUGEICONS}>Huge Icons</SelectItem>
           <SelectItem value={ICON_LIBRARY.TABLER}>Tabler</SelectItem>
           <SelectItem value={ICON_LIBRARY.PHOSPHOR}>Phosphor</SelectItem>
+          <SelectItem value={ICON_LIBRARY.HEROICONS}>Heroicons</SelectItem>
           <SelectItem value={ICON_LIBRARY.LUCIDE}>
             <div className="flex items-center gap-1">
               <span>Lucide</span>
